@@ -1,15 +1,24 @@
 # Findings Ledger
 
-This ledger is a short index, not a substitute for the frozen reports. Status labels describe the present evidential standing of each claim.
+This ledger is a short cumulative index, not a substitute for frozen reports. Status labels describe the present evidential standing of each claim. Superseded and retired mathematical directions are preserved separately in [`MATH_ARCHIVE_LEDGER.md`](MATH_ARCHIVE_LEDGER.md).
+
+## Programme north star
+
+> Make consequential decision-making mathematically inspectable, cumulative, and correctable.
+
+The ambition may remain enormous while the first demonstrated competence is narrow and exact. Kahneman Lab is therefore a proving ground for bounded decision problems, not an attempt to formalize all of global affairs or force every useful result into one architecture.
 
 ## KL2 — mathematical interfaces and compatibility
 
-**Status:** bounded findings retained; legacy artifacts awaiting canonical migration.
+**Final research verdict:** `EXISTING_MATHEMATICS_ALREADY_SOLVES_THE_PROBLEM` for the finite Q1–Q4 problems actually tested.
+
+**Final architecture verdict:** `ARCHITECTURE_D1_COMPATIBILITY_GATED_PLURALISM_SURVIVES`, interpreted narrowly as survival of query-relative correctness obligations on the tested suite, not as a comparative architecture winner.
 
 - Evidence, probability, causal belief, authority, procedure, decision, implementation, and outcome are not automatically interchangeable mathematical types.
-- Joint reuse can require an exact common admissible completion; compatible local labels or marginal answer sets are not enough.
-- A common witness is not sufficient for every downstream query. Query sufficiency and preservation of model identity, likelihoods, and shared evidence remain separate requirements.
-- Established local mathematics solved the supplied finite problems. No exclusive advantage for a new unified calculus was established.
+- Joint reuse can require preserving shared model identity, dependence, exact query semantics, and a common admissible completion; compatible local labels or marginal answer sets are not enough.
+- A common witness is not sufficient for every downstream query. Query sufficiency and type preservation remain separate requirements.
+- Competent query-local conventional mathematics solved every supplied complete case. No exclusive theorem, identification gain, or tractability advantage for D1 was demonstrated.
+- Persistent distributed reuse remains a possible research wedge, not a demonstrated necessity and not the default roadmap.
 
 ## KL3v2 — preparation-method comparison
 
@@ -27,14 +36,7 @@ This ledger is a short index, not a substitute for the frozen reports. Status la
 - **KL4B:** probability-set width does not determine decision stability. A broad credal segment can preserve one action while a narrow segment crosses an action boundary.
 - **KL4C:** sufficiency is query-relative. The exact quotients for Q0–Q3 contain 3, 19, 31, and 109 classes over 216 full objects; each registered refinement is strict.
 - **KL4D:** entropy is not sufficient for stopping, and nonpositive one-step net information value does not imply that observation is suboptimal when later contingent observations remain available.
-- **Synthesis:** Lane E is technically eligible under the frozen gate, but eligibility establishes neither strategic separation nor mathematical novelty. Lane E was not executed.
-
-## Post-hoc KL4 audit
-
-**Status:** post-hoc; not a KL4 preregistered result.
-
-- A later audit suggested that models indistinguishable under a strong bounded one-step certificate may require different sequential continuation decisions.
-- KL5 Stage R subsequently tested a stronger registered instance of this hypothesis.
+- **Synthesis:** Lane E was technically eligible under the frozen gate, but eligibility established neither strategic separation nor mathematical novelty. Lane E was not executed.
 
 ## KL5 — sequential sufficiency
 
@@ -42,16 +44,34 @@ This ledger is a short index, not a substitute for the frozen reports. Status la
 
 - Stage R exhaustively tested the frozen strongest certificate `C_*` over 1,800 primary full objects and the mandatory 432-object informative-interior restriction.
 - The primary gate found **64** distinct equal-`C_*` pairs with different root STOP/OBSERVE minimizing sets; the smallest separating horizon was **2**.
-- The mandatory informative-interior gate found **0** `C_*` separating pairs among 144 equal-certificate candidate pairs.
-- The registered verdict was therefore `KL5_STOP_DEGENERATE`; Lanes A–D and synthesis were not run.
-- This verdict is finite and protocol-specific. It does not establish that boundary kernels are globally necessary for sequential insufficiency.
+- The mandatory informative-interior quarter-grid gate found **0** `C_*` separating pairs among 144 equal-certificate candidate pairs.
+- The registered verdict remains `KL5_STOP_DEGENERATE`; Lanes A–D and synthesis were not run.
+- A later post-hoc finer-grid observation does not alter the frozen KL5 verdict.
 
-### Post-hoc KL5 audit — not a KL5 result
+## KL6 — observation-model sufficiency
 
-- A later exploratory finer-grid audit found strictly interior equal-certificate models with different sequential decisions.
-- This suggests the registered interior failure may be sensitive to the coarse quarter-spaced kernel grid, but it does not change `KL5_STOP_DEGENERATE` and requires a separately preregistered replication before becoming a finding.
-- The resulting next research question is narrower: what information about an observation model must be preserved to maintain the same bounded-horizon sequential decisions?
+**Status:** `KL6_STOP_THEORY_ALREADY_SETTLES` / `KL6_STOP_STANDARD`. See [`experiments/kl6/`](experiments/kl6/).
+
+- `C_*` is too weak to preserve bounded sequential decisions: distinct strictly interior models can share the same prior, loss, cost, and `C_*` while inducing opposite strict root STOP/OBSERVE decisions.
+- On the registered informative eighth-grid at horizon 5, `S04=(C_*,Z_5)` is sufficient only because it identifies the **labeled observation kernel** itself.
+- Therefore S04 does not establish genuine compression on that domain. P-SUFF holds for a reconstruction reason and P-COMP fails.
+- The original KL6 execution stages, alternate-grid rescue, and a KL7 continuation on this branch are not authorized by the closure.
+
+## Post-KL6 mathematical frontier audit
+
+**Terminal outcome:** `FRONTIER_STOP_EXISTING_THEORY_SUFFICES`.
+
+- The claim that bounded decision-error guarantees for lossy representations are an unresolved mathematical frontier is retired. Established abstraction, approximate-information-state, simulation, robust dynamic-programming, and value-directed compression theory already supplies affirmative guarantees under explicit assumptions.
+- The KL6 finite-horizon coupling argument itself yields bounded optimal-value error, bounded regret for an implementable surrogate-model policy, and exact root STOP/OBSERVE preservation outside a certified margin interval.
+- Exact preservation can still permit real compression for a restricted task; it need not reconstruct the full underlying model. Approximate preservation can support broader stability guarantees.
+- A live bounded mathematical question remains possible only after fixing a query family and criterion: what is the smallest, most economical, or efficiently discoverable representation that achieves the required preservation guarantee? This is one possible research line, not the default programme roadmap.
+
+## Current research posture
+
+The architecture/compression branch is closed far enough to stop iterating on D1, `C_*`, S04, grids, or generic preservation guarantees merely to keep that line alive.
+
+The broader programme remains open. The next phase should search for bounded decision-problem families in which mathematical or computational analysis can produce exact, reproducible, revisable, decision-relevant results. Existing mathematics is acceptable; new theorems, abstractions, impossibility results, or non-mathematical formal methods may emerge if repeated problems create a real need.
 
 ## Transfer status
 
-**Nothing in this ledger currently authorizes a Writ architecture change.** A future transfer requires a replicated result, a concrete Writ workflow that needs it, and evidence that the smallest necessary requirement improves that workflow.
+**Nothing in this ledger currently authorizes a Writ architecture change.** A future transfer requires a replicated or otherwise well-established result, a concrete Writ workflow that needs it, and evidence that the smallest necessary requirement improves that workflow.
