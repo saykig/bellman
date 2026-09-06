@@ -34,16 +34,23 @@ This ledger is a short index, not a substitute for the frozen reports. Status la
 **Status:** post-hoc; not a KL4 preregistered result.
 
 - A later audit suggested that models indistinguishable under a strong bounded one-step certificate may require different sequential continuation decisions.
-- This suggestion must be independently reproduced or falsified before it is treated as a finding.
+- KL5 Stage R subsequently tested a stronger registered instance of this hypothesis.
 
 ## KL5 — sequential sufficiency
 
-**Status:** `PREREGISTERED_NOT_EXECUTED`. See [`experiments/kl5/`](experiments/kl5/).
+**Status:** `STOPPED_AT_STAGE_R — KL5_STOP_DEGENERATE`. See [`experiments/kl5/`](experiments/kl5/).
 
-- **Question:** what is the minimal representation sufficient for decision-making across increasing information-acquisition horizons?
-- Stage R must first test the post-hoc KL4 hypothesis by exhaustive enumeration under a stronger certificate and an informative interior-kernel restriction.
-- The programme stops before the main lanes if the registered replication gate fails or if the separation exists only outside the mandatory interior restriction.
-- A positive finite collision is not, by itself, evidence of new mathematics. KL5 must distinguish standard belief-state sufficiency within a known model from compression across different models with omitted parameters.
+- Stage R exhaustively tested the frozen strongest certificate `C_*` over 1,800 primary full objects and the mandatory 432-object informative-interior restriction.
+- The primary gate found **64** distinct equal-`C_*` pairs with different root STOP/OBSERVE minimizing sets; the smallest separating horizon was **2**.
+- The mandatory informative-interior gate found **0** `C_*` separating pairs among 144 equal-certificate candidate pairs.
+- The registered verdict was therefore `KL5_STOP_DEGENERATE`; Lanes A–D and synthesis were not run.
+- This verdict is finite and protocol-specific. It does not establish that boundary kernels are globally necessary for sequential insufficiency.
+
+### Post-hoc KL5 audit — not a KL5 result
+
+- A later exploratory finer-grid audit found strictly interior equal-certificate models with different sequential decisions.
+- This suggests the registered interior failure may be sensitive to the coarse quarter-spaced kernel grid, but it does not change `KL5_STOP_DEGENERATE` and requires a separately preregistered replication before becoming a finding.
+- The resulting next research question is narrower: what information about an observation model must be preserved to maintain the same bounded-horizon sequential decisions?
 
 ## Transfer status
 
