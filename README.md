@@ -10,15 +10,6 @@ Bellman is therefore a **decision-proving ground**, not an attempt to formalize 
 
 The repository is deliberately separate from Writ. Kahneman Lab tests mathematical and decision-science claims. A result moves into Writ only after it is sufficiently established, identifies a concrete Writ workflow that needs it, and survives a separate product-level justification.
 
-## Scientific posture
-
-- Use rigor as a measurement tool, not as a brake on discovery.
-- Try consequential, falsifiable hypotheses early.
-- A failed ambitious experiment is useful if it decisively teaches something.
-- Existing mathematics fully explaining a result is an acceptable outcome.
-- New mathematics is allowed to emerge from repeated structure; novelty is never required in advance.
-- Roadmaps are provisional. Close dead branches rather than protecting them with larger experiments.
-
 ## Record discipline
 
 - Preregistrations, sealed inputs, lane reports, referee reports, and syntheses are frozen artifacts.
