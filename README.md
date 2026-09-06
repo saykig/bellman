@@ -1,6 +1,4 @@
-# Kahneman Lab
-
-Kahneman Lab is a research repository for bounded, falsifiable, and reproducible work on uncertainty, information, belief, decision, action, and the representations needed to support them.
+# Bellman
 
 ## Programme north star
 
@@ -8,7 +6,7 @@ Kahneman Lab is a research repository for bounded, falsifiable, and reproducible
 
 The ambition may remain enormous while the first demonstrated competence is narrow and exact.
 
-Kahneman Lab is therefore a **decision-proving ground**, not an attempt to formalize all of global affairs at once. It searches for bounded decision-problem families where mathematical or computational analysis can produce results that are explicit about assumptions, independently checkable, reproducible, revisable, and useful for later decision work.
+Bellman is therefore a **decision-proving ground**, not an attempt to formalize all of global affairs at once. It searches for bounded decision-problem families where mathematical or computational analysis can produce results that are explicit about assumptions, independently checkable, reproducible, revisable, and useful for later decision work.
 
 The repository is deliberately separate from Writ. Kahneman Lab tests mathematical and decision-science claims. A result moves into Writ only after it is sufficiently established, identifies a concrete Writ workflow that needs it, and survives a separate product-level justification.
 
