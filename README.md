@@ -16,8 +16,6 @@ The repository is deliberately separate from Writ. Kahneman Lab tests mathematic
 - Frozen artifacts are never edited in place. A correction or reinterpretation is added as a new, explicitly labelled artifact.
 - Preregistered findings, post-hoc findings, replications, failures, conjectures, and theory closures remain distinct.
 - Exact source bytes and SHA-256 digests are retained where available.
-- No architecture or product claim follows merely because a mathematical result is interesting.
-- Superseded mathematics is archived rather than deleted.
 
 ## Repository map
 
@@ -27,16 +25,6 @@ The repository is deliberately separate from Writ. Kahneman Lab tests mathematic
 - [`experiments/kl5/`](experiments/kl5/) — frozen KL5 preregistration and Stage R report; stopped at `KL5_STOP_DEGENERATE`.
 - [`experiments/kl6/`](experiments/kl6/) — compact ledger record of the analytic KL6 closure and post-KL6 frontier disposition.
 - [`LEGACY_ARCHIVE_STATUS.md`](LEGACY_ARCHIVE_STATUS.md) — source-migration status for earlier KL2–KL3 materials.
-
-## Current research status
-
-The KL2 architecture campaign is closed. Existing mathematics solved the finite problems tested; D1 survives only as a narrow correctness discipline, not a demonstrated architecture winner.
-
-KL3v2 retired D as a distinct preparation methodology. KL4 established exact results about information value, decision stability, query-relative sufficiency, and sequential observation. KL5 and KL6 then closed the `C_*` / S04 sequential-compression branch: `C_*` is too weak, while S04 is sufficient on its registered domain only because it reconstructs the labeled observation kernel.
-
-The post-KL6 mathematical frontier audit ended with `FRONTIER_STOP_EXISTING_THEORY_SUFFICES`. General exact/approximate preservation and bounded-error guarantees are not missing foundations. A narrower representation-economy question can still be studied when a real query family makes it useful.
-
-The broader programme is therefore reopened at the level of **decision problems**, not another architecture rescue. Search for a bounded domain of demonstrated competence; allow mathematics, computation, decision science, institutional theory, or another rigorous method to earn its place through results.
 
 ## Writ transfer boundary
 
