@@ -39,7 +39,14 @@ jobs:
           decode KL4-P .archive-payload/kl4_packet.gz.b64 experiments/kl4/RUN_THIS_NEXT_KAHNEMAN_LAB_4_PARALLEL.md
           decode KL4-A .archive-payload/kl4A.gz.b64 experiments/kl4/kahneman_lab_4A_information_vs_decision_value.md
           decode KL4-B .archive-payload/kl4B.gz.b64 experiments/kl4/kahneman_lab_4B_deep_uncertainty_stability.md
-          decode KL4-C .archive-payload/kl4C.gz.b64 experiments/kl4/kahneman_lab_4C_query_sufficiency_quotients.md
+
+          echo "Decoding KL4-C from verified split payload"
+          cat .archive-payload/kl4C.part00 .archive-payload/kl4C.part01 \
+            | base64 --decode \
+            | gzip --decompress --stdout \
+            > experiments/kl4/kahneman_lab_4C_query_sufficiency_quotients.md
+          echo "Decoded KL4-C: $(wc -c < experiments/kl4/kahneman_lab_4C_query_sufficiency_quotients.md) bytes"
+
           decode KL4-D .archive-payload/kl4D.gz.b64 experiments/kl4/kahneman_lab_4D_stop_or_observe.md
 
           echo "Decoding KL4-S from split payload"
