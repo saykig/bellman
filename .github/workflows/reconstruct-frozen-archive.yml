@@ -28,27 +28,34 @@ jobs:
           mkdir -p experiments/kl4 experiments/kl5
 
           decode() {
-            local src="$1"
-            local dst="$2"
+            local label="$1"
+            local src="$2"
+            local dst="$3"
+            echo "Decoding ${label} from ${src} ($(wc -c < "$src") bytes)"
             base64 --decode "$src" | gzip --decompress --stdout > "$dst"
+            echo "Decoded ${label}: $(wc -c < "$dst") bytes"
           }
 
-          decode .archive-payload/kl4_packet.gz.b64 experiments/kl4/RUN_THIS_NEXT_KAHNEMAN_LAB_4_PARALLEL.md
-          decode .archive-payload/kl4A.gz.b64 experiments/kl4/kahneman_lab_4A_information_vs_decision_value.md
-          decode .archive-payload/kl4B.gz.b64 experiments/kl4/kahneman_lab_4B_deep_uncertainty_stability.md
-          decode .archive-payload/kl4C.gz.b64 experiments/kl4/kahneman_lab_4C_query_sufficiency_quotients.md
-          decode .archive-payload/kl4D.gz.b64 experiments/kl4/kahneman_lab_4D_stop_or_observe.md
+          decode KL4-P .archive-payload/kl4_packet.gz.b64 experiments/kl4/RUN_THIS_NEXT_KAHNEMAN_LAB_4_PARALLEL.md
+          decode KL4-A .archive-payload/kl4A.gz.b64 experiments/kl4/kahneman_lab_4A_information_vs_decision_value.md
+          decode KL4-B .archive-payload/kl4B.gz.b64 experiments/kl4/kahneman_lab_4B_deep_uncertainty_stability.md
+          decode KL4-C .archive-payload/kl4C.gz.b64 experiments/kl4/kahneman_lab_4C_query_sufficiency_quotients.md
+          decode KL4-D .archive-payload/kl4D.gz.b64 experiments/kl4/kahneman_lab_4D_stop_or_observe.md
 
+          echo "Decoding KL4-S from split payload"
           cat .archive-payload/kl4S.part00 .archive-payload/kl4S.part01 \
             | base64 --decode \
             | gzip --decompress --stdout \
             > experiments/kl4/kahneman_lab_4S_parallel_synthesis.md
+          echo "Decoded KL4-S: $(wc -c < experiments/kl4/kahneman_lab_4S_parallel_synthesis.md) bytes"
 
+          echo "Decoding KL5-P from split payload"
           cat .archive-payload/kl5.part00 .archive-payload/kl5.part01 \
               .archive-payload/kl5.part02 .archive-payload/kl5.part03 \
             | base64 --decode \
             | gzip --decompress --stdout \
             > experiments/kl5/RUN_THIS_NEXT_KAHNEMAN_LAB_5_SEQUENTIAL_SUFFICIENCY.md
+          echo "Decoded KL5-P: $(wc -c < experiments/kl5/RUN_THIS_NEXT_KAHNEMAN_LAB_5_SEQUENTIAL_SUFFICIENCY.md) bytes"
 
           cat > /tmp/kahneman-lab-checksums <<'EOF'
           d8206786bd7d07f3f92c4568ae4cc3f7c088aca8089a5a6d75f2f0b7bb4238ad  experiments/kl4/RUN_THIS_NEXT_KAHNEMAN_LAB_4_PARALLEL.md
