@@ -41,7 +41,10 @@ jobs:
           decode KL4-B .archive-payload/kl4B.gz.b64 experiments/kl4/kahneman_lab_4B_deep_uncertainty_stability.md
 
           echo "Decoding KL4-C from verified split payload"
-          cat .archive-payload/kl4C.part00 .archive-payload/kl4C.part01 \
+          cat .archive-payload/kl4C.part00 \
+              .archive-payload/kl4C.tail00 \
+              .archive-payload/kl4C.tail01 \
+              .archive-payload/kl4C.tail02 \
             | base64 --decode \
             | gzip --decompress --stdout \
             > experiments/kl4/kahneman_lab_4C_query_sufficiency_quotients.md
