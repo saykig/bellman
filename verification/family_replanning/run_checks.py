@@ -5,12 +5,14 @@ import os
 import platform
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = "81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe"
+BASE = "26404658b1b2215e0097a2f4873d18ff294d3b39"
 REVIEWED_PR8 = "59da8f5b9d57afbe2b8c31e78886378f4f456bec"
+PR8_MERGE = "81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe"
 
 
 def need(ok, message):
@@ -39,18 +41,46 @@ def run():
     need(observations[0]["failed"] == observations[1]["failed"] == 0,
          "failed family-replanning checks")
 
-    raw, preservation_seconds = call([
-        "verification/persistent_model_families/run_checks.py"
-    ])
+    persistent_observations = []
+    for flags in ([], ["-O"]):
+        raw, _ = call(flags + ["verification/persistent_model_families/checks.py"])
+        persistent_observations.append(json.loads(raw))
+    need(persistent_observations[0]["results"] == persistent_observations[1]["results"] and
+         persistent_observations[0]["rejections"] ==
+         persistent_observations[1]["rejections"],
+         "current persistent-family normal and optimized observations differ")
+
+    # Later steering documents changed AGENTS.md after PR8, so PR8's own historical-byte
+    # runner is executed at its exact merge commit in a temporary local clone. Current
+    # inherited source preservation is checked independently below against the current base.
+    started = time.perf_counter()
+    with tempfile.TemporaryDirectory() as temporary:
+        subprocess.check_call(["git", "clone", "--quiet", "--no-local", str(ROOT), temporary])
+        subprocess.check_call(["git", "checkout", "--quiet", PR8_MERGE], cwd=temporary)
+        raw = subprocess.check_output([
+            sys.executable, "verification/persistent_model_families/run_checks.py"
+        ], cwd=temporary, env=environment, text=True)
+    preservation_seconds = time.perf_counter() - started
     persistent = json.loads(raw.split("PERSISTENT_FAMILY_RESULT_BEGIN\n", 1)[1]
                             .split("\nPERSISTENT_FAMILY_RESULT_END", 1)[0])
 
-    need(subprocess.run(["git", "merge-base", "--is-ancestor", REVIEWED_PR8, BASE],
+    need(subprocess.run(["git", "merge-base", "--is-ancestor", REVIEWED_PR8, PR8_MERGE],
                         cwd=ROOT).returncode == 0,
-         "reviewed PR8 head is not an ancestor of the base")
-    need(subprocess.run(["git", "diff", "--quiet", REVIEWED_PR8, BASE, "--"],
+         "reviewed PR8 head is not an ancestor of its merge")
+    need(subprocess.run(["git", "diff", "--quiet", REVIEWED_PR8, PR8_MERGE, "--"],
                         cwd=ROOT).returncode == 0,
          "PR8 merge tree differs from the reviewed head")
+    need(subprocess.run(["git", "merge-base", "--is-ancestor", PR8_MERGE, BASE],
+                        cwd=ROOT).returncode == 0,
+         "PR8 merge is not an ancestor of the current base")
+    inherited_paths = [
+        "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md",
+        "verification/persistent_model_families",
+        ".github/workflows/persistent-model-families.yml",
+    ]
+    need(subprocess.run(["git", "diff", "--quiet", PR8_MERGE, BASE, "--",
+                         *inherited_paths], cwd=ROOT).returncode == 0,
+         "reviewed PR8 sources changed on the current base")
     paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", BASE],
                                     cwd=ROOT, text=True).splitlines()
     mutable = ("README.md", "SUBSTRATE_LEDGER.md", "FINDINGS_LEDGER.md")
@@ -73,6 +103,7 @@ def run():
     result = {
         "base_commit": BASE,
         "reviewed_pr8_head": REVIEWED_PR8,
+        "pr8_merge_commit": PR8_MERGE,
         "executed_commit": subprocess.check_output(["git", "rev-parse", "HEAD"],
                                                     cwd=ROOT, text=True).strip(),
         "runtime": platform.python_version(),
@@ -89,10 +120,13 @@ def run():
         },
         "historical_files_preserved": True,
         "pr8_merge_tree_matches_reviewed_head": True,
+        "pr8_sources_unchanged_on_current_base": True,
         "preservation_seconds": preservation_seconds,
         "preservation": {
-            "persistent_passed_per_mode": persistent["passed_per_mode"],
-            "persistent_rejections_per_mode": persistent["rejections_per_mode"],
+            "persistent_passed_per_mode": persistent_observations[0]["passed"],
+            "persistent_rejections_per_mode": persistent_observations[0]["rejections"],
+            "current_persistent_normal_optimized_equal": True,
+            "inherited_runner": "passed-at-pinned-pr8-merge",
             "accumulation_passed_per_mode":
                 persistent["preservation"]["accumulation_passed_per_mode"],
             "transport_passed_per_mode":

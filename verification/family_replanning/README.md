@@ -8,10 +8,13 @@ Run from the repository root with the existing Python runtime:
 PYTHONDONTWRITEBYTECODE=1 python3 verification/family_replanning/run_checks.py
 ```
 
-The runner executes R1–R8 normally and with `-O`, compares their exact observations, invokes the
-unchanged persistent-family preservation chain, verifies that PR8's merge tree equals its reviewed
-head, and checks every pre-existing file at the pinned base. Historical files must remain
-byte-identical; only README and the cumulative ledgers may receive their append-only entries.
+The runner executes R1–R8 normally and with `-O`, compares their exact observations, reruns the
+current inherited persistent-family cases, and invokes PR8's unchanged preservation chain at PR8's
+pinned merge in a temporary local clone. This avoids misclassifying a later authorized `AGENTS.md`
+steering addition as a historical PR8 source change. It verifies that PR8's merge tree equals its
+reviewed head, that the inherited PR8 sources are unchanged on the current base, and that every
+pre-existing file at that current base is preserved. Only README and the cumulative ledgers may
+receive their append-only entries.
 
 `replanning.py` imports the existing ordinary, accumulation, transport, and persistent-family
 types and consumers. A request binds one ordered family, common baseline and replacement policies,

@@ -2,10 +2,12 @@
 
 **7 September 2026. Additive finite construction; no novelty claim.**
 
-Base: main commit `81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe`, the merge of PR8.
-The reviewed PR8 head `59da8f5b9d57afbe2b8c31e78886378f4f456bec` is an ancestor of that
-commit and has the same file tree. PR8 and all earlier mathematics, results, reviews, and historical
-evidence remain unchanged.
+Base: main commit `26404658b1b2215e0097a2f4873d18ff294d3b39`. The reviewed PR8 head
+`59da8f5b9d57afbe2b8c31e78886378f4f456bec` is an ancestor of its merge commit
+`81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe`, and those two commits have the same file tree. Later
+programme-steering additions on main are retained; the PR8 mathematical companion, reference,
+checks, result, README, and workflow are unchanged at this base. PR8 and all earlier mathematics,
+results, reviews, and historical evidence remain unchanged.
 
 This construction answers one question: after replacing one common policy's continuation below an
 observed history, do supplied certificates establish that a named ex-ante root cap still holds in
