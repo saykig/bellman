@@ -1,0 +1,133 @@
+{
+  "base_commit": "9761cd0ce99be6fb6b2dcddc89951960a4a0df34",
+  "executed_commit": "d1d18ecd94a41e7611eae45575733e76f2004dd8",
+  "execution": "GitHub Actions",
+  "failed": 0,
+  "historical_files_preserved": true,
+  "limitations": [
+    "Finite analytical proofs and fixed cases, not formal verification or empirical coverage.",
+    "Shared Fraction arithmetic and authorship; the forward oracle is a separate calculation path.",
+    "Deterministic policies only; no prior, randomized-policy optimum or dynamic-consistency claim."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 11,
+  "pr7_merge_tree_matches_reviewed_head": true,
+  "preservation": {
+    "accumulation_passed_per_mode": 11,
+    "accumulation_rejections_per_mode": 28,
+    "historical_joint_law_observations_and_certificates_equal": true,
+    "joint_law_passed_per_mode": 19,
+    "pr4_repair_passed_per_mode": 13,
+    "sequential_passed_per_mode": 17,
+    "transport_passed_per_mode": 16,
+    "transport_rejections_per_mode": 49
+  },
+  "preservation_seconds": 2.5426094090000007,
+  "rejections_per_mode": 19,
+  "results": [
+    {
+      "actual_worst_regret": 2,
+      "case": "F1_pair_before_aggregation",
+      "rejected_cross_model_bound": "0",
+      "status": "PASS"
+    },
+    {
+      "case": "F2_explicit_criteria_choose_differently",
+      "status": "PASS",
+      "worst_loss_winner": "b",
+      "worst_regret_winner": "a"
+    },
+    {
+      "case": "F3_hidden_model_oracle_rejected",
+      "deterministic_value": 1,
+      "separate_randomized_context_value": "1/2",
+      "status": "PASS"
+    },
+    {
+      "case": "F4_observed_signal_support_filter",
+      "excluded_at_L": [
+        "m2"
+      ],
+      "retained_at_L": [
+        "m1"
+      ],
+      "shared_policy_costs": [
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "F5_model_fixed_between_dates",
+      "rowwise_rectangularized_value": 2,
+      "status": "PASS",
+      "whole_episode_worst": 1
+    },
+    {
+      "case": "F6_coverage_and_subset_scope",
+      "full_optimum": 0,
+      "status": "PASS",
+      "subset_optimum": 1
+    },
+    {
+      "case": "F7_accumulate_only_within_models",
+      "family_worst_regret": 2,
+      "modelwise_gaps": [
+        2,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "L_retained": [
+        "m1"
+      ],
+      "M_retained": [
+        "m1",
+        "m2"
+      ],
+      "case": "F8_nontrivial_sequential_family",
+      "minimum_worst_loss": 0,
+      "minimum_worst_regret": 1,
+      "policies": 16,
+      "regret_ties": 4,
+      "status": "PASS"
+    },
+    {
+      "case": "exact_inputs_limits_and_immutable_requests",
+      "derived_bits": 1026,
+      "named_policy_bound_preserved": true,
+      "refused_full_policy_count": 256,
+      "status": "PASS"
+    },
+    {
+      "case": "zero_horizon_singleton_and_one_model_reduction",
+      "status": "PASS",
+      "terminal_value": -2
+    },
+    {
+      "case": "receivers_run_with_candidate_producers_disabled",
+      "status": "PASS"
+    }
+  ],
+  "reviewed_pr7_head": "5c567646e0dec648bfdc9302025b495e8afaeb6e",
+  "runtime": "3.12.3",
+  "seconds_by_mode": [
+    0.16393598900000228,
+    0.45667512800000054
+  ],
+  "source_sha256": {
+    ".github/workflows/persistent-model-families.yml": "746cc783e2aac98bb44946271e5afb90ca9cd759916fa8bd4a3bb2450d4178e5",
+    "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md": "38a461556da18e977c623404bec16a056013019daeb74adb7207bc0f313d749e",
+    "verification/persistent_model_families/README.md": "36d248793e13d1cc7067d30575f9e20987dff8764f52c41d29e2da696ff72c14",
+    "verification/persistent_model_families/checks.py": "93c82fc2eb48ebc72237426e64f1b938ae69f7867380d2ad53092a755de2a3ae",
+    "verification/persistent_model_families/families.py": "8b1c21db69f22dd1a7081d9a9a108582bf7c0ec5d3d9bfd313dcc798cc5f7c57",
+    "verification/persistent_model_families/run_checks.py": "5838b7df473e4adca195d3572e54bc05ed74a3c0888e3927c8ecc35ffa9b974a"
+  },
+  "workflow_job_id": 101828988753,
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34149637284"
+}
