@@ -1,0 +1,239 @@
+{
+  "additional_prompt_cases": {
+    "normal_and_optimized_reproduced": [
+      "N=2**54+1 linear false float membership despite exact Farkas -1",
+      "false common decision over empty original model",
+      "false original_nonempty through impossible_event",
+      "clearing polynomial list promotes outer_attained_only to original_attained"
+    ],
+    "pinned_source": "26c33ca45eaae4db31530f47e816687ac0d372cb02ea3ea7abece815e149a1d2"
+  },
+  "existing_module": {
+    "failed": 0,
+    "observations_and_certificates_equal_historical": true,
+    "passed_cases": 19,
+    "runtime_and_source_metadata_not_relabelled_as_historical": true
+  },
+  "limits": [
+    "Shared Python Fraction arithmetic; not formal proof verification or empirical premise validation.",
+    "Pinned historical probe is expected to reject repaired bytes; its guard is unchanged.",
+    "Historical outputs/manifests remain tied to starting commit; new source identities are separate."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "pinned_supplied_probe": {
+    "controls": 3,
+    "defect_paths": 6,
+    "groups": 9,
+    "observations": [
+      {
+        "classification": "DEFECT_REPRODUCED",
+        "epsilon": "1/1152921504606846976",
+        "exact_point_is_member": false,
+        "float_point_is_member": true,
+        "helper_float_rejection": "rational input required; floats/bools excluded",
+        "name": "R1a_original_membership_float_rounding",
+        "original_domain": "empty: p0=1/2 and p0=1/2+1/2^60 cannot both hold"
+      },
+      {
+        "classification": "CONTROL_PASSED",
+        "name": "bound_alone_does_not_infer_existence",
+        "result": {
+          "direction": "max",
+          "status": "bound_only_nonemptiness_unestablished",
+          "value": "-1/1"
+        }
+      },
+      {
+        "classification": "DEFECT_REPRODUCED",
+        "exact_original_nonemptiness": false,
+        "exact_point_refused": true,
+        "name": "R1b_decide_unconditional",
+        "result": {
+          "common_optimal_action": "a0",
+          "complete_minimizing_set": [
+            "a0"
+          ],
+          "uniformly_strict_against_other_actions": true,
+          "upper_differences": {
+            "a1": "-1/1"
+          }
+        }
+      },
+      {
+        "classification": "DEFECT_REPRODUCED",
+        "exact_original_nonemptiness": false,
+        "exact_point_refused": true,
+        "name": "R1b_decide_conditional",
+        "result": {
+          "common_optimal_action": "a0",
+          "complete_minimizing_set": [
+            "a0"
+          ],
+          "uniformly_strict_against_other_actions": true,
+          "upper_differences": {
+            "a1": "-1/1"
+          }
+        }
+      },
+      {
+        "classification": "DEFECT_REPRODUCED",
+        "exact_original_nonemptiness": false,
+        "name": "R1c_fixed_minimizing_set_float_witness",
+        "result": {
+          "complete_minimizing_set": [
+            "a0"
+          ]
+        }
+      },
+      {
+        "actual_original_nonempty": false,
+        "classification": "DEFECT_REPRODUCED",
+        "name": "R1d_impossible_event_false_original_nonemptiness",
+        "result": {
+          "original_nonempty": true,
+          "status": "impossible_conditioning"
+        }
+      },
+      {
+        "classification": "CONTROL_PASSED",
+        "name": "exact_decision_and_certificate_float_rejection",
+        "result": {
+          "common_optimal_action": "a0",
+          "complete_minimizing_set": [
+            "a0"
+          ],
+          "uniformly_strict_against_other_actions": true,
+          "upper_differences": {
+            "a1": "-1/1"
+          }
+        }
+      },
+      {
+        "classification": "DEFECT_REPRODUCED",
+        "decide_returns": {
+          "common_optimal_action": "a0",
+          "complete_minimizing_set": [
+            "a0"
+          ],
+          "uniformly_strict_against_other_actions": true,
+          "upper_differences": {}
+        },
+        "fixed_minimizing_set_returns": {
+          "complete_minimizing_set": [
+            "a0"
+          ]
+        },
+        "name": "R2_single_action_task_validation_shortcut",
+        "scope": "invalid-task acceptance; no separate false numeric optimum claimed",
+        "task_validator_refuses": true
+      },
+      {
+        "classification": "CONTROL_PASSED",
+        "name": "producer_helpers_disabled",
+        "result": {
+          "common_optimal_action": "a0",
+          "complete_minimizing_set": [
+            "a0"
+          ],
+          "uniformly_strict_against_other_actions": true,
+          "upper_differences": {
+            "a1": "-1/1"
+          }
+        }
+      }
+    ],
+    "observations_agree_across_modes": true
+  },
+  "portable_author": {
+    "archive_integrity_passed": true,
+    "match_frozen": true,
+    "mathematical_groups": 17
+  },
+  "portable_buildout_reviewer": {
+    "failed": 0,
+    "not_run": 1,
+    "passed": 18,
+    "reason": "optional packet-integrity ZIP absent; mathematical groups passed"
+  },
+  "repair_regressions": {
+    "failed": 0,
+    "observations_agree_across_modes": true,
+    "passed_cases": 13,
+    "results": [
+      {
+        "case": "original_membership_and_polynomial_reject_inexact_witnesses",
+        "false_exact_witness": false,
+        "status": "PASS"
+      },
+      {
+        "case": "empty_original_decision_paths_False",
+        "original_nonemptiness_established": false,
+        "outer_bound": -1,
+        "status": "PASS"
+      },
+      {
+        "case": "empty_original_decision_paths_True",
+        "original_nonemptiness_established": false,
+        "outer_bound": -1,
+        "status": "PASS"
+      },
+      {
+        "case": "impossible_conditioning_requires_true_original_nonemptiness",
+        "status": "PASS"
+      },
+      {
+        "case": "full_subject_validation_before_single_action_shortcuts",
+        "invalid_subjects": 5,
+        "status": "PASS"
+      },
+      {
+        "case": "direct_numeric_helpers_and_equal_but_invalid_certificate_subject",
+        "status": "PASS"
+      },
+      {
+        "case": "deep_subject_and_certificate_snapshot_with_changed_subject_negative_control",
+        "status": "PASS"
+      },
+      {
+        "case": "dual_and_linear_system_container_snapshot",
+        "status": "PASS"
+      },
+      {
+        "case": "derived_witness_not_subject_to_input_coefficient_bit_limit",
+        "inverse_scale_bits": 301,
+        "status": "PASS"
+      },
+      {
+        "case": "prompt_linear_contradiction_all_original_witness_routes",
+        "farkas_bound": -1,
+        "status": "PASS"
+      },
+      {
+        "case": "prompt_cleared_term_list_cannot_promote_original_membership",
+        "status": "PASS"
+      },
+      {
+        "case": "prompt_500_bit_transformed_point_positive_control",
+        "scale_bits": 501,
+        "status": "PASS"
+      },
+      {
+        "case": "valid_exact_consumer_without_producer",
+        "status": "PASS"
+      }
+    ]
+  },
+  "runtime": "CPython 3.9.6; existing runtime, no installation",
+  "source_sha256": {
+    "reviews/PR4_REVIEW.md": "abb94dd1bb251ff909ee8a06a00f341bde3b2334c13981ebc795ef36a4784d5a",
+    "reviews/RUN_THIS_NEXT_PR4_REPAIR_AND_ARCHIVE.md": "852679e9ef45ba8e71f0a902d081947e101cc32fa281666b3b5be3d4e6a2bf01",
+    "verification/joint_law_completion/joint_law.py": "ade9182eb5d3daca2f6811968140c33cbcbfd81058c3c1e8cbf3528dff403014",
+    "verification/joint_law_completion/module_checks.py": "718acc28804da3f20bf9ba4fd696fe19c5f0dbfd54cbf17838869ef7a35f11a7",
+    "verification/pr4_repair/pr4_review_probe.py": "c2010310a9e301dae102f99edb0578c48368fc1e7970bc0af8b8546c44b520a1",
+    "verification/pr4_repair/repair_checks.py": "3ac158bf0e0763602c056d71377dc4a2c2922ca9a154b83ab3ba35579deb4704"
+  },
+  "starting_commit": "81fbcc4d503275f091c8c31588ac02d3abf14466"
+}

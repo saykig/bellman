@@ -81,3 +81,11 @@ The broader programme remains open. The next phase should search for bounded dec
 **Status:** foundation assembled and clarified; mathematical development continues. See [`SUBSTRATE_LEDGER.md`](SUBSTRATE_LEDGER.md).
 
 v1 assembled seven connected components. Its adversarial review led to v1.1's focused clarification of exact versus outer model sets, approximation/support premises, computed margins, and constructive decoders. v1.1 is a working foundation, not finished Bellman mathematics. The completed initial build-out adds constructive procedures and deeper composition using established mathematics, with bounded illustrative checks. Exact available sources are archived; missing v1 and historical verification originals remain explicit gaps. `finite-one-observation.v1` in the external Decision Lab is the first executable slice, not the mathematical ceiling or an accepted Writ integration. Historical experiment conclusions remain unchanged.
+
+## Focused joint-law constructive completion
+
+An additive [revision](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) completes bounded finite rational compatibility → conditional identification → decision certificates, with exact primal/dual and Farkas checking and explicit outer-domain and unfinished outcomes. A checked sharper conditioning bound supplements the unchanged historical bound. Original author evidence was reproduced; reviewer and new fixed cases passed within their documented scope. This is research-reference completion, not general solver or Writ acceptance; see the substrate ledger for active obligations and source gaps. Historical experiment dispositions are unchanged.
+
+## PR4 exact-reference boundary correction
+
+Confirmed false original-witness acceptance from floating-point arithmetic, mutable original-constraint aliases, and shortcut task-validation gaps. Scoped code repairs and decisive controls restore the advertised exact semantics; no correct theorem was rewritten. Earlier frozen evidence remains historical. See the [repair record](verification/pr4_repair/README.md) for source identities, current verification, and limits.

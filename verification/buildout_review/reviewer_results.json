@@ -1,0 +1,284 @@
+{
+  "failed": 0,
+  "harness_sha256": "55c9fb770e1959c9be3d65ee517fb628b25e940148194e414027043b63aa9486",
+  "not_run": 0,
+  "optimized": 0,
+  "passed": 19,
+  "python": "3.13.5",
+  "results": [
+    {
+      "details": {
+        "inputs_checked": 8,
+        "scope": "byte identity, not mathematical correctness"
+      },
+      "group": "packet_integrity",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "A_transpose_y": [
+          "2/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "2/1"
+        ],
+        "b_transpose_y": "-1/1",
+        "feasible_vertices": 0,
+        "note": "new certificate, not author witness with -1/2"
+      },
+      "group": "triangle_and_farkas",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "glue_normalized": true,
+        "other_extensions_change_query": [
+          "1/2",
+          "1/1"
+        ]
+      },
+      "group": "gluing_support_and_query_variation",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "outer_candidate_matches_fair_marginals": true,
+        "outer_candidate_violates_original_independence": true
+      },
+      "group": "nonlinear_constraint_and_outer_set",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "lower_dual": [
+          [
+            "4/35",
+            "4/35",
+            "-3/35",
+            "-4/7"
+          ],
+          [
+            "16/35",
+            "0/1"
+          ]
+        ],
+        "range": [
+          "4/7",
+          "8/11"
+        ],
+        "transformed_extremizers": [
+          [
+            "12/11",
+            "3/11",
+            "2/11",
+            "8/11",
+            "25/11"
+          ],
+          [
+            "12/7",
+            "3/7",
+            "1/7",
+            "4/7",
+            "20/7"
+          ]
+        ],
+        "upper_dual": [
+          [
+            "-8/55",
+            "-8/55",
+            "3/55",
+            "8/11"
+          ],
+          [
+            "0/1",
+            "4/11"
+          ]
+        ]
+      },
+      "group": "conditional_extrema_and_dual_certificates",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "changed_loss_differences": [
+          "-2/11",
+          "2/7"
+        ],
+        "strict_risk_difference_upper": "-1/7",
+        "tie_control_upper": "0/1"
+      },
+      "group": "identified_action_tie_and_changed_query",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "event_possible": false,
+        "transformed_feasible": false,
+        "unconditional_compatible": true
+      },
+      "group": "zero_probability_conditional_guard",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "cost_error": "0/1",
+        "necessary_benchmark_gap": "100/1",
+        "regret": "100/1"
+      },
+      "group": "missing_policy_lift_coverage",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "joined_prediction_risks": [
+          0,
+          "1/2"
+        ],
+        "nonzero_deficiency_exact": "1/2"
+      },
+      "group": "simulator_nonzero_gap_and_context",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "actual_max_discrepancy": "4697/10800",
+        "fixed_policies": 38,
+        "transferred_regret": "0/1",
+        "uniform_error_bound": "299/360"
+      },
+      "group": "signed_adaptive_stopping_product_bound",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "nominal_costs": [
+          "1/2",
+          "1/2"
+        ],
+        "nominal_optimum_transfer_regret": "1/200",
+        "rare_event_mass": "1/200",
+        "regret_bound": "1/50",
+        "surrogate_posterior": "undefined",
+        "true_policy_costs": [
+          "1/2",
+          "99/200"
+        ]
+      },
+      "group": "off_support_legal_completion",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "actual_conditional_TV": "2/5",
+        "draft_radius": "4/5",
+        "joint_TV": "1/10",
+        "sharper_radius": "2/5",
+        "unequal_mass_conditional_TV": "1/6"
+      },
+      "group": "conditioning_sharp_bound",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "abstract_states": 2,
+        "fixed_Markov_plans_checked": 512,
+        "original_states": 3,
+        "root_values": [
+          "17/64",
+          "17/64",
+          "-1/1"
+        ]
+      },
+      "group": "backward_partition_and_policy_values",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "alpha": [
+          "409/252",
+          "155/126",
+          "95/126",
+          "1/9"
+        ],
+        "root_error": "34/63"
+      },
+      "group": "controlled_value_transfer",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "greedy_actual_root_regrets": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "greedy_regret_bound": "1321/840",
+        "note": "new fixed MDP, not author 63/80 or 7/64 instance",
+        "positive_control_bound": "1/5",
+        "positive_greedy_regret_control": "1/10",
+        "residuals": [
+          "49/240",
+          "11/40",
+          "23/140",
+          "1/7"
+        ],
+        "telescoping_regret": "591/256"
+      },
+      "group": "residual_and_local_regret",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "fixed_total": 1,
+        "persistent_vs_resampled_11": [
+          "1/2",
+          "1/4"
+        ],
+        "rectangular_total": 2,
+        "robust_optimum": "1/2"
+      },
+      "group": "robust_mixture_and_model_persistence",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "first_100_alpha_allocation": "5/101",
+        "inward_rounding_loses_coverage_event_inclusion": true,
+        "scope": "no empirical coverage experiment or certified log/sqrt routine",
+        "tail_alpha": "1/2020"
+      },
+      "group": "statistical_allocation_and_safe_outer_rounding",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "constrained_mix_cost": "1/1",
+        "constrained_mix_hazard": "1/20",
+        "cvar_0_95": [
+          "20/1",
+          "2/1"
+        ],
+        "means": [
+          "1/1",
+          "2/1"
+        ]
+      },
+      "group": "tail_and_constrained_randomization",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "interventional_probability": "1/2",
+        "observational_probability": "9/10",
+        "scope": "supplied causal model, not graph discovery or data verification"
+      },
+      "group": "causal_adjustment_control",
+      "status": "PASS"
+    }
+  ],
+  "scope": "new fixed reviewer examples; not the original harness, production tests, general LP solver, or formal proof"
+}

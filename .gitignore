@@ -1,0 +1,15 @@
+# Disposable local execution material; curated source and JSON evidence stay tracked.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.zip
+build/
+dist/
+node_modules/
