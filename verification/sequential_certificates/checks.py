@@ -181,7 +181,15 @@ def main():
     posterior=sum(p for (theta,x,y),p in joint.items() if x==0 and theta==1)/mass
     prediction=sum(p for (theta,x,y),p in joint.items() if x==0 and y==0)/mass
     require(posterior==F(1,2) and prediction==1,"retain history for dependent observations")
-    record("hidden_state_conditioning_retains_predictive_history",posterior=posterior,next_zero_given_first_zero=prediction)
+    # Selecting a later action based on X must not replace its chronological likelihood.
+    controlled={(0,0):F(3,8),(0,1):F(1,8),(1,0):F(1,8),(1,1):F(3,8)}
+    selected_mass=controlled[0,0]+controlled[1,0]
+    true_posterior=controlled[1,0]/selected_mass
+    selected_likelihoods=(controlled[0,0]/controlled[0,0],controlled[1,0]/controlled[1,0])
+    naive=selected_likelihoods[1]/sum(selected_likelihoods)
+    chronological=F(1,4)/(F(3,4)+F(1,4))
+    require(true_posterior==chronological==F(1,4) and naive==F(1,2),"adaptive selection likelihood control")
+    record("hidden_state_conditioning_retains_predictive_history",posterior=posterior,next_zero_given_first_zero=prediction,adaptive_correct_posterior=true_posterior,selected_action_naive_posterior=naive)
 
     for x in (0.5,True):
         rejects(lambda:r.Action("a",x))

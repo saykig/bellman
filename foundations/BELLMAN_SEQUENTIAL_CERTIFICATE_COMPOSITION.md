@@ -23,11 +23,12 @@ The subject contains its name, horizon, unit, premise labels, ordered histories,
 
 In a static hidden-state observation model with known prior \(b_0(\theta)\), at a positive-probability observed history \(h\),
 \[
- b_h(\theta)=\frac{b_0(\theta)P(x_{1:t}\mid\theta,a_{0:t-1})}
- {\sum_{\vartheta}b_0(\vartheta)P(x_{1:t}\mid\vartheta,a_{0:t-1})}.
+ \Lambda_h(\theta)=\prod_{k=0}^{t-1}K_{h_k}(o_{k+1}\mid\theta,a_k),
+ \qquad b_h(\theta)=\frac{b_0(\theta)\Lambda_h(\theta)}
+ {\sum_{\vartheta}b_0(\vartheta)\Lambda_h(\vartheta)}.
 \tag{S1}
 \]
-The conditional observation kernel is \(K_h(o\mid\theta,a)\), so
+Here the past actions are those of the same legal deterministic history rule, and the likelihood is a chronological product of the controlled conditional kernels. This chain rule does not assume independent observations. It is not the observational likelihood obtained by conditioning on the event that an adaptive policy selected the whole action sequence; that selection can itself reveal observations and change normalization. The conditional observation kernel is \(K_h(o\mid\theta,a)\), so
 \[
  p(o\mid h,a)=\sum_\theta b_h(\theta)K_h(o\mid\theta,a),
  \quad
@@ -39,6 +40,8 @@ only at positive denominator. A terminal decision has conditional cost
 \(c(h,a)=\sum_\theta b_h(\theta)L_h(a,\theta)\); an observation can instead have a supplied fee. More general random immediate costs are replaced by their conditional means for this expected additive criterion. The required prediction and cost laws must come from one chronologically consistent **controlled** model. An observational joint law does not, merely by conditioning on selected actions, supply an intervention model.
 
 Conditional independence is not needed for a fully supplied history tree. It is needed to replace history-dependent \(K_h\) by repeated draws from one stationary channel in B13. For a simple failure of posterior-only prediction, let \(\theta\) be an independent fair bit and let reports satisfy \(X_2=X_1\), with \(X_1\) fair. After either first report the posterior over \(\theta\) is still \(1/2\), but \(P(X_2=0\mid X_1=0)=1\) and \(P(X_2=0\mid X_1=1)=0\). The old posterior alone cannot supply the next-observation law.
+
+For a separate adaptive-selection control, let the prior be fair, let the first report satisfy P(X=0|theta=0)=3/4 and P(X=0|theta=1)=1/4, and choose the next action LEFT exactly when X=0. On that history the correct posterior P(theta=1|X=0)=1/4. But P(X=0|theta, selected LEFT)=1 for either theta; multiplying these selected-action conditional probabilities by the original prior would incorrectly return 1/2. The chronological likelihood in (S1) retains 3/4 versus 1/4 and gives the correct 1/4. No future information is supplied to the earlier decision.
 
 The checker validates finite probability arithmetic, coverage, and declared information keys. It does not empirically establish that a supplied label really is observable, that a controlled model is correct, or that a loss unit represents warranted preferences. Those remain substantive premises.
 
