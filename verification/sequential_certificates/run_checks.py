@@ -4,6 +4,8 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
 BASE="b1266137f824dc65e614722f1f0592846b915262"
+sys.path.insert(0, str(ROOT))
+from verification.history_migration.checks import verify_historical_tree
 
 def need(ok, why):
     if not ok:
@@ -32,15 +34,7 @@ def run():
     historical=json.loads((ROOT/"verification/joint_law_completion/module_results.json").read_text())
     need(historical["results"]==preservation[0]["joint_law"]["results"],"historical observations changed")
     need(historical["certificates"]==preservation[0]["joint_law"]["certificates"],"historical certificate values changed")
-    tracked=subprocess.check_output(["git","ls-tree","-r","--name-only",BASE],cwd=ROOT,text=True).splitlines()
-    allowed={"README.md","SUBSTRATE_LEDGER.md","FINDINGS_LEDGER.md"}
-    for name in tracked:
-        old=subprocess.check_output(["git","show",BASE+":"+name],cwd=ROOT)
-        now=(ROOT/name).read_bytes()
-        if name not in allowed:
-            need(old==now,"historical file changed: "+name)
-        elif name!="README.md":
-            need(now.startswith(old),"ledger not append-only: "+name)
+    preserved_files=verify_historical_tree(ROOT,BASE)
     source_names=["reference.py","checks.py","run_checks.py"]
     hashes={"verification/sequential_certificates/"+n:hashlib.sha256(Path(__file__).with_name(n).read_bytes()).hexdigest() for n in source_names}
     for name in ("foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md",".github/workflows/sequential-certificates.yml"):
@@ -52,7 +46,8 @@ def run():
             "pr4_repair_passed_per_mode":preservation[0]["pr4_repair"]["passed_cases"],
             "joint_law_passed_per_mode":preservation[0]["joint_law"]["passed_cases"],
             "normal_optimized_observations_equal":True,"historical_joint_law_observations_and_certificates_equal":True,
-            "historical_files_byte_identical":True,"source_sha256":hashes,
+            "historical_files_preserved_through_reviewed_migration":True,
+            "historical_files_checked":preserved_files,"source_sha256":hashes,
             "limits":["Fixed instances, not formal verification or empirical premise validation.",
                       "Producer/checker share Fraction arithmetic and schema; forward path checks are a separate calculation.",
                       "No unavailable historical harness or recovery packet used."]}

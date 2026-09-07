@@ -1,0 +1,33 @@
+{
+  "migration_baseline": "92922ab6604840152ad7f7800969673335748272",
+  "records": [
+    {
+      "old_path": "FINDINGS_LEDGER.md",
+      "old_sha256": "b8f62ce62afd93b43c3dbbd06057f56d0ca8b6e8268153f3a84269d5b0d5ca8d",
+      "new_path": "docs/history/records/FINDINGS_LEDGER.md",
+      "new_sha256": "a3c47d1984069d0d4a5083d9883c805d001c148b24014a2893b2b555af010720",
+      "transformation": "git move plus relative-link depth repair"
+    },
+    {
+      "old_path": "MATH_ARCHIVE_LEDGER.md",
+      "old_sha256": "63e87c67892c033edff1d68452d718dd95f0825d8fa4f203d1dda4459aad1df2",
+      "new_path": "docs/history/records/MATH_ARCHIVE_LEDGER.md",
+      "new_sha256": "63e87c67892c033edff1d68452d718dd95f0825d8fa4f203d1dda4459aad1df2",
+      "transformation": "byte-identical git move"
+    },
+    {
+      "old_path": "SUBSTRATE_LEDGER.md",
+      "old_sha256": "82287bec2cece21cd01784bb126d9c2ca1742508d308414db990a0531f2ff09a",
+      "new_path": "docs/history/records/SUBSTRATE_LEDGER.md",
+      "new_sha256": "f31a2eaa350672d772e6b2150f2cde9f34110c0b7f4d33a67b7c67b999ed5484",
+      "transformation": "git move plus relative-link depth repair"
+    },
+    {
+      "old_path": "LEGACY_ARCHIVE_STATUS.md",
+      "old_sha256": "a0e6358fe1a844835565dcfb1b121008dc434d58203ef4b66c96f69aa09f5417",
+      "new_path": "docs/history/records/LEGACY_ARCHIVE_STATUS.md",
+      "new_sha256": "a0e6358fe1a844835565dcfb1b121008dc434d58203ef4b66c96f69aa09f5417",
+      "transformation": "byte-identical git move"
+    }
+  ]
+}

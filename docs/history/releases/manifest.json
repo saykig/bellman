@@ -1,0 +1,186 @@
+{
+  "releases": [
+    {
+      "tag": "research/kl-closure",
+      "title": "Kahneman Lab experimental and closure arc",
+      "target_commit": "145dbb17d928ccbe36b6a3454f979fd7dbeb963c",
+      "target_commit_date": "2026-09-06T19:28:32-04:00",
+      "tree_sha": "127e106e54b8c34a32496191fbfcd88867a254da",
+      "release_note_path": "docs/history/releases/kl-closure.md",
+      "release_note_sha256": "a126d4650abf41197b39d25a71a2f6c7f439164c92476cf60b0311e4fdb9237f",
+      "key_artifacts": [
+        {
+          "path": "experiments/kl4/RUN_THIS_NEXT_KAHNEMAN_LAB_4_PARALLEL.md",
+          "sha256": "d8206786bd7d07f3f92c4568ae4cc3f7c088aca8089a5a6d75f2f0b7bb4238ad"
+        },
+        {
+          "path": "experiments/kl4/kahneman_lab_4S_parallel_synthesis.md",
+          "sha256": "f4acd1da28f116764d1a8c5d4a00833691c4ed0f1196b3f1df142ae2b53e3acb"
+        },
+        {
+          "path": "experiments/kl5/RUN_THIS_NEXT_KAHNEMAN_LAB_5_SEQUENTIAL_SUFFICIENCY.md",
+          "sha256": "43bf13e830d72fac72a36f18197b68d3e9465c8692ff9e69370512f88d7636d1"
+        },
+        {
+          "path": "experiments/kl5/kahneman_lab_5R_replication_gate.md",
+          "sha256": "4cd74eef7b2dc6cf8340876aaaba4cdbd90f3010df710d61b0f21440e8effe94"
+        },
+        {
+          "path": "experiments/kl6/README.md",
+          "sha256": "c130474bf80d0429d3c45f0cecbbe43186364b5e504086effdd01bf67e966ba7"
+        }
+      ]
+    },
+    {
+      "tag": "research/substrate-v1.1",
+      "title": "Mathematical substrate v1.1 and initial build-out",
+      "target_commit": "95d0cab3b3e577a0a990c485cc5e1acb4334517b",
+      "target_commit_date": "2026-09-06T23:53:38-04:00",
+      "tree_sha": "e9c0229302fc8bdb591676ff275edfbab2031299",
+      "release_note_path": "docs/history/releases/substrate-v1.1.md",
+      "release_note_sha256": "9a04205b4954b3394293827c4cb3098ab9d82a37637d2cee53f394d9f979b857",
+      "key_artifacts": [
+        {
+          "path": "foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md",
+          "sha256": "91f535d7010fa3bb4e4e1fdab6a1cebd3643f97666e5ba32240c81f264a8597e"
+        },
+        {
+          "path": "reviews/BELLMAN_SUBSTRATE_V1_ADVERSARIAL_REVIEW.md",
+          "sha256": "b8b221715462e05dda5d8ac4a6aa6990e34909dc64bf0e60f181e775067ac309"
+        },
+        {
+          "path": "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md",
+          "sha256": "af631b49c3e411c57dbbc7baa145bdcc337e26f0ac2eebf7fa508ba840111a2e"
+        },
+        {
+          "path": "foundations/SOURCE_MANIFEST.json",
+          "sha256": "a53b73727626e8a36ee4192f5f02d4c468ffbe2ed048c209fdf68b6ed84c4710"
+        },
+        {
+          "path": "verification/substrate_buildout/checks.json",
+          "sha256": "c9d238a7b27dfdf390ebee1b54a44649fb166d5e6dd770acf21a55bccb83e9ea"
+        }
+      ]
+    },
+    {
+      "tag": "research/joint-law-certificates",
+      "title": "Finite joint-law completion and exact-reference repair",
+      "target_commit": "b1266137f824dc65e614722f1f0592846b915262",
+      "target_commit_date": "2026-09-07T01:26:38-04:00",
+      "tree_sha": "785fc30b8d05168c320bfa901dfae07e06f52538",
+      "release_note_path": "docs/history/releases/joint-law-certificates.md",
+      "release_note_sha256": "9f551d54631cea0a8174b385a2529b36ce5bbe9e3bef594904f80b5383f01de3",
+      "key_artifacts": [
+        {
+          "path": "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md",
+          "sha256": "a54dfb0729759f1237817e516faf81e6d07e5907dadd8ddc6f1a1ba0fdaa27db"
+        },
+        {
+          "path": "foundations/BUILDOUT_COMPLETION_MANIFEST.json",
+          "sha256": "3b83fa223f85f2b86fb67d2d9195c9447b8cf494354ec106b2965e0b876b6589"
+        },
+        {
+          "path": "verification/joint_law_completion/module_results.json",
+          "sha256": "14af2b39a494c2cce524c9f1b393de5a1ce4fa94aef2f073cde4a15a5783c99d"
+        },
+        {
+          "path": "reviews/PR4_REVIEW.md",
+          "sha256": "abb94dd1bb251ff909ee8a06a00f341bde3b2334c13981ebc795ef36a4784d5a"
+        },
+        {
+          "path": "verification/pr4_repair/repair_results.json",
+          "sha256": "8307915b1790632406a2fc77652d7850ca878b0c2010c1adf5f5b14d6e37522b"
+        }
+      ]
+    },
+    {
+      "tag": "research/sequential-certificates",
+      "title": "Sequential certificates, transport, and accumulation",
+      "target_commit": "9761cd0ce99be6fb6b2dcddc89951960a4a0df34",
+      "target_commit_date": "2026-09-07T13:21:21-04:00",
+      "tree_sha": "15c4e5f2c9cfaab947f2c2954f017863bd4ea5c8",
+      "release_note_path": "docs/history/releases/sequential-certificates.md",
+      "release_note_sha256": "d207d2a6288c5358b232eb2b2ec0e23357490a210e6e363756d119ff9d383d62",
+      "key_artifacts": [
+        {
+          "path": "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md",
+          "sha256": "a974aa8e9753bcc1a4f5a5cd4d51c88040ae30bc40f98d1e837c71c6d711d0a4"
+        },
+        {
+          "path": "verification/sequential_certificates/results.json",
+          "sha256": "047be866108cf3097e9e4ee598a80a7fb79dd50729b2547aa11af059dda7cd56"
+        },
+        {
+          "path": "foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md",
+          "sha256": "c6d9db76f62783918bbd64b9141095ca0de02f4c2d266db18f42f45e4d8e6253"
+        },
+        {
+          "path": "verification/certificate_transport/results.json",
+          "sha256": "f4b8210d1d287e90d313bacf1e1506ebc6a12b41086abe7b5168c7a97710d834"
+        },
+        {
+          "path": "foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md",
+          "sha256": "9c7e6b21bee9b77b7594b17cbdea094843835fc2da78253bba6e6e14d5eef25f"
+        },
+        {
+          "path": "verification/certificate_accumulation/results.json",
+          "sha256": "9fe6b65bed188ea6f05a6d4cb0fb7a382d21ef68889548a3ad0b438eb11b4896"
+        }
+      ]
+    },
+    {
+      "tag": "research/persistent-model-families",
+      "title": "Persistent model-family certificates and family-aware replanning",
+      "target_commit": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+      "target_commit_date": "2026-09-07T15:50:56-04:00",
+      "tree_sha": "65f95c850d63e10a7a3f78f9c1d3c6b322f0d08d",
+      "release_note_path": "docs/history/releases/persistent-model-families.md",
+      "release_note_sha256": "f392dac2b036d7c979876a0e4f36f6d7212aad2a955d5bbc3936f5ab81a40293",
+      "key_artifacts": [
+        {
+          "path": "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md",
+          "sha256": "38a461556da18e977c623404bec16a056013019daeb74adb7207bc0f313d749e"
+        },
+        {
+          "path": "verification/persistent_model_families/results.json",
+          "sha256": "10778c1e5067fcd77de75036da4f4c27114534bb66b61c8a346c63fe3f4b86d6"
+        },
+        {
+          "path": "foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md",
+          "sha256": "da410d964d2282d75dad1e56be7e6dfdd17c1ee8cc1e4c849f0088b758e03379"
+        },
+        {
+          "path": "verification/family_replanning/results.json",
+          "sha256": "2ff65f8a26c6ac46c37ee4a7a19caaaf0fc3a17179b17a093680e5952e751ba5"
+        }
+      ]
+    },
+    {
+      "tag": "research/anytime-data-decision",
+      "title": "Anytime-valid Bernoulli data-to-decision bridge",
+      "target_commit": "92922ab6604840152ad7f7800969673335748272",
+      "target_commit_date": "2026-09-07T18:43:07-04:00",
+      "tree_sha": "2345b79ccd0bfee81703330506e8c647989ae1f1",
+      "release_note_path": "docs/history/releases/anytime-data-decision.md",
+      "release_note_sha256": "e51f437bebf36d688a3f3df7e8010ab3d2741c2702232357f3a5c14ef28f5fa3",
+      "key_artifacts": [
+        {
+          "path": "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md",
+          "sha256": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2"
+        },
+        {
+          "path": "verification/statistical_decision_bridge/results.json",
+          "sha256": "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13"
+        },
+        {
+          "path": "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md",
+          "sha256": "a06d94d7d6dbc3d388b2e46246be67f1c5d9a21039bea9fca7825601b89c0844"
+        },
+        {
+          "path": "verification/statistical_decision_bridge/acceptance_hardening_results.json",
+          "sha256": "d2bfc1d3fa90a39b87232b479f969cc38c92185f9c5ddedd0657719089cfc783"
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 BASE = "9761cd0ce99be6fb6b2dcddc89951960a4a0df34"
 REVIEWED_PR7 = "5c567646e0dec648bfdc9302025b495e8afaeb6e"
+sys.path.insert(0, str(ROOT))
+from verification.history_migration.checks import verify_historical_tree
 
 
 def need(ok, message):
@@ -47,16 +49,7 @@ def run():
                         cwd=ROOT).returncode == 0, "reviewed PR7 head is not an ancestor of base")
     need(subprocess.run(["git", "diff", "--quiet", REVIEWED_PR7, BASE, "--"],
                         cwd=ROOT).returncode == 0, "PR7 merge base differs from reviewed head tree")
-    paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", BASE],
-                                    cwd=ROOT, text=True).splitlines()
-    mutable = ("README.md", "SUBSTRATE_LEDGER.md", "FINDINGS_LEDGER.md")
-    for path in paths:
-        before = subprocess.check_output(["git", "show", f"{BASE}:{path}"], cwd=ROOT)
-        now = (ROOT / path).read_bytes()
-        if path not in mutable:
-            need(before == now, f"historical change: {path}")
-        elif path.endswith("LEDGER.md"):
-            need(now.startswith(before), f"current pointer/ledger rewrite: {path}")
+    preserved_files = verify_historical_tree(ROOT, BASE)
 
     sources = [
         "verification/persistent_model_families/families.py",
@@ -84,6 +77,7 @@ def run():
             path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest() for path in sources
         },
         "historical_files_preserved": True,
+        "historical_files_checked": preserved_files,
         "pr7_merge_tree_matches_reviewed_head": True,
         "preservation_seconds": preservation_seconds,
         "preservation": {

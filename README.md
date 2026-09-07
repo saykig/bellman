@@ -22,7 +22,7 @@ The [Bellman–Writ Mathematical Transfer Architecture](docs/programme/ARCHITECT
 
 The [focused constructive completion](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) adds finite rational joint-law, conditional-identification, and decision-certificate procedures, a checked conditioning refinement, and [exact verification evidence](verification/joint_law_completion/README.md). The [build-out review](reviews/BELLMAN_BUILDOUT_ADVERSARIAL_REVIEW.md) and original build-out remain unchanged historical inputs. This bounded research reference does not establish a universal solver or engineering acceptance.
 
-The [Substrate Ledger](SUBSTRATE_LEDGER.md) indexes v1, its adversarial review, v1.1, the build-out, verification evidence, and active areas. The original v1 document and its original review harness/results were not available as exact source files for this archival change; their absence is explicit, and no substitutes are presented as originals.
+The [research history](docs/history/README.md) indexes the substrate sequence, experiments, repairs, source gaps, and completed research milestones. The original v1 document and its original review harness/results were not available as exact source files for this archival change; their absence is explicit, and no substitutes are presented as originals.
 
 The [PR4 reference repair](verification/pr4_repair/README.md) records exact-witness, immutable-subject, and complete-task validation fixes. It separates current code/check evidence from the unchanged historical mathematical record.
 
@@ -56,17 +56,14 @@ Writ is the engineering and provenance infrastructure intended to progressively 
 
 - [`docs/programme/ROADMAP.md`](docs/programme/ROADMAP.md) — living programme roadmap, current frontier, redirect rules, and language/tool triggers.
 - [`docs/programme/ARCHITECTURE.md`](docs/programme/ARCHITECTURE.md) — living Bellman–Decision Lab–Writ transfer architecture and maturity model.
-- [`SUBSTRATE_LEDGER.md`](SUBSTRATE_LEDGER.md) — cumulative foundation index, active mathematics, and source gaps.
+- [`docs/history/`](docs/history/README.md) — research milestone releases and detailed cumulative records, including failures, closures, repairs, and source gaps.
 - [`foundations/`](foundations/) — exact North Star, v1.1, completed build-out, and [source manifest](foundations/SOURCE_MANIFEST.json).
 - [`reviews/`](reviews/) — exact substrate adversarial review.
 - [`verification/substrate_v1/`](verification/substrate_v1/) — scope and missing-original status for historical review checks.
 - [`verification/substrate_buildout/`](verification/substrate_buildout/) — frozen illustrative results and portable replay of the build-out calculations.
-- [`FINDINGS_LEDGER.md`](FINDINGS_LEDGER.md) — short cumulative record of what survived, failed, or remains available as a bounded question.
-- [`MATH_ARCHIVE_LEDGER.md`](MATH_ARCHIVE_LEDGER.md) — retired, superseded, or closed mathematical directions kept for provenance.
 - [`experiments/kl4/`](experiments/kl4/) — complete frozen KL4 preregistration, four lane reports, and synthesis.
 - [`experiments/kl5/`](experiments/kl5/) — frozen KL5 preregistration and Stage R report; stopped at `KL5_STOP_DEGENERATE`.
 - [`experiments/kl6/`](experiments/kl6/) — compact ledger record of the analytic KL6 closure and post-KL6 frontier disposition.
-- [`LEGACY_ARCHIVE_STATUS.md`](LEGACY_ARCHIVE_STATUS.md) — source-migration status for earlier KL2–KL3 materials.
 
 ## Writ transfer boundary
 
