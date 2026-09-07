@@ -1,0 +1,25 @@
+name: family-replanning
+
+on:
+  pull_request:
+  push:
+    branches:
+      - codex/family-aware-replanning
+
+permissions:
+  contents: read
+
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact family-replanning and preservation checks
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 verification/family_replanning/run_checks.py
