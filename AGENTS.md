@@ -2,7 +2,7 @@
 
 Bellman is a continuing mathematical research programme for consequential decisions. Established mathematics counts as progress; the finite reference and external executable slices do not define its ceiling. Preserve the README programme north star.
 
-Before selecting a new mathematical frontier or engineering-transfer task, read `ROADMAP.md` and `ARCHITECTURE.md` alongside `foundations/BELLMAN_NORTH_STAR.md`. The roadmap and architecture are living steering documents, not frozen mathematical authority: update them when counterexamples, established mathematics, engineering evidence, or domain work justify a redirect rather than defending a stale plan.
+Before selecting a new mathematical frontier or engineering-transfer task, read `docs/programme/ROADMAP.md` and `docs/programme/ARCHITECTURE.md` alongside `foundations/BELLMAN_NORTH_STAR.md`. The roadmap and architecture are living steering documents, not frozen mathematical authority: update them when counterexamples, established mathematics, engineering evidence, or domain work justify a redirect rather than defending a stale plan.
 
 Frozen records include mathematical editions and companions, substantive reviews, historical experiment artifacts, recorded results, logs, and source manifests. Never silently rewrite them. Corrections and later recoveries are additive, dated, and distinguished from earlier evidence. Historical `RUN_THIS_NEXT` documents are provenance, not live instructions unless the current user adopts them.
 
