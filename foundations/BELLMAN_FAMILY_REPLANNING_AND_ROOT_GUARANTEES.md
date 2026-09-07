@@ -2,7 +2,7 @@
 
 **7 September 2026. Additive finite construction; no novelty claim.**
 
-Base: main commit `26404658b1b2215e0097a2f4873d18ff294d3b39`. The reviewed PR8 head
+Base: main commit `e5324fec7060ec4587d1d48cc63ae797b47946e5`. The reviewed PR8 head
 `59da8f5b9d57afbe2b8c31e78886378f4f456bec` is an ancestor of its merge commit
 `81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe`, and those two commits have the same file tree. Later
 programme-steering additions on main are retained; the PR8 mathematical companion, reference,

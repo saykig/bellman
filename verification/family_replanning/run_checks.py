@@ -10,7 +10,6 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = "26404658b1b2215e0097a2f4873d18ff294d3b39"
 REVIEWED_PR8 = "59da8f5b9d57afbe2b8c31e78886378f4f456bec"
 PR8_MERGE = "81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe"
 
@@ -22,6 +21,8 @@ def need(ok, message):
 
 def run():
     environment = dict(os.environ, PYTHONDONTWRITEBYTECODE="1")
+    base = subprocess.check_output(["git", "merge-base", "HEAD", "origin/main"],
+                                   cwd=ROOT, text=True).strip()
 
     def call(arguments):
         started = time.perf_counter()
@@ -70,7 +71,7 @@ def run():
     need(subprocess.run(["git", "diff", "--quiet", REVIEWED_PR8, PR8_MERGE, "--"],
                         cwd=ROOT).returncode == 0,
          "PR8 merge tree differs from the reviewed head")
-    need(subprocess.run(["git", "merge-base", "--is-ancestor", PR8_MERGE, BASE],
+    need(subprocess.run(["git", "merge-base", "--is-ancestor", PR8_MERGE, base],
                         cwd=ROOT).returncode == 0,
          "PR8 merge is not an ancestor of the current base")
     inherited_paths = [
@@ -78,14 +79,14 @@ def run():
         "verification/persistent_model_families",
         ".github/workflows/persistent-model-families.yml",
     ]
-    need(subprocess.run(["git", "diff", "--quiet", PR8_MERGE, BASE, "--",
+    need(subprocess.run(["git", "diff", "--quiet", PR8_MERGE, base, "--",
                          *inherited_paths], cwd=ROOT).returncode == 0,
          "reviewed PR8 sources changed on the current base")
-    paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", BASE],
+    paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", base],
                                     cwd=ROOT, text=True).splitlines()
     mutable = ("README.md", "SUBSTRATE_LEDGER.md", "FINDINGS_LEDGER.md")
     for path in paths:
-        before = subprocess.check_output(["git", "show", f"{BASE}:{path}"], cwd=ROOT)
+        before = subprocess.check_output(["git", "show", f"{base}:{path}"], cwd=ROOT)
         now = (ROOT / path).read_bytes()
         if path not in mutable:
             need(before == now, f"historical change: {path}")
@@ -101,7 +102,7 @@ def run():
         ".github/workflows/family-replanning.yml",
     ]
     result = {
-        "base_commit": BASE,
+        "base_commit": base,
         "reviewed_pr8_head": REVIEWED_PR8,
         "pr8_merge_commit": PR8_MERGE,
         "executed_commit": subprocess.check_output(["git", "rev-parse", "HEAD"],
