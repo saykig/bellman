@@ -109,3 +109,31 @@ One common deterministic history policy can now be checked across up to four per
 ## Family-aware replanning and root guarantees — 7 September 2026
 
 A complete continuation replacement below one history admits a signed modelwise certificate splice: replacement uppers apply in the subtree, baseline uppers remain elsewhere, and each ancestor receives the exact baseline path mass times the cut-node upper-table change. The old lower comparator remains valid. Root worst-cost and paired-regret caps are checked separately, and preservation is reported only when the submitted baseline already establishes the same cap. Exact policy change uses the distinct S17 occupancy identity; a tighter upper certificate need not mean actual improvement. Conditional preference can conflict with the original root guarantee, and zero-mass conditional exclusions remain present ex ante. Fixed exact checks cover positive, negative, and insufficient-evidence cases without claiming dynamic consistency, model validity, formal verification, or a Writ/Decision Lab transfer.
+
+## Anytime-valid Bernoulli data-to-decision bridge — 7 September 2026
+
+Under an explicit IID Bernoulli fixed-parameter premise, summable exact-binomial tail allocation
+gives simultaneous coverage for every real parameter and every inspection time. Outward rational
+brackets preserve that coverage without additional alpha spending. Affine two-outcome action risks
+reduce exact pairwise maxima to interval endpoints, keeping coverage alpha, numerical precision,
+and loss-unit regret distinct. At 16 all-success observations the checked 16-bit interval
+`[36659/65536,1]` uniquely certifies `predict1` under zero-one loss with minimum advantage
+`3891/32768`; at eight observations the wider interval certifies no common action. Repeated use of
+nominal fixed-time 95% intervals through time 32 excludes `p=1/2` with exact probability
+`8962675/67108864`, while the allocated construction's corresponding authored-case probability is
+`444183/1073741824`. These finite checks do not validate IID sampling or prove superiority. Copied
+dependent data, changed losses, data correction, ties, coarse evidence, and resource refusal retain
+their distinct failure semantics. This is a bounded research reference, not a posterior,
+sequential controller, empirical result, or Writ/Decision Lab transfer.
+
+## PR12 support-contract and CI boundary — 7 September 2026
+
+The three reported certificates beyond 128 observations, four actions, and 64 requested precision
+bits are mathematically valid; the finding was an execution-route mismatch, not a false coverage
+or affine-risk theorem. Receiver entry points now return the same controlled resource refusal as
+producers before expensive arithmetic. The old family-replanning runner also incorrectly treated
+authorized living programme-document edits as mutation of frozen mathematics when run directly on
+every later PR. Maintained live CI now checks current statistical and family sources and invokes
+the complete historical PR #10 runner only at its pinned merge. Negative controls retain failures
+for protected-source/result mutation, an intentionally failing live mathematical check, and a
+missing or malformed historical replay. See the [repair record](verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md).

@@ -2,7 +2,7 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 7 September 2026, based on `main` after merge of PR #8 (`81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe`).
+**Current snapshot:** 7 September 2026, based on `main` after merge of PR #10 (`2e8d99cdcf289eabb63df15086eaa68251a359f1`) and the bounded statistical-decision bridge now under review.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -18,13 +18,18 @@ Progress does **not** require mathematical novelty. A known theorem becomes usef
 
 The programme should change course when the evidence warrants it. Changing course is not drifting from the North Star if the change improves our ability to make decision reasoning inspectable, cumulative, and correctable.
 
-## 2. Progress snapshot
+## 2. Named capability snapshot
 
-Two different notions of progress matter.
+Earlier versions gave percentage-complete estimates for a first finite core and for the wider
+programme. Those estimates had no justified fixed denominator. Replacing them with named earned
+capabilities and outstanding obligations is a measurement clarification, not a claim that progress
+was lost. The earlier wording remains preserved in Git history.
 
-### First finite executable core
+### First finite executable chain
 
-**Planning estimate: roughly 75–80% of the first bounded finite core is now constructed and hardened.** This is not a scientific completion metric. It means that the core chain from exact model compatibility through sequential decision guarantees and persistent model uncertainty now has concrete mathematical constructions and exact reference checks.
+The bounded chain from exact model compatibility through sequential guarantees, persistent-model
+uncertainty, and one complete family-aware continuation splice now has explicit mathematical
+constructions and exact reference checks.
 
 Earned so far:
 
@@ -34,15 +39,16 @@ Earned so far:
 4. target revalidation after explicit model or policy change;
 5. accumulation of compatible certificates and checked policy selection;
 6. one implementable policy across persistent whole-episode model families;
-7. explicit support-filtered continuation without hidden model switching or fabricated model weights.
+7. explicit support-filtered continuation without hidden model switching or fabricated model weights;
+8. a complete single-cut family-aware replanning certificate with separate root-cap and exact-policy-change warrants.
 
-The largest missing piece in this first finite chain is now **family-aware replanning and preservation/reassessment of root guarantees after a continuation changes**.
+### Wider Bellman mathematical programme
 
-### Full Bellman mathematical programme
-
-**Planning estimate: roughly 35–45% has been made comparably constructive.** Large mathematical areas remain intentionally open: statistical learning and coverage, harm/resource constraints and risk, causal identification, richer structural transport, scalable optimization, plural objectives, strategic actors, and selected formal verification.
-
-This lower percentage is expected. The programme is intentionally much larger than the first executable core.
+Outstanding areas remain explicit rather than compressed into a percentage: statistical learning
+beyond the first IID Bernoulli bridge; adaptive sampling, dependence, drift, missingness and model
+criticism; harm/resource constraints and dynamic risk; causal identification and transport; richer
+structural transport; scalable optimization; plural objectives; strategic actors; and selected
+formal verification.
 
 ## 3. Completed and hardened capability chain
 
@@ -54,28 +60,26 @@ This lower percentage is expected. The programme is intentionally much larger th
 | Certificate transport and revalidation | HARDENED | [`BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md`](../../foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) | A changed model or policy gets a new checked guarantee rather than inheriting an old label. |
 | Certificate accumulation and policy selection | HARDENED | [`BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md`](../../foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) | Compatible checked results can strengthen one another; different-policy selection creates and checks a new policy. |
 | Persistent model families | HARDENED | [`BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md`](../../foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) | One accessible policy is evaluated across alternative whole-episode models; loss, regret, model identity, support, and criteria remain distinct. |
+| Family-aware replanning and root guarantees | HARDENED | [`BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md`](../../foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md) | One complete continuation splice produces checked modelwise certificates; conditional preference, cap preservation, and exact policy change remain separate. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### NEXT — Family-aware replanning and root-guarantee preservation
+### ACTIVE RESULT — Anytime-valid Bernoulli data-to-decision bridge
 
-The immediate mathematical question is:
+PR #10 completed the selected bounded family-aware replanning construction. The active section 5A
+result now asks:
 
-> After observing information and replacing a continuation policy, what exactly can still be guaranteed about the revised whole plan across the persistent model family?
+> Given a complete observed binary prefix and an explicit IID Bernoulli fixed-parameter premise,
+> what outward uncertainty interval and static action-risk guarantee remain valid under repeated
+> inspection and data-dependent stopping?
 
-The next construction should:
-
-- build the actual revised total policy;
-- retain the original family and model identities;
-- propagate the continuation change through each model using that model's own reach probability;
-- distinguish a better conditional bound from a better actual policy;
-- distinguish failure to establish preservation from proved violation;
-- prevent zero-likelihood conditional exclusions from silently deleting models from an ex-ante family claim;
-- produce a new receiver-checkable root guarantee for the revised policy.
-
-A successful result closes another gap in the first finite executable chain. A failure or counterexample should redirect the construction rather than be patched around.
+The [bounded construction](../../foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) supplies
+an all-real-parameter analytical coverage proof, receiver-checked outward rational root brackets,
+and exact affine action-risk comparisons. It is a research reference under review, not evidence
+that a supplied stream is IID, a Bayesian posterior, a sequential planner, or an integrated Writ
+capability.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -83,17 +87,27 @@ These are **default priorities, not mandatory order**.
 
 ### A. Statistical learning and time-uniform coverage
 
-Current Bellman models are supplied. The next major bridge to evidence is to construct uncertainty sets from data while preserving repeated-inspection guarantees.
+Current Bellman models are supplied. The first bounded bridge from data constructs uncertainty sets
+while preserving repeated-inspection guarantees.
 
-Needed:
+Earned in the current reference:
 
-- explicit sampling/data-generating assumptions;
-- time-uniform confidence sets or other valid sequential uncertainty constructions;
-- separation of statistical coverage probability from decision loss/regret;
-- data-dependent stopping without invalidating the stated coverage;
-- explicit handling of adaptive sampling, dependence, drift, missingness, and misspecification when those become part of the promised capability.
+- one complete ordered binary-data prefix under an explicit IID Bernoulli fixed-parameter premise;
+- exact-binomial tail inversion with a summable all-time allocation for every real parameter;
+- outward rational brackets checked independently from their bisection producer;
+- separation of coverage alpha, deterministic precision, and loss-unit regret;
+- exact static finite-action guarantees that remain valid on the simultaneous coverage event,
+  including at data-dependent stopping times.
 
-Existing foundation: §10 of [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md`](../../foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md).
+Still needed when promised by a future capability:
+
+- adaptive or selectively sampled data with a matching sequential argument;
+- dependence, drift, missingness, selection, and misspecification handling;
+- multivariate, channel-row, continuous, or structured model learning;
+- empirical model criticism and applicability review;
+- any justified composition into sequential control or PR #10 root guarantees.
+
+Existing foundation: §10 of [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md`](../../foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md). The exact-binomial reference is a narrower constructive specialization; it does not replace the unchanged categorical Hoeffding theorem or implement a sharper modern confidence-sequence boundary.
 
 ### B. Constraints, reachability, and tail/dynamic risk
 

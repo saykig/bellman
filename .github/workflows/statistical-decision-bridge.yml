@@ -1,10 +1,10 @@
-name: family-replanning
+name: statistical-decision-bridge
 
 on:
   pull_request:
   push:
     branches:
-      - codex/family-aware-replanning
+      - codex/statistical-decision-bridge
 
 permissions:
   contents: read
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run maintained live acceptance and pinned family-replanning replay
+      - name: Run exact statistical-decision and preservation checks
         env:
           PYTHONDONTWRITEBYTECODE: "1"
         run: python3 verification/statistical_decision_bridge/run_checks.py

@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-07",
+  "base_commit": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+  "reviewed_pr10_head": "82d286c591750a2229664d935a6f9820340233df",
+  "reviewed_pr12_head": "fbfbc182a05952198d9ce9dc6ef4e9a395eaf3c6",
+  "executed_source_commit": "0b77b482a34225148ca7cb19dde2feb11bc4fa28",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 python3 verification/statistical_decision_bridge/checks.py",
+    "PYTHONDONTWRITEBYTECODE=1 python3 -O verification/statistical_decision_bridge/checks.py",
+    "PYTHONDONTWRITEBYTECODE=1 python3 verification/statistical_decision_bridge/run_checks.py",
+    "git diff --check"
+  ],
+  "local_execution": {
+    "runtime": "3.9.6",
+    "wall_seconds_for_complete_runner": 20,
+    "modes": [
+      "normal",
+      "-O"
+    ],
+    "statistical_passed_per_mode": 10,
+    "statistical_rejections_per_mode": 31,
+    "statistical_unfinished_per_mode": 8,
+    "normal_optimized_equal": true,
+    "seconds_by_statistical_mode": [
+      4.411334957999999,
+      4.861943042
+    ],
+    "pinned_preservation_seconds": 4.722731458
+  },
+  "receiver_support_contract": {
+    "maximum_observations": 128,
+    "maximum_actions": 4,
+    "maximum_requested_precision_bits": 64,
+    "disposition": "unfinished-resource-refusal",
+    "receiver_refusals_exercised_per_mode": 5,
+    "reviewed_bypass_cases": {
+      "129_observations": "sample-size-limit",
+      "5_actions": "action-count-limit",
+      "65_requested_precision_bits": "precision-request-limit"
+    },
+    "request_validated_before_budget": true,
+    "evidence_may_be_unassessed_after_resource_refusal": true,
+    "expensive_tail_or_risk_arithmetic_after_early_refusal": false,
+    "within_budget_malformed_evidence_rejected": true,
+    "boundary_controls_passed": {
+      "observations": 128,
+      "actions": 4,
+      "requested_precision_bits": 64,
+      "zero_observations": true,
+      "exact_rational_root": true,
+      "coarse_valid_interval": true,
+      "large_derived_coordinate_bits": 598
+    }
+  },
+  "review_disposition": {
+    "support_contract_mismatch": "confirmed-and-repaired",
+    "false_simultaneous_coverage_theorem": "not_found",
+    "false_affine_decision_theorem": "not_found",
+    "out_of_profile_certificates": "mathematically-valid-but-resource-unsupported"
+  },
+  "live_current_checks": {
+    "family_replanning_passed_per_mode": 9,
+    "family_replanning_rejections_per_mode": 26,
+    "persistent_family_passed_per_mode": 11,
+    "persistent_family_rejections_per_mode": 19,
+    "normal_optimized_equal": true
+  },
+  "pinned_pr10_replay": {
+    "commit": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+    "complete_historical_runner": "passed",
+    "reviewed_tree_equal": true,
+    "current_inherited_sources_unchanged_on_base": true,
+    "persistent_passed_per_mode": 11,
+    "accumulation_passed_per_mode": 11,
+    "transport_passed_per_mode": 16,
+    "sequential_passed_per_mode": 17,
+    "pr4_repair_passed_per_mode": 13,
+    "joint_law_passed_per_mode": 19,
+    "historical_joint_law_observations_and_certificates_equal": true
+  },
+  "negative_controls": {
+    "authorized_programme_document_change": "accepted",
+    "protected_mathematical_source_change": "rejected",
+    "protected_recorded_result_change": "rejected",
+    "intentional_live_mathematical_failure": "rejected",
+    "missing_historical_commit": "rejected",
+    "broken_historical_result": "rejected"
+  },
+  "frozen_pr12_sha256": {
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "verification/statistical_decision_bridge/results.json": "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13"
+  },
+  "source_sha256": {
+    ".github/workflows/family-replanning.yml": "1e523eaae63614c9f8fb3ef487bb3c58c6b328ed6008ff5588faa2bbf67fd700",
+    ".github/workflows/statistical-decision-bridge.yml": "c47af3ce4e52553cc7be423e31d93245681969d889277f682a50e185d95452c1",
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md": "a06d94d7d6dbc3d388b2e46246be67f1c5d9a21039bea9fca7825601b89c0844",
+    "verification/statistical_decision_bridge/README.md": "ef3ad68ca034f14be63f3478292046a07402f0debd2ce414fe3180e080f77b1c",
+    "verification/statistical_decision_bridge/checks.py": "75ec61e882f6207b41481cbde8d9ca1b20c0cd7f14f3bfafecc67208a3c68359",
+    "verification/statistical_decision_bridge/reference.py": "4b8f066b5785e04cdb9fd882820ec64fd453d87b3cc253781cea03a9ab152852",
+    "verification/statistical_decision_bridge/run_checks.py": "296fd5a4a60f71732b074f9f3fae0bae691661b51da263fda4c91c13a1701fd4"
+  },
+  "github_actions": {
+    "runtime": "3.12.14",
+    "source_commit": "0b77b482a34225148ca7cb19dde2feb11bc4fa28",
+    "statistical_push": {
+      "run_id": 34165856882,
+      "job_id": 101876635954,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34165856882"
+    },
+    "statistical_pull_request": {
+      "run_id": 34165859216,
+      "job_id": 101876642206,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34165859216"
+    },
+    "maintained_family_pull_request": {
+      "run_id": 34165859232,
+      "job_id": 101876642280,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34165859232"
+    },
+    "statistical_passed_per_mode": 10,
+    "statistical_rejections_per_mode": 31,
+    "statistical_unfinished_per_mode": 8
+  },
+  "limitations": [
+    "Coverage remains conditional on an IID Bernoulli stream with one fixed real parameter.",
+    "Finite authored checks and analytical proofs are not empirical validation or formal verification.",
+    "The shared request profile remains finite; resource refusal does not establish mathematical impossibility.",
+    "No adaptive or multistream sampling, sequential control, Writ integration, Decision Lab change, or new mathematical stage is included."
+  ]
+}

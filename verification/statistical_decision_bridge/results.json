@@ -1,0 +1,177 @@
+{
+  "base_commit": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+  "ci_history": {
+    "initial_conclusion": "failure-before-result-emission",
+    "initial_run_url": "https://github.com/saykig/bellman/actions/runs/34159472734",
+    "resolution": "The disposable pinned replay clone now binds origin/main to the exact PR10 merge expected by the unchanged historical runner; no mathematical test was changed or skipped."
+  },
+  "executed_commit": "feb4a5498e6cae9200ad3b085ffde707eed4773a",
+  "executed_source_commit": "feb4a5498e6cae9200ad3b085ffde707eed4773a",
+  "execution": "GitHub Actions",
+  "failed": 0,
+  "historical_files_preserved": true,
+  "limitations": [
+    "Coverage is conditional on an IID Bernoulli stream with one fixed real parameter.",
+    "Finite authored checks and analytical proofs are not empirical validation or formal verification.",
+    "Static actions, at most 128 observations, four actions and 64 bisection bits; no adaptive sampling or sequential control."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 9,
+  "pr10_merge_commit": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+  "pr10_merge_tree_matches_reviewed_head": true,
+  "pr10_sources_unchanged_on_current_base": true,
+  "preservation": {
+    "accumulation_passed_per_mode": 11,
+    "current_family_replanning_normal_optimized_equal": true,
+    "current_family_replanning_passed_per_mode": 9,
+    "current_family_replanning_rejections_per_mode": 26,
+    "historical_joint_law_observations_and_certificates_equal": true,
+    "inherited_runner": "passed-at-pinned-pr10-merge",
+    "joint_law_passed_per_mode": 19,
+    "persistent_passed_per_mode": 11,
+    "pr4_repair_passed_per_mode": 13,
+    "sequential_passed_per_mode": 17,
+    "transport_passed_per_mode": 16
+  },
+  "preservation_seconds": 4.5254064020000015,
+  "programme_documents_are_authorized_living_changes": true,
+  "rejections_per_mode": 30,
+  "results": [
+    {
+      "all_success_interval": [
+        "31/128",
+        "1"
+      ],
+      "case": "S1_boundaries_brackets_and_exact_tails",
+      "derived_coordinate_bits": 298,
+      "empty_interval": [
+        "0",
+        "1"
+      ],
+      "equality_roots": [
+        "1/8",
+        "7/8"
+      ],
+      "interior_interval": [
+        "101/4096",
+        "3995/4096"
+      ],
+      "status": "PASS",
+      "zero_success_interval": [
+        "0",
+        "97/128"
+      ]
+    },
+    {
+      "case": "S1_adversarial_witness_and_input_controls",
+      "coarse_decision": "not-certified",
+      "coarse_interval": [
+        "0",
+        "1"
+      ],
+      "fine_interval": [
+        "36659/65536",
+        "1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "anytime_exclusion": "444183/1073741824",
+      "anytime_first32_allocation": "8/165",
+      "case": "S2_repeated_inspection_exact_recursion",
+      "fixed_exceeds_nominal_alpha": true,
+      "fixed_time_exclusion": "8962675/67108864",
+      "status": "PASS"
+    },
+    {
+      "case": "S3_decision_without_point_estimate",
+      "n16_common_minimizers": [
+        "predict1"
+      ],
+      "n16_interval": [
+        "36659/65536",
+        "1"
+      ],
+      "n16_minimum_advantage": "3891/32768",
+      "n8_common_minimizers": [],
+      "n8_interval": [
+        "24213/65536",
+        "1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "S3_changed_losses_ties_and_singleton",
+      "changed_loss_common_minimizers": [],
+      "singleton_strictness": "vacuous-against-no-distinct-action",
+      "status": "PASS",
+      "tied_complete_set": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "byte_identity_proves_independence": false,
+      "case": "S4_dependence_and_duplicate_evidence_boundary",
+      "copied_one_interval": [
+        "36659/65536",
+        "1"
+      ],
+      "copied_zero_interval": [
+        "0",
+        "28877/65536"
+      ],
+      "exclusion_probability_under_copying": "1",
+      "iid_premise_false_in_control": true,
+      "status": "PASS"
+    },
+    {
+      "append": "new-prefix-claim",
+      "case": "S5_revision_binding_immutability_and_resources",
+      "changed_loss": "new-decision-certificate",
+      "correction": "not-an-append",
+      "resource_refusals": 3,
+      "same_prefix": "not-new-evidence",
+      "status": "PASS"
+    },
+    {
+      "case": "S6_existing_joint_law_cross_check",
+      "existing_receiver_status": "original_optimum",
+      "interval_constraints": [
+        "36659/65536",
+        "1"
+      ],
+      "probability_vector": "(1-p,p)",
+      "risk_difference_maximum": "-3891/32768",
+      "status": "PASS"
+    },
+    {
+      "candidate_and_root_search_disabled": true,
+      "case": "S6_producer_independent_receiving",
+      "implementation_independent_witness": true,
+      "shared_fraction_arithmetic": true,
+      "status": "PASS"
+    }
+  ],
+  "reviewed_pr10_head": "82d286c591750a2229664d935a6f9820340233df",
+  "runtime": "3.12.14",
+  "seconds_by_mode": [
+    4.609186833999999,
+    5.084115344000004
+  ],
+  "source_sha256": {
+    ".github/workflows/statistical-decision-bridge.yml": "c47af3ce4e52553cc7be423e31d93245681969d889277f682a50e185d95452c1",
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "verification/statistical_decision_bridge/README.md": "4f0cc3f2ecbe937ac2202d8b67838a61f91e42df78dd1056426c678c2830dd54",
+    "verification/statistical_decision_bridge/checks.py": "21dd0714c9dc15c7f53666caa7a83e7d87e6d2b5f5714d48df3b409712ef555f",
+    "verification/statistical_decision_bridge/reference.py": "000a01156f584ff0a6f0dc1ff93eb42bad155d756348c99443754ae96818e893",
+    "verification/statistical_decision_bridge/run_checks.py": "4fb926ce25257014d459f65df7d4a3e58bdcbefc9886e9bc37244de2d8de78b9"
+  },
+  "unfinished_per_mode": 3,
+  "workflow_job_id": 101858400604,
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34159582866"
+}

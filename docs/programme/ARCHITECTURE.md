@@ -89,13 +89,33 @@ This table is intentionally conservative.
 | Certificate transport / revalidation | M2 candidate | No general Writ integration yet. |
 | Certificate accumulation / policy selection | M1–M2 | Research reference only. |
 | Persistent model-family certificates | M1–M2 | Research reference only. |
-| Family-aware replanning | M0 / current frontier | Not yet an engineering contract. |
-| Statistical learning / coverage | Foundation only | Not implemented as Bellman engineering semantics. |
+| Family-aware replanning | M1–M2 | Bounded checked research reference; no general Writ integration. |
+| Anytime-valid Bernoulli data-to-decision bridge | M1 | Research reference under review; not implemented as Writ or Decision Lab semantics. |
+| Statistical learning / coverage beyond the bounded Bernoulli profile | Foundation only | Adaptive sampling, dependence, drift, missingness and broader model learning are not implemented. |
 | Constraints / risk | Foundation only | Not implemented. |
 | Causal identification | Foundation only | Not implemented. |
 | Plural objectives / strategy | Foundation only | Not implemented. |
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
+
+### Statistical bridge boundary
+
+The bounded research reference keeps three interfaces separate:
+
+1. supplied observations and an explicit IID Bernoulli fixed-parameter premise;
+2. a checked outward rational uncertainty interval with a separate simultaneous-coverage statement;
+3. an exact static finite-action comparison conditional on membership in that interval.
+
+The reference binds stream, population, protocol, data prefix, alpha, spending rule, numerical
+precision, losses, unit, query, and intended action. Its checker can verify exact binomial-tail and
+affine-risk arithmetic. It cannot verify physical independence, representativeness, absence of
+drift, or legitimacy of the decision inputs. A changed data history or coverage specification gets
+a new sampling claim; a changed loss table gets a new decision claim without pretending the same
+data are a fresh sample.
+
+This is an M1 research-reference result. No adapter, database record, Decision Lab build, or Writ
+workflow is added here. Promotion would require a stable independent contract, concrete workflow,
+fresh checking, revision/applicability semantics, and the acceptance evidence in section 7.
 
 ## 5. Stable interface principles
 
