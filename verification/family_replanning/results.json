@@ -1,0 +1,175 @@
+{
+  "base_commit": "e5324fec7060ec4587d1d48cc63ae797b47946e5",
+  "executed_commit": "65e4999edbbedb815c76979431b9a1586ad8e7c7",
+  "executed_source_commit": "d51b0d816b1004565d0a08e43def371f7012c538",
+  "execution": "GitHub Actions",
+  "failed": 0,
+  "historical_files_preserved": true,
+  "limitations": [
+    "Analytical finite proofs and authored exact cases, not formal verification or empirical coverage.",
+    "Shared Fraction arithmetic and authorship; forward paths are a separate calculation route.",
+    "One deterministic subtree splice only; no optimizer, model weights or dynamic-consistency theorem."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 9,
+  "pr8_merge_commit": "81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe",
+  "pr8_merge_tree_matches_reviewed_head": true,
+  "pr8_sources_unchanged_on_current_base": true,
+  "preservation": {
+    "accumulation_passed_per_mode": 11,
+    "current_persistent_normal_optimized_equal": true,
+    "historical_joint_law_observations_and_certificates_equal": true,
+    "inherited_runner": "passed-at-pinned-pr8-merge",
+    "joint_law_passed_per_mode": 19,
+    "persistent_passed_per_mode": 11,
+    "persistent_rejections_per_mode": 19,
+    "pr4_repair_passed_per_mode": 13,
+    "sequential_passed_per_mode": 17,
+    "transport_passed_per_mode": 16
+  },
+  "preservation_seconds": 3.3666591600000046,
+  "rejections_per_mode": 26,
+  "results": [
+    {
+      "baseline_root": [
+        "0",
+        "1"
+      ],
+      "case": "R1_conditional_improvement_root_deterioration",
+      "conditional_worst_loss": [
+        10,
+        2
+      ],
+      "conditional_worst_regret": [
+        8,
+        2
+      ],
+      "preserved_cost_cap": false,
+      "preserved_regret_cap": false,
+      "replacement_root": [
+        "9/5",
+        "1/5"
+      ],
+      "status": "PASS"
+    },
+    {
+      "baseline_worst": "3/2",
+      "case": "R2_genuine_preserved_improvement",
+      "cost_cap_preserved": true,
+      "final_worst": "-1/2",
+      "positive_masses": [
+        "1/2",
+        "1/3"
+      ],
+      "regret_cap_preserved": true,
+      "status": "PASS"
+    },
+    {
+      "actual_policy_change": 1,
+      "case": "R3_certificate_tightening_not_actual_improvement",
+      "certificate_upper_change": -99,
+      "status": "PASS",
+      "valid_spliced_upper": 1
+    },
+    {
+      "absent_baseline_premise": "baseline-preservation-premise-not-established",
+      "case": "R4_failure_to_certify_not_violation",
+      "cost_disposition": "preservation-not-established",
+      "loose_upper": 2,
+      "regret_disposition": "preservation-not-established",
+      "status": "PASS",
+      "tightened_disposition": "preservation-certified",
+      "true_cost": 0
+    },
+    {
+      "all_zero_algebraic": true,
+      "all_zero_conditional": "impossible",
+      "case": "R5_conditional_exclusion_preserves_root_family",
+      "conditional_retained": [
+        "B"
+      ],
+      "root_worst": 10,
+      "status": "PASS"
+    },
+    {
+      "case": "R6_complete_prefix_splice_and_claim_binding",
+      "matched_control": true,
+      "status": "PASS"
+    },
+    {
+      "actual_final_delta": -1,
+      "case": "R7_overlapping_replacements",
+      "consecutive_deltas": [
+        -2,
+        1
+      ],
+      "independent_old_deltas": [
+        -2,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "caller_containers_detached": true,
+      "case": "R8_deep_exact_controls",
+      "cuts": [
+        "root",
+        "terminal",
+        "support-varying",
+        "deep"
+      ],
+      "deep_values": [
+        "25/6",
+        "41/30"
+      ],
+      "derived_bits": 1027,
+      "huge_disposition": "preservation-certified",
+      "loose_terminal_values": [
+        "-13/12",
+        "143/90"
+      ],
+      "root_values": [
+        "2",
+        "3"
+      ],
+      "status": "PASS",
+      "support_masses": [
+        "0",
+        "2/3"
+      ],
+      "support_varying_values": [
+        "-37/12",
+        "-7/90"
+      ],
+      "terminal_only_value": -2,
+      "terminal_values": [
+        "-37/12",
+        "113/90"
+      ]
+    },
+    {
+      "case": "receivers_run_with_new_and_inherited_producers_disabled",
+      "status": "PASS"
+    }
+  ],
+  "reviewed_pr8_head": "59da8f5b9d57afbe2b8c31e78886378f4f456bec",
+  "runtime": "3.12.14",
+  "seconds_by_mode": [
+    0.2505651980000039,
+    1.1081387990000025
+  ],
+  "source_sha256": {
+    ".github/workflows/family-replanning.yml": "aa6c2b66aa18e6ad7f91f261a8e050b11b54ae4291c7252db45b072180fee96e",
+    "foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md": "da410d964d2282d75dad1e56be7e6dfdd17c1ee8cc1e4c849f0088b758e03379",
+    "verification/family_replanning/README.md": "4287658f84dcafcc3a81345f30bd62e9d0f1f87b8bdf2a659b5cf8251fd00a69",
+    "verification/family_replanning/checks.py": "10bd448b2e047b8ebf3a9e9e36e190e11d91cf8724461e3f29dc61b1f4d7aba4",
+    "verification/family_replanning/replanning.py": "7d538f55de71b29b4737d81b19f87f6913def0ff9044ee7a2a8677d0011128dc",
+    "verification/family_replanning/run_checks.py": "c1d60239858878996defea3b7d61e22cff1b02a2384436e70b81aec92f1f710b"
+  },
+  "workflow_job_id": 101843592698,
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34154564924"
+}
