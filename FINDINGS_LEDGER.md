@@ -93,3 +93,7 @@ Confirmed false original-witness acceptance from floating-point arithmetic, muta
 ## Sequential guarantee composition
 
 [Sequential certificates](foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) now have constructive whole-policy bounds and checked residual propagation, with explicit support, policy, comparator, and model-identity obligations. A two-step candidate has exact regret 5/8; invalid local-to-sequential joins are retained as counterexamples. These are conditional proofs and fixed-instance checks, not a general solver or new Writ capability.
+
+## Sequential certificate transport
+
+[Anchored transport](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) constructs independently checked target optimum-lower and named-policy-upper bounds after explicit model/policy revision. Extremality is restricted to the old-table anchors; direct revalidation and uniform comparator bounds have no universal tightness ordering. Candidate-only agreement and sums of overlapping predecessor edits do not warrant the corresponding regret claims. Positive-prefix queries recompute target mass. Historical mathematics and evidence remain unchanged; this is one bounded construction in the continuing programme.

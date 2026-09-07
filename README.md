@@ -22,6 +22,8 @@ The [PR4 reference repair](verification/pr4_repair/README.md) records exact-witn
 
 The [sequential certificate construction](foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) connects checked local inequalities to whole-policy regret, conditioning, and replanning, with [fixed exact checks](verification/sequential_certificates/README.md). Its bounded history-tree reference extends the mathematics without defining the programme's ceiling.
 
+The [certificate transport construction](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) revalidates sequential guarantees after explicit model or policy changes. It proves anchored lower/upper envelopes, binds positive-prefix conditioning to the target model, and supplies [fixed exact checks](verification/certificate_transport/README.md).
+
 ## Bellman, Writ, and executable mathematics
 
 Writ is the engineering and provenance infrastructure intended to progressively embody stable Bellman mathematics. Bellman and Writ may remain separately implemented while their interfaces are developed. Repository separation is not permanent doctrine. Mature Bellman mathematics is expected to become executable engineering capability where justified, and the mathematics may continue beyond what present engineering implements.

@@ -1,0 +1,26 @@
+name: Certificate transport checks
+on:
+  pull_request:
+    paths:
+      - 'verification/certificate_transport/**'
+      - 'verification/sequential_certificates/**'
+      - 'verification/joint_law_completion/**'
+      - 'verification/pr4_repair/**'
+      - 'foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md'
+      - '.github/workflows/certificate-transport.yml'
+permissions:
+  contents: read
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Exact transport and preservation checks
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python3 verification/certificate_transport/run_checks.py
