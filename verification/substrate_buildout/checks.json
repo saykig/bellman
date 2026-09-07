@@ -1,0 +1,131 @@
+{
+  "python": "3.9.6",
+  "scope": "Exact illustrative finite checks; no general solver or formal proof verification.",
+  "passed_groups": 18,
+  "checks": [
+    {
+      "name": "input_integrity",
+      "status": "PASS",
+      "detail": "All 8 packet inputs match supplied SHA-256 and byte counts."
+    },
+    {
+      "name": "triangle_incompatibility",
+      "status": "PASS",
+      "detail": "Required expectation 3 exceeds pointwise bound 2."
+    },
+    {
+      "name": "farkas_witness",
+      "status": "PASS",
+      "detail": "A^T y=0; b^T y=-1/2."
+    },
+    {
+      "name": "positive_gluing",
+      "status": "PASS",
+      "detail": "Constructed joint is normalized and preserves both supplied pair marginals."
+    },
+    {
+      "name": "fractional_transform_witness",
+      "status": "PASS",
+      "detail": "t=2; transformed objective and conditional answer both 1/4; inverse recovers p."
+    },
+    {
+      "name": "structural_abstraction",
+      "status": "PASS",
+      "detail": "Three-date original and two-class values agree; original transition rows differ."
+    },
+    {
+      "name": "bellman_residual_certificate",
+      "status": "PASS",
+      "detail": "Checked exact residuals and evaluated greedy-policy regret in all 3 initial states; bound=63/80"
+    },
+    {
+      "name": "local_regret_telescoping",
+      "status": "PASS",
+      "detail": "Expected sum of exact Bellman disadvantages equals evaluated policy regret: 7/64"
+    },
+    {
+      "name": "deficiency_simulator",
+      "status": "PASS",
+      "detail": "Identity experiment simulates the binary noisy experiment with T=G and d=0."
+    },
+    {
+      "name": "contextual_failure",
+      "status": "PASS",
+      "detail": "XOR auxiliary evidence changes risks to 0 versus 1/2."
+    },
+    {
+      "name": "signed_loss_span",
+      "status": "PASS",
+      "detail": "Values -99,-98; span bound 1 is attained."
+    },
+    {
+      "name": "coupling_product_bound",
+      "status": "PASS",
+      "detail": "Two-observation mismatch bound 19/100 improves union bound 1/5."
+    },
+    {
+      "name": "conditioning_amplification",
+      "status": "PASS",
+      "detail": "Joint TV 1/100; conditional TV 1."
+    },
+    {
+      "name": "private_robust_mixture",
+      "status": "PASS",
+      "detail": "Feasible mixture and equal-weight model lower bound both 1/2; pure worst loss 1."
+    },
+    {
+      "name": "persistent_vs_rectangular",
+      "status": "PASS",
+      "detail": "Fixed-model worst cost 1; independently selected date costs total 2."
+    },
+    {
+      "name": "coverage_allocation",
+      "status": "PASS",
+      "detail": "Exact first-100 allocation sum equals alpha*(1-1/101); infinite-tail identity is analytic."
+    },
+    {
+      "name": "tail_risk",
+      "status": "PASS",
+      "detail": "Means 1 versus 2; CVaR_0.95 values 20 versus 2."
+    },
+    {
+      "name": "integrated_identified_action",
+      "status": "PASS",
+      "detail": "Posterior range [4/7,8/11] varies; action 1 is uniformly strictly optimal with minimum gap 1/7."
+    }
+  ],
+  "input_sha256": [
+    {
+      "path": "inputs/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md",
+      "sha256": "91f535d7010fa3bb4e4e1fdab6a1cebd3643f97666e5ba32240c81f264a8597e"
+    },
+    {
+      "path": "inputs/BELLMAN_NORTH_STAR.md",
+      "sha256": "e2f1f7180fdf05dcd5a1f899b0e2acaf5a64d2e2a0a64c0a6e6679239f8f6b46"
+    },
+    {
+      "path": "inputs/PR1_REPAIR_REPORT.md",
+      "sha256": "29961c25c3d3f7e58fb991d040f53fd724794380e82cc5bfd84b20237ecb0100"
+    },
+    {
+      "path": "inputs/PR1_CHALLENGE_MATRIX.md",
+      "sha256": "1ac640d3726c143ed4dfe063a9bfddf7f7412e6c0f4e33035d5cfd9bb2d1e7bd"
+    },
+    {
+      "path": "inputs/PR1_ADVERSARIAL_REVIEW.md",
+      "sha256": "c976d4d964d1db940591bbab2ecba826150da679f17db4745bb2884e0604a6f8"
+    },
+    {
+      "path": "inputs/WRIT_PR1_REVIEW.md",
+      "sha256": "c4e8b5685a85d73d29c24c788bef3d9c3b79f509204e0d6408daed9d9ff21349"
+    },
+    {
+      "path": "inputs/RUN_THIS_NEXT_WRIT_ENGINEERING_BUILD_1.md",
+      "sha256": "02ab4b6e74128108f60c58e56a145a80c4bcc0c8e787743295a4bfe4ad6f6d29"
+    },
+    {
+      "path": "inputs/writ_engineering_direction.md",
+      "sha256": "6c76950b399f2683c092ec53a5247a15db43a3374ed51691a5297dd880724a0f"
+    }
+  ]
+}

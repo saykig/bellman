@@ -1,0 +1,61 @@
+{
+  "schema": "bellman.frozen-source-manifest.v1",
+  "scope": "Hashes cover exact source bytes actually obtained; they establish identity, not mathematical correctness. The portable replay is an explicitly adapted file tracked by Git, not an original historical harness.",
+  "artifacts": [
+    {
+      "path": "foundations/BELLMAN_NORTH_STAR.md",
+      "source_basename": "BELLMAN_NORTH_STAR.md",
+      "sha256": "e2f1f7180fdf05dcd5a1f899b0e2acaf5a64d2e2a0a64c0a6e6679239f8f6b46",
+      "bytes": 3304,
+      "preservation": "exact source bytes",
+      "provenance": "Exact supplied North Star"
+    },
+    {
+      "path": "foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md",
+      "source_basename": "BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md",
+      "sha256": "91f535d7010fa3bb4e4e1fdab6a1cebd3643f97666e5ba32240c81f264a8597e",
+      "bytes": 93810,
+      "preservation": "exact source bytes",
+      "provenance": "Exact supplied packet source"
+    },
+    {
+      "path": "reviews/BELLMAN_SUBSTRATE_V1_ADVERSARIAL_REVIEW.md",
+      "source_basename": "BELLMAN_SUBSTRATE_V1_REVIEW.md",
+      "sha256": "b8b221715462e05dda5d8ac4a6aa6990e34909dc64bf0e60f181e775067ac309",
+      "bytes": 23587,
+      "preservation": "exact source bytes",
+      "provenance": "Exact supplied review; archival filename changed only"
+    },
+    {
+      "path": "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md",
+      "source_basename": "BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md",
+      "sha256": "af631b49c3e411c57dbbc7baa145bdcc337e26f0ac2eebf7fa508ba840111a2e",
+      "bytes": 50420,
+      "preservation": "exact source bytes",
+      "provenance": "Completed mathematical deliverable, frozen before archival packaging"
+    },
+    {
+      "path": "verification/substrate_buildout/checks.json",
+      "source_basename": "checks.json",
+      "sha256": "c9d238a7b27dfdf390ebee1b54a44649fb166d5e6dd770acf21a55bccb83e9ea",
+      "bytes": 4262,
+      "preservation": "exact source bytes",
+      "provenance": "Exact completed-task illustrative result record"
+    },
+    {
+      "path": "verification/substrate_buildout/CHECKS.md",
+      "source_basename": "CHECKS.md",
+      "sha256": "65fc8aab2c10929f5f7a60647bff66678ebb6c9a81e13f718a832499c0f8b9da",
+      "bytes": 2369,
+      "preservation": "exact source bytes",
+      "provenance": "Exact completed-task illustrative check summary"
+    }
+  ],
+  "unavailable_exact_sources": [
+    "BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1.md",
+    "Original substrate-v1 review fixed_checks.py",
+    "Original substrate-v1 review fixed_check_results.json",
+    "Original substrate-v1 review fixed_check_log.txt and source_manifest.json",
+    "Original substrate-v1.1 local conformance harness"
+  ]
+}
