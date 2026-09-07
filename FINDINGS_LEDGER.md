@@ -75,3 +75,9 @@ The broader programme remains open. The next phase should search for bounded dec
 ## Transfer status
 
 **Nothing in this ledger currently authorizes a Writ architecture change.** A future transfer requires a replicated or otherwise well-established result, a concrete Writ workflow that needs it, and evidence that the smallest necessary requirement improves that workflow.
+
+## Bellman mathematical substrate — working foundation
+
+**Status:** foundation assembled and clarified; mathematical development continues. See [`SUBSTRATE_LEDGER.md`](SUBSTRATE_LEDGER.md).
+
+v1 assembled seven connected components. Its adversarial review led to v1.1's focused clarification of exact versus outer model sets, approximation/support premises, computed margins, and constructive decoders. v1.1 is a working foundation, not finished Bellman mathematics. The completed initial build-out adds constructive procedures and deeper composition using established mathematics, with bounded illustrative checks. Exact available sources are archived; missing v1 and historical verification originals remain explicit gaps. `finite-one-observation.v1` in the external Decision Lab is the first executable slice, not the mathematical ceiling or an accepted Writ integration. Historical experiment conclusions remain unchanged.
