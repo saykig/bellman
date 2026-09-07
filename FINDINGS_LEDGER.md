@@ -97,3 +97,7 @@ Confirmed false original-witness acceptance from floating-point arithmetic, muta
 ## Sequential certificate transport
 
 [Anchored transport](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) constructs independently checked target optimum-lower and named-policy-upper bounds after explicit model/policy revision. Extremality is restricted to the old-table anchors; direct revalidation and uniform comparator bounds have no universal tightness ordering. Candidate-only agreement and sums of overlapping predecessor edits do not warrant the corresponding regret claims. Positive-prefix queries recompute target mass. Historical mathematics and evidence remain unchanged; this is one bounded construction in the continuing programme.
+
+## Certificate accumulation — 7 September 2026
+
+The [additive construction](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) proves same-subject/same-policy max-lower/min-upper closure and table laws, plus separately checked policy selection. Actual dominance requires checked exact policy values; loose-bound selection does not suffice. Retained warrants tighten a restored-subject round trip without changing PR6. New fixed evidence and preservation runs remain distinct from historical/reviewer records. The broader programme continues beyond this finite module.
