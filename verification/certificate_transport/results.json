@@ -1,0 +1,149 @@
+{
+  "base_commit": "e4139b6c68f0386b62bf6332b12d2f654c1d4faf",
+  "base_files_byte_identical_except_current_pointers": true,
+  "executed_commit": "5c7c0a7764536d33e02536cf375492e73a4bd0b9",
+  "execution": "GitHub Actions",
+  "failed": 0,
+  "historical_joint_law_observations_and_certificates_equal": true,
+  "joint_law_passed_per_mode": 19,
+  "limits": [
+    "Fixed instances and analytical proofs, not formal verification or empirical coverage.",
+    "Shared Fraction arithmetic; separate forward oracle is not independent authorship.",
+    "Supplied reviewer runs remain attributed; no missing historical harness replay claimed."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_observations_equal": true,
+  "passed_per_mode": 16,
+  "pr4_repair_passed_per_mode": 13,
+  "preservation_seconds": 1.0309315739999931,
+  "rejections_per_mode": 49,
+  "results": [
+    {
+      "case": "unchanged_subject_policy_tables",
+      "status": "PASS"
+    },
+    {
+      "actual_regret": 1,
+      "alpha": [
+        "1"
+      ],
+      "beta": [
+        "0"
+      ],
+      "case": "comparator_change_candidate_error_zero",
+      "lower": 0,
+      "status": "PASS",
+      "uniform_bound": "2",
+      "uniform_comparator_error": "2",
+      "upper": 1
+    },
+    {
+      "case": "new_policy_two_step_all_eight_policies",
+      "cost": "7/8",
+      "optimum": "1/4",
+      "regret": "5/8",
+      "status": "PASS"
+    },
+    {
+      "actual_regret": "3/400",
+      "case": "off_support_union_coverage",
+      "cost": "27/200",
+      "optimum": "51/400",
+      "status": "PASS",
+      "symmetric_bound": "1/50",
+      "transport_bound": "1/100"
+    },
+    {
+      "case": "depth_four_signed_early_stop_zero_support_nontopological",
+      "nodes": 8,
+      "policies": 16,
+      "source_optimum": "-53/56",
+      "status": "PASS"
+    },
+    {
+      "case": "understated_corrections_and_missing_competitors_rejected_at_final_consumer",
+      "status": "PASS"
+    },
+    {
+      "case": "target_only_validity_distinct_from_transport_warrant",
+      "status": "PASS"
+    },
+    {
+      "case": "structural_unit_information_criterion_and_identity_boundaries",
+      "status": "PASS"
+    },
+    {
+      "case": "exact_fraction_witnesses_no_derived_bit_cap",
+      "derived_bits": 521,
+      "status": "PASS"
+    },
+    {
+      "case": "immutable_request_correspondence_and_proof_aliases",
+      "status": "PASS"
+    },
+    {
+      "case": "target_induced_prefix_mass_event_and_policy_binding",
+      "conditional_regret_bound": "3/4",
+      "prefix_mass": "1/100",
+      "status": "PASS",
+      "zero_mass": "impossible conditioning, not empty model"
+    },
+    {
+      "anchored_bound": "2",
+      "case": "overlapping_replans_not_counterexample_to_single_replacement",
+      "consecutive_sum": "-1",
+      "costs": [
+        "2",
+        "0",
+        "2",
+        "1"
+      ],
+      "final_regret": 1,
+      "separate_predecessor_sum": "-2",
+      "status": "PASS"
+    },
+    {
+      "case": "terminal_only_ties_singleton_and_shortcut_validation",
+      "status": "PASS",
+      "terminal_bound": "1"
+    },
+    {
+      "anchored_bound": 100,
+      "case": "uniform_comparison_can_be_tighter",
+      "status": "PASS",
+      "uniform_bound": 0,
+      "uniform_error": 0
+    },
+    {
+      "case": "extremality_only_with_anchor_constraints",
+      "status": "PASS"
+    },
+    {
+      "case": "receivers_independent_of_both_producers",
+      "status": "PASS"
+    }
+  ],
+  "runtime": "3.12.3",
+  "sequential_passed_per_mode": 17,
+  "source_sha256": {
+    ".github/workflows/certificate-transport.yml": "8cbc93b787e44254a5ac57b0e800ee703bb43310835f0de52b9ef3bd24ac4fff",
+    "foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md": "c6d9db76f62783918bbd64b9141095ca0de02f4c2d266db18f42f45e4d8e6253",
+    "verification/certificate_transport/README.md": "9375a80e5659ab0bed082034df9702524bdb16a5efe6f5d4493126bd5fb4e059",
+    "verification/certificate_transport/checks.py": "0d83e47915f46ff6b0a34f79568d184050b79d1987e9fd99390483569195d3a6",
+    "verification/certificate_transport/run_checks.py": "0bdee942cd9720dc0b5a728c0551173994940843137d98c363d82cdf84e146f5",
+    "verification/certificate_transport/transport.py": "a2d04eb8aedaa1d455128abc6ed6ab106c81a82b38d6fb1e9d7752be83f4ee60",
+    "verification/sequential_certificates/reference.py": "99d0f1a3a32334cce826a7a582502122bc25e195f7024ed40f0c45753cbde1df"
+  },
+  "transport_seconds_by_mode": [
+    0.10454732899998476,
+    0.3540379569999743
+  ],
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34092276487",
+  "workflow_job_id": 101648098571,
+  "reviewed_pr5_commit": "a998b916a5cdb27cd9263c5f9e1520479a396a18",
+  "reviewed_tree_equals_base": true,
+  "development_failures": []
+}
