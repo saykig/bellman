@@ -65,3 +65,7 @@ The [additive construction](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALI
 ## Certificate accumulation — 7 September 2026
 
 The [additive construction](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) proves same-subject/same-policy max-lower/min-upper closure and table laws, plus separately checked policy selection. Actual dominance requires checked exact policy values; loose-bound selection does not suffice. Retained warrants tighten a restored-subject round trip without changing PR6. New fixed evidence and preservation runs remain distinct from historical/reviewer records. The broader programme continues beyond this finite module.
+
+## Persistent model-family certificates — 7 September 2026
+
+The [additive construction](foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) retains alternative models as fixed whole-episode members and certifies one accessible total policy member by member before paired aggregation. Separate exact matrix checks distinguish common modelwise optimality, deterministic minimum worst loss, deterministic minimum worst regret, and best-in-subset claims. Positive-prefix continuation retains only supported members with explicit zero-mass exclusions and no inferred weights. [Fixed exact evidence](verification/persistent_model_families/README.md) preserves PR7 and the inherited checks. The PR5 certificate-soundness theorem is now a candidate for a later narrowly scoped Lean feasibility check; no formalization work or toolchain is started here.
