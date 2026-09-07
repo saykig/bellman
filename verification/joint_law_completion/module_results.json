@@ -1,0 +1,772 @@
+{
+  "certificates": {
+    "posterior_lower": {
+      "kind": "optimum",
+      "point": [
+        "12/7",
+        "3/7",
+        "1/7",
+        "4/7",
+        "20/7"
+      ],
+      "signed_bound": "-4/7",
+      "subject": {
+        "actions": [
+          [
+            "a0",
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1"
+            ]
+          ],
+          [
+            "a1",
+            [
+              "1/1",
+              "1/1",
+              "0/1",
+              "0/1"
+            ]
+          ]
+        ],
+        "conditional": true,
+        "direction": "min",
+        "event": [
+          "0/1",
+          "1/1",
+          "0/1",
+          "1/1"
+        ],
+        "event_label": "e",
+        "loss_unit": "zero-one loss",
+        "model": {
+          "A": [
+            [
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1"
+            ],
+            [
+              "-1/1",
+              "4/1",
+              "0/1",
+              "0/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "-4/1",
+              "1/1"
+            ]
+          ],
+          "C": [
+            [
+              "0/1",
+              "0/1",
+              "-1/1",
+              "-1/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1"
+            ]
+          ],
+          "atom_order": [
+            [
+              "0",
+              "not-e"
+            ],
+            [
+              "0",
+              "e"
+            ],
+            [
+              "1",
+              "not-e"
+            ],
+            [
+              "1",
+              "e"
+            ]
+          ],
+          "b": [
+            "1/1",
+            "0/1",
+            "0/1"
+          ],
+          "d": [
+            "-1/4",
+            "2/5"
+          ],
+          "extra_original": [],
+          "premises": [
+            "static prior family",
+            "supplied fixed channel",
+            "terminal prediction after e"
+          ],
+          "variable_order": [
+            "theta",
+            "signal"
+          ]
+        },
+        "numerator": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "1/1"
+        ],
+        "query_label": "P(theta=1|e)"
+      },
+      "y": [
+        "4/35",
+        "4/35",
+        "-3/35",
+        "-4/7"
+      ],
+      "z": [
+        "16/35",
+        "0/1"
+      ]
+    },
+    "posterior_upper": {
+      "kind": "optimum",
+      "point": [
+        "12/11",
+        "3/11",
+        "2/11",
+        "8/11",
+        "25/11"
+      ],
+      "signed_bound": "8/11",
+      "subject": {
+        "actions": [
+          [
+            "a0",
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1"
+            ]
+          ],
+          [
+            "a1",
+            [
+              "1/1",
+              "1/1",
+              "0/1",
+              "0/1"
+            ]
+          ]
+        ],
+        "conditional": true,
+        "direction": "max",
+        "event": [
+          "0/1",
+          "1/1",
+          "0/1",
+          "1/1"
+        ],
+        "event_label": "e",
+        "loss_unit": "zero-one loss",
+        "model": {
+          "A": [
+            [
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1"
+            ],
+            [
+              "-1/1",
+              "4/1",
+              "0/1",
+              "0/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "-4/1",
+              "1/1"
+            ]
+          ],
+          "C": [
+            [
+              "0/1",
+              "0/1",
+              "-1/1",
+              "-1/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1"
+            ]
+          ],
+          "atom_order": [
+            [
+              "0",
+              "not-e"
+            ],
+            [
+              "0",
+              "e"
+            ],
+            [
+              "1",
+              "not-e"
+            ],
+            [
+              "1",
+              "e"
+            ]
+          ],
+          "b": [
+            "1/1",
+            "0/1",
+            "0/1"
+          ],
+          "d": [
+            "-1/4",
+            "2/5"
+          ],
+          "extra_original": [],
+          "premises": [
+            "static prior family",
+            "supplied fixed channel",
+            "terminal prediction after e"
+          ],
+          "variable_order": [
+            "theta",
+            "signal"
+          ]
+        },
+        "numerator": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "1/1"
+        ],
+        "query_label": "P(theta=1|e)"
+      },
+      "y": [
+        "-8/55",
+        "-8/55",
+        "3/55",
+        "8/11"
+      ],
+      "z": [
+        "0/1",
+        "4/11"
+      ]
+    },
+    "strict_action": {
+      "kind": "optimum",
+      "point": [
+        "12/7",
+        "3/7",
+        "1/7",
+        "4/7",
+        "20/7"
+      ],
+      "signed_bound": "-1/7",
+      "subject": {
+        "actions": [
+          [
+            "a0",
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1"
+            ]
+          ],
+          [
+            "a1",
+            [
+              "1/1",
+              "1/1",
+              "0/1",
+              "0/1"
+            ]
+          ]
+        ],
+        "conditional": true,
+        "direction": "max",
+        "event": [
+          "0/1",
+          "1/1",
+          "0/1",
+          "1/1"
+        ],
+        "event_label": "e",
+        "loss_unit": "zero-one loss",
+        "model": {
+          "A": [
+            [
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1"
+            ],
+            [
+              "-1/1",
+              "4/1",
+              "0/1",
+              "0/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "-4/1",
+              "1/1"
+            ]
+          ],
+          "C": [
+            [
+              "0/1",
+              "0/1",
+              "-1/1",
+              "-1/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1"
+            ]
+          ],
+          "atom_order": [
+            [
+              "0",
+              "not-e"
+            ],
+            [
+              "0",
+              "e"
+            ],
+            [
+              "1",
+              "not-e"
+            ],
+            [
+              "1",
+              "e"
+            ]
+          ],
+          "b": [
+            "1/1",
+            "0/1",
+            "0/1"
+          ],
+          "d": [
+            "-1/4",
+            "2/5"
+          ],
+          "extra_original": [],
+          "premises": [
+            "static prior family",
+            "supplied fixed channel",
+            "terminal prediction after e"
+          ],
+          "variable_order": [
+            "theta",
+            "signal"
+          ]
+        },
+        "numerator": [
+          "0/1",
+          "1/1",
+          "0/1",
+          "-1/1"
+        ],
+        "query_label": "risk difference: a1 minus a0"
+      },
+      "y": [
+        "8/35",
+        "8/35",
+        "-6/35",
+        "-1/7"
+      ],
+      "z": [
+        "32/35",
+        "0/1"
+      ]
+    },
+    "triangle_infeasible": {
+      "kind": "infeasible",
+      "point": [],
+      "signed_bound": "-1/1",
+      "subject": {
+        "actions": [],
+        "conditional": false,
+        "direction": "max",
+        "event": [
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1",
+          "1/1"
+        ],
+        "event_label": "whole space",
+        "loss_unit": "loss",
+        "model": {
+          "A": [
+            [
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1"
+            ],
+            [
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1",
+              "1/1",
+              "1/1",
+              "0/1",
+              "0/1"
+            ],
+            [
+              "0/1",
+              "1/1",
+              "1/1",
+              "0/1",
+              "0/1",
+              "1/1",
+              "1/1",
+              "0/1"
+            ],
+            [
+              "0/1",
+              "1/1",
+              "0/1",
+              "1/1",
+              "1/1",
+              "0/1",
+              "1/1",
+              "0/1"
+            ]
+          ],
+          "C": [],
+          "atom_order": [
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "b": [
+            "1/1",
+            "1/1",
+            "1/1",
+            "1/1"
+          ],
+          "d": [],
+          "extra_original": [],
+          "premises": [
+            "three pairwise disagreements almost surely"
+          ],
+          "variable_order": [
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        "numerator": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "query_label": "query"
+      },
+      "y": [
+        "2/1",
+        "-1/1",
+        "-1/1",
+        "-1/1"
+      ],
+      "z": []
+    }
+  },
+  "optimized": 0,
+  "passed_cases": 19,
+  "python": "3.9.6",
+  "results": [
+    {
+      "case": "integrated_primal_dual_extrema",
+      "lower": "4/7",
+      "original_extremizers": [
+        [
+          "3/5",
+          "3/20",
+          "1/20",
+          "1/5"
+        ],
+        [
+          "12/25",
+          "3/25",
+          "2/25",
+          "8/25"
+        ]
+      ],
+      "status": "PASS",
+      "upper": "8/11"
+    },
+    {
+      "case": "reviewer_literal_dual_witnesses",
+      "checked": true,
+      "status": "PASS"
+    },
+    {
+      "attained": "2/3",
+      "case": "attainment_bound_optimum_distinctions",
+      "false_optimum_rejected": "primal_dual_gap",
+      "loose_upper": "1/1",
+      "status": "PASS"
+    },
+    {
+      "case": "strict_common_action",
+      "common_optimal_action": "a1",
+      "complete_minimizing_set": [
+        "a1"
+      ],
+      "status": "PASS",
+      "uniformly_strict_against_other_actions": true,
+      "upper_differences": {
+        "a0": "-1/7"
+      }
+    },
+    {
+      "case": "changed_loss_and_stale_subject",
+      "difference_range": [
+        "-2/11",
+        "2/7"
+      ],
+      "old_certificate": "subject_mismatch",
+      "status": "PASS"
+    },
+    {
+      "case": "tie_common_without_uniform_strictness",
+      "common_optimal_action": "a1",
+      "complete_minimizing_set": null,
+      "status": "PASS",
+      "tie_posterior": "1/2",
+      "uniformly_strict_against_other_actions": false,
+      "upper_differences": {
+        "a0": "0/1"
+      }
+    },
+    {
+      "case": "complete_minimizing_set",
+      "complete_minimizing_set": [
+        "a0",
+        "a1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "forged_and_wrong_subject_certificates",
+      "rejections": {
+        "atom_order": "subject_mismatch",
+        "event": "subject_mismatch",
+        "negative_multiplier": "negative inequality multiplier",
+        "premise_change": "subject_mismatch",
+        "rebound_forged_objective": "dual dominance failure",
+        "wrong_bound": "bound value mismatch",
+        "wrong_primal": "primal_dual_gap"
+      },
+      "status": "PASS"
+    },
+    {
+      "accepted_checked_certificates": true,
+      "case": "consumer_without_producer",
+      "status": "PASS"
+    },
+    {
+      "case": "triangle_and_unfinished_search",
+      "farkas_value": -1,
+      "search": {
+        "bases": 0,
+        "reason": "basis_budget",
+        "status": "unfinished"
+      },
+      "status": "PASS"
+    },
+    {
+      "case": "impossible_event_in_nonempty_original_family",
+      "conditional_farkas": -1,
+      "posterior": null,
+      "status": "PASS",
+      "witness": [
+        1,
+        0
+      ]
+    },
+    {
+      "case": "compatible_join",
+      "joint": [
+        "1/4",
+        "1/8",
+        "1/24",
+        "1/12",
+        "1/12",
+        "1/24",
+        "1/8",
+        "1/4"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "zero_separator_glue",
+      "joint": [
+        "1/4",
+        "1/4",
+        "0/1",
+        "0/1",
+        "1/4",
+        "1/4",
+        "0/1",
+        "0/1"
+      ],
+      "status": "PASS",
+      "zero_separator_mass": 0
+    },
+    {
+      "case": "missing_independence_and_outer_certificate",
+      "matched_original_marginal": "1/2",
+      "original_uniform_p00": "1/4",
+      "outer_p00": "1/2",
+      "status": "PASS"
+    },
+    {
+      "attainable_values": [
+        0,
+        1
+      ],
+      "case": "exact_extrema_not_full_attainable_interval",
+      "half_attainable": false,
+      "maximum": 1,
+      "minimum": 0,
+      "status": "PASS"
+    },
+    {
+      "alternative_answers": [
+        "4/7",
+        "8/11"
+      ],
+      "case": "alternatives_vs_asserted_intersection",
+      "intersection_farkas": "-3/20",
+      "status": "PASS"
+    },
+    {
+      "case": "conditioning_overlap_and_independent_event_proof",
+      "examples": [
+        {
+          "conditional_TV": "2/5",
+          "event_masses": [
+            "1/4",
+            "1/4"
+          ],
+          "joint_TV": "1/10",
+          "new_bound": "2/5"
+        },
+        {
+          "conditional_TV": "1/6",
+          "event_masses": [
+            "1/5",
+            "3/10"
+          ],
+          "joint_TV": "1/10",
+          "new_bound": "1/3"
+        },
+        {
+          "conditional_TV": "1/1",
+          "event_masses": [
+            "1/100",
+            "1/100"
+          ],
+          "joint_TV": "1/100",
+          "new_bound": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "exact_numeric_profile",
+      "rejections": [
+        "rational input required; floats/bools excluded",
+        "rational input required; floats/bools excluded",
+        "integer or fraction spelling required",
+        "integer or fraction spelling required"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "symbolic_radius_vs_computed_enclosure",
+      "inside_exact_radius": true,
+      "log_sqrt_evaluator_implemented": false,
+      "outside_inward_radius": true,
+      "status": "PASS"
+    }
+  ],
+  "scope": "fixed finite rational certificate examples; not formal verification or a general solver",
+  "source_sha256": {
+    "joint_law.py": "26c33ca45eaae4db31530f47e816687ac0d372cb02ea3ea7abece815e149a1d2",
+    "module_checks.py": "718acc28804da3f20bf9ba4fd696fe19c5f0dbfd54cbf17838869ef7a35f11a7"
+  }
+}

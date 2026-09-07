@@ -1,0 +1,66 @@
+{
+  "format": "bellman-buildout-completion-sources.v1",
+  "archive_base_commit": "95d0cab3b3e577a0a990c485cc5e1acb4334517b",
+  "artifacts": [
+    {
+      "path": "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md",
+      "sha256": "a54dfb0729759f1237817e516faf81e6d07e5907dadd8ddc6f1a1ba0fdaa27db",
+      "bytes": 33795,
+      "identity": "new completed deliverable bytes"
+    },
+    {
+      "path": "reviews/BELLMAN_BUILDOUT_ADVERSARIAL_REVIEW.md",
+      "sha256": "643b12aa3313e16d2bc60768fa2b8fbf2df9c2facdab370a325faffde91c7eb9",
+      "bytes": 27171,
+      "identity": "exact source bytes"
+    },
+    {
+      "path": "reviews/RUN_THIS_NEXT_BELLMAN_BUILDOUT_COMPLETION.md",
+      "sha256": "a68d5beef15b9326ed3b0023d3fce84a8a270ceea77c22f5d613c8bc18890456",
+      "bytes": 8006,
+      "identity": "exact source bytes"
+    },
+    {
+      "path": "verification/buildout_review/reviewer_checks.py",
+      "sha256": "55c9fb770e1959c9be3d65ee517fb628b25e940148194e414027043b63aa9486",
+      "bytes": 22290,
+      "identity": "exact source bytes"
+    },
+    {
+      "path": "verification/buildout_review/reviewer_results.json",
+      "sha256": "ece8e8634f8c27c965798233491758d3b064a624cec6656fd277ae6037524842",
+      "bytes": 6595,
+      "identity": "exact source bytes"
+    },
+    {
+      "path": "verification/joint_law_completion/joint_law.py",
+      "sha256": "26c33ca45eaae4db31530f47e816687ac0d372cb02ea3ea7abece815e149a1d2",
+      "bytes": 14484,
+      "identity": "new completed deliverable bytes"
+    },
+    {
+      "path": "verification/joint_law_completion/module_checks.py",
+      "sha256": "718acc28804da3f20bf9ba4fd696fe19c5f0dbfd54cbf17838869ef7a35f11a7",
+      "bytes": 14667,
+      "identity": "new completed deliverable bytes"
+    },
+    {
+      "path": "verification/joint_law_completion/module_results.json",
+      "sha256": "14af2b39a494c2cce524c9f1b393de5a1ce4fa94aef2f073cde4a15a5783c99d",
+      "bytes": 15358,
+      "identity": "new completed deliverable bytes"
+    }
+  ],
+  "unpublished_originals": [
+    {
+      "name": "original buildout author checks.py",
+      "sha256": "1721ef813e7604ad79267888c36f1797c5e901f3fe535f0cc61578642105a46f",
+      "reason": "Recovered and rerun exactly; private absolute path prevents public inclusion. Existing portable replay retains identical mathematical calculation block."
+    }
+  ],
+  "unavailable": [
+    "Original substrate v1 document",
+    "Historical substrate-v1 review harness/results and companion execution records",
+    "v1.1 local conformance harness"
+  ]
+}

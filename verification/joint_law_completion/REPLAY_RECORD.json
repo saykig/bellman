@@ -1,0 +1,64 @@
+{
+  "runtime": "Python 3.9.6; no toolchain installed",
+  "original_author": {
+    "command": "python3 checks.py (exact source in separate workspace with original packet inputs)",
+    "passed": 18,
+    "checks_json_byte_identical": true,
+    "CHECKS_md_byte_identical": true,
+    "original_source_sha256": "1721ef813e7604ad79267888c36f1797c5e901f3fe535f0cc61578642105a46f"
+  },
+  "reviewer_with_original_packet": [
+    {
+      "command": "python3 reviewer_checks.py --output replay.json",
+      "python": "3.9.6",
+      "optimized": 0,
+      "passed": 19,
+      "failed": 0,
+      "not_run": 0,
+      "harness_sha256": "55c9fb770e1959c9be3d65ee517fb628b25e940148194e414027043b63aa9486",
+      "group_observations_equal_supplied_results": true
+    },
+    {
+      "command": "python3 -O reviewer_checks.py --output replay.json",
+      "python": "3.9.6",
+      "optimized": 1,
+      "passed": 19,
+      "failed": 0,
+      "not_run": 0,
+      "harness_sha256": "55c9fb770e1959c9be3d65ee517fb628b25e940148194e414027043b63aa9486",
+      "group_observations_equal_supplied_results": true
+    }
+  ],
+  "new_module": [
+    {
+      "command": "python3 module_checks.py --output module-results.json",
+      "python": "3.9.6",
+      "optimized": 0,
+      "passed_cases": 19,
+      "observations_and_certificates_equal_normal": true
+    },
+    {
+      "command": "python3 -O module_checks.py --output module-results.json",
+      "python": "3.9.6",
+      "optimized": 1,
+      "passed_cases": 19,
+      "observations_and_certificates_equal_normal": true
+    }
+  ],
+  "public_archive_replay": {
+    "new_module_byte_identical_to_frozen_normal_results": true,
+    "reviewer_without_packet": {
+      "python": "3.9.6",
+      "passed": 18,
+      "failed": 0,
+      "not_run": 1
+    },
+    "existing_portable_author": "17 mathematical groups match frozen results; archive integrity passed"
+  },
+  "limits": [
+    "Fixed cases and checking rules, not general formal verification or empirical validation.",
+    "Original reviewer runtime was Python 3.13.5; replay used existing Python 3.9.6.",
+    "Optional ZIP and duplicate replay outputs excluded.",
+    "Historical substrate-v1 harness remains unavailable."
+  ]
+}

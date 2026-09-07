@@ -14,6 +14,8 @@ The first capability to earn is to know exactly what information a representatio
 
 [Mathematical Substrate v1.1](foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md) is a working seven-component foundation, **not finished Bellman mathematics**. The [completed initial build-out](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md) develops constructive procedures, deeper composition, and scoped extensions. Its frozen status preserves the delivered draft's bytes; it does not confer independent formal verification or final mathematical acceptance.
 
+The [focused constructive completion](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) adds finite rational joint-law, conditional-identification, and decision-certificate procedures, a checked conditioning refinement, and [exact verification evidence](verification/joint_law_completion/README.md). The [build-out review](reviews/BELLMAN_BUILDOUT_ADVERSARIAL_REVIEW.md) and original build-out remain unchanged historical inputs. This bounded research reference does not establish a universal solver or engineering acceptance.
+
 The [Substrate Ledger](SUBSTRATE_LEDGER.md) indexes v1, its adversarial review, v1.1, the build-out, verification evidence, and active areas. The original v1 document and its original review harness/results were not available as exact source files for this archival change; their absence is explicit, and no substitutes are presented as originals.
 
 ## Bellman, Writ, and executable mathematics
