@@ -1,0 +1,31 @@
+name: Research history migration checks
+
+on:
+  pull_request:
+    paths:
+      - 'docs/history/**'
+      - 'README.md'
+      - 'AGENTS.md'
+      - 'verification/history_migration/**'
+      - 'verification/**/run_checks.py'
+      - '.github/workflows/history-migration.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  identities:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check moved records and historical release identities
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 verification/history_migration/checks.py
+          python3 -O verification/history_migration/checks.py
