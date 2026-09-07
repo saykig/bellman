@@ -125,3 +125,15 @@ nominal fixed-time 95% intervals through time 32 excludes `p=1/2` with exact pro
 dependent data, changed losses, data correction, ties, coarse evidence, and resource refusal retain
 their distinct failure semantics. This is a bounded research reference, not a posterior,
 sequential controller, empirical result, or Writ/Decision Lab transfer.
+
+## PR12 support-contract and CI boundary — 7 September 2026
+
+The three reported certificates beyond 128 observations, four actions, and 64 requested precision
+bits are mathematically valid; the finding was an execution-route mismatch, not a false coverage
+or affine-risk theorem. Receiver entry points now return the same controlled resource refusal as
+producers before expensive arithmetic. The old family-replanning runner also incorrectly treated
+authorized living programme-document edits as mutation of frozen mathematics when run directly on
+every later PR. Maintained live CI now checks current statistical and family sources and invokes
+the complete historical PR #10 runner only at its pinned merge. Negative controls retain failures
+for protected-source/result mutation, an intentionally failing live mathematical check, and a
+missing or malformed historical replay. See the [repair record](verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md).

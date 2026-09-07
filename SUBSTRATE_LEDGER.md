@@ -86,3 +86,16 @@ includes repeated-inspection arithmetic, dependence and revision controls, an ex
 cross-check, producer-disabled receiving, and the complete inherited PR #10 preservation chain.
 Sampling validity, adaptive collection, drift, causal meaning, empirical usefulness, authority,
 and Writ/Decision Lab integration remain separate and unestablished.
+
+## PR12 acceptance hardening — 7 September 2026
+
+The reviewed statistical companion and original result record remain frozen. A reproduced
+execution mismatch allowed hand-authored, mathematically valid certificates beyond the public
+128-observation, four-action, and 64-requested-precision profile to bypass producer refusal through
+receiver entry points. The [additive hardening](verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md)
+applies that request profile before receiver tail or risk arithmetic and preserves resource refusal
+as `unfinished`, not invalidity. Current statistical, family-replanning, and persistent-family
+checks run normally and optimized; PR #10's complete historical chain still runs unchanged at its
+pinned merge. The probability and affine-decision proofs, large derived proof coordinates, and
+historical result bytes are unchanged. This is acceptance maintenance, not a new mathematical
+stage or an engineering transfer.

@@ -13,11 +13,73 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 REVIEWED_PR10 = "82d286c591750a2229664d935a6f9820340233df"
 PR10_MERGE = "2e8d99cdcf289eabb63df15086eaa68251a359f1"
+REVIEWED_PR12 = "fbfbc182a05952198d9ce9dc6ef4e9a395eaf3c6"
+FROZEN_PR12_SHA256 = {
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md":
+        "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "verification/statistical_decision_bridge/results.json":
+        "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13",
+}
+AUTHORIZED_REPAIR_PATHS = {
+    ".github/workflows/family-replanning.yml",
+    ".github/workflows/statistical-decision-bridge.yml",
+    "FINDINGS_LEDGER.md",
+    "README.md",
+    "SUBSTRATE_LEDGER.md",
+    "docs/programme/ARCHITECTURE.md",
+    "docs/programme/ROADMAP.md",
+    "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md",
+    "verification/statistical_decision_bridge/acceptance_hardening_results.json",
+    "verification/statistical_decision_bridge/README.md",
+    "verification/statistical_decision_bridge/checks.py",
+    "verification/statistical_decision_bridge/reference.py",
+    "verification/statistical_decision_bridge/run_checks.py",
+}
 
 
 def need(ok, message):
     if not ok:
         raise RuntimeError(message)
+
+
+def parse_historical_result(raw):
+    start = "FAMILY_REPLANNING_RESULT_BEGIN\n"
+    end = "\nFAMILY_REPLANNING_RESULT_END"
+    need(start in raw and end in raw, "historical replay result markers missing")
+    return json.loads(raw.split(start, 1)[1].split(end, 1)[0])
+
+
+def require_commit(commit):
+    result = subprocess.run(
+        ["git", "cat-file", "-e", f"{commit}^{{commit}}"], cwd=ROOT,
+        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    need(result.returncode == 0, f"required historical commit unavailable: {commit}")
+
+
+def enforce_change_scope(paths):
+    paths = set(paths)
+    frozen = paths.intersection(FROZEN_PR12_SHA256)
+    need(not frozen, "frozen PR12 mathematical evidence changed: " + ", ".join(sorted(frozen)))
+    unexpected = paths.difference(AUTHORIZED_REPAIR_PATHS)
+    need(not unexpected, "unauthorized PR12 hardening path: " +
+         ", ".join(sorted(unexpected)))
+
+
+def verify_frozen_pr12_identities():
+    actual = {}
+    for path, expected in FROZEN_PR12_SHA256.items():
+        digest = hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+        need(digest == expected, f"frozen PR12 identity changed: {path}")
+        actual[path] = digest
+    return actual
+
+
+def expect_failure(operation, message):
+    try:
+        operation()
+    except (RuntimeError, subprocess.CalledProcessError, json.JSONDecodeError):
+        return
+    raise RuntimeError(message)
 
 
 def run():
@@ -30,6 +92,12 @@ def run():
         output = subprocess.check_output([sys.executable] + arguments, cwd=ROOT,
                                          env=environment, text=True)
         return output, time.perf_counter() - started
+
+    changed = subprocess.check_output(
+        ["git", "diff", "--name-only", REVIEWED_PR12, "--"],
+        cwd=ROOT, text=True).splitlines()
+    enforce_change_scope(changed)
+    frozen_pr12 = verify_frozen_pr12_identities()
 
     observations, durations = [], []
     for flags in ([], ["-O"]):
@@ -51,10 +119,21 @@ def run():
          current_replanning[0]["failed"] == current_replanning[1]["failed"] == 0,
          "current family-replanning preservation checks failed")
 
+    current_persistent = []
+    for flags in ([], ["-O"]):
+        raw, _ = call(flags + ["verification/persistent_model_families/checks.py"])
+        current_persistent.append(json.loads(raw))
+    need(current_persistent[0]["results"] == current_persistent[1]["results"] and
+         current_persistent[0]["rejections"] ==
+         current_persistent[1]["rejections"] and
+         current_persistent[0]["failed"] == current_persistent[1]["failed"] == 0,
+         "current persistent-family preservation checks failed")
+
     # Authorized living programme-document changes are outside PR #10's historical domain.
     # Execute that complete historical runner at its exact merge, then check current inherited
     # source identities separately below.
     started = time.perf_counter()
+    require_commit(PR10_MERGE)
     with tempfile.TemporaryDirectory() as temporary:
         subprocess.check_call(["git", "clone", "--quiet", "--no-local", str(ROOT), temporary])
         # A GitHub branch-head checkout can clone locally without carrying an
@@ -68,8 +147,7 @@ def run():
             sys.executable, "verification/family_replanning/run_checks.py"
         ], cwd=temporary, env=environment, text=True)
     preservation_seconds = time.perf_counter() - started
-    inherited = json.loads(raw.split("FAMILY_REPLANNING_RESULT_BEGIN\n", 1)[1]
-                           .split("\nFAMILY_REPLANNING_RESULT_END", 1)[0])
+    inherited = parse_historical_result(raw)
 
     need(subprocess.run(["git", "merge-base", "--is-ancestor", REVIEWED_PR10,
                          PR10_MERGE], cwd=ROOT).returncode == 0,
@@ -93,6 +171,7 @@ def run():
          "reviewed inherited mathematical sources changed on current base")
 
     allowed_living = {
+        ".github/workflows/family-replanning.yml",
         "README.md",
         "SUBSTRATE_LEDGER.md",
         "FINDINGS_LEDGER.md",
@@ -109,6 +188,37 @@ def run():
         elif path.endswith("LEDGER.md"):
             need(now.startswith(before), f"ledger rewrite rather than append: {path}")
 
+    # Disposable negative controls prove that orchestration failures remain failures.
+    enforce_change_scope({"docs/programme/ROADMAP.md"})
+    expect_failure(
+        lambda: enforce_change_scope({
+            "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md"}),
+        "protected mathematical source mutation was accepted")
+    expect_failure(
+        lambda: enforce_change_scope({
+            "verification/statistical_decision_bridge/results.json"}),
+        "protected recorded-result mutation was accepted")
+    expect_failure(lambda: require_commit("0" * 40),
+                   "missing historical replay commit was accepted")
+    expect_failure(lambda: parse_historical_result("{}"),
+                   "broken historical replay output was accepted")
+    intentional_failure = (
+        "import runpy, sys; "
+        "sys.path.insert(0, 'verification/statistical_decision_bridge'); "
+        "runpy.run_path('verification/statistical_decision_bridge/checks.py', "
+        "run_name='__main__'); "
+        "raise RuntimeError('intentional live mathematical check failure')"
+    )
+    try:
+        subprocess.check_output(
+            [sys.executable, "-c", intentional_failure], cwd=ROOT,
+            env=environment, text=True, stderr=subprocess.STDOUT)
+    except subprocess.CalledProcessError as error:
+        need('"failed": 0' in error.output,
+             "intentional live failure did not first execute current mathematics")
+    else:
+        raise RuntimeError("intentional current mathematical failure was suppressed")
+
     sources = [
         "verification/statistical_decision_bridge/reference.py",
         "verification/statistical_decision_bridge/checks.py",
@@ -116,11 +226,14 @@ def run():
         "verification/statistical_decision_bridge/README.md",
         "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md",
         ".github/workflows/statistical-decision-bridge.yml",
+        ".github/workflows/family-replanning.yml",
+        "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md",
     ]
     result = {
         "base_commit": base,
         "reviewed_pr10_head": REVIEWED_PR10,
         "pr10_merge_commit": PR10_MERGE,
+        "reviewed_pr12_head": REVIEWED_PR12,
         "executed_commit": subprocess.check_output(
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
         "runtime": platform.python_version(),
@@ -132,11 +245,19 @@ def run():
         "unfinished_per_mode": observations[0]["unfinished"],
         "seconds_by_mode": durations,
         "normal_optimized_equal": True,
+        "receiver_support_contract": {
+            "observations": 128,
+            "actions": 4,
+            "requested_precision_bits": 64,
+            "disposition": "unfinished-resource-refusal",
+        },
         "results": observations[0]["results"],
         "source_sha256": {
             path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest() for path in sources
         },
         "historical_files_preserved": True,
+        "frozen_pr12_sha256": frozen_pr12,
+        "authorized_hardening_paths": sorted(changed),
         "pr10_merge_tree_matches_reviewed_head": True,
         "pr10_sources_unchanged_on_current_base": True,
         "programme_documents_are_authorized_living_changes": True,
@@ -146,6 +267,10 @@ def run():
             "current_family_replanning_rejections_per_mode":
                 current_replanning[0]["rejections"],
             "current_family_replanning_normal_optimized_equal": True,
+            "current_persistent_passed_per_mode": current_persistent[0]["passed"],
+            "current_persistent_rejections_per_mode":
+                current_persistent[0]["rejections"],
+            "current_persistent_normal_optimized_equal": True,
             "inherited_runner": "passed-at-pinned-pr10-merge",
             "persistent_passed_per_mode":
                 inherited["preservation"]["persistent_passed_per_mode"],
@@ -162,6 +287,14 @@ def run():
             "historical_joint_law_observations_and_certificates_equal":
                 inherited["preservation"][
                     "historical_joint_law_observations_and_certificates_equal"],
+        },
+        "negative_controls": {
+            "authorized_programme_document_change": "accepted",
+            "protected_mathematical_source_change": "rejected",
+            "protected_recorded_result_change": "rejected",
+            "intentional_live_mathematical_failure": "rejected",
+            "missing_historical_commit": "rejected",
+            "broken_historical_result": "rejected",
         },
         "limitations": [
             "Coverage is conditional on an IID Bernoulli stream with one fixed real parameter.",

@@ -9,11 +9,14 @@ PYTHONDONTWRITEBYTECODE=1 python3 verification/statistical_decision_bridge/run_c
 ```
 
 The runner executes all new checks normally and with `-O`, compares exact observations, reruns the
-current family-replanning cases, and invokes PR #10's complete inherited preservation chain at its
-pinned merge commit in a temporary local clone. It verifies that the PR #10 merge tree equals its
-reviewed head, that current inherited mathematical sources retain their identities, and that every
-pre-existing base file is unchanged except the authorized living roadmap, architecture, README,
-and append-only ledgers.
+current family-replanning and persistent-family cases, and invokes PR #10's complete inherited
+preservation chain at its pinned merge commit in a temporary local clone. It verifies that the PR
+#10 merge tree equals its reviewed head, that current inherited mathematical sources retain their
+identities, and that every pre-existing base file is unchanged except the named living documents,
+append-only ledgers, and maintained workflow routing. The historical family-replanning workflow
+now routes live PR execution through this maintained entry point; the old runner is still executed
+unchanged at the pinned PR #10 merge instead of being asked to classify authorized later document
+edits.
 
 `reference.py` separates the sampling subject from the decision subject. A sampling request binds
 the complete ordered binary prefix, stream/population/protocol identities, the exact IID Bernoulli
@@ -31,6 +34,16 @@ important tails, complete binary-path enumeration checks the repeated-inspection
 smaller horizon, and the existing joint-law receiver independently reproduces the headline risk
 difference on the two-atom `(1-p,p)` model.
 
+Producer and receiver entry points share one finite request profile: at most 128 observations,
+four actions, and 64 requested precision bits. The precision field is both the producer's number of
+dyadic search iterations and the receiver's independent maximum bracket-width obligation; those
+roles remain distinct even though this bounded reference supports the same request limit for each.
+An out-of-profile, otherwise mathematically valid certificate receives a typed
+`unfinished`/`resource-refusal`, never a mathematical rejection. A request is validated before its
+budget is checked; once the resource boundary is established, the receiver may decline to inspect
+the evidence and performs no tail or risk arithmetic. Within-budget malformed evidence still
+rejects. Derived proof coordinates are not capped by the external-input bit limit.
+
 The authored S1–S6 controls include `n=0`, boundary and interior counts, exact equality brackets,
 wide but valid evidence, false precision, wrong counts/allocation/identity, large derived rational
 coordinates, stale data and decision subjects, immutable caller inputs, data correction versus
@@ -39,8 +52,10 @@ singletons, Boolean/float refusals, and explicit resource exhaustion. `results.j
 actual hosted runtime, source hashes, exact observations, base/source identities, and inherited
 preservation results.
 
-The reference limit is 128 observations, four actions, and 64 dyadic bisection bits. Resource
-refusal is `unfinished`. Passing arithmetic does not validate IID sampling, independence,
+The [acceptance-hardening record](ACCEPTANCE_HARDENING.md) and its separate
+[`acceptance_hardening_results.json`](acceptance_hardening_results.json) preserve the reviewed
+mathematics and original `results.json` while recording the receiver-contract and live-CI repair.
+Resource refusal is `unfinished`, with `kind=resource-refusal`. Passing arithmetic does not validate IID sampling, independence,
 representativeness, absence of drift, causal meaning, loss legitimacy, empirical usefulness, or
 authority to act. The implementation supplies no Bayesian posterior, adaptive-sampling theorem,
 sequential controller, Writ integration, Decision Lab change, language migration, or formal proof.

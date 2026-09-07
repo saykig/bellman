@@ -34,6 +34,7 @@ def reject(operation):
 def refuse(result, reason):
     global unfinished
     need(type(result) is dict and result.get("status") == "unfinished" and
+         result.get("kind") == "resource-refusal" and
          result.get("reason") == reason, "wrong resource-refusal disposition")
     unfinished += 1
 
@@ -390,7 +391,7 @@ def run():
 
     refuse(r.produce_interval(sampling([0] * 129)), "sample-size-limit")
     refuse(r.produce_interval(sampling([0], bits=65)),
-           "bisection-precision-limit")
+           "precision-request-limit")
     five_action_request = r.make_decision(
         sampling([0]), tuple((f"a{i}", (i, i + 1)) for i in range(5)),
         intended_action="a0")
@@ -403,6 +404,120 @@ def run():
            correction="not-an-append",
            changed_loss="new-decision-certificate",
            resource_refusals=3)
+
+    # S5 hardening: receiver entry points enforce the same finite request profile.
+    # These certificates are mathematically valid, but the requests are unsupported.
+    out_of_sample = sampling([0] * 129)
+    out_of_sample_evidence = r.IntervalEvidence(
+        out_of_sample, 129, 0, r.epsilon(out_of_sample.alpha, 129),
+        (F(0), F(0)), (F(0), F(1)), (F(0), F(1)), False,
+        r.prefix_digest(out_of_sample))
+    out_of_precision = sampling([1], alpha=F(1, 2), bits=65)
+    out_of_precision_evidence = r.IntervalEvidence(
+        out_of_precision, 1, 1, F(1, 8), (F(1, 8), F(1, 8)),
+        (F(1), F(1)), (F(1, 8), F(1)), True,
+        r.prefix_digest(out_of_precision))
+    empty_for_actions = sampling([])
+    empty_for_actions_evidence = r.produce_interval(empty_for_actions)
+    five_actions = r.make_decision(
+        empty_for_actions, tuple((f"a{k}", (k, k)) for k in range(5)),
+        intended_action="a0")
+    five_action_evidence = r.DecisionEvidence(
+        five_actions, empty_for_actions_evidence,
+        tuple((f"a{k}", f"a{j}", F(k - j))
+              for k in range(5) for j in range(5)),
+        ("a0",), ("a0",), "a0", F(0), r.decision_digest(five_actions))
+    out_of_sample_decision = r.make_decision(
+        out_of_sample, (("a0", (0, 0)), ("a1", (1, 1))),
+        intended_action="a0")
+    out_of_sample_decision_evidence = r.DecisionEvidence(
+        out_of_sample_decision, out_of_sample_evidence,
+        (("a0", "a0", F(0)), ("a0", "a1", F(-1)),
+         ("a1", "a0", F(1)), ("a1", "a1", F(0))),
+        ("a0",), ("a0",), "a0", F(0),
+        r.decision_digest(out_of_sample_decision))
+
+    old_tail_plus, old_tail_minus = r.tail_plus, r.tail_minus
+    old_consume_interval, old_pairwise = r.consume_interval, r.pairwise_extreme
+
+    def unexpected_expensive_call(*_args, **_kwargs):
+        raise RuntimeError("expensive arithmetic reached after resource refusal")
+
+    try:
+        r.tail_plus = unexpected_expensive_call
+        r.tail_minus = unexpected_expensive_call
+        refuse(r.consume_interval(out_of_sample, out_of_sample_evidence),
+               "sample-size-limit")
+        refuse(r.consume_interval(out_of_precision, out_of_precision_evidence),
+               "precision-request-limit")
+        # Resource refusal is allowed to decline malformed evidence assessment.
+        refuse(r.consume_interval(out_of_sample, object()), "sample-size-limit")
+        r.consume_interval = unexpected_expensive_call
+        r.pairwise_extreme = unexpected_expensive_call
+        refuse(r.consume_decision(five_actions, five_action_evidence),
+               "action-count-limit")
+        refuse(r.consume_decision(out_of_sample_decision,
+                                  out_of_sample_decision_evidence),
+               "sample-size-limit")
+    finally:
+        r.tail_plus, r.tail_minus = old_tail_plus, old_tail_minus
+        r.consume_interval, r.pairwise_extreme = old_consume_interval, old_pairwise
+
+    # Positive receiver controls at every supported boundary.
+    sample_boundary = sampling([1] * r.MAX_N)
+    sample_boundary_evidence = r.IntervalEvidence(
+        sample_boundary, r.MAX_N, r.MAX_N,
+        r.epsilon(sample_boundary.alpha, r.MAX_N),
+        (F(0), F(1)), (F(1), F(1)), (F(0), F(1)), False,
+        r.prefix_digest(sample_boundary))
+    sample_boundary_result = r.consume_interval(
+        sample_boundary, sample_boundary_evidence)
+    need(sample_boundary_result["status"] == "valid-coarse-outward-enclosure",
+         "sample boundary coarse evidence")
+
+    precision_boundary = sampling([1], alpha=F(1, 2), bits=r.MAX_PRECISION_BITS)
+    precision_boundary_evidence = r.IntervalEvidence(
+        precision_boundary, 1, 1, F(1, 8), (F(1, 8), F(1, 8)),
+        (F(1), F(1)), (F(1, 8), F(1)), True,
+        r.prefix_digest(precision_boundary))
+    precision_boundary_result = r.consume_interval(
+        precision_boundary, precision_boundary_evidence)
+    need(precision_boundary_result["requested_precision_met"],
+         "precision boundary exact rational root")
+    very_large_upper = F(1, 8) + F(1, 2**600)
+    very_large_evidence = replace(
+        precision_boundary_evidence,
+        lower_bracket=(F(1, 8), very_large_upper))
+    very_large_result = r.consume_interval(precision_boundary,
+                                           very_large_evidence)
+    need(very_large_result["requested_precision_met"] and
+         very_large_upper.numerator.bit_length() > 500,
+         "large derived coordinate within supported request")
+
+    four_actions = r.make_decision(
+        empty_for_actions, tuple((f"a{k}", (k, k)) for k in range(r.MAX_ACTIONS)),
+        intended_action="a0")
+    four_action_evidence = r.DecisionEvidence(
+        four_actions, empty_for_actions_evidence,
+        tuple((f"a{k}", f"a{j}", F(k - j))
+              for k in range(r.MAX_ACTIONS) for j in range(r.MAX_ACTIONS)),
+        ("a0",), ("a0",), "a0", F(0), r.decision_digest(four_actions))
+    four_action_result = r.consume_decision(four_actions, four_action_evidence)
+    need(four_action_result["common_minimizers"] == ("a0",),
+         "action boundary hand-authored decision evidence")
+    reject(lambda: r.consume_interval(precision_boundary, object()))
+    record("S5_receiver_support_contract_hardening",
+           shared_limits={"observations": r.MAX_N,
+                          "actions": r.MAX_ACTIONS,
+                          "precision_bits": r.MAX_PRECISION_BITS},
+           receiver_resource_refusals=5,
+           early_tail_and_risk_arithmetic_skipped=True,
+           boundary_sample_status=sample_boundary_result["status"],
+           exact_boundary_precision_met=True,
+           boundary_action_common_minimizers=four_action_result["common_minimizers"],
+           malformed_within_budget_rejected=True,
+           large_derived_coordinates_still_accepted=True,
+           hardening_derived_coordinate_bits=very_large_upper.numerator.bit_length())
 
     # S6: the retained interval is the two-atom joint-law polytope p=(1-q,q).
     lower, upper = checked16["outward_interval"]

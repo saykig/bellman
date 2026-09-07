@@ -20,7 +20,9 @@ INTERVAL_CLAIM = "outward-enclosure-of-anytime-binomial-interval"
 DECISION_CLAIM = "exact-affine-risk-certificate-on-retained-interval"
 MAX_N = 128
 MAX_ACTIONS = 4
-MAX_BISECTION_BITS = 64
+MAX_PRECISION_BITS = 64
+# Retain the reviewed producer-facing name while exposing the shared request limit.
+MAX_BISECTION_BITS = MAX_PRECISION_BITS
 
 
 class Invalid(ValueError):
@@ -154,14 +156,20 @@ def make_decision(sampling, actions, *, unit="loss", intended_action,
     return DecisionRequest(sampling, normalized, unit, intended_action, query).validate()
 
 
+def resource_refusal(reason, limit, requested):
+    return {"status": "unfinished", "kind": "resource-refusal",
+            "reason": reason, "limit": limit, "requested": requested}
+
+
 def sampling_budget(request):
+    """Return the shared producer/receiver request-profile refusal, if any."""
     request.validate()
     if len(request.observations) > MAX_N:
-        return {"status": "unfinished", "reason": "sample-size-limit",
-                "limit": MAX_N, "requested": len(request.observations)}
-    if request.precision_bits > MAX_BISECTION_BITS:
-        return {"status": "unfinished", "reason": "bisection-precision-limit",
-                "limit": MAX_BISECTION_BITS, "requested": request.precision_bits}
+        return resource_refusal("sample-size-limit", MAX_N,
+                                len(request.observations))
+    if request.precision_bits > MAX_PRECISION_BITS:
+        return resource_refusal("precision-request-limit", MAX_PRECISION_BITS,
+                                request.precision_bits)
     return None
 
 
@@ -171,8 +179,8 @@ def decision_budget(request):
     if prior:
         return prior
     if len(request.actions) > MAX_ACTIONS:
-        return {"status": "unfinished", "reason": "action-count-limit",
-                "limit": MAX_ACTIONS, "requested": len(request.actions)}
+        return resource_refusal("action-count-limit", MAX_ACTIONS,
+                                len(request.actions))
     return None
 
 
@@ -305,6 +313,9 @@ def _proof_pair(values, message):
 def consume_interval(expected, evidence):
     """Verify outward root brackets exactly without invoking bisection."""
     expected.validate()
+    refusal = sampling_budget(expected)
+    if refusal:
+        return refusal
     need(type(evidence) is IntervalEvidence, "interval evidence required")
     need(type(evidence.subject) is SamplingRequest, "sampling subject required")
     evidence.subject.validate()
@@ -429,6 +440,8 @@ def produce_decision(request, interval_evidence):
     if refusal:
         return refusal
     checked = consume_interval(request.sampling, interval_evidence)
+    if checked.get("status") == "unfinished":
+        return checked
     rows, common, strict, regret = _decision_values(
         request, checked["outward_interval"])
     return DecisionEvidence(request, interval_evidence, rows, common, strict,
@@ -439,6 +452,9 @@ def produce_decision(request, interval_evidence):
 def consume_decision(expected, evidence):
     """Recompute all affine endpoint extrema and the complete common set."""
     expected.validate()
+    refusal = decision_budget(expected)
+    if refusal:
+        return refusal
     need(type(evidence) is DecisionEvidence, "decision evidence required")
     need(type(evidence.subject) is DecisionRequest, "decision subject required")
     evidence.subject.validate()
@@ -446,6 +462,8 @@ def consume_decision(expected, evidence):
     need(evidence.claim == DECISION_CLAIM, "unsupported decision claim")
     need(evidence.subject_digest == decision_digest(expected), "decision digest mismatch")
     checked = consume_interval(expected.sampling, evidence.interval_evidence)
+    if checked.get("status") == "unfinished":
+        return checked
     expected_rows, common, strict, regret = _decision_values(
         expected, checked["outward_interval"])
     need(len(evidence.pairwise_extrema) == len(expected_rows),
