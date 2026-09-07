@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - codex/statistical-decision-bridge
+      - codex/multistream-collection
 
 permissions:
   contents: read
@@ -19,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run exact statistical-decision and preservation checks
+      - name: Run current multistream, scalar, and pinned preservation checks
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/statistical_decision_bridge/run_checks.py
+        run: python3 verification/multistream_collection/run_checks.py

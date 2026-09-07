@@ -137,3 +137,18 @@ every later PR. Maintained live CI now checks current statistical and family sou
 the complete historical PR #10 runner only at its pinned merge. Negative controls retain failures
 for protected-source/result mutation, an intentionally failing live mathematical check, and a
 missing or malformed historical replay. See the [repair record](verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md).
+
+## Controlled multistream collection and checked static decisions — 7 September 2026
+
+Fixed per-stream allocations compose PR #12's rowwise all-prefix coverage across a finite
+registry with simultaneous probability at least `1-sum(alpha_j)`, without cross-stream
+independence. A built-in history-only collector may select the next registered stream and stop;
+the proof evaluates already-simultaneous prefix events at realized local counts and never assumes
+an adaptive count is conditionally binomial. Exact checks reproduce the prescribed two-stream
+rectangles, `2337/65536` strict margin, 3,013 adaptive terminal histories, exclusion masses `0`
+and `65/531441`, and the `5/8` adaptive sample-mean counterexample. Exact affine-box certificates
+retain ties, signed costs, unobserved rows, strict margins, and intended-action regret. Visible
+omission/copying rejects, while concealed filtering remains empirically undiagnosable. Perfectly
+dependent rows show why coverage composition does not justify multiplying marginals. The result is
+a bounded research reference, not conditional inference without a fresh-draw premise, optimized
+adaptive sampling, causal/sequential control, or an engineering transfer.

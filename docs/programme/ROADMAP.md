@@ -2,7 +2,7 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 7 September 2026, based on `main` after merge of PR #10 (`2e8d99cdcf289eabb63df15086eaa68251a359f1`) and the bounded statistical-decision bridge now under review.
+**Current snapshot:** 7 September 2026, based on `main` after merge of PR #12 (`92922ab6604840152ad7f7800969673335748272`) and the controlled multistream construction now under review.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -61,25 +61,27 @@ formal verification.
 | Certificate accumulation and policy selection | HARDENED | [`BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md`](../../foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) | Compatible checked results can strengthen one another; different-policy selection creates and checks a new policy. |
 | Persistent model families | HARDENED | [`BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md`](../../foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) | One accessible policy is evaluated across alternative whole-episode models; loss, regret, model identity, support, and criteria remain distinct. |
 | Family-aware replanning and root guarantees | HARDENED | [`BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md`](../../foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md) | One complete continuation splice produces checked modelwise certificates; conditional preference, cap preservation, and exact policy change remain separate. |
+| Anytime-valid Bernoulli data-to-decision bridge | HARDENED | [`BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md`](../../foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) | One complete IID Bernoulli prefix yields checked all-time outward coverage and exact static decisions; PR #12 aligns producer/receiver support and historical replay. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### ACTIVE RESULT — Anytime-valid Bernoulli data-to-decision bridge
+### ACTIVE RESULT — Controlled multistream collection and checked static decisions
 
-PR #10 completed the selected bounded family-aware replanning construction. The active section 5A
-result now asks:
+PR #12 completed and acceptance-hardened the scalar Bernoulli bridge. The active section 5A result
+now asks:
 
-> Given a complete observed binary prefix and an explicit IID Bernoulli fixed-parameter premise,
-> what outward uncertainty interval and static action-risk guarantee remain valid under repeated
-> inspection and data-dependent stopping?
+> Given a fixed finite registry of complete IID Bernoulli rows, what simultaneous uncertainty and
+> static affine-decision guarantees survive when a controlled collector adaptively chooses the
+> next registered stream and when to stop?
 
-The [bounded construction](../../foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) supplies
-an all-real-parameter analytical coverage proof, receiver-checked outward rational root brackets,
-and exact affine action-risk comparisons. It is a research reference under review, not evidence
-that a supplied stream is IID, a Bayesian posterior, a sequential planner, or an integrated Writ
-capability.
+The [bounded construction](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md)
+replays a complete append-only transcript under built-in history-only rules, composes PR #12's
+rowwise all-prefix statements by a union bound without cross-row independence, and checks exact
+affine decisions on the retained rectangle. It is a research reference under review, not evidence
+that supplied rows are complete or IID, an outcome-filtering remedy, a posterior, an optimized
+bandit algorithm, a sequential planner, or an integrated Writ capability.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -98,11 +100,17 @@ Earned in the current reference:
 - separation of coverage alpha, deterministic precision, and loss-unit regret;
 - exact static finite-action guarantees that remain valid on the simultaneous coverage event,
   including at data-dependent stopping times.
+- controlled adaptive selection among a fixed finite registry, with exact next-unused local
+  indexing, transcript replay, fixed per-stream alpha allocation, and arbitrary cross-row
+  dependence consistent with each row's all-prefix premise;
+- simultaneous rectangular coverage at realized local counts without conditioning on those
+  counts, plus exact signed affine decisions over the retained rectangle.
 
 Still needed when promised by a future capability:
 
-- adaptive or selectively sampled data with a matching sequential argument;
-- dependence, drift, missingness, selection, and misspecification handling;
+- outcome-dependent omission, concealed missingness, adaptive alpha allocation, or dynamically
+  created streams;
+- arbitrary within-row dependence, drift, misspecification, and broader selection handling;
 - multivariate, channel-row, continuous, or structured model learning;
 - empirical model criticism and applicability review;
 - any justified composition into sequential control or PR #10 root guarantees.
