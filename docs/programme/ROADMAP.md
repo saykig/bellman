@@ -4,7 +4,7 @@
 
 **Current snapshot:** 7 September 2026, based on `main` after merge of PR #8 (`81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe`).
 
-The governing North Star remains [Bellman North Star](foundations/BELLMAN_NORTH_STAR.md):
+The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
 > **Make consequential decision-making mathematically inspectable, cumulative, and correctable.**
 
@@ -48,12 +48,12 @@ This lower percentage is expected. The programme is intentionally much larger th
 
 | Capability | Standing | Main mathematical record | What it earns |
 |---|---|---|---|
-| Working substrate | FOUNDATION | [`BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md`](foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md) | Seven-component working foundation and composition discipline. Not finished Bellman mathematics. |
-| Exact joint-law compatibility and decision certificates | HARDENED | [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md`](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) | Exact/outer separation, witnesses, bounds, infeasibility certificates, conditional queries, checked finite decisions. |
-| Sequential whole-policy guarantees | HARDENED | [`BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md`](foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) | Nodewise inequalities become whole-policy bounds; conditioning and replanning boundaries are explicit. |
-| Certificate transport and revalidation | HARDENED | [`BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md`](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) | A changed model or policy gets a new checked guarantee rather than inheriting an old label. |
-| Certificate accumulation and policy selection | HARDENED | [`BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md`](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) | Compatible checked results can strengthen one another; different-policy selection creates and checks a new policy. |
-| Persistent model families | HARDENED | [`BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md`](foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) | One accessible policy is evaluated across alternative whole-episode models; loss, regret, model identity, support, and criteria remain distinct. |
+| Working substrate | FOUNDATION | [`BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md`](../../foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md) | Seven-component working foundation and composition discipline. Not finished Bellman mathematics. |
+| Exact joint-law compatibility and decision certificates | HARDENED | [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md`](../../foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) | Exact/outer separation, witnesses, bounds, infeasibility certificates, conditional queries, checked finite decisions. |
+| Sequential whole-policy guarantees | HARDENED | [`BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md`](../../foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) | Nodewise inequalities become whole-policy bounds; conditioning and replanning boundaries are explicit. |
+| Certificate transport and revalidation | HARDENED | [`BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md`](../../foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) | A changed model or policy gets a new checked guarantee rather than inheriting an old label. |
+| Certificate accumulation and policy selection | HARDENED | [`BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md`](../../foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) | Compatible checked results can strengthen one another; different-policy selection creates and checks a new policy. |
+| Persistent model families | HARDENED | [`BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md`](../../foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) | One accessible policy is evaluated across alternative whole-episode models; loss, regret, model identity, support, and criteria remain distinct. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
@@ -93,7 +93,7 @@ Needed:
 - data-dependent stopping without invalidating the stated coverage;
 - explicit handling of adaptive sampling, dependence, drift, missingness, and misspecification when those become part of the promised capability.
 
-Existing foundation: §10 of [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md`](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md).
+Existing foundation: §10 of [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md`](../../foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md).
 
 ### B. Constraints, reachability, and tail/dynamic risk
 

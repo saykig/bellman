@@ -2,7 +2,7 @@
 
 **Status:** living architecture and transfer-boundary document. This is not a mathematical theorem and does not supersede frozen foundations or verification evidence.
 
-The programme North Star is [Bellman North Star](foundations/BELLMAN_NORTH_STAR.md). The current capability sequence and open mathematical frontier are tracked in [`ROADMAP.md`](ROADMAP.md).
+The programme North Star is [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md). The current capability sequence and open mathematical frontier are tracked in [`ROADMAP.md`](ROADMAP.md).
 
 ## 1. System relationship
 

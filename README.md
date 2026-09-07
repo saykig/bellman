@@ -12,9 +12,9 @@ The first capability to earn is to know exactly what information a representatio
 
 ## Current programme steering
 
-The [Programme Roadmap](ROADMAP.md) is the living capability map: what is hardened, what is next, what remains open, what is closed, and when the programme should redirect rather than defend a stale plan.
+The [Programme Roadmap](docs/programme/ROADMAP.md) is the living capability map: what is hardened, what is next, what remains open, what is closed, and when the programme should redirect rather than defend a stale plan.
 
-The [Bellman–Writ Mathematical Transfer Architecture](ARCHITECTURE.md) records how mathematical results move from Bellman into bounded computation, checking, Writ provenance/revision infrastructure, and eventually domain stress tests. These are living steering documents; they do not supersede frozen mathematical artifacts or evidence.
+The [Bellman–Writ Mathematical Transfer Architecture](docs/programme/ARCHITECTURE.md) records how mathematical results move from Bellman into bounded computation, checking, Writ provenance/revision infrastructure, and eventually domain stress tests. These are living steering documents; they do not supersede frozen mathematical artifacts or evidence.
 
 ## Working mathematical foundation
 
@@ -50,8 +50,8 @@ Writ is the engineering and provenance infrastructure intended to progressively 
 
 ## Repository map
 
-- [`ROADMAP.md`](ROADMAP.md) — living programme roadmap, current frontier, redirect rules, and language/tool triggers.
-- [`ARCHITECTURE.md`](ARCHITECTURE.md) — living Bellman–Decision Lab–Writ transfer architecture and maturity model.
+- [`docs/programme/ROADMAP.md`](docs/programme/ROADMAP.md) — living programme roadmap, current frontier, redirect rules, and language/tool triggers.
+- [`docs/programme/ARCHITECTURE.md`](docs/programme/ARCHITECTURE.md) — living Bellman–Decision Lab–Writ transfer architecture and maturity model.
 - [`SUBSTRATE_LEDGER.md`](SUBSTRATE_LEDGER.md) — cumulative foundation index, active mathematics, and source gaps.
 - [`foundations/`](foundations/) — exact North Star, v1.1, completed build-out, and [source manifest](foundations/SOURCE_MANIFEST.json).
 - [`reviews/`](reviews/) — exact substrate adversarial review.
