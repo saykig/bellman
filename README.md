@@ -24,6 +24,8 @@ The [sequential certificate construction](foundations/BELLMAN_SEQUENTIAL_CERTIFI
 
 The [certificate transport construction](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) revalidates sequential guarantees after explicit model or policy changes. It proves anchored lower/upper envelopes, binds positive-prefix conditioning to the target model, and supplies [fixed exact checks](verification/certificate_transport/README.md).
 
+The [certificate accumulation construction](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) combines same-policy bounds and separately constructs accessible policy selectors, with explicit provenance and exact-value conditions for actual dominance. See [verification](verification/certificate_accumulation/README.md).
+
 ## Bellman, Writ, and executable mathematics
 
 Writ is the engineering and provenance infrastructure intended to progressively embody stable Bellman mathematics. Bellman and Writ may remain separately implemented while their interfaces are developed. Repository separation is not permanent doctrine. Mature Bellman mathematics is expected to become executable engineering capability where justified, and the mathematics may continue beyond what present engineering implements.

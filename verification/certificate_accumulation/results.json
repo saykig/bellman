@@ -1,0 +1,103 @@
+{
+  "base_commit": "cd649db893c70bbce4891c8f526a27aaf1bcda1b",
+  "executed_commit": "6412200568a15fc90d681cca634ebecb71decd03",
+  "execution": "GitHub Actions",
+  "failed": 0,
+  "historical_files_preserved": true,
+  "limitations": [
+    "Fixed cases and analytical proofs, not formal verification or statistical coverage.",
+    "Attached reviewer executions are separately attributed, not replayed here."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 11,
+  "preservation": {
+    "historical_joint_law_observations_and_certificates_equal": true,
+    "joint_law_passed_per_mode": 19,
+    "passed_per_mode": 16,
+    "pr4_repair_passed_per_mode": 13,
+    "rejections_per_mode": 49,
+    "sequential_passed_per_mode": 17
+  },
+  "preservation_seconds": 1.6564064189999996,
+  "rejections_per_mode": 28,
+  "results": [
+    {
+      "actual_cost": "7/8",
+      "case": "complementary_same_policy",
+      "combined_gap": "5/8",
+      "input_gap": "13/8",
+      "status": "PASS"
+    },
+    {
+      "case": "table_laws_and_monotone_addition_provenance_retained",
+      "status": "PASS"
+    },
+    {
+      "actual_regret": 0,
+      "after": 0,
+      "before": 2,
+      "case": "round_trip_slack_removed_on_exact_restored_subject",
+      "status": "PASS"
+    },
+    {
+      "case": "different_policy_selector_and_exact_value_dominance",
+      "selected_cost": 0,
+      "source_costs": [
+        1,
+        1
+      ],
+      "status": "PASS",
+      "upper": 1
+    },
+    {
+      "case": "loose_upper_selection_not_actual_dominance",
+      "other_cost": 0,
+      "selected_cost": 1,
+      "status": "PASS"
+    },
+    {
+      "case": "mixed_models_rejected_not_hidden_model_selector",
+      "status": "PASS"
+    },
+    {
+      "case": "whole_collection_rejection_identity_direction_and_false_derivation",
+      "status": "PASS"
+    },
+    {
+      "case": "exact_proofs_large_fractions_immutable_containers",
+      "derived_bits": 1025,
+      "status": "PASS"
+    },
+    {
+      "case": "terminal_singleton_tied_selector_shortcuts",
+      "status": "PASS"
+    },
+    {
+      "case": "zero_support_nontopological_storage_and_conditioning",
+      "status": "PASS"
+    },
+    {
+      "case": "ordinary_combination_and_selection_receivers_without_producers",
+      "status": "PASS"
+    }
+  ],
+  "runtime": "3.12.3",
+  "seconds_by_mode": [
+    0.07655515900000154,
+    0.3678132399999967
+  ],
+  "source_sha256": {
+    ".github/workflows/certificate-accumulation.yml": "cb32597341d98c6a0fb7210b4c244395fc260ecef44fed0163d474c142109f98",
+    "foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md": "9c7e6b21bee9b77b7594b17cbdea094843835fc2da78253bba6e6e14d5eef25f",
+    "verification/certificate_accumulation/README.md": "a6c495dff0c81ff2e22e1e755c5044ffd157f921b286ce43e96aed820603b7f6",
+    "verification/certificate_accumulation/accumulate.py": "a34a10a8c80e265349e746e8b6ce8063b23599b21f773cc52991842278efaf18",
+    "verification/certificate_accumulation/checks.py": "899f76c9db90f03b25eba4e9c67d6596b597d9ef5b4dff70d8887ccd2c083e69",
+    "verification/certificate_accumulation/run_checks.py": "cf166c8cffeb7f8e40f624a87613be52076c83e8f3db85d5a70f0dcfb5e48f6a"
+  },
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34137904743",
+  "workflow_job_id": 101793047026
+}
