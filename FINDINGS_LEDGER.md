@@ -89,3 +89,7 @@ An additive [revision](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md
 ## PR4 exact-reference boundary correction
 
 Confirmed false original-witness acceptance from floating-point arithmetic, mutable original-constraint aliases, and shortcut task-validation gaps. Scoped code repairs and decisive controls restore the advertised exact semantics; no correct theorem was rewritten. Earlier frozen evidence remains historical. See the [repair record](verification/pr4_repair/README.md) for source identities, current verification, and limits.
+
+## Sequential guarantee composition
+
+[Sequential certificates](foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) now have constructive whole-policy bounds and checked residual propagation, with explicit support, policy, comparator, and model-identity obligations. A two-step candidate has exact regret 5/8; invalid local-to-sequential joins are retained as counterexamples. These are conditional proofs and fixed-instance checks, not a general solver or new Writ capability.
