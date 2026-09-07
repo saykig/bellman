@@ -73,3 +73,16 @@ The [additive construction](foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFIC
 ## Family-aware replanning and root guarantees — 7 September 2026
 
 The [additive construction](foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md) derives one ordinary certificate after a complete single-subtree policy splice in every fixed model. Signed ancestor corrections use the baseline path mass; root cost and paired-regret caps retain every model, including zero-mass conditional exclusions. Submitted-certificate preservation, conditional preference, exact policy change, and candidate-class optimality remain separate warrants. [Fixed exact evidence](verification/family_replanning/README.md) preserves PR8 and the inherited execution chain. This bounded reference adds no solver, model weights, rectangularization, dynamic-consistency claim, Writ/Decision Lab change, or reopened experiment.
+
+## Anytime-valid Bernoulli data-to-decision bridge — 7 September 2026
+
+The [additive construction](foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) proves a
+summably allocated exact-binomial interval covers one fixed real Bernoulli parameter at every
+inspection with probability at least `1-alpha`, under the explicitly supplied IID premise. Exact
+rational root brackets are checked independently from bisection and enlarged outward. A separate
+static decision certificate checks all affine risk differences and named-action regret over that
+retained interval. [Fixed exact evidence](verification/statistical_decision_bridge/README.md)
+includes repeated-inspection arithmetic, dependence and revision controls, an existing joint-law
+cross-check, producer-disabled receiving, and the complete inherited PR #10 preservation chain.
+Sampling validity, adaptive collection, drift, causal meaning, empirical usefulness, authority,
+and Writ/Decision Lab integration remain separate and unestablished.

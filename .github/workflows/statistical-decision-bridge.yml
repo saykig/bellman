@@ -1,0 +1,25 @@
+name: statistical-decision-bridge
+
+on:
+  pull_request:
+  push:
+    branches:
+      - codex/statistical-decision-bridge
+
+permissions:
+  contents: read
+
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exact statistical-decision and preservation checks
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 verification/statistical_decision_bridge/run_checks.py
