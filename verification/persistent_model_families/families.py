@@ -503,35 +503,3 @@ def consume_condition(expected, evidence):
     return {"claim": CONDITIONAL, "event": expected.event,
             "retained": tuple(retained), "excluded_zero_mass": tuple(excluded),
             "modelwise": tuple(modelwise), "weights": None}
-
-
-def consume_condition(expected, evidence):
-    """Receiver: recompute support; never assign weights or normalize zero-mass models."""
-    r.need(type(expected) is ContinuationRequest and type(evidence) is ContinuationEvidence,
-           "expected continuation request and evidence")
-    expected.validate()
-    evidence.request.validate()
-    r.need(expected == evidence.request, "wrong family, prefix, event or continuation")
-    r.need(tuple(x.member_identity for x in evidence.rows) ==
-           tuple(x.identity for x in expected.family.members), "wrong model coverage")
-    retained, excluded, records = [], [], []
-    for member, row in zip(expected.family.members, evidence.rows):
-        r.consume(member.subject, expected.continuation_policy, row.certificate)
-        mass = _prefix_mass(member.subject, expected.prefix_policy, expected.event)
-        r.need(row.mass == mass, "false model-specific prefix mass")
-        if mass == 0:
-            excluded.append(member.identity)
-            continue
-        retained.append(member.identity)
-        query = t.ContinuationQuery(member.subject, expected.prefix_policy,
-                                    expected.continuation_policy, expected.event)
-        answer = t.consume_continuation(query, t.ContinuationEvidence(query, row.certificate, mass))
-        records.append((member.identity, answer["prefix_mass"], answer["optimum_lower"],
-                        answer["policy_upper"], answer["regret_upper"]))
-    r.need(evidence.retained == tuple(retained) and evidence.excluded == tuple(excluded),
-           "false retained/excluded model partition")
-    if not retained:
-        raise ImpossibleConditioning("observed history is impossible under every supplied model")
-    return {"claim": CONDITIONAL, "event": expected.event, "retained": tuple(retained),
-            "excluded_zero_mass": tuple(excluded), "modelwise": tuple(records),
-            "weights": None}
