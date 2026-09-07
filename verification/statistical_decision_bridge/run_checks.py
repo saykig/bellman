@@ -57,6 +57,12 @@ def run():
     started = time.perf_counter()
     with tempfile.TemporaryDirectory() as temporary:
         subprocess.check_call(["git", "clone", "--quiet", "--no-local", str(ROOT), temporary])
+        # A GitHub branch-head checkout can clone locally without carrying an
+        # origin/main remote-tracking ref.  The historical runner resolves its
+        # own base through that name, so bind it to the exact pinned merge in
+        # this disposable clone; no historical source or check is bypassed.
+        subprocess.check_call(["git", "update-ref", "refs/remotes/origin/main",
+                               PR10_MERGE], cwd=temporary)
         subprocess.check_call(["git", "checkout", "--quiet", PR10_MERGE], cwd=temporary)
         raw = subprocess.check_output([
             sys.executable, "verification/family_replanning/run_checks.py"
