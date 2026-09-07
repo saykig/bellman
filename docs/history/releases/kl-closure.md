@@ -1,4 +1,4 @@
-# Kahneman Lab experimental and closure arc
+# v0.0.1 — Kahneman Lab experimental and closure arc
 
 Historical period: 2026-09-02 through 2026-09-06
 
@@ -9,6 +9,9 @@ Tagged commit: `145dbb17d928ccbe36b6a3454f979fd7dbeb963c`
 Git tree: `127e106e54b8c34a32496191fbfcd88867a254da`
 
 Standing: Closed experimental arc with scoped positive findings, falsified shortcuts, and explicit stop dispositions.
+
+Publication note: This historical checkpoint was indexed and published later. Its target commit and
+tree—not the GitHub publication timestamp—are the authority for its historical date and state.
 
 ## Question
 

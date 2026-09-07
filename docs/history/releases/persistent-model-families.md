@@ -1,4 +1,4 @@
-# Persistent model-family certificates and family-aware replanning
+# v0.0.5 — Persistent model-family certificates and family-aware replanning
 
 Historical period: 2026-09-07
 
@@ -9,6 +9,9 @@ Tagged commit: `2e8d99cdcf289eabb63df15086eaa68251a359f1`
 Git tree: `65f95c850d63e10a7a3f78f9c1d3c6b322f0d08d`
 
 Standing: Bounded family-level policy and one-splice replanning guarantees completed.
+
+Publication note: This historical checkpoint was indexed and published later. Its target commit and
+tree—not the GitHub publication timestamp—are the authority for its historical date and state.
 
 ## Question
 

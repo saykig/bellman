@@ -1,4 +1,4 @@
-# Finite joint-law completion and exact-reference repair
+# v0.0.3 — Finite joint-law completion and exact-reference repair
 
 Historical period: 2026-09-07
 
@@ -9,6 +9,9 @@ Tagged commit: `b1266137f824dc65e614722f1f0592846b915262`
 Git tree: `785fc30b8d05168c320bfa901dfae07e06f52538`
 
 Standing: Bounded finite rational construction completed; active reference defects repaired additively.
+
+Publication note: This historical checkpoint was indexed and published later. Its target commit and
+tree—not the GitHub publication timestamp—are the authority for its historical date and state.
 
 ## Question
 

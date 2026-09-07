@@ -1,4 +1,4 @@
-# Mathematical substrate v1.1 and initial build-out
+# v0.0.2 — Mathematical substrate v1.1 and initial build-out
 
 Historical period: 2026-09-06 through 2026-09-07
 
@@ -9,6 +9,9 @@ Tagged commit: `95d0cab3b3e577a0a990c485cc5e1acb4334517b`
 Git tree: `e9c0229302fc8bdb591676ff275edfbab2031299`
 
 Standing: Working mathematical foundation and completed development draft; not finished Bellman mathematics.
+
+Publication note: This historical checkpoint was indexed and published later. Its target commit and
+tree—not the GitHub publication timestamp—are the authority for its historical date and state.
 
 ## Question
 
