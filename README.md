@@ -18,6 +18,8 @@ The [focused constructive completion](foundations/BELLMAN_NEXT_MATHEMATICAL_BUIL
 
 The [Substrate Ledger](SUBSTRATE_LEDGER.md) indexes v1, its adversarial review, v1.1, the build-out, verification evidence, and active areas. The original v1 document and its original review harness/results were not available as exact source files for this archival change; their absence is explicit, and no substitutes are presented as originals.
 
+The [PR4 reference repair](verification/pr4_repair/README.md) records exact-witness, immutable-subject, and complete-task validation fixes. It separates current code/check evidence from the unchanged historical mathematical record.
+
 ## Bellman, Writ, and executable mathematics
 
 Writ is the engineering and provenance infrastructure intended to progressively embody stable Bellman mathematics. Bellman and Writ may remain separately implemented while their interfaces are developed. Repository separation is not permanent doctrine. Mature Bellman mathematics is expected to become executable engineering capability where justified, and the mathematics may continue beyond what present engineering implements.

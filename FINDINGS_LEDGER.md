@@ -85,3 +85,7 @@ v1 assembled seven connected components. Its adversarial review led to v1.1's fo
 ## Focused joint-law constructive completion
 
 An additive [revision](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) completes bounded finite rational compatibility → conditional identification → decision certificates, with exact primal/dual and Farkas checking and explicit outer-domain and unfinished outcomes. A checked sharper conditioning bound supplements the unchanged historical bound. Original author evidence was reproduced; reviewer and new fixed cases passed within their documented scope. This is research-reference completion, not general solver or Writ acceptance; see the substrate ledger for active obligations and source gaps. Historical experiment dispositions are unchanged.
+
+## PR4 exact-reference boundary correction
+
+Confirmed false original-witness acceptance from floating-point arithmetic, mutable original-constraint aliases, and shortcut task-validation gaps. Scoped code repairs and decisive controls restore the advertised exact semantics; no correct theorem was rewritten. Earlier frozen evidence remains historical. See the [repair record](verification/pr4_repair/README.md) for source identities, current verification, and limits.

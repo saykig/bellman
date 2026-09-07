@@ -31,7 +31,19 @@ def vector(v):
     return tuple(rational(x) for x in v)
 
 
+def exact_point(values):
+    """Witness/derived values: exact Fractions only, without coefficient bit caps.
+
+    Use vector for explicitly permitted external integer/fraction input. Derived
+    elimination and inversion values can exceed the model coefficient limit.
+    """
+    need(type(values) in (tuple, list), 'exact witness sequence required')
+    need(all(type(x) is F for x in values), 'exact Fraction witness required; floats/bools excluded')
+    return tuple(values)
+
+
 def dot(a, b):
+    a, b = exact_point(a), exact_point(b)
     need(len(a) == len(b), 'dimension mismatch')
     return sum((x*y for x, y in zip(a, b)), F(0))
 
@@ -43,7 +55,21 @@ class Polynomial:
     terms: tuple
     relation: str = 'eq'
 
+    def __post_init__(self):
+        need(type(self.label) is str, 'polynomial label required')
+        need(type(self.terms) in (tuple, list) and len(self.terms) <= 32, 'polynomial term limit')
+        terms = []
+        for term in self.terms:
+            need(type(term) in (tuple, list) and len(term) == 2, 'polynomial term required')
+            c, powers = term
+            need(type(powers) in (tuple, list), 'polynomial powers required')
+            need(all(type(k) is int and 0 <= k <= 8 for k in powers), 'invalid polynomial powers')
+            terms.append((rational(c), tuple(powers)))
+        object.__setattr__(self, 'terms', tuple(terms))
+        need(type(self.relation) is str and self.relation in ('eq', 'le'), 'unsupported original predicate')
+
     def holds(self, p):
+        p = exact_point(p)
         need(self.relation in ('eq', 'le'), 'unsupported original predicate')
         value = F(0)
         for c, exponents in self.terms:
@@ -65,6 +91,17 @@ class Model:
     d: tuple
     premises: tuple
     extra_original: tuple = ()
+
+    def __post_init__(self):
+        # Own every nested container; frozen dataclasses alone are only shallow.
+        for name in ('variable_order', 'b', 'd', 'premises', 'extra_original'):
+            object.__setattr__(self, name, tuple(getattr(self, name)))
+        for name in ('atom_order', 'A', 'C'):
+            object.__setattr__(self, name, tuple(tuple(row) for row in getattr(self, name)))
+        need(all(type(x) is str for x in self.variable_order+self.premises), 'immutable string labels required')
+        need(all(type(x) is str for row in self.atom_order for x in row), 'immutable atom labels required')
+        need(all(type(x) is Polynomial for x in self.extra_original), 'immutable polynomial constraints required')
+        need(all(type(x) in (int, bool, float, str, F) for row in self.A+self.C+(self.b,self.d) for x in row), 'immutable coefficient values required')
 
     def validate(self):
         n = len(self.atom_order)
@@ -103,6 +140,16 @@ class Task:
     actions: tuple = ()
     direction: str = 'max'
 
+    def __post_init__(self):
+        need(type(self.model) is Model, 'immutable model required')
+        for name in ('event', 'numerator'):
+            object.__setattr__(self, name, tuple(getattr(self, name)))
+        object.__setattr__(self, 'actions', tuple((a, tuple(row)) for a, row in self.actions))
+        need(all(type(x) is str for x in (self.event_label,self.query_label,self.loss_unit,self.direction)), 'immutable task labels required')
+        need(all(type(a) is str for a,_ in self.actions), 'immutable action labels required')
+        need(type(self.conditional) is bool, 'task mode')
+        need(all(type(x) in (int, bool, float, str, F) for x in self.event+self.numerator+tuple(v for _,row in self.actions for v in row)), 'immutable task coefficients required')
+
     def validate(self):
         self.model.validate()
         n = len(self.model.atom_order)
@@ -131,6 +178,7 @@ def make_task(model, event, numerator, conditional=True, event_label='e', query_
 
 
 def difference(task, a, b):
+    task.validate()
     losses = dict(task.actions)
     need(a in losses and b in losses and a != b, 'distinct declared actions required')
     return replace(task, numerator=tuple(e*(x-y) for e,x,y in zip(task.event,losses[a],losses[b])),
@@ -145,6 +193,21 @@ class LP:
     d: tuple
     objective: tuple
 
+    def __post_init__(self):
+        for name in ('A', 'C'):
+            object.__setattr__(self, name, tuple(tuple(row) for row in getattr(self, name)))
+        for name in ('b', 'd', 'objective'):
+            object.__setattr__(self, name, tuple(getattr(self, name)))
+        self.validate()
+
+    def validate(self):
+        n = len(self.objective)
+        need(n > 0 and len(self.A) == len(self.b) and len(self.C) == len(self.d), 'LP dimensions')
+        need(all(len(row) == n for row in self.A+self.C), 'LP row dimensions')
+        for row in self.A+self.C+(self.b,self.d,self.objective):
+            exact_point(row)
+        return self
+
 
 def lp(task):
     task.validate()
@@ -158,16 +221,21 @@ def lp(task):
 
 
 def feasible(L, p):
+    L.validate()
+    p = exact_point(p)
     return len(p) == len(L.objective) and all(x >= 0 for x in p) and all(dot(r,p) == b for r,b in zip(L.A,L.b)) and all(dot(r,p) <= d for r,d in zip(L.C,L.d))
 
 
 def original_member(model, p):
     model.validate()
+    p = exact_point(p)
     L = LP(model.A,model.b,model.C,model.d,(F(0),)*len(model.atom_order))
     return feasible(L,p) and all(extra.holds(p) for extra in model.extra_original)
 
 
 def recover(task, p):
+    task.validate()
+    p = exact_point(p)
     need(feasible(lp(task),p), 'not a feasible analyzed point')
     if task.conditional:
         need(p[-1] > 0, 'positive inverse scale required')
@@ -179,6 +247,8 @@ def recover(task, p):
 
 
 def forward(task, x):
+    task.validate()
+    x = exact_point(x)
     need(original_member(task.model,x), 'original-model witness required')
     if not task.conditional:
         return x
@@ -196,6 +266,12 @@ class Certificate:
     z: tuple = ()
     signed_bound: F = F(0)
 
+    def __post_init__(self):
+        need(type(self.subject) is Task and type(self.kind) is str, 'immutable certificate subject required')
+        for name in ('point', 'y', 'z'):
+            object.__setattr__(self, name, exact_point(getattr(self, name)))
+        need(type(self.signed_bound) is F, 'exact Fraction bound required')
+
 
 def consume(expected, cert):
     """Check a certificate against independently supplied intended mathematical subject.
@@ -204,6 +280,7 @@ def consume(expected, cert):
     nonemptiness. 'original' means all encoded premises, not empirical truth.
     """
     expected.validate()
+    cert.subject.validate()
     need(cert.subject == expected, 'subject_mismatch')
     need(cert.kind in ('witness','upper','optimum','infeasible'), 'certificate kind')
     for v in cert.point+cert.y+cert.z+(cert.signed_bound,):
@@ -242,6 +319,10 @@ def consume(expected, cert):
 
 # Producer only: exact Gaussian elimination and finite active-set enumeration.
 def solve_rows(rows, rhs, n):
+    need(type(n) is int and n > 0, 'positive integer dimension required')
+    rows = tuple(exact_point(row) for row in rows)
+    rhs = exact_point(rhs)
+    need(len(rows) == len(rhs) and all(len(row) == n for row in rows), 'solver dimensions')
     M=[list(row)+[b] for row,b in zip(rows,rhs)]
     k=0
     pivots=[]
@@ -296,6 +377,8 @@ def propose(task, max_bases=25000):
 
 
 def impossible_event(task, original_point, cert):
+    task.validate()
+    original_point = exact_point(original_point)
     need(task.conditional and cert.kind == 'infeasible', 'conditional infeasibility certificate required')
     need(original_member(task.model, original_point), 'original nonemptiness witness required')
     need(consume(task, cert)['status'] == 'no_eligible_original_model', 'eligible-domain check')

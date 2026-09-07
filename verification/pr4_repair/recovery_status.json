@@ -1,0 +1,56 @@
+{
+  "status": "Recovery packet inaccessible in this execution; no claimed recovery or execution of these originals",
+  "governing_source": "reviews/RUN_THIS_NEXT_PR4_REPAIR_AND_ARCHIVE.md",
+  "expected_artifacts": [
+    {
+      "name": "BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1.md",
+      "expected_bytes": 62246,
+      "expected_sha256_from_governing_prompt": "af60646d0118dce72abc65d7440a4faf9e8ed305ca6ffefc00775cc84204bc22",
+      "actual_sha256": null,
+      "status": "source bytes unavailable; not verified or archived"
+    },
+    {
+      "name": "fixed_checks.py",
+      "expected_bytes": 18071,
+      "expected_sha256_from_governing_prompt": "8734a8a9fecec01172930b5e163bae307df2a82eb43c1002bcb2a8174d843f01",
+      "actual_sha256": null,
+      "status": "source bytes unavailable; not verified or archived"
+    },
+    {
+      "name": "fixed_check_results.json",
+      "expected_bytes": 2605,
+      "expected_sha256_from_governing_prompt": "8205a1db18bc7d60ddd4e384afd75aed78eaea45763532d90a9de81d354ed48f",
+      "actual_sha256": null,
+      "status": "source bytes unavailable; not verified or archived"
+    },
+    {
+      "name": "fixed_check_log.txt",
+      "expected_bytes": 2463,
+      "expected_sha256_from_governing_prompt": "1f7c16e517d0cef63d6b9621abb167b6940b8991859ab4eeb42481609e58d8cf",
+      "actual_sha256": null,
+      "status": "source bytes unavailable; not verified or archived"
+    },
+    {
+      "name": "source_manifest.json",
+      "expected_bytes": 1355,
+      "expected_sha256_from_governing_prompt": "862dcb5e5bc545a5cc535c0f1a4f0a497a4f628e168f5a9f36f7a40a9b6b2bcd",
+      "actual_sha256": null,
+      "status": "source bytes unavailable; not verified or archived"
+    }
+  ],
+  "other_unavailable": [
+    "BELLMAN_PR4_FINISH_PACKET.zip",
+    "RECOVERY_MANIFEST.json",
+    "packet PR4_ADVERSARIAL_REVIEW.md",
+    "packet pr4_review_probes.py"
+  ],
+  "available_review_evidence": [
+    "reviews/PR4_REVIEW.md",
+    "verification/pr4_repair/pr4_review_probe.py"
+  ],
+  "still_separate_gap": "v1.1 local conformance harness",
+  "north_star_duplicate": {
+    "sha256": "e2f1f7180fdf05dcd5a1f899b0e2acaf5a64d2e2a0a64c0a6e6679239f8f6b46",
+    "status": "newly supplied bytes verified identical to existing canonical file; duplicate excluded"
+  }
+}

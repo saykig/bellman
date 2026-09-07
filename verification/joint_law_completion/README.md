@@ -15,3 +15,7 @@ The new suite has 19 fixed cases, including exact primal/dual and Farkas evidenc
 Original author source was separately recovered and rerun without editing: 18 groups passed; both original compact results and summary reproduced byte-for-byte. Its private absolute path precludes publishing raw source; the pre-existing portable replay preserves the same mathematical block and verifies the existing archive. No original file was overwritten.
 
 The [replay record](REPLAY_RECORD.json) distinguishes exact original replay, optional-packet reviewer replay, public portable replay, and new completion checks. The [manifest](../../foundations/BUILDOUT_COMPLETION_MANIFEST.json) records actual available byte identities. No runtime was installed or globally changed. Disposable rerun copies and packet ZIPs are excluded.
+
+## Current repair evidence
+
+The active reference was repaired after the initial completion. The [PR4 repair record](../pr4_repair/README.md) specifies exact witness types, immutable subjects, current checks, and the historical source commit. The frozen results and manifests above continue to describe the earlier source; they were not rewritten to describe the repair.
