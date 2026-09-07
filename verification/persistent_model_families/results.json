@@ -1,6 +1,6 @@
 {
   "base_commit": "9761cd0ce99be6fb6b2dcddc89951960a4a0df34",
-  "executed_commit": "d1d18ecd94a41e7611eae45575733e76f2004dd8",
+  "executed_commit": "412f9b72124bd7749ff1a5e9b89a4c5a5de0dcf4",
   "execution": "GitHub Actions",
   "failed": 0,
   "historical_files_preserved": true,
@@ -26,7 +26,7 @@
     "transport_passed_per_mode": 16,
     "transport_rejections_per_mode": 49
   },
-  "preservation_seconds": 2.5426094090000007,
+  "preservation_seconds": 2.398936692999996,
   "rejections_per_mode": 19,
   "results": [
     {
@@ -117,17 +117,17 @@
   "reviewed_pr7_head": "5c567646e0dec648bfdc9302025b495e8afaeb6e",
   "runtime": "3.12.3",
   "seconds_by_mode": [
-    0.16393598900000228,
-    0.45667512800000054
+    0.1585410420000244,
+    0.4733186599999044
   ],
   "source_sha256": {
     ".github/workflows/persistent-model-families.yml": "746cc783e2aac98bb44946271e5afb90ca9cd759916fa8bd4a3bb2450d4178e5",
     "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md": "38a461556da18e977c623404bec16a056013019daeb74adb7207bc0f313d749e",
     "verification/persistent_model_families/README.md": "36d248793e13d1cc7067d30575f9e20987dff8764f52c41d29e2da696ff72c14",
     "verification/persistent_model_families/checks.py": "93c82fc2eb48ebc72237426e64f1b938ae69f7867380d2ad53092a755de2a3ae",
-    "verification/persistent_model_families/families.py": "8b1c21db69f22dd1a7081d9a9a108582bf7c0ec5d3d9bfd313dcc798cc5f7c57",
+    "verification/persistent_model_families/families.py": "40163e00ae5d0be54c9effbd78ad25f99d05d29d08dda1849d1be28e3819925f",
     "verification/persistent_model_families/run_checks.py": "5838b7df473e4adca195d3572e54bc05ed74a3c0888e3927c8ecc35ffa9b974a"
   },
-  "workflow_job_id": 101828988753,
-  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34149637284"
+  "workflow_job_id": 101830243177,
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34150049531"
 }
