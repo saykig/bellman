@@ -20,6 +20,8 @@ The [Substrate Ledger](SUBSTRATE_LEDGER.md) indexes v1, its adversarial review, 
 
 The [PR4 reference repair](verification/pr4_repair/README.md) records exact-witness, immutable-subject, and complete-task validation fixes. It separates current code/check evidence from the unchanged historical mathematical record.
 
+The [sequential certificate construction](foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) connects checked local inequalities to whole-policy regret, conditioning, and replanning, with [fixed exact checks](verification/sequential_certificates/README.md). Its bounded history-tree reference extends the mathematics without defining the programme's ceiling.
+
 ## Bellman, Writ, and executable mathematics
 
 Writ is the engineering and provenance infrastructure intended to progressively embody stable Bellman mathematics. Bellman and Writ may remain separately implemented while their interfaces are developed. Repository separation is not permanent doctrine. Mature Bellman mathematics is expected to become executable engineering capability where justified, and the mathematics may continue beyond what present engineering implements.

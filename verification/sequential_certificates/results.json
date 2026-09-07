@@ -1,0 +1,189 @@
+{
+  "base_commit": "b1266137f824dc65e614722f1f0592846b915262",
+  "executed_commit": "087368338535331b6df61f82d2bb80feb05d9f95",
+  "execution": "GitHub Actions",
+  "failed": 0,
+  "historical_files_byte_identical": true,
+  "historical_joint_law_observations_and_certificates_equal": true,
+  "joint_law_passed_per_mode": 19,
+  "limits": [
+    "Fixed instances, not formal verification or empirical premise validation.",
+    "Producer/checker share Fraction arithmetic and schema; forward path checks are a separate calculation.",
+    "No unavailable historical harness or recovery packet used."
+  ],
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_observations_equal": true,
+  "pr4_repair_passed_per_mode": 13,
+  "runtime": "3.12.3",
+  "sequential_passed_per_mode": 17,
+  "sequential_results": [
+    {
+      "case": "complete_nonzero_regret_and_independent_paths",
+      "legal_policies": 8,
+      "optimum_lower": "1/4",
+      "paths": [
+        [
+          [
+            [
+              "go",
+              "L"
+            ],
+            [
+              "b",
+              "STOP"
+            ]
+          ],
+          "1/2",
+          "5/8"
+        ],
+        [
+          [
+            [
+              "go",
+              "R"
+            ],
+            [
+              "a",
+              "STOP"
+            ]
+          ],
+          "1/2",
+          "9/8"
+        ]
+      ],
+      "policy_upper": "7/8",
+      "regret_upper": "5/8",
+      "status": "PASS"
+    },
+    {
+      "case": "selected_action_only_is_not_optimum_lower_bound",
+      "status": "PASS"
+    },
+    {
+      "case": "actual_residual_and_same_backup_policy_checks",
+      "checked_greediness_regret": "5/8",
+      "status": "PASS"
+    },
+    {
+      "actual": "1/2",
+      "case": "nonzero_approximate_greedy_regret",
+      "certified": "7/8",
+      "status": "PASS"
+    },
+    {
+      "case": "terminal_residual_is_load_bearing",
+      "status": "PASS"
+    },
+    {
+      "case": "stale_cost_horizon_inaccessible_and_changed_continuation",
+      "status": "PASS",
+      "valid_controls": true
+    },
+    {
+      "actual_regret": "5/8",
+      "case": "replanning_common_comparator_not_unrelated_local_optima",
+      "single_replacement_cost": "1/4",
+      "status": "PASS",
+      "unrelated_regret": 0
+    },
+    {
+      "case": "rare_event_and_unequal_mass_conditioning",
+      "conditional_TV": "1",
+      "joint_TV": "1/100",
+      "rare_conditional_loss": 1,
+      "rare_expected_loss": "1/100",
+      "status": "PASS"
+    },
+    {
+      "actual_cost": "27/200",
+      "actual_regret": "3/400",
+      "case": "off_support_total_fallback_no_invented_posterior",
+      "fallback_loss_contribution": "1/100",
+      "status": "PASS",
+      "surrogate_cost": "1/8"
+    },
+    {
+      "case": "root_action_whole_policy_tie_overlap_zero_horizon",
+      "exact_tie": [
+        "a",
+        "b"
+      ],
+      "overlap": "uncertified",
+      "status": "PASS",
+      "zero_horizon": "terminal"
+    },
+    {
+      "actual_regret": "3/400",
+      "case": "uniform_model_error_plus_calculation_error",
+      "eta": "0",
+      "status": "PASS",
+      "transfer_bound": "1/50",
+      "uniform_e": "1/100",
+      "value_closeness_counterexample_regret": 1
+    },
+    {
+      "case": "persistent_models_and_recipient_policy_access",
+      "fixed_worst": 1,
+      "modelwise_costs": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "oracle_zero_not_common": true,
+      "status": "PASS",
+      "switching": 2
+    },
+    {
+      "bound": "7/16",
+      "case": "independent_product_bound_and_dependence_failure",
+      "dependent_policy_loss_difference": 1,
+      "independent_TV": "5/16",
+      "marginal_only_claim": 0,
+      "status": "PASS"
+    },
+    {
+      "adaptive_correct_posterior": "1/4",
+      "case": "hidden_state_conditioning_retains_predictive_history",
+      "next_zero_given_first_zero": "1",
+      "posterior": "1/2",
+      "selected_action_naive_posterior": "1/2",
+      "status": "PASS"
+    },
+    {
+      "case": "exact_numbers_and_large_derived_proofs",
+      "derived_bits": 501,
+      "status": "PASS"
+    },
+    {
+      "case": "deep_immutable_subject_policy_and_complete_coverage",
+      "status": "PASS"
+    },
+    {
+      "case": "consumer_does_not_call_producer",
+      "status": "PASS"
+    }
+  ],
+  "source_sha256": {
+    ".github/workflows/sequential-certificates.yml": "1e61eb0e9a2376ef2fc0aef9d94b482bb4e9b11a5c7c4802e46ddc687a5b6b1a",
+    "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md": "a974aa8e9753bcc1a4f5a5cd4d51c88040ae30bc40f98d1e837c71c6d711d0a4",
+    "verification/sequential_certificates/checks.py": "4d9391e6332cb9c0103374f4134904935d785d905baee8016700e5d4d4dcfedf",
+    "verification/sequential_certificates/reference.py": "99d0f1a3a32334cce826a7a582502122bc25e195f7024ed40f0c45753cbde1df",
+    "verification/sequential_certificates/run_checks.py": "fdd86381d2b9e34962c42fdbc3ddc27621192046eb74ff41f334f27227a6aae2"
+  },
+  "workflow_run_url": "https://github.com/saykig/bellman/actions/runs/34087880882",
+  "workflow_job_id": 101635321589,
+  "development_notes": [
+    {
+      "kind": "proof clarification with fixed counterexample",
+      "description": "Draft selected-action conditional-likelihood notation was replaced by chronological controlled-kernel likelihood. Adaptive action selection control gives correct posterior 1/4 versus naive 1/2. No inherited mathematical file changed."
+    }
+  ]
+}
