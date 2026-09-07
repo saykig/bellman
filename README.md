@@ -26,6 +26,8 @@ The [certificate transport construction](foundations/BELLMAN_CERTIFICATE_TRANSPO
 
 The [certificate accumulation construction](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) combines same-policy bounds and separately constructs accessible policy selectors, with explicit provenance and exact-value conditions for actual dominance. See [verification](verification/certificate_accumulation/README.md).
 
+The [persistent model-family construction](foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) checks one implementable history policy across alternative whole-episode models, separately verifies exact deterministic minimax-loss and minimax-regret choices, and filters conditional families by positive prefix support without model averaging or hidden-model switching. See [verification](verification/persistent_model_families/README.md).
+
 ## Bellman, Writ, and executable mathematics
 
 Writ is the engineering and provenance infrastructure intended to progressively embody stable Bellman mathematics. Bellman and Writ may remain separately implemented while their interfaces are developed. Repository separation is not permanent doctrine. Mature Bellman mathematics is expected to become executable engineering capability where justified, and the mathematics may continue beyond what present engineering implements.

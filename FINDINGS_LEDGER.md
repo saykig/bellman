@@ -101,3 +101,7 @@ Confirmed false original-witness acceptance from floating-point arithmetic, muta
 ## Certificate accumulation — 7 September 2026
 
 The [additive construction](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) proves same-subject/same-policy max-lower/min-upper closure and table laws, plus separately checked policy selection. Actual dominance requires checked exact policy values; loose-bound selection does not suffice. Retained warrants tighten a restored-subject round trip without changing PR6. New fixed evidence and preservation runs remain distinct from historical/reviewer records. The broader programme continues beyond this finite module.
+
+## Persistent model-family certificates — 7 September 2026
+
+One common deterministic history policy can now be checked across up to four persistent whole-episode models without averaging them or exposing a hidden model key. Paired modelwise bounds precede aggregation; exact policy matrices separately support common-optimal, minimum-worst-loss, minimum-worst-regret, and candidate-subset conclusions with independently checked coverage and ties. Support-filtered continuation records excluded zero-mass members without assigning weights. The fixed cases preserve the distinction between persistent and rectangularized uncertainty and between deterministic and randomized policy classes. This is a bounded exact reference, not empirical coverage, dynamic consistency, a general solver, or a Writ/Decision Lab transfer.
