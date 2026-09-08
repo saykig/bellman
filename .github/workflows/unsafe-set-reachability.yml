@@ -1,0 +1,36 @@
+name: unsafe-set-reachability
+
+on:
+  pull_request:
+    paths:
+      - "verification/unsafe_set_reachability/**"
+      - "foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md"
+      - ".github/workflows/unsafe-set-reachability.yml"
+      - ".github/workflows/statistical-corner-models.yml"
+      - "README.md"
+      - "docs/programme/**"
+      - "docs/history/records/FINDINGS_LEDGER.md"
+      - "docs/history/records/SUBSTRATE_LEDGER.md"
+  push:
+    branches:
+      - codex/unsafe-set-reachability
+
+permissions:
+  contents: read
+
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run current reachability and pinned historical acceptance
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 verification/unsafe_set_reachability/run_checks.py

@@ -6,12 +6,6 @@ on:
       - "verification/statistical_corner_models/**"
       - "foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md"
       - ".github/workflows/statistical-corner-models.yml"
-      - ".github/workflows/statistical-decision-bridge.yml"
-      - ".github/workflows/family-replanning.yml"
-      - "README.md"
-      - "docs/programme/**"
-      - "docs/history/records/FINDINGS_LEDGER.md"
-      - "docs/history/records/SUBSTRATE_LEDGER.md"
   push:
     branches:
       - codex/statistical-corner-model-guarantees
