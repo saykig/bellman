@@ -114,7 +114,7 @@ with identical supplied strategy and assessment, may be erased while preserving 
 gain and common consistency in both directions. The 127-node source reduces to 63 nodes. This is
 assessment-specific; public randomization can coordinate non-invariant strategies, and equal
 payoffs cannot justify transporting changed off-path likelihoods. Both shortcuts have exact
-counterexamples. [Current reproduction](../../verification/history_reduction/ACCEPTANCE.md)
+counterexamples. [Current reproduction](../../verification/diagnostic_erasure/ACCEPTANCE.md)
 checks the new reduction and replays unchanged earlier components at their retained identities.
 
 The [diagnostic erasure obstruction](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)

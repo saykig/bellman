@@ -15,7 +15,7 @@ ADDITIONS={'foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md',
            'reviews/DIAGNOSTIC_HISTORY_ERASURE_REVIEW_2026_09_08.md',
            'docs/history/releases/2026-09-08-diagnostic-history-erasure-obstruction.md'} | {
     'verification/diagnostic_erasure/'+p for p in ('candidate.py','receive_case.py',
-        'checks.py','acceptance.py','ACCEPTANCE.md','example_case.json','results.json')}
+        'checks.py','acceptance.py','ACCEPTANCE.md','example_case.json','results.json','final-results.json')}
 
 
 def need(ok,detail):
@@ -70,8 +70,8 @@ def run(mode='all',verify_retained=False):
         need(outputs[0]==outputs[1],'normal/optimized diagnostic mismatch')
         result['diagnostic_erasure']=outputs[0];result['normal_optimized_equal']=True
     if verify_retained:
-        record=json.loads((ROOT/'verification/diagnostic_erasure/results.json').read_text())
-        expected_paths=ADDITIONS-{'verification/diagnostic_erasure/results.json'}|LIVING|WORKFLOWS
+        record=json.loads((ROOT/'verification/diagnostic_erasure/final-results.json').read_text())
+        expected_paths=ADDITIONS-{'verification/diagnostic_erasure/final-results.json'}|LIVING|WORKFLOWS
         need(set(record['source_files'])==expected_paths,'incomplete source manifest')
         for p,wanted in record['source_files'].items():
             need(sha256((ROOT/p).read_bytes()).hexdigest()==wanted,'changed diagnostic source: '+p)
