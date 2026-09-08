@@ -2,7 +2,7 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, reviewed shared-consistency strategic reference based on merged PR #20
+**Current snapshot:** 8 September 2026, shared-consistency reference with specified public-tag history reduction, based on merged PR #20
 (`cea4e1a47cb91c1f3917490350deab53d2976908`). The causal kernel-fibre work published
 separately as unmerged PR #21 is not assumed or modified here. Existing historical evidence is
 preserved. The strategic result has author adversarial review and independent executable checks;
@@ -108,11 +108,21 @@ supplied-witness procedure, not a complete existence decision or equilibrium sea
 bounded witness is not a global impossibility. Ambiguity preferences and participation remain
 separate from modelwise incentives; stipulated monitoring is not empirical evidence.
 
-The next useful representation gate is a **specified** history reduction preserving both legal
-continuation values and off-path likelihood restrictions. Root-payoff abstraction or renaming
-alone cannot warrant this. A concrete continuous on-path query may instead justify the draft's
-analytic multi-affine criterion; generic continuous receiving remains unimplemented. Do not
-mechanically implement both directions, enlarge fixtures, or infer causal-to-game identification.
+The [public-tag reduction](../../foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md) now earns
+one specified many-to-one history reduction: positive public copies of the same continuation game,
+with identical supplied strategy and assessment, may be erased while preserving every continuation
+gain and common consistency in both directions. The 127-node source reduces to 63 nodes. This is
+assessment-specific; public randomization can coordinate non-invariant strategies, and equal
+payoffs cannot justify transporting changed off-path likelihoods. Both shortcuts have exact
+counterexamples. [Current reproduction](../../verification/history_reduction/ACCEPTANCE.md)
+checks the new reduction and replays unchanged earlier components at their retained identities.
+
+The next representation question needs a concrete use that exceeds this restrictive copy class:
+for example, an intermediate observation proposed for erasure with explicit deviation coverage
+and conditional likelihood preservation. No general history quotient is earned. A concrete
+continuous on-path query may instead justify the draft's analytic multi-affine criterion; generic
+continuous receiving remains unimplemented. Do not mechanically enlarge fixtures, implement both
+directions or infer causal-to-game identification.
 
 The following inherited causal frontier description is retained as context from the base edition;
 it is not a claim that this strategic component implements a causal bridge.

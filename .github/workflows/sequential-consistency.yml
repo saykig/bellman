@@ -2,6 +2,11 @@ name: Shared sequential consistency
 on:
   pull_request:
     paths:
+      - 'verification/history_reduction/**'
+      - 'foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md'
+      - 'reviews/PUBLIC_TAG_HISTORY_REDUCTION*'
+      - 'README.md'
+      - 'docs/programme/**'
       - 'verification/sequential_consistency/**'
       - 'verification/sequential_credibility/**'
       - 'foundations/BELLMAN_SEQUENTIAL_CREDIBILITY*'
@@ -10,6 +15,11 @@ on:
   push:
     branches: ['codex/sequential-credibility', 'main']
     paths:
+      - 'verification/history_reduction/**'
+      - 'foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md'
+      - 'reviews/PUBLIC_TAG_HISTORY_REDUCTION*'
+      - 'README.md'
+      - 'docs/programme/**'
       - 'verification/sequential_consistency/**'
       - 'verification/sequential_credibility/**'
       - 'foundations/BELLMAN_SEQUENTIAL_CREDIBILITY*'
@@ -26,6 +36,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r verification/sequential_consistency/requirements.txt
-      - run: python verification/sequential_consistency/acceptance.py --strategic --verify-retained
+      - run: python verification/history_reduction/acceptance.py --strategic --verify-retained
         env:
           PYTHONDONTWRITEBYTECODE: '1'

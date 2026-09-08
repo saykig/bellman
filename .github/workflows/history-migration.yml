@@ -27,7 +27,9 @@ jobs:
         env:
           PYTHONDONTWRITEBYTECODE: '1'
         run: |
-          if [ -f verification/sequential_consistency/acceptance.py ]; then
+          if [ -f verification/history_reduction/acceptance.py ]; then
+            python3 verification/history_reduction/acceptance.py --history --verify-retained
+          elif [ -f verification/sequential_consistency/acceptance.py ]; then
             python3 verification/sequential_consistency/acceptance.py --history --verify-retained
           else
             python3 verification/history_migration/checks.py

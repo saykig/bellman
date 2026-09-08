@@ -326,3 +326,16 @@ renaming checks do not establish general history compression. A strategic histor
 also preserve the relevant consistency restrictions, not just root payoff values. Payoff-only
 mechanism changes can preserve consistency while invalidating incentive bounds. Causal-kernel
 outputs cannot be used as strategic response laws without an additional warranted mapping.
+
+
+The [public-tag history reduction](../../foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md)
+adds one M1 transport rule on PR #22. Explicit per-copy tree and information-set bijections,
+identical conditional chance laws/payoffs, strictly positive public tag probabilities, and
+invariant supplied profiles/assessments establish exact continuation-gain preservation and
+bidirectional common consistency. A source power witness restricts to one representative tag
+chosen across all models; the target receiver recomputes its positivity radius and independently
+checks its beliefs and incentives. The target subject has its own identity and retained warrant.
+This proves a many-to-one reduction for that specified assessment class, not preservation of all
+source equilibria or arbitrary strategic provenance. The public-correlation counterexample blocks
+using payoff irrelevance alone as an erasure rule. The likelihood counterexample blocks transporting
+a witness merely because root utilities and incentive maxima agree.
