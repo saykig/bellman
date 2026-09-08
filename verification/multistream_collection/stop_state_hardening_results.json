@@ -1,0 +1,175 @@
+{
+  "date": "2026-09-07",
+  "status": "passed",
+  "failed": 0,
+  "current_main": "fc45c4fff0f2958450f7073b46b67b92cb306bb3",
+  "reviewed_stop_state_head": "32c40894904837cbf16692dca6ec3bfb03322a76",
+  "executed_source_commit": "6a9bfb0173a446532cac57dca83b3d70bb24f083",
+  "execution": "GitHub Actions",
+  "runtime": "3.12.14",
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "stopping_state_repair": {
+    "pre_repair_classification": "same-transcript-recalculation-no-new-evidence",
+    "post_repair_classification": "provenance-changed-new-claim",
+    "identical_stopping_state": "same-transcript-recalculation-no-new-evidence",
+    "toggled_subject_digest_changed": true,
+    "inconsistent_state_producer": "rejected-by-full-replay",
+    "inconsistent_state_receiver": "rejected-by-full-replay",
+    "valid_false_to_true_append": "append-only-transcript-extension",
+    "valid_successor_replay_disposition": "stop"
+  },
+  "acceptance_hardening": {
+    "status": "passed",
+    "R1": {
+      "ghost_allocation": "rejected-through-public-helper",
+      "registered_reordering": "accepted-and-canonicalized",
+      "missing_and_duplicate": "rejected",
+      "direct_and_helper_subject_coverage": "aligned"
+    },
+    "R2": {
+      "ghost_weight": "rejected-through-public-helper",
+      "opposite_decision_certificate_prevented": true,
+      "registered_reordering": "accepted-and-canonicalized",
+      "direct_and_helper_subject_coverage": "aligned"
+    },
+    "R3": {
+      "unchanged": "same-transcript-recalculation-no-new-evidence",
+      "correct_append": "append-only-transcript-extension",
+      "changed_lineage": "provenance-changed-new-claim",
+      "changed_coverage": "new-coverage-specification",
+      "changed_rule_or_registry": "new-collection-subject",
+      "retroselected": "corrected-or-retroselected-transcript-new-claim"
+    },
+    "R4": {
+      "unchanged_stopping_state": "same-transcript-recalculation-no-new-evidence",
+      "toggled_stopping_state": "provenance-changed-new-claim",
+      "inconsistent_state_producer": "rejected-by-full-replay",
+      "inconsistent_state_receiver": "rejected-by-full-replay",
+      "valid_false_to_true_append": "append-only-transcript-extension",
+      "valid_successor_replay_disposition": "stop"
+    }
+  },
+  "multistream": {
+    "status": "passed",
+    "M1_cases": 5,
+    "M2_n8_rectangle": [
+      ["0", "43333/65536"],
+      ["22203/65536", "1"]
+    ],
+    "M2_n16_rectangle": [
+      ["0", "30431/65536"],
+      ["35105/65536", "1"]
+    ],
+    "M2_minimum_strict_advantage": "2337/65536",
+    "M3_terminal_histories": 3013,
+    "M3_fair_exclusion": "0",
+    "M3_asymmetric_exclusion": "65/531441",
+    "M4_expected_sample_mean": "5/8",
+    "M5_through_M8": "passed"
+  },
+  "scalar": {
+    "passed_per_mode": 10,
+    "rejections_per_mode": 31,
+    "unfinished_per_mode": 8
+  },
+  "current_preservation": {
+    "family_passed_per_mode": 9,
+    "family_rejections_per_mode": 26,
+    "persistent_passed_per_mode": 11,
+    "persistent_rejections_per_mode": 19,
+    "current_main_files_checked": 108,
+    "obsolete_root_ledgers_absent": true
+  },
+  "history_migration": {
+    "failed": 0,
+    "migration_baseline": "92922ab6604840152ad7f7800969673335748272",
+    "releases": 6,
+    "versions": [
+      "v0.0.1",
+      "v0.0.2",
+      "v0.0.3",
+      "v0.0.4",
+      "v0.0.5",
+      "v0.0.6"
+    ],
+    "lightweight_tags_required": true,
+    "key_artifacts": 29,
+    "affected_relative_markdown_links_checked": 101
+  },
+  "historical_replay": {
+    "repaired_pr12_head": "5017122500450c8f7f890474f7232b9c94d3a3fb",
+    "pr12_origin_main": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+    "pr12_runner": "passed-at-exact-repaired-head",
+    "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+    "historical_files_preserved": true
+  },
+  "negative_controls": {
+    "canonical_history_append": "accepted",
+    "protected_pr14_companion_change": "rejected",
+    "protected_original_pr14_result_change": "rejected",
+    "protected_first_hardening_result_change": "rejected",
+    "intentional_current_check_failure": "rejected",
+    "missing_historical_commit": "rejected",
+    "malformed_historical_output": "rejected",
+    "wrong_historical_base": "rejected"
+  },
+  "frozen_original_pr14_sha256": {
+    "foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md": "be495f29011479adab2736bfbe8f3c3e513403fa48c4886652e8137256d1ccbc",
+    "verification/multistream_collection/results.json": "2b80b11c691be1c297e71bd2c7016c837a3584389748d42ec06c377bf2da7a93"
+  },
+  "frozen_first_hardening_sha256": {
+    "verification/multistream_collection/acceptance_hardening_results.json": "68d500c54a3a4c2848aa365d144eadd182d0b41da84aa34adcf4f29a04e9f357"
+  },
+  "frozen_pr12_sha256": {
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md": "a06d94d7d6dbc3d388b2e46246be67f1c5d9a21039bea9fca7825601b89c0844",
+    "verification/statistical_decision_bridge/acceptance_hardening_results.json": "d2bfc1d3fa90a39b87232b479f969cc38c92185f9c5ddedd0657719089cfc783",
+    "verification/statistical_decision_bridge/checks.py": "75ec61e882f6207b41481cbde8d9ca1b20c0cd7f14f3bfafecc67208a3c68359",
+    "verification/statistical_decision_bridge/reference.py": "4b8f066b5785e04cdb9fd882820ec64fd453d87b3cc253781cea03a9ab152852",
+    "verification/statistical_decision_bridge/results.json": "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13"
+  },
+  "source_sha256": {
+    ".github/workflows/family-replanning.yml": "bbfd5aebb82362d9ba430975a31697a5bfe91b8551efa1cdc825292db7adaf2b",
+    ".github/workflows/statistical-decision-bridge.yml": "4cd52397a6f2500003f563a4fdc680059bf0a4fa2248b254ce8dd8f0e1da1df8",
+    "verification/history_migration/checks.py": "6135529c1b527b6c54352bd500e2480ac222d029eed33968ff61f203ade08ce1",
+    "verification/multistream_collection/ACCEPTANCE_HARDENING.md": "e8e43181b67e58473d8df56b86beb5506493055370d359ae55f9e7550b241a2d",
+    "verification/multistream_collection/README.md": "d17f1322be4056fcd590fbd907c5d0490a4cd04cf5f59f8e347dd8ef5499c77f",
+    "verification/multistream_collection/STOP_STATE_HARDENING.md": "b27c34d8eed60aa7891c88b8abc8362252eebf698dc189122bec4a89999ee1a2",
+    "verification/multistream_collection/acceptance_checks.py": "e29f80a2484f089c0b4c0479afed4d9eb29be141f23d74eafec78af0708d1dc3",
+    "verification/multistream_collection/checks.py": "1da6c4ee121a753a340ee8f40e8cf526e9648f88e0a66050bb48a1aa49afd196",
+    "verification/multistream_collection/reference.py": "c06eb985c1552d4fb1389767ac253f0847acc51719b80151db605f9799e7c8d7",
+    "verification/multistream_collection/run_checks.py": "c3b8b8e7d0f22434f8eb996eb696b90ff08843d1d167c0e75127feded22f4dd0"
+  },
+  "github_actions": {
+    "push": {
+      "run_id": 34177181248,
+      "job_id": 101908805545,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34177181248"
+    },
+    "pull_request_statistical": {
+      "run_id": 34177183417,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34177183417"
+    },
+    "pull_request_family": {
+      "run_id": 34177183571,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34177183571"
+    },
+    "pull_request_history": {
+      "run_id": 34177183557,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34177183557"
+    }
+  },
+  "limitations": [
+    "The classifier records provenance disposition; full replay remains authoritative on stopping-rule validity.",
+    "The valid multistream theorem, original result, and first hardening evidence remain historical evidence.",
+    "No adaptive allocation, dynamic registry, missingness correction, bandit optimization, or sequential-control composition is added."
+  ]
+}
