@@ -173,6 +173,67 @@ def r3_revision_classification():
     }
 
 
+def r4_stopping_state_revision_classification():
+    streams, base = subjects()
+    same = replace(base)
+    check(ref.classify_collection_revision(base, same) ==
+          "same-transcript-recalculation-no-new-evidence",
+          "identical stopping state was not an ordinary recalculation")
+
+    toggled = replace(base, stopped=True)
+    check(toggled.validate() == toggled,
+          "structurally valid stopping-state control did not validate")
+    check(ref.collection_digest(toggled) != ref.collection_digest(base),
+          "stopping state was absent from the collection digest")
+    check(ref.classify_collection_revision(base, toggled) ==
+          "provenance-changed-new-claim",
+          "changed stopping state was treated as an ordinary recalculation")
+    rejected(lambda: ref.produce_collection(toggled),
+             "producer accepted a rule-inconsistent stopping state")
+    base_evidence = ref.produce_collection(base)
+    toggled_evidence = replace(
+        base_evidence, subject=toggled,
+        subject_digest=ref.collection_digest(toggled))
+    rejected(lambda: ref.consume_collection(toggled, toggled_evidence),
+             "receiver accepted a rule-inconsistent stopping state")
+
+    def event(index):
+        stream = streams[(index - 1) % len(streams)].stream_identity
+        local = (index + len(streams) - 1) // len(streams)
+        return ref.make_observation(
+            index, stream, local, index % 2, f"stopping-event-{index}")
+
+    prefix = ref.make_collection(
+        streams, base.total_alpha, base.allocations,
+        rule=ref.RULE_ROUND_ROBIN_SIX,
+        transcript=tuple(event(index) for index in range(1, 6)),
+        stopped=False, record="stopping-record", revision="revision-1")
+    successor = ref.make_collection(
+        streams, base.total_alpha, base.allocations,
+        rule=ref.RULE_ROUND_ROBIN_SIX,
+        transcript=tuple(event(index) for index in range(1, 7)),
+        stopped=True, record=prefix.record_identity, revision="revision-2",
+        predecessor_digest=ref.collection_digest(prefix))
+    check(ref.produce_collection(prefix).disposition == "observe",
+          "valid append prefix did not remain open")
+    successor_evidence = ref.produce_collection(successor)
+    check(ref.consume_collection(successor, successor_evidence)["disposition"] == "stop",
+          "valid terminal successor did not pass full receiving")
+    check(ref.classify_collection_revision(prefix, successor) ==
+          "append-only-transcript-extension",
+          "valid not-stopped to stopped append was not recognized")
+    return {
+        "unchanged_stopping_state":
+            "same-transcript-recalculation-no-new-evidence",
+        "toggled_stopping_state": "provenance-changed-new-claim",
+        "toggled_subject_digest_changed": True,
+        "inconsistent_state_producer": "rejected-by-full-replay",
+        "inconsistent_state_receiver": "rejected-by-full-replay",
+        "valid_false_to_true_append": "append-only-transcript-extension",
+        "valid_successor_replay_disposition": "stop",
+    }
+
+
 def main():
     moved = verify_moved_records()
     result = {
@@ -181,6 +242,7 @@ def main():
             "R1": r1_collection_constructor(),
             "R2": r2_decision_constructor(),
             "R3": r3_revision_classification(),
+            "R4": r4_stopping_state_revision_classification(),
             "PR13": {
                 "canonical_history_records": sorted(moved),
                 "obsolete_root_ledgers_absent": all(

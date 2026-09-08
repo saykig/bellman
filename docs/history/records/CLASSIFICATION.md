@@ -93,3 +93,4 @@ carried into the canonical records during current-main synchronization.
 | Findings: PR14 subject-binding and revision acceptance repair — 7 September 2026 | repair/correction |
 | Substrate: Controlled multistream collection and static decisions — 7 September 2026 | completed research milestone under review |
 | Substrate: PR14 acceptance hardening and current-main synchronization — 7 September 2026 | repair/correction |
+| Findings: PR14 final stopping-state revision repair — 7 September 2026 | repair/correction |

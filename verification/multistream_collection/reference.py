@@ -833,7 +833,9 @@ def classify_collection_revision(previous, current):
         previous.predecessor_digest == current.predecessor_digest
     )
     if current.transcript == previous.transcript:
-        return ("same-transcript-recalculation-no-new-evidence" if same_lineage
+        same_stopping_state = previous.stopped == current.stopped
+        return ("same-transcript-recalculation-no-new-evidence"
+                if same_lineage and same_stopping_state
                 else "provenance-changed-new-claim")
     if (len(current.transcript) > len(previous.transcript) and
             current.transcript[:len(previous.transcript)] == previous.transcript):

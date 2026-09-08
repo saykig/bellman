@@ -8,6 +8,11 @@ classification, and current-main PR #13/PR #15 history integration. Its separate
 `acceptance_hardening_results.json` records the repaired hosted run without overwriting the
 original evidence.
 
+The [final stopping-state repair](STOP_STATE_HARDENING.md) requires an unchanged `stopped` value
+before an identical transcript can be called an ordinary recalculation. It deliberately leaves
+valid open-to-stopped append classification unchanged and preserves the first hardening result as
+frozen evidence. Its separate `stop_state_hardening_results.json` records the final hosted run.
+
 Run the current acceptance entry point from the repository root:
 
 ```sh
@@ -15,7 +20,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 verification/multistream_collection/run_checks
 ```
 
 The runner executes the repaired current PR #12 scalar checks, unchanged M1–M8 checks, targeted
-R1–R3 hardening controls, current preservation checks, and current migration/version checks normally
+R1–R4 hardening controls, current preservation checks, and current migration/version checks normally
 and with `-O`. It separately verifies preserved PR #12 and original PR #14 source/result identities
 and runs PR #12's unchanged historical acceptance program at repaired head
 `5017122500450c8f7f890474f7232b9c94d3a3fb` in a disposable clone whose `origin/main` is bound to

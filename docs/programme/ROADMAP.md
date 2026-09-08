@@ -88,7 +88,8 @@ bandit algorithm, a sequential planner, or an integrated Writ capability.
 
 The additive acceptance repair requires public allocation and affine-weight keys to cover the
 declared registry exactly before canonicalization and makes record/revision/predecessor lineage
-part of revision disposition. It does not alter the theorem or begin another section 5A stage.
+and identical-transcript stopping state part of revision disposition. It does not alter the theorem
+or begin another section 5A stage.
 
 ## 5. Default mathematical frontier after the current chain
 

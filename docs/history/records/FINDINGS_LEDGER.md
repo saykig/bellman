@@ -164,3 +164,14 @@ record, new revision, and exact predecessor digest for append-only extension. Th
 M1–M8 values, and original hosted result remain unchanged. The branch is synchronized with PR
 #13's canonical history layout and PR #15's versioned-release state; detailed repair evidence is in
 the [acceptance record](../../../verification/multistream_collection/ACCEPTANCE_HARDENING.md).
+
+## PR14 final stopping-state revision repair — 7 September 2026
+
+The revision classifier could call an identical transcript and lineage an ordinary recalculation
+when only the collection's `stopped` state changed, even though stopping is bound into the subject
+digest and full replay rejected the inconsistent state. Ordinary recalculation now also requires
+the same stopping state. A genuine strict-prefix successor may still move from open to correctly
+stopped when it keeps the record identity, uses a new revision, and binds the exact predecessor.
+The [additive repair record](../../../verification/multistream_collection/STOP_STATE_HARDENING.md)
+preserves the theorem, original PR #14 result, first hardening evidence, PR #12 evidence, and
+release identities.

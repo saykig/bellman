@@ -13,8 +13,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CURRENT_MAIN = "fc45c4fff0f2958450f7073b46b67b92cb306bb3"
 REVIEWED_PR14 = "f3d609b9b2b6aa10c283737cf04a0df58a6c948c"
+REVIEWED_STOP_STATE_HEAD = "32c40894904837cbf16692dca6ec3bfb03322a76"
 ORIGINAL_PR14_BASE = "92922ab6604840152ad7f7800969673335748272"
 ORIGINAL_PR14_SOURCE = "fdf83a0b2f3b31331ed894fa0d0aeeffea07db00"
+FIRST_HARDENING_SOURCE = "8921286ad52bb7f8ba40e5e77df5ee61b9e38a22"
 REPAIRED_PR12 = "5017122500450c8f7f890474f7232b9c94d3a3fb"
 PR12_HISTORICAL_BASE = "2e8d99cdcf289eabb63df15086eaa68251a359f1"
 
@@ -38,6 +40,10 @@ FROZEN_ORIGINAL_PR14_SHA256 = {
     "verification/multistream_collection/results.json":
         "2b80b11c691be1c297e71bd2c7016c837a3584389748d42ec06c377bf2da7a93",
 }
+FROZEN_FIRST_HARDENING_SHA256 = {
+    "verification/multistream_collection/acceptance_hardening_results.json":
+        "68d500c54a3a4c2848aa365d144eadd182d0b41da84aa34adcf4f29a04e9f357",
+}
 ORIGINAL_PR14_SOURCE_SHA256 = {
     "verification/multistream_collection/reference.py":
         "e6f509678859d1960d843e315c5453008fda7e4807039eedd733599511f2dbc2",
@@ -53,12 +59,14 @@ PR14_PATHS = {
     "foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md",
     "verification/multistream_collection/ACCEPTANCE_HARDENING.md",
     "verification/multistream_collection/README.md",
+    "verification/multistream_collection/STOP_STATE_HARDENING.md",
     "verification/multistream_collection/acceptance_checks.py",
     "verification/multistream_collection/acceptance_hardening_results.json",
     "verification/multistream_collection/checks.py",
     "verification/multistream_collection/reference.py",
     "verification/multistream_collection/results.json",
     "verification/multistream_collection/run_checks.py",
+    "verification/multistream_collection/stop_state_hardening_results.json",
 }
 LIVING_PATHS = {
     ".github/workflows/family-replanning.yml",
@@ -84,6 +92,7 @@ RESULT_SOURCES = (
     "verification/multistream_collection/run_checks.py",
     "verification/multistream_collection/README.md",
     "verification/multistream_collection/ACCEPTANCE_HARDENING.md",
+    "verification/multistream_collection/STOP_STATE_HARDENING.md",
     "verification/history_migration/checks.py",
     ".github/workflows/statistical-decision-bridge.yml",
     ".github/workflows/family-replanning.yml",
@@ -143,9 +152,10 @@ def verify_hashes(expected, *, at_commit=None):
 
 
 def verify_protected_bytes(path, data):
-    expected = {**FROZEN_PR12_SHA256, **FROZEN_ORIGINAL_PR14_SHA256}
+    expected = {**FROZEN_PR12_SHA256, **FROZEN_ORIGINAL_PR14_SHA256,
+                **FROZEN_FIRST_HARDENING_SHA256}
     need(path in expected and sha256(data) == expected[path],
-         f"protected mathematical source/result changed: {path}")
+         f"protected mathematical source/result evidence changed: {path}")
 
 
 def verify_original_result_binding():
@@ -198,32 +208,61 @@ def source_hashes():
     return {path: sha256((ROOT / path).read_bytes()) for path in RESULT_SOURCES}
 
 
-def verify_optional_hardening_record(actual_hashes):
+def verify_first_hardening_result_binding():
     path = ROOT / "verification/multistream_collection/acceptance_hardening_results.json"
+    need(path.is_file(), "first PR14 hardening result is absent")
+    expected_digest = FROZEN_FIRST_HARDENING_SHA256[
+        "verification/multistream_collection/acceptance_hardening_results.json"]
+    need(sha256(path.read_bytes()) == expected_digest,
+         "first PR14 hardening result identity changed")
+    record = json.loads(path.read_text())
+    need(record.get("status") == "passed" and record.get("failed") == 0,
+         "first PR14 hardening result is not passing")
+    need(record.get("current_main") == CURRENT_MAIN and
+         record.get("reviewed_pr14_head") == REVIEWED_PR14,
+         "first PR14 hardening lineage mismatch")
+    need(record.get("executed_source_commit") == FIRST_HARDENING_SOURCE,
+         "first PR14 hardening source commit mismatch")
+    for source, digest in record.get("source_sha256", {}).items():
+        need(sha256(git_bytes(FIRST_HARDENING_SOURCE, source)) == digest,
+             f"first hardening source identity mismatch: {source}")
+    need(record.get("frozen_original_pr14_sha256") == FROZEN_ORIGINAL_PR14_SHA256,
+         "first hardening original PR14 identities are stale")
+    return record
+
+
+def verify_optional_stop_state_record(actual_hashes):
+    path = ROOT / "verification/multistream_collection/stop_state_hardening_results.json"
     if not path.exists():
         return False
     record = json.loads(path.read_text())
     need(record.get("status") == "passed" and record.get("failed") == 0,
-         "recorded PR14 hardening result is not passing")
+         "recorded stop-state hardening result is not passing")
     need(record.get("current_main") == CURRENT_MAIN and
-         record.get("reviewed_pr14_head") == REVIEWED_PR14,
-         "recorded PR14 hardening lineage mismatch")
+         record.get("reviewed_stop_state_head") == REVIEWED_STOP_STATE_HEAD,
+         "recorded stop-state hardening lineage mismatch")
     need(record.get("source_sha256") == actual_hashes,
-         "recorded PR14 hardening source identities are stale")
+         "recorded stop-state hardening source identities are stale")
     need(record.get("frozen_original_pr14_sha256") == FROZEN_ORIGINAL_PR14_SHA256,
-         "recorded original PR14 identities are stale")
+         "recorded stop-state original PR14 identities are stale")
+    need(record.get("frozen_first_hardening_sha256") ==
+         FROZEN_FIRST_HARDENING_SHA256,
+         "recorded first hardening identity is stale")
     return True
 
 
 def run():
     environment = dict(os.environ, PYTHONDONTWRITEBYTECODE="1")
-    for commit in (CURRENT_MAIN, REVIEWED_PR14, ORIGINAL_PR14_BASE,
+    for commit in (CURRENT_MAIN, REVIEWED_PR14, REVIEWED_STOP_STATE_HEAD,
+                   ORIGINAL_PR14_BASE, FIRST_HARDENING_SOURCE,
                    REPAIRED_PR12, PR12_HISTORICAL_BASE):
         require_commit(commit)
     require_ancestor(ORIGINAL_PR14_BASE, REVIEWED_PR14,
                      "original PR14 base is not an ancestor of reviewed head")
     require_ancestor(REVIEWED_PR14, "HEAD",
                      "reviewed PR14 head is not an ancestor of current head")
+    require_ancestor(REVIEWED_STOP_STATE_HEAD, "HEAD",
+                     "reviewed stop-state head is not an ancestor of current head")
     require_ancestor(CURRENT_MAIN, "HEAD",
                      "current main was not merged into PR14")
     require_ancestor(REPAIRED_PR12, CURRENT_MAIN,
@@ -235,8 +274,10 @@ def run():
     enforce_change_scope(changed)
     frozen_pr12 = verify_hashes(FROZEN_PR12_SHA256)
     frozen_pr14 = verify_hashes(FROZEN_ORIGINAL_PR14_SHA256)
+    frozen_first_hardening = verify_hashes(FROZEN_FIRST_HARDENING_SHA256)
     verify_hashes(FROZEN_ORIGINAL_PR14_SHA256, at_commit=REVIEWED_PR14)
     original_result = verify_original_result_binding()
+    first_hardening_result = verify_first_hardening_result_binding()
     current_main_files_checked = verify_current_main_preservation()
 
     def call_json(arguments):
@@ -333,6 +374,11 @@ def run():
         (ROOT / "verification/multistream_collection/results.json").read_bytes()
         + b"mutation"),
         "protected original PR14 result mutation was accepted")
+    expect_failure(lambda: verify_protected_bytes(
+        "verification/multistream_collection/acceptance_hardening_results.json",
+        (ROOT / "verification/multistream_collection/acceptance_hardening_results.json").read_bytes()
+        + b"mutation"),
+        "protected first PR14 hardening result mutation was accepted")
     expect_failure(lambda: require_commit("0" * 40),
                    "missing historical commit was accepted")
     expect_failure(lambda: parse_marked_json(
@@ -359,12 +405,13 @@ def run():
         raise RuntimeError("intentional current mathematical failure was suppressed")
 
     hashes = source_hashes()
-    recorded = verify_optional_hardening_record(hashes)
+    recorded_stop_state = verify_optional_stop_state_record(hashes)
     result = {
         "status": "passed",
         "failed": 0,
         "current_main": CURRENT_MAIN,
         "reviewed_pr14_head": REVIEWED_PR14,
+        "reviewed_stop_state_head": REVIEWED_STOP_STATE_HEAD,
         "original_pr14_base": ORIGINAL_PR14_BASE,
         "executed_commit": subprocess.check_output(
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
@@ -389,8 +436,11 @@ def run():
         "source_sha256": hashes,
         "frozen_pr12_sha256": frozen_pr12,
         "frozen_original_pr14_sha256": frozen_pr14,
+        "frozen_first_hardening_sha256": frozen_first_hardening,
         "original_result_executed_commit": original_result["executed_commit"],
-        "recorded_hardening_result_present_and_current": recorded,
+        "first_hardening_result_executed_commit":
+            first_hardening_result["executed_source_commit"],
+        "recorded_stop_state_result_present_and_current": recorded_stop_state,
         "preservation": {
             "current_main_merged": True,
             "current_main_files_checked": current_main_files_checked,
@@ -406,6 +456,7 @@ def run():
             "canonical_history_append": "accepted",
             "protected_pr14_companion_change": "rejected",
             "protected_original_pr14_result_change": "rejected",
+            "protected_first_hardening_result_change": "rejected",
             "intentional_current_check_failure": "rejected",
             "missing_historical_commit": "rejected",
             "malformed_historical_output": "rejected",
