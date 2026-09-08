@@ -16,7 +16,7 @@ The [Programme Roadmap](docs/programme/ROADMAP.md) is the living capability map:
 
 The [Bellman–Writ Mathematical Transfer Architecture](docs/programme/ARCHITECTURE.md) records how mathematical results move from Bellman into bounded computation, checking, Writ provenance/revision infrastructure, and eventually domain stress tests. These are living steering documents; they do not supersede frozen mathematical artifacts or evidence.
 
-The new [sequential credibility component](foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md) combines model uncertainty, private evidence, a bond and monitoring in one bounded game. Its [exact reference](verification/sequential_credibility/README.md) checks supplied assessment-relative continuation incentives; it does not establish sequential equilibrium or empirical credibility. This research package is separate from the causal build.
+The [sequential credibility component](foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md) combines model uncertainty, private evidence, remembered information, a bond and monitoring in one bounded game. Its preliminary assessment-relative result is preserved. The [reviewed consistency addendum](foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_CONSISTENCY_ADDENDUM.md) and [exact reference](verification/sequential_consistency/README.md) check one shared power-perturbation witness and full continuation incentives: at zero tolerance, a pass establishes sequential equilibrium separately in every supplied model with a common consistency witness. This is not an ambiguity-preference equilibrium, empirical prediction, general history reduction or complete equilibrium search. The research remains separate from the causal build.
 
 ## Working mathematical foundation
 

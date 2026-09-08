@@ -2,10 +2,11 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, new bounded strategic component based on merged PR #20
+**Current snapshot:** 8 September 2026, reviewed shared-consistency strategic reference based on merged PR #20
 (`cea4e1a47cb91c1f3917490350deab53d2976908`). The causal kernel-fibre work published
 separately as unmerged PR #21 is not assumed or modified here. Existing historical evidence is
-preserved. The new strategic result is a research reference awaiting independent review.
+preserved. The strategic result has author adversarial review and independent executable checks;
+external peer acceptance and formal verification are not claimed.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -85,21 +86,33 @@ optimization; plural objectives; strategic actors; and selected formal verificat
 
 ## 4. Current frontier
 
-### New integrated component — assessed sequential credibility
+### Integrated component — sequential credibility with a shared consistency witness
 
 The [sequential credibility companion](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md)
 connects all four strategic directions through one query: continuation deviation gains under
 uncertainty, with selective evidence, explicit remembered information, and bond/monitoring rules.
-The exact reference checks one supplied profile across a finite persistent game family and all
-information sets. On-path beliefs obey Bayes; off-path beliefs remain supplied. A pass is
-**assessment-relative sequential rationality**, not a sequential-equilibrium or empirical claim.
+The preliminary exact reference checks one supplied profile across a finite persistent game family
+and all information sets. Its assessment-relative result remains frozen. The additive
+[consistency theorem](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_CONSISTENCY_ADDENDUM.md)
+now supplies the missing constructive bridge: a common rational power-perturbation witness must
+generate every model's assessed beliefs simultaneously. At epsilon=0, independent exact
+polynomial and full-continuation checks establish modelwise sequential equilibrium with a shared
+consistency witness. Positive epsilon yields only a consistent continuation-gain bound.
 
-The first fixture covers 63 nodes, 20 information sets and four models. Analytic results give pure
-continuation sufficiency, exact finite checking, a deviation-covering 2-delta transfer bound,
-model-restriction monotonicity, and a restricted on-path continuous corner criterion. The generic
-continuous criterion is not implemented. General compression, mechanism search and causal-to-game
-identification remain unsupported. The next gate is off-path consistency or a specifically checked
-continuous on-path warrant, selected by an actual query rather than expansion of the fixture.
+The original four-model/20-information-set fixture now has a checked common witness. Two exact
+counterexamples distinguish local assessed rationality from consistency, and individual model
+consistency from a shared sequence. The [research audit](../../reviews/SEQUENTIAL_CREDIBILITY_RESEARCH_REVIEW_2026_09_08.md)
+inspects Dilmé's power-sequence theorem, robust/evidence/abstraction results, GTE-sequential,
+Gambit and OpenSpiel; SymPy is used for independent exact polynomial receiving. This is a
+supplied-witness procedure, not a complete existence decision or equilibrium search. Failure of a
+bounded witness is not a global impossibility. Ambiguity preferences and participation remain
+separate from modelwise incentives; stipulated monitoring is not empirical evidence.
+
+The next useful representation gate is a **specified** history reduction preserving both legal
+continuation values and off-path likelihood restrictions. Root-payoff abstraction or renaming
+alone cannot warrant this. A concrete continuous on-path query may instead justify the draft's
+analytic multi-affine criterion; generic continuous receiving remains unimplemented. Do not
+mechanically implement both directions, enlarge fixtures, or infer causal-to-game identification.
 
 The following inherited causal frontier description is retained as context from the base edition;
 it is not a claim that this strategic component implements a causal bridge.
@@ -247,7 +260,12 @@ Do not silently replace persistent whole-episode uncertainty with rowwise rectan
 
 These become necessary when Bellman stops modelling one decision-maker facing exogenous uncertainty.
 
-Possible targets:
+Earned strategic slice: supplied-profile full-continuation checks across a finite game family,
+with an independently checked common off-path consistency witness. The four directions of
+uncertainty, disclosure, remembered history and commitment/monitoring share this exact subject.
+No ambiguity-sensitive equilibrium, complete equilibrium search or mechanism optimum follows.
+
+Possible later targets:
 
 - Pareto/nondominance and explicit preference-family interfaces;
 - declared aggregation or bargaining rules rather than invented scalar weights;

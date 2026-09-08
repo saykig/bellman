@@ -21,6 +21,21 @@ HERE = Path(__file__).resolve().parent
 OLD = HERE.parent / 'sequential_credibility'
 
 
+def symbolic_prefixes(s, model, strategy):
+    """Test-only generic prefix products, with unconstrained symbolic trembles."""
+    masses = {}
+    frontier = [(s['root'], sp.Integer(1))]
+    while frontier:
+        v, p = frontier.pop()
+        masses[v] = p
+        node = s['nodes'][v]
+        for a, child in node.get('edges', {}).items():
+            q = (sp.Rational(model['chance'][v][a]) if node['kind'] == 'chance'
+                 else strategy.get(node['info'], s['profile'][node['info']])[a])
+            frontier.append((child, p * sp.sympify(q)))
+    return masses
+
+
 def execute():
     facts, rejections = {}, []
 
@@ -88,8 +103,9 @@ def execute():
     check('inconsistent assessment passes draft', old_pass['status'] == 'assessment-relative-pass')
     reject('incompatible route posteriors', bad, produce(bad, unit_witness(bad)), code='witness-limit-mismatch')
     x, y = sp.symbols('x y', positive=True)
-    j = (x / 2) / (x / 2 + y / 2)
-    k = (x / 2) / (x / 2 + y / 2)
+    r = symbolic_prefixes(bad, bad['models']['m'], {'root': {'O': 1 - x - y, 'L': x, 'R': y}})
+    j = r['J.L'] / (r['J.L'] + r['J.R'])
+    k = r['K.L'] / (r['K.L'] + r['K.R'])
     check('universal posterior identity', sp.cancel(j - k) == 0)
     check('target contradicts identity', F(bad['models']['m']['beliefs']['J']['J.L']) != F(bad['models']['m']['beliefs']['K']['K.L']))
     facts['incompatible_routes'] = {'draft_max_gain': '0', 'identity': 'mu_J(L)=mu_K(L)',
@@ -129,8 +145,15 @@ def execute():
         reject('separate witness fails shared query ' + model, family, produce(family, ow), code='witness-limit-mismatch')
     # If first posterior ->1/2 then x/y ->1 and second posterior ->1/4,
     # contradicting its target 1/2. No enumeration of candidate orders is used.
+    ratios = []
+    for model in family['models'].values():
+        mass = symbolic_prefixes(family, model, {'A.g': {'exit': 1 - x, 'enter': x},
+                                                 'A.b': {'exit': 1 - y, 'enter': y}})
+        ratios.append(sp.cancel(mass['entry.g'] / mass['entry.b']))
+    check('cross-model odds identity from tree', sp.cancel(ratios[0] - 3 * ratios[1]) == 0)
     ratio = sp.Symbol('ratio', positive=True)
-    check('cross-model rational posterior', (ratio / (ratio + 3)).subs(ratio, 1) == sp.Rational(1, 4))
+    second_odds = ratios[1].subs(x, ratio * y)
+    check('cross-model rational posterior', sp.cancel(second_odds / (1 + second_odds)).subs(ratio, 1) == sp.Rational(1, 4))
     facts['modelwise_not_shared'] = {'individual_witnesses': separate,
                                     'shared_limit_for_second_if_first_half': '1/4',
                                     'required_second': '1/2', 'conclusion': 'no-shared-sequence-by-odds'}

@@ -1,0 +1,31 @@
+name: Shared sequential consistency
+on:
+  pull_request:
+    paths:
+      - 'verification/sequential_consistency/**'
+      - 'verification/sequential_credibility/**'
+      - 'foundations/BELLMAN_SEQUENTIAL_CREDIBILITY*'
+      - 'reviews/SEQUENTIAL_CREDIBILITY*'
+      - '.github/workflows/sequential-consistency.yml'
+  push:
+    branches: ['codex/sequential-credibility', 'main']
+    paths:
+      - 'verification/sequential_consistency/**'
+      - 'verification/sequential_credibility/**'
+      - 'foundations/BELLMAN_SEQUENTIAL_CREDIBILITY*'
+      - 'reviews/SEQUENTIAL_CREDIBILITY*'
+      - '.github/workflows/sequential-consistency.yml'
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r verification/sequential_consistency/requirements.txt
+      - run: python verification/sequential_consistency/run_checks.py --verify-retained
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'

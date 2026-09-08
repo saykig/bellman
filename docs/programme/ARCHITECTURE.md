@@ -98,7 +98,8 @@ This table is intentionally conservative.
 | Resource constraints / tail and dynamic risk | Foundation only | Not implemented. |
 | Finite causal identification / one-stage decision certification | M1 | Merged bounded exact adjustment and binary response-type reference; supplied causal premises are not empirically validated and no engineering adapter exists. |
 | Two-stage longitudinal causal policy / sequential bridge | M1 candidate | Bounded exact policy g-formula and full-support completed-subject composition under review; no engineering adapter. |
-| Plural objectives / strategy | Foundation only | Not implemented. |
+| Shared-witness sequential credibility | M1 | Author-reviewed supplied-profile game-family reference with independent polynomial consistency and full-continuation checks; no engineering adapter or empirical claim. |
+| Wider plural objectives / strategy | Foundation only | Ambiguity-sensitive equilibrium, mechanism search and general strategic history reduction are not implemented. |
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
 
@@ -301,16 +302,27 @@ Examples:
 
 Repository boundaries are implementation conveniences, not doctrine. The long-run target is an interoperable substrate in which stable Bellman mathematics can be executed, checked, revised, and accumulated through Writ.
 
-## 8. Assessed strategic credibility research boundary (8 September 2026)
+## 9. Strategic credibility and shared consistency boundary (8 September 2026)
 
-The [new component](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md) is a bounded
-research reference (M1 candidate), not a Writ adapter. Its subject contains an explicit information
-partition, a single model-independent strategy profile, and modelwise assessments. A receiver
-checks exact conditional continuation gains and on-path Bayes consistency. Off-path limiting
-consistency is not certified. No empirical credibility or authority to act follows.
+The [preliminary component](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md)
+and [consistency addendum](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_CONSISTENCY_ADDENDUM.md)
+form an M1 research reference. Its subject contains an explicit information partition, one
+model-independent strategy profile and modelwise assessments. The additive warrant supplies
+positive rational coefficients and bounded integer orders for every zero-profile action. One
+normalized perturbation sequence must generate all assessed beliefs in every model. Its
+consistency is checked by exact prefix polynomials independently of the leading-order producer;
+the original receiver separately checks full-continuation deviation gains on the same subject.
+
+At zero tolerance a pass gives modelwise sequential equilibrium with shared consistency. At
+positive tolerance it gives a consistent assessment with a gain bound. Neither is an equilibrium
+theory of ambiguity-sensitive actors or evidence of empirical credibility or authority. A failed
+witness remains distinct from proof that no sequence exists. Structural chance zeros stay fixed;
+an entirely chance-impossible information set is outside the new witness profile.
 
 A source/provenance record affects this game only through an explicit modelling change to available
 evidence, information, actions, transitions, payoffs or assessments. A hash change is a revalidation
 trigger, not a strategic theorem. The 2-delta transfer lemma requires coverage of original deviations;
-renaming checks do not establish general history compression. Causal-kernel outputs cannot be used
-as strategic response laws without an additional warranted mapping.
+renaming checks do not establish general history compression. A strategic history reduction must
+also preserve the relevant consistency restrictions, not just root payoff values. Payoff-only
+mechanism changes can preserve consistency while invalidating incentive bounds. Causal-kernel
+outputs cannot be used as strategic response laws without an additional warranted mapping.
