@@ -2,6 +2,11 @@ name: statistical-decision-bridge
 
 on:
   pull_request:
+    paths:
+      - "verification/statistical_decision_bridge/**"
+      - "verification/multistream_collection/**"
+      - "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md"
+      - "foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md"
   push:
     branches:
       - codex/statistical-decision-bridge

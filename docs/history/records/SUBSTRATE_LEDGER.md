@@ -129,3 +129,21 @@ and lightweight-tag checks are preserved. Findings and substrate records permit 
 entries after their frozen migrated prefixes. Current and historical acceptance retain the PR #12
 and inherited PR #10 replay boundaries. No mathematical stage, GitHub Release, Writ/Decision Lab
 integration, or language migration is added.
+
+## Statistical rectangle to sequential corner-model guarantees — 7 September 2026
+
+The [additive construction](../../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md)
+composes PR #14's checked simultaneous outward rectangle with PR #8's persistent whole-episode
+family semantics. A pathwise no-repeat condition makes every fixed deterministic policy cost
+multi-affine, so expected-loss and covered-class modelwise-regret extrema are exactly attained by
+the at most four corners. The [bounded receiver](../../../verification/statistical_corner_models/README.md)
+checks explicit stream-to-transition mapping, reconstructs completed corner subjects, invokes the
+unchanged persistent-family consumer, and cross-checks exact forward paths and complete tiny policy
+selection. It preserves all prior result and version identities through pinned PR #14/PR #12/PR
+#10 replay.
+
+The `p(1-p)` construction records the sharp boundary: repeated use of one uncertain parameter on
+one path can move the maximum into the interior. Such a subject is not impossible; this particular
+corner warrant is invalid. More than two parameters is separately `unfinished` in the executable
+profile. No empirical premise validation, randomized policy, continuous optimizer, Writ/Decision
+Lab transfer, language migration, dynamic risk, causal result, or formal proof is claimed.
