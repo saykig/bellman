@@ -1,26 +1,25 @@
-name: two-stage-longitudinal-causal-policy
+name: longitudinal-causal-kernel-fibres
 
 on:
   pull_request:
     paths:
-      - "verification/longitudinal_causal_policy/**"
       - "verification/longitudinal_causal_kernel_fibres/**"
       - "foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md"
+      - "verification/longitudinal_causal_policy/**"
       - "foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md"
-      - "verification/finite_causal_identification/**"
-      - "foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md"
+      - "verification/persistent_model_families/**"
+      - "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md"
       - "verification/sequential_certificates/**"
       - "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md"
-      - ".github/workflows/two-stage-longitudinal-causal-policy.yml"
       - ".github/workflows/longitudinal-causal-kernel-fibres.yml"
-      - ".github/workflows/finite-causal-identification.yml"
+      - ".github/workflows/two-stage-longitudinal-causal-policy.yml"
       - "README.md"
       - "docs/programme/**"
       - "docs/history/records/FINDINGS_LEDGER.md"
       - "docs/history/records/SUBSTRATE_LEDGER.md"
   push:
     branches:
-      - codex/two-stage-longitudinal-causal-policy
+      - codex/longitudinal-causal-kernel-fiber
 
 permissions:
   contents: read
@@ -28,7 +27,7 @@ permissions:
 jobs:
   exact-checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,12 +36,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run current longitudinal causal and pinned historical acceptance
+      - name: Run current kernel-fibre and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: |
-          if [ -f verification/longitudinal_causal_kernel_fibres/run_checks.py ]; then
-            echo "Delegated to the downstream longitudinal kernel-fibre aggregate workflow."
-            exit 0
-          fi
-          python3 verification/longitudinal_causal_policy/run_checks.py
+        run: python3 verification/longitudinal_causal_kernel_fibres/run_checks.py

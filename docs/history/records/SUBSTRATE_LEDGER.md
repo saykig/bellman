@@ -212,3 +212,28 @@ queries, and receives retained evidence with producers disabled. Longitudinal ca
 missing support, transport, safety/persistent-family composition, broader stages, empirical
 premise validation, formalization, and engineering transfer remain open. Enumeration stayed at 32
 policies; no solver or language trigger was reached.
+
+## Longitudinal causal kernel fibres and persistent decisions — 8 September 2026
+
+The [additive construction](../../../foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md)
+extends the merged two-stage bridge without changing its point-identified semantics. Under positive
+first-action and intermediate-history support, supported second-stage outcome rows remain fixed and
+each unsupported binary row becomes one explicitly ordered `[0,1]` coordinate under a saturated
+no-cross-row-restriction profile. This Cartesian product is exact only for that declared
+interventional-kernel interface; stronger cross-row SCM assumptions are unsupported rather than
+silently dropped.
+
+Policy risk, exact additive loss, and same-completion pairwise differences are multi-affine, so a
+separate finite corner family exactly represents extrema and the derived deterministic common,
+minimax-loss, and same-model-regret queries. It is not the continuous fibre. A `q(1-q)` control
+records the decisive arbitrary-nonlinear-query boundary. The one-gap, changed-cost, two-gap, and
+zero-gap controls distinguish point policies, partial policies, model-dependent decisions, common
+decisions, and separately supplied robust choices while retaining all off-root policy identities.
+
+The [exact verification](../../../verification/longitudinal_causal_kernel_fibres/README.md)
+independently reconstructs up to four missing rows, 16 corners, 32 policies, and 512 exact policy
+values. The historical persistent receiver is reused for at most four corners; its model limit is
+exposed rather than modified for larger bounded cases. PR #20 collapses exactly at dimension zero,
+earlier-stage support failures are not fabricated, and retained evidence is checked with candidate
+producers disabled. No empirical premise validation, transport, estimation, safety composition,
+randomized policy, engineering transfer, solver, formalization, or language trigger is claimed.
