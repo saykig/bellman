@@ -194,7 +194,8 @@ def route_a_positivity_and_staleness():
         reject(lambda changed=changed: ref.consume_adjustment(changed, old),
                "stale adjustment evidence accepted")
     record("A3_positivity_boundary_and_stale_adjustment",
-           status=accepted["status"], missing_strata=accepted["missing_strata"],
+           outcome_status=accepted["status"],
+           missing_strata=accepted["missing_strata"],
            stale_mutations_rejected=len(changes))
 
 
@@ -220,6 +221,8 @@ def route_b_partial_and_independent_enumeration():
            vertex_count=len(direct),
            intervention_bounds=tuple((item.lower, item.upper)
                                      for item in bounds),
+           do0_lower_witness=bounds[0].lower_witness,
+           do0_upper_witness=bounds[0].upper_witness,
            distinct_attaining_witnesses=True)
 
 
@@ -234,6 +237,16 @@ def route_b_supported_restrictions_and_point_id():
               for vertex in monotone_result["vertices"]
               for index, (_, y0, y1) in enumerate(ref.RESPONSE_TYPES)),
           "typed monotone response restriction")
+    harm_prevention = ref.MonotonicityRestriction(
+        "MHP-Y1-at-most-Y0-v1", "nonincreasing")
+    prevention_request = response_request(restrictions=(harm_prevention,))
+    prevention_result = ref.consume_response_fiber(
+        prevention_request, ref.produce_response_fiber(prevention_request))
+    check(prevention_result["status"] == ref.PARTIAL and
+          all(not (y0 == 0 and y1 == 1) or vertex[index] == 0
+              for vertex in prevention_result["vertices"]
+              for index, (_, y0, y1) in enumerate(ref.RESPONSE_TYPES)),
+          "typed monotone harm-prevention restriction")
 
     calibrations = (
         ref.LinearEqualityRestriction(
@@ -254,6 +267,7 @@ def route_b_supported_restrictions_and_point_id():
           "supported equalities must point-identify both marginals")
     record("B2_typed_restrictions_and_point_identification",
            monotone_vertex_count=len(monotone_result["vertices"]),
+           harm_prevention_vertex_count=len(prevention_result["vertices"]),
            point_intervention_probabilities=(F(1, 2), F(1, 2)))
 
 
@@ -368,7 +382,10 @@ def stale_response_and_decision_evidence():
         replace(base, observation=changed_observation),
         replace(base, observation=replace(
             base.observation, coding=replace(
-                CODING, outcome_values=("not-bad", "bad")))),
+                CODING, action_values=("untreated", "treated"),
+                outcome_values=("not-bad", "bad")))),
+        replace(base, observation=replace(
+            base.observation, population_identity="changed-population-v2")),
         replace(base, profile_identity="changed-response-profile-v2"),
         replace(base, restrictions=(ref.MonotonicityRestriction(
             "new-MTR-v2", "nondecreasing"),)),
@@ -432,6 +449,10 @@ def forged_claims_and_malformed_inputs():
         "float-observation", "population", CODING,
         (0.25, F(1, 4), F(1, 4), F(1, 4))),
         "floating input accepted")
+    reject(lambda: ref.DecisionTable(
+        "decimal-string-input", "loss", ("0.1", F(0)),
+        ((F(0), F(0)), (F(0), F(0)))),
+        "decimal string outside exact spelling profile accepted")
     reject(lambda: ref.ResponseFiberRequest(
         response_observation(), "profile",
         tuple(ref.MonotonicityRestriction(

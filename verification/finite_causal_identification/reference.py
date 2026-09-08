@@ -8,6 +8,7 @@ premise is learned or empirically validated here.
 from dataclasses import asdict, dataclass
 from fractions import Fraction as F
 from itertools import combinations, product
+import re
 
 
 class Invalid(ValueError):
@@ -45,6 +46,9 @@ def identity(value, message="nonempty identity required"):
 
 def rational(value, message="exact rational required"):
     need(type(value) in (int, str, F) and type(value) is not bool, message)
+    if type(value) is str:
+        need(re.fullmatch(r"-?[0-9]+(?:/[1-9][0-9]*)?", value) is not None,
+             "integer or fraction spelling required")
     try:
         answer = F(value)
     except (ValueError, ZeroDivisionError) as error:
@@ -320,6 +324,9 @@ class AdjustmentDecisionRequest:
              type(self.decision) is DecisionTable,
              "adjustment decision subject required")
         identity(self.query_identity, "decision query identity required")
+        need(self.premises.adjustment_variables ==
+             (self.observation.covariate_identity,),
+             "declared adjustment set must be exactly the observed pre-action Z")
 
 
 @dataclass(frozen=True)
@@ -337,6 +344,9 @@ class AdjustmentDecisionEvidence:
         object.__setattr__(self, "risks", tuple(self.risks))
         object.__setattr__(self, "minimizing_actions",
                            tuple(self.minimizing_actions))
+        need(self.status ==
+             "decision-identified-under-supplied-adjustment-premise",
+             "invalid adjustment-decision status")
 
 
 def produce_adjustment_decision(request):
@@ -362,6 +372,9 @@ def consume_adjustment_decision(expected, evidence):
          "adjustment decision request and evidence required")
     need(evidence.request == expected,
          "stale observation, premise, coding, cost, loss, or decision query")
+    need(evidence.status ==
+         "decision-identified-under-supplied-adjustment-premise",
+         "false adjustment-decision status")
     need(len(evidence.interventions) == 2,
          "both binary interventions required")
     distributions = []
@@ -660,7 +673,6 @@ def produce_response_fiber(request):
     vertices = _producer_vertices(rows, rhs)
     domain = "outer" if unsupported else "exact"
     if not vertices:
-        need(not unsupported, "outer relaxation unexpectedly empty")
         return ResponseFiberEvidence(request, INCOMPATIBLE, domain,
                                      exact_fiber_status=INCOMPATIBLE)
     bounds = tuple(_bounds(vertices, intervention_coefficients(action))
@@ -692,11 +704,15 @@ def consume_response_fiber(expected, evidence):
     vertices = _receiver_vertices(rows, rhs)
     need(evidence.vertices == vertices, "incomplete or false response-fiber vertices")
     if not vertices:
-        need(not unsupported and evidence.status == evidence.exact_fiber_status ==
-             INCOMPATIBLE and evidence.analyzed_domain == "exact" and
+        expected_domain = "outer" if unsupported else "exact"
+        need(evidence.status == evidence.exact_fiber_status ==
+             INCOMPATIBLE and evidence.analyzed_domain == expected_domain and
              not evidence.intervention_bounds,
              "false incompatible-fiber classification")
-        return {"status": INCOMPATIBLE, "vertices": ()}
+        return {"status": INCOMPATIBLE, "vertices": (),
+                "analyzed_domain": expected_domain,
+                "warrant": ("empty checked outer relaxation" if unsupported else
+                            "empty exact supported fiber")}
     bounds = tuple(_bounds(vertices, intervention_coefficients(action))
                    for action in (0, 1))
     need(evidence.intervention_bounds == bounds,
@@ -771,6 +787,9 @@ class ResponseDecisionEvidence:
                      "common_minimizing_actions", "strictly_common_actions",
                      "opposite_preference_witnesses"):
             object.__setattr__(self, name, tuple(getattr(self, name)))
+        need(self.status in (DECISION_IDENTIFIED, DECISION_DESPITE_UNCERTAINTY,
+                             MODEL_DEPENDENT, UNSUPPORTED, INCOMPATIBLE,
+                             OUTER_ONLY), "invalid response-decision status")
 
 
 def _decision_from_vertices(request, fiber_evidence, vertices):
@@ -855,6 +874,8 @@ def same_fiber_difference(request, candidate, competitor, witness):
     """Evaluate one action difference at one shared causal response-type law."""
     need(type(request) is ResponseDecisionRequest,
          "response decision request required")
+    need((candidate, competitor) in ((0, 1), (1, 0)),
+         "ordered distinct binary action pair required")
     rows, rhs, unsupported = _constraint_system(request.fiber)
     need(not unsupported, "exact supported causal fiber required")
     witness = _exact_vector(witness, 8, "one exact shared witness required")
