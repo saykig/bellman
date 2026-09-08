@@ -187,3 +187,28 @@ fibre with producers disabled. All prior artifacts and the PR #17 historical cha
 Transport, time-varying intervention semantics, sequential exchangeability, adaptive-policy
 support, broader causal restrictions, and empirical premise criticism remain open before any
 causal-to-sequential composition.
+
+## Two-stage longitudinal causal policy and sequential bridge — 8 September 2026
+
+The [additive construction](../../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md)
+adds the first conditional bridge from a fully identified longitudinal causal law to Bellman's
+existing sequential subject. It uses an exact 16-cell binary `P(A1,L1,A2,Y)` and names population,
+coding, temporal order, consistency/intervention, sequential-exchangeability, adaptation, and
+no-interference premises. A complete policy retains actions at all four structural second-stage
+histories even though only two follow its chosen root.
+
+The policy receiver requires support only for the policy's selected actions at positive regime
+histories. Full-subject construction separately requires every first action, intermediate value,
+and second action to be supported. With that warrant, the adapter constructs the existing 21-node
+subject and checks all 32 policies through the unchanged sequential certificate consumer and
+independent path enumeration. Causal and Bellman distributions, values, and complete minimizing
+sets agree exactly.
+
+The preserved two-world counterexample holds both static `do(A2)` outcome marginals fixed at
+`1/2` while reversing the optimal `L1`-adapted policy, so the merged one-stage causal output is not
+silently reused as a transition kernel. The [exact verification](../../../verification/longitudinal_causal_policy/README.md)
+binds observation, population, coding, timing, premises, policies, loss, subject, catalogue, and
+queries, and receives retained evidence with producers disabled. Longitudinal causal fibres under
+missing support, transport, safety/persistent-family composition, broader stages, empirical
+premise validation, formalization, and engineering transfer remain open. Enumeration stayed at 32
+policies; no solver or language trigger was reached.

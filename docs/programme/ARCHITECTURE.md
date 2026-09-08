@@ -96,7 +96,8 @@ This table is intentionally conservative.
 | Statistical learning / coverage beyond the bounded Bernoulli profile | Foundation only | Outcome filtering, within-row dependence, drift, missingness, adaptive allocation and broader model learning are not implemented. |
 | Unsafe-set reachability / constrained deterministic selection | M1 | Reviewed and merged bounded reference; exact first-hit probability, persistent-family cap, and admissible statistical-corner composition, with no engineering adapter. |
 | Resource constraints / tail and dynamic risk | Foundation only | Not implemented. |
-| Finite causal identification / one-stage decision certification | M1 candidate | Bounded exact adjustment and binary response-type reference under review; supplied causal premises are not empirically validated and no engineering adapter exists. |
+| Finite causal identification / one-stage decision certification | M1 | Merged bounded exact adjustment and binary response-type reference; supplied causal premises are not empirically validated and no engineering adapter exists. |
+| Two-stage longitudinal causal policy / sequential bridge | M1 candidate | Bounded exact policy g-formula and full-support completed-subject composition under review; no engineering adapter. |
 | Plural objectives / strategy | Foundation only | Not implemented. |
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
@@ -175,10 +176,38 @@ witnesses. An explicitly requested dropped-restriction analysis is an outer resu
 One-stage action certification evaluates every paired risk difference on the same response-type
 law. It cannot subtract marginal extrema attained by different causal witnesses. Observation,
 causal premise, restriction, coding, cost, loss, and query revisions all create new claims. This M1
-candidate does not discover causal structure, validate premises, transport between populations,
+result does not discover causal structure, validate premises, transport between populations,
 define time-varying interventions, compose with sequential or unsafe-set models, or authorize an
-action. Those temporal and transport semantics must be established before a causal-to-sequential
-adapter is considered.
+action. Its one-stage intervention marginals do not supply the history-conditioned kernels needed
+by an adaptive second-stage policy.
+
+### Two-stage longitudinal causal bridge boundary
+
+The bounded longitudinal interface binds one complete exact `P(A1,L1,A2,Y)`, population, binary
+coding, temporal order, consistency/intervention/first- and second-stage exchangeability,
+adaptation and no-interference premise identities, a complete deterministic history policy, and an
+exact cost/loss table. A matching premise identity is not empirical evidence for its truth, and
+the first profile permits no population transport.
+
+Policy-specific receiving checks support only for the chosen first action and chosen second action
+at each positive-probability regime history. An intermediate history with zero regime mass needs no
+action conditional for that policy. In contrast, construction of Bellman's complete subject
+requires positive support for both first actions, both intermediate values below each first action,
+and both second actions at every resulting history. The API preserves an identified policy while
+returning `policy-identified-full-subject-not-supported` for the invalid broader bridge.
+
+With full support, the adapter constructs the existing 21-node completed observable-history
+subject rather than defining a parallel planner. It retains all 32 policies, including distinct
+off-root completions. The receiver reconstructs every transition, checks retained certificates
+through the existing sequential consumer, and independently matches complete-path distributions,
+signed costs, and the complete minimizing set to the longitudinal g-formula.
+
+Two fully supported causal worlds can have the same static `do(A2)` outcome marginals for both
+actions while making opposite `L1`-adapted policies optimal. One-stage intervention results are
+therefore not accepted as longitudinal transition rows. This M1 candidate does not implement
+longitudinal partial-identification fibres, transport, statistical estimation, safety or
+persistent-family composition, causal discovery, empirical premise validation, or authority to
+act. Each would require its own typed composition warrant.
 
 ## 5. Stable interface principles
 

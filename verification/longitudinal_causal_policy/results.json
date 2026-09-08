@@ -1,0 +1,140 @@
+{
+  "status": "passed",
+  "failed": 0,
+  "base_commit": "0289a1660b21d86af3a897bb74270f562cb64dc9",
+  "reviewed_pr19_head": "f984ae5294a16c5189e6b49f9d1c828a8ab5514d",
+  "pr19_merge_commit": "0289a1660b21d86af3a897bb74270f562cb64dc9",
+  "executed_source_commit": "1f3e8cc1c657dc3d5fa9da6cef996caaa0be8091",
+  "execution": "local",
+  "runtime": "3.9.6",
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 10,
+  "rejections_per_mode": 32,
+  "headline_results": {
+    "named_policy_root0_distribution": [
+      "7/8",
+      "1/8"
+    ],
+    "named_policy_root0_value": "1/8",
+    "named_policy_root1_value": "7/40",
+    "root0_static_A2_values": [
+      "3/10",
+      "13/20"
+    ],
+    "constructed_subject_nodes": 21,
+    "complete_policies_checked": 32,
+    "complete_minimizing_policies": [
+      "policy-a1-0-a2-0100",
+      "policy-a1-0-a2-0101",
+      "policy-a1-0-a2-0110",
+      "policy-a1-0-a2-0111"
+    ],
+    "same_one_stage_do_A2_bad_probabilities": [
+      "1/2",
+      "1/2"
+    ],
+    "counterexample_world1_dynamic_values": [
+      "0",
+      "1"
+    ],
+    "counterexample_world2_dynamic_values": [
+      "1",
+      "0"
+    ],
+    "policy_specific_status": "identified-dynamic-regime-under-supplied-sequential-premises",
+    "full_subject_status": "full-two-stage-causal-subject-identified",
+    "bridge_status": "causal-to-sequential-bridge-checked",
+    "policy_only_status": "policy-identified-full-subject-not-supported",
+    "first_stage_failure": "first-stage-positivity-failure",
+    "second_stage_failure": "second-stage-policy-positivity-failure",
+    "unsupported_query": "unsupported-longitudinal-causal-query",
+    "signed_loss_minimum": "-29/60"
+  },
+  "coverage": {
+    "complete_binary_g_formula_distribution": "passed",
+    "exact_signed_policy_loss": "passed",
+    "dynamic_beats_both_static_controls": "passed",
+    "policy_specific_positivity": "passed",
+    "first_and_second_stage_failures_distinct": "passed",
+    "zero_probability_intermediate_branch": "passed-without-invented-action-conditional",
+    "policy_identified_full_subject_unsupported": "passed",
+    "full_subject_transition_construction": "passed",
+    "all_32_causal_and_Bellman_distributions_values": "exactly-equal",
+    "complete_minimizing_sets": "exactly-equal-with-off-root-ties-preserved",
+    "one_stage_marginals_opposite_dynamic_policies": "passed",
+    "unsupported_longitudinal_query": "rejected-with-distinct-status",
+    "stale_subject_premise_policy_loss_query": "rejected",
+    "forged_distribution_value_transition_certificate": "rejected",
+    "producer_disabled_receiving": "passed"
+  },
+  "current_checks": {
+    "finite_causal_passed_per_mode": 11,
+    "unsafe_passed_per_mode": 18,
+    "corner_passed_per_mode": 10,
+    "persistent_passed_per_mode": 11,
+    "sequential_passed_per_mode": 17,
+    "multistream_status": "passed",
+    "replanning_passed_per_mode": 9,
+    "joint_law_passed_per_mode": 19,
+    "history_failed": 0,
+    "affected_relative_markdown_links_checked": 125
+  },
+  "preservation": {
+    "pr19_merged_before_start": true,
+    "pr19_merge_tree_matches_reviewed_head": true,
+    "base_files_checked": 141,
+    "historical_pr19_runner": "passed-at-exact-merge",
+    "historical_pr17_runner": "passed-at-exact-merge",
+    "historical_pr16_runner": "passed-at-exact-merge",
+    "historical_pr14_runner": "passed-at-exact-merge",
+    "historical_pr12_runner": "passed-at-exact-repaired-head",
+    "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+    "historical_files_preserved": true,
+    "release_identities_unchanged": true,
+    "release_versions": [
+      "v0.0.1",
+      "v0.0.2",
+      "v0.0.3",
+      "v0.0.4",
+      "v0.0.5",
+      "v0.0.6"
+    ]
+  },
+  "source_sha256": {
+    ".github/workflows/finite-causal-identification.yml": "a1f4aee9506351f0b8bb79711785c4f7f3c6efdde9572ccc665afcb78de6913a",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "5c27a11004263a8cd9af8d9d727c938da7709579881824ffb592df14f7bf7143",
+    "README.md": "848c7953701a1146bc21af1a431209595457ad9209597bfe1747be28f069f010",
+    "docs/history/records/FINDINGS_LEDGER.md": "37d15b9592fc6d08216904675a6ece462cdaf750222183f0a2bc0b95fc9c7a33",
+    "docs/history/records/SUBSTRATE_LEDGER.md": "7553c4f17100b4ab3049ced61a64575dc6f94b64e1e90883b98a5cc88b343ea4",
+    "docs/programme/ARCHITECTURE.md": "7fcf52b3f6824b42975a522cda4275606803b78e00a325d2784f35dd58d736df",
+    "docs/programme/ROADMAP.md": "8a24f501ab5d17e0ef1ea6a18e21d8fe89f3888fc346a129fcd035a36c3bea36",
+    "foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md": "0fa7a39c19e723f3c4903e56a198a02c4bd97a10a9303da2bc14c145f7c60422",
+    "verification/longitudinal_causal_policy/README.md": "6b58b766f6cac1bbc6b7de61cb233a31782e300e7c52b516c5d039ecea8163f2",
+    "verification/longitudinal_causal_policy/checks.py": "3e71f5cdda2f1517dca1d2de638c29d7c6c83d542045a5bccbd6d2a1a80fde44",
+    "verification/longitudinal_causal_policy/reference.py": "94c9176d2dda13f0ef3c025d10ea9c2e50d762d7cda119a2f79fb001f33a1574",
+    "verification/longitudinal_causal_policy/run_checks.py": "fe100c35f777da5f9fd8e46a946f18f40e6572fe083f2e492827e655bc492f14"
+  },
+  "frozen_prerequisite_sha256": {
+    "foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md": "e543bed5725932678f9134e5f658de32f72c8a508b799b9e5588585b98ece4ee",
+    "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md": "af631b49c3e411c57dbbc7baa145bdcc337e26f0ac2eebf7fa508ba840111a2e",
+    "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md": "a54dfb0729759f1237817e516faf81e6d07e5907dadd8ddc6f1a1ba0fdaa27db",
+    "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md": "a974aa8e9753bcc1a4f5a5cd4d51c88040ae30bc40f98d1e837c71c6d711d0a4",
+    "reviews/BELLMAN_BUILDOUT_ADVERSARIAL_REVIEW.md": "643b12aa3313e16d2bc60768fa2b8fbf2df9c2facdab370a325faffde91c7eb9",
+    "verification/finite_causal_identification/results.json": "2687e889e2e7f9d4995a868f86fe879b9205a9b56a68a431a6dff06061685a5d",
+    "verification/sequential_certificates/reference.py": "99d0f1a3a32334cce826a7a582502122bc25e195f7024ed40f0c45753cbde1df",
+    "verification/sequential_certificates/results.json": "047be866108cf3097e9e4ee598a80a7fb79dd50729b2547aa11af059dda7cd56"
+  },
+  "limitations": [
+    "The observational law and longitudinal causal premises are supplied, not empirically validated.",
+    "Policy-specific identification does not imply every structural subject transition is identified.",
+    "The executable profile has binary A1/L1/A2/Y, two dates, 16 cells, and 32 deterministic policies.",
+    "No longitudinal partial identification, transport, safety/persistent-family composition, or authority claim is made.",
+    "Analytical proofs plus bounded exact checks are not formal verification.",
+    "No Writ or Decision Lab integration and no language migration occurred.",
+    "Enumeration remained at 32 policies, so no solver, Rust, Lean, or other escalation trigger was reached."
+  ]
+}
