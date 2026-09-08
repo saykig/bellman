@@ -136,6 +136,26 @@
     "verification/persistent_model_families/results.json": "10778c1e5067fcd77de75036da4f4c27114534bb66b61c8a346c63fe3f4b86d6",
     "verification/statistical_decision_bridge/results.json": "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13"
   },
+  "github_actions": {
+    "push": {
+      "run_id": 34181619109,
+      "job_id": 101921693913,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34181619109"
+    },
+    "pull_request_exact": {
+      "run_id": 34181710322,
+      "job_id": 101921957980,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34181710322"
+    },
+    "pull_request_history": {
+      "run_id": 34181710320,
+      "job_id": 101921958110,
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34181710320"
+    }
+  },
   "limitations": [
     "The theorem is proved analytically and checked on bounded exact cases, not formally verified.",
     "Statistical IID/completeness premises are supplied inputs and are not empirically validated.",
