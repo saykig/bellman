@@ -147,3 +147,22 @@ one path can move the maximum into the interior. Such a subject is not impossibl
 corner warrant is invalid. More than two parameters is separately `unfinished` in the executable
 profile. No empirical premise validation, randomized policy, continuous optimizer, Writ/Decision
 Lab transfer, language migration, dynamic risk, causal result, or formal proof is claimed.
+
+## Unsafe-set reachability and constrained deterministic selection — 8 September 2026
+
+The [additive companion](../../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md)
+adds one bounded risk/constraint object without changing the expected-additive sequential substrate.
+For an identified unsafe-history set, one complete deterministic policy's exact ever-hit
+probability is computed by backward absorption and independently checked by disjoint first-hit
+paths. Persistent-family aggregation keeps model identities and one common policy. Exact finite
+selection filters one fixed robust-feasible class before minimax loss and same-model regret
+comparisons; FULL and subset empty classes retain different conclusions.
+
+The statistical adapter invokes the existing rectangle/mapping/admissibility receiver before any
+safety conclusion. Under the inherited pathwise condition, first-hit probabilities are
+multi-affine and their maxima occur at the completed corners. Statistical coverage failure,
+model-implied harm probability, and numerical precision remain distinct. The [bounded exact
+evidence](../../../verification/unsafe_set_reachability/README.md) preserves PR #16 and the full
+historical replay chain. Resource constraints, tail distributions/CVaR, dynamically consistent
+risk, randomized feasibility, larger optimization, empirical model/unsafe-set validity, authority,
+formalization, and Writ/Decision Lab transfer remain open.

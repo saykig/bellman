@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "failed": 0,
+  "base_commit": "2727f7b578cf7bab40cfc1cbb4def583cf7da84d",
+  "reviewed_pr16_head": "c6be1d14091335c8218d37ca1ed8ac1e15e4c064",
+  "executed_source_commit": "356713e6be5908b0a54d52406a84ed7f00ab8a0f",
+  "execution": "local",
+  "runtime": "3.9.6",
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 18,
+  "rejections_per_mode": 21,
+  "headline_results": {
+    "transient_hit_probability": "1",
+    "terminal_only_shortcut": "0",
+    "double_counted_node_sum": "2",
+    "persistent_aggressive_probabilities": [
+      "0",
+      "1/10"
+    ],
+    "strict_cap": "1/20",
+    "strict_cap_minimax_loss_winner": "cautious",
+    "relaxed_cap": "1/10",
+    "relaxed_cap_minimax_loss_winner": "aggressive",
+    "statistical_rectangle": [
+      [
+        "p-exposure",
+        "22203/65536",
+        "1"
+      ],
+      [
+        "q-protection",
+        "0",
+        "43333/65536"
+      ]
+    ],
+    "statistical_corner_reachabilities": [
+      "22203/65536",
+      "492973209/4294967296",
+      "1",
+      "22203/65536"
+    ],
+    "rational_interior_audit_points": 289,
+    "repeated_parameter_corner_values_on_zero_one": [
+      "0",
+      "0"
+    ],
+    "repeated_parameter_corner_values_on_quarter_interval": [
+      "3/16",
+      "3/16"
+    ],
+    "repeated_parameter_interior_value": "1/4",
+    "equal_numeric_alpha": "1/20",
+    "equal_numeric_delta": "1/20",
+    "alpha_delta_merge": "rejected"
+  },
+  "coverage": {
+    "exact_recurrence_and_first_hit": "passed",
+    "transient_terminal_only_counterexample": "passed",
+    "unsafe_node_double_count_counterexample": "passed",
+    "expected_loss_not_reachability": "passed",
+    "persistent_family_cap": "passed",
+    "fixed_robust_feasible_comparator": "passed",
+    "full_and_subset_empty_class_distinction": "passed",
+    "hidden_model_policy_vector": "rejected",
+    "one_parameter_statistical_case": "passed",
+    "two_parameter_interaction": "passed",
+    "mutually_exclusive_parameter_reuse": "passed",
+    "repeated_same_path_parameter_warrant": "rejected",
+    "loose_outward_rectangle": "passed",
+    "malformed_mapping": "rejected",
+    "stale_statistical_evidence": "rejected",
+    "changed_model_policy_unsafe_set_or_cap": "rejected-old-evidence",
+    "producer_disabled_receiving": "passed"
+  },
+  "current_checks": {
+    "corner_passed_per_mode": 10,
+    "persistent_passed_per_mode": 11,
+    "sequential_passed_per_mode": 17,
+    "multistream_status": "passed",
+    "replanning_passed_per_mode": 9,
+    "history_failed": 0,
+    "affected_relative_markdown_links_checked": 110
+  },
+  "preservation": {
+    "pr16_merged_before_start": true,
+    "pr16_merge_tree_matches_reviewed_head": true,
+    "base_files_checked": 126,
+    "historical_pr16_runner": "passed-at-exact-merge",
+    "historical_pr14_runner": "passed-at-exact-merge",
+    "historical_pr12_runner": "passed-at-exact-repaired-head",
+    "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+    "historical_files_preserved": true,
+    "release_identities_unchanged": true,
+    "release_versions": [
+      "v0.0.1",
+      "v0.0.2",
+      "v0.0.3",
+      "v0.0.4",
+      "v0.0.5",
+      "v0.0.6"
+    ]
+  },
+  "github_actions": {
+    "push_aggregate": {
+      "run_id": 34187100180,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187100180"
+    },
+    "pull_request_aggregate": {
+      "run_id": 34187103447,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187103447"
+    },
+    "pull_request_pr16_delegation": {
+      "run_id": 34187103578,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187103578"
+    },
+    "pull_request_history": {
+      "run_id": 34187103453,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187103453"
+    }
+  },
+  "source_sha256": {
+    ".github/workflows/statistical-corner-models.yml": "bb33585211b165665700eabb3ea68b1d99cbe47f6ca291600079cc37c20a313b",
+    ".github/workflows/unsafe-set-reachability.yml": "49ed22502b127e3160a3e70d3472a956412e853306d6938e44f004114df502bb",
+    "README.md": "8af4c3beec5a2dd9b1fb584b411e5db9e3c28765da01b9f92c09d5a286aa2c81",
+    "docs/history/records/FINDINGS_LEDGER.md": "5fb9871b7c1332a05736702046f4984d23cc3e9abdea4a72a6ad72fced75c46c",
+    "docs/history/records/SUBSTRATE_LEDGER.md": "9c5c63f23da88acfa792f68ec7f130139d5bba771094e1d6db869fa51deb95c5",
+    "docs/programme/ARCHITECTURE.md": "5be0c3d95bfddc6b718cbcf2f875b7d2e19c87277bc75f50a0dd1dd65afb0b25",
+    "docs/programme/ROADMAP.md": "455d7aee907fbd6380eb8f37d78f32111f1cd310c42715a9c79a53a7cf2e7cf5",
+    "foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md": "28f038fd633daf7694f31885923fa90ec8926619e8dda497c3df4605036e257d",
+    "verification/unsafe_set_reachability/README.md": "ec1022473e78adf4717281447151045b96d09ee37314268cfd40d7a18e8bd8f1",
+    "verification/unsafe_set_reachability/checks.py": "21fcf15620b2bfaa77b1bc5f746444ed9b670782f0b9bde48ceed33969012791",
+    "verification/unsafe_set_reachability/reference.py": "4c2cc22d0b49c3a0103ef034ee1e6de4b51c355d928f275a533893a125ac42b3",
+    "verification/unsafe_set_reachability/run_checks.py": "f0e4895085f185910b73ef4b14b173ea57756c3f226fba4cacc7da2bf9d94806"
+  },
+  "frozen_prerequisite_sha256": {
+    "foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md": "be495f29011479adab2736bfbe8f3c3e513403fa48c4886652e8137256d1ccbc",
+    "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md": "38a461556da18e977c623404bec16a056013019daeb74adb7207bc0f313d749e",
+    "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md": "a974aa8e9753bcc1a4f5a5cd4d51c88040ae30bc40f98d1e837c71c6d711d0a4",
+    "foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md": "c87033cf4f9d7adaadb745fa0722ff62376eabc11cf1219628cd6b5df388313e",
+    "verification/multistream_collection/results.json": "2b80b11c691be1c297e71bd2c7016c837a3584389748d42ec06c377bf2da7a93",
+    "verification/persistent_model_families/results.json": "10778c1e5067fcd77de75036da4f4c27114534bb66b61c8a346c63fe3f4b86d6",
+    "verification/sequential_certificates/results.json": "047be866108cf3097e9e4ee598a80a7fb79dd50729b2547aa11af059dda7cd56",
+    "verification/statistical_corner_models/results.json": "c2360cdfcbde5f4bb48d0a629bb0c60defcaecd8506224d14c76d49436849a7e"
+  },
+  "limitations": [
+    "Analytical proofs plus bounded exact checks are not formal verification.",
+    "Model validity and normative unsafe-set adequacy are supplied, not established.",
+    "Statistical IID/completeness premises are supplied and not empirically validated.",
+    "Only deterministic policies, four models, and two statistical parameters are supported.",
+    "No CVaR, dynamic risk, resource constraint, randomized-policy, or authority claim is made.",
+    "Finite enumeration remained small, so no solver or language trigger was reached."
+  ]
+}

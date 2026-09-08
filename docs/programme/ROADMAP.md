@@ -2,11 +2,11 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 7 September 2026, based on latest `main` after reviewed PR #14
-(`6c9cec616358cce6e492c84f16d440f60b7d6124`). The bounded statistical-rectangle to sequential
-corner-family composition is the active result under review. PR #13's programme/history
-organization, PR #14's multistream evidence, and PR #15's versioned historical releases remain
-intact.
+**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #16
+(`2727f7b578cf7bab40cfc1cbb4def583cf7da84d`). Exact unsafe-set reachability and robust constrained
+deterministic selection are the active bounded result under review. PR #16's statistical-corner
+composition, PR #14's multistream evidence, and the current programme/history organization and
+versioned releases remain intact.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -47,14 +47,17 @@ Earned so far:
 8. a complete single-cut family-aware replanning certificate with separate root-cap and exact-policy-change warrants.
 9. an exact bridge from an admissible two-parameter statistical rectangle to persistent sequential
    corner models for whole-policy deterministic loss and regret.
+10. exact unsafe-history hitting probability, persistent-family robust safety caps, and deterministic
+    expected-loss/regret selection within one fixed robust-feasible policy class, including an
+    admissible statistical-corner composition.
 
 ### Wider Bellman mathematical programme
 
 Outstanding areas remain explicit rather than compressed into a percentage: statistical learning
 beyond the first IID Bernoulli bridge; adaptive sampling, dependence, drift, missingness and model
-criticism; harm/resource constraints and dynamic risk; causal identification and transport; richer
-structural transport; scalable optimization; plural objectives; strategic actors; and selected
-formal verification.
+criticism; resource/operational constraints and tail/dynamic risk beyond the first unsafe-set
+primitive; causal identification and transport; richer structural transport; scalable
+optimization; plural objectives; strategic actors; and selected formal verification.
 
 ## 3. Completed and hardened capability chain
 
@@ -69,28 +72,31 @@ formal verification.
 | Family-aware replanning and root guarantees | HARDENED | [`BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md`](../../foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md) | One complete continuation splice produces checked modelwise certificates; conditional preference, cap preservation, and exact policy change remain separate. |
 | Anytime-valid Bernoulli data-to-decision bridge | HARDENED | [`BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md`](../../foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) | One complete IID Bernoulli prefix yields checked all-time outward coverage and exact static decisions; PR #12 aligns producer/receiver support and historical replay. |
 | Controlled multistream collection | HARDENED | [`BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md`](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md) | Fixed-registry adaptive collection retains rowwise all-prefix coverage, exact simultaneous rectangles, and checked static affine decisions; PR #14 closes subject/revision acceptance findings. |
+| Statistical rectangles to sequential corner models | HARDENED | [`BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md`](../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md) | Under a pathwise multi-affine warrant, continuous rectangle uncertainty for deterministic whole-policy loss and regret is represented exactly by the finite persistent corner family. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### ACTIVE RESULT — Statistical rectangle to sequential corner-model guarantees
+### ACTIVE RESULT — Unsafe-set reachability and robust constrained selection
 
-PR #14 completed and acceptance-hardened controlled multistream rectangles. The active section 5A
-result composes that earned statistical object with PR #8/PR #10 whole-policy semantics and asks:
+PR #16 completed the statistical-rectangle to sequential corner-family bridge. The active section
+5B result composes the same exact sequential and persistent-family subjects with one explicit
+unsafe-history event and asks:
 
-> When can a checked statistical rectangle over uncertain transition parameters be replaced
-> exactly by a finite family of corner models for whole-policy expected cost, regret, and robust
-> deterministic policy selection?
+> What exact probability does one implementable policy assign to ever entering the declared
+> unsafe set, and which deterministic policies satisfy the cap in every persistent model?
 
-The [bounded construction](../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md)
-proves fixed deterministic policy costs are multi-affine when each uncertain parameter occurs in
-at most one transition factor on every complete skeleton path. Expected-loss and modelwise-regret
-maxima then occur exactly at the rectangle corners, which are checked as one persistent family.
-The executable profile is limited to two parameters/four corners and explicitly rejects repeated
-same-path use through the exact `p(1-p)` counterexample. It is a research reference under review,
-not a posterior, generic sequential planner, empirical validation, randomized-policy result, or
-Writ/Decision Lab capability.
+The [bounded construction](../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md)
+proves the absorbing-for-calculation recurrence equals a disjoint first-hit path expansion. It
+retains every model identity, forms one fixed robust-feasible deterministic class, and checks
+constrained minimax expected loss and same-model regret. Under PR #16's pathwise no-repeat warrant,
+the first-hit probability is multi-affine and its rectangle maximum occurs exactly at a corner.
+The reference preserves counterexamples to unsafe-node summing, terminal-only inspection,
+expected-loss substitution, coverage/harm-probability merging, and repeated same-path parameter
+use. It is a research reference under review, not empirical safety validation, a normative unsafe-
+set decision, a randomized planner, CVaR/dynamic risk, authority to act, or Writ/Decision Lab
+capability.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -134,14 +140,27 @@ Existing foundation: §10 of [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md`](../../fou
 
 Expected loss is not sufficient for many consequential decisions.
 
-Needed when the task requires it:
+Earned in the active bounded reference:
+
+- exact probability of ever visiting an identified unsafe observable history under one complete
+  deterministic policy;
+- maximum reachability across an unweighted persistent whole-episode family using the same policy;
+- exact deterministic minimax expected loss and same-model regret within one fixed robust-feasible
+  class, with FULL/subset empty-class distinctions;
+- exact statistical-rectangle reduction to corner reachability under the inherited pathwise
+  multi-affine warrant; and
+- explicit separation of statistical coverage failure from model-implied harm probability.
+
+Still needed when a future task promises it:
 
 - resource and operational constraints;
-- unsafe-set reachability/hitting probabilities;
 - occupancy or equivalent finite constructions;
 - CVaR/tail-risk queries where specified;
 - a clear distinction between terminal risk criteria and recursively time-consistent risk criteria;
 - preservation obligations for any abstraction used under constraints.
+- randomized constrained feasibility and larger constrained optimization where justified;
+- empirical criticism of supplied transition models and normative/applicability review of unsafe
+  declarations.
 
 Existing foundation: §11 of the build-out.
 

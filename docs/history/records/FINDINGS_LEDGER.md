@@ -195,3 +195,24 @@ no corner-reduction warrant, although the sequential problem remains valid for a
 The statistical premises are supplied but not empirically validated, and coverage alpha, signed
 loss/regret, and enclosure precision are not combined. See the [mathematical companion](../../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md)
 and [bounded verification](../../../verification/statistical_corner_models/README.md).
+
+## Unsafe-set reachability and robust constrained selection — 8 September 2026
+
+The [additive construction](../../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md)
+proves that an absorbing-for-calculation recurrence equals the probability of ever entering an
+explicitly declared set of completed observable histories. The independent first-hit expansion
+prevents unsafe-node double counting and retains transient unsafe visits that disappear from a
+terminal-only view. The bounded [receiver](../../../verification/unsafe_set_reachability/README.md)
+binds model, policy, unsafe set, cap, and query; it retains unweighted modelwise probabilities,
+forms one fixed robust-feasible deterministic policy class, and checks constrained minimax expected
+loss and same-model regret.
+
+Under PR #16's pathwise no-repeat condition, first-hit probability is multi-affine and the exported
+statistical rectangle reduces exactly to its corner family. The exact `p(1-p)` control again places
+the maximum at `1/2`, not the endpoints, so repeated same-path use receives no corner reachability
+warrant. Separate controls refute terminal-only inspection, unsafe-node summing, expected-loss
+substitution, hidden model policies, and merging coverage failure with harm probability even when
+both equal `1/20`. The result does not validate model premises or unsafe-set meaning, authorize
+action, cover randomized policies/CVaR/dynamic risk/resources, modify Writ or Decision Lab, or
+constitute formal verification. Exact enumeration remained small; no solver/language trigger was
+reached.

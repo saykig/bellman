@@ -92,17 +92,18 @@ This table is intentionally conservative.
 | Family-aware replanning | M1–M2 | Bounded checked research reference; no general Writ integration. |
 | Anytime-valid Bernoulli data-to-decision bridge | M1 | Acceptance-hardened research reference; not implemented as Writ or Decision Lab semantics. |
 | Controlled fixed-registry multistream collection | M1 | Reviewed and acceptance-hardened bounded reference; no engineering adapter. |
-| Statistical rectangle to sequential corner models | M1 | Bounded checked composition under review; at most two parameters/four corners under a pathwise multi-affine warrant, with no engineering adapter. |
+| Statistical rectangle to sequential corner models | M1 | Reviewed bounded composition; at most two parameters/four corners under a pathwise multi-affine warrant, with no engineering adapter. |
 | Statistical learning / coverage beyond the bounded Bernoulli profile | Foundation only | Outcome filtering, within-row dependence, drift, missingness, adaptive allocation and broader model learning are not implemented. |
-| Constraints / risk | Foundation only | Not implemented. |
+| Unsafe-set reachability / constrained deterministic selection | M1 | Bounded checked research reference under review; exact first-hit probability, persistent-family cap, and admissible statistical-corner composition, with no engineering adapter. |
+| Resource constraints / tail and dynamic risk | Foundation only | Not implemented. |
 | Causal identification | Foundation only | Not implemented. |
 | Plural objectives / strategy | Foundation only | Not implemented. |
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
 
-### Statistical, controlled-collection, and corner-family boundary
+### Statistical, corner-family, and unsafe-reachability boundary
 
-The bounded research references keep five interfaces separate:
+The bounded research references keep six interfaces separate:
 
 1. a fixed registry and complete append-only event transcript under explicit rowwise IID Bernoulli
    fixed-parameter premises and a built-in history-only rule;
@@ -112,6 +113,9 @@ The bounded research references keep five interfaces separate:
 4. an exact static finite-action affine comparison conditional on membership in that rectangle.
 5. when explicitly requested, a separate pathwise multi-affine warrant and persistent family of
    completed sequential corner models for whole-policy deterministic loss and regret.
+6. when explicitly requested, a further unsafe-history declaration and first-hit receiver for exact
+   modelwise reachability, robust safety caps, and deterministic selection within one fixed robust-
+   feasible policy class.
 
 The controlled reference additionally binds registry order, distinct physical-event identities,
 global and local indices, rule/stopping state, revision lineage, fixed stream allocations, and
@@ -135,6 +139,22 @@ path. Its corner subjects have no probabilities of their own. A repeated-paramet
 failure probability, loss/regret quantities, and outward-enclosure precision remain distinct
 checked fields. Any changed data revision, mapping, transition law, loss table, policy class, or
 query creates a new composition claim rather than inheriting an earlier corner result.
+
+The sixth interface does not infer an unsafe event from a loss table. Its receiver binds an
+identified subset of the completed observable histories, recomputes an absorbing reachability
+recurrence, and requires equality with an independent first-hit path sum. Absorption is a
+calculation device and does not rewrite the sequential model. For persistent families, every model
+identity and the one common policy remain visible and unweighted. Constrained comparison uses one
+fixed robust-feasible deterministic class in every model; it does not let the comparator change its
+feasibility class by hidden model identity.
+
+Under the fifth interface's no-repeat-per-parameter path warrant, first-hit probabilities are also
+multi-affine and their rectangle maxima occur at the same completed corners. Statistical coverage
+failure `alpha`, conditional model-implied unsafe reachability `delta`, and numerical enclosure
+precision remain typed and separate even when two numbers coincide. A checked cap establishes no
+empirical model validity, normative adequacy of the unsafe declaration, or authority to act. A
+repeated same-path parameter invalidates only the corner warrant; unsafe reachability at each fixed
+model remains a valid query for another optimization method.
 
 ## 5. Stable interface principles
 
