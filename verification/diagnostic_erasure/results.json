@@ -1,0 +1,464 @@
+{
+  "schema": "bellman.diagnostic-erasure-validation.v1",
+  "source_commit": "129737ce8ccc051032402464659b5ef60d173412",
+  "source_files": {
+    ".github/workflows/history-migration.yml": "ae1f5686f825d8f5cde68a3cb3f1876759d2126e24c86f74f1c2c9c34f307425",
+    ".github/workflows/sequential-consistency.yml": "0b0f7f1a667ee80c917f649ce40fbb58efc887152c2aa3d871a670f29dc8ec06",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "10f3b8959d2ac37e9489d78423fe9af52068e21f715f4c27113bc51a64a23aa2",
+    "README.md": "6b2c6c487eb31d97b578e9e53e660e43ff8a18f4dc3f61650b4d31279a85b105",
+    "docs/history/releases/2026-09-08-diagnostic-history-erasure-obstruction.md": "bbd7f695ae31091dd298cace91846ed28c2b67b3ad66822c75490889caa12b3f",
+    "docs/programme/ARCHITECTURE.md": "f0e2c4d5a51d32f00f128649e99aac70db2ca3a88c8029656cd9fdb41188c4e7",
+    "docs/programme/ROADMAP.md": "8844efa62ae89d363362157c303f6bebb4fe581dae0b9bea2c5268a2a9384b64",
+    "foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md": "f3385f19578d62215a8086992adc0e222386472a5da93d6cdf8a7e599c2270fe",
+    "reviews/DIAGNOSTIC_HISTORY_ERASURE_REVIEW_2026_09_08.md": "309cd2760a29d8dac1d699ef2d1fc352fcbcc2df4a979f9ed3d0366216ebd867",
+    "verification/diagnostic_erasure/ACCEPTANCE.md": "4466d39d83afcb2db3f9c54fca07ed6bae962e9cf2301d36b05d9652c4efb06c",
+    "verification/diagnostic_erasure/acceptance.py": "358543ab08e5c61462ae41e9f1f45c48bb3f8fa6e93994a5fcdf2c40db3f6182",
+    "verification/diagnostic_erasure/candidate.py": "f063deff381089c192d7abccca030134a93728b1f44281423105409f22d5e41a",
+    "verification/diagnostic_erasure/checks.py": "5e272f5ee1edcf2c5dbfbe05bf97ad3852493177bc30dc9bffaa68d58ea85bcd",
+    "verification/diagnostic_erasure/example_case.json": "f8b8b3378467eb041339fa86a87255ab0087d0a1e9523b3e893d0a6557299037",
+    "verification/diagnostic_erasure/receive_case.py": "d327915ee501e921b4b57c6c1ecf4488daeb91cc7c633c6dddcd524be94b2ec0"
+  },
+  "validation": {
+    "base": "5ea19f214ec89536f47fe20cfa5a4d62222b2598",
+    "diagnostic_erasure": {
+      "changed_belief_alternative": {
+        "epsilon": "0",
+        "information_queries": 6,
+        "max_gain": "0",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-modelwise-sequential-equilibrium",
+        "subject_sha256": "33c72bb91b99b179afae18ec6fe20946b81e20dfcf9041076098e86d5019b8a9",
+        "warrant_sha256": "095a20636c87fa2ed41837e4fac8b39ce41da40e5dc58b5587be56a0d81a8ae9"
+      },
+      "independent_exact_linear_solution": "x=y=0",
+      "later_incentive_controls": {
+        "comply_to_defect_gain_high_monitor": "-1/2",
+        "comply_to_defect_gain_low_monitor": "1/2",
+        "erased_correct_probability": "1/2",
+        "remembered_correct_probability": "1"
+      },
+      "producer_disabled": true,
+      "received": {
+        "arbitrary_sequence_required_ratios": {
+          "high": "3/5",
+          "low": "5/3"
+        },
+        "conditional_action_values": [
+          {
+            "action": "N",
+            "info": "A.b.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.H",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.b.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.L",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.H",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.L",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "accept",
+            "info": "B.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "accept",
+            "info": "B.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "N",
+            "info": "A.b.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.H",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.b.L",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.L",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.H",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.L",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.L",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "accept",
+            "info": "B.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "accept",
+            "info": "B.L",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.L",
+            "model": "low",
+            "value": "0"
+          }
+        ],
+        "full_erasure_information_sets": 3,
+        "identity": {
+          "sender_retains_signal": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75",
+          "source": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31",
+          "target": "ca249ca18da0353e74ad361a70b7be974ad4e7b23bc892603cbda2cda4e15b6a"
+        },
+        "individual_target_statuses": {
+          "high": "shared-consistent-modelwise-sequential-equilibrium",
+          "low": "shared-consistent-modelwise-sequential-equilibrium"
+        },
+        "query": "all-local-values-and-one-common-consistency-sequence.v1",
+        "receiver_only_information_sets": 5,
+        "receiver_only_status": "shared-consistent-modelwise-sequential-equilibrium",
+        "source_information_sets": 6,
+        "source_status": "shared-consistent-modelwise-sequential-equilibrium",
+        "status": "checked-common-consistency-obstruction",
+        "target_assessed_max_gain": "0"
+      },
+      "rejections": [
+        "false obstruction ratio",
+        "same model is not an obstruction",
+        "unknown model",
+        "missing individual model warrant",
+        "modelwise witness swapped",
+        "missing continuation row",
+        "false value with valid odds",
+        "false source limiting belief",
+        "model-indexed tremble injection",
+        "receiver repair changes sender tremble",
+        "extra acceptance flag",
+        "wrong query",
+        "stale caller subject binding",
+        "freshly bound payoff outside proved class",
+        "freshly bound changed marginal",
+        "freshly bound changed assessment",
+        "freshly bound private information change",
+        "compatible odds family cannot prove impossibility",
+        "caller query rebinding"
+      ]
+    },
+    "inherited": {
+      "base": "eb44e580fe137c50d9c92ea2b284cf0e5d3d90e9",
+      "inherited": {
+        "causal": {
+          "current_checks_at_snapshot": {
+            "affected_relative_markdown_links_checked": 125,
+            "corner_passed_per_mode": 10,
+            "finite_causal_passed_per_mode": 11,
+            "history": {
+              "affected_relative_markdown_links_checked": 124,
+              "failed": 0,
+              "migration_baseline": "92922ab6604840152ad7f7800969673335748272",
+              "moved_records": {
+                "docs/history/records/FINDINGS_LEDGER.md": "37d15b9592fc6d08216904675a6ece462cdaf750222183f0a2bc0b95fc9c7a33",
+                "docs/history/records/LEGACY_ARCHIVE_STATUS.md": "a0e6358fe1a844835565dcfb1b121008dc434d58203ef4b66c96f69aa09f5417",
+                "docs/history/records/MATH_ARCHIVE_LEDGER.md": "63e87c67892c033edff1d68452d718dd95f0825d8fa4f203d1dda4459aad1df2",
+                "docs/history/records/SUBSTRATE_LEDGER.md": "7553c4f17100b4ab3049ced61a64575dc6f94b64e1e90883b98a5cc88b343ea4"
+              },
+              "negative_controls": {
+                "duplicate_json_key": "rejected",
+                "forged_release_or_artifact_identity": "rejected-by-sha256-and-git-object-check",
+                "unexpected_record_mutation": "rejected-by-exact-transformation-check"
+              },
+              "release_manifest": {
+                "key_artifacts": 29,
+                "lightweight_tags_required": true,
+                "releases": 6,
+                "versions": [
+                  "v0.0.1",
+                  "v0.0.2",
+                  "v0.0.3",
+                  "v0.0.4",
+                  "v0.0.5",
+                  "v0.0.6"
+                ]
+              }
+            },
+            "joint_law_passed_per_mode": 19,
+            "multistream_status": "passed",
+            "persistent_passed_per_mode": 11,
+            "replanning_passed_per_mode": 9,
+            "sequential_passed_per_mode": 17,
+            "unsafe_passed_per_mode": 18
+          },
+          "normal_optimized_equal": true,
+          "passed_per_mode": 10,
+          "preservation": {
+            "base_files_checked": 141,
+            "historical_files_preserved": true,
+            "historical_pr12_runner": "passed-at-exact-repaired-head",
+            "historical_pr14_runner": "passed-at-exact-merge",
+            "historical_pr16_runner": "passed-at-exact-merge",
+            "historical_pr17_runner": "passed-at-exact-merge",
+            "historical_pr19_runner": "passed-at-exact-merge",
+            "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+            "pr19_merge_tree_matches_reviewed_head": true,
+            "pr19_merged_before_start": true,
+            "release_identities_unchanged": true,
+            "release_versions": [
+              "v0.0.1",
+              "v0.0.2",
+              "v0.0.3",
+              "v0.0.4",
+              "v0.0.5",
+              "v0.0.6"
+            ]
+          },
+          "rejections_per_mode": 32,
+          "retained_result_present_and_source_bound": true,
+          "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+        },
+        "history": {
+          "normal_optimized_equal": true,
+          "release_manifest": {
+            "key_artifacts": 29,
+            "lightweight_tags_required": true,
+            "releases": 6,
+            "versions": [
+              "v0.0.1",
+              "v0.0.2",
+              "v0.0.3",
+              "v0.0.4",
+              "v0.0.5",
+              "v0.0.6"
+            ]
+          },
+          "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+        },
+        "mode": "all",
+        "preservation_negative_controls": [
+          "altered retained evidence rejected",
+          "unregistered note rejected"
+        ],
+        "preserved_strategic_snapshot_files": 172,
+        "strategic": {
+          "both_producers_disabled": true,
+          "integrated": {
+            "epsilon": "0",
+            "information_queries": 80,
+            "max_gain": "0",
+            "semantics": "one-common-power-sequence-all-models.v1",
+            "status": "shared-consistent-modelwise-sequential-equilibrium",
+            "subject_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+            "warrant_sha256": "791f4c666dd92cfe1364b89e70f64ce347b44c84f6a6f3150b14f522bd520e58"
+          },
+          "normal_optimized_equal": true,
+          "original_retained_replay": {
+            "max_gain": "0",
+            "normal_optimized_equal": true,
+            "preserved_base_files": 145,
+            "rejections": 24,
+            "snapshot_commit": "19e1904bfd96e8d0eb926ac630193b9f0b1d4265"
+          },
+          "rejections": 33,
+          "snapshot": "af7a8fc67cb204b67474eb7749c76c414189a5d5"
+        },
+        "workflow_only_exceptions": [
+          ".github/workflows/history-migration.yml",
+          ".github/workflows/sequential-consistency.yml",
+          ".github/workflows/two-stage-longitudinal-causal-policy.yml"
+        ]
+      },
+      "mode": "all",
+      "normal_optimized_equal": true,
+      "permitted_existing_changes": [
+        ".github/workflows/history-migration.yml",
+        ".github/workflows/sequential-consistency.yml",
+        ".github/workflows/two-stage-longitudinal-causal-policy.yml",
+        "README.md",
+        "docs/programme/ARCHITECTURE.md",
+        "docs/programme/ROADMAP.md"
+      ],
+      "preservation_negative_controls": [
+        "changed inherited warrant rejected",
+        "unregistered release rejected"
+      ],
+      "preserved_base_files": 173,
+      "reduction": {
+        "all_three_producers_disabled": true,
+        "correlation_counterexample": {
+          "both_max_gain": "0",
+          "marginal_product_matching_probability": "1/2",
+          "tagged_matching_probability": "1"
+        },
+        "integrated": {
+          "epsilon": "0",
+          "equilibrium_status": "shared-consistent-modelwise-sequential-equilibrium",
+          "max_gain": "0",
+          "root_values": {
+            "g=1,p=1": {
+              "A": "7/10",
+              "B": "1"
+            },
+            "g=1,p=1/2": {
+              "A": "7/10",
+              "B": "1"
+            },
+            "g=3,p=1": {
+              "A": "7/10",
+              "B": "1"
+            },
+            "g=3,p=1/2": {
+              "A": "7/10",
+              "B": "1"
+            }
+          },
+          "source_nodes": 127,
+          "source_queries": 160,
+          "source_sha256": "9b11c6fbe1dce6b9ba1cc28629086715e7c55e359a57410154ebba4f3eef841e",
+          "status": "checked-public-tag-erasure",
+          "target_nodes": 63,
+          "target_queries": 80,
+          "target_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+          "warrant_sha256": "392c31153cbbb55fa4c71d779753c2dbee18b5046c354421779ac7174da9ba3c"
+        },
+        "likelihood_counterexample": {
+          "incorrectly_restricted_witness_g": "1/4",
+          "source_and_target_max_gain": "0",
+          "source_and_target_root_A": "1",
+          "target_assessed_g": "1/2"
+        },
+        "positive_cases": [
+          "integrated public copy erasure",
+          "weak bond",
+          "participation fee",
+          "positive tolerance",
+          "unequal source coefficients with recomputed radius",
+          "alternate representative",
+          "model-dependent positive tag weights"
+        ],
+        "rejections": [
+          "unknown representative",
+          "unknown semantics",
+          "missing tag",
+          "missing node",
+          "nonbijective node map",
+          "missing information",
+          "stale source digest",
+          "stale target digest",
+          "extra warrant field",
+          "wrong transfer semantics",
+          "false inner radius",
+          "missing continuation query",
+          "false incentive gain",
+          "tolerance rebinding",
+          "individually valid but untransported witness",
+          "changed off-path assessment",
+          "changed terminal utility",
+          "zero probability representative",
+          "changed model identity",
+          "payoff irrelevant tag used for coordination",
+          "changed conditional chance despite equal marginal",
+          "likelihood-invalid witness restriction"
+        ]
+      }
+    },
+    "mode": "all",
+    "normal_optimized_equal": true,
+    "permitted_existing_changes": [
+      ".github/workflows/history-migration.yml",
+      ".github/workflows/sequential-consistency.yml",
+      ".github/workflows/two-stage-longitudinal-causal-policy.yml",
+      "README.md",
+      "docs/programme/ARCHITECTURE.md",
+      "docs/programme/ROADMAP.md"
+    ],
+    "preservation_negative_controls": [
+      "changed inherited warrant rejected",
+      "unregistered release rejected"
+    ],
+    "preserved_base_files": 185
+  }
+}
