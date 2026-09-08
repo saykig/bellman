@@ -78,7 +78,10 @@ def run():
          "PR8 merge is not an ancestor of the current base")
     inherited_paths = [
         "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md",
-        "verification/persistent_model_families",
+        "verification/persistent_model_families/families.py",
+        "verification/persistent_model_families/checks.py",
+        "verification/persistent_model_families/results.json",
+        "verification/persistent_model_families/README.md",
         ".github/workflows/persistent-model-families.yml",
     ]
     need(subprocess.run(["git", "diff", "--quiet", PR8_MERGE, base, "--",
