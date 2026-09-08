@@ -189,9 +189,15 @@ def run():
          "PR #10 merge is not an ancestor of current base")
     inherited_paths = [
         "foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md",
-        "verification/family_replanning",
+        "verification/family_replanning/replanning.py",
+        "verification/family_replanning/checks.py",
+        "verification/family_replanning/results.json",
+        "verification/family_replanning/README.md",
         "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md",
-        "verification/persistent_model_families",
+        "verification/persistent_model_families/families.py",
+        "verification/persistent_model_families/checks.py",
+        "verification/persistent_model_families/results.json",
+        "verification/persistent_model_families/README.md",
         "verification/joint_law_completion/joint_law.py",
     ]
     need(subprocess.run(["git", "diff", "--quiet", PR10_MERGE, base, "--",

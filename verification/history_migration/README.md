@@ -13,8 +13,9 @@ substrate records may then receive append-only current entries without changing 
 manifest's frozen transformation identity. It requires the old root paths to be absent, validates
 strict duplicate-free UTF-8 JSON manifests, recomputes every
 release target date and tree from Git, hashes every committed release note, and hashes every selected
-artifact from its historical target commit. If a proposed tag later exists, it must resolve to the
-manifest's exact target commit.
+artifact from its historical target commit. The final versioned state requires all six lightweight
+`v0.0.1`–`v0.0.6` tag refs to exist, resolve directly to their exact manifest commits, and use the
+expected pre-0.1 version sequence.
 
 Current certificate preservation runners import the same moved-record check. Their pinned replay
 still executes unchanged code at its historical commit; current orchestration recognizes the

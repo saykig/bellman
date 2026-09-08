@@ -1,4 +1,4 @@
-# Anytime-valid Bernoulli data-to-decision bridge
+# v0.0.6 — Anytime-valid Bernoulli data-to-decision bridge
 
 Historical period: 2026-09-07
 
@@ -9,6 +9,9 @@ Tagged commit: `92922ab6604840152ad7f7800969673335748272`
 Git tree: `2345b79ccd0bfee81703330506e8c647989ae1f1`
 
 Standing: Bounded bridge completed; receiver support and live-CI preservation boundary repaired.
+
+Publication note: This historical checkpoint was indexed and published later. Its target commit and
+tree—not the GitHub publication timestamp—are the authority for its historical date and state.
 
 ## Question
 
