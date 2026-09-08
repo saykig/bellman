@@ -1,0 +1,157 @@
+{
+  "status": "passed",
+  "failed": 0,
+  "base_commit": "0f8a7e2dc1e420d9ba26c993632c1ec690e1a804",
+  "reviewed_pr17_head": "afad4c594efdef1c0abc05376464f4325efd24f0",
+  "executed_source_commit": "31f4e27a183dcf9e8413c68423a05e2f370d0120",
+  "execution": "local",
+  "runtime": "3.9.6",
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 11,
+  "rejections_per_mode": 24,
+  "headline_results": {
+    "no_confounding_intervention_bad_probabilities": [
+      "1/4",
+      "3/4"
+    ],
+    "simpson_observational_bad_probabilities": [
+      "73/100",
+      "27/100"
+    ],
+    "simpson_adjusted_bad_probabilities": [
+      "9/20",
+      "11/20"
+    ],
+    "simpson_observational_choice": 1,
+    "simpson_causal_choice": 0,
+    "positivity_status": "positivity-failure-for-adjustment",
+    "unrestricted_response_vertices": 16,
+    "do0_exact_range": [
+      "1/4",
+      "3/4"
+    ],
+    "do1_exact_range": [
+      "1/4",
+      "3/4"
+    ],
+    "do0_lower_witness": [
+      "0",
+      "1/4",
+      "0",
+      "1/4",
+      "1/4",
+      "1/4",
+      "0",
+      "0"
+    ],
+    "do0_upper_witness": [
+      "0",
+      "1/4",
+      "0",
+      "1/4",
+      "0",
+      "0",
+      "1/4",
+      "1/4"
+    ],
+    "point_identified_calibrated_probabilities": [
+      "1/2",
+      "1/2"
+    ],
+    "decision_despite_uncertainty_common_action": 0,
+    "decision_despite_uncertainty_D01": "-1/2",
+    "model_dependent_D01": "1/2",
+    "model_dependent_D10": "1/2",
+    "incompatible_status": "incompatible-causal-fiber",
+    "unsupported_status": "unsupported-causal-restriction",
+    "explicit_relaxation_status": "outer-relaxation-only",
+    "cross_witness_subtraction": "rejected"
+  },
+  "coverage": {
+    "finite_adjustment_under_supplied_premises": "passed",
+    "complete_binary_intervention_distribution": "passed",
+    "simpson_observation_intervention_reversal": "passed",
+    "positivity_boundary": "passed",
+    "response_type_observational_consistency": "passed",
+    "complete_exact_vertex_enumeration": "passed",
+    "partial_identification_with_attaining_witnesses": "passed",
+    "point_identification_under_supported_equalities": "passed",
+    "typed_monotone_response_and_harm_prevention": "passed",
+    "same_fiber_action_differences": "passed",
+    "decision_identified_despite_causal_uncertainty": "passed",
+    "opposite_model_dependent_decisions": "passed",
+    "incompatible_supported_fiber": "passed",
+    "unsupported_nonlinear_restriction": "passed",
+    "explicit_outer_relaxation_not_promoted": "passed",
+    "malformed_and_forged_claims": "rejected",
+    "stale_observation_premise_adjustment_coding_restriction_cost_loss_or_query": "rejected",
+    "producer_disabled_receiving": "passed"
+  },
+  "current_checks": {
+    "unsafe_passed_per_mode": 18,
+    "corner_passed_per_mode": 10,
+    "persistent_passed_per_mode": 11,
+    "sequential_passed_per_mode": 17,
+    "multistream_status": "passed",
+    "replanning_passed_per_mode": 9,
+    "joint_law_passed_per_mode": 19,
+    "history_failed": 0,
+    "affected_relative_markdown_links_checked": 117
+  },
+  "preservation": {
+    "pr17_merged_before_start": true,
+    "pr17_merge_tree_matches_reviewed_head": true,
+    "base_files_checked": 133,
+    "historical_pr17_runner": "passed-at-exact-merge",
+    "historical_pr16_runner": "passed-at-exact-merge",
+    "historical_pr14_runner": "passed-at-exact-merge",
+    "historical_pr12_runner": "passed-at-exact-repaired-head",
+    "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+    "historical_files_preserved": true,
+    "release_identities_unchanged": true,
+    "release_versions": [
+      "v0.0.1",
+      "v0.0.2",
+      "v0.0.3",
+      "v0.0.4",
+      "v0.0.5",
+      "v0.0.6"
+    ]
+  },
+  "source_sha256": {
+    ".github/workflows/finite-causal-identification.yml": "7d5d9c8a2e24ce8287136581d8de61c015d2f3fc1154f6fa7cdd2025e511b0d6",
+    ".github/workflows/unsafe-set-reachability.yml": "782e0bd92b3be1f10a679ae5f39c7d95fa702bf3a78b5cc7cecbd4ce612378e1",
+    "README.md": "a91230e1e613a869863c72322795d2275b9a2319ba4511652d4d613023956893",
+    "docs/history/records/FINDINGS_LEDGER.md": "71f40f262b0093b467f3c1c45197b34648bfe7dffbdf264fa85018c804171d37",
+    "docs/history/records/SUBSTRATE_LEDGER.md": "a65b5635a75291f36035d1a186a6bfdb6309ad7f48ded7171c5ccf22d08d9d08",
+    "docs/programme/ARCHITECTURE.md": "676fc3ca314a3c47091677c53b897814c661fc369702719b3e6012b0e06e4b60",
+    "docs/programme/ROADMAP.md": "8917bb9f1dd1aea3ea9289d9b1442950f0274123cd437702a54e556bb304b1fd",
+    "foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md": "e543bed5725932678f9134e5f658de32f72c8a508b799b9e5588585b98ece4ee",
+    "verification/finite_causal_identification/README.md": "1fd0cd50c8bc61ba84bc6fb586c24da241ce4c80c17f7cf7b4e3d45bb7f13da9",
+    "verification/finite_causal_identification/checks.py": "e724b21ae24faf03c0597748f0bdb54c77ffe53f68e8b417f714f8b6f053088d",
+    "verification/finite_causal_identification/reference.py": "48bd592dc5be1c403e9ce64178ad977185e6cb8c5f637dd30a13147263574a1f",
+    "verification/finite_causal_identification/run_checks.py": "3b54ca3ee6d39e8c689aaf5e9edb842e013e705d1440eb94a30440aedddd1aef"
+  },
+  "frozen_prerequisite_sha256": {
+    "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md": "af631b49c3e411c57dbbc7baa145bdcc337e26f0ac2eebf7fa508ba840111a2e",
+    "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md": "a54dfb0729759f1237817e516faf81e6d07e5907dadd8ddc6f1a1ba0fdaa27db",
+    "foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md": "28f038fd633daf7694f31885923fa90ec8926619e8dda497c3df4605036e257d",
+    "reviews/BELLMAN_BUILDOUT_ADVERSARIAL_REVIEW.md": "643b12aa3313e16d2bc60768fa2b8fbf2df9c2facdab370a325faffde91c7eb9",
+    "verification/joint_law_completion/joint_law.py": "ade9182eb5d3daca2f6811968140c33cbcbfd81058c3c1e8cbf3528dff403014",
+    "verification/joint_law_completion/module_results.json": "14af2b39a494c2cce524c9f1b393de5a1ce4fa94aef2f073cde4a15a5783c99d",
+    "verification/unsafe_set_reachability/results.json": "b672e9a238e210081dacff3257c2348d30c23298f7d317e66a2ea177adbcc73a"
+  },
+  "limitations": [
+    "The observational law and causal assumptions are supplied, not empirically validated.",
+    "Analytical proofs plus bounded exact checks are not formal verification.",
+    "The executable profile has binary A/Y, at most four Z categories, eight response types, and at most six restrictions.",
+    "Unsupported nonlinear causal restrictions are never silently linearized; outer results require an explicit request.",
+    "No causal discovery, transport, sequential treatment, safety composition, or authority claim is made.",
+    "No Writ or Decision Lab integration and no language migration occurred.",
+    "Complete enumeration stayed at at most 70 bases, so no solver or language trigger was reached."
+  ]
+}
