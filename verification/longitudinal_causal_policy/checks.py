@@ -124,14 +124,27 @@ def main():
     require(checked["status"] == r.POLICY_IDENTIFIED and
             checked["distribution"] == (F(7, 8), F(1, 8)) and
             checked["value"] == F(1, 8) and
-            checked["full_subject_status"] == r.FULL_SUBJECT,
+            checked["full_subject_status"] == r.FULL_SUBJECT and
+            checked["premise_identities"]["empirically_validated"] is False,
             "positive dynamic g-formula fixture")
     root_one = policy_request(observation, policy("root-one-dynamic", 1))
     require(r.consume_policy(root_one, r.produce_policy(root_one))["value"] ==
             F(7, 40), "second root dynamic value")
+    static_zero_request = policy_request(
+        observation, policy("root-zero-static-A2-zero", 0, (0, 0, 0, 0)))
+    static_one_request = policy_request(
+        observation, policy("root-zero-static-A2-one", 0, (1, 1, 0, 0)))
+    static_zero = r.consume_policy(static_zero_request,
+                                   r.produce_policy(static_zero_request))["value"]
+    static_one = r.consume_policy(static_one_request,
+                                  r.produce_policy(static_one_request))["value"]
+    require((checked["value"], static_zero, static_one) ==
+            (F(1, 8), F(3, 10), F(13, 20)),
+            "dynamic policy must beat both static second-stage rules")
     record("positive_policy_specific_g_formula",
            root0_distribution=checked["distribution"], root0_value=checked["value"],
-           root1_value=F(7, 40), subject_support=checked["full_subject_status"])
+           root1_value=F(7, 40), static_A2_values=(static_zero, static_one),
+           subject_support=checked["full_subject_status"])
 
     bridge = bridge_request(observation)
     bridge_evidence = r.produce_bridge(bridge)
@@ -279,8 +292,18 @@ def main():
     reject(lambda: r.PolicyRequest(
         observation, PREMISES, BAD_OUTCOME_LOSS, named,
         "another-population", "support", "query"))
+    unsupported_query = replace(request, query_identity="future-mediation-query",
+                                query_kind="natural-direct-effect")
+    require(r.consume_policy(
+        unsupported_query, r.produce_policy(unsupported_query))["status"] ==
+        r.UNSUPPORTED_QUERY, "unsupported policy query status")
+    unsupported_bridge = replace(bridge, query_identity="future-three-stage-query",
+                                 query_kind="three-stage-adaptive-regime")
+    require(r.consume_bridge(
+        unsupported_bridge, r.produce_bridge(unsupported_bridge))["status"] ==
+        r.UNSUPPORTED_QUERY, "unsupported bridge query status")
     record("malformed_policy_exactness_temporal_and_transport_controls",
-           rejected=5)
+           rejected=5, unsupported_status=r.UNSUPPORTED_QUERY)
 
     # Every decision-relevant input is part of the receiver's subject binding.
     stale_requests = []
@@ -337,6 +360,15 @@ def main():
     forged_subject = replace(bridge_evidence.subject, name="forged-subject")
     reject(lambda: r.consume_bridge(
         bridge, replace(bridge_evidence, subject=forged_subject)))
+    root = bridge_evidence.subject.nodes[0]
+    changed_action = replace(
+        root.actions[0], outcomes=(("L1=0", F(1, 2)), ("L1=1", F(1, 2))))
+    changed_root = replace(root, actions=(changed_action,) + root.actions[1:])
+    forged_transition_subject = replace(
+        bridge_evidence.subject,
+        nodes=(changed_root,) + bridge_evidence.subject.nodes[1:])
+    reject(lambda: r.consume_bridge(
+        bridge, replace(bridge_evidence, subject=forged_transition_subject)))
     forged_rows = list(bridge_evidence.policy_rows)
     forged_rows[0] = replace(forged_rows[0], distribution=(F(1), F(0)))
     reject(lambda: r.consume_bridge(
@@ -361,7 +393,8 @@ def main():
                          missing_histories=((0, 0, 0),),
                          full_subject_status=None)))
     record("stale_bridge_and_forged_claims_reject",
-           bridge_revisions=4, forged_subject_distribution_value_certificate=True)
+           bridge_revisions=4,
+           forged_subject_transition_distribution_value_certificate=True)
 
     # Retained evidence must remain consumable with every producer disabled.
     saved_policy = r.produce_policy

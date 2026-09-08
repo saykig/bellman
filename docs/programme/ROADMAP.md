@@ -2,12 +2,12 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #17 and
-the repository-local research-component guidance in PR #18
-(`cde8bf0997fc2924fee576d9e868b237d587b237`). Finite causal intervention identification,
-response-type partial identification, and same-fibre one-stage decision certification are the
-active bounded result under review. PR #17's unsafe-set construction, the prior sequential and
-statistical chain, and all historical/versioned evidence remain intact.
+**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #19
+(`0289a1660b21d86af3a897bb74270f562cb64dc9`). Two-stage longitudinal causal-policy
+identification and the full-support bridge to Bellman's completed sequential subject are the active
+bounded result under review. PR #19's finite one-stage causal construction, PR #17's unsafe-set
+construction, the prior sequential/statistical chain, and all historical/versioned evidence remain
+intact.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -53,6 +53,8 @@ Earned so far:
     admissible statistical-corner composition.
 11. exact one-stage finite adjustment under supplied causal premises, exact binary response-type
     point/partial identification, and same-causal-fibre deterministic action certification.
+12. conditional identification of one two-stage adapted deterministic regime, with a separate
+    stronger-support warrant for constructing and checking the complete 32-policy Bellman subject.
 
 ### Wider Bellman mathematical programme
 
@@ -78,31 +80,36 @@ optimization; plural objectives; strategic actors; and selected formal verificat
 | Controlled multistream collection | HARDENED | [`BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md`](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md) | Fixed-registry adaptive collection retains rowwise all-prefix coverage, exact simultaneous rectangles, and checked static affine decisions; PR #14 closes subject/revision acceptance findings. |
 | Statistical rectangles to sequential corner models | HARDENED | [`BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md`](../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md) | Under a pathwise multi-affine warrant, continuous rectangle uncertainty for deterministic whole-policy loss and regret is represented exactly by the finite persistent corner family. |
 | Unsafe-set reachability and constrained selection | HARDENED | [`BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md`](../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md) | Exact first-hit probability, unweighted persistent-family safety caps, and deterministic selection within one fixed robust-feasible class. |
+| Finite causal identification and one-stage decisions | HARDENED | [`BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md`](../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md) | Exact adjustment under supplied premises, exact response-type point/partial identification, and paired same-fibre one-stage action certification. |
+| Two-stage longitudinal causal policy and sequential bridge | ACTIVE RESULT | [`BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md`](../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md) | Policy-specific g-formula identification remains distinct from the stronger support required to identify every transition of the complete Bellman subject. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### ACTIVE RESULT — Finite causal identification and one-stage decision certification
+### ACTIVE RESULT — Two-stage longitudinal causal policy and sequential bridge
 
-The merged PR #17 closes the first bounded reachability/constraint primitive. The active section
-5C result addresses a different prerequisite: action consequence laws cannot be assumed to be
-interventional merely because observational rows use action-like labels. It asks:
+Merged PR #19 establishes the bounded one-stage causal interface. The active result asks the next
+composition question:
 
-> Under explicit supplied causal premises, what finite intervention laws are point identified,
-> partially identified, incompatible, or unsupported—and can the action still be identified over
-> the whole exact causal fibre?
+> Under explicit longitudinal causal premises, when is one adapted deterministic regime identified,
+> and when is the evidence strong enough to identify every structural transition of Bellman's
+> complete two-stage sequential subject?
 
-The [bounded construction](../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md)
-provides two routes. Exact finite adjustment is conditional on identified consistency,
-exchangeability, pre-action, adjustment-set, and positivity premises. A separate eight-type binary
-response model constructs the exact equality-simplex fibre, returns attaining bounds or exact
-incompatibility, and checks paired action-risk differences at the same causal model. The mandatory
-Simpson control reverses the observational recommendation; other controls distinguish positivity,
-partial and point identification, a common decision despite causal uncertainty, opposite model-
-dependent decisions, unsupported nonlinear restrictions, and explicitly requested outer bounds.
-This is a one-stage research reference under review, not causal discovery, empirical validation,
-transport, sequential treatment, safety composition, authority, or Writ/Decision Lab capability.
+The [bounded construction](../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md)
+derives the two-stage g-formula for binary `A1,L1,A2,Y`. A named policy needs support only for its
+root action and its selected second action at positive regime histories. The full 21-node Bellman
+subject requires both root actions, both intermediate values under each root, and both second
+actions at every resulting history. Under that stronger support, all 32 complete policy
+distributions and signed expected costs agree exactly between causal g-formula and existing
+sequential-certificate/path evaluation, including the complete minimizing set.
+
+The mandatory two-world control has identical static `do(A2=0)` and `do(A2=1)` outcome marginals
+but opposite optimal history-dependent policies. It proves that the one-stage PR #19 outputs do not
+identify the adaptive subject. The causal premises and observational law remain supplied, not
+empirically validated. The result under review is not longitudinal partial identification,
+transport, safety/persistent-family composition, causal discovery, authority, or Writ/Decision Lab
+capability.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -182,12 +189,17 @@ Earned in the active bounded reference:
 - action-risk comparisons even when full intervention laws are not identified;
 - exact same-fibre action differences, common minimizing sets, and opposite causal witnesses; and
 - explicit separation between mathematical identification and substantive correctness of the causal assumptions.
+- exact policy-specific two-stage g-formula identification under supplied longitudinal premises;
+- explicit separation of policy support from support for every structural subject transition; and
+- full-support construction of the completed two-stage subject with exact equality across all 32
+  causal and Bellman policy values and minimizing sets.
 
-Still needed before a causal-to-sequential bridge is earned:
+Still needed beyond the bounded causal-to-sequential bridge:
 
-- transport or regime-stability premises between observational and deployment populations;
-- time-varying intervention and sequential-exchangeability semantics;
-- support under adaptive treatment policies and cross-time counterfactual compatibility;
+- longitudinal partial identification or a justified persistent causal-model family when some
+  structural kernels are not point identified;
+- transport or regime-stability premises between distinct observational and deployment populations;
+- more than two stages and wider time-varying intervention semantics;
 - wider supported causal restrictions, covariates, actions, and outcomes; and
 - empirical criticism of supplied causal premises.
 

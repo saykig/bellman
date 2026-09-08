@@ -243,3 +243,29 @@ observation, population, coding, premise/restriction, adjustment, cost/loss, and
 and its receivers work with producers disabled. Causal premises remain supplied rather than
 empirically validated. No causal discovery, transport, sequential-treatment or unsafe-set
 composition, authority, formal proof, Writ/Decision Lab change, or language migration is claimed.
+
+## Two-stage longitudinal causal policy and sequential bridge — 8 September 2026
+
+The [additive companion](../../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md)
+proves the binary two-stage g-formula under supplied consistency, intervention, first- and
+second-stage exchangeability, adaptation, no-interference, and positivity premises. The positive
+full-support control identifies the named adapted policy's bad-outcome probabilities as `1/8`
+under root action 0 and `7/40` under root action 1. The stronger support profile constructs a
+21-node completed Bellman subject; all 32 structurally complete policy distributions and signed
+expected costs agree with independent g-formula and complete-path evaluation. The complete minimum
+is `1/8` and retains four policies that differ in off-root choices.
+
+Policy-specific and full-subject support remain separate. A selected policy can be identified while
+an unsupported alternative second action prevents full-subject construction; a zero-probability
+intermediate branch needs no selected-action support for the policy but still prevents the broader
+bridge. First-stage absence and reachable second-stage action absence retain different statuses.
+
+The decisive pair of fully supported worlds has the same static intervention bad-outcome
+probabilities `P(Y=1|do(A2=0))=P(Y=1|do(A2=1))=1/2`, yet the `A2=L1` policy has risk zero in one
+world and one in the other, with the opposite policy reversing those values. One-stage causal
+marginals therefore do not identify a history-adapted policy or complete longitudinal subject.
+The [bounded receiver](../../../verification/longitudinal_causal_policy/README.md) checks exact
+subject binding, forged claims, all policies, and producer-disabled consumption. Premises remain
+supplied rather than empirically validated. No longitudinal partial identification, transport,
+safety/model-family composition, Writ/Decision Lab change, language migration, formal proof, or
+authority claim is made.

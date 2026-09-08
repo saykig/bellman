@@ -28,6 +28,9 @@ SECOND_STAGE_FAILURE = "second-stage-policy-positivity-failure"
 FULL_SUBJECT = "full-two-stage-causal-subject-identified"
 POLICY_ONLY = "policy-identified-full-subject-not-supported"
 BRIDGE_CHECKED = "causal-to-sequential-bridge-checked"
+UNSUPPORTED_QUERY = "unsupported-longitudinal-causal-query"
+POLICY_QUERY_KIND = "complete-binary-outcome-distribution-and-exact-additive-loss"
+BRIDGE_QUERY_KIND = "full-subject-all-policy-causal-sequential-equivalence"
 
 SUPPLIED_BOUNDARY = (
     "observational law and longitudinal causal premises supplied; exact "
@@ -229,6 +232,7 @@ class PolicyRequest:
     deployment_population_identity: str
     support_query_identity: str
     query_identity: str
+    query_kind: str = POLICY_QUERY_KIND
 
     def __post_init__(self):
         need(type(self.observation) is LongitudinalObservation and
@@ -240,6 +244,7 @@ class PolicyRequest:
                  "deployment population identity required")
         identity(self.support_query_identity, "support-query identity required")
         identity(self.query_identity, "policy causal-query identity required")
+        identity(self.query_kind, "longitudinal causal-query kind required")
         need(self.deployment_population_identity ==
              self.observation.population_identity,
              "first bridge profile does not supply population transport")
@@ -266,7 +271,8 @@ class PolicyEvidence:
         object.__setattr__(self, "missing_histories",
                            tuple(tuple(row) for row in self.missing_histories))
         need(self.status in (POLICY_IDENTIFIED, FIRST_STAGE_FAILURE,
-                             SECOND_STAGE_FAILURE), "invalid policy status")
+                             SECOND_STAGE_FAILURE, UNSUPPORTED_QUERY),
+             "invalid policy status")
         need(self.full_subject_status in (None, FULL_SUBJECT, POLICY_ONLY),
              "invalid full-subject support status")
         need(self.supplied_boundary == SUPPLIED_BOUNDARY,
@@ -332,6 +338,8 @@ def _producer_policy(request):
 def produce_policy(request):
     """Producer: propose a policy-specific g-formula result."""
     need(type(request) is PolicyRequest, "policy request required")
+    if request.query_kind != POLICY_QUERY_KIND:
+        return PolicyEvidence(request, UNSUPPORTED_QUERY)
     status, distribution, value, rows, missing = _producer_policy(request)
     subject_status = None
     if status == POLICY_IDENTIFIED:
@@ -382,6 +390,13 @@ def consume_policy(expected, evidence):
          "policy request and evidence required")
     need(evidence.request == expected,
          "stale observation, population, coding, temporal order, premise, policy, cost, loss, support query, or causal query")
+    if expected.query_kind != POLICY_QUERY_KIND:
+        need(evidence.status == UNSUPPORTED_QUERY and not evidence.distribution and
+             evidence.value is None and not evidence.stratum_terms and
+             not evidence.missing_histories and evidence.full_subject_status is None,
+             "unsupported longitudinal query received a result")
+        return {"status": UNSUPPORTED_QUERY,
+                "unsupported_query_kind": expected.query_kind}
     status, distribution, value, rows, missing = _receiver_policy(expected)
     need(evidence.status == status, "false longitudinal policy status")
     need(evidence.missing_histories == missing, "false policy support claim")
@@ -404,6 +419,7 @@ def consume_policy(expected, evidence):
          "invalid identified binary regime distribution")
     return {"status": status, "distribution": distribution, "value": value,
             "full_subject_status": expected_subject_status,
+            "premise_identities": premise_identities(expected.premises),
             "supplied_boundary": SUPPLIED_BOUNDARY}
 
 
@@ -451,6 +467,7 @@ class BridgeRequest:
     policy_catalogue_identity: str
     support_query_identity: str
     query_identity: str
+    query_kind: str = BRIDGE_QUERY_KIND
 
     def __post_init__(self):
         need(type(self.observation) is LongitudinalObservation and
@@ -459,7 +476,8 @@ class BridgeRequest:
              "complete full-subject bridge request required")
         for value in (self.deployment_population_identity,
                       self.subject_identity, self.policy_catalogue_identity,
-                      self.support_query_identity, self.query_identity):
+                      self.support_query_identity, self.query_identity,
+                      self.query_kind):
             identity(value, "explicit bridge identities required")
         need(self.deployment_population_identity ==
              self.observation.population_identity,
@@ -490,7 +508,7 @@ class BridgePolicyRow:
 class BridgeEvidence:
     request: BridgeRequest
     status: str
-    subject_status: str
+    subject_status: object
     subject: object = None
     policy_rows: tuple = ()
     causal_minimizers: tuple = ()
@@ -500,9 +518,9 @@ class BridgeEvidence:
     def __post_init__(self):
         need(type(self.request) is BridgeRequest,
              "bridge request binding required")
-        need(self.status in (BRIDGE_CHECKED, POLICY_ONLY),
+        need(self.status in (BRIDGE_CHECKED, POLICY_ONLY, UNSUPPORTED_QUERY),
              "invalid bridge status")
-        need(self.subject_status in (FULL_SUBJECT, POLICY_ONLY),
+        need(self.subject_status in (None, FULL_SUBJECT, POLICY_ONLY),
              "invalid bridge subject status")
         object.__setattr__(self, "policy_rows", tuple(self.policy_rows))
         object.__setattr__(self, "causal_minimizers",
@@ -536,6 +554,24 @@ def _subject_premises(request):
         f"loss:{request.loss.identity}",
         f"catalogue:{request.policy_catalogue_identity}",
     )
+
+
+def premise_identities(premises):
+    """Expose every supplied causal-premise identity without validating truth."""
+    need(type(premises) is SequentialCausalPremises,
+         "sequential causal premises required")
+    return {
+        "bundle": premises.identity,
+        "consistency": premises.consistency_identity,
+        "intervention": premises.intervention_identity,
+        "first_stage_exchangeability":
+            premises.first_stage_exchangeability_identity,
+        "second_stage_exchangeability":
+            premises.second_stage_exchangeability_identity,
+        "adapted_policy": premises.adapted_policy_identity,
+        "no_interference": premises.no_interference_identity,
+        "empirically_validated": False,
+    }
 
 
 def _producer_subject(request):
@@ -642,6 +678,8 @@ def _policy_request(bridge, policy):
 def produce_bridge(request):
     """Producer: construct the subject and propose all 32 checked policies."""
     need(type(request) is BridgeRequest, "bridge request required")
+    if request.query_kind != BRIDGE_QUERY_KIND:
+        return BridgeEvidence(request, UNSUPPORTED_QUERY, None)
     if not full_subject_support(request.observation):
         return BridgeEvidence(request, POLICY_ONLY, POLICY_ONLY)
     subject = _producer_subject(request)
@@ -686,6 +724,14 @@ def consume_bridge(expected, evidence):
          "bridge request and evidence required")
     need(evidence.request == expected,
          "stale observation, population, coding, temporal order, premise, loss, catalogue, support query, sequential query, or subject identity")
+    if expected.query_kind != BRIDGE_QUERY_KIND:
+        need(evidence.status == UNSUPPORTED_QUERY and
+             evidence.subject_status is None and evidence.subject is None and
+             not evidence.policy_rows and not evidence.causal_minimizers and
+             not evidence.sequential_minimizers,
+             "unsupported bridge query received a result")
+        return {"status": UNSUPPORTED_QUERY,
+                "unsupported_query_kind": expected.query_kind}
     if not full_subject_support(expected.observation):
         need(evidence.status == evidence.subject_status == POLICY_ONLY and
              evidence.subject is None and not evidence.policy_rows and
@@ -742,6 +788,7 @@ def consume_bridge(expected, evidence):
             "policies_checked": 32, "nodes_checked": len(subject.nodes),
             "complete_minimizing_set": causal_minimizers,
             "minimum_value": causal_best,
+            "premise_identities": premise_identities(expected.premises),
             "supplied_boundary": SUPPLIED_BOUNDARY}
 
 
