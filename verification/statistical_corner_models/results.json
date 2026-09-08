@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-07",
+  "status": "passed",
+  "failed": 0,
+  "base_commit": "6c9cec616358cce6e492c84f16d440f60b7d6124",
+  "reviewed_pr14_head": "ac8fe70ea3fcb1ba8bb5bd7270eed5324109cb02",
+  "executed_source_commit": "c85db5862f3aedd014c6410f64785c2c78e7c543",
+  "execution": "local",
+  "runtime": "3.9.6",
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 10,
+  "rejections_per_mode": 14,
+  "unfinished_per_mode": 2,
+  "headline": {
+    "statistical_rectangle": [
+      [
+        "p-route",
+        "22203/65536",
+        "1"
+      ],
+      [
+        "p-followup",
+        "0",
+        "43333/65536"
+      ]
+    ],
+    "corner_models": 4,
+    "complete_paths": 6,
+    "policies": 4,
+    "named_policy": "hold-inspect",
+    "named_worst_expected_loss": "1877748889/2147483648",
+    "named_worst_regret": "457813145/2147483648",
+    "expected_loss_cap": "1",
+    "regret_cap": "1/4",
+    "minimax_loss_winners": [
+      "hold-hold"
+    ],
+    "minimax_regret_winners": [
+      "hold-inspect"
+    ],
+    "independent_path_matrix_equal": true,
+    "rational_interior_audit_points": 289,
+    "rational_interior_audit_equal": true,
+    "simultaneous_coverage_lower": "19/20",
+    "statistical_premises_empirically_validated": false
+  },
+  "repeated_parameter_boundary": {
+    "function": "p(1-p)",
+    "unit_interval_corner_values": [
+      "0",
+      "0"
+    ],
+    "quarter_interval_corner_values": [
+      "3/16",
+      "3/16"
+    ],
+    "interior_value_at_one_half": "1/4",
+    "disposition": "invalid-corner-reduction-warrant",
+    "sequential_problem_remains_valid": true,
+    "different_optimization_method_required": true
+  },
+  "adversarial_coverage": {
+    "one_parameter": "passed",
+    "two_parameters": "passed",
+    "mutually_exclusive_parameter_reuse": "accepted",
+    "signed_costs": "passed",
+    "early_stop": "passed",
+    "zero_probability_branches": "passed",
+    "unobserved_parameter_zero_one": "passed",
+    "loose_outward_rectangle": "passed",
+    "mapping_permutation": "passed",
+    "missing_duplicate_extra_mapping": "rejected",
+    "stale_statistical_evidence": "rejected",
+    "changed_loss_or_model": "rejected-old-composition-evidence",
+    "same_policy_across_corners": "passed",
+    "hidden_model_indexed_policy": "rejected",
+    "full_deterministic_policy_enumeration": "passed",
+    "producer_disabled_receiving": "passed",
+    "three_parameter_profile": "unfinished-resource-refusal"
+  },
+  "current_checks": {
+    "scalar_passed_per_mode": 10,
+    "multistream_status": "passed",
+    "pr14_acceptance_status": "passed",
+    "persistent_passed_per_mode": 11,
+    "replanning_passed_per_mode": 9,
+    "history_failed": 0,
+    "affected_relative_markdown_links_checked": 107
+  },
+  "preservation": {
+    "pr14_merged_before_start": true,
+    "pr14_merge_tree_matches_reviewed_head": true,
+    "base_files_checked": 119,
+    "historical_pr14_runner": "passed-at-exact-merge",
+    "historical_pr12_runner": "passed-at-exact-repaired-head",
+    "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+    "historical_files_preserved": true,
+    "release_identities_unchanged": true,
+    "release_versions": [
+      "v0.0.1",
+      "v0.0.2",
+      "v0.0.3",
+      "v0.0.4",
+      "v0.0.5",
+      "v0.0.6"
+    ]
+  },
+  "source_sha256": {
+    ".github/workflows/family-replanning.yml": "783bac227b5003d8ba887c963b202a8002b1b9014b98baf4d31885c1297885fd",
+    ".github/workflows/statistical-corner-models.yml": "d62a31f20c3dfe678eb11e578b4186409cb2a900ed0cd51ce49b5575d19f6ef7",
+    ".github/workflows/statistical-decision-bridge.yml": "56a84a0c72cc9c11fbc2359d8ede86c00b95a4feac65ffb4a92373d9bbd275cd",
+    "README.md": "a6579a12e7cff41825dc656b865a1a07e662e8cba25c29fb10a5c54dee7cdd50",
+    "docs/history/records/FINDINGS_LEDGER.md": "17839ca5aaddad556e52b562612b5fbb03d95b18ce29eefbe2547d1a7e538427",
+    "docs/history/records/SUBSTRATE_LEDGER.md": "e6b495e5bcc23c205c29b4e656182357651f229eee44dc7d11f4a3ca351d65e6",
+    "docs/programme/ARCHITECTURE.md": "bd3544069bd554b990c9f0ac26bf5283573dbc9466c3bc02ca8e4d6d93ea9447",
+    "docs/programme/ROADMAP.md": "67e6edd7ba4f2837096c276c99007dc7dae02270f0962db27e747362c8d7b6e9",
+    "foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md": "c87033cf4f9d7adaadb745fa0722ff62376eabc11cf1219628cd6b5df388313e",
+    "verification/statistical_corner_models/README.md": "e82c220e4f0e1e5a22b098d7a82b64d25ac5b4549660b8d4082e3a7cac6832f6",
+    "verification/statistical_corner_models/checks.py": "0f1b7c7237a87291428d3e51ec5fa63427fed039f4db0dd03118475844adf151",
+    "verification/statistical_corner_models/reference.py": "443400ef102deb43c9bb4234528cc51c209afd384259381ae4f3a908c9eb4a38",
+    "verification/statistical_corner_models/run_checks.py": "3bb22552467158bdb33b01332c48d7860afdf4ad473c274e0d2cafb62e96e85e"
+  },
+  "frozen_prerequisite_sha256": {
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md": "da410d964d2282d75dad1e56be7e6dfdd17c1ee8cc1e4c849f0088b758e03379",
+    "foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md": "be495f29011479adab2736bfbe8f3c3e513403fa48c4886652e8137256d1ccbc",
+    "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md": "38a461556da18e977c623404bec16a056013019daeb74adb7207bc0f313d749e",
+    "verification/family_replanning/results.json": "2ff65f8a26c6ac46c37ee4a7a19caaaf0fc3a17179b17a093680e5952e751ba5",
+    "verification/multistream_collection/acceptance_hardening_results.json": "68d500c54a3a4c2848aa365d144eadd182d0b41da84aa34adcf4f29a04e9f357",
+    "verification/multistream_collection/results.json": "2b80b11c691be1c297e71bd2c7016c837a3584389748d42ec06c377bf2da7a93",
+    "verification/multistream_collection/stop_state_hardening_results.json": "041d75f5887d0f24fcfeec50822b09b72b6533dcfb09bf580173404a107f03be",
+    "verification/persistent_model_families/results.json": "10778c1e5067fcd77de75036da4f4c27114534bb66b61c8a346c63fe3f4b86d6",
+    "verification/statistical_decision_bridge/results.json": "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13"
+  },
+  "limitations": [
+    "The theorem is proved analytically and checked on bounded exact cases, not formally verified.",
+    "Statistical IID/completeness premises are supplied inputs and are not empirically validated.",
+    "One or two parameters and deterministic policies only; no continuous optimizer or randomized-policy claim.",
+    "Invalid corner reduction leaves the sequential problem valid for another optimization method."
+  ]
+}
