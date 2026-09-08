@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "failed": 0,
+  "execution": "GitHub Actions",
+  "runtime": "3.12.14",
+  "run_url": "https://github.com/saykig/bellman/actions/runs/34170742083",
+  "base_commit": "92922ab6604840152ad7f7800969673335748272",
+  "executed_commit": "fdf83a0b2f3b31331ed894fa0d0aeeffea07db00",
+  "repaired_pr12_head": "5017122500450c8f7f890474f7232b9c94d3a3fb",
+  "pr12_historical_base": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+  "initial_pr12_record": "fbfbc182a05952198d9ce9dc6ef4e9a395eaf3c6",
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "scalar": {
+    "passed_per_mode": 10,
+    "rejections_per_mode": 31,
+    "unfinished_per_mode": 8
+  },
+  "multistream": {
+    "status": "passed",
+    "groups": {
+      "M1": {
+        "cases": 5,
+        "includes_no_data_boundaries_ties_signed_and_extreme_alpha": true,
+        "scalar_reduction": true
+      },
+      "M2": {
+        "8": {
+          "rectangle": [
+            ["0", "43333/65536"],
+            ["22203/65536", "1"]
+          ],
+          "common": [],
+          "strict": []
+        },
+        "16": {
+          "rectangle": [
+            ["0", "30431/65536"],
+            ["35105/65536", "1"]
+          ],
+          "common": ["A"],
+          "strict": ["A"]
+        }
+      },
+      "M3": {
+        "terminal_histories": 3013,
+        "mass": "1",
+        "fair_exclusion": "0",
+        "asymmetric_exclusion": "65/531441",
+        "terminal_length_counts": {
+          "5": 3,
+          "6": 1,
+          "7": 11,
+          "8": 9,
+          "9": 7,
+          "10": 32,
+          "11": 18,
+          "12": 2932
+        },
+        "unequal_counts": {
+          "stream-1": 7,
+          "stream-2": 5
+        }
+      },
+      "M4": {
+        "expected_sample_mean": "5/8",
+        "conditional_success_given_n_1": "1",
+        "all_prefix_event_still_implies_random_prefix_membership": true
+      },
+      "M5": {
+        "eventual_sixteen_successes_probability": "1",
+        "false_iid_interval_excludes_true_half": true,
+        "visible_omission_copy_reorder_rejected": true,
+        "concealed_omission_diagnosable": false
+      },
+      "M6": {
+        "allocation_and_identity_failures_rejected": true,
+        "append_only_revision": true,
+        "changed_loss_freshly_checked": true
+      },
+      "M7": {
+        "both_one_probability": "1/2",
+        "product_of_marginals": "1/4",
+        "union_bound_requires_cross_stream_independence": false,
+        "arbitrary_within_row_dependence_supported": false
+      },
+      "M8": {
+        "manual_evidence_with_producers_disabled": true,
+        "adversarial_mutations_rejected": true,
+        "coarse_valid_witness_accepted": true,
+        "boundary_transcript": 512,
+        "derived_coordinate_bits": 258,
+        "early_refusal_before_replay": true
+      }
+    }
+  },
+  "support_profile": {
+    "streams": 4,
+    "observations_per_stream": 128,
+    "transcript_events": 512,
+    "actions": 4,
+    "requested_precision_bits": 64,
+    "out_of_profile": "unfinished-resource-refusal"
+  },
+  "source_sha256": {
+    ".github/workflows/family-replanning.yml": "bbfd5aebb82362d9ba430975a31697a5bfe91b8551efa1cdc825292db7adaf2b",
+    ".github/workflows/statistical-decision-bridge.yml": "4cd52397a6f2500003f563a4fdc680059bf0a4fa2248b254ce8dd8f0e1da1df8",
+    "foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md": "be495f29011479adab2736bfbe8f3c3e513403fa48c4886652e8137256d1ccbc",
+    "verification/multistream_collection/README.md": "31e26ab8f397e98aedb7b89ec69daec38e817e8fc14390cd8a76de59830ff3e6",
+    "verification/multistream_collection/checks.py": "1da6c4ee121a753a340ee8f40e8cf526e9648f88e0a66050bb48a1aa49afd196",
+    "verification/multistream_collection/reference.py": "e6f509678859d1960d843e315c5453008fda7e4807039eedd733599511f2dbc2",
+    "verification/multistream_collection/run_checks.py": "466b2083e650dd09952305069defde05af2f9163ffe19a46b66bb08b8637dfce"
+  },
+  "frozen_pr12_sha256": {
+    "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md": "bcbb6b7f1f16027a726176bbef69f39013bb7ec6ae55fc79ab23fe0d83e952c2",
+    "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md": "a06d94d7d6dbc3d388b2e46246be67f1c5d9a21039bea9fca7825601b89c0844",
+    "verification/statistical_decision_bridge/README.md": "ef3ad68ca034f14be63f3478292046a07402f0debd2ce414fe3180e080f77b1c",
+    "verification/statistical_decision_bridge/acceptance_hardening_results.json": "d2bfc1d3fa90a39b87232b479f969cc38c92185f9c5ddedd0657719089cfc783",
+    "verification/statistical_decision_bridge/checks.py": "75ec61e882f6207b41481cbde8d9ca1b20c0cd7f14f3bfafecc67208a3c68359",
+    "verification/statistical_decision_bridge/reference.py": "4b8f066b5785e04cdb9fd882820ec64fd453d87b3cc253781cea03a9ab152852",
+    "verification/statistical_decision_bridge/results.json": "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13",
+    "verification/statistical_decision_bridge/run_checks.py": "296fd5a4a60f71732b074f9f3fae0bae691661b51da263fda4c91c13a1701fd4"
+  },
+  "preservation": {
+    "base_files_preserved_except_named_living_routes": true,
+    "current_inherited_sources_unchanged": true,
+    "historical_runner": "passed-at-exact-repaired-pr12-head",
+    "historical_origin_main": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
+    "pr10_inherited_runner": "passed-at-pinned-pr10-merge",
+    "pr10_historical_files_preserved": true
+  },
+  "negative_controls": {
+    "living_programme_document_change": "accepted",
+    "protected_pr12_source_change": "rejected",
+    "protected_pr12_result_change": "rejected",
+    "intentional_live_mathematical_failure": "rejected",
+    "missing_historical_commit": "rejected",
+    "broken_historical_result": "rejected",
+    "wrong_historical_base": "rejected"
+  },
+  "limitations": [
+    "Coverage is conditional on complete IID Bernoulli rows with fixed parameters.",
+    "Transcript replay cannot detect concealed outcome filtering or prove physical sampling premises.",
+    "Cross-row dependence is allowed for coverage, not for unsupported joint-event queries.",
+    "Exact affine static risk is checked only on the retained parameter rectangle.",
+    "Fixed checks are neither formal proof nor empirical validation, optimized collection, or authority to act."
+  ]
+}

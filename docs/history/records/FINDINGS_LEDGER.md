@@ -137,3 +137,41 @@ every later PR. Maintained live CI now checks current statistical and family sou
 the complete historical PR #10 runner only at its pinned merge. Negative controls retain failures
 for protected-source/result mutation, an intentionally failing live mathematical check, and a
 missing or malformed historical replay. See the [repair record](../../../verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md).
+
+## Controlled multistream collection and checked static decisions — 7 September 2026
+
+Fixed per-stream allocations compose PR #12's rowwise all-prefix coverage across a finite
+registry with simultaneous probability at least `1-sum(alpha_j)`, without cross-stream
+independence. A built-in history-only collector may select the next registered stream and stop;
+the proof evaluates already-simultaneous prefix events at realized local counts and never assumes
+an adaptive count is conditionally binomial. Exact checks reproduce the prescribed two-stream
+rectangles, `2337/65536` strict margin, 3,013 adaptive terminal histories, exclusion masses `0`
+and `65/531441`, and the `5/8` adaptive sample-mean counterexample. Exact affine-box certificates
+retain ties, signed costs, unobserved rows, strict margins, and intended-action regret. Visible
+omission/copying rejects, while concealed filtering remains empirically undiagnosable. Perfectly
+dependent rows show why coverage composition does not justify multiplying marginals. The result is
+a bounded research reference, not conditional inference without a fresh-draw premise, optimized
+adaptive sampling, causal/sequential control, or an engineering transfer.
+
+## PR14 subject-binding and revision acceptance repair — 7 September 2026
+
+Public helper canonicalization could silently discard an extra stream allocation or affine weight;
+the material weight case changed a caller's risk from `+1` at the omitted coordinate to constant
+`-1` and could certify the opposite action. Exact registry-key coverage is now required before
+canonicalization, while complete reordered inputs remain supported. Revision classification now
+requires unchanged record/revision/predecessor lineage for ordinary recalculation and the same
+record, new revision, and exact predecessor digest for append-only extension. The valid theorem,
+M1–M8 values, and original hosted result remain unchanged. The branch is synchronized with PR
+#13's canonical history layout and PR #15's versioned-release state; detailed repair evidence is in
+the [acceptance record](../../../verification/multistream_collection/ACCEPTANCE_HARDENING.md).
+
+## PR14 final stopping-state revision repair — 7 September 2026
+
+The revision classifier could call an identical transcript and lineage an ordinary recalculation
+when only the collection's `stopped` state changed, even though stopping is bound into the subject
+digest and full replay rejected the inconsistent state. Ordinary recalculation now also requires
+the same stopping state. A genuine strict-prefix successor may still move from open to correctly
+stopped when it keeps the record identity, uses a new revision, and binds the exact predecessor.
+The [additive repair record](../../../verification/multistream_collection/STOP_STATE_HARDENING.md)
+preserves the theorem, original PR #14 result, first hardening evidence, PR #12 evidence, and
+release identities.
