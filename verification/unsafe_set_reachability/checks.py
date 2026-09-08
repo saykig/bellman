@@ -420,6 +420,11 @@ def run():
     reject(lambda: ref.consume_reachability(
         replace(risk_request, unsafe_set=renamed_unsafe), risk_certificate),
            "changed unsafe-set identity borrowed old evidence")
+    changed_membership = ref.UnsafeSet(
+        "safe outcome reclassified unsafe", ((('aggressive', 'safe'),),))
+    reject(lambda: ref.consume_reachability(
+        replace(risk_request, unsafe_set=changed_membership), risk_certificate),
+           "changed unsafe-set membership borrowed old evidence")
     changed_subject = replace(model.subject, name="revised risk model")
     reject(lambda: ref.consume_reachability(
         replace(risk_request, subject=changed_subject), risk_certificate),
@@ -451,6 +456,8 @@ def run():
           max(expected_corners) == 1 and
           statistical["named_worst_reachability"] == 1 and
           not statistical["cap_met"] and
+          all(row[1] == 0 for row in
+              statistical["selection"]["reachability_matrix"]) and
           statistical["selection"]["feasible_policies"] == ("guard",) and
           statistical["selection"]["minimax_loss_winners"] == ("guard",) and
           statistical["rational_interior_audit_points"] == 289,
