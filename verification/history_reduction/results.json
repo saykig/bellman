@@ -1,0 +1,238 @@
+{
+  "source_commit": "03b020226b772b9f4eb569c8108cfa6116d4e445",
+  "source_files": {
+    ".github/workflows/history-migration.yml": "f92b06794d542842196d0e0c78180f29420257b14eb4b8f8ae705aeabe21fa19",
+    ".github/workflows/sequential-consistency.yml": "28f4fff0730cb09c7719c12f8478dc8540c268861a406284a9320534f0824930",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "1900b94b0387f76ec6cc903c5564c3f2ff0f8405610ba4a151026cda18ce4e22",
+    "README.md": "80dce27334dddb05f7023743eac0464df76bd29f62bb60a3bee74e1dfc322344",
+    "docs/history/releases/2026-09-08-public-tag-history-reduction.md": "b5afa084c97f8cdf3928859069b36369c67bdd79348b6f16ef14bcdd7aefc45e",
+    "docs/programme/ARCHITECTURE.md": "1a44285125f40436f6472f414397686fa4977f4f4ec943bfd2a2138bf40ec260",
+    "docs/programme/ROADMAP.md": "c299f2ecc1276054753cbec679b6bf9c022d0d792063274d997a35e80356fa11",
+    "foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md": "8ae059259753b8da510e66e506e888a1a22ab29faaab10986bc9bbd57fdb7b29",
+    "reviews/PUBLIC_TAG_HISTORY_REDUCTION_REVIEW_2026_09_08.md": "d61073082619c769acb45ba92bcc7595c26f0f4df417f7d0cacc9eecd9fa9815",
+    "verification/history_reduction/ACCEPTANCE.md": "49e296f6676471e9bbb29f962c291b427de6073b5edabf2f55ae2b31f5192e46",
+    "verification/history_reduction/acceptance.py": "27539e0805b2c55bc3890d7637c77967e5ca6a32247bf6721a161f94387ecab5",
+    "verification/history_reduction/checks.py": "b69e0d27211ca3648948321367cee1c0cc86311780be5529eeb8bacb12434036",
+    "verification/history_reduction/example_transfer.json": "3e8ecd59ce5604cf328651be011ef55708bced5083ae30c58935b7c59b65fedd",
+    "verification/history_reduction/examples.py": "3c78d164d1e9c1e263b1012a5ba495aa5dfbc37dff0a5be57343a2791ab632c6",
+    "verification/history_reduction/reduction.py": "c0c16ca1af5c2fc79f45a2ced3f371e58379593bb8a0ec77bf7654bab4cbf64e",
+    "verification/history_reduction/transfer_producer.py": "62acb80e98f687dec0aba6dae5d9cd9a585e65e5b25608c389fc875afcec856d",
+    "verification/history_reduction/transfer_receiver.py": "2f1300b4acb2c364eb0f1bac6b368c7b2e823f9d3a2080995153dbf58d6557fe"
+  },
+  "validation": {
+    "base": "eb44e580fe137c50d9c92ea2b284cf0e5d3d90e9",
+    "inherited": {
+      "causal": {
+        "current_checks_at_snapshot": {
+          "affected_relative_markdown_links_checked": 125,
+          "corner_passed_per_mode": 10,
+          "finite_causal_passed_per_mode": 11,
+          "history": {
+            "affected_relative_markdown_links_checked": 124,
+            "failed": 0,
+            "migration_baseline": "92922ab6604840152ad7f7800969673335748272",
+            "moved_records": {
+              "docs/history/records/FINDINGS_LEDGER.md": "37d15b9592fc6d08216904675a6ece462cdaf750222183f0a2bc0b95fc9c7a33",
+              "docs/history/records/LEGACY_ARCHIVE_STATUS.md": "a0e6358fe1a844835565dcfb1b121008dc434d58203ef4b66c96f69aa09f5417",
+              "docs/history/records/MATH_ARCHIVE_LEDGER.md": "63e87c67892c033edff1d68452d718dd95f0825d8fa4f203d1dda4459aad1df2",
+              "docs/history/records/SUBSTRATE_LEDGER.md": "7553c4f17100b4ab3049ced61a64575dc6f94b64e1e90883b98a5cc88b343ea4"
+            },
+            "negative_controls": {
+              "duplicate_json_key": "rejected",
+              "forged_release_or_artifact_identity": "rejected-by-sha256-and-git-object-check",
+              "unexpected_record_mutation": "rejected-by-exact-transformation-check"
+            },
+            "release_manifest": {
+              "key_artifacts": 29,
+              "lightweight_tags_required": true,
+              "releases": 6,
+              "versions": [
+                "v0.0.1",
+                "v0.0.2",
+                "v0.0.3",
+                "v0.0.4",
+                "v0.0.5",
+                "v0.0.6"
+              ]
+            }
+          },
+          "joint_law_passed_per_mode": 19,
+          "multistream_status": "passed",
+          "persistent_passed_per_mode": 11,
+          "replanning_passed_per_mode": 9,
+          "sequential_passed_per_mode": 17,
+          "unsafe_passed_per_mode": 18
+        },
+        "normal_optimized_equal": true,
+        "passed_per_mode": 10,
+        "preservation": {
+          "base_files_checked": 141,
+          "historical_files_preserved": true,
+          "historical_pr12_runner": "passed-at-exact-repaired-head",
+          "historical_pr14_runner": "passed-at-exact-merge",
+          "historical_pr16_runner": "passed-at-exact-merge",
+          "historical_pr17_runner": "passed-at-exact-merge",
+          "historical_pr19_runner": "passed-at-exact-merge",
+          "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+          "pr19_merge_tree_matches_reviewed_head": true,
+          "pr19_merged_before_start": true,
+          "release_identities_unchanged": true,
+          "release_versions": [
+            "v0.0.1",
+            "v0.0.2",
+            "v0.0.3",
+            "v0.0.4",
+            "v0.0.5",
+            "v0.0.6"
+          ]
+        },
+        "rejections_per_mode": 32,
+        "retained_result_present_and_source_bound": true,
+        "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+      },
+      "history": {
+        "normal_optimized_equal": true,
+        "release_manifest": {
+          "key_artifacts": 29,
+          "lightweight_tags_required": true,
+          "releases": 6,
+          "versions": [
+            "v0.0.1",
+            "v0.0.2",
+            "v0.0.3",
+            "v0.0.4",
+            "v0.0.5",
+            "v0.0.6"
+          ]
+        },
+        "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+      },
+      "mode": "all",
+      "preservation_negative_controls": [
+        "altered retained evidence rejected",
+        "unregistered note rejected"
+      ],
+      "preserved_strategic_snapshot_files": 172,
+      "strategic": {
+        "both_producers_disabled": true,
+        "integrated": {
+          "epsilon": "0",
+          "information_queries": 80,
+          "max_gain": "0",
+          "semantics": "one-common-power-sequence-all-models.v1",
+          "status": "shared-consistent-modelwise-sequential-equilibrium",
+          "subject_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+          "warrant_sha256": "791f4c666dd92cfe1364b89e70f64ce347b44c84f6a6f3150b14f522bd520e58"
+        },
+        "normal_optimized_equal": true,
+        "original_retained_replay": {
+          "max_gain": "0",
+          "normal_optimized_equal": true,
+          "preserved_base_files": 145,
+          "rejections": 24,
+          "snapshot_commit": "19e1904bfd96e8d0eb926ac630193b9f0b1d4265"
+        },
+        "rejections": 33,
+        "snapshot": "af7a8fc67cb204b67474eb7749c76c414189a5d5"
+      },
+      "workflow_only_exceptions": [
+        ".github/workflows/history-migration.yml",
+        ".github/workflows/sequential-consistency.yml",
+        ".github/workflows/two-stage-longitudinal-causal-policy.yml"
+      ]
+    },
+    "mode": "all",
+    "normal_optimized_equal": true,
+    "permitted_existing_changes": [
+      ".github/workflows/history-migration.yml",
+      ".github/workflows/sequential-consistency.yml",
+      ".github/workflows/two-stage-longitudinal-causal-policy.yml",
+      "README.md",
+      "docs/programme/ARCHITECTURE.md",
+      "docs/programme/ROADMAP.md"
+    ],
+    "preservation_negative_controls": [
+      "changed inherited warrant rejected",
+      "unregistered release rejected"
+    ],
+    "preserved_base_files": 173,
+    "reduction": {
+      "all_three_producers_disabled": true,
+      "correlation_counterexample": {
+        "both_max_gain": "0",
+        "marginal_product_matching_probability": "1/2",
+        "tagged_matching_probability": "1"
+      },
+      "integrated": {
+        "epsilon": "0",
+        "equilibrium_status": "shared-consistent-modelwise-sequential-equilibrium",
+        "max_gain": "0",
+        "root_values": {
+          "g=1,p=1": {
+            "A": "7/10",
+            "B": "1"
+          },
+          "g=1,p=1/2": {
+            "A": "7/10",
+            "B": "1"
+          },
+          "g=3,p=1": {
+            "A": "7/10",
+            "B": "1"
+          },
+          "g=3,p=1/2": {
+            "A": "7/10",
+            "B": "1"
+          }
+        },
+        "source_nodes": 127,
+        "source_queries": 160,
+        "source_sha256": "9b11c6fbe1dce6b9ba1cc28629086715e7c55e359a57410154ebba4f3eef841e",
+        "status": "checked-public-tag-erasure",
+        "target_nodes": 63,
+        "target_queries": 80,
+        "target_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+        "warrant_sha256": "392c31153cbbb55fa4c71d779753c2dbee18b5046c354421779ac7174da9ba3c"
+      },
+      "likelihood_counterexample": {
+        "incorrectly_restricted_witness_g": "1/4",
+        "source_and_target_max_gain": "0",
+        "source_and_target_root_A": "1",
+        "target_assessed_g": "1/2"
+      },
+      "positive_cases": [
+        "integrated public copy erasure",
+        "weak bond",
+        "participation fee",
+        "positive tolerance",
+        "unequal source coefficients with recomputed radius",
+        "alternate representative",
+        "model-dependent positive tag weights"
+      ],
+      "rejections": [
+        "unknown representative",
+        "unknown semantics",
+        "missing tag",
+        "missing node",
+        "nonbijective node map",
+        "missing information",
+        "stale source digest",
+        "stale target digest",
+        "extra warrant field",
+        "wrong transfer semantics",
+        "false inner radius",
+        "missing continuation query",
+        "false incentive gain",
+        "tolerance rebinding",
+        "individually valid but untransported witness",
+        "changed off-path assessment",
+        "changed terminal utility",
+        "zero probability representative",
+        "changed model identity",
+        "payoff irrelevant tag used for coordination",
+        "changed conditional chance despite equal marginal",
+        "likelihood-invalid witness restriction"
+      ]
+    }
+  }
+}
