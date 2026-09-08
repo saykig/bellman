@@ -166,3 +166,24 @@ evidence](../../../verification/unsafe_set_reachability/README.md) preserves PR 
 historical replay chain. Resource constraints, tail distributions/CVaR, dynamically consistent
 risk, randomized feasibility, larger optimization, empirical model/unsafe-set validity, authority,
 formalization, and Writ/Decision Lab transfer remain open.
+
+## Finite causal intervention identification and decisions — 8 September 2026
+
+The [additive construction](../../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md)
+makes the build-out's causal interface executable in two deliberately small profiles. Exact finite
+adjustment remains conditional on supplied consistency, exchangeability, pre-action, adjustment-
+set, and positivity premises; the checker does not infer those premises from observational bytes.
+The response-type route uses the eight binary `(A_nat,Y0,Y1)` masses, observed consistency, and a
+typed monotonicity/equality restriction library. Complete rational vertex enumeration establishes
+exact compatibility, point/partial intervention bounds, and attaining witnesses; unsupported
+nonlinear assumptions and explicit outer relaxations keep different statuses.
+
+Paired one-stage action-risk maxima preserve one common causal model. The fixed evidence includes
+the exact Simpson reversal, a positivity failure, 16-vertex partial identification with ranges
+`[1/4,3/4]`, point-identifying calibrations, a uniformly identified action despite nonpoint causal
+probabilities, opposite model-dependent action witnesses, and a supported inconsistent fibre. The
+receiver independently reconstructs adjustment arithmetic and enumerates the full response-type
+fibre with producers disabled. All prior artifacts and the PR #17 historical chain remain frozen.
+Transport, time-varying intervention semantics, sequential exchangeability, adaptive-policy
+support, broader causal restrictions, and empirical premise criticism remain open before any
+causal-to-sequential composition.

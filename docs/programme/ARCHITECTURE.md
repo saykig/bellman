@@ -94,9 +94,9 @@ This table is intentionally conservative.
 | Controlled fixed-registry multistream collection | M1 | Reviewed and acceptance-hardened bounded reference; no engineering adapter. |
 | Statistical rectangle to sequential corner models | M1 | Reviewed bounded composition; at most two parameters/four corners under a pathwise multi-affine warrant, with no engineering adapter. |
 | Statistical learning / coverage beyond the bounded Bernoulli profile | Foundation only | Outcome filtering, within-row dependence, drift, missingness, adaptive allocation and broader model learning are not implemented. |
-| Unsafe-set reachability / constrained deterministic selection | M1 | Bounded checked research reference under review; exact first-hit probability, persistent-family cap, and admissible statistical-corner composition, with no engineering adapter. |
+| Unsafe-set reachability / constrained deterministic selection | M1 | Reviewed and merged bounded reference; exact first-hit probability, persistent-family cap, and admissible statistical-corner composition, with no engineering adapter. |
 | Resource constraints / tail and dynamic risk | Foundation only | Not implemented. |
-| Causal identification | Foundation only | Not implemented. |
+| Finite causal identification / one-stage decision certification | M1 candidate | Bounded exact adjustment and binary response-type reference under review; supplied causal premises are not empirically validated and no engineering adapter exists. |
 | Plural objectives / strategy | Foundation only | Not implemented. |
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
@@ -155,6 +155,30 @@ precision remain typed and separate even when two numbers coincide. A checked ca
 empirical model validity, normative adequacy of the unsafe declaration, or authority to act. A
 repeated same-path parameter invalidates only the corner warrant; unsafe reachability at each fixed
 model remains a valid query for another optimization method.
+
+### One-stage causal identification boundary
+
+The causal reference introduces a separate model-layer interface; it does not reinterpret the six
+statistical/sequential interfaces above. Its adjustment route binds an exact observational
+`P(A,Y,Z)`, population and variable coding, the adjustment set, and explicit identities for
+consistency, exchangeability, pre-action status, and intervention meaning. The receiver checks
+support and exact adjustment arithmetic. A successful result is conditional on those premises;
+positivity failure means an observational conditional is unavailable, not that the causal model is
+incompatible or the effect absent.
+
+Its second route maps an exact binary observational `P(A,Y)` into the eight deterministic
+`(A_nat,Y0,Y1)` response types under observed consistency and a small typed equality restriction
+library. The receiver completely enumerates the bounded exact fibre, distinguishes point/partial
+identification from incompatibility and unsupported nonlinear restrictions, and retains attaining
+witnesses. An explicitly requested dropped-restriction analysis is an outer result only.
+
+One-stage action certification evaluates every paired risk difference on the same response-type
+law. It cannot subtract marginal extrema attained by different causal witnesses. Observation,
+causal premise, restriction, coding, cost, loss, and query revisions all create new claims. This M1
+candidate does not discover causal structure, validate premises, transport between populations,
+define time-varying interventions, compose with sequential or unsafe-set models, or authorize an
+action. Those temporal and transport semantics must be established before a causal-to-sequential
+adapter is considered.
 
 ## 5. Stable interface principles
 

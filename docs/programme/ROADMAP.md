@@ -2,11 +2,12 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #16
-(`2727f7b578cf7bab40cfc1cbb4def583cf7da84d`). Exact unsafe-set reachability and robust constrained
-deterministic selection are the active bounded result under review. PR #16's statistical-corner
-composition, PR #14's multistream evidence, and the current programme/history organization and
-versioned releases remain intact.
+**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #17 and
+the repository-local research-component guidance in PR #18
+(`cde8bf0997fc2924fee576d9e868b237d587b237`). Finite causal intervention identification,
+response-type partial identification, and same-fibre one-stage decision certification are the
+active bounded result under review. PR #17's unsafe-set construction, the prior sequential and
+statistical chain, and all historical/versioned evidence remain intact.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -50,13 +51,16 @@ Earned so far:
 10. exact unsafe-history hitting probability, persistent-family robust safety caps, and deterministic
     expected-loss/regret selection within one fixed robust-feasible policy class, including an
     admissible statistical-corner composition.
+11. exact one-stage finite adjustment under supplied causal premises, exact binary response-type
+    point/partial identification, and same-causal-fibre deterministic action certification.
 
 ### Wider Bellman mathematical programme
 
 Outstanding areas remain explicit rather than compressed into a percentage: statistical learning
 beyond the first IID Bernoulli bridge; adaptive sampling, dependence, drift, missingness and model
 criticism; resource/operational constraints and tail/dynamic risk beyond the first unsafe-set
-primitive; causal identification and transport; richer structural transport; scalable
+primitive; causal transport, time-varying intervention semantics, and wider identification;
+richer structural transport; scalable
 optimization; plural objectives; strategic actors; and selected formal verification.
 
 ## 3. Completed and hardened capability chain
@@ -73,30 +77,32 @@ optimization; plural objectives; strategic actors; and selected formal verificat
 | Anytime-valid Bernoulli data-to-decision bridge | HARDENED | [`BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md`](../../foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) | One complete IID Bernoulli prefix yields checked all-time outward coverage and exact static decisions; PR #12 aligns producer/receiver support and historical replay. |
 | Controlled multistream collection | HARDENED | [`BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md`](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md) | Fixed-registry adaptive collection retains rowwise all-prefix coverage, exact simultaneous rectangles, and checked static affine decisions; PR #14 closes subject/revision acceptance findings. |
 | Statistical rectangles to sequential corner models | HARDENED | [`BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md`](../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md) | Under a pathwise multi-affine warrant, continuous rectangle uncertainty for deterministic whole-policy loss and regret is represented exactly by the finite persistent corner family. |
+| Unsafe-set reachability and constrained selection | HARDENED | [`BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md`](../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md) | Exact first-hit probability, unweighted persistent-family safety caps, and deterministic selection within one fixed robust-feasible class. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### ACTIVE RESULT — Unsafe-set reachability and robust constrained selection
+### ACTIVE RESULT — Finite causal identification and one-stage decision certification
 
-PR #16 completed the statistical-rectangle to sequential corner-family bridge. The active section
-5B result composes the same exact sequential and persistent-family subjects with one explicit
-unsafe-history event and asks:
+The merged PR #17 closes the first bounded reachability/constraint primitive. The active section
+5C result addresses a different prerequisite: action consequence laws cannot be assumed to be
+interventional merely because observational rows use action-like labels. It asks:
 
-> What exact probability does one implementable policy assign to ever entering the declared
-> unsafe set, and which deterministic policies satisfy the cap in every persistent model?
+> Under explicit supplied causal premises, what finite intervention laws are point identified,
+> partially identified, incompatible, or unsupported—and can the action still be identified over
+> the whole exact causal fibre?
 
-The [bounded construction](../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md)
-proves the absorbing-for-calculation recurrence equals a disjoint first-hit path expansion. It
-retains every model identity, forms one fixed robust-feasible deterministic class, and checks
-constrained minimax expected loss and same-model regret. Under PR #16's pathwise no-repeat warrant,
-the first-hit probability is multi-affine and its rectangle maximum occurs exactly at a corner.
-The reference preserves counterexamples to unsafe-node summing, terminal-only inspection,
-expected-loss substitution, coverage/harm-probability merging, and repeated same-path parameter
-use. It is a research reference under review, not empirical safety validation, a normative unsafe-
-set decision, a randomized planner, CVaR/dynamic risk, authority to act, or Writ/Decision Lab
-capability.
+The [bounded construction](../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md)
+provides two routes. Exact finite adjustment is conditional on identified consistency,
+exchangeability, pre-action, adjustment-set, and positivity premises. A separate eight-type binary
+response model constructs the exact equality-simplex fibre, returns attaining bounds or exact
+incompatibility, and checks paired action-risk differences at the same causal model. The mandatory
+Simpson control reverses the observational recommendation; other controls distinguish positivity,
+partial and point identification, a common decision despite causal uncertainty, opposite model-
+dependent decisions, unsupported nonlinear restrictions, and explicitly requested outer bounds.
+This is a one-stage research reference under review, not causal discovery, empirical validation,
+transport, sequential treatment, safety composition, authority, or Writ/Decision Lab capability.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -168,13 +174,22 @@ Existing foundation: §11 of the build-out.
 
 Needed when the decision question concerns interventions rather than predictions under an exogenous model.
 
-Default bounded targets:
+Earned in the active bounded reference:
 
 - checked finite adjustment/identification under supplied causal premises;
 - support and positivity checks;
 - partial-identification bounds through finite response-type or other justified representations;
 - action-risk comparisons even when full intervention laws are not identified;
+- exact same-fibre action differences, common minimizing sets, and opposite causal witnesses; and
 - explicit separation between mathematical identification and substantive correctness of the causal assumptions.
+
+Still needed before a causal-to-sequential bridge is earned:
+
+- transport or regime-stability premises between observational and deployment populations;
+- time-varying intervention and sequential-exchangeability semantics;
+- support under adaptive treatment policies and cross-time counterfactual compatibility;
+- wider supported causal restrictions, covariates, actions, and outcomes; and
+- empirical criticism of supplied causal premises.
 
 Existing foundation: §12 of the build-out.
 

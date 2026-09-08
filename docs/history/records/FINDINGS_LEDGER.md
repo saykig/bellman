@@ -216,3 +216,30 @@ both equal `1/20`. The result does not validate model premises or unsafe-set mea
 action, cover randomized policies/CVaR/dynamic risk/resources, modify Writ or Decision Lab, or
 constitute formal verification. Exact enumeration remained small; no solver/language trigger was
 reached.
+
+## Finite causal identification and one-stage decisions — 8 September 2026
+
+The [additive companion](../../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md)
+separates observational association from intervention through two bounded exact routes. Under
+explicitly supplied consistency, exchangeability, pre-action, adjustment-set, and positivity
+premises, finite adjustment returns the complete binary intervention distribution. The mandatory
+Simpson fixture has observational bad-outcome probabilities `73/100` and `27/100` for actions 0
+and 1, but adjusted intervention probabilities `9/20` and `11/20`; the observational and causal
+recommendations are opposite. Missing action support in a positive covariate stratum is classified
+as positivity failure, not causal incompatibility.
+
+The second route constructs the exact eight-type `(A_nat,Y0,Y1)` equality-simplex fibre. For the
+symmetric four-cell observational law, complete enumeration finds 16 vertices and attained
+intervention ranges `[1/4,3/4]` for both actions. Supported calibrations can point-identify the
+queries; contradictory supported rows produce exact incompatibility. A nonpoint fibre with an
+action cost still has action 0 uniformly strictly optimal, while the zero-cost control retains two
+exact witnesses preferring opposite actions. All decision differences use one shared causal law;
+cross-witness subtraction rejects. Nonlinear factorization remains unsupported unless an explicit
+dropped-restriction outer analysis is requested, and that outer result is not promoted to an exact
+causal claim.
+
+The [bounded verification](../../../verification/finite_causal_identification/README.md) binds
+observation, population, coding, premise/restriction, adjustment, cost/loss, and query identities,
+and its receivers work with producers disabled. Causal premises remain supplied rather than
+empirically validated. No causal discovery, transport, sequential-treatment or unsafe-set
+composition, authority, formal proof, Writ/Decision Lab change, or language migration is claimed.
