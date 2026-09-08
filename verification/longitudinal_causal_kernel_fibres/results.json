@@ -1,0 +1,152 @@
+{
+  "base_commit": "cea4e1a47cb91c1f3917490350deab53d2976908",
+  "current_checks": {
+    "accumulation": 11,
+    "corner": 10,
+    "finite_causal": 11,
+    "joint_law": 19,
+    "longitudinal": 10,
+    "multistream": "passed",
+    "persistent": 11,
+    "replanning": 9,
+    "sequential": 17,
+    "statistical": 10,
+    "transport": 16,
+    "unsafe": 18
+  },
+  "executed_source_commit": "5d6b8c5e60968d42c330805d6f40a8963c78c824",
+  "failed": 0,
+  "frozen_prerequisite_sha256": {
+    "foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md": "e543bed5725932678f9134e5f658de32f72c8a508b799b9e5588585b98ece4ee",
+    "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md": "af631b49c3e411c57dbbc7baa145bdcc337e26f0ac2eebf7fa508ba840111a2e",
+    "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md": "a54dfb0729759f1237817e516faf81e6d07e5907dadd8ddc6f1a1ba0fdaa27db",
+    "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md": "38a461556da18e977c623404bec16a056013019daeb74adb7207bc0f313d749e",
+    "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md": "a974aa8e9753bcc1a4f5a5cd4d51c88040ae30bc40f98d1e837c71c6d711d0a4",
+    "foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md": "c87033cf4f9d7adaadb745fa0722ff62376eabc11cf1219628cd6b5df388313e",
+    "foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md": "0fa7a39c19e723f3c4903e56a198a02c4bd97a10a9303da2bc14c145f7c60422",
+    "reviews/BELLMAN_BUILDOUT_ADVERSARIAL_REVIEW.md": "643b12aa3313e16d2bc60768fa2b8fbf2df9c2facdab370a325faffde91c7eb9",
+    "verification/finite_causal_identification/results.json": "2687e889e2e7f9d4995a868f86fe879b9205a9b56a68a431a6dff06061685a5d",
+    "verification/longitudinal_causal_policy/results.json": "f7a08484ae260667ba8e511ad333dfce40ff55078ed21b2440cddccd3e008c21",
+    "verification/persistent_model_families/families.py": "40163e00ae5d0be54c9effbd78ad25f99d05d29d08dda1849d1be28e3819925f",
+    "verification/persistent_model_families/results.json": "10778c1e5067fcd77de75036da4f4c27114534bb66b61c8a346c63fe3f4b86d6",
+    "verification/sequential_certificates/reference.py": "99d0f1a3a32334cce826a7a582502122bc25e195f7024ed40f0c45753cbde1df",
+    "verification/sequential_certificates/results.json": "047be866108cf3097e9e4ee598a80a7fb79dd50729b2547aa11af059dda7cd56",
+    "verification/statistical_corner_models/reference.py": "443400ef102deb43c9bb4234528cc51c209afd384259381ae4f3a908c9eb4a38",
+    "verification/statistical_corner_models/results.json": "c2360cdfcbde5f4bb48d0a629bb0c60defcaecd8506224d14c76d49436849a7e"
+  },
+  "historical_replay": {
+    "pr10": "passed-at-pinned-pr10-merge",
+    "pr12": "passed-at-exact-repaired-head",
+    "pr14": "passed-at-exact-merge",
+    "pr16": "passed-at-exact-merge",
+    "pr17": "passed-at-exact-merge",
+    "pr19": "passed-at-exact-merge",
+    "pr20": "passed-at-exact-merge"
+  },
+  "modes": [
+    "normal",
+    "-O"
+  ],
+  "normal_optimized_equal": true,
+  "passed_per_mode": 12,
+  "profile": {
+    "continuous_fibre": "exact [0,1]^k under the supplied saturated independent missing-second-stage-row profile",
+    "deterministic_policies": 32,
+    "maximum_corner_policy_values": 512,
+    "maximum_corners": 16,
+    "maximum_missing_rows": 4,
+    "persistent_receiver_reused_through_corners": 4
+  },
+  "rejections_per_mode": 34,
+  "results": {
+    "decision_identified_despite_uncertainty": {
+      "common_minimizers": [
+        "policy-a1-0-a2-0000",
+        "policy-a1-0-a2-0001",
+        "policy-a1-0-a2-0010",
+        "policy-a1-0-a2-0011"
+      ],
+      "partial_policy_interval": [
+        "1/2",
+        "1"
+      ]
+    },
+    "nonlinear_corner_boundary": {
+      "corner_values": [
+        "0",
+        "0"
+      ],
+      "midpoint_value": "1/4"
+    },
+    "one_gap": {
+      "S_interval": [
+        "1/4",
+        "1/4"
+      ],
+      "U_interval": [
+        "0",
+        "1/2"
+      ],
+      "U_same_model_worst_regret": "1/4",
+      "common_minimizers": [],
+      "invalid_cross_completion_shortcut": "1/2",
+      "minimax_loss_winners": [
+        "policy-a1-0-a2-0000",
+        "policy-a1-0-a2-0001",
+        "policy-a1-0-a2-0010",
+        "policy-a1-0-a2-0011"
+      ],
+      "q0_minimizers": [
+        "policy-a1-0-a2-1000",
+        "policy-a1-0-a2-1001",
+        "policy-a1-0-a2-1010",
+        "policy-a1-0-a2-1011"
+      ],
+      "q1_minimizers": [
+        "policy-a1-0-a2-0000",
+        "policy-a1-0-a2-0001",
+        "policy-a1-0-a2-0010",
+        "policy-a1-0-a2-0011"
+      ]
+    },
+    "outside_profile": [
+      "first-stage positivity gap",
+      "intermediate-history positivity gap"
+    ],
+    "pr20_zero_gap": {
+      "corners": 1,
+      "policies": 32,
+      "subject_identity": "exact"
+    },
+    "producer_disabled_receiving": true,
+    "two_gap": {
+      "corner_values": [
+        "0",
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "interior_point": [
+        "1/3",
+        "2/5"
+      ],
+      "interior_value": "11/30"
+    }
+  },
+  "reviewed_pr20_head": "c5c6782fcc74d523701b7d67c0ff476130747f6c",
+  "source_sha256": {
+    ".github/workflows/longitudinal-causal-kernel-fibres.yml": "79805554c9cfd3fa818e8b49572aba540df8e21bd9eee883ad289e9e78872aff",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "342750a599f6e8cee031949f259e828c5a4bb2597ee6777990f2373293b43d10",
+    "README.md": "364688ae828b6f7d92b15bccb4eefe8e5efa4456441294058926646551d534f5",
+    "docs/history/records/FINDINGS_LEDGER.md": "34d9de667470a05542e06af5fb917c728baa7c0c87384dedab5e6310f0e34131",
+    "docs/history/records/SUBSTRATE_LEDGER.md": "135a53622f5454c8ac79f368ae32bffcb0955750c211956ba68a95ec90a71c87",
+    "docs/programme/ARCHITECTURE.md": "d77df0a50dc9d993a60a84050213556df6f32f98405a308e5d05431a199e5516",
+    "docs/programme/ROADMAP.md": "ddf40bc4ac46bc9a6f1ac42f85c971ccc015f427568f6bda9d96cdf5631eae19",
+    "foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md": "9d6e9bebede657d6cd751fa62c0b650fea8145e320968a29694d76ff2653a765",
+    "verification/longitudinal_causal_kernel_fibres/README.md": "047e0361ece649f6cb397fd00131ef4e7aeebce9c0b255b81b6b471042b93111",
+    "verification/longitudinal_causal_kernel_fibres/checks.py": "648e0b13701ae4432116899f23df3cd148c1fbab5ca6806b9baf26f612958692",
+    "verification/longitudinal_causal_kernel_fibres/reference.py": "94b3a90c07e8cec4dbf1149bda787f380e4da593e9b1fb6d0a8d71309f1bc86b",
+    "verification/longitudinal_causal_kernel_fibres/run_checks.py": "afca3ee9df772bf2a2b729f01b873aa069fcc0532e514b5c71d829bdef5eeadc"
+  },
+  "status": "passed"
+}
