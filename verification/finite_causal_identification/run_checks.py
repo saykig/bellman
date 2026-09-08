@@ -282,7 +282,7 @@ def run():
     with tempfile.TemporaryDirectory() as temporary:
         subprocess.check_call(["git", "clone", "--quiet", "--no-local",
                                str(ROOT), temporary])
-        subprocess.check_call(["git", "checkout", "--quiet", BASE],
+        subprocess.check_call(["git", "checkout", "--quiet", PR17_MERGE],
                               cwd=temporary)
         raw = subprocess.check_output(
             [sys.executable,
