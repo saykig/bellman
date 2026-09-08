@@ -13,8 +13,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = "0f8a7e2dc1e420d9ba26c993632c1ec690e1a804"
+BASE = "cde8bf0997fc2924fee576d9e868b237d587b237"
 REVIEWED_PR17 = "afad4c594efdef1c0abc05376464f4325efd24f0"
+PR17_MERGE = "0f8a7e2dc1e420d9ba26c993632c1ec690e1a804"
 FROZEN = {
     "foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md":
         "28f038fd633daf7694f31885923fa90ec8926619e8dda497c3df4605036e257d",
@@ -184,11 +185,14 @@ def run():
     head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT,
                                    text=True).strip()
     need(subprocess.run(["git", "merge-base", "--is-ancestor",
-                         REVIEWED_PR17, BASE], cwd=ROOT).returncode == 0,
-         "reviewed PR17 head is not in the required base")
-    need(subprocess.run(["git", "diff", "--quiet", REVIEWED_PR17, BASE, "--"],
-                        cwd=ROOT).returncode == 0,
+                         REVIEWED_PR17, PR17_MERGE], cwd=ROOT).returncode == 0,
+         "reviewed PR17 head is not in its merge commit")
+    need(subprocess.run(["git", "diff", "--quiet", REVIEWED_PR17,
+                         PR17_MERGE, "--"], cwd=ROOT).returncode == 0,
          "PR17 merge tree differs from reviewed final head")
+    need(subprocess.run(["git", "merge-base", "--is-ancestor",
+                         PR17_MERGE, BASE], cwd=ROOT).returncode == 0,
+         "PR17 merge is not an ancestor of the synchronized main base")
     need(subprocess.run(["git", "merge-base", "--is-ancestor", BASE, head],
                         cwd=ROOT).returncode == 0,
          "finite-causal work is not based on merged PR17 main")

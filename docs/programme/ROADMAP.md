@@ -2,8 +2,9 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #17
-(`0f8a7e2dc1e420d9ba26c993632c1ec690e1a804`). Finite causal intervention identification,
+**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #17 and
+the repository-local research-component guidance in PR #18
+(`cde8bf0997fc2924fee576d9e868b237d587b237`). Finite causal intervention identification,
 response-type partial identification, and same-fibre one-stage decision certification are the
 active bounded result under review. PR #17's unsafe-set construction, the prior sequential and
 statistical chain, and all historical/versioned evidence remain intact.
