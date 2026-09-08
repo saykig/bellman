@@ -2,6 +2,9 @@ name: Shared sequential consistency
 on:
   pull_request:
     paths:
+      - 'verification/diagnostic_erasure/**'
+      - 'foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md'
+      - 'reviews/DIAGNOSTIC_HISTORY_ERASURE*'
       - 'verification/history_reduction/**'
       - 'foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md'
       - 'reviews/PUBLIC_TAG_HISTORY_REDUCTION*'
@@ -15,6 +18,9 @@ on:
   push:
     branches: ['codex/sequential-credibility', 'main']
     paths:
+      - 'verification/diagnostic_erasure/**'
+      - 'foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md'
+      - 'reviews/DIAGNOSTIC_HISTORY_ERASURE*'
       - 'verification/history_reduction/**'
       - 'foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md'
       - 'reviews/PUBLIC_TAG_HISTORY_REDUCTION*'
@@ -36,6 +42,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r verification/sequential_consistency/requirements.txt
-      - run: python verification/history_reduction/acceptance.py --strategic --verify-retained
+      - run: python verification/diagnostic_erasure/acceptance.py --strategic --verify-retained
         env:
           PYTHONDONTWRITEBYTECODE: '1'

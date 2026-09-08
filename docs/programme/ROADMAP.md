@@ -117,12 +117,25 @@ payoffs cannot justify transporting changed off-path likelihoods. Both shortcuts
 counterexamples. [Current reproduction](../../verification/history_reduction/ACCEPTANCE.md)
 checks the new reduction and replays unchanged earlier components at their retained identities.
 
-The next representation question needs a concrete use that exceeds this restrictive copy class:
-for example, an intermediate observation proposed for erasure with explicit deviation coverage
-and conditional likelihood preservation. No general history quotient is earned. A concrete
-continuous on-path query may instead justify the draft's analytic multi-affine criterion; generic
-continuous receiving remains unimplemented. Do not mechanically enlarge fixtures, implement both
-directions or infer causal-to-game identification.
+The [diagnostic erasure obstruction](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)
+resolves the next question negatively for a concrete class beyond identical copies. Exact equality
+of every local continuation value and individual model consistency do not preserve ONE common
+sequence after discarding diagnostic information from both players. The necessary target ratios
+3/5 and 5/3 contradict each other for arbitrary sequences. Retaining the sender's information
+permits a restricted receiver-only reduction, with its full assessment induced by the witness.
+The [author review](../../reviews/DIAGNOSTIC_HISTORY_ERASURE_REVIEW_2026_09_08.md) distinguishes
+this consistency-existence obstruction from a rejected bounded witness and from equilibrium
+nonexistence. [Current acceptance](../../verification/diagnostic_erasure/ACCEPTANCE.md) checks it
+and preserves/replays all earlier evidence.
+
+The next useful representation gate is a specified broader strategy class with explicit coverage
+of deviations spanning the erased observation AND likelihood sufficiency across all models.
+Inspect the established MSI/USI conditions first; their single-game equilibrium-payoff results
+must not become arbitrary specified-belief/shared-sequence transport claims. Preserve sender
+likelihood distinctions and signal-conditioned mechanism rules unless a new proof licenses their
+removal. General quotient search, approximate off-path consistency and all-equilibria transport
+remain unearned. Generic continuous receiving also remains unimplemented; do not mechanically
+build both directions or infer causal-to-game identification.
 
 The following inherited causal frontier description is retained as context from the base edition;
 it is not a claim that this strategic component implements a causal bridge.

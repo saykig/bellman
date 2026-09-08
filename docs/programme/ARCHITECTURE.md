@@ -339,3 +339,14 @@ This proves a many-to-one reduction for that specified assessment class, not pre
 source equilibria or arbitrary strategic provenance. The public-correlation counterexample blocks
 using payoff irrelevance alone as an erasure rule. The likelihood counterexample blocks transporting
 a witness merely because root utilities and incentive maxima agree.
+
+### Diagnostic erasure obstruction and restricted repair
+
+The [diagnostic erasure result](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)
+is an M1 bounded reference. Exact local value equality does not certify shared consistency after
+information reduction. The target may admit each model separately yet require incompatible
+common tremble ratios. This is an assessment-specific analytical obstruction, not global game
+inconsistency. The checked repair retains sender information and induces a new full receiver
+assessment from the common witness; it does not preserve arbitrary supplied beliefs or global
+strategy classes. Any future adapter must bind the information map, uncertainty family and
+requested belief/value queries separately. No Writ, Decision Lab or causal integration is earned.
