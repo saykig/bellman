@@ -81,3 +81,15 @@ The release notes reindex completed milestones, falsified hypotheses, closures, 
 repairs, surviving questions, and source gaps. Living programme obligations remain governed by
 [`../../programme/ROADMAP.md`](../../programme/ROADMAP.md) and
 [`../../programme/ARCHITECTURE.md`](../../programme/ARCHITECTURE.md).
+
+## Post-migration additions from the synchronized PR #14 branch
+
+These entries were authored on PR #14's divergent branch after the migration baseline and were
+carried into the canonical records during current-main synchronization.
+
+| Canonical record section | Classification |
+| --- | --- |
+| Findings: Controlled multistream collection and checked static decisions — 7 September 2026 | completed research milestone under review |
+| Findings: PR14 subject-binding and revision acceptance repair — 7 September 2026 | repair/correction |
+| Substrate: Controlled multistream collection and static decisions — 7 September 2026 | completed research milestone under review |
+| Substrate: PR14 acceptance hardening and PR13 synchronization — 7 September 2026 | repair/correction |

@@ -206,10 +206,17 @@ def make_collection(registry, total_alpha, allocations, *, precision_bits=16,
     registry = tuple(registry)
     allocations = tuple(allocations)
     stream_ids = tuple(item.stream_identity for item in registry)
-    allocation_map = {stream: scalar.rational(alpha) for stream, alpha in allocations}
+    normalized_allocations = []
+    for row in allocations:
+        need(type(row) in (tuple, list) and len(row) == 2,
+             "stream allocation pair required")
+        stream, alpha = row
+        identity(stream, "allocation stream identity required")
+        normalized_allocations.append((stream, scalar.rational(alpha)))
+    allocation_map = dict(normalized_allocations)
     need(len(allocation_map) == len(allocations), "duplicate stream allocation")
-    canonical_allocations = tuple((stream, allocation_map[stream])
-                                  for stream in stream_ids if stream in allocation_map)
+    need(set(allocation_map) == set(stream_ids), "allocation registry mismatch")
+    canonical_allocations = tuple((stream, allocation_map[stream]) for stream in stream_ids)
     request = CollectionRequest(
         registry, scalar.rational(total_alpha), canonical_allocations,
         precision_bits, rule, tuple(transcript), stopped, record, revision,
@@ -613,11 +620,13 @@ def make_decision(collection, actions, *, unit="loss", intended_action,
     normalized = []
     for raw in actions:
         action = raw if type(raw) is AffineAction else make_affine_action(*raw)
+        action.validate()
         weights = dict(action.weights)
+        need(set(weights) == set(stream_ids) and len(weights) == len(stream_ids),
+             "affine action weight registry mismatch")
         canonical = AffineAction(action.label, action.intercept,
                                  tuple((stream, weights[stream])
-                                       for stream in stream_ids
-                                       if stream in weights))
+                                       for stream in stream_ids))
         normalized.append(canonical)
     cap = None if regret_cap is None else scalar.rational(regret_cap)
     return DecisionRequest(collection, tuple(normalized), unit, intended_action,
@@ -818,12 +827,21 @@ def classify_collection_revision(previous, current):
             current.total_alpha, current.allocations, current.precision_bits,
             current.joint_premise, current.cross_stream_premise):
         return "new-coverage-specification"
+    same_lineage = (
+        previous.record_identity == current.record_identity and
+        previous.revision_identity == current.revision_identity and
+        previous.predecessor_digest == current.predecessor_digest
+    )
     if current.transcript == previous.transcript:
-        return "same-transcript-recalculation-no-new-evidence"
+        return ("same-transcript-recalculation-no-new-evidence" if same_lineage
+                else "provenance-changed-new-claim")
     if (len(current.transcript) > len(previous.transcript) and
-            current.transcript[:len(previous.transcript)] == previous.transcript and
-            current.predecessor_digest == collection_digest(previous)):
-        return "append-only-transcript-extension"
+            current.transcript[:len(previous.transcript)] == previous.transcript):
+        if (current.record_identity == previous.record_identity and
+                current.revision_identity != previous.revision_identity and
+                current.predecessor_digest == collection_digest(previous)):
+            return "append-only-transcript-extension"
+        return "provenance-changed-new-claim"
     return "corrected-or-retroselected-transcript-new-claim"
 
 

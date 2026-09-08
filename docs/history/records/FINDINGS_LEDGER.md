@@ -152,3 +152,15 @@ omission/copying rejects, while concealed filtering remains empirically undiagno
 dependent rows show why coverage composition does not justify multiplying marginals. The result is
 a bounded research reference, not conditional inference without a fresh-draw premise, optimized
 adaptive sampling, causal/sequential control, or an engineering transfer.
+
+## PR14 subject-binding and revision acceptance repair — 7 September 2026
+
+Public helper canonicalization could silently discard an extra stream allocation or affine weight;
+the material weight case changed a caller's risk from `+1` at the omitted coordinate to constant
+`-1` and could certify the opposite action. Exact registry-key coverage is now required before
+canonicalization, while complete reordered inputs remain supported. Revision classification now
+requires unchanged record/revision/predecessor lineage for ordinary recalculation and the same
+record, new revision, and exact predecessor digest for append-only extension. The valid theorem,
+M1–M8 values, and original hosted result remain unchanged. The branch is synchronized with PR
+#13's canonical history layout; detailed repair evidence is in the
+[acceptance record](../../../verification/multistream_collection/ACCEPTANCE_HARDENING.md).

@@ -98,9 +98,15 @@ def verify_moved_records(root=ROOT):
         old = git_bytes(root, MIGRATION_BASELINE, old_path)
         new = (root / new_path).read_bytes()
         need(entry.get("old_sha256") == sha256(old), f"old record hash mismatch: {old_path}")
-        need(entry.get("new_sha256") == sha256(new), f"new record hash mismatch: {new_path}")
-        need(new == relocated_bytes(old_path, old),
-             f"moved record differs beyond reviewed link repair: {new_path}")
+        migrated = relocated_bytes(old_path, old)
+        need(entry.get("new_sha256") == sha256(migrated),
+             f"migration-result hash mismatch: {new_path}")
+        if old_path in APPEND_ONLY_RECORDS:
+            need(new.startswith(migrated),
+                 f"moved append-only record rewrites migration history: {new_path}")
+        else:
+            need(new == migrated,
+                 f"moved record differs beyond reviewed link repair: {new_path}")
         identities[new_path] = sha256(new)
     return identities
 

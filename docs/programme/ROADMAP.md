@@ -2,7 +2,7 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 7 September 2026, based on `main` after merge of PR #12 (`92922ab6604840152ad7f7800969673335748272`) and the controlled multistream construction now under review.
+**Current snapshot:** 7 September 2026, synchronized with `main` after PR #13 (`1404949753038d09fa76890ecd01b331dda18d88`) while the controlled multistream construction and its bounded acceptance repair remain under review.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -82,6 +82,10 @@ rowwise all-prefix statements by a union bound without cross-row independence, a
 affine decisions on the retained rectangle. It is a research reference under review, not evidence
 that supplied rows are complete or IID, an outcome-filtering remedy, a posterior, an optimized
 bandit algorithm, a sequential planner, or an integrated Writ capability.
+
+The additive acceptance repair requires public allocation and affine-weight keys to cover the
+declared registry exactly before canonicalization and makes record/revision/predecessor lineage
+part of revision disposition. It does not alter the theorem or begin another section 5A stage.
 
 ## 5. Default mathematical frontier after the current chain
 

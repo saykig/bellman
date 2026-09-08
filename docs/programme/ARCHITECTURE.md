@@ -91,7 +91,7 @@ This table is intentionally conservative.
 | Persistent model-family certificates | M1–M2 | Research reference only. |
 | Family-aware replanning | M1–M2 | Bounded checked research reference; no general Writ integration. |
 | Anytime-valid Bernoulli data-to-decision bridge | M1 | Acceptance-hardened research reference; not implemented as Writ or Decision Lab semantics. |
-| Controlled fixed-registry multistream collection | M1 | Bounded checked research reference under review; no engineering adapter. |
+| Controlled fixed-registry multistream collection | M1 | Bounded checked research reference under review; public subject-binding and revision-lineage acceptance repaired, with no engineering adapter. |
 | Statistical learning / coverage beyond the bounded Bernoulli profile | Foundation only | Outcome filtering, within-row dependence, drift, missingness, adaptive allocation and broader model learning are not implemented. |
 | Constraints / risk | Foundation only | Not implemented. |
 | Causal identification | Foundation only | Not implemented. |

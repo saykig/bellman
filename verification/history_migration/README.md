@@ -8,8 +8,10 @@ PYTHONDONTWRITEBYTECODE=1 python3 -O verification/history_migration/checks.py
 ```
 
 The checker binds the four moved records to their exact PR12-merge bytes and permits only the
-deterministic relative-link transformation required by the new directory depth. It requires the old
-root paths to be absent, validates strict duplicate-free UTF-8 JSON manifests, recomputes every
+deterministic relative-link transformation required by the new directory depth. The findings and
+substrate records may then receive append-only current entries without changing the migration
+manifest's frozen transformation identity. It requires the old root paths to be absent, validates
+strict duplicate-free UTF-8 JSON manifests, recomputes every
 release target date and tree from Git, hashes every committed release note, and hashes every selected
 artifact from its historical target commit. If a proposed tag later exists, it must resolve to the
 manifest's exact target commit.

@@ -2,14 +2,21 @@
 
 [Mathematical contract and proofs](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md).
 
+The [acceptance-hardening record](ACCEPTANCE_HARDENING.md) preserves the companion and original
+hosted result while repairing public allocation/weight subject coverage, revision-lineage
+classification, and current-main/PR #13 history integration. Its separate
+`acceptance_hardening_results.json` records the repaired hosted run without overwriting the
+original evidence.
+
 Run the current acceptance entry point from the repository root:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 verification/multistream_collection/run_checks.py
 ```
 
-The runner executes the repaired current PR #12 scalar checks and the new M1–M8 checks normally
-and with `-O`. It separately verifies preserved PR #12 source/result identities and runs PR #12's
+The runner executes the repaired current PR #12 scalar checks, unchanged M1–M8 checks, targeted
+R1–R3 hardening controls, current preservation checks, and PR #13 history checks normally and with
+`-O`. It separately verifies preserved PR #12 and original PR #14 source/result identities and runs PR #12's
 unchanged historical acceptance program at repaired head
 `5017122500450c8f7f890474f7232b9c94d3a3fb` in a disposable clone whose `origin/main` is bound to
 the required historical base `2e8d99cdcf289eabb63df15086eaa68251a359f1`. That historical program in

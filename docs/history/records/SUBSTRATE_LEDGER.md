@@ -115,3 +115,16 @@ dependence counterexamples, producer-disabled receiving, finite refusal semantic
 complete historical acceptance replay at its original base. This is a bounded research reference,
 not empirical sampling validation, an optimized bandit, sequential control, or a Writ/Decision Lab
 transfer.
+
+## PR14 acceptance hardening and PR13 synchronization — 7 September 2026
+
+The [additive repair](../../../verification/multistream_collection/ACCEPTANCE_HARDENING.md)
+reproduces and closes two public-constructor subject-erasure paths: unregistered allocation keys
+and unregistered affine coefficients must reject before registry-order canonicalization. It also
+binds record, revision, and predecessor lineage in collection-revision classification. The
+mathematical companion and original result record retain their reviewed SHA-256 identities, while
+a separate hardening result records current code. PR #13's moved history records, migration
+manifest, classification, releases, and root cleanup remain in force; findings and substrate
+records permit only append-only entries after their frozen migrated prefixes. Current and
+historical acceptance retain the PR #12 and inherited PR #10 replay boundaries. No mathematical
+stage, GitHub Release, Writ/Decision Lab integration, or language migration is added.
