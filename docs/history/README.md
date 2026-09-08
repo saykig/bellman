@@ -1,7 +1,9 @@
 # Bellman research history
 
 [GitHub Releases](https://github.com/saykig/bellman/releases) are the preferred human-readable
-timeline of Bellman's meaningful research-state transitions. Canonical release-note text is
+timeline of Bellman's meaningful research-state transitions. The `v0.0.1`–`v0.0.6` releases are
+pre-0.1 research checkpoints and are marked prerelease; they are not software compatibility
+promises. `v0.1.0` remains reserved for a future maturity milestone. Canonical release-note text is
 committed in [`releases/`](releases/), and the exact commit, tree, note, and selected artifact
 identities are bound in [`releases/manifest.json`](releases/manifest.json).
 
@@ -13,12 +15,12 @@ tagged commit, not the date on which GitHub metadata was created.
 
 | Research milestone | Historical date | Standing | Release/tag | Main evidence |
 | --- | --- | --- | --- | --- |
-| Kahneman Lab experimental and closure arc | 2026-09-06 | Closed with surviving scoped findings and explicit failed branches | `research/kl-closure` | [KL4–KL6 note](releases/kl-closure.md) |
-| Mathematical substrate v1.1 and initial build-out | 2026-09-06 | Working foundation; continuing programme | `research/substrate-v1.1` | [Substrate note](releases/substrate-v1.1.md) |
-| Finite joint-law completion and exact-reference repair | 2026-09-07 | Bounded construction completed and repaired | `research/joint-law-certificates` | [Joint-law note](releases/joint-law-certificates.md) |
-| Sequential certificates, transport, and accumulation | 2026-09-07 | Three bounded constructive modules completed | `research/sequential-certificates` | [Sequential note](releases/sequential-certificates.md) |
-| Persistent model families and family-aware replanning | 2026-09-07 | Bounded family-level guarantees completed | `research/persistent-model-families` | [Persistent-family note](releases/persistent-model-families.md) |
-| Anytime-valid data-to-decision bridge | 2026-09-07 | Bounded bridge completed; support/CI boundary repaired | `research/anytime-data-decision` | [Anytime note](releases/anytime-data-decision.md) |
+| Kahneman Lab experimental and closure arc | 2026-09-06 | Closed with surviving scoped findings and explicit failed branches | [`v0.0.1`](https://github.com/saykig/bellman/releases/tag/v0.0.1) | [KL4–KL6 note](releases/kl-closure.md) |
+| Mathematical substrate v1.1 and initial build-out | 2026-09-06 | Working foundation; continuing programme | [`v0.0.2`](https://github.com/saykig/bellman/releases/tag/v0.0.2) | [Substrate note](releases/substrate-v1.1.md) |
+| Finite joint-law completion and exact-reference repair | 2026-09-07 | Bounded construction completed and repaired | [`v0.0.3`](https://github.com/saykig/bellman/releases/tag/v0.0.3) | [Joint-law note](releases/joint-law-certificates.md) |
+| Sequential certificates, transport, and accumulation | 2026-09-07 | Three bounded constructive modules completed | [`v0.0.4`](https://github.com/saykig/bellman/releases/tag/v0.0.4) | [Sequential note](releases/sequential-certificates.md) |
+| Persistent model families and family-aware replanning | 2026-09-07 | Bounded family-level guarantees completed | [`v0.0.5`](https://github.com/saykig/bellman/releases/tag/v0.0.5) | [Persistent-family note](releases/persistent-model-families.md) |
+| Anytime-valid data-to-decision bridge | 2026-09-07 | Bounded bridge completed; support/CI boundary repaired | [`v0.0.6`](https://github.com/saykig/bellman/releases/tag/v0.0.6) | [Anytime note](releases/anytime-data-decision.md) |
 
 The four moved records preserve their prior substantive text, with only relocation-required links
 repaired: [findings](records/FINDINGS_LEDGER.md), [retired mathematics](records/MATH_ARCHIVE_LEDGER.md),

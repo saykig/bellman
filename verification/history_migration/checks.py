@@ -16,6 +16,7 @@ MOVED_RECORDS = {
     "LEGACY_ARCHIVE_STATUS.md": "docs/history/records/LEGACY_ARCHIVE_STATUS.md",
 }
 APPEND_ONLY_RECORDS = {"FINDINGS_LEDGER.md", "SUBSTRATE_LEDGER.md"}
+EXPECTED_VERSIONS = tuple(f"v0.0.{index}" for index in range(1, 7))
 
 # Existing files changed only to govern or execute this reviewed layout migration. Mathematical
 # sources, frozen evidence, result records, reviews, and experiment artifacts are deliberately absent.
@@ -29,6 +30,18 @@ CURRENT_MIGRATION_PATHS = {
     "verification/persistent_model_families/run_checks.py",
     "verification/family_replanning/run_checks.py",
     "verification/statistical_decision_bridge/run_checks.py",
+}
+CURRENT_VERSIONING_PATHS = {
+    "docs/history/README.md",
+    "docs/history/releases/manifest.json",
+    "docs/history/releases/kl-closure.md",
+    "docs/history/releases/substrate-v1.1.md",
+    "docs/history/releases/joint-law-certificates.md",
+    "docs/history/releases/sequential-certificates.md",
+    "docs/history/releases/persistent-model-families.md",
+    "docs/history/releases/anytime-data-decision.md",
+    "verification/history_migration/README.md",
+    "verification/history_migration/checks.py",
 }
 
 
@@ -111,21 +124,26 @@ def verify_release_manifest(root=ROOT):
     releases = manifest.get("releases")
     need(isinstance(releases, list) and len(releases) == 6,
          "release manifest must contain the six audited milestones")
-    tags = set()
+    versions = []
     note_paths = set()
     artifact_count = 0
     for release in releases:
         need(isinstance(release, dict), "invalid release manifest entry")
-        tag = release.get("tag")
+        version = release.get("version")
         note_path = release.get("release_note_path")
         commit = release.get("target_commit")
-        need(isinstance(tag, str) and tag.startswith("research/") and tag not in tags,
-             f"invalid or duplicate research tag: {tag}")
+        need(isinstance(version, str) and version not in versions,
+             f"invalid or duplicate release version: {version}")
+        need(release.get("prerelease") is True, f"release is not a prerelease: {version}")
+        need(release.get("published_release_url") ==
+             f"https://github.com/saykig/bellman/releases/tag/{version}",
+             f"published release URL mismatch: {version}")
         need(isinstance(note_path, str) and note_path.startswith("docs/history/releases/")
              and note_path.endswith(".md") and note_path not in note_paths,
              f"invalid or duplicate release note path: {note_path}")
-        need(isinstance(commit, str) and len(commit) == 40, f"invalid target commit for {tag}")
-        tags.add(tag)
+        need(isinstance(commit, str) and len(commit) == 40,
+             f"invalid target commit for {version}")
+        versions.append(version)
         note_paths.add(note_path)
 
         try:
@@ -134,51 +152,63 @@ def verify_release_manifest(root=ROOT):
             tree = subprocess.check_output(
                 ["git", "rev-parse", f"{commit}^{{tree}}"], cwd=root, text=True).strip()
         except subprocess.CalledProcessError as error:
-            raise RuntimeError(f"release target unavailable: {tag}") from error
+            raise RuntimeError(f"release target unavailable: {version}") from error
         need(release.get("target_commit_date") == commit_date,
-             f"historical date mismatch: {tag}")
-        need(release.get("tree_sha") == tree, f"tree identity mismatch: {tag}")
+             f"historical date mismatch: {version}")
+        need(release.get("tree_sha") == tree, f"tree identity mismatch: {version}")
 
         note = (root / note_path).read_bytes()
         need(release.get("release_note_sha256") == sha256(note),
-             f"release-note identity mismatch: {tag}")
+             f"release-note identity mismatch: {version}")
         note_text = note.decode("utf-8", errors="strict")
         required_lines = (
+            f"# {version} — {release.get('title')}",
             f"Historical finalization: {commit_date}",
             f"Tagged commit: `{commit}`",
             f"Git tree: `{tree}`",
+            "Publication note: This historical checkpoint was indexed and published later.",
         )
         for line in required_lines:
-            need(line in note_text, f"release note does not bind {tag}: {line}")
+            need(line in note_text, f"release note does not bind {version}: {line}")
 
         artifacts = release.get("key_artifacts")
-        need(isinstance(artifacts, list) and artifacts, f"release lacks key artifacts: {tag}")
+        need(isinstance(artifacts, list) and artifacts,
+             f"release lacks key artifacts: {version}")
         artifact_paths = set()
         for artifact in artifacts:
-            need(isinstance(artifact, dict), f"invalid key artifact for {tag}")
+            need(isinstance(artifact, dict), f"invalid key artifact for {version}")
             path = artifact.get("path")
             need(isinstance(path, str) and path not in artifact_paths,
-                 f"invalid or duplicate artifact for {tag}: {path}")
+                 f"invalid or duplicate artifact for {version}: {path}")
             artifact_paths.add(path)
             need(artifact.get("sha256") == sha256(git_bytes(root, commit, path)),
-                 f"historical artifact identity mismatch: {tag}:{path}")
+                 f"historical artifact identity mismatch: {version}:{path}")
             artifact_count += 1
 
         tag_ref = subprocess.run(
-            ["git", "show-ref", "--verify", "--quiet", f"refs/tags/{tag}"], cwd=root)
-        if tag_ref.returncode == 0:
-            tagged_commit = subprocess.check_output(
-                ["git", "rev-parse", f"{tag}^{{commit}}"], cwd=root, text=True).strip()
-            need(tagged_commit == commit, f"existing tag targets the wrong commit: {tag}")
-        else:
-            need(tag_ref.returncode == 1, f"could not inspect tag: {tag}")
+            ["git", "show-ref", "--verify", "--quiet", f"refs/tags/{version}"], cwd=root)
+        need(tag_ref.returncode == 0, f"required version tag is absent: {version}")
+        tag_type = subprocess.check_output(
+            ["git", "cat-file", "-t", f"refs/tags/{version}"], cwd=root, text=True).strip()
+        need(tag_type == "commit", f"version tag is not lightweight: {version}")
+        tagged_commit = subprocess.check_output(
+            ["git", "rev-parse", f"refs/tags/{version}"], cwd=root, text=True).strip()
+        need(tagged_commit == commit, f"version tag targets the wrong commit: {version}")
+        tagged_tree = subprocess.check_output(
+            ["git", "rev-parse", f"refs/tags/{version}^{{tree}}"], cwd=root,
+            text=True).strip()
+        need(tagged_tree == tree, f"version tag resolves to the wrong tree: {version}")
+
+    need(tuple(versions) == EXPECTED_VERSIONS,
+         "release versions must be the ordered v0.0.1–v0.0.6 sequence")
 
     disk_notes = {
         str(path.relative_to(root))
         for path in (root / "docs/history/releases").glob("*.md")
     }
     need(disk_notes == note_paths, "release note set differs from manifest")
-    return {"releases": len(releases), "key_artifacts": artifact_count}
+    return {"releases": len(releases), "versions": versions,
+            "key_artifacts": artifact_count, "lightweight_tags_required": True}
 
 
 def verify_affected_markdown_links(root=ROOT):
@@ -219,7 +249,7 @@ def verify_historical_tree(root, base):
                 need(now.startswith(expected), f"moved append-only record rewrite: {path}")
             else:
                 need(now == expected, f"moved historical record rewrite: {path}")
-        elif path in CURRENT_MIGRATION_PATHS:
+        elif path in CURRENT_MIGRATION_PATHS or path in CURRENT_VERSIONING_PATHS:
             continue
         else:
             need((root / path).is_file(), f"historical file removed: {path}")

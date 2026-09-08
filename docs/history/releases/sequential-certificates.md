@@ -1,4 +1,4 @@
-# Sequential certificates, transport, and accumulation
+# v0.0.4 — Sequential certificates, transport, and accumulation
 
 Historical period: 2026-09-07
 
@@ -9,6 +9,9 @@ Tagged commit: `9761cd0ce99be6fb6b2dcddc89951960a4a0df34`
 Git tree: `15c4e5f2c9cfaab947f2c2954f017863bd4ea5c8`
 
 Standing: Three bounded exact construction modules completed with inherited preservation checks.
+
+Publication note: This historical checkpoint was indexed and published later. Its target commit and
+tree—not the GitHub publication timestamp—are the authority for its historical date and state.
 
 ## Question
 

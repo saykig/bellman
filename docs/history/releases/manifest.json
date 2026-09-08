@@ -1,13 +1,16 @@
 {
   "releases": [
     {
-      "tag": "research/kl-closure",
+      "version": "v0.0.1",
+      "milestone_id": "kl-closure",
       "title": "Kahneman Lab experimental and closure arc",
       "target_commit": "145dbb17d928ccbe36b6a3454f979fd7dbeb963c",
       "target_commit_date": "2026-09-06T19:28:32-04:00",
       "tree_sha": "127e106e54b8c34a32496191fbfcd88867a254da",
       "release_note_path": "docs/history/releases/kl-closure.md",
-      "release_note_sha256": "a126d4650abf41197b39d25a71a2f6c7f439164c92476cf60b0311e4fdb9237f",
+      "release_note_sha256": "efb0997d44b99d859d215585ee38d090eed4e9bdbd65953e0de12f37cbffa1b5",
+      "published_release_url": "https://github.com/saykig/bellman/releases/tag/v0.0.1",
+      "prerelease": true,
       "key_artifacts": [
         {
           "path": "experiments/kl4/RUN_THIS_NEXT_KAHNEMAN_LAB_4_PARALLEL.md",
@@ -32,13 +35,16 @@
       ]
     },
     {
-      "tag": "research/substrate-v1.1",
+      "version": "v0.0.2",
+      "milestone_id": "substrate-v1.1",
       "title": "Mathematical substrate v1.1 and initial build-out",
       "target_commit": "95d0cab3b3e577a0a990c485cc5e1acb4334517b",
       "target_commit_date": "2026-09-06T23:53:38-04:00",
       "tree_sha": "e9c0229302fc8bdb591676ff275edfbab2031299",
       "release_note_path": "docs/history/releases/substrate-v1.1.md",
-      "release_note_sha256": "9a04205b4954b3394293827c4cb3098ab9d82a37637d2cee53f394d9f979b857",
+      "release_note_sha256": "0c501fe261a70949ff5d26da88491388fd365bebfc4c09e157728f3c35b3f089",
+      "published_release_url": "https://github.com/saykig/bellman/releases/tag/v0.0.2",
+      "prerelease": true,
       "key_artifacts": [
         {
           "path": "foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md",
@@ -63,13 +69,16 @@
       ]
     },
     {
-      "tag": "research/joint-law-certificates",
+      "version": "v0.0.3",
+      "milestone_id": "joint-law-certificates",
       "title": "Finite joint-law completion and exact-reference repair",
       "target_commit": "b1266137f824dc65e614722f1f0592846b915262",
       "target_commit_date": "2026-09-07T01:26:38-04:00",
       "tree_sha": "785fc30b8d05168c320bfa901dfae07e06f52538",
       "release_note_path": "docs/history/releases/joint-law-certificates.md",
-      "release_note_sha256": "9f551d54631cea0a8174b385a2529b36ce5bbe9e3bef594904f80b5383f01de3",
+      "release_note_sha256": "d20f5de611c8f9983e4212c239ded0aca9ade9473b73f2a53c8970c436600b84",
+      "published_release_url": "https://github.com/saykig/bellman/releases/tag/v0.0.3",
+      "prerelease": true,
       "key_artifacts": [
         {
           "path": "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md",
@@ -94,13 +103,16 @@
       ]
     },
     {
-      "tag": "research/sequential-certificates",
+      "version": "v0.0.4",
+      "milestone_id": "sequential-certificates",
       "title": "Sequential certificates, transport, and accumulation",
       "target_commit": "9761cd0ce99be6fb6b2dcddc89951960a4a0df34",
       "target_commit_date": "2026-09-07T13:21:21-04:00",
       "tree_sha": "15c4e5f2c9cfaab947f2c2954f017863bd4ea5c8",
       "release_note_path": "docs/history/releases/sequential-certificates.md",
-      "release_note_sha256": "d207d2a6288c5358b232eb2b2ec0e23357490a210e6e363756d119ff9d383d62",
+      "release_note_sha256": "b9bf675ddd407ed189a0486393d6769a7a0275c7e5aa1152882f4ee189983656",
+      "published_release_url": "https://github.com/saykig/bellman/releases/tag/v0.0.4",
+      "prerelease": true,
       "key_artifacts": [
         {
           "path": "foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md",
@@ -129,13 +141,16 @@
       ]
     },
     {
-      "tag": "research/persistent-model-families",
+      "version": "v0.0.5",
+      "milestone_id": "persistent-model-families",
       "title": "Persistent model-family certificates and family-aware replanning",
       "target_commit": "2e8d99cdcf289eabb63df15086eaa68251a359f1",
       "target_commit_date": "2026-09-07T15:50:56-04:00",
       "tree_sha": "65f95c850d63e10a7a3f78f9c1d3c6b322f0d08d",
       "release_note_path": "docs/history/releases/persistent-model-families.md",
-      "release_note_sha256": "f392dac2b036d7c979876a0e4f36f6d7212aad2a955d5bbc3936f5ab81a40293",
+      "release_note_sha256": "286beb3adadc2589a5223f0a01a7cc19d7a98a5749b4442710e1aac5e5742dda",
+      "published_release_url": "https://github.com/saykig/bellman/releases/tag/v0.0.5",
+      "prerelease": true,
       "key_artifacts": [
         {
           "path": "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md",
@@ -156,13 +171,16 @@
       ]
     },
     {
-      "tag": "research/anytime-data-decision",
+      "version": "v0.0.6",
+      "milestone_id": "anytime-data-decision",
       "title": "Anytime-valid Bernoulli data-to-decision bridge",
       "target_commit": "92922ab6604840152ad7f7800969673335748272",
       "target_commit_date": "2026-09-07T18:43:07-04:00",
       "tree_sha": "2345b79ccd0bfee81703330506e8c647989ae1f1",
       "release_note_path": "docs/history/releases/anytime-data-decision.md",
-      "release_note_sha256": "e51f437bebf36d688a3f3df7e8010ab3d2741c2702232357f3a5c14ef28f5fa3",
+      "release_note_sha256": "c639f7a9524ce27c0273be6eed45032d63ca32f61717dca8e3efb21b733bc6f3",
+      "published_release_url": "https://github.com/saykig/bellman/releases/tag/v0.0.6",
+      "prerelease": true,
       "key_artifacts": [
         {
           "path": "foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md",
