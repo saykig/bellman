@@ -12,6 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 REVIEWED_PR8 = "59da8f5b9d57afbe2b8c31e78886378f4f456bec"
 PR8_MERGE = "81eec793094bde8bb26fc88c3f4d6a99ef3ffdfe"
+sys.path.insert(0, str(ROOT))
+from verification.history_migration.checks import verify_historical_tree
 
 
 def need(ok, message):
@@ -82,16 +84,7 @@ def run():
     need(subprocess.run(["git", "diff", "--quiet", PR8_MERGE, base, "--",
                          *inherited_paths], cwd=ROOT).returncode == 0,
          "reviewed PR8 sources changed on the current base")
-    paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", base],
-                                    cwd=ROOT, text=True).splitlines()
-    mutable = ("README.md", "SUBSTRATE_LEDGER.md", "FINDINGS_LEDGER.md")
-    for path in paths:
-        before = subprocess.check_output(["git", "show", f"{base}:{path}"], cwd=ROOT)
-        now = (ROOT / path).read_bytes()
-        if path not in mutable:
-            need(before == now, f"historical change: {path}")
-        elif path.endswith("LEDGER.md"):
-            need(now.startswith(before), f"ledger rewrite rather than append: {path}")
+    preserved_files = verify_historical_tree(ROOT, base)
 
     sources = [
         "verification/family_replanning/replanning.py",
@@ -120,6 +113,7 @@ def run():
             path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest() for path in sources
         },
         "historical_files_preserved": True,
+        "historical_files_checked": preserved_files,
         "pr8_merge_tree_matches_reviewed_head": True,
         "pr8_sources_unchanged_on_current_base": True,
         "preservation_seconds": preservation_seconds,

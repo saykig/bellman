@@ -20,14 +20,43 @@ FROZEN_PR12_SHA256 = {
     "verification/statistical_decision_bridge/results.json":
         "2d937135ea0610da69ba09cd477934ec0b4e88843c1bbcf3212311ce079a5b13",
 }
+sys.path.insert(0, str(ROOT))
+from verification.history_migration.checks import verify_historical_tree
 AUTHORIZED_REPAIR_PATHS = {
+    ".github/workflows/history-migration.yml",
     ".github/workflows/family-replanning.yml",
     ".github/workflows/statistical-decision-bridge.yml",
+    "AGENTS.md",
     "FINDINGS_LEDGER.md",
+    "LEGACY_ARCHIVE_STATUS.md",
+    "MATH_ARCHIVE_LEDGER.md",
     "README.md",
     "SUBSTRATE_LEDGER.md",
+    "docs/history/PATH_DEPENDENCY_AUDIT.md",
+    "docs/history/README.md",
+    "docs/history/records/CLASSIFICATION.md",
+    "docs/history/records/FINDINGS_LEDGER.md",
+    "docs/history/records/LEGACY_ARCHIVE_STATUS.md",
+    "docs/history/records/MATH_ARCHIVE_LEDGER.md",
+    "docs/history/records/SUBSTRATE_LEDGER.md",
+    "docs/history/records/migration_manifest.json",
+    "docs/history/releases/anytime-data-decision.md",
+    "docs/history/releases/joint-law-certificates.md",
+    "docs/history/releases/kl-closure.md",
+    "docs/history/releases/manifest.json",
+    "docs/history/releases/persistent-model-families.md",
+    "docs/history/releases/sequential-certificates.md",
+    "docs/history/releases/substrate-v1.1.md",
     "docs/programme/ARCHITECTURE.md",
     "docs/programme/ROADMAP.md",
+    "verification/certificate_accumulation/run_checks.py",
+    "verification/certificate_transport/run_checks.py",
+    "verification/family_replanning/run_checks.py",
+    "verification/history_migration/README.md",
+    "verification/history_migration/checks.py",
+    "verification/persistent_model_families/run_checks.py",
+    "verification/sequential_certificates/run_checks.py",
+    "verification/substrate_v1/README.md",
     "verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md",
     "verification/statistical_decision_bridge/acceptance_hardening_results.json",
     "verification/statistical_decision_bridge/README.md",
@@ -161,7 +190,6 @@ def run():
     inherited_paths = [
         "foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md",
         "verification/family_replanning",
-        ".github/workflows/family-replanning.yml",
         "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md",
         "verification/persistent_model_families",
         "verification/joint_law_completion/joint_law.py",
@@ -170,23 +198,7 @@ def run():
                          *inherited_paths], cwd=ROOT).returncode == 0,
          "reviewed inherited mathematical sources changed on current base")
 
-    allowed_living = {
-        ".github/workflows/family-replanning.yml",
-        "README.md",
-        "SUBSTRATE_LEDGER.md",
-        "FINDINGS_LEDGER.md",
-        "docs/programme/ROADMAP.md",
-        "docs/programme/ARCHITECTURE.md",
-    }
-    paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", base],
-                                    cwd=ROOT, text=True).splitlines()
-    for path in paths:
-        before = subprocess.check_output(["git", "show", f"{base}:{path}"], cwd=ROOT)
-        now = (ROOT / path).read_bytes()
-        if path not in allowed_living:
-            need(before == now, f"historical change: {path}")
-        elif path.endswith("LEDGER.md"):
-            need(now.startswith(before), f"ledger rewrite rather than append: {path}")
+    preserved_files = verify_historical_tree(ROOT, base)
 
     # Disposable negative controls prove that orchestration failures remain failures.
     enforce_change_scope({"docs/programme/ROADMAP.md"})
@@ -256,6 +268,7 @@ def run():
             path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest() for path in sources
         },
         "historical_files_preserved": True,
+        "historical_files_checked": preserved_files,
         "frozen_pr12_sha256": frozen_pr12,
         "authorized_hardening_paths": sorted(changed),
         "pr10_merge_tree_matches_reviewed_head": True,

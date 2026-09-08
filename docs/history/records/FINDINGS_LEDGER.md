@@ -30,7 +30,7 @@ The ambition may remain enormous while the first demonstrated competence is narr
 
 ## KL4 — uncertainty, information, and action
 
-**Status:** complete. Existing mathematics explains the reported results. See [`experiments/kl4/`](experiments/kl4/).
+**Status:** complete. Existing mathematics explains the reported results. See [`experiments/kl4/`](../../../experiments/kl4/).
 
 - **KL4A:** mutual-information ranking can reverse expected value-of-sample-information ranking. More state information need not have more value for a specified decision.
 - **KL4B:** probability-set width does not determine decision stability. A broad credal segment can preserve one action while a narrow segment crosses an action boundary.
@@ -40,7 +40,7 @@ The ambition may remain enormous while the first demonstrated competence is narr
 
 ## KL5 — sequential sufficiency
 
-**Status:** `STOPPED_AT_STAGE_R — KL5_STOP_DEGENERATE`. See [`experiments/kl5/`](experiments/kl5/).
+**Status:** `STOPPED_AT_STAGE_R — KL5_STOP_DEGENERATE`. See [`experiments/kl5/`](../../../experiments/kl5/).
 
 - Stage R exhaustively tested the frozen strongest certificate `C_*` over 1,800 primary full objects and the mandatory 432-object informative-interior restriction.
 - The primary gate found **64** distinct equal-`C_*` pairs with different root STOP/OBSERVE minimizing sets; the smallest separating horizon was **2**.
@@ -50,7 +50,7 @@ The ambition may remain enormous while the first demonstrated competence is narr
 
 ## KL6 — observation-model sufficiency
 
-**Status:** `KL6_STOP_THEORY_ALREADY_SETTLES` / `KL6_STOP_STANDARD`. See [`experiments/kl6/`](experiments/kl6/).
+**Status:** `KL6_STOP_THEORY_ALREADY_SETTLES` / `KL6_STOP_STANDARD`. See [`experiments/kl6/`](../../../experiments/kl6/).
 
 - `C_*` is too weak to preserve bounded sequential decisions: distinct strictly interior models can share the same prior, loss, cost, and `C_*` while inducing opposite strict root STOP/OBSERVE decisions.
 - On the registered informative eighth-grid at horizon 5, `S04=(C_*,Z_5)` is sufficient only because it identifies the **labeled observation kernel** itself.
@@ -84,23 +84,23 @@ v1 assembled seven connected components. Its adversarial review led to v1.1's fo
 
 ## Focused joint-law constructive completion
 
-An additive [revision](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) completes bounded finite rational compatibility → conditional identification → decision certificates, with exact primal/dual and Farkas checking and explicit outer-domain and unfinished outcomes. A checked sharper conditioning bound supplements the unchanged historical bound. Original author evidence was reproduced; reviewer and new fixed cases passed within their documented scope. This is research-reference completion, not general solver or Writ acceptance; see the substrate ledger for active obligations and source gaps. Historical experiment dispositions are unchanged.
+An additive [revision](../../../foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT_REVISED.md) completes bounded finite rational compatibility → conditional identification → decision certificates, with exact primal/dual and Farkas checking and explicit outer-domain and unfinished outcomes. A checked sharper conditioning bound supplements the unchanged historical bound. Original author evidence was reproduced; reviewer and new fixed cases passed within their documented scope. This is research-reference completion, not general solver or Writ acceptance; see the substrate ledger for active obligations and source gaps. Historical experiment dispositions are unchanged.
 
 ## PR4 exact-reference boundary correction
 
-Confirmed false original-witness acceptance from floating-point arithmetic, mutable original-constraint aliases, and shortcut task-validation gaps. Scoped code repairs and decisive controls restore the advertised exact semantics; no correct theorem was rewritten. Earlier frozen evidence remains historical. See the [repair record](verification/pr4_repair/README.md) for source identities, current verification, and limits.
+Confirmed false original-witness acceptance from floating-point arithmetic, mutable original-constraint aliases, and shortcut task-validation gaps. Scoped code repairs and decisive controls restore the advertised exact semantics; no correct theorem was rewritten. Earlier frozen evidence remains historical. See the [repair record](../../../verification/pr4_repair/README.md) for source identities, current verification, and limits.
 
 ## Sequential guarantee composition
 
-[Sequential certificates](foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) now have constructive whole-policy bounds and checked residual propagation, with explicit support, policy, comparator, and model-identity obligations. A two-step candidate has exact regret 5/8; invalid local-to-sequential joins are retained as counterexamples. These are conditional proofs and fixed-instance checks, not a general solver or new Writ capability.
+[Sequential certificates](../../../foundations/BELLMAN_SEQUENTIAL_CERTIFICATE_COMPOSITION.md) now have constructive whole-policy bounds and checked residual propagation, with explicit support, policy, comparator, and model-identity obligations. A two-step candidate has exact regret 5/8; invalid local-to-sequential joins are retained as counterexamples. These are conditional proofs and fixed-instance checks, not a general solver or new Writ capability.
 
 ## Sequential certificate transport
 
-[Anchored transport](foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) constructs independently checked target optimum-lower and named-policy-upper bounds after explicit model/policy revision. Extremality is restricted to the old-table anchors; direct revalidation and uniform comparator bounds have no universal tightness ordering. Candidate-only agreement and sums of overlapping predecessor edits do not warrant the corresponding regret claims. Positive-prefix queries recompute target mass. Historical mathematics and evidence remain unchanged; this is one bounded construction in the continuing programme.
+[Anchored transport](../../../foundations/BELLMAN_CERTIFICATE_TRANSPORT_AND_REVALIDATION.md) constructs independently checked target optimum-lower and named-policy-upper bounds after explicit model/policy revision. Extremality is restricted to the old-table anchors; direct revalidation and uniform comparator bounds have no universal tightness ordering. Candidate-only agreement and sums of overlapping predecessor edits do not warrant the corresponding regret claims. Positive-prefix queries recompute target mass. Historical mathematics and evidence remain unchanged; this is one bounded construction in the continuing programme.
 
 ## Certificate accumulation — 7 September 2026
 
-The [additive construction](foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) proves same-subject/same-policy max-lower/min-upper closure and table laws, plus separately checked policy selection. Actual dominance requires checked exact policy values; loose-bound selection does not suffice. Retained warrants tighten a restored-subject round trip without changing PR6. New fixed evidence and preservation runs remain distinct from historical/reviewer records. The broader programme continues beyond this finite module.
+The [additive construction](../../../foundations/BELLMAN_CERTIFICATE_ACCUMULATION_AND_POLICY_SELECTION.md) proves same-subject/same-policy max-lower/min-upper closure and table laws, plus separately checked policy selection. Actual dominance requires checked exact policy values; loose-bound selection does not suffice. Retained warrants tighten a restored-subject round trip without changing PR6. New fixed evidence and preservation runs remain distinct from historical/reviewer records. The broader programme continues beyond this finite module.
 
 ## Persistent model-family certificates — 7 September 2026
 
@@ -136,7 +136,7 @@ authorized living programme-document edits as mutation of frozen mathematics whe
 every later PR. Maintained live CI now checks current statistical and family sources and invokes
 the complete historical PR #10 runner only at its pinned merge. Negative controls retain failures
 for protected-source/result mutation, an intentionally failing live mathematical check, and a
-missing or malformed historical replay. See the [repair record](verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md).
+missing or malformed historical replay. See the [repair record](../../../verification/statistical_decision_bridge/ACCEPTANCE_HARDENING.md).
 
 ## Controlled multistream collection and checked static decisions — 7 September 2026
 
