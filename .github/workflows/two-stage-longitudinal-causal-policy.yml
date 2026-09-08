@@ -37,4 +37,9 @@ jobs:
       - name: Run current longitudinal causal and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/longitudinal_causal_policy/run_checks.py
+        run: |
+          if [ -f verification/sequential_consistency/acceptance.py ]; then
+            python3 verification/sequential_consistency/acceptance.py --causal --verify-retained
+          else
+            python3 verification/longitudinal_causal_policy/run_checks.py
+          fi
