@@ -2,12 +2,10 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #19
-(`0289a1660b21d86af3a897bb74270f562cb64dc9`). Two-stage longitudinal causal-policy
-identification and the full-support bridge to Bellman's completed sequential subject are the active
-bounded result under review. PR #19's finite one-stage causal construction, PR #17's unsafe-set
-construction, the prior sequential/statistical chain, and all historical/versioned evidence remain
-intact.
+**Current snapshot:** 8 September 2026, new bounded strategic component based on merged PR #20
+(`cea4e1a47cb91c1f3917490350deab53d2976908`). The causal kernel-fibre work published
+separately as unmerged PR #21 is not assumed or modified here. Existing historical evidence is
+preserved. The new strategic result is a research reference awaiting independent review.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -86,6 +84,26 @@ optimization; plural objectives; strategic actors; and selected formal verificat
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
+
+### New integrated component — assessed sequential credibility
+
+The [sequential credibility companion](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md)
+connects all four strategic directions through one query: continuation deviation gains under
+uncertainty, with selective evidence, explicit remembered information, and bond/monitoring rules.
+The exact reference checks one supplied profile across a finite persistent game family and all
+information sets. On-path beliefs obey Bayes; off-path beliefs remain supplied. A pass is
+**assessment-relative sequential rationality**, not a sequential-equilibrium or empirical claim.
+
+The first fixture covers 63 nodes, 20 information sets and four models. Analytic results give pure
+continuation sufficiency, exact finite checking, a deviation-covering 2-delta transfer bound,
+model-restriction monotonicity, and a restricted on-path continuous corner criterion. The generic
+continuous criterion is not implemented. General compression, mechanism search and causal-to-game
+identification remain unsupported. The next gate is off-path consistency or a specifically checked
+continuous on-path warrant, selected by an actual query rather than expansion of the fixture.
+
+The following inherited causal frontier description is retained as context from the base edition;
+it is not a claim that this strategic component implements a causal bridge.
+
 
 ### ACTIVE RESULT — Two-stage longitudinal causal policy and sequential bridge
 

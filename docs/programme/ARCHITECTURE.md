@@ -300,3 +300,17 @@ Examples:
 - If a domain case reveals that the current subject omits information, causality, constraints, strategic behavior, or authority needed for the decision, revise the mathematical problem rather than hiding those omissions in metadata.
 
 Repository boundaries are implementation conveniences, not doctrine. The long-run target is an interoperable substrate in which stable Bellman mathematics can be executed, checked, revised, and accumulated through Writ.
+
+## 8. Assessed strategic credibility research boundary (8 September 2026)
+
+The [new component](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md) is a bounded
+research reference (M1 candidate), not a Writ adapter. Its subject contains an explicit information
+partition, a single model-independent strategy profile, and modelwise assessments. A receiver
+checks exact conditional continuation gains and on-path Bayes consistency. Off-path limiting
+consistency is not certified. No empirical credibility or authority to act follows.
+
+A source/provenance record affects this game only through an explicit modelling change to available
+evidence, information, actions, transitions, payoffs or assessments. A hash change is a revalidation
+trigger, not a strategic theorem. The 2-delta transfer lemma requires coverage of original deviations;
+renaming checks do not establish general history compression. Causal-kernel outputs cannot be used
+as strategic response laws without an additional warranted mapping.

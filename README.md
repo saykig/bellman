@@ -16,6 +16,8 @@ The [Programme Roadmap](docs/programme/ROADMAP.md) is the living capability map:
 
 The [Bellman–Writ Mathematical Transfer Architecture](docs/programme/ARCHITECTURE.md) records how mathematical results move from Bellman into bounded computation, checking, Writ provenance/revision infrastructure, and eventually domain stress tests. These are living steering documents; they do not supersede frozen mathematical artifacts or evidence.
 
+The new [sequential credibility component](foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md) combines model uncertainty, private evidence, a bond and monitoring in one bounded game. Its [exact reference](verification/sequential_credibility/README.md) checks supplied assessment-relative continuation incentives; it does not establish sequential equilibrium or empirical credibility. This research package is separate from the causal build.
+
 ## Working mathematical foundation
 
 [Mathematical Substrate v1.1](foundations/BELLMAN_WRIT_MATHEMATICAL_SUBSTRATE_V1_1.md) is a working seven-component foundation, **not finished Bellman mathematics**. The [completed initial build-out](foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md) develops constructive procedures, deeper composition, and scoped extensions. Its frozen status preserves the delivered draft's bytes; it does not confer independent formal verification or final mathematical acceptance.
