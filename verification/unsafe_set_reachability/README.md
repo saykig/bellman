@@ -42,6 +42,10 @@ prerequisite identities, verifies base preservation and affected Markdown links,
 normal/optimized results. `results.json` is the compact source-bound result record; it does not
 rewrite prior evidence.
 
+The merged PR #16 workflow delegates to this downstream aggregate when this package is present;
+this workflow also watches the PR #16 package and companion. That keeps one live aggregate owner
+while the unchanged PR #16 runner continues to replay at its exact merge as historical evidence.
+
 The result is conditional mathematics. Statistical IID/completeness premises, empirical model
 validity, and normative adequacy of the unsafe set are supplied rather than established. It makes
 no randomized-policy, CVaR, dynamic-risk, authority, Writ/Decision Lab, language-migration, or

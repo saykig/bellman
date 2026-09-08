@@ -28,4 +28,9 @@ jobs:
       - name: Run current composition and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/statistical_corner_models/run_checks.py
+        run: |
+          if [ -f verification/unsafe_set_reachability/run_checks.py ]; then
+            echo "Delegated to the downstream unsafe-set-reachability aggregate workflow."
+            exit 0
+          fi
+          python3 verification/statistical_corner_models/run_checks.py

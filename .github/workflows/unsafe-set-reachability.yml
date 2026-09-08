@@ -5,6 +5,8 @@ on:
     paths:
       - "verification/unsafe_set_reachability/**"
       - "foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md"
+      - "verification/statistical_corner_models/**"
+      - "foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md"
       - ".github/workflows/unsafe-set-reachability.yml"
       - ".github/workflows/statistical-corner-models.yml"
       - "README.md"
