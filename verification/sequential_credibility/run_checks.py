@@ -19,7 +19,10 @@ def run():
         result=json.loads((HERE/'results.json').read_text())
         for rel,wanted in result['source_files'].items():
             require(sha(ROOT/rel)==wanted,'retained source changed: '+rel)
-        require(receive(json.loads((HERE/'example_subject.json').read_text()),json.loads((HERE/'example_certificate.json').read_text()))['status']=='assessment-relative-pass','retained receiving')
+            committed=subprocess.run(['git','show',result['source_commit']+':'+rel],cwd=ROOT,capture_output=True,check=True).stdout
+            require(sha256(committed).hexdigest()==wanted,'source commit mismatch: '+rel)
+        received=receive(json.loads((HERE/'example_subject.json').read_text()),json.loads((HERE/'example_certificate.json').read_text()))
+        require(received==result['checks']['positive'],'retained example does not match recorded query')
     outputs=[]
     for flags in ([],['-O']):
         r=subprocess.run([sys.executable,*flags,str(HERE/'checks.py')],capture_output=True,text=True,check=True)
