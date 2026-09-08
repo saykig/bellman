@@ -1,0 +1,37 @@
+name: statistical-corner-models
+
+on:
+  pull_request:
+    paths:
+      - "verification/statistical_corner_models/**"
+      - "foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md"
+      - ".github/workflows/statistical-corner-models.yml"
+      - ".github/workflows/statistical-decision-bridge.yml"
+      - ".github/workflows/family-replanning.yml"
+      - "README.md"
+      - "docs/programme/**"
+      - "docs/history/records/FINDINGS_LEDGER.md"
+      - "docs/history/records/SUBSTRATE_LEDGER.md"
+  push:
+    branches:
+      - codex/statistical-corner-model-guarantees
+
+permissions:
+  contents: read
+
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run current composition and pinned historical acceptance
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 verification/statistical_corner_models/run_checks.py

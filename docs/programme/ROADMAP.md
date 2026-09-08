@@ -2,10 +2,11 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 7 September 2026, synchronized with latest `main` after PR #15
-(`fc45c4fff0f2958450f7073b46b67b92cb306bb3`) while the controlled multistream construction and its
-bounded acceptance repair remain under review. PR #13's programme/history organization and PR #15's
-versioned historical releases remain intact.
+**Current snapshot:** 7 September 2026, based on latest `main` after reviewed PR #14
+(`6c9cec616358cce6e492c84f16d440f60b7d6124`). The bounded statistical-rectangle to sequential
+corner-family composition is the active result under review. PR #13's programme/history
+organization, PR #14's multistream evidence, and PR #15's versioned historical releases remain
+intact.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -31,8 +32,8 @@ was lost. The earlier wording remains preserved in Git history.
 ### First finite executable chain
 
 The bounded chain from exact model compatibility through sequential guarantees, persistent-model
-uncertainty, and one complete family-aware continuation splice now has explicit mathematical
-constructions and exact reference checks.
+uncertainty, one complete family-aware continuation splice, and the first admissible statistical-
+rectangle composition now has explicit mathematical constructions and exact reference checks.
 
 Earned so far:
 
@@ -44,6 +45,8 @@ Earned so far:
 6. one implementable policy across persistent whole-episode model families;
 7. explicit support-filtered continuation without hidden model switching or fabricated model weights;
 8. a complete single-cut family-aware replanning certificate with separate root-cap and exact-policy-change warrants.
+9. an exact bridge from an admissible two-parameter statistical rectangle to persistent sequential
+   corner models for whole-policy deterministic loss and regret.
 
 ### Wider Bellman mathematical programme
 
@@ -65,31 +68,29 @@ formal verification.
 | Persistent model families | HARDENED | [`BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md`](../../foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md) | One accessible policy is evaluated across alternative whole-episode models; loss, regret, model identity, support, and criteria remain distinct. |
 | Family-aware replanning and root guarantees | HARDENED | [`BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md`](../../foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md) | One complete continuation splice produces checked modelwise certificates; conditional preference, cap preservation, and exact policy change remain separate. |
 | Anytime-valid Bernoulli data-to-decision bridge | HARDENED | [`BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md`](../../foundations/BELLMAN_ANYTIME_VALID_DATA_TO_DECISION.md) | One complete IID Bernoulli prefix yields checked all-time outward coverage and exact static decisions; PR #12 aligns producer/receiver support and historical replay. |
+| Controlled multistream collection | HARDENED | [`BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md`](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md) | Fixed-registry adaptive collection retains rowwise all-prefix coverage, exact simultaneous rectangles, and checked static affine decisions; PR #14 closes subject/revision acceptance findings. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### ACTIVE RESULT — Controlled multistream collection and checked static decisions
+### ACTIVE RESULT — Statistical rectangle to sequential corner-model guarantees
 
-PR #12 completed and acceptance-hardened the scalar Bernoulli bridge. The active section 5A result
-now asks:
+PR #14 completed and acceptance-hardened controlled multistream rectangles. The active section 5A
+result composes that earned statistical object with PR #8/PR #10 whole-policy semantics and asks:
 
-> Given a fixed finite registry of complete IID Bernoulli rows, what simultaneous uncertainty and
-> static affine-decision guarantees survive when a controlled collector adaptively chooses the
-> next registered stream and when to stop?
+> When can a checked statistical rectangle over uncertain transition parameters be replaced
+> exactly by a finite family of corner models for whole-policy expected cost, regret, and robust
+> deterministic policy selection?
 
-The [bounded construction](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md)
-replays a complete append-only transcript under built-in history-only rules, composes PR #12's
-rowwise all-prefix statements by a union bound without cross-row independence, and checks exact
-affine decisions on the retained rectangle. It is a research reference under review, not evidence
-that supplied rows are complete or IID, an outcome-filtering remedy, a posterior, an optimized
-bandit algorithm, a sequential planner, or an integrated Writ capability.
-
-The additive acceptance repair requires public allocation and affine-weight keys to cover the
-declared registry exactly before canonicalization and makes record/revision/predecessor lineage
-and identical-transcript stopping state part of revision disposition. It does not alter the theorem
-or begin another section 5A stage.
+The [bounded construction](../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md)
+proves fixed deterministic policy costs are multi-affine when each uncertain parameter occurs in
+at most one transition factor on every complete skeleton path. Expected-loss and modelwise-regret
+maxima then occur exactly at the rectangle corners, which are checked as one persistent family.
+The executable profile is limited to two parameters/four corners and explicitly rejects repeated
+same-path use through the exact `p(1-p)` counterexample. It is a research reference under review,
+not a posterior, generic sequential planner, empirical validation, randomized-policy result, or
+Writ/Decision Lab capability.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -113,6 +114,9 @@ Earned in the current reference:
   dependence consistent with each row's all-prefix premise;
 - simultaneous rectangular coverage at realized local counts without conditioning on those
   counts, plus exact signed affine decisions over the retained rectangle.
+- exact whole-policy expected-loss and modelwise-regret reduction from a checked rectangle to its
+  corner family under the pathwise multi-affine admissibility condition, with complete tiny
+  deterministic minimax-loss/minimax-regret comparison.
 
 Still needed when promised by a future capability:
 
@@ -121,7 +125,8 @@ Still needed when promised by a future capability:
 - arbitrary within-row dependence, drift, misspecification, and broader selection handling;
 - multivariate, channel-row, continuous, or structured model learning;
 - empirical model criticism and applicability review;
-- any justified composition into sequential control or PR #10 root guarantees.
+- sequential statistical composition when a parameter can reappear along one path, or when
+  parameter/corner growth requires an established optimization route instead of finite corners.
 
 Existing foundation: §10 of [`BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md`](../../foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md). The exact-binomial reference is a narrower constructive specialization; it does not replace the unchanged categorical Hoeffding theorem or implement a sharper modern confidence-sequence boundary.
 

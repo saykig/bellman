@@ -175,3 +175,23 @@ stopped when it keeps the record identity, uses a new revision, and binds the ex
 The [additive repair record](../../../verification/multistream_collection/STOP_STATE_HARDENING.md)
 preserves the theorem, original PR #14 result, first hardening evidence, PR #12 evidence, and
 release identities.
+
+## Statistical rectangles to sequential corner models — 7 September 2026
+
+For a fixed completed sequential skeleton with parameter-independent exact costs, a deterministic
+policy's whole-episode expected cost is multi-affine when each uncertain parameter occurs in at
+most one transition factor on every complete path. Coordinatewise interpolation then proves exact
+maximum and minimum reduction to rectangle corners. Finite maximization over an explicitly covered
+policy class gives the same exact corner reduction for modelwise regret and, for a complete tiny
+deterministic class, minimax expected loss and minimax regret. The positive two-parameter fixture
+maps a checked PR #14 rectangle to four completed persistent models; independent paths and a 289-
+point rational interior audit agree, while minimax loss selects `hold-hold` and minimax regret
+selects `hold-inspect`. The named policy's exact worst loss is
+`1877748889/2147483648` and worst regret is `457813145/2147483648`.
+
+The exact counterexample `p(1-p)` is zero at the corners of `[0,1]` but `1/4` at `1/2`; on
+`[1/4,3/4]` its two corner values are `3/16`. Repeated same-path parameter use therefore receives
+no corner-reduction warrant, although the sequential problem remains valid for another method.
+The statistical premises are supplied but not empirically validated, and coverage alpha, signed
+loss/regret, and enclosure precision are not combined. See the [mathematical companion](../../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md)
+and [bounded verification](../../../verification/statistical_corner_models/README.md).

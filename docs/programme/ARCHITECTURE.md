@@ -91,7 +91,8 @@ This table is intentionally conservative.
 | Persistent model-family certificates | M1–M2 | Research reference only. |
 | Family-aware replanning | M1–M2 | Bounded checked research reference; no general Writ integration. |
 | Anytime-valid Bernoulli data-to-decision bridge | M1 | Acceptance-hardened research reference; not implemented as Writ or Decision Lab semantics. |
-| Controlled fixed-registry multistream collection | M1 | Bounded checked research reference under review; public subject-binding and revision-lineage acceptance repaired, with no engineering adapter. |
+| Controlled fixed-registry multistream collection | M1 | Reviewed and acceptance-hardened bounded reference; no engineering adapter. |
+| Statistical rectangle to sequential corner models | M1 | Bounded checked composition under review; at most two parameters/four corners under a pathwise multi-affine warrant, with no engineering adapter. |
 | Statistical learning / coverage beyond the bounded Bernoulli profile | Foundation only | Outcome filtering, within-row dependence, drift, missingness, adaptive allocation and broader model learning are not implemented. |
 | Constraints / risk | Foundation only | Not implemented. |
 | Causal identification | Foundation only | Not implemented. |
@@ -99,9 +100,9 @@ This table is intentionally conservative.
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
 
-### Statistical and controlled-collection boundary
+### Statistical, controlled-collection, and corner-family boundary
 
-The bounded research references keep four interfaces separate:
+The bounded research references keep five interfaces separate:
 
 1. a fixed registry and complete append-only event transcript under explicit rowwise IID Bernoulli
    fixed-parameter premises and a built-in history-only rule;
@@ -109,6 +110,8 @@ The bounded research references keep four interfaces separate:
 3. a fixed-allocation union-bound certificate for simultaneous membership in the retained
    parameter rectangle;
 4. an exact static finite-action affine comparison conditional on membership in that rectangle.
+5. when explicitly requested, a separate pathwise multi-affine warrant and persistent family of
+   completed sequential corner models for whole-policy deterministic loss and regret.
 
 The controlled reference additionally binds registry order, distinct physical-event identities,
 global and local indices, rule/stopping state, revision lineage, fixed stream allocations, and
@@ -120,9 +123,18 @@ silently inferred for joint-event or conditional next-draw queries. A changed tr
 coverage specification gets a new claim; a changed loss table gets a new decision claim without
 pretending the same data are a fresh sample.
 
-This is an M1 research-reference result. No adapter, database record, Decision Lab build, or Writ
+These are M1 research-reference results. No adapter, database record, Decision Lab build, or Writ
 workflow is added here. Promotion would require a stable independent contract, concrete workflow,
 fresh checking, revision/applicability semantics, and the acceptance evidence in section 7.
+
+The fifth interface is not implied by rectangle validity. It additionally binds statistical-stream
+identities to transition-parameter identities, requires parameter-independent costs and a fixed
+completed skeleton, and checks that no parameter occurs in two transition factors on one complete
+path. Its corner subjects have no probabilities of their own. A repeated-parameter subject such as
+`p(1-p)` remains a valid sequential model but must use a different optimization method. Coverage
+failure probability, loss/regret quantities, and outward-enclosure precision remain distinct
+checked fields. Any changed data revision, mapping, transition law, loss table, policy class, or
+query creates a new composition claim rather than inheriting an earlier corner result.
 
 ## 5. Stable interface principles
 

@@ -2,6 +2,11 @@ name: family-replanning
 
 on:
   pull_request:
+    paths:
+      - "verification/family_replanning/**"
+      - "verification/persistent_model_families/**"
+      - "foundations/BELLMAN_FAMILY_REPLANNING_AND_ROOT_GUARANTEES.md"
+      - "foundations/BELLMAN_PERSISTENT_MODEL_FAMILY_CERTIFICATES.md"
   push:
     branches:
       - codex/family-aware-replanning
