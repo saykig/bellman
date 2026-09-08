@@ -10,7 +10,7 @@ import tempfile
 from fixtures import fixture, renamed
 from producer import produce, value
 from receiver import receive
-from subject import Invalid, digest, require, rational, validate
+from subject import Invalid, digest, require, rational, validate, reach
 
 HERE=Path(__file__).resolve().parent
 
@@ -31,6 +31,23 @@ def execute():
             if row['model']==name and row['info']=='disclose.good': check('A good participation',row['baseline']=='7/5')
             if row['model']==name and row['info']=='disclose.bad': check('A bad participation',row['baseline']=='0')
     facts['participation']={'A_good':'7/5','A_bad':'0','B_root':'1','outside_options':'0'}
+    mixed=deepcopy(s)
+    mixed['profile']['disclose.good']={'G':'1/2','N':'1/2'}
+    mixed['profile']['disclose.bad']={'B':'1/2','N':'1/2'}
+    groups=validate(s)
+    for m in mixed['models'].values():
+        r=reach(mixed,m)
+        for I,x in groups.items():
+            total=sum(r[v] for v in x['nodes'])
+            if total: m['beliefs'][I]={v:str(r[v]/total) for v in x['nodes']}
+    mc=produce(mixed); receive(mixed,mc)
+    check('randomized continuation reduction',mc['max_gain']=='7/10')
+    check('nontrivial on-path posterior',set(mixed['models']['g=1,p=1/2']['beliefs']['receive.N.zero'].values())=={'1/2'})
+    wrong=deepcopy(mixed)
+    wrong['models']['g=1,p=1/2']['beliefs']['receive.N.zero']={'receive.good.N.zero':'1','receive.bad.N.zero':'0'}
+    wrongc=deepcopy(mc); wrongc['subject_sha256']=digest(wrong)
+    reject('normalized but non-Bayesian on-path belief',wrong,wrongc)
+    facts['mixed_profile']={'max_gain':mc['max_gain'],'on_path_hidden_type_posterior':['1/2','1/2']}
     weak=fixture(bond=5); wc=produce(weak); receive(weak,wc)
     check('bond weakness',wc['max_gain']=='1/2' and wc['status']=='profitable-deviation')
     facts['weak_bond']={'max_gain':wc['max_gain'],'witness':next(r for r in wc['rows'] if r['gain']=='1/2')}
@@ -80,6 +97,7 @@ def execute():
     def subject_mutation(label,change):
         q=deepcopy(s); change(q); cert=deepcopy(c); cert['subject_sha256']=digest(q); reject(label,q,cert)
     subject_mutation('on-path false posterior',lambda q:q['models']['g=1,p=1/2']['beliefs']['disclose.good'].update({'disclose.good':'0'}))
+    subject_mutation('empty model family',lambda q:q['models'].clear())
     subject_mutation('chance not normalized',lambda q:q['models']['g=1,p=1/2']['chance']['root'].update({'good':'3/4'}))
     subject_mutation('noncanonical rational',lambda q:q['profile']['disclose.good'].update({'G':'1.0'}))
     subject_mutation('profile omits information set',lambda q:q['profile'].pop('disclose.bad'))
