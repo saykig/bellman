@@ -2,7 +2,10 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 7 September 2026, synchronized with `main` after PR #13 (`1404949753038d09fa76890ecd01b331dda18d88`) while the controlled multistream construction and its bounded acceptance repair remain under review.
+**Current snapshot:** 7 September 2026, synchronized with latest `main` after PR #15
+(`fc45c4fff0f2958450f7073b46b67b92cb306bb3`) while the controlled multistream construction and its
+bounded acceptance repair remain under review. PR #13's programme/history organization and PR #15's
+versioned historical releases remain intact.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 

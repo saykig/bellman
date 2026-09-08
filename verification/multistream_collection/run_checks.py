@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-CURRENT_MAIN = "1404949753038d09fa76890ecd01b331dda18d88"
+CURRENT_MAIN = "fc45c4fff0f2958450f7073b46b67b92cb306bb3"
 REVIEWED_PR14 = "f3d609b9b2b6aa10c283737cf04a0df58a6c948c"
 ORIGINAL_PR14_BASE = "92922ab6604840152ad7f7800969673335748272"
 ORIGINAL_PR14_SOURCE = "fdf83a0b2f3b31331ed894fa0d0aeeffea07db00"
@@ -295,7 +295,7 @@ def run():
         history_runs.append(parse_marked_json(
             output, "HISTORY_MIGRATION_RESULT_BEGIN", "HISTORY_MIGRATION_RESULT_END"))
     need(history_runs[0] == history_runs[1] and history_runs[0]["failed"] == 0,
-         "current PR13 history migration checks differ or failed")
+         "current history migration/version checks differ or failed")
 
     historical_started = time.perf_counter()
     with tempfile.TemporaryDirectory() as temporary:

@@ -4,7 +4,7 @@
 
 Reviewed pre-repair head: `f3d609b9b2b6aa10c283737cf04a0df58a6c948c`.
 Original PR base: `92922ab6604840152ad7f7800969673335748272`.
-Synchronization target: main after PR #13, `1404949753038d09fa76890ecd01b331dda18d88`.
+Synchronization target: latest main after PR #15, `fc45c4fff0f2958450f7073b46b67b92cb306bb3`.
 
 The [mathematical companion](../../foundations/BELLMAN_MULTISTREAM_COLLECTION_AND_DECISIONS.md)
 and original [`results.json`](results.json) remain byte-identical. The reviewed coverage theorem,
@@ -75,11 +75,12 @@ The repaired classification order is:
 This classifier records a provenance disposition. It does not validate physical sampling or make
 a corrected/retroselected history valid.
 
-## 2. PR #13 synchronization and history layout
+## 2. Current-main synchronization and history layout
 
 Current main was merged into the existing PR branch without rewriting history. PR #13's current
-`AGENTS.md`, history release notes/manifests, migration classification, and canonical
-`docs/history/records/` layout were retained. The two PR #14 ledger additions moved to
+`AGENTS.md`, migration classification, and canonical `docs/history/records/` layout were retained.
+PR #15's versioned release notes, manifest, and lightweight-tag checks were then retained when it
+became the latest main. The two PR #14 ledger additions moved to
 [`FINDINGS_LEDGER.md`](../../docs/history/records/FINDINGS_LEDGER.md) and
 [`SUBSTRATE_LEDGER.md`](../../docs/history/records/SUBSTRATE_LEDGER.md), with only the required
 relative-link repairs. The obsolete root ledger paths remain absent.
@@ -90,8 +91,9 @@ as append-only after that frozen transformed prefix; the other two moved records
 byte-identical. This prevents a valid current history append from being mistaken for corruption
 without weakening the migration identity.
 
-No GitHub Release is created. This repair is not a newly accepted research-state transition and
-does not warrant a release note under the current repository policy.
+This repair creates no GitHub Release and does not alter PR #15's published prereleases. It is not
+a newly accepted research-state transition and does not warrant a release note under the current
+repository policy.
 
 ## 3. Frozen evidence and acceptance routes
 
@@ -112,7 +114,7 @@ The maintained runner executes, normally and with `-O`:
 - the unchanged M1–M8 multistream checks against the repaired reference;
 - the constructor/revision controls R1–R3;
 - current family-replanning and persistent-family preservation checks;
-- PR #13 history migration/release checks.
+- current PR #13 migration and PR #15 version/release checks.
 
 It also runs the unchanged PR #12 acceptance program at exact repaired head
 `5017122500450c8f7f890474f7232b9c94d3a3fb` in a disposable clone whose `origin/main` is bound to

@@ -162,5 +162,5 @@ canonicalization, while complete reordered inputs remain supported. Revision cla
 requires unchanged record/revision/predecessor lineage for ordinary recalculation and the same
 record, new revision, and exact predecessor digest for append-only extension. The valid theorem,
 M1–M8 values, and original hosted result remain unchanged. The branch is synchronized with PR
-#13's canonical history layout; detailed repair evidence is in the
-[acceptance record](../../../verification/multistream_collection/ACCEPTANCE_HARDENING.md).
+#13's canonical history layout and PR #15's versioned-release state; detailed repair evidence is in
+the [acceptance record](../../../verification/multistream_collection/ACCEPTANCE_HARDENING.md).
