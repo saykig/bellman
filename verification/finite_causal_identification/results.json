@@ -1,9 +1,9 @@
 {
   "status": "passed",
   "failed": 0,
-  "base_commit": "0f8a7e2dc1e420d9ba26c993632c1ec690e1a804",
+  "base_commit": "cde8bf0997fc2924fee576d9e868b237d587b237",
   "reviewed_pr17_head": "afad4c594efdef1c0abc05376464f4325efd24f0",
-  "executed_source_commit": "31f4e27a183dcf9e8413c68423a05e2f370d0120",
+  "executed_source_commit": "a9a68ab6ddb8bd5beb1b6bc31604bdc668738a61",
   "execution": "local",
   "runtime": "3.9.6",
   "modes": [
@@ -105,7 +105,7 @@
   "preservation": {
     "pr17_merged_before_start": true,
     "pr17_merge_tree_matches_reviewed_head": true,
-    "base_files_checked": 133,
+    "base_files_checked": 134,
     "historical_pr17_runner": "passed-at-exact-merge",
     "historical_pr16_runner": "passed-at-exact-merge",
     "historical_pr14_runner": "passed-at-exact-merge",
@@ -129,12 +129,12 @@
     "docs/history/records/FINDINGS_LEDGER.md": "71f40f262b0093b467f3c1c45197b34648bfe7dffbdf264fa85018c804171d37",
     "docs/history/records/SUBSTRATE_LEDGER.md": "a65b5635a75291f36035d1a186a6bfdb6309ad7f48ded7171c5ccf22d08d9d08",
     "docs/programme/ARCHITECTURE.md": "676fc3ca314a3c47091677c53b897814c661fc369702719b3e6012b0e06e4b60",
-    "docs/programme/ROADMAP.md": "8917bb9f1dd1aea3ea9289d9b1442950f0274123cd437702a54e556bb304b1fd",
+    "docs/programme/ROADMAP.md": "1ace4410292c9cf229f0c80838ebe58a3873495f619774b6b6c392be7d189d2a",
     "foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md": "e543bed5725932678f9134e5f658de32f72c8a508b799b9e5588585b98ece4ee",
     "verification/finite_causal_identification/README.md": "1fd0cd50c8bc61ba84bc6fb586c24da241ce4c80c17f7cf7b4e3d45bb7f13da9",
     "verification/finite_causal_identification/checks.py": "e724b21ae24faf03c0597748f0bdb54c77ffe53f68e8b417f714f8b6f053088d",
     "verification/finite_causal_identification/reference.py": "48bd592dc5be1c403e9ce64178ad977185e6cb8c5f637dd30a13147263574a1f",
-    "verification/finite_causal_identification/run_checks.py": "3b54ca3ee6d39e8c689aaf5e9edb842e013e705d1440eb94a30440aedddd1aef"
+    "verification/finite_causal_identification/run_checks.py": "a0f603540526c1bc830f8977df68ef383fb51ff1a49bbcc5698cc71974306aa9"
   },
   "frozen_prerequisite_sha256": {
     "foundations/BELLMAN_NEXT_MATHEMATICAL_BUILDOUT.md": "af631b49c3e411c57dbbc7baa145bdcc337e26f0ac2eebf7fa508ba840111a2e",
