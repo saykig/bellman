@@ -104,6 +104,32 @@
       "v0.0.6"
     ]
   },
+  "github_actions": {
+    "push_aggregate": {
+      "run_id": 34187100180,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187100180"
+    },
+    "pull_request_aggregate": {
+      "run_id": 34187103447,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187103447"
+    },
+    "pull_request_pr16_delegation": {
+      "run_id": 34187103578,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187103578"
+    },
+    "pull_request_history": {
+      "run_id": 34187103453,
+      "head_commit": "645c7dcf521dfe85268586f542518b31e7926370",
+      "conclusion": "success",
+      "url": "https://github.com/saykig/bellman/actions/runs/34187103453"
+    }
+  },
   "source_sha256": {
     ".github/workflows/statistical-corner-models.yml": "bb33585211b165665700eabb3ea68b1d99cbe47f6ca291600079cc37c20a313b",
     ".github/workflows/unsafe-set-reachability.yml": "49ed22502b127e3160a3e70d3472a956412e853306d6938e44f004114df502bb",
