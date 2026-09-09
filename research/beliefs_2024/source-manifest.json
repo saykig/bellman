@@ -1,0 +1,27 @@
+{
+  "schema": "bellman.afy2024.sources.v1",
+  "acquired": "2026-09-09",
+  "baseline": "349cc42b11a0cd85ba95523ea530bf80fd93e596",
+  "sources": [
+    {
+      "name": "Aoyagi_2024a.pdf",
+      "url": "https://gfrechette.com/print/Aoyagi_2024a.pdf",
+      "bytes": 677864,
+      "sha256": "d9a59ad0f76e6ee6fe48fdd3a8ce07a91d55931ea94a579938c3278ca4735946"
+    },
+    {
+      "name": "Aoyagi_2024a_oa.pdf",
+      "url": "https://gfrechette.com/print/Aoyagi_2024a_oa.pdf",
+      "bytes": 1897111,
+      "sha256": "48351b0e90ede492c7ced56de72155cfa6d966f798e5345306a614e48693fd0d"
+    },
+    {
+      "name": "Aoyagi_2024a_data.txt",
+      "url": "https://gfrechette.com/data/Aoyagi_2024a_data.txt",
+      "bytes": 2104931,
+      "sha256": "fbb9136eaaa6b56e66201f57379bd3891f72d80a91cf34c43d76213287abf8a3"
+    }
+  ],
+  "archive_author_byte_identity": "unverified",
+  "raw_redistributed": false
+}
