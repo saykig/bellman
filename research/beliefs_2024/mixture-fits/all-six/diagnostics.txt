@@ -1,0 +1,18 @@
+List of 8
+ $ shares     : num [1, 1:6] 0.127 0.0478 0.1435 0.385 0.1542 ...
+  ..- attr(*, "dimnames")=List of 2
+  .. ..$ : chr "share"
+  .. ..$ : chr [1:6] "AD" "AC" "GRIM" "TFT" ...
+ $ trembles   : num [1:12, 1] 0.0695 0.0695 0.0695 0.0695 0.0695 ...
+  ..- attr(*, "dimnames")=List of 2
+  .. ..$ : chr [1:12] "AD" "AC" "GRIM.1" "GRIM.2" ...
+  .. ..$ : chr "tremble"
+ $ loglike    : num -1545
+ $ num.ids    : int 144
+ $ num.obs    : int 5552
+ $ eval       : num 17
+ $ tol.val    : num 3.16e-11
+ $ convergence: num [1, 1:4] 9.60e-15 NA 3.94e-12 NA
+  ..- attr(*, "dimnames")=List of 2
+  .. ..$ : chr "max.abs.score"
+  .. ..$ : chr [1:4] "shares" "probs" "trembles" "coefficients"

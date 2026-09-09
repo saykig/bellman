@@ -1,0 +1,2546 @@
+{
+  "schema": "bellman.afy2024.reconstruction.v1",
+  "specification_commit": "4abea07",
+  "rows": 55724,
+  "participants": 556,
+  "sessions": [
+    {
+      "treatment": 1,
+      "session": 5,
+      "people": 20,
+      "supergames": 12,
+      "rows": 1920
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "people": 20,
+      "supergames": 12,
+      "rows": 1920
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "people": 20,
+      "supergames": 13,
+      "rows": 2080
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "people": 20,
+      "supergames": 11,
+      "rows": 1760
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "people": 20,
+      "supergames": 13,
+      "rows": 2080
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "people": 20,
+      "supergames": 13,
+      "rows": 2080
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "people": 18,
+      "supergames": 12,
+      "rows": 1728
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "people": 20,
+      "supergames": 12,
+      "rows": 1920
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "people": 20,
+      "supergames": 10,
+      "rows": 2240
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "people": 20,
+      "supergames": 9,
+      "rows": 2100
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "people": 18,
+      "supergames": 7,
+      "rows": 1620
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "people": 16,
+      "supergames": 8,
+      "rows": 1536
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "people": 14,
+      "supergames": 12,
+      "rows": 1666
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "people": 18,
+      "supergames": 6,
+      "rows": 1692
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "people": 18,
+      "supergames": 10,
+      "rows": 1962
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "people": 20,
+      "supergames": 9,
+      "rows": 1620
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "people": 16,
+      "supergames": 7,
+      "rows": 1232
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "people": 16,
+      "supergames": 8,
+      "rows": 1552
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "people": 16,
+      "supergames": 8,
+      "rows": 1648
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "people": 16,
+      "supergames": 8,
+      "rows": 1536
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "people": 16,
+      "supergames": 12,
+      "rows": 1904
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "people": 16,
+      "supergames": 8,
+      "rows": 2032
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "people": 16,
+      "supergames": 11,
+      "rows": 2272
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "people": 14,
+      "supergames": 11,
+      "rows": 1400
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "people": 16,
+      "supergames": 8,
+      "rows": 1360
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "people": 16,
+      "supergames": 8,
+      "rows": 1552
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "people": 16,
+      "supergames": 7,
+      "rows": 1440
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "people": 16,
+      "supergames": 6,
+      "rows": 1280
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "people": 16,
+      "supergames": 10,
+      "rows": 1616
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "people": 16,
+      "supergames": 6,
+      "rows": 1504
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "people": 16,
+      "supergames": 10,
+      "rows": 1744
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "people": 16,
+      "supergames": 12,
+      "rows": 1728
+    }
+  ],
+  "late_first_eight_pooled_rounds": [
+    {
+      "treatment": 1,
+      "round": 1,
+      "coop": 0.8333333333333334,
+      "belief": 0.7864767932489451,
+      "rows": 474,
+      "belief_minus_coop": -0.04685654008438822
+    },
+    {
+      "treatment": 1,
+      "round": 2,
+      "coop": 0.7362869198312236,
+      "belief": 0.6928059071729957,
+      "rows": 474,
+      "belief_minus_coop": -0.0434810126582279
+    },
+    {
+      "treatment": 1,
+      "round": 3,
+      "coop": 0.7194092827004219,
+      "belief": 0.6756962025316455,
+      "rows": 474,
+      "belief_minus_coop": -0.0437130801687764
+    },
+    {
+      "treatment": 1,
+      "round": 4,
+      "coop": 0.6835443037974683,
+      "belief": 0.680379746835443,
+      "rows": 474,
+      "belief_minus_coop": -0.0031645569620253333
+    },
+    {
+      "treatment": 1,
+      "round": 5,
+      "coop": 0.6877637130801688,
+      "belief": 0.6712025316455695,
+      "rows": 474,
+      "belief_minus_coop": -0.01656118143459928
+    },
+    {
+      "treatment": 1,
+      "round": 6,
+      "coop": 0.609704641350211,
+      "belief": 0.6226793248945147,
+      "rows": 474,
+      "belief_minus_coop": 0.012974683544303756
+    },
+    {
+      "treatment": 1,
+      "round": 7,
+      "coop": 0.33755274261603374,
+      "belief": 0.4327004219409283,
+      "rows": 474,
+      "belief_minus_coop": 0.09514767932489454
+    },
+    {
+      "treatment": 1,
+      "round": 8,
+      "coop": 0.16244725738396623,
+      "belief": 0.1930801687763713,
+      "rows": 474,
+      "belief_minus_coop": 0.030632911392405066
+    },
+    {
+      "treatment": 2,
+      "round": 1,
+      "coop": 0.8544973544973545,
+      "belief": 0.7456349206349207,
+      "rows": 378,
+      "belief_minus_coop": -0.10886243386243388
+    },
+    {
+      "treatment": 2,
+      "round": 2,
+      "coop": 0.8121693121693122,
+      "belief": 0.7542592592592593,
+      "rows": 378,
+      "belief_minus_coop": -0.05791005291005291
+    },
+    {
+      "treatment": 2,
+      "round": 3,
+      "coop": 0.7751322751322751,
+      "belief": 0.7554232804232804,
+      "rows": 378,
+      "belief_minus_coop": -0.019708994708994676
+    },
+    {
+      "treatment": 2,
+      "round": 4,
+      "coop": 0.7513227513227513,
+      "belief": 0.7457936507936509,
+      "rows": 378,
+      "belief_minus_coop": -0.005529100529100384
+    },
+    {
+      "treatment": 2,
+      "round": 5,
+      "coop": 0.7486772486772487,
+      "belief": 0.7425925925925926,
+      "rows": 378,
+      "belief_minus_coop": -0.006084656084656137
+    },
+    {
+      "treatment": 2,
+      "round": 6,
+      "coop": 0.7380952380952381,
+      "belief": 0.7422486772486773,
+      "rows": 378,
+      "belief_minus_coop": 0.004153439153439131
+    },
+    {
+      "treatment": 2,
+      "round": 7,
+      "coop": 0.7301587301587301,
+      "belief": 0.7388624338624339,
+      "rows": 378,
+      "belief_minus_coop": 0.008703703703703769
+    },
+    {
+      "treatment": 2,
+      "round": 8,
+      "coop": 0.6957671957671958,
+      "belief": 0.7071164021164021,
+      "rows": 378,
+      "belief_minus_coop": 0.011349206349206331
+    },
+    {
+      "treatment": 3,
+      "round": 1,
+      "coop": 0.8333333333333334,
+      "belief": 0.6579999999999999,
+      "rows": 330,
+      "belief_minus_coop": -0.17533333333333345
+    },
+    {
+      "treatment": 3,
+      "round": 2,
+      "coop": 0.7878787878787878,
+      "belief": 0.7064545454545454,
+      "rows": 330,
+      "belief_minus_coop": -0.0814242424242424
+    },
+    {
+      "treatment": 3,
+      "round": 3,
+      "coop": 0.7363636363636363,
+      "belief": 0.7261212121212122,
+      "rows": 330,
+      "belief_minus_coop": -0.010242424242424164
+    },
+    {
+      "treatment": 3,
+      "round": 4,
+      "coop": 0.7121212121212122,
+      "belief": 0.6772727272727272,
+      "rows": 330,
+      "belief_minus_coop": -0.034848484848484906
+    },
+    {
+      "treatment": 3,
+      "round": 5,
+      "coop": 0.7151515151515152,
+      "belief": 0.6804545454545455,
+      "rows": 330,
+      "belief_minus_coop": -0.03469696969696967
+    },
+    {
+      "treatment": 3,
+      "round": 6,
+      "coop": 0.6636363636363637,
+      "belief": 0.6736060606060605,
+      "rows": 330,
+      "belief_minus_coop": 0.00996969696969685
+    },
+    {
+      "treatment": 3,
+      "round": 7,
+      "coop": 0.6303030303030303,
+      "belief": 0.6358484848484849,
+      "rows": 330,
+      "belief_minus_coop": 0.005545454545454631
+    },
+    {
+      "treatment": 3,
+      "round": 8,
+      "coop": 0.6181818181818182,
+      "belief": 0.5967878787878788,
+      "rows": 330,
+      "belief_minus_coop": -0.02139393939393941
+    },
+    {
+      "treatment": 4,
+      "round": 1,
+      "coop": 0.50390625,
+      "belief": 0.367734375,
+      "rows": 256,
+      "belief_minus_coop": -0.136171875
+    },
+    {
+      "treatment": 4,
+      "round": 2,
+      "coop": 0.4921875,
+      "belief": 0.399140625,
+      "rows": 256,
+      "belief_minus_coop": -0.09304687499999997
+    },
+    {
+      "treatment": 4,
+      "round": 3,
+      "coop": 0.47265625,
+      "belief": 0.44937499999999997,
+      "rows": 256,
+      "belief_minus_coop": -0.02328125000000003
+    },
+    {
+      "treatment": 4,
+      "round": 4,
+      "coop": 0.4375,
+      "belief": 0.4246484375,
+      "rows": 256,
+      "belief_minus_coop": -0.012851562500000024
+    },
+    {
+      "treatment": 4,
+      "round": 5,
+      "coop": 0.39453125,
+      "belief": 0.413984375,
+      "rows": 256,
+      "belief_minus_coop": 0.019453125000000016
+    },
+    {
+      "treatment": 4,
+      "round": 6,
+      "coop": 0.40234375,
+      "belief": 0.397734375,
+      "rows": 256,
+      "belief_minus_coop": -0.004609375000000027
+    },
+    {
+      "treatment": 4,
+      "round": 7,
+      "coop": 0.41015625,
+      "belief": 0.3894140625,
+      "rows": 256,
+      "belief_minus_coop": -0.02074218750000001
+    },
+    {
+      "treatment": 4,
+      "round": 8,
+      "coop": 0.34375,
+      "belief": 0.370703125,
+      "rows": 256,
+      "belief_minus_coop": 0.026953125000000022
+    }
+  ],
+  "late_first_eight_session_rounds": [
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 1,
+      "coop": 0.7833333333333333,
+      "belief": 0.784,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 2,
+      "coop": 0.6,
+      "belief": 0.6318333333333332,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 3,
+      "coop": 0.5833333333333334,
+      "belief": 0.5583333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 4,
+      "coop": 0.6,
+      "belief": 0.5851666666666666,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 5,
+      "coop": 0.5833333333333334,
+      "belief": 0.5853333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 6,
+      "coop": 0.48333333333333334,
+      "belief": 0.5545000000000001,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 7,
+      "coop": 0.23333333333333334,
+      "belief": 0.3175,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 5,
+      "round": 8,
+      "coop": 0.15,
+      "belief": 0.15466666666666665,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 1,
+      "coop": 0.9333333333333333,
+      "belief": 0.9331666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 2,
+      "coop": 0.9166666666666666,
+      "belief": 0.8738333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 3,
+      "coop": 0.9333333333333333,
+      "belief": 0.8958333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 4,
+      "coop": 0.8666666666666667,
+      "belief": 0.8818333333333332,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 5,
+      "coop": 0.9166666666666666,
+      "belief": 0.8488333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 6,
+      "coop": 0.7666666666666667,
+      "belief": 0.8131666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 7,
+      "coop": 0.3,
+      "belief": 0.47716666666666663,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 6,
+      "round": 8,
+      "coop": 0.15,
+      "belief": 0.16433333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 1,
+      "coop": 0.8833333333333333,
+      "belief": 0.8355,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 2,
+      "coop": 0.7166666666666667,
+      "belief": 0.7230000000000001,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 3,
+      "coop": 0.6666666666666666,
+      "belief": 0.6165,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 4,
+      "coop": 0.6833333333333333,
+      "belief": 0.629,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 5,
+      "coop": 0.65,
+      "belief": 0.6391666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 6,
+      "coop": 0.5,
+      "belief": 0.5228333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 7,
+      "coop": 0.06666666666666667,
+      "belief": 0.13766666666666666,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 7,
+      "round": 8,
+      "coop": 0.03333333333333333,
+      "belief": 0.04083333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 1,
+      "coop": 0.7666666666666667,
+      "belief": 0.6773333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 2,
+      "coop": 0.65,
+      "belief": 0.5295,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 3,
+      "coop": 0.5833333333333334,
+      "belief": 0.5690000000000001,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 4,
+      "coop": 0.55,
+      "belief": 0.5383333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 5,
+      "coop": 0.5666666666666667,
+      "belief": 0.551,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 6,
+      "coop": 0.5833333333333334,
+      "belief": 0.5348333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 7,
+      "coop": 0.4,
+      "belief": 0.5263333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 8,
+      "round": 8,
+      "coop": 0.13333333333333333,
+      "belief": 0.22416666666666665,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 1,
+      "coop": 0.8333333333333334,
+      "belief": 0.782,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 2,
+      "coop": 0.7666666666666667,
+      "belief": 0.7686666666666666,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 3,
+      "coop": 0.7833333333333333,
+      "belief": 0.6971666666666666,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 4,
+      "coop": 0.6666666666666666,
+      "belief": 0.7428333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 5,
+      "coop": 0.6833333333333333,
+      "belief": 0.666,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 6,
+      "coop": 0.6666666666666666,
+      "belief": 0.6010000000000001,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 7,
+      "coop": 0.48333333333333334,
+      "belief": 0.5328333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 9,
+      "round": 8,
+      "coop": 0.3,
+      "belief": 0.26633333333333337,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 1,
+      "coop": 0.8166666666666667,
+      "belief": 0.8168333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 2,
+      "coop": 0.8333333333333334,
+      "belief": 0.6933333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 3,
+      "coop": 0.8333333333333334,
+      "belief": 0.7736666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 4,
+      "coop": 0.7833333333333333,
+      "belief": 0.7698333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 5,
+      "coop": 0.7833333333333333,
+      "belief": 0.746,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 6,
+      "coop": 0.6,
+      "belief": 0.6905,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 7,
+      "coop": 0.26666666666666666,
+      "belief": 0.3035,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 12,
+      "round": 8,
+      "coop": 0.1,
+      "belief": 0.14533333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 1,
+      "coop": 0.7407407407407407,
+      "belief": 0.6485185185185186,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 2,
+      "coop": 0.5740740740740741,
+      "belief": 0.5342592592592593,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 3,
+      "coop": 0.5370370370370371,
+      "belief": 0.505,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 4,
+      "coop": 0.5,
+      "belief": 0.5212962962962963,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 5,
+      "coop": 0.5,
+      "belief": 0.5385185185185185,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 6,
+      "coop": 0.46296296296296297,
+      "belief": 0.4840740740740741,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 7,
+      "coop": 0.35185185185185186,
+      "belief": 0.4409259259259259,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 13,
+      "round": 8,
+      "coop": 0.16666666666666666,
+      "belief": 0.2312962962962963,
+      "rows": 54
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 1,
+      "coop": 0.9,
+      "belief": 0.8006666666666666,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 2,
+      "coop": 0.8166666666666667,
+      "belief": 0.7721666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 3,
+      "coop": 0.8166666666666667,
+      "belief": 0.773,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 4,
+      "coop": 0.8,
+      "belief": 0.7588333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 5,
+      "coop": 0.8,
+      "belief": 0.7815,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 6,
+      "coop": 0.8,
+      "belief": 0.7666666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 7,
+      "coop": 0.6,
+      "belief": 0.7265,
+      "rows": 60
+    },
+    {
+      "treatment": 1,
+      "session": 16,
+      "round": 8,
+      "coop": 0.26666666666666666,
+      "belief": 0.3215,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 1,
+      "coop": 0.8833333333333333,
+      "belief": 0.7981666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 2,
+      "coop": 0.85,
+      "belief": 0.791,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 3,
+      "coop": 0.8333333333333334,
+      "belief": 0.8068333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 4,
+      "coop": 0.7833333333333333,
+      "belief": 0.8183333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 5,
+      "coop": 0.8333333333333334,
+      "belief": 0.7986666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 6,
+      "coop": 0.8166666666666667,
+      "belief": 0.8140000000000001,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 7,
+      "coop": 0.8166666666666667,
+      "belief": 0.8308333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 1,
+      "round": 8,
+      "coop": 0.8333333333333334,
+      "belief": 0.8318333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 1,
+      "coop": 0.8,
+      "belief": 0.6918333333333333,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 2,
+      "coop": 0.75,
+      "belief": 0.6756666666666666,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 3,
+      "coop": 0.6833333333333333,
+      "belief": 0.6661666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 4,
+      "coop": 0.5833333333333334,
+      "belief": 0.607,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 5,
+      "coop": 0.5833333333333334,
+      "belief": 0.5815,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 6,
+      "coop": 0.5666666666666667,
+      "belief": 0.5820000000000001,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 7,
+      "coop": 0.5666666666666667,
+      "belief": 0.5973333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 2,
+      "round": 8,
+      "coop": 0.5333333333333333,
+      "belief": 0.5118333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 1,
+      "coop": 0.7777777777777778,
+      "belief": 0.6894444444444444,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 2,
+      "coop": 0.6666666666666666,
+      "belief": 0.6422222222222222,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 3,
+      "coop": 0.6666666666666666,
+      "belief": 0.5980555555555556,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 4,
+      "coop": 0.6666666666666666,
+      "belief": 0.6130555555555556,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 5,
+      "coop": 0.6388888888888888,
+      "belief": 0.6402777777777778,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 6,
+      "coop": 0.5555555555555556,
+      "belief": 0.6461111111111112,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 7,
+      "coop": 0.5833333333333334,
+      "belief": 0.5958333333333333,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 3,
+      "round": 8,
+      "coop": 0.5833333333333334,
+      "belief": 0.5541666666666667,
+      "rows": 36
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 1,
+      "coop": 0.8333333333333334,
+      "belief": 0.7589583333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 2,
+      "coop": 0.7916666666666666,
+      "belief": 0.7510416666666666,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 3,
+      "coop": 0.7708333333333334,
+      "belief": 0.7522916666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 4,
+      "coop": 0.7083333333333334,
+      "belief": 0.760625,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 5,
+      "coop": 0.75,
+      "belief": 0.7170833333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 6,
+      "coop": 0.7291666666666666,
+      "belief": 0.7154166666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 7,
+      "coop": 0.7291666666666666,
+      "belief": 0.69875,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 4,
+      "round": 8,
+      "coop": 0.625,
+      "belief": 0.6862499999999999,
+      "rows": 48
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 1,
+      "coop": 0.9523809523809523,
+      "belief": 0.8092857142857144,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 2,
+      "coop": 0.9761904761904762,
+      "belief": 0.8319047619047618,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 3,
+      "coop": 0.9047619047619048,
+      "belief": 0.8935714285714286,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 4,
+      "coop": 0.8809523809523809,
+      "belief": 0.858095238095238,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 5,
+      "coop": 0.8809523809523809,
+      "belief": 0.8528571428571429,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 6,
+      "coop": 0.8571428571428571,
+      "belief": 0.8590476190476191,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 7,
+      "coop": 0.7857142857142857,
+      "belief": 0.7828571428571429,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 10,
+      "round": 8,
+      "coop": 0.6666666666666666,
+      "belief": 0.7445238095238095,
+      "rows": 42
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 1,
+      "coop": 0.7222222222222222,
+      "belief": 0.6622222222222223,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 2,
+      "coop": 0.6666666666666666,
+      "belief": 0.633888888888889,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 3,
+      "coop": 0.6666666666666666,
+      "belief": 0.5738888888888889,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 4,
+      "coop": 0.7222222222222222,
+      "belief": 0.6461111111111111,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 5,
+      "coop": 0.7777777777777778,
+      "belief": 0.6499999999999999,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 6,
+      "coop": 0.6666666666666666,
+      "belief": 0.6811111111111111,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 7,
+      "coop": 0.6111111111111112,
+      "belief": 0.7033333333333334,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 11,
+      "round": 8,
+      "coop": 0.6666666666666666,
+      "belief": 0.6227777777777779,
+      "rows": 18
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 1,
+      "coop": 0.9444444444444444,
+      "belief": 0.807962962962963,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 2,
+      "coop": 0.8888888888888888,
+      "belief": 0.8992592592592593,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 3,
+      "coop": 0.8703703703703703,
+      "belief": 0.8751851851851852,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 4,
+      "coop": 0.8888888888888888,
+      "belief": 0.85,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 5,
+      "coop": 0.8888888888888888,
+      "belief": 0.8792592592592592,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 6,
+      "coop": 0.8888888888888888,
+      "belief": 0.8787037037037038,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 7,
+      "coop": 0.9074074074074074,
+      "belief": 0.8824074074074074,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 14,
+      "round": 8,
+      "coop": 0.9074074074074074,
+      "belief": 0.9059259259259259,
+      "rows": 54
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 1,
+      "coop": 0.8333333333333334,
+      "belief": 0.6943333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 2,
+      "coop": 0.8,
+      "belief": 0.7171666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 3,
+      "coop": 0.7333333333333333,
+      "belief": 0.7401666666666668,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 4,
+      "coop": 0.7666666666666667,
+      "belief": 0.7373333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 5,
+      "coop": 0.6666666666666666,
+      "belief": 0.757,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 6,
+      "coop": 0.75,
+      "belief": 0.7236666666666667,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 7,
+      "coop": 0.7333333333333333,
+      "belief": 0.757,
+      "rows": 60
+    },
+    {
+      "treatment": 2,
+      "session": 15,
+      "round": 8,
+      "coop": 0.6833333333333333,
+      "belief": 0.7063333333333334,
+      "rows": 60
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 1,
+      "coop": 0.6875,
+      "belief": 0.469375,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 2,
+      "coop": 0.625,
+      "belief": 0.491875,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 3,
+      "coop": 0.5625,
+      "belief": 0.57125,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 4,
+      "coop": 0.5,
+      "belief": 0.53375,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 5,
+      "coop": 0.5,
+      "belief": 0.513125,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 6,
+      "coop": 0.5,
+      "belief": 0.501875,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 7,
+      "coop": 0.4375,
+      "belief": 0.5025,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 17,
+      "round": 8,
+      "coop": 0.375,
+      "belief": 0.398125,
+      "rows": 16
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 1,
+      "coop": 0.9375,
+      "belief": 0.7525,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 2,
+      "coop": 0.875,
+      "belief": 0.904375,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 3,
+      "coop": 0.875,
+      "belief": 0.8890625,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 4,
+      "coop": 0.9375,
+      "belief": 0.783125,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 5,
+      "coop": 0.90625,
+      "belief": 0.8990625,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 6,
+      "coop": 0.84375,
+      "belief": 0.843125,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 7,
+      "coop": 0.75,
+      "belief": 0.808125,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 18,
+      "round": 8,
+      "coop": 0.625,
+      "belief": 0.6196875,
+      "rows": 32
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 1,
+      "coop": 0.6666666666666666,
+      "belief": 0.4522916666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 2,
+      "coop": 0.6875,
+      "belief": 0.536875,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 3,
+      "coop": 0.6875,
+      "belief": 0.649375,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 4,
+      "coop": 0.625,
+      "belief": 0.5833333333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 5,
+      "coop": 0.6666666666666666,
+      "belief": 0.605625,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 6,
+      "coop": 0.6041666666666666,
+      "belief": 0.6170833333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 7,
+      "coop": 0.5833333333333334,
+      "belief": 0.5725,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 19,
+      "round": 8,
+      "coop": 0.5833333333333334,
+      "belief": 0.593125,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 1,
+      "coop": 0.8125,
+      "belief": 0.6966666666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 2,
+      "coop": 0.7916666666666666,
+      "belief": 0.6233333333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 3,
+      "coop": 0.6875,
+      "belief": 0.665625,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 4,
+      "coop": 0.7083333333333334,
+      "belief": 0.6491666666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 5,
+      "coop": 0.7083333333333334,
+      "belief": 0.6370833333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 6,
+      "coop": 0.6875,
+      "belief": 0.6670833333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 7,
+      "coop": 0.6458333333333334,
+      "belief": 0.631875,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 20,
+      "round": 8,
+      "coop": 0.6041666666666666,
+      "belief": 0.5835416666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 1,
+      "coop": 0.9166666666666666,
+      "belief": 0.811875,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 2,
+      "coop": 0.875,
+      "belief": 0.868125,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 3,
+      "coop": 0.7916666666666666,
+      "belief": 0.85,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 4,
+      "coop": 0.6875,
+      "belief": 0.7389583333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 5,
+      "coop": 0.6875,
+      "belief": 0.6587500000000001,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 6,
+      "coop": 0.625,
+      "belief": 0.6839583333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 7,
+      "coop": 0.5625,
+      "belief": 0.5808333333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 21,
+      "round": 8,
+      "coop": 0.625,
+      "belief": 0.5933333333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 1,
+      "coop": 0.8541666666666666,
+      "belief": 0.6885416666666666,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 2,
+      "coop": 0.8125,
+      "belief": 0.6677083333333332,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 3,
+      "coop": 0.7083333333333334,
+      "belief": 0.7089583333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 4,
+      "coop": 0.7291666666666666,
+      "belief": 0.6689583333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 5,
+      "coop": 0.7291666666666666,
+      "belief": 0.6691666666666666,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 6,
+      "coop": 0.6666666666666666,
+      "belief": 0.6558333333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 7,
+      "coop": 0.6666666666666666,
+      "belief": 0.679375,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 22,
+      "round": 8,
+      "coop": 0.6875,
+      "belief": 0.6304166666666666,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 1,
+      "coop": 0.8958333333333334,
+      "belief": 0.6870833333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 2,
+      "coop": 0.7916666666666666,
+      "belief": 0.7627083333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 3,
+      "coop": 0.8125,
+      "belief": 0.7514583333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 4,
+      "coop": 0.8125,
+      "belief": 0.7825000000000001,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 5,
+      "coop": 0.7916666666666666,
+      "belief": 0.7752083333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 6,
+      "coop": 0.7083333333333334,
+      "belief": 0.7645833333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 7,
+      "coop": 0.6666666666666666,
+      "belief": 0.6843750000000001,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 23,
+      "round": 8,
+      "coop": 0.625,
+      "belief": 0.6077083333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 1,
+      "coop": 0.8333333333333334,
+      "belief": 0.6047619047619047,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 2,
+      "coop": 0.7619047619047619,
+      "belief": 0.7214285714285714,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 3,
+      "coop": 0.6904761904761905,
+      "belief": 0.6669047619047619,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 4,
+      "coop": 0.6190476190476191,
+      "belief": 0.6095238095238096,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 5,
+      "coop": 0.6428571428571429,
+      "belief": 0.6421428571428571,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 6,
+      "coop": 0.6190476190476191,
+      "belief": 0.5864285714285714,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 7,
+      "coop": 0.6428571428571429,
+      "belief": 0.5900000000000001,
+      "rows": 42
+    },
+    {
+      "treatment": 3,
+      "session": 24,
+      "round": 8,
+      "coop": 0.6666666666666666,
+      "belief": 0.6273809523809524,
+      "rows": 42
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 1,
+      "coop": 0.46875,
+      "belief": 0.3203125,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 2,
+      "coop": 0.46875,
+      "belief": 0.3840625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 3,
+      "coop": 0.40625,
+      "belief": 0.471875,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 4,
+      "coop": 0.4375,
+      "belief": 0.4096875,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 5,
+      "coop": 0.4375,
+      "belief": 0.4375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 6,
+      "coop": 0.3125,
+      "belief": 0.378125,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 7,
+      "coop": 0.34375,
+      "belief": 0.3821875,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 25,
+      "round": 8,
+      "coop": 0.375,
+      "belief": 0.3375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 1,
+      "coop": 0.5625,
+      "belief": 0.4509375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 2,
+      "coop": 0.3125,
+      "belief": 0.2490625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 3,
+      "coop": 0.34375,
+      "belief": 0.2759375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 4,
+      "coop": 0.28125,
+      "belief": 0.36343749999999997,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 5,
+      "coop": 0.25,
+      "belief": 0.295,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 6,
+      "coop": 0.40625,
+      "belief": 0.2975,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 7,
+      "coop": 0.34375,
+      "belief": 0.29625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 26,
+      "round": 8,
+      "coop": 0.25,
+      "belief": 0.3103125,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 1,
+      "coop": 0.71875,
+      "belief": 0.57625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 2,
+      "coop": 0.6875,
+      "belief": 0.600625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 3,
+      "coop": 0.6875,
+      "belief": 0.60125,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 4,
+      "coop": 0.59375,
+      "belief": 0.571875,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 5,
+      "coop": 0.59375,
+      "belief": 0.56875,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 6,
+      "coop": 0.5625,
+      "belief": 0.5890625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 7,
+      "coop": 0.5625,
+      "belief": 0.5709375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 27,
+      "round": 8,
+      "coop": 0.53125,
+      "belief": 0.565625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 1,
+      "coop": 0.625,
+      "belief": 0.3875,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 2,
+      "coop": 0.3125,
+      "belief": 0.333125,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 3,
+      "coop": 0.4375,
+      "belief": 0.34625,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 4,
+      "coop": 0.375,
+      "belief": 0.335,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 5,
+      "coop": 0.25,
+      "belief": 0.26125,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 6,
+      "coop": 0.375,
+      "belief": 0.2625,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 7,
+      "coop": 0.4375,
+      "belief": 0.295625,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 28,
+      "round": 8,
+      "coop": 0.375,
+      "belief": 0.2475,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 1,
+      "coop": 0.34375,
+      "belief": 0.3009375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 2,
+      "coop": 0.3125,
+      "belief": 0.4425,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 3,
+      "coop": 0.34375,
+      "belief": 0.274375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 4,
+      "coop": 0.25,
+      "belief": 0.2946875,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 5,
+      "coop": 0.28125,
+      "belief": 0.345625,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 6,
+      "coop": 0.34375,
+      "belief": 0.3103125,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 7,
+      "coop": 0.34375,
+      "belief": 0.3009375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 29,
+      "round": 8,
+      "coop": 0.21875,
+      "belief": 0.4109375,
+      "rows": 32
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 1,
+      "coop": 0.6875,
+      "belief": 0.501875,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 2,
+      "coop": 0.6875,
+      "belief": 0.5975,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 3,
+      "coop": 0.5625,
+      "belief": 0.5825,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 4,
+      "coop": 0.5,
+      "belief": 0.52625,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 5,
+      "coop": 0.3125,
+      "belief": 0.4275,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 6,
+      "coop": 0.4375,
+      "belief": 0.40625,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 7,
+      "coop": 0.625,
+      "belief": 0.3475,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 30,
+      "round": 8,
+      "coop": 0.4375,
+      "belief": 0.483125,
+      "rows": 16
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 1,
+      "coop": 0.375,
+      "belief": 0.2225,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 2,
+      "coop": 0.5625,
+      "belief": 0.3229166666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 3,
+      "coop": 0.5416666666666666,
+      "belief": 0.5252083333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 4,
+      "coop": 0.5625,
+      "belief": 0.4916666666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 5,
+      "coop": 0.5416666666666666,
+      "belief": 0.5179166666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 6,
+      "coop": 0.4791666666666667,
+      "belief": 0.49979166666666663,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 7,
+      "coop": 0.4583333333333333,
+      "belief": 0.496875,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 31,
+      "round": 8,
+      "coop": 0.4583333333333333,
+      "belief": 0.38479166666666664,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 1,
+      "coop": 0.4791666666666667,
+      "belief": 0.3433333333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 2,
+      "coop": 0.5416666666666666,
+      "belief": 0.378125,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 3,
+      "coop": 0.4583333333333333,
+      "belief": 0.4795833333333333,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 4,
+      "coop": 0.4375,
+      "belief": 0.39291666666666664,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 5,
+      "coop": 0.3333333333333333,
+      "belief": 0.3625,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 6,
+      "coop": 0.3125,
+      "belief": 0.3485416666666667,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 7,
+      "coop": 0.3125,
+      "belief": 0.33208333333333334,
+      "rows": 48
+    },
+    {
+      "treatment": 4,
+      "session": 32,
+      "round": 8,
+      "coop": 0.1875,
+      "belief": 0.2658333333333333,
+      "rows": 48
+    }
+  ],
+  "validity_counts": {
+    "finite_structural_na": 15488,
+    "indefinite_valid": 32986,
+    "indefinite_invalid": 7250
+  },
+  "pair_identity": "not supplied; matching margins do not reconstruct pairs"
+}

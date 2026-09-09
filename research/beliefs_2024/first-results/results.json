@@ -1,0 +1,2458 @@
+{
+  "schema": "bellman.afy2024.challenge.v1",
+  "specification_commit": "4abea07",
+  "comparisons": {
+    "ten-linear": {
+      "sessions": [
+        {
+          "session": 17,
+          "treatment": 3,
+          "n": 336,
+          "observed_cooperation": 0.47619047619047616,
+          "models": {
+            "fixed": {
+              "brier": 0.08100683137063633,
+              "logscore": 0.28254375678847443,
+              "mean_prediction": 0.5093159983358201
+            },
+            "updated": {
+              "brier": 0.08040635584581961,
+              "logscore": 0.28516040948770116,
+              "mean_prediction": 0.48813221276313856
+            },
+            "markov": {
+              "brier": 0.06501692610613581,
+              "logscore": 0.21671986667443655,
+              "mean_prediction": 0.5008729501753069
+            },
+            "constant": {
+              "brier": 0.3097271863945976,
+              "logscore": 0.8253366884150024,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.08333333333333333,
+              "logscore": 1.151293463162436,
+              "mean_prediction": 0.5119047619047619
+            }
+          },
+          "delta_brier": -0.000600475524816721
+        },
+        {
+          "session": 18,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.8549107142857143,
+          "models": {
+            "fixed": {
+              "brier": 0.08854914402406777,
+              "logscore": 0.3009358613542501,
+              "mean_prediction": 0.8394933083670367
+            },
+            "updated": {
+              "brier": 0.09031982567325343,
+              "logscore": 0.3111805976642498,
+              "mean_prediction": 0.8139103960973149
+            },
+            "markov": {
+              "brier": 0.08368770250488897,
+              "logscore": 0.2762858109609843,
+              "mean_prediction": 0.8497967324687138
+            },
+            "constant": {
+              "brier": 0.14177308913792855,
+              "logscore": 0.4643768848470261,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.11830357142857142,
+              "logscore": 1.6344251218111245,
+              "mean_prediction": 0.8794642857142857
+            }
+          },
+          "delta_brier": 0.0017706816491856597
+        },
+        {
+          "session": 19,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6026785714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.09146937516182274,
+              "logscore": 0.3025259132571754,
+              "mean_prediction": 0.5881821868909924
+            },
+            "updated": {
+              "brier": 0.09571638971043354,
+              "logscore": 0.3179462411931605,
+              "mean_prediction": 0.5642309229073496
+            },
+            "markov": {
+              "brier": 0.07289755679793741,
+              "logscore": 0.24202531382128314,
+              "mean_prediction": 0.5867508920215524
+            },
+            "constant": {
+              "brier": 0.2536324977234115,
+              "logscore": 0.7047803689522205,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.109375,
+              "logscore": 1.511072357901119,
+              "mean_prediction": 0.609375
+            }
+          },
+          "delta_brier": 0.004247014548610803
+        },
+        {
+          "session": 20,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6316964285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.136733793815234,
+              "logscore": 0.43343944038842963,
+              "mean_prediction": 0.6443430499262778
+            },
+            "updated": {
+              "brier": 0.13718943971678724,
+              "logscore": 0.4354331604788567,
+              "mean_prediction": 0.6158932053313789
+            },
+            "markov": {
+              "brier": 0.13841827677867083,
+              "logscore": 0.43262085656195975,
+              "mean_prediction": 0.6454123655391367
+            },
+            "constant": {
+              "brier": 0.2407637162047276,
+              "logscore": 0.6771233309578176,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.19196428571428573,
+              "logscore": 2.6520854240706933,
+              "mean_prediction": 0.6629464285714286
+            }
+          },
+          "delta_brier": 0.0004556459015532255
+        },
+        {
+          "session": 21,
+          "treatment": 3,
+          "n": 896,
+          "observed_cooperation": 0.7254464285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.09221544583871144,
+              "logscore": 0.3231045473706617,
+              "mean_prediction": 0.7439700808860132
+            },
+            "updated": {
+              "brier": 0.09191798356512315,
+              "logscore": 0.324759859757456,
+              "mean_prediction": 0.7203312412051434
+            },
+            "markov": {
+              "brier": 0.0852388431971921,
+              "logscore": 0.2877667394465643,
+              "mean_prediction": 0.7490203365774163
+            },
+            "constant": {
+              "brier": 0.19918765283667203,
+              "logscore": 0.587769823591285,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.10825892857142858,
+              "logscore": 1.4956532624118386,
+              "mean_prediction": 0.7667410714285714
+            }
+          },
+          "delta_brier": -0.00029746227358828925
+        },
+        {
+          "session": 22,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6607142857142857,
+          "models": {
+            "fixed": {
+              "brier": 0.10644787254827667,
+              "logscore": 0.3504796897380124,
+              "mean_prediction": 0.6876771082538692
+            },
+            "updated": {
+              "brier": 0.10560613929231308,
+              "logscore": 0.3485899260450345,
+              "mean_prediction": 0.6616142082888474
+            },
+            "markov": {
+              "brier": 0.07949518966604997,
+              "logscore": 0.2643685227579882,
+              "mean_prediction": 0.6777662994299456
+            },
+            "constant": {
+              "brier": 0.22789493468604372,
+              "logscore": 0.6494662929634146,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16294642857142858,
+              "logscore": 2.2511889413623085,
+              "mean_prediction": 0.6941964285714286
+            }
+          },
+          "delta_brier": -0.0008417332559635948
+        },
+        {
+          "session": 23,
+          "treatment": 3,
+          "n": 784,
+          "observed_cooperation": 0.6352040816326531,
+          "models": {
+            "fixed": {
+              "brier": 0.09689721066453015,
+              "logscore": 0.3231731416439116,
+              "mean_prediction": 0.6614359007717908
+            },
+            "updated": {
+              "brier": 0.09654732850583111,
+              "logscore": 0.32598203997686137,
+              "mean_prediction": 0.6385282102050424
+            },
+            "markov": {
+              "brier": 0.08407296182866317,
+              "logscore": 0.2789854436846035,
+              "mean_prediction": 0.6545768308107341
+            },
+            "constant": {
+              "brier": 0.23920814920796366,
+              "logscore": 0.6737801725189337,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.12627551020408162,
+              "logscore": 1.7445615181593943,
+              "mean_prediction": 0.6721938775510204
+            }
+          },
+          "delta_brier": -0.00034988215869903583
+        },
+        {
+          "session": 24,
+          "treatment": 3,
+          "n": 686,
+          "observed_cooperation": 0.6720116618075802,
+          "models": {
+            "fixed": {
+              "brier": 0.14600401116098344,
+              "logscore": 0.4621940467559754,
+              "mean_prediction": 0.6645155867488434
+            },
+            "updated": {
+              "brier": 0.1454040068704669,
+              "logscore": 0.46393980194984386,
+              "mean_prediction": 0.6401727358709799
+            },
+            "markov": {
+              "brier": 0.13997534274369108,
+              "logscore": 0.4451368832257979,
+              "mean_prediction": 0.6645030425670736
+            },
+            "constant": {
+              "brier": 0.22288479682633633,
+              "logscore": 0.6386987177316851,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.20116618075801748,
+              "logscore": 2.779214292998773,
+              "mean_prediction": 0.6924198250728864
+            }
+          },
+          "delta_brier": -0.0006000042905165426
+        },
+        {
+          "session": 25,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.36830357142857145,
+          "models": {
+            "fixed": {
+              "brier": 0.12765436844243785,
+              "logscore": 0.4067771685702071,
+              "mean_prediction": 0.4147115108076438
+            },
+            "updated": {
+              "brier": 0.12772661822413775,
+              "logscore": 0.40017638958912827,
+              "mean_prediction": 0.371079174362588
+            },
+            "markov": {
+              "brier": 0.10835523445829856,
+              "logscore": 0.3485599085753197,
+              "mean_prediction": 0.383625891425527
+            },
+            "constant": {
+              "brier": 0.3575726561435505,
+              "logscore": 0.9281641373685517,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.18973214285714285,
+              "logscore": 2.62124723309316,
+              "mean_prediction": 0.39732142857142855
+            }
+          },
+          "delta_brier": 7.224978169989571e-05
+        },
+        {
+          "session": 26,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.33482142857142855,
+          "models": {
+            "fixed": {
+              "brier": 0.13322338397186523,
+              "logscore": 0.44452354838050023,
+              "mean_prediction": 0.37177123833352343
+            },
+            "updated": {
+              "brier": 0.13128861997491018,
+              "logscore": 0.44095341322888665,
+              "mean_prediction": 0.3287722630223064
+            },
+            "markov": {
+              "brier": 0.11552722315773765,
+              "logscore": 0.38030317619950826,
+              "mean_prediction": 0.34760563654611154
+            },
+            "constant": {
+              "brier": 0.37242125020357036,
+              "logscore": 0.9600761042851704,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16741071428571427,
+              "logscore": 2.312865323317504,
+              "mean_prediction": 0.3638392857142857
+            }
+          },
+          "delta_brier": -0.0019347639969550523
+        },
+        {
+          "session": 27,
+          "treatment": 4,
+          "n": 336,
+          "observed_cooperation": 0.5446428571428571,
+          "models": {
+            "fixed": {
+              "brier": 0.0885064583080822,
+              "logscore": 0.30405353557329917,
+              "mean_prediction": 0.5724889917972447
+            },
+            "updated": {
+              "brier": 0.08651367786402352,
+              "logscore": 0.30218875564015335,
+              "mean_prediction": 0.5305325290839852
+            },
+            "markov": {
+              "brier": 0.07373614189518224,
+              "logscore": 0.2510677906241475,
+              "mean_prediction": 0.5664934841544893
+            },
+            "constant": {
+              "brier": 0.27937006076077925,
+              "logscore": 0.7600944449410265,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.11011904761904762,
+              "logscore": 1.5213517548931808,
+              "mean_prediction": 0.5833333333333334
+            }
+          },
+          "delta_brier": -0.0019927804440586783
+        },
+        {
+          "session": 28,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.36160714285714285,
+          "models": {
+            "fixed": {
+              "brier": 0.2098802115328091,
+              "logscore": 0.6286969935640977,
+              "mean_prediction": 0.39710051345712954
+            },
+            "updated": {
+              "brier": 0.2021538782536114,
+              "logscore": 0.611959302460801,
+              "mean_prediction": 0.3541380985078974
+            },
+            "markov": {
+              "brier": 0.18684131027496892,
+              "logscore": 0.5730415095526737,
+              "mean_prediction": 0.36088107114395823
+            },
+            "constant": {
+              "brier": 0.3605423749555544,
+              "logscore": 0.9345465307518754,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.29910714285714285,
+              "logscore": 4.132318590993972,
+              "mean_prediction": 0.38392857142857145
+            }
+          },
+          "delta_brier": -0.007726333279197722
+        },
+        {
+          "session": 29,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.30952380952380953,
+          "models": {
+            "fixed": {
+              "brier": 0.18784659912526816,
+              "logscore": 0.5947977846813233,
+              "mean_prediction": 0.3157573646750353
+            },
+            "updated": {
+              "brier": 0.18228012959821255,
+              "logscore": 0.5811574828452427,
+              "mean_prediction": 0.27883641694262495
+            },
+            "markov": {
+              "brier": 0.19214108873839775,
+              "logscore": 0.6028399655702124,
+              "mean_prediction": 0.3019018567092994
+            },
+            "constant": {
+              "brier": 0.38364018793780763,
+              "logscore": 0.984187368177727,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.27232142857142855,
+              "logscore": 3.7622602992632697,
+              "mean_prediction": 0.32589285714285715
+            }
+          },
+          "delta_brier": -0.005566469527055612
+        },
+        {
+          "session": 30,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.5089285714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.1413222538669914,
+              "logscore": 0.4891620831111862,
+              "mean_prediction": 0.5065125928590605
+            },
+            "updated": {
+              "brier": 0.14231531684252752,
+              "logscore": 0.49611042089886814,
+              "mean_prediction": 0.4620410574157075
+            },
+            "markov": {
+              "brier": 0.1357494986950856,
+              "logscore": 0.44886199711269165,
+              "mean_prediction": 0.5068801021204352
+            },
+            "constant": {
+              "brier": 0.29520856109146715,
+              "logscore": 0.7941338763187531,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.17857142857142858,
+              "logscore": 2.4670562782054923,
+              "mean_prediction": 0.5267857142857143
+            }
+          },
+          "delta_brier": 0.0009930629755361131
+        },
+        {
+          "session": 31,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.47172619047619047,
+          "models": {
+            "fixed": {
+              "brier": 0.1699634181151333,
+              "logscore": 0.5354459923646369,
+              "mean_prediction": 0.4367713618955646
+            },
+            "updated": {
+              "brier": 0.1771181116720232,
+              "logscore": 0.5506906920004281,
+              "mean_prediction": 0.3857907242388409
+            },
+            "markov": {
+              "brier": 0.17272077578081482,
+              "logscore": 0.548606222724284,
+              "mean_prediction": 0.4303018874972255
+            },
+            "constant": {
+              "brier": 0.3117069989359336,
+              "logscore": 0.8295916173372182,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.23958333333333334,
+              "logscore": 3.3099668315926927,
+              "mean_prediction": 0.46130952380952384
+            }
+          },
+          "delta_brier": 0.007154693556889913
+        },
+        {
+          "session": 32,
+          "treatment": 4,
+          "n": 896,
+          "observed_cooperation": 0.390625,
+          "models": {
+            "fixed": {
+              "brier": 0.16675539262446262,
+              "logscore": 0.5195447167939626,
+              "mean_prediction": 0.4255944055663449
+            },
+            "updated": {
+              "brier": 0.16546270646031358,
+              "logscore": 0.5160664196242988,
+              "mean_prediction": 0.38006760892458086
+            },
+            "markov": {
+              "brier": 0.14829195368952933,
+              "logscore": 0.46524893243395266,
+              "mean_prediction": 0.3966843715242264
+            },
+            "constant": {
+              "brier": 0.34767359343687054,
+              "logscore": 0.9068894927574725,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.25223214285714285,
+              "logscore": 3.4847165804650615,
+              "mean_prediction": 0.41517857142857145
+            }
+          },
+          "delta_brier": -0.0012926861641490428
+        }
+      ],
+      "comparison": {
+        "delta_brier": -0.0004068276563452926,
+        "arm_deltas": {
+          "high_t": 0.0004729730744706881,
+          "low_r": -0.0012866283871612733
+        },
+        "bootstrap_95": [
+          -0.001865778115372449,
+          0.0012281477273708465
+        ],
+        "bootstrap_draws": 9999,
+        "standard_error": 0.0008457759762889989,
+        "welch_df": 9.089496719918019,
+        "welch_95": [
+          -0.002317238035581202,
+          0.0015035827228906172
+        ],
+        "hoeffding_95": [
+          -0.679457585526655,
+          0.6786439302139645
+        ],
+        "scope": "conditional on source fitting; session sampling assumptions supplied"
+      },
+      "opponent_diagnostics": {
+        "all": {
+          "n": 8414,
+          "opponent_forecast": 0.5221973089873684,
+          "actual_opponent": 0.5430235322082244,
+          "reported_belief": 0.5285797480389826,
+          "opponent_brier": 0.12161111058786217,
+          "report_squared_gap": 0.06641253196131536
+        },
+        "CC": {
+          "n": 534,
+          "opponent_forecast": 0.9245584299788198,
+          "actual_opponent": 0.9662921348314607,
+          "reported_belief": 0.834625468164794,
+          "opponent_brier": 0.03431334711504627,
+          "report_squared_gap": 0.05683302206564851
+        },
+        "CD": {
+          "n": 239,
+          "opponent_forecast": 0.3911411003458404,
+          "actual_opponent": 0.29707112970711297,
+          "reported_belief": 0.301255230125523,
+          "opponent_brier": 0.2176690329776236,
+          "report_squared_gap": 0.08152559280736557
+        },
+        "DC": {
+          "n": 239,
+          "opponent_forecast": 0.40909584487550116,
+          "actual_opponent": 0.4351464435146444,
+          "reported_belief": 0.3338912133891213,
+          "opponent_brier": 0.2464726499006585,
+          "report_squared_gap": 0.09711716409301943
+        },
+        "DD": {
+          "n": 190,
+          "opponent_forecast": 0.16849388187439437,
+          "actual_opponent": 0.15263157894736842,
+          "reported_belief": 0.1493684210526316,
+          "opponent_brier": 0.1295867927095504,
+          "report_squared_gap": 0.04568748962283592
+        }
+      }
+    },
+    "six-linear": {
+      "sessions": [
+        {
+          "session": 17,
+          "treatment": 3,
+          "n": 336,
+          "observed_cooperation": 0.47619047619047616,
+          "models": {
+            "fixed": {
+              "brier": 0.08102656911136373,
+              "logscore": 0.28104011574965554,
+              "mean_prediction": 0.5091535760179065
+            },
+            "updated": {
+              "brier": 0.08039753576766201,
+              "logscore": 0.28392092329074015,
+              "mean_prediction": 0.4879484397096614
+            },
+            "markov": {
+              "brier": 0.06501692610613581,
+              "logscore": 0.21671986667443655,
+              "mean_prediction": 0.5008729501753069
+            },
+            "constant": {
+              "brier": 0.3097271863945976,
+              "logscore": 0.8253366884150024,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.08333333333333333,
+              "logscore": 1.151293463162436,
+              "mean_prediction": 0.5119047619047619
+            }
+          },
+          "delta_brier": -0.0006290333437017209
+        },
+        {
+          "session": 18,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.8549107142857143,
+          "models": {
+            "fixed": {
+              "brier": 0.08826281224462525,
+              "logscore": 0.29971870127042216,
+              "mean_prediction": 0.8401490274267609
+            },
+            "updated": {
+              "brier": 0.09005348390431533,
+              "logscore": 0.3100082904101625,
+              "mean_prediction": 0.8145150512887235
+            },
+            "markov": {
+              "brier": 0.08368770250488897,
+              "logscore": 0.2762858109609843,
+              "mean_prediction": 0.8497967324687138
+            },
+            "constant": {
+              "brier": 0.14177308913792855,
+              "logscore": 0.4643768848470261,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.11830357142857142,
+              "logscore": 1.6344251218111245,
+              "mean_prediction": 0.8794642857142857
+            }
+          },
+          "delta_brier": 0.001790671659690088
+        },
+        {
+          "session": 19,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6026785714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.09119899835227352,
+              "logscore": 0.3003752801413225,
+              "mean_prediction": 0.585696275133727
+            },
+            "updated": {
+              "brier": 0.09529288361522507,
+              "logscore": 0.31578200879619345,
+              "mean_prediction": 0.5616965439598264
+            },
+            "markov": {
+              "brier": 0.07289755679793741,
+              "logscore": 0.24202531382128314,
+              "mean_prediction": 0.5867508920215524
+            },
+            "constant": {
+              "brier": 0.2536324977234115,
+              "logscore": 0.7047803689522205,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.109375,
+              "logscore": 1.511072357901119,
+              "mean_prediction": 0.609375
+            }
+          },
+          "delta_brier": 0.004093885262951555
+        },
+        {
+          "session": 20,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6316964285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.13649368337936912,
+              "logscore": 0.4320725879631902,
+              "mean_prediction": 0.6438536711810132
+            },
+            "updated": {
+              "brier": 0.13697304610560304,
+              "logscore": 0.43416139628669365,
+              "mean_prediction": 0.615326782020828
+            },
+            "markov": {
+              "brier": 0.13841827677867083,
+              "logscore": 0.43262085656195975,
+              "mean_prediction": 0.6454123655391367
+            },
+            "constant": {
+              "brier": 0.2407637162047276,
+              "logscore": 0.6771233309578176,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.19196428571428573,
+              "logscore": 2.6520854240706933,
+              "mean_prediction": 0.6629464285714286
+            }
+          },
+          "delta_brier": 0.0004793627262339173
+        },
+        {
+          "session": 21,
+          "treatment": 3,
+          "n": 896,
+          "observed_cooperation": 0.7254464285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.09235690598308606,
+              "logscore": 0.32317761506277215,
+              "mean_prediction": 0.7451212030393598
+            },
+            "updated": {
+              "brier": 0.09195858785690489,
+              "logscore": 0.3245885819706051,
+              "mean_prediction": 0.7214306174085404
+            },
+            "markov": {
+              "brier": 0.0852388431971921,
+              "logscore": 0.2877667394465643,
+              "mean_prediction": 0.7490203365774163
+            },
+            "constant": {
+              "brier": 0.19918765283667203,
+              "logscore": 0.587769823591285,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.10825892857142858,
+              "logscore": 1.4956532624118386,
+              "mean_prediction": 0.7667410714285714
+            }
+          },
+          "delta_brier": -0.00039831812618117135
+        },
+        {
+          "session": 22,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6607142857142857,
+          "models": {
+            "fixed": {
+              "brier": 0.10601659017132313,
+              "logscore": 0.3484790021618797,
+              "mean_prediction": 0.6877784172101057
+            },
+            "updated": {
+              "brier": 0.10512586752575674,
+              "logscore": 0.3466204893288542,
+              "mean_prediction": 0.6617510636585227
+            },
+            "markov": {
+              "brier": 0.07949518966604997,
+              "logscore": 0.2643685227579882,
+              "mean_prediction": 0.6777662994299456
+            },
+            "constant": {
+              "brier": 0.22789493468604372,
+              "logscore": 0.6494662929634146,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16294642857142858,
+              "logscore": 2.2511889413623085,
+              "mean_prediction": 0.6941964285714286
+            }
+          },
+          "delta_brier": -0.0008907226455663886
+        },
+        {
+          "session": 23,
+          "treatment": 3,
+          "n": 784,
+          "observed_cooperation": 0.6352040816326531,
+          "models": {
+            "fixed": {
+              "brier": 0.09658918212241596,
+              "logscore": 0.32252252831619926,
+              "mean_prediction": 0.6617629963707496
+            },
+            "updated": {
+              "brier": 0.09623793427744627,
+              "logscore": 0.3253886617602433,
+              "mean_prediction": 0.6388695407343338
+            },
+            "markov": {
+              "brier": 0.08407296182866317,
+              "logscore": 0.2789854436846035,
+              "mean_prediction": 0.6545768308107341
+            },
+            "constant": {
+              "brier": 0.23920814920796366,
+              "logscore": 0.6737801725189337,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.12627551020408162,
+              "logscore": 1.7445615181593943,
+              "mean_prediction": 0.6721938775510204
+            }
+          },
+          "delta_brier": -0.0003512478449696904
+        },
+        {
+          "session": 24,
+          "treatment": 3,
+          "n": 686,
+          "observed_cooperation": 0.6720116618075802,
+          "models": {
+            "fixed": {
+              "brier": 0.14540650892559528,
+              "logscore": 0.4602467116372402,
+              "mean_prediction": 0.6647501987985707
+            },
+            "updated": {
+              "brier": 0.14502634087548616,
+              "logscore": 0.46270943513475815,
+              "mean_prediction": 0.640340132317339
+            },
+            "markov": {
+              "brier": 0.13997534274369108,
+              "logscore": 0.4451368832257979,
+              "mean_prediction": 0.6645030425670736
+            },
+            "constant": {
+              "brier": 0.22288479682633633,
+              "logscore": 0.6386987177316851,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.20116618075801748,
+              "logscore": 2.779214292998773,
+              "mean_prediction": 0.6924198250728864
+            }
+          },
+          "delta_brier": -0.00038016805010912536
+        },
+        {
+          "session": 25,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.36830357142857145,
+          "models": {
+            "fixed": {
+              "brier": 0.12663616777573658,
+              "logscore": 0.4045166967372217,
+              "mean_prediction": 0.4114977626187678
+            },
+            "updated": {
+              "brier": 0.12742288166863588,
+              "logscore": 0.4009562556363743,
+              "mean_prediction": 0.3672013018585121
+            },
+            "markov": {
+              "brier": 0.10835523445829856,
+              "logscore": 0.3485599085753197,
+              "mean_prediction": 0.383625891425527
+            },
+            "constant": {
+              "brier": 0.3575726561435505,
+              "logscore": 0.9281641373685517,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.18973214285714285,
+              "logscore": 2.62124723309316,
+              "mean_prediction": 0.39732142857142855
+            }
+          },
+          "delta_brier": 0.0007867138928993045
+        },
+        {
+          "session": 26,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.33482142857142855,
+          "models": {
+            "fixed": {
+              "brier": 0.13377971376279943,
+              "logscore": 0.44503905278458106,
+              "mean_prediction": 0.3699503955552269
+            },
+            "updated": {
+              "brier": 0.13211869100516466,
+              "logscore": 0.44357652521211766,
+              "mean_prediction": 0.326363002332807
+            },
+            "markov": {
+              "brier": 0.11552722315773765,
+              "logscore": 0.38030317619950826,
+              "mean_prediction": 0.34760563654611154
+            },
+            "constant": {
+              "brier": 0.37242125020357036,
+              "logscore": 0.9600761042851704,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16741071428571427,
+              "logscore": 2.312865323317504,
+              "mean_prediction": 0.3638392857142857
+            }
+          },
+          "delta_brier": -0.0016610227576347725
+        },
+        {
+          "session": 27,
+          "treatment": 4,
+          "n": 336,
+          "observed_cooperation": 0.5446428571428571,
+          "models": {
+            "fixed": {
+              "brier": 0.08831893063841215,
+              "logscore": 0.3031918769815855,
+              "mean_prediction": 0.5721836154701734
+            },
+            "updated": {
+              "brier": 0.08724643041687875,
+              "logscore": 0.306267739783271,
+              "mean_prediction": 0.5256603449983491
+            },
+            "markov": {
+              "brier": 0.07373614189518224,
+              "logscore": 0.2510677906241475,
+              "mean_prediction": 0.5664934841544893
+            },
+            "constant": {
+              "brier": 0.27937006076077925,
+              "logscore": 0.7600944449410265,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.11011904761904762,
+              "logscore": 1.5213517548931808,
+              "mean_prediction": 0.5833333333333334
+            }
+          },
+          "delta_brier": -0.0010725002215333929
+        },
+        {
+          "session": 28,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.36160714285714285,
+          "models": {
+            "fixed": {
+              "brier": 0.20867448283145154,
+              "logscore": 0.626251796199999,
+              "mean_prediction": 0.3963540069641295
+            },
+            "updated": {
+              "brier": 0.20134588349326737,
+              "logscore": 0.611551328367118,
+              "mean_prediction": 0.3524830207471939
+            },
+            "markov": {
+              "brier": 0.18684131027496892,
+              "logscore": 0.5730415095526737,
+              "mean_prediction": 0.36088107114395823
+            },
+            "constant": {
+              "brier": 0.3605423749555544,
+              "logscore": 0.9345465307518754,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.29910714285714285,
+              "logscore": 4.132318590993972,
+              "mean_prediction": 0.38392857142857145
+            }
+          },
+          "delta_brier": -0.007328599338184166
+        },
+        {
+          "session": 29,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.30952380952380953,
+          "models": {
+            "fixed": {
+              "brier": 0.1870001058516016,
+              "logscore": 0.5937914419818481,
+              "mean_prediction": 0.3104760130322154
+            },
+            "updated": {
+              "brier": 0.18210037916734528,
+              "logscore": 0.5824485551656509,
+              "mean_prediction": 0.27477013349026563
+            },
+            "markov": {
+              "brier": 0.19214108873839775,
+              "logscore": 0.6028399655702124,
+              "mean_prediction": 0.3019018567092994
+            },
+            "constant": {
+              "brier": 0.38364018793780763,
+              "logscore": 0.984187368177727,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.27232142857142855,
+              "logscore": 3.7622602992632697,
+              "mean_prediction": 0.32589285714285715
+            }
+          },
+          "delta_brier": -0.004899726684256311
+        },
+        {
+          "session": 30,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.5089285714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.14245911080019313,
+              "logscore": 0.49329157212699265,
+              "mean_prediction": 0.5050068577007628
+            },
+            "updated": {
+              "brier": 0.14409583970490494,
+              "logscore": 0.5022848343161538,
+              "mean_prediction": 0.45662208204031846
+            },
+            "markov": {
+              "brier": 0.1357494986950856,
+              "logscore": 0.44886199711269165,
+              "mean_prediction": 0.5068801021204352
+            },
+            "constant": {
+              "brier": 0.29520856109146715,
+              "logscore": 0.7941338763187531,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.17857142857142858,
+              "logscore": 2.4670562782054923,
+              "mean_prediction": 0.5267857142857143
+            }
+          },
+          "delta_brier": 0.0016367289047118094
+        },
+        {
+          "session": 31,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.47172619047619047,
+          "models": {
+            "fixed": {
+              "brier": 0.17146853695748246,
+              "logscore": 0.5393824292189717,
+              "mean_prediction": 0.43043989710244984
+            },
+            "updated": {
+              "brier": 0.17839717363426852,
+              "logscore": 0.5550227189336053,
+              "mean_prediction": 0.38057901274793765
+            },
+            "markov": {
+              "brier": 0.17272077578081482,
+              "logscore": 0.548606222724284,
+              "mean_prediction": 0.4303018874972255
+            },
+            "constant": {
+              "brier": 0.3117069989359336,
+              "logscore": 0.8295916173372182,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.23958333333333334,
+              "logscore": 3.3099668315926927,
+              "mean_prediction": 0.46130952380952384
+            }
+          },
+          "delta_brier": 0.00692863667678606
+        },
+        {
+          "session": 32,
+          "treatment": 4,
+          "n": 896,
+          "observed_cooperation": 0.390625,
+          "models": {
+            "fixed": {
+              "brier": 0.16572457378656966,
+              "logscore": 0.5159467966939,
+              "mean_prediction": 0.4207988712640559
+            },
+            "updated": {
+              "brier": 0.16482488696183953,
+              "logscore": 0.5144438435827349,
+              "mean_prediction": 0.3758031383131756
+            },
+            "markov": {
+              "brier": 0.14829195368952933,
+              "logscore": 0.46524893243395266,
+              "mean_prediction": 0.3966843715242264
+            },
+            "constant": {
+              "brier": 0.34767359343687054,
+              "logscore": 0.9068894927574725,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.25223214285714285,
+              "logscore": 3.4847165804650615,
+              "mean_prediction": 0.41517857142857145
+            }
+          },
+          "delta_brier": -0.0008996868247301282
+        }
+      ],
+      "comparison": {
+        "delta_brier": -0.0001746891695996334,
+        "arm_deltas": {
+          "high_t": 0.00046430370479343293,
+          "low_r": -0.0008136820439926997
+        },
+        "bootstrap_95": [
+          -0.0015937543586249877,
+          0.001374683519345945
+        ],
+        "bootstrap_draws": 9999,
+        "standard_error": 0.0008142940492016665,
+        "welch_df": 9.13721141466306,
+        "welch_95": [
+          -0.002012542253494805,
+          0.001663163914295538
+        ],
+        "hoeffding_95": [
+          -0.6792254470399094,
+          0.6788760687007102
+        ],
+        "scope": "conditional on source fitting; session sampling assumptions supplied"
+      },
+      "opponent_diagnostics": {
+        "all": {
+          "n": 8414,
+          "opponent_forecast": 0.518563871940801,
+          "actual_opponent": 0.5430235322082244,
+          "reported_belief": 0.5285797480389826,
+          "opponent_brier": 0.12124224661585399,
+          "report_squared_gap": 0.06620166440312393
+        },
+        "CC": {
+          "n": 534,
+          "opponent_forecast": 0.921233424416617,
+          "actual_opponent": 0.9662921348314607,
+          "reported_belief": 0.834625468164794,
+          "opponent_brier": 0.0346019323785676,
+          "report_squared_gap": 0.056246022531123284
+        },
+        "CD": {
+          "n": 239,
+          "opponent_forecast": 0.31308837612241597,
+          "actual_opponent": 0.29707112970711297,
+          "reported_belief": 0.301255230125523,
+          "opponent_brier": 0.20907642578438118,
+          "report_squared_gap": 0.07358614648628566
+        },
+        "DC": {
+          "n": 239,
+          "opponent_forecast": 0.4065464697057851,
+          "actual_opponent": 0.4351464435146444,
+          "reported_belief": 0.3338912133891213,
+          "opponent_brier": 0.24661197471306823,
+          "report_squared_gap": 0.09674021376645735
+        },
+        "DD": {
+          "n": 190,
+          "opponent_forecast": 0.1848805059248271,
+          "actual_opponent": 0.15263157894736842,
+          "reported_belief": 0.1493684210526316,
+          "opponent_brier": 0.13037517334659912,
+          "report_squared_gap": 0.04658281454316116
+        }
+      }
+    },
+    "ten-reciprocal": {
+      "sessions": [
+        {
+          "session": 17,
+          "treatment": 3,
+          "n": 336,
+          "observed_cooperation": 0.47619047619047616,
+          "models": {
+            "fixed": {
+              "brier": 0.08244359831683723,
+              "logscore": 0.28551730250606816,
+              "mean_prediction": 0.5101347141138561
+            },
+            "updated": {
+              "brier": 0.08200285398350804,
+              "logscore": 0.28516261098170387,
+              "mean_prediction": 0.5055525027729366
+            },
+            "markov": {
+              "brier": 0.06501692610613581,
+              "logscore": 0.21671986667443655,
+              "mean_prediction": 0.5008729501753069
+            },
+            "constant": {
+              "brier": 0.3097271863945976,
+              "logscore": 0.8253366884150024,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.08333333333333333,
+              "logscore": 1.151293463162436,
+              "mean_prediction": 0.5119047619047619
+            }
+          },
+          "delta_brier": -0.0004407443333291905
+        },
+        {
+          "session": 18,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.8549107142857143,
+          "models": {
+            "fixed": {
+              "brier": 0.08717177673471221,
+              "logscore": 0.2967850876250253,
+              "mean_prediction": 0.8394363764560043
+            },
+            "updated": {
+              "brier": 0.08748790441159542,
+              "logscore": 0.29860873001070737,
+              "mean_prediction": 0.834094807131463
+            },
+            "markov": {
+              "brier": 0.08368770250488897,
+              "logscore": 0.2762858109609843,
+              "mean_prediction": 0.8497967324687138
+            },
+            "constant": {
+              "brier": 0.14177308913792855,
+              "logscore": 0.4643768848470261,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.11830357142857142,
+              "logscore": 1.6344251218111245,
+              "mean_prediction": 0.8794642857142857
+            }
+          },
+          "delta_brier": 0.00031612767688320165
+        },
+        {
+          "session": 19,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6026785714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.09214448578274166,
+              "logscore": 0.3056438619414715,
+              "mean_prediction": 0.5891797330794721
+            },
+            "updated": {
+              "brier": 0.09280787124028246,
+              "logscore": 0.3080370995831843,
+              "mean_prediction": 0.5841799803784511
+            },
+            "markov": {
+              "brier": 0.07289755679793741,
+              "logscore": 0.24202531382128314,
+              "mean_prediction": 0.5867508920215524
+            },
+            "constant": {
+              "brier": 0.2536324977234115,
+              "logscore": 0.7047803689522205,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.109375,
+              "logscore": 1.511072357901119,
+              "mean_prediction": 0.609375
+            }
+          },
+          "delta_brier": 0.0006633854575407994
+        },
+        {
+          "session": 20,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6316964285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.13708410088001124,
+              "logscore": 0.4340190045372084,
+              "mean_prediction": 0.6488174436158454
+            },
+            "updated": {
+              "brier": 0.1365716140588944,
+              "logscore": 0.4324215318603759,
+              "mean_prediction": 0.6428202256328757
+            },
+            "markov": {
+              "brier": 0.13841827677867083,
+              "logscore": 0.43262085656195975,
+              "mean_prediction": 0.6454123655391367
+            },
+            "constant": {
+              "brier": 0.2407637162047276,
+              "logscore": 0.6771233309578176,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.19196428571428573,
+              "logscore": 2.6520854240706933,
+              "mean_prediction": 0.6629464285714286
+            }
+          },
+          "delta_brier": -0.0005124868211168476
+        },
+        {
+          "session": 21,
+          "treatment": 3,
+          "n": 896,
+          "observed_cooperation": 0.7254464285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.0925664255611577,
+              "logscore": 0.32460606614358195,
+              "mean_prediction": 0.7427798459743248
+            },
+            "updated": {
+              "brier": 0.09230705236361927,
+              "logscore": 0.3243905181755113,
+              "mean_prediction": 0.7377619170476623
+            },
+            "markov": {
+              "brier": 0.0852388431971921,
+              "logscore": 0.2877667394465643,
+              "mean_prediction": 0.7490203365774163
+            },
+            "constant": {
+              "brier": 0.19918765283667203,
+              "logscore": 0.587769823591285,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.10825892857142858,
+              "logscore": 1.4956532624118386,
+              "mean_prediction": 0.7667410714285714
+            }
+          },
+          "delta_brier": -0.00025937319753842336
+        },
+        {
+          "session": 22,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6607142857142857,
+          "models": {
+            "fixed": {
+              "brier": 0.10682597407831075,
+              "logscore": 0.35234292802362294,
+              "mean_prediction": 0.6847333180594574
+            },
+            "updated": {
+              "brier": 0.10695708959042806,
+              "logscore": 0.35268140182722124,
+              "mean_prediction": 0.6795021909842058
+            },
+            "markov": {
+              "brier": 0.07949518966604997,
+              "logscore": 0.2643685227579882,
+              "mean_prediction": 0.6777662994299456
+            },
+            "constant": {
+              "brier": 0.22789493468604372,
+              "logscore": 0.6494662929634146,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16294642857142858,
+              "logscore": 2.2511889413623085,
+              "mean_prediction": 0.6941964285714286
+            }
+          },
+          "delta_brier": 0.00013111551211730799
+        },
+        {
+          "session": 23,
+          "treatment": 3,
+          "n": 784,
+          "observed_cooperation": 0.6352040816326531,
+          "models": {
+            "fixed": {
+              "brier": 0.09638927177614941,
+              "logscore": 0.3234446987613517,
+              "mean_prediction": 0.6611151263287348
+            },
+            "updated": {
+              "brier": 0.09628539680925266,
+              "logscore": 0.32366258173033763,
+              "mean_prediction": 0.6564048636442471
+            },
+            "markov": {
+              "brier": 0.08407296182866317,
+              "logscore": 0.2789854436846035,
+              "mean_prediction": 0.6545768308107341
+            },
+            "constant": {
+              "brier": 0.23920814920796366,
+              "logscore": 0.6737801725189337,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.12627551020408162,
+              "logscore": 1.7445615181593943,
+              "mean_prediction": 0.6721938775510204
+            }
+          },
+          "delta_brier": -0.00010387496689674702
+        },
+        {
+          "session": 24,
+          "treatment": 3,
+          "n": 686,
+          "observed_cooperation": 0.6720116618075802,
+          "models": {
+            "fixed": {
+              "brier": 0.146306710679366,
+              "logscore": 0.4637809752951238,
+              "mean_prediction": 0.6660478908732618
+            },
+            "updated": {
+              "brier": 0.14601936639388535,
+              "logscore": 0.46324673977925296,
+              "mean_prediction": 0.6609113295654435
+            },
+            "markov": {
+              "brier": 0.13997534274369108,
+              "logscore": 0.4451368832257979,
+              "mean_prediction": 0.6645030425670736
+            },
+            "constant": {
+              "brier": 0.22288479682633633,
+              "logscore": 0.6386987177316851,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.20116618075801748,
+              "logscore": 2.779214292998773,
+              "mean_prediction": 0.6924198250728864
+            }
+          },
+          "delta_brier": -0.00028734428548063407
+        },
+        {
+          "session": 25,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.36830357142857145,
+          "models": {
+            "fixed": {
+              "brier": 0.13019185480433126,
+              "logscore": 0.4133986273358628,
+              "mean_prediction": 0.4159914043776039
+            },
+            "updated": {
+              "brier": 0.12908433687661616,
+              "logscore": 0.40610261131348135,
+              "mean_prediction": 0.3962144805478936
+            },
+            "markov": {
+              "brier": 0.10835523445829856,
+              "logscore": 0.3485599085753197,
+              "mean_prediction": 0.383625891425527
+            },
+            "constant": {
+              "brier": 0.3575726561435505,
+              "logscore": 0.9281641373685517,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.18973214285714285,
+              "logscore": 2.62124723309316,
+              "mean_prediction": 0.39732142857142855
+            }
+          },
+          "delta_brier": -0.0011075179277151015
+        },
+        {
+          "session": 26,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.33482142857142855,
+          "models": {
+            "fixed": {
+              "brier": 0.1340375266742546,
+              "logscore": 0.44812878262341993,
+              "mean_prediction": 0.3706224916249002
+            },
+            "updated": {
+              "brier": 0.13207604721759075,
+              "logscore": 0.4435680732044255,
+              "mean_prediction": 0.35110888148929703
+            },
+            "markov": {
+              "brier": 0.11552722315773765,
+              "logscore": 0.38030317619950826,
+              "mean_prediction": 0.34760563654611154
+            },
+            "constant": {
+              "brier": 0.37242125020357036,
+              "logscore": 0.9600761042851704,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16741071428571427,
+              "logscore": 2.312865323317504,
+              "mean_prediction": 0.3638392857142857
+            }
+          },
+          "delta_brier": -0.001961479456663834
+        },
+        {
+          "session": 27,
+          "treatment": 4,
+          "n": 336,
+          "observed_cooperation": 0.5446428571428571,
+          "models": {
+            "fixed": {
+              "brier": 0.08832350200138349,
+              "logscore": 0.30566785917049044,
+              "mean_prediction": 0.5724623760029869
+            },
+            "updated": {
+              "brier": 0.08663828013250392,
+              "logscore": 0.3013065875917426,
+              "mean_prediction": 0.5542594088898251
+            },
+            "markov": {
+              "brier": 0.07373614189518224,
+              "logscore": 0.2510677906241475,
+              "mean_prediction": 0.5664934841544893
+            },
+            "constant": {
+              "brier": 0.27937006076077925,
+              "logscore": 0.7600944449410265,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.11011904761904762,
+              "logscore": 1.5213517548931808,
+              "mean_prediction": 0.5833333333333334
+            }
+          },
+          "delta_brier": -0.0016852218688795662
+        },
+        {
+          "session": 28,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.36160714285714285,
+          "models": {
+            "fixed": {
+              "brier": 0.2117127341991107,
+              "logscore": 0.6355992541479525,
+              "mean_prediction": 0.3992719245542144
+            },
+            "updated": {
+              "brier": 0.20711127726819936,
+              "logscore": 0.6236490556670394,
+              "mean_prediction": 0.3787512504393078
+            },
+            "markov": {
+              "brier": 0.18684131027496892,
+              "logscore": 0.5730415095526737,
+              "mean_prediction": 0.36088107114395823
+            },
+            "constant": {
+              "brier": 0.3605423749555544,
+              "logscore": 0.9345465307518754,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.29910714285714285,
+              "logscore": 4.132318590993972,
+              "mean_prediction": 0.38392857142857145
+            }
+          },
+          "delta_brier": -0.004601456930911352
+        },
+        {
+          "session": 29,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.30952380952380953,
+          "models": {
+            "fixed": {
+              "brier": 0.19057012946146334,
+              "logscore": 0.6025666246151316,
+              "mean_prediction": 0.32198934859613404
+            },
+            "updated": {
+              "brier": 0.1867543105793468,
+              "logscore": 0.5921484970527514,
+              "mean_prediction": 0.3041360537914233
+            },
+            "markov": {
+              "brier": 0.19214108873839775,
+              "logscore": 0.6028399655702124,
+              "mean_prediction": 0.3019018567092994
+            },
+            "constant": {
+              "brier": 0.38364018793780763,
+              "logscore": 0.984187368177727,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.27232142857142855,
+              "logscore": 3.7622602992632697,
+              "mean_prediction": 0.32589285714285715
+            }
+          },
+          "delta_brier": -0.003815818882116545
+        },
+        {
+          "session": 30,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.5089285714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.14403239559439768,
+              "logscore": 0.49581606624359625,
+              "mean_prediction": 0.5080991955050377
+            },
+            "updated": {
+              "brier": 0.1431363446714641,
+              "logscore": 0.4950791234745734,
+              "mean_prediction": 0.4884914313536625
+            },
+            "markov": {
+              "brier": 0.1357494986950856,
+              "logscore": 0.44886199711269165,
+              "mean_prediction": 0.5068801021204352
+            },
+            "constant": {
+              "brier": 0.29520856109146715,
+              "logscore": 0.7941338763187531,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.17857142857142858,
+              "logscore": 2.4670562782054923,
+              "mean_prediction": 0.5267857142857143
+            }
+          },
+          "delta_brier": -0.0008960509229335722
+        },
+        {
+          "session": 31,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.47172619047619047,
+          "models": {
+            "fixed": {
+              "brier": 0.17066173820505584,
+              "logscore": 0.5378252592588965,
+              "mean_prediction": 0.4471680564471911
+            },
+            "updated": {
+              "brier": 0.17153463997518872,
+              "logscore": 0.5377889427198801,
+              "mean_prediction": 0.4248427134014737
+            },
+            "markov": {
+              "brier": 0.17272077578081482,
+              "logscore": 0.548606222724284,
+              "mean_prediction": 0.4303018874972255
+            },
+            "constant": {
+              "brier": 0.3117069989359336,
+              "logscore": 0.8295916173372182,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.23958333333333334,
+              "logscore": 3.3099668315926927,
+              "mean_prediction": 0.46130952380952384
+            }
+          },
+          "delta_brier": 0.0008729017701328834
+        },
+        {
+          "session": 32,
+          "treatment": 4,
+          "n": 896,
+          "observed_cooperation": 0.390625,
+          "models": {
+            "fixed": {
+              "brier": 0.16763727050820104,
+              "logscore": 0.5203740658331354,
+              "mean_prediction": 0.42711869801278063
+            },
+            "updated": {
+              "brier": 0.16571590023294921,
+              "logscore": 0.513298533493047,
+              "mean_prediction": 0.40634823724584723
+            },
+            "markov": {
+              "brier": 0.14829195368952933,
+              "logscore": 0.46524893243395266,
+              "mean_prediction": 0.3966843715242264
+            },
+            "constant": {
+              "brier": 0.34767359343687054,
+              "logscore": 0.9068894927574725,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.25223214285714285,
+              "logscore": 3.4847165804650615,
+              "mean_prediction": 0.41517857142857145
+            }
+          },
+          "delta_brier": -0.001921370275251827
+        }
+      ],
+      "comparison": {
+        "delta_brier": -0.0009755755907599655,
+        "arm_deltas": {
+          "high_t": -6.16493697275667e-05,
+          "low_r": -0.0018895018117923643
+        },
+        "bootstrap_95": [
+          -0.001544954917562235,
+          -0.00041071879298269103
+        ],
+        "bootstrap_draws": 9999,
+        "standard_error": 0.0003097159868072579,
+        "welch_df": 7.785056386350502,
+        "welch_95": [
+          -0.001693228909568936,
+          -0.0002579222719509949
+        ],
+        "hoeffding_95": [
+          -0.6800263334610698,
+          0.6780751822795498
+        ],
+        "scope": "conditional on source fitting; session sampling assumptions supplied"
+      },
+      "opponent_diagnostics": {
+        "all": {
+          "n": 8414,
+          "opponent_forecast": 0.5221973089873684,
+          "actual_opponent": 0.5430235322082244,
+          "reported_belief": 0.5285797480389826,
+          "opponent_brier": 0.12161111058786217,
+          "report_squared_gap": 0.06641253196131536
+        },
+        "CC": {
+          "n": 534,
+          "opponent_forecast": 0.9245584299788198,
+          "actual_opponent": 0.9662921348314607,
+          "reported_belief": 0.834625468164794,
+          "opponent_brier": 0.03431334711504627,
+          "report_squared_gap": 0.05683302206564851
+        },
+        "CD": {
+          "n": 239,
+          "opponent_forecast": 0.3911411003458404,
+          "actual_opponent": 0.29707112970711297,
+          "reported_belief": 0.301255230125523,
+          "opponent_brier": 0.2176690329776236,
+          "report_squared_gap": 0.08152559280736557
+        },
+        "DC": {
+          "n": 239,
+          "opponent_forecast": 0.40909584487550116,
+          "actual_opponent": 0.4351464435146444,
+          "reported_belief": 0.3338912133891213,
+          "opponent_brier": 0.2464726499006585,
+          "report_squared_gap": 0.09711716409301943
+        },
+        "DD": {
+          "n": 190,
+          "opponent_forecast": 0.16849388187439437,
+          "actual_opponent": 0.15263157894736842,
+          "reported_belief": 0.1493684210526316,
+          "opponent_brier": 0.1295867927095504,
+          "report_squared_gap": 0.04568748962283592
+        }
+      }
+    },
+    "ten-square": {
+      "sessions": [
+        {
+          "session": 17,
+          "treatment": 3,
+          "n": 336,
+          "observed_cooperation": 0.47619047619047616,
+          "models": {
+            "fixed": {
+              "brier": 0.07954883066958425,
+              "logscore": 0.2784497828378537,
+              "mean_prediction": 0.5089241669969147
+            },
+            "updated": {
+              "brier": 0.07990044631252513,
+              "logscore": 0.286708748147577,
+              "mean_prediction": 0.47341680073762665
+            },
+            "markov": {
+              "brier": 0.06501692610613581,
+              "logscore": 0.21671986667443655,
+              "mean_prediction": 0.5008729501753069
+            },
+            "constant": {
+              "brier": 0.3097271863945976,
+              "logscore": 0.8253366884150024,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.08333333333333333,
+              "logscore": 1.151293463162436,
+              "mean_prediction": 0.5119047619047619
+            }
+          },
+          "delta_brier": 0.00035161564294088066
+        },
+        {
+          "session": 18,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.8549107142857143,
+          "models": {
+            "fixed": {
+              "brier": 0.0892172334228929,
+              "logscore": 0.30284405026973527,
+              "mean_prediction": 0.8400941407240817
+            },
+            "updated": {
+              "brier": 0.09469608817096842,
+              "logscore": 0.32692562265333575,
+              "mean_prediction": 0.79651843846438
+            },
+            "markov": {
+              "brier": 0.08368770250488897,
+              "logscore": 0.2762858109609843,
+              "mean_prediction": 0.8497967324687138
+            },
+            "constant": {
+              "brier": 0.14177308913792855,
+              "logscore": 0.4643768848470261,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.11830357142857142,
+              "logscore": 1.6344251218111245,
+              "mean_prediction": 0.8794642857142857
+            }
+          },
+          "delta_brier": 0.005478854748075523
+        },
+        {
+          "session": 19,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6026785714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.09157192218376384,
+              "logscore": 0.30205026862502293,
+              "mean_prediction": 0.587550158082782
+            },
+            "updated": {
+              "brier": 0.09867732152348885,
+              "logscore": 0.331703330724128,
+              "mean_prediction": 0.5473383415621916
+            },
+            "markov": {
+              "brier": 0.07289755679793741,
+              "logscore": 0.24202531382128314,
+              "mean_prediction": 0.5867508920215524
+            },
+            "constant": {
+              "brier": 0.2536324977234115,
+              "logscore": 0.7047803689522205,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.109375,
+              "logscore": 1.511072357901119,
+              "mean_prediction": 0.609375
+            }
+          },
+          "delta_brier": 0.00710539933972501
+        },
+        {
+          "session": 20,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6316964285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.13711609619801018,
+              "logscore": 0.43523269732682596,
+              "mean_prediction": 0.6410581467196109
+            },
+            "updated": {
+              "brier": 0.14381251067353143,
+              "logscore": 0.4564267726114837,
+              "mean_prediction": 0.5936648582735824
+            },
+            "markov": {
+              "brier": 0.13841827677867083,
+              "logscore": 0.43262085656195975,
+              "mean_prediction": 0.6454123655391367
+            },
+            "constant": {
+              "brier": 0.2407637162047276,
+              "logscore": 0.6771233309578176,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.19196428571428573,
+              "logscore": 2.6520854240706933,
+              "mean_prediction": 0.6629464285714286
+            }
+          },
+          "delta_brier": 0.006696414475521245
+        },
+        {
+          "session": 21,
+          "treatment": 3,
+          "n": 896,
+          "observed_cooperation": 0.7254464285714286,
+          "models": {
+            "fixed": {
+              "brier": 0.09157782910337263,
+              "logscore": 0.3194811641919731,
+              "mean_prediction": 0.7448634217738125
+            },
+            "updated": {
+              "brier": 0.0921318676001304,
+              "logscore": 0.32536974687318126,
+              "mean_prediction": 0.70555051462945
+            },
+            "markov": {
+              "brier": 0.0852388431971921,
+              "logscore": 0.2877667394465643,
+              "mean_prediction": 0.7490203365774163
+            },
+            "constant": {
+              "brier": 0.19918765283667203,
+              "logscore": 0.587769823591285,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.10825892857142858,
+              "logscore": 1.4956532624118386,
+              "mean_prediction": 0.7667410714285714
+            }
+          },
+          "delta_brier": 0.0005540384967577666
+        },
+        {
+          "session": 22,
+          "treatment": 3,
+          "n": 448,
+          "observed_cooperation": 0.6607142857142857,
+          "models": {
+            "fixed": {
+              "brier": 0.10442203413397606,
+              "logscore": 0.34185922063524615,
+              "mean_prediction": 0.6883898522771991
+            },
+            "updated": {
+              "brier": 0.09950047188200181,
+              "logscore": 0.3325882215649874,
+              "mean_prediction": 0.6461738039276489
+            },
+            "markov": {
+              "brier": 0.07949518966604997,
+              "logscore": 0.2643685227579882,
+              "mean_prediction": 0.6777662994299456
+            },
+            "constant": {
+              "brier": 0.22789493468604372,
+              "logscore": 0.6494662929634146,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16294642857142858,
+              "logscore": 2.2511889413623085,
+              "mean_prediction": 0.6941964285714286
+            }
+          },
+          "delta_brier": -0.004921562251974251
+        },
+        {
+          "session": 23,
+          "treatment": 3,
+          "n": 784,
+          "observed_cooperation": 0.6352040816326531,
+          "models": {
+            "fixed": {
+              "brier": 0.09636879925844556,
+              "logscore": 0.3200140010716792,
+              "mean_prediction": 0.6614227373267236
+            },
+            "updated": {
+              "brier": 0.09594585515262859,
+              "logscore": 0.32842687387881847,
+              "mean_prediction": 0.6229062063937705
+            },
+            "markov": {
+              "brier": 0.08407296182866317,
+              "logscore": 0.2789854436846035,
+              "mean_prediction": 0.6545768308107341
+            },
+            "constant": {
+              "brier": 0.23920814920796366,
+              "logscore": 0.6737801725189337,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.12627551020408162,
+              "logscore": 1.7445615181593943,
+              "mean_prediction": 0.6721938775510204
+            }
+          },
+          "delta_brier": -0.0004229441058169747
+        },
+        {
+          "session": 24,
+          "treatment": 3,
+          "n": 686,
+          "observed_cooperation": 0.6720116618075802,
+          "models": {
+            "fixed": {
+              "brier": 0.1456212293687318,
+              "logscore": 0.46085770963052675,
+              "mean_prediction": 0.6642954645087161
+            },
+            "updated": {
+              "brier": 0.1473844252078416,
+              "logscore": 0.4740979339440277,
+              "mean_prediction": 0.6231533238280268
+            },
+            "markov": {
+              "brier": 0.13997534274369108,
+              "logscore": 0.4451368832257979,
+              "mean_prediction": 0.6645030425670736
+            },
+            "constant": {
+              "brier": 0.22288479682633633,
+              "logscore": 0.6386987177316851,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.20116618075801748,
+              "logscore": 2.779214292998773,
+              "mean_prediction": 0.6924198250728864
+            }
+          },
+          "delta_brier": 0.0017631958391097768
+        },
+        {
+          "session": 25,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.36830357142857145,
+          "models": {
+            "fixed": {
+              "brier": 0.12606503260006946,
+              "logscore": 0.40143384282433797,
+              "mean_prediction": 0.413160622549788
+            },
+            "updated": {
+              "brier": 0.126441553226498,
+              "logscore": 0.39485103938513894,
+              "mean_prediction": 0.35624487997229004
+            },
+            "markov": {
+              "brier": 0.10835523445829856,
+              "logscore": 0.3485599085753197,
+              "mean_prediction": 0.383625891425527
+            },
+            "constant": {
+              "brier": 0.3575726561435505,
+              "logscore": 0.9281641373685517,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.18973214285714285,
+              "logscore": 2.62124723309316,
+              "mean_prediction": 0.39732142857142855
+            }
+          },
+          "delta_brier": 0.00037652062642853923
+        },
+        {
+          "session": 26,
+          "treatment": 4,
+          "n": 448,
+          "observed_cooperation": 0.33482142857142855,
+          "models": {
+            "fixed": {
+              "brier": 0.13245377744691103,
+              "logscore": 0.44130160463935336,
+              "mean_prediction": 0.3727201016772443
+            },
+            "updated": {
+              "brier": 0.1321115218230817,
+              "logscore": 0.44178554823599964,
+              "mean_prediction": 0.3161987678273203
+            },
+            "markov": {
+              "brier": 0.11552722315773765,
+              "logscore": 0.38030317619950826,
+              "mean_prediction": 0.34760563654611154
+            },
+            "constant": {
+              "brier": 0.37242125020357036,
+              "logscore": 0.9600761042851704,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.16741071428571427,
+              "logscore": 2.312865323317504,
+              "mean_prediction": 0.3638392857142857
+            }
+          },
+          "delta_brier": -0.00034225562382933505
+        },
+        {
+          "session": 27,
+          "treatment": 4,
+          "n": 336,
+          "observed_cooperation": 0.5446428571428571,
+          "models": {
+            "fixed": {
+              "brier": 0.08799999548834565,
+              "logscore": 0.3003760313251889,
+              "mean_prediction": 0.5722274481400318
+            },
+            "updated": {
+              "brier": 0.08679742388337741,
+              "logscore": 0.3026682388600199,
+              "mean_prediction": 0.5178159015372201
+            },
+            "markov": {
+              "brier": 0.07373614189518224,
+              "logscore": 0.2510677906241475,
+              "mean_prediction": 0.5664934841544893
+            },
+            "constant": {
+              "brier": 0.27937006076077925,
+              "logscore": 0.7600944449410265,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.11011904761904762,
+              "logscore": 1.5213517548931808,
+              "mean_prediction": 0.5833333333333334
+            }
+          },
+          "delta_brier": -0.0012025716049682417
+        },
+        {
+          "session": 28,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.36160714285714285,
+          "models": {
+            "fixed": {
+              "brier": 0.20922751354567692,
+              "logscore": 0.624769448782682,
+              "mean_prediction": 0.3957538465477037
+            },
+            "updated": {
+              "brier": 0.20081481471266535,
+              "logscore": 0.6094139810438428,
+              "mean_prediction": 0.34028161815475844
+            },
+            "markov": {
+              "brier": 0.18684131027496892,
+              "logscore": 0.5730415095526737,
+              "mean_prediction": 0.36088107114395823
+            },
+            "constant": {
+              "brier": 0.3605423749555544,
+              "logscore": 0.9345465307518754,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.29910714285714285,
+              "logscore": 4.132318590993972,
+              "mean_prediction": 0.38392857142857145
+            }
+          },
+          "delta_brier": -0.008412698833011573
+        },
+        {
+          "session": 29,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.30952380952380953,
+          "models": {
+            "fixed": {
+              "brier": 0.18700959398339712,
+              "logscore": 0.5924371603656574,
+              "mean_prediction": 0.3147089447099211
+            },
+            "updated": {
+              "brier": 0.18032117373063855,
+              "logscore": 0.5783335198224462,
+              "mean_prediction": 0.2681043801566386
+            },
+            "markov": {
+              "brier": 0.19214108873839775,
+              "logscore": 0.6028399655702124,
+              "mean_prediction": 0.3019018567092994
+            },
+            "constant": {
+              "brier": 0.38364018793780763,
+              "logscore": 0.984187368177727,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.27232142857142855,
+              "logscore": 3.7622602992632697,
+              "mean_prediction": 0.32589285714285715
+            }
+          },
+          "delta_brier": -0.0066884202527585646
+        },
+        {
+          "session": 30,
+          "treatment": 4,
+          "n": 224,
+          "observed_cooperation": 0.5089285714285714,
+          "models": {
+            "fixed": {
+              "brier": 0.14025844784641456,
+              "logscore": 0.4865615189153184,
+              "mean_prediction": 0.5066201906081325
+            },
+            "updated": {
+              "brier": 0.14236416054049258,
+              "logscore": 0.4995727253877244,
+              "mean_prediction": 0.44981322569430776
+            },
+            "markov": {
+              "brier": 0.1357494986950856,
+              "logscore": 0.44886199711269165,
+              "mean_prediction": 0.5068801021204352
+            },
+            "constant": {
+              "brier": 0.29520856109146715,
+              "logscore": 0.7941338763187531,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.17857142857142858,
+              "logscore": 2.4670562782054923,
+              "mean_prediction": 0.5267857142857143
+            }
+          },
+          "delta_brier": 0.002105712694078027
+        },
+        {
+          "session": 31,
+          "treatment": 4,
+          "n": 672,
+          "observed_cooperation": 0.47172619047619047,
+          "models": {
+            "fixed": {
+              "brier": 0.17209518049004424,
+              "logscore": 0.5390020867852031,
+              "mean_prediction": 0.42942392789069556
+            },
+            "updated": {
+              "brier": 0.18640029795966243,
+              "logscore": 0.5714168154576543,
+              "mean_prediction": 0.362511782659353
+            },
+            "markov": {
+              "brier": 0.17272077578081482,
+              "logscore": 0.548606222724284,
+              "mean_prediction": 0.4303018874972255
+            },
+            "constant": {
+              "brier": 0.3117069989359336,
+              "logscore": 0.8295916173372182,
+              "mean_prediction": 0.7217390046296298
+            },
+            "persistence": {
+              "brier": 0.23958333333333334,
+              "logscore": 3.3099668315926927,
+              "mean_prediction": 0.46130952380952384
+            }
+          },
+          "delta_brier": 0.014305117469618184
+        },
+        {
+          "session": 32,
+          "treatment": 4,
+          "n": 896,
+          "observed_cooperation": 0.390625,
+          "models": {
+            "fixed": {
+              "brier": 0.16584694962143734,
+              "logscore": 0.5165142841540172,
+              "mean_prediction": 0.42508669109732355
+            },
+            "updated": {
+              "brier": 0.1627886425991559,
+              "logscore": 0.5113343534575302,
+              "mean_prediction": 0.36594690948361613
+            },
+            "markov": {
+              "brier": 0.14829195368952933,
+              "logscore": 0.46524893243395266,
+              "mean_prediction": 0.3966843715242264
+            },
+            "constant": {
+              "brier": 0.34767359343687054,
+              "logscore": 0.9068894927574725,
+              "mean_prediction": 0.7217390046296297
+            },
+            "persistence": {
+              "brier": 0.25223214285714285,
+              "logscore": 3.4847165804650615,
+              "mean_prediction": 0.41517857142857145
+            }
+          },
+          "delta_brier": -0.003058307022281437
+        }
+      ],
+      "comparison": {
+        "delta_brier": 0.000855506852350911,
+        "arm_deltas": {
+          "high_t": 0.002075626523042372,
+          "low_r": -0.0003646128183405501
+        },
+        "bootstrap_95": [
+          -0.0015410781518475547,
+          0.003637098475950672
+        ],
+        "bootstrap_draws": 9999,
+        "standard_error": 0.0014227025442603216,
+        "welch_df": 11.415116658971849,
+        "welch_95": [
+          -0.0022620030002856303,
+          0.003973016704987452
+        ],
+        "hoeffding_95": [
+          -0.6781952510179589,
+          0.6799062647226607
+        ],
+        "scope": "conditional on source fitting; session sampling assumptions supplied"
+      },
+      "opponent_diagnostics": {
+        "all": {
+          "n": 8414,
+          "opponent_forecast": 0.5221973089873684,
+          "actual_opponent": 0.5430235322082244,
+          "reported_belief": 0.5285797480389826,
+          "opponent_brier": 0.12161111058786217,
+          "report_squared_gap": 0.06641253196131536
+        },
+        "CC": {
+          "n": 534,
+          "opponent_forecast": 0.9245584299788198,
+          "actual_opponent": 0.9662921348314607,
+          "reported_belief": 0.834625468164794,
+          "opponent_brier": 0.03431334711504627,
+          "report_squared_gap": 0.05683302206564851
+        },
+        "CD": {
+          "n": 239,
+          "opponent_forecast": 0.3911411003458404,
+          "actual_opponent": 0.29707112970711297,
+          "reported_belief": 0.301255230125523,
+          "opponent_brier": 0.2176690329776236,
+          "report_squared_gap": 0.08152559280736557
+        },
+        "DC": {
+          "n": 239,
+          "opponent_forecast": 0.40909584487550116,
+          "actual_opponent": 0.4351464435146444,
+          "reported_belief": 0.3338912133891213,
+          "opponent_brier": 0.2464726499006585,
+          "report_squared_gap": 0.09711716409301943
+        },
+        "DD": {
+          "n": 190,
+          "opponent_forecast": 0.16849388187439437,
+          "actual_opponent": 0.15263157894736842,
+          "reported_belief": 0.1493684210526316,
+          "opponent_brier": 0.1295867927095504,
+          "report_squared_gap": 0.04568748962283592
+        }
+      }
+    }
+  }
+}
