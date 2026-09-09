@@ -1,0 +1,1551 @@
+{
+  "source_commit": "12569f7ee2e84b70073d7792951b48fde1388d5a",
+  "source_files": {
+    ".github/workflows/combined-acceptance.yml": "ac0cf773eaed4122e9fa8aef6d5a2cae2bd4de1b228c5dae485e3b433f894eec",
+    ".github/workflows/history-migration.yml": "3eae5eb86c134b205ecfa74eb510b5464c411da0ab889dd12d0d4f6c9c6c3e7c",
+    ".github/workflows/longitudinal-causal-kernel-fibres.yml": "726d2cdb76df29dcc1d096b897cf8e78461bb3cabc9ba30f2e1bc0b561e3bb01",
+    ".github/workflows/sequential-consistency.yml": "04060013cdf805e4ac61241c4582ef82ba79bd631e56c32b938d87879b4be4c1",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "2a992a342ba9119ad0744106408718a84469f19dac6c550fb8d64ba405e619b2",
+    "README.md": "6c86968243c5ee98cf983f8ea5061c1578eeaa7e54df728e6e6fbfdfd8a8cd5f",
+    "docs/history/releases/2026-09-09-human-trust-research-checkpoint.md": "fe98fb26335bd6ee5ebee5acab71b0b0182106765ace5fc0ab9dd8a7c5e0376d",
+    "docs/programme/ARCHITECTURE.md": "5d33f043cb6a01dbdc36b8242c6fcbc9c778e35fed1645f65711ceb77ce6a7b9",
+    "docs/programme/ROADMAP.md": "746422f4e0694b8a2c5dd5dba538ba1af009226556806d47ff42449c55aa6ad4",
+    "research/empirical_design_checkpoint/CURRENT_BRIEF.md": "e5b0bfe4f22cef73a3779a6b33916313325e9b95a00606a68818c12f60c5ab3d",
+    "research/empirical_trust_2016/REVIEW_20260909.md": "35fa2b8e4b91a59bb783d29c952fcddce19f341bf298cd2ebcb78a530742029c",
+    "verification/empirical_acceptance/README.md": "394995627b3fa1c76167c4d922c18fa0e4025e6fa27a989e27cadd6d3c7f9098",
+    "verification/empirical_acceptance/acceptance.py": "775c8d0bc599d30a5673ba6e1383fc9d96217f3caa1408f6081df97305d7ce44"
+  },
+  "validation": {
+    "empirical_receiving": {
+      "nonidentification_plug_in_illustration": {
+        "effect_endpoints": [
+          "-1649/2880",
+          "1231/2880"
+        ],
+        "hidden_mean_endpoints": [
+          "0",
+          "1"
+        ],
+        "observed_sender_rounds": 720,
+        "status": "mathematical extensions of empirical law; not fitted psychological models or population confidence set",
+        "visible_mean_normalized": "1649/2880"
+      },
+      "producer_disabled": true,
+      "receiving": {
+        "exact_normalized_mse": {
+          "full": "157638629406394637404759881070348279/3600000000000000000000000000000000000",
+          "persistence": "91302083333333332929166666666668217/1800000000000000000000000000000000000",
+          "reduced": "83822388347740187046277784771000051/1800000000000000000000000000000000000",
+          "treatment_mean": "29780116705246919777777777777779/200000000000000000000000000000000"
+        },
+        "exact_reduced_minus_full": "3335382429695245562598562823883941/1200000000000000000000000000000000000",
+        "max_ridge_normal_equation_residual": 7.930590476190476e-14,
+        "not_checked": [
+          "physical randomization",
+          "sampling exchangeability",
+          "utility or beliefs",
+          "statistical adequacy",
+          "bootstrap interval",
+          "OLS uncertainty",
+          "equilibrium",
+          "causality"
+        ],
+        "observations": 1296,
+        "status": "checked_scoped_arithmetic",
+        "test_rows": 240,
+        "test_sessions": [
+          1,
+          4,
+          8,
+          10
+        ]
+      },
+      "rejected_controls": [
+        "stale data",
+        "missing premise binding",
+        "changed query",
+        "participant leakage",
+        "altered outcome",
+        "altered prediction",
+        "score forgery",
+        "false equivalence",
+        "erased feature relabelled",
+        "false fitted coefficient",
+        "training mean altered",
+        "original result mismatch",
+        "prediction-to-intervention revision",
+        "changed plan bytes"
+      ]
+    },
+    "live_causal": {
+      "failed": 0,
+      "passed": 12,
+      "rejections": 34,
+      "results": [
+        {
+          "case": "zero_gap_exact_pr20_collapse",
+          "corners": 1,
+          "dimension": 0,
+          "minimizing_set": [
+            "policy-a1-0-a2-0100",
+            "policy-a1-0-a2-0101",
+            "policy-a1-0-a2-0110",
+            "policy-a1-0-a2-0111"
+          ],
+          "policies": 32,
+          "status": "PASS",
+          "subject_byte_identity": true
+        },
+        {
+          "S_interval": [
+            "1/4",
+            "1/4"
+          ],
+          "U_interval": [
+            "0",
+            "1/2"
+          ],
+          "U_same_model_worst_regret": "1/4",
+          "case": "one_gap_partial_policy_model_dependent_decision_and_regret",
+          "common_minimizers": 0,
+          "rejected_cross_model_shortcut": "1/2",
+          "status": "PASS"
+        },
+        {
+          "case": "decision_identified_despite_nontrivial_fibre",
+          "common_minimizers": [
+            "policy-a1-0-a2-0000",
+            "policy-a1-0-a2-0001",
+            "policy-a1-0-a2-0010",
+            "policy-a1-0-a2-0011"
+          ],
+          "dimension": 1,
+          "partial_policy_interval": [
+            "1/2",
+            "1"
+          ],
+          "status": "PASS"
+        },
+        {
+          "case": "two_gap_continuous_rectangle_exact_query_corners",
+          "corner_values": [
+            "0",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "corners": 4,
+          "dimension": 2,
+          "finite_corners_equal_fibre": false,
+          "interior_point": [
+            "1/3",
+            "2/5"
+          ],
+          "interior_value": "11/30",
+          "status": "PASS"
+        },
+        {
+          "case": "finite_corners_not_valid_for_arbitrary_nonlinear_queries",
+          "corner_values": [
+            "0",
+            "0"
+          ],
+          "midpoint_value": "1/4",
+          "status": "PASS"
+        },
+        {
+          "case": "all_bounded_dimensions_and_persistent_limit",
+          "counts": [
+            [
+              1,
+              2,
+              64,
+              "existing-persistent-family-receiver-reused"
+            ],
+            [
+              2,
+              4,
+              128,
+              "existing-persistent-family-receiver-reused"
+            ],
+            [
+              3,
+              8,
+              256,
+              "local-exact-corner-family-existing-persistent-limit"
+            ],
+            [
+              4,
+              16,
+              512,
+              "local-exact-corner-family-existing-persistent-limit"
+            ]
+          ],
+          "existing_family_limit": 4,
+          "max_reference_cells": 512,
+          "status": "PASS"
+        },
+        {
+          "case": "earlier_stage_gaps_outside_profile_not_impossible",
+          "first_stage": "outside-second-stage-kernel-fibre-profile",
+          "intermediate": "outside-second-stage-kernel-fibre-profile",
+          "narrower_pr20_policy": "identified-dynamic-regime-under-supplied-sequential-premises",
+          "status": "PASS"
+        },
+        {
+          "case": "stronger_scm_restriction_and_nonlinear_query_refuse",
+          "query_status": "unsupported-kernel-fibre-query",
+          "restriction_status": "unsupported-causal-completion-restriction",
+          "status": "PASS"
+        },
+        {
+          "case": "missing_row_map_catalogue_and_hidden_policy_controls",
+          "changed_policy": true,
+          "duplicate_missing": true,
+          "extra_assignment": true,
+          "model_indexed_policy_vector": true,
+          "omitted_missing": true,
+          "renamed_missing": true,
+          "reordered_catalogue": true,
+          "status": "PASS"
+        },
+        {
+          "case": "stale_observation_premises_profile_loss_and_identity_binding",
+          "changed_missing_row_order": true,
+          "changed_support_pattern": true,
+          "rejected": 15,
+          "status": "PASS"
+        },
+        {
+          "case": "forged_corner_transition_certificate_interval_and_decision_reject",
+          "forged_controls": 11,
+          "status": "PASS"
+        },
+        {
+          "case": "producer_disabled_receiving",
+          "fibre_cells": 128,
+          "persistent_producer_disabled": true,
+          "pr20_collapse_cells": 32,
+          "status": "PASS"
+        }
+      ],
+      "source_sha256": {
+        "checks.py": "648e0b13701ae4432116899f23df3cd148c1fbab5ca6806b9baf26f612958692",
+        "reference.py": "94b3a90c07e8cec4dbf1149bda787f380e4da593e9b1fb6d0a8d71309f1bc86b"
+      }
+    },
+    "live_strategic": {
+      "changed_belief_alternative": {
+        "epsilon": "0",
+        "information_queries": 6,
+        "max_gain": "0",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-modelwise-sequential-equilibrium",
+        "subject_sha256": "33c72bb91b99b179afae18ec6fe20946b81e20dfcf9041076098e86d5019b8a9",
+        "warrant_sha256": "095a20636c87fa2ed41837e4fac8b39ce41da40e5dc58b5587be56a0d81a8ae9"
+      },
+      "independent_exact_linear_solution": "x=y=0",
+      "later_incentive_controls": {
+        "comply_to_defect_gain_high_monitor": "-1/2",
+        "comply_to_defect_gain_low_monitor": "1/2",
+        "erased_correct_probability": "1/2",
+        "remembered_correct_probability": "1"
+      },
+      "producer_disabled": true,
+      "received": {
+        "arbitrary_sequence_required_ratios": {
+          "high": "3/5",
+          "low": "5/3"
+        },
+        "conditional_action_values": [
+          {
+            "action": "N",
+            "info": "A.b.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.H",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.b.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.L",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.H",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.L",
+            "model": "high",
+            "value": "1"
+          },
+          {
+            "action": "accept",
+            "info": "B.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.H",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "accept",
+            "info": "B.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.L",
+            "model": "high",
+            "value": "0"
+          },
+          {
+            "action": "N",
+            "info": "A.b.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.H",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.b.L",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.b.L",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.H",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "N",
+            "info": "A.g.L",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reveal",
+            "info": "A.g.L",
+            "model": "low",
+            "value": "1"
+          },
+          {
+            "action": "accept",
+            "info": "B.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.H",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "accept",
+            "info": "B.L",
+            "model": "low",
+            "value": "0"
+          },
+          {
+            "action": "reject",
+            "info": "B.L",
+            "model": "low",
+            "value": "0"
+          }
+        ],
+        "full_erasure_information_sets": 3,
+        "identity": {
+          "sender_retains_signal": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75",
+          "source": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31",
+          "target": "ca249ca18da0353e74ad361a70b7be974ad4e7b23bc892603cbda2cda4e15b6a"
+        },
+        "individual_target_statuses": {
+          "high": "shared-consistent-modelwise-sequential-equilibrium",
+          "low": "shared-consistent-modelwise-sequential-equilibrium"
+        },
+        "query": "all-local-values-and-one-common-consistency-sequence.v1",
+        "receiver_only_information_sets": 5,
+        "receiver_only_status": "shared-consistent-modelwise-sequential-equilibrium",
+        "source_information_sets": 6,
+        "source_status": "shared-consistent-modelwise-sequential-equilibrium",
+        "status": "checked-common-consistency-obstruction",
+        "target_assessed_max_gain": "0"
+      },
+      "rejections": [
+        "false obstruction ratio",
+        "same model is not an obstruction",
+        "unknown model",
+        "missing individual model warrant",
+        "modelwise witness swapped",
+        "missing continuation row",
+        "false value with valid odds",
+        "false source limiting belief",
+        "model-indexed tremble injection",
+        "receiver repair changes sender tremble",
+        "extra acceptance flag",
+        "wrong query",
+        "stale caller subject binding",
+        "freshly bound payoff outside proved class",
+        "freshly bound changed marginal",
+        "freshly bound changed assessment",
+        "freshly bound private information change",
+        "compatible odds family cannot prove impossibility",
+        "caller query rebinding"
+      ]
+    },
+    "mode": "all",
+    "portable_revision": {
+      "native_writ_import": "not_supported",
+      "new_claim": "not_identified_without_additional_assumptions",
+      "new_use": "rejected",
+      "old_bytes_preserved": true,
+      "old_result": "checked_scoped_arithmetic",
+      "rejected_revision_controls": 3
+    },
+    "preservation": {
+      "empirical_checkpoint": "ae7acb7c9ba82f51cd72d6633fc6ecaeda61a6d3",
+      "frozen_files": 227,
+      "frozen_sha256": "3bcb1a0c0d15cbeb1515b6b0c1413f056f128af4dd84cc54669bc2dcf7ad96ea",
+      "rejection_controls": [
+        "verification/combined_acceptance/results.json",
+        "research/empirical_trust_2016/results.json",
+        "unregistered addition"
+      ],
+      "release_commit": "2cd6fd7432efccaacc734fd235549a564ddbff48"
+    },
+    "release_replay": {
+      "causal": {
+        "current_checks": {
+          "accumulation": {
+            "failed": 0,
+            "passed": 11,
+            "status": null
+          },
+          "corner": {
+            "failed": 0,
+            "passed": 10,
+            "status": "passed"
+          },
+          "finite_causal": {
+            "failed": 0,
+            "passed": 11,
+            "status": "passed"
+          },
+          "kernel_fibre": {
+            "failed": 0,
+            "passed": 12,
+            "status": null
+          },
+          "longitudinal": {
+            "failed": 0,
+            "passed": 10,
+            "status": null
+          },
+          "multistream": {
+            "failed": 0,
+            "passed": null,
+            "status": "passed"
+          },
+          "persistent": {
+            "failed": 0,
+            "passed": 11,
+            "status": null
+          },
+          "replanning": {
+            "failed": 0,
+            "passed": 9,
+            "status": null
+          },
+          "sequential": {
+            "failed": 0,
+            "passed": 17,
+            "status": null
+          },
+          "statistical": {
+            "failed": 0,
+            "passed": 10,
+            "status": null
+          },
+          "transport": {
+            "failed": 0,
+            "passed": 16,
+            "status": null
+          },
+          "unsafe": {
+            "failed": 0,
+            "passed": 18,
+            "status": "passed"
+          }
+        },
+        "failed": 0,
+        "joint_law_passed_per_mode": 19,
+        "normal_optimized_equal": true,
+        "passed_per_mode": 12,
+        "preservation": {
+          "base_files_checked": 148,
+          "historical_files_preserved": true,
+          "historical_pr12_runner": "passed-at-exact-repaired-head",
+          "historical_pr14_runner": "passed-at-exact-merge",
+          "historical_pr16_runner": "passed-at-exact-merge",
+          "historical_pr17_runner": "passed-at-exact-merge",
+          "historical_pr19_runner": "passed-at-exact-merge",
+          "historical_pr20_runner": "passed-at-exact-merge",
+          "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+          "pr20_merge_tree_matches_reviewed_head": true,
+          "pr20_merged_before_start": true,
+          "release_identities_unchanged": true,
+          "release_versions": [
+            "v0.0.1",
+            "v0.0.2",
+            "v0.0.3",
+            "v0.0.4",
+            "v0.0.5",
+            "v0.0.6"
+          ]
+        },
+        "rejections_per_mode": 34,
+        "results": [
+          {
+            "case": "zero_gap_exact_pr20_collapse",
+            "corners": 1,
+            "dimension": 0,
+            "minimizing_set": [
+              "policy-a1-0-a2-0100",
+              "policy-a1-0-a2-0101",
+              "policy-a1-0-a2-0110",
+              "policy-a1-0-a2-0111"
+            ],
+            "policies": 32,
+            "status": "PASS",
+            "subject_byte_identity": true
+          },
+          {
+            "S_interval": [
+              "1/4",
+              "1/4"
+            ],
+            "U_interval": [
+              "0",
+              "1/2"
+            ],
+            "U_same_model_worst_regret": "1/4",
+            "case": "one_gap_partial_policy_model_dependent_decision_and_regret",
+            "common_minimizers": 0,
+            "rejected_cross_model_shortcut": "1/2",
+            "status": "PASS"
+          },
+          {
+            "case": "decision_identified_despite_nontrivial_fibre",
+            "common_minimizers": [
+              "policy-a1-0-a2-0000",
+              "policy-a1-0-a2-0001",
+              "policy-a1-0-a2-0010",
+              "policy-a1-0-a2-0011"
+            ],
+            "dimension": 1,
+            "partial_policy_interval": [
+              "1/2",
+              "1"
+            ],
+            "status": "PASS"
+          },
+          {
+            "case": "two_gap_continuous_rectangle_exact_query_corners",
+            "corner_values": [
+              "0",
+              "1/2",
+              "1/2",
+              "1"
+            ],
+            "corners": 4,
+            "dimension": 2,
+            "finite_corners_equal_fibre": false,
+            "interior_point": [
+              "1/3",
+              "2/5"
+            ],
+            "interior_value": "11/30",
+            "status": "PASS"
+          },
+          {
+            "case": "finite_corners_not_valid_for_arbitrary_nonlinear_queries",
+            "corner_values": [
+              "0",
+              "0"
+            ],
+            "midpoint_value": "1/4",
+            "status": "PASS"
+          },
+          {
+            "case": "all_bounded_dimensions_and_persistent_limit",
+            "counts": [
+              [
+                1,
+                2,
+                64,
+                "existing-persistent-family-receiver-reused"
+              ],
+              [
+                2,
+                4,
+                128,
+                "existing-persistent-family-receiver-reused"
+              ],
+              [
+                3,
+                8,
+                256,
+                "local-exact-corner-family-existing-persistent-limit"
+              ],
+              [
+                4,
+                16,
+                512,
+                "local-exact-corner-family-existing-persistent-limit"
+              ]
+            ],
+            "existing_family_limit": 4,
+            "max_reference_cells": 512,
+            "status": "PASS"
+          },
+          {
+            "case": "earlier_stage_gaps_outside_profile_not_impossible",
+            "first_stage": "outside-second-stage-kernel-fibre-profile",
+            "intermediate": "outside-second-stage-kernel-fibre-profile",
+            "narrower_pr20_policy": "identified-dynamic-regime-under-supplied-sequential-premises",
+            "status": "PASS"
+          },
+          {
+            "case": "stronger_scm_restriction_and_nonlinear_query_refuse",
+            "query_status": "unsupported-kernel-fibre-query",
+            "restriction_status": "unsupported-causal-completion-restriction",
+            "status": "PASS"
+          },
+          {
+            "case": "missing_row_map_catalogue_and_hidden_policy_controls",
+            "changed_policy": true,
+            "duplicate_missing": true,
+            "extra_assignment": true,
+            "model_indexed_policy_vector": true,
+            "omitted_missing": true,
+            "renamed_missing": true,
+            "reordered_catalogue": true,
+            "status": "PASS"
+          },
+          {
+            "case": "stale_observation_premises_profile_loss_and_identity_binding",
+            "changed_missing_row_order": true,
+            "changed_support_pattern": true,
+            "rejected": 15,
+            "status": "PASS"
+          },
+          {
+            "case": "forged_corner_transition_certificate_interval_and_decision_reject",
+            "forged_controls": 11,
+            "status": "PASS"
+          },
+          {
+            "case": "producer_disabled_receiving",
+            "fibre_cells": 128,
+            "persistent_producer_disabled": true,
+            "pr20_collapse_cells": 32,
+            "status": "PASS"
+          }
+        ],
+        "retained_result_present_and_source_bound": true,
+        "source_sha256": {
+          ".github/workflows/longitudinal-causal-kernel-fibres.yml": "79805554c9cfd3fa818e8b49572aba540df8e21bd9eee883ad289e9e78872aff",
+          ".github/workflows/two-stage-longitudinal-causal-policy.yml": "342750a599f6e8cee031949f259e828c5a4bb2597ee6777990f2373293b43d10",
+          "README.md": "364688ae828b6f7d92b15bccb4eefe8e5efa4456441294058926646551d534f5",
+          "docs/history/records/FINDINGS_LEDGER.md": "34d9de667470a05542e06af5fb917c728baa7c0c87384dedab5e6310f0e34131",
+          "docs/history/records/SUBSTRATE_LEDGER.md": "135a53622f5454c8ac79f368ae32bffcb0955750c211956ba68a95ec90a71c87",
+          "docs/programme/ARCHITECTURE.md": "d77df0a50dc9d993a60a84050213556df6f32f98405a308e5d05431a199e5516",
+          "docs/programme/ROADMAP.md": "ddf40bc4ac46bc9a6f1ac42f85c971ccc015f427568f6bda9d96cdf5631eae19",
+          "foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md": "9d6e9bebede657d6cd751fa62c0b650fea8145e320968a29694d76ff2653a765",
+          "verification/longitudinal_causal_kernel_fibres/README.md": "047e0361ece649f6cb397fd00131ef4e7aeebce9c0b255b81b6b471042b93111",
+          "verification/longitudinal_causal_kernel_fibres/checks.py": "648e0b13701ae4432116899f23df3cd148c1fbab5ca6806b9baf26f612958692",
+          "verification/longitudinal_causal_kernel_fibres/reference.py": "94b3a90c07e8cec4dbf1149bda787f380e4da593e9b1fb6d0a8d71309f1bc86b",
+          "verification/longitudinal_causal_kernel_fibres/run_checks.py": "afca3ee9df772bf2a2b729f01b873aa069fcc0532e514b5c71d829bdef5eeadc"
+        },
+        "status": "passed"
+      },
+      "current_links_checked": true,
+      "live_causal": {
+        "failed": 0,
+        "passed": 12,
+        "rejections": 34,
+        "results": [
+          {
+            "case": "zero_gap_exact_pr20_collapse",
+            "corners": 1,
+            "dimension": 0,
+            "minimizing_set": [
+              "policy-a1-0-a2-0100",
+              "policy-a1-0-a2-0101",
+              "policy-a1-0-a2-0110",
+              "policy-a1-0-a2-0111"
+            ],
+            "policies": 32,
+            "status": "PASS",
+            "subject_byte_identity": true
+          },
+          {
+            "S_interval": [
+              "1/4",
+              "1/4"
+            ],
+            "U_interval": [
+              "0",
+              "1/2"
+            ],
+            "U_same_model_worst_regret": "1/4",
+            "case": "one_gap_partial_policy_model_dependent_decision_and_regret",
+            "common_minimizers": 0,
+            "rejected_cross_model_shortcut": "1/2",
+            "status": "PASS"
+          },
+          {
+            "case": "decision_identified_despite_nontrivial_fibre",
+            "common_minimizers": [
+              "policy-a1-0-a2-0000",
+              "policy-a1-0-a2-0001",
+              "policy-a1-0-a2-0010",
+              "policy-a1-0-a2-0011"
+            ],
+            "dimension": 1,
+            "partial_policy_interval": [
+              "1/2",
+              "1"
+            ],
+            "status": "PASS"
+          },
+          {
+            "case": "two_gap_continuous_rectangle_exact_query_corners",
+            "corner_values": [
+              "0",
+              "1/2",
+              "1/2",
+              "1"
+            ],
+            "corners": 4,
+            "dimension": 2,
+            "finite_corners_equal_fibre": false,
+            "interior_point": [
+              "1/3",
+              "2/5"
+            ],
+            "interior_value": "11/30",
+            "status": "PASS"
+          },
+          {
+            "case": "finite_corners_not_valid_for_arbitrary_nonlinear_queries",
+            "corner_values": [
+              "0",
+              "0"
+            ],
+            "midpoint_value": "1/4",
+            "status": "PASS"
+          },
+          {
+            "case": "all_bounded_dimensions_and_persistent_limit",
+            "counts": [
+              [
+                1,
+                2,
+                64,
+                "existing-persistent-family-receiver-reused"
+              ],
+              [
+                2,
+                4,
+                128,
+                "existing-persistent-family-receiver-reused"
+              ],
+              [
+                3,
+                8,
+                256,
+                "local-exact-corner-family-existing-persistent-limit"
+              ],
+              [
+                4,
+                16,
+                512,
+                "local-exact-corner-family-existing-persistent-limit"
+              ]
+            ],
+            "existing_family_limit": 4,
+            "max_reference_cells": 512,
+            "status": "PASS"
+          },
+          {
+            "case": "earlier_stage_gaps_outside_profile_not_impossible",
+            "first_stage": "outside-second-stage-kernel-fibre-profile",
+            "intermediate": "outside-second-stage-kernel-fibre-profile",
+            "narrower_pr20_policy": "identified-dynamic-regime-under-supplied-sequential-premises",
+            "status": "PASS"
+          },
+          {
+            "case": "stronger_scm_restriction_and_nonlinear_query_refuse",
+            "query_status": "unsupported-kernel-fibre-query",
+            "restriction_status": "unsupported-causal-completion-restriction",
+            "status": "PASS"
+          },
+          {
+            "case": "missing_row_map_catalogue_and_hidden_policy_controls",
+            "changed_policy": true,
+            "duplicate_missing": true,
+            "extra_assignment": true,
+            "model_indexed_policy_vector": true,
+            "omitted_missing": true,
+            "renamed_missing": true,
+            "reordered_catalogue": true,
+            "status": "PASS"
+          },
+          {
+            "case": "stale_observation_premises_profile_loss_and_identity_binding",
+            "changed_missing_row_order": true,
+            "changed_support_pattern": true,
+            "rejected": 15,
+            "status": "PASS"
+          },
+          {
+            "case": "forged_corner_transition_certificate_interval_and_decision_reject",
+            "forged_controls": 11,
+            "status": "PASS"
+          },
+          {
+            "case": "producer_disabled_receiving",
+            "fibre_cells": 128,
+            "persistent_producer_disabled": true,
+            "pr20_collapse_cells": 32,
+            "status": "PASS"
+          }
+        ],
+        "source_sha256": {
+          "checks.py": "648e0b13701ae4432116899f23df3cd148c1fbab5ca6806b9baf26f612958692",
+          "reference.py": "94b3a90c07e8cec4dbf1149bda787f380e4da593e9b1fb6d0a8d71309f1bc86b"
+        }
+      },
+      "live_strategic": {
+        "changed_belief_alternative": {
+          "epsilon": "0",
+          "information_queries": 6,
+          "max_gain": "0",
+          "semantics": "one-common-power-sequence-all-models.v1",
+          "status": "shared-consistent-modelwise-sequential-equilibrium",
+          "subject_sha256": "33c72bb91b99b179afae18ec6fe20946b81e20dfcf9041076098e86d5019b8a9",
+          "warrant_sha256": "095a20636c87fa2ed41837e4fac8b39ce41da40e5dc58b5587be56a0d81a8ae9"
+        },
+        "independent_exact_linear_solution": "x=y=0",
+        "later_incentive_controls": {
+          "comply_to_defect_gain_high_monitor": "-1/2",
+          "comply_to_defect_gain_low_monitor": "1/2",
+          "erased_correct_probability": "1/2",
+          "remembered_correct_probability": "1"
+        },
+        "producer_disabled": true,
+        "received": {
+          "arbitrary_sequence_required_ratios": {
+            "high": "3/5",
+            "low": "5/3"
+          },
+          "conditional_action_values": [
+            {
+              "action": "N",
+              "info": "A.b.H",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.b.H",
+              "model": "high",
+              "value": "1"
+            },
+            {
+              "action": "N",
+              "info": "A.b.L",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.b.L",
+              "model": "high",
+              "value": "1"
+            },
+            {
+              "action": "N",
+              "info": "A.g.H",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.g.H",
+              "model": "high",
+              "value": "1"
+            },
+            {
+              "action": "N",
+              "info": "A.g.L",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.g.L",
+              "model": "high",
+              "value": "1"
+            },
+            {
+              "action": "accept",
+              "info": "B.H",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "reject",
+              "info": "B.H",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "accept",
+              "info": "B.L",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "reject",
+              "info": "B.L",
+              "model": "high",
+              "value": "0"
+            },
+            {
+              "action": "N",
+              "info": "A.b.H",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.b.H",
+              "model": "low",
+              "value": "1"
+            },
+            {
+              "action": "N",
+              "info": "A.b.L",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.b.L",
+              "model": "low",
+              "value": "1"
+            },
+            {
+              "action": "N",
+              "info": "A.g.H",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.g.H",
+              "model": "low",
+              "value": "1"
+            },
+            {
+              "action": "N",
+              "info": "A.g.L",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "reveal",
+              "info": "A.g.L",
+              "model": "low",
+              "value": "1"
+            },
+            {
+              "action": "accept",
+              "info": "B.H",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "reject",
+              "info": "B.H",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "accept",
+              "info": "B.L",
+              "model": "low",
+              "value": "0"
+            },
+            {
+              "action": "reject",
+              "info": "B.L",
+              "model": "low",
+              "value": "0"
+            }
+          ],
+          "full_erasure_information_sets": 3,
+          "identity": {
+            "sender_retains_signal": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75",
+            "source": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31",
+            "target": "ca249ca18da0353e74ad361a70b7be974ad4e7b23bc892603cbda2cda4e15b6a"
+          },
+          "individual_target_statuses": {
+            "high": "shared-consistent-modelwise-sequential-equilibrium",
+            "low": "shared-consistent-modelwise-sequential-equilibrium"
+          },
+          "query": "all-local-values-and-one-common-consistency-sequence.v1",
+          "receiver_only_information_sets": 5,
+          "receiver_only_status": "shared-consistent-modelwise-sequential-equilibrium",
+          "source_information_sets": 6,
+          "source_status": "shared-consistent-modelwise-sequential-equilibrium",
+          "status": "checked-common-consistency-obstruction",
+          "target_assessed_max_gain": "0"
+        },
+        "rejections": [
+          "false obstruction ratio",
+          "same model is not an obstruction",
+          "unknown model",
+          "missing individual model warrant",
+          "modelwise witness swapped",
+          "missing continuation row",
+          "false value with valid odds",
+          "false source limiting belief",
+          "model-indexed tremble injection",
+          "receiver repair changes sender tremble",
+          "extra acceptance flag",
+          "wrong query",
+          "stale caller subject binding",
+          "freshly bound payoff outside proved class",
+          "freshly bound changed marginal",
+          "freshly bound changed assessment",
+          "freshly bound private information change",
+          "compatible odds family cannot prove impossibility",
+          "caller query rebinding"
+        ]
+      },
+      "mode": "all",
+      "preservation": {
+        "causal_main_commit": "4866ffce9b3e935b86188d3fe981d4b9240f0740",
+        "frozen_union_files": 202,
+        "frozen_union_sha256": "237f898de61192a70a9dce34c15964e39806168e5b88508c52615466320cf822",
+        "main_ledgers_preserved_with_strategic_prefix": [
+          "docs/history/records/FINDINGS_LEDGER.md",
+          "docs/history/records/SUBSTRATE_LEDGER.md"
+        ],
+        "strategic_commit": "56fb71616212af9719ae7a264eb8c4829d80f235"
+      },
+      "rejection_controls": [
+        "verification/diagnostic_erasure/final-results.json",
+        "verification/longitudinal_causal_kernel_fibres/results.json",
+        "unregistered addition"
+      ],
+      "strategic": {
+        "base": "5ea19f214ec89536f47fe20cfa5a4d62222b2598",
+        "diagnostic_erasure": {
+          "changed_belief_alternative": {
+            "epsilon": "0",
+            "information_queries": 6,
+            "max_gain": "0",
+            "semantics": "one-common-power-sequence-all-models.v1",
+            "status": "shared-consistent-modelwise-sequential-equilibrium",
+            "subject_sha256": "33c72bb91b99b179afae18ec6fe20946b81e20dfcf9041076098e86d5019b8a9",
+            "warrant_sha256": "095a20636c87fa2ed41837e4fac8b39ce41da40e5dc58b5587be56a0d81a8ae9"
+          },
+          "independent_exact_linear_solution": "x=y=0",
+          "later_incentive_controls": {
+            "comply_to_defect_gain_high_monitor": "-1/2",
+            "comply_to_defect_gain_low_monitor": "1/2",
+            "erased_correct_probability": "1/2",
+            "remembered_correct_probability": "1"
+          },
+          "producer_disabled": true,
+          "received": {
+            "arbitrary_sequence_required_ratios": {
+              "high": "3/5",
+              "low": "5/3"
+            },
+            "conditional_action_values": [
+              {
+                "action": "N",
+                "info": "A.b.H",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.b.H",
+                "model": "high",
+                "value": "1"
+              },
+              {
+                "action": "N",
+                "info": "A.b.L",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.b.L",
+                "model": "high",
+                "value": "1"
+              },
+              {
+                "action": "N",
+                "info": "A.g.H",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.g.H",
+                "model": "high",
+                "value": "1"
+              },
+              {
+                "action": "N",
+                "info": "A.g.L",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.g.L",
+                "model": "high",
+                "value": "1"
+              },
+              {
+                "action": "accept",
+                "info": "B.H",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "reject",
+                "info": "B.H",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "accept",
+                "info": "B.L",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "reject",
+                "info": "B.L",
+                "model": "high",
+                "value": "0"
+              },
+              {
+                "action": "N",
+                "info": "A.b.H",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.b.H",
+                "model": "low",
+                "value": "1"
+              },
+              {
+                "action": "N",
+                "info": "A.b.L",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.b.L",
+                "model": "low",
+                "value": "1"
+              },
+              {
+                "action": "N",
+                "info": "A.g.H",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.g.H",
+                "model": "low",
+                "value": "1"
+              },
+              {
+                "action": "N",
+                "info": "A.g.L",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "reveal",
+                "info": "A.g.L",
+                "model": "low",
+                "value": "1"
+              },
+              {
+                "action": "accept",
+                "info": "B.H",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "reject",
+                "info": "B.H",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "accept",
+                "info": "B.L",
+                "model": "low",
+                "value": "0"
+              },
+              {
+                "action": "reject",
+                "info": "B.L",
+                "model": "low",
+                "value": "0"
+              }
+            ],
+            "full_erasure_information_sets": 3,
+            "identity": {
+              "sender_retains_signal": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75",
+              "source": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31",
+              "target": "ca249ca18da0353e74ad361a70b7be974ad4e7b23bc892603cbda2cda4e15b6a"
+            },
+            "individual_target_statuses": {
+              "high": "shared-consistent-modelwise-sequential-equilibrium",
+              "low": "shared-consistent-modelwise-sequential-equilibrium"
+            },
+            "query": "all-local-values-and-one-common-consistency-sequence.v1",
+            "receiver_only_information_sets": 5,
+            "receiver_only_status": "shared-consistent-modelwise-sequential-equilibrium",
+            "source_information_sets": 6,
+            "source_status": "shared-consistent-modelwise-sequential-equilibrium",
+            "status": "checked-common-consistency-obstruction",
+            "target_assessed_max_gain": "0"
+          },
+          "rejections": [
+            "false obstruction ratio",
+            "same model is not an obstruction",
+            "unknown model",
+            "missing individual model warrant",
+            "modelwise witness swapped",
+            "missing continuation row",
+            "false value with valid odds",
+            "false source limiting belief",
+            "model-indexed tremble injection",
+            "receiver repair changes sender tremble",
+            "extra acceptance flag",
+            "wrong query",
+            "stale caller subject binding",
+            "freshly bound payoff outside proved class",
+            "freshly bound changed marginal",
+            "freshly bound changed assessment",
+            "freshly bound private information change",
+            "compatible odds family cannot prove impossibility",
+            "caller query rebinding"
+          ]
+        },
+        "inherited": {
+          "base": "eb44e580fe137c50d9c92ea2b284cf0e5d3d90e9",
+          "inherited": {
+            "causal": {
+              "current_checks_at_snapshot": {
+                "affected_relative_markdown_links_checked": 125,
+                "corner_passed_per_mode": 10,
+                "finite_causal_passed_per_mode": 11,
+                "history": {
+                  "affected_relative_markdown_links_checked": 124,
+                  "failed": 0,
+                  "migration_baseline": "92922ab6604840152ad7f7800969673335748272",
+                  "moved_records": {
+                    "docs/history/records/FINDINGS_LEDGER.md": "37d15b9592fc6d08216904675a6ece462cdaf750222183f0a2bc0b95fc9c7a33",
+                    "docs/history/records/LEGACY_ARCHIVE_STATUS.md": "a0e6358fe1a844835565dcfb1b121008dc434d58203ef4b66c96f69aa09f5417",
+                    "docs/history/records/MATH_ARCHIVE_LEDGER.md": "63e87c67892c033edff1d68452d718dd95f0825d8fa4f203d1dda4459aad1df2",
+                    "docs/history/records/SUBSTRATE_LEDGER.md": "7553c4f17100b4ab3049ced61a64575dc6f94b64e1e90883b98a5cc88b343ea4"
+                  },
+                  "negative_controls": {
+                    "duplicate_json_key": "rejected",
+                    "forged_release_or_artifact_identity": "rejected-by-sha256-and-git-object-check",
+                    "unexpected_record_mutation": "rejected-by-exact-transformation-check"
+                  },
+                  "release_manifest": {
+                    "key_artifacts": 29,
+                    "lightweight_tags_required": true,
+                    "releases": 6,
+                    "versions": [
+                      "v0.0.1",
+                      "v0.0.2",
+                      "v0.0.3",
+                      "v0.0.4",
+                      "v0.0.5",
+                      "v0.0.6"
+                    ]
+                  }
+                },
+                "joint_law_passed_per_mode": 19,
+                "multistream_status": "passed",
+                "persistent_passed_per_mode": 11,
+                "replanning_passed_per_mode": 9,
+                "sequential_passed_per_mode": 17,
+                "unsafe_passed_per_mode": 18
+              },
+              "normal_optimized_equal": true,
+              "passed_per_mode": 10,
+              "preservation": {
+                "base_files_checked": 141,
+                "historical_files_preserved": true,
+                "historical_pr12_runner": "passed-at-exact-repaired-head",
+                "historical_pr14_runner": "passed-at-exact-merge",
+                "historical_pr16_runner": "passed-at-exact-merge",
+                "historical_pr17_runner": "passed-at-exact-merge",
+                "historical_pr19_runner": "passed-at-exact-merge",
+                "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+                "pr19_merge_tree_matches_reviewed_head": true,
+                "pr19_merged_before_start": true,
+                "release_identities_unchanged": true,
+                "release_versions": [
+                  "v0.0.1",
+                  "v0.0.2",
+                  "v0.0.3",
+                  "v0.0.4",
+                  "v0.0.5",
+                  "v0.0.6"
+                ]
+              },
+              "rejections_per_mode": 32,
+              "retained_result_present_and_source_bound": true,
+              "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+            },
+            "history": {
+              "normal_optimized_equal": true,
+              "release_manifest": {
+                "key_artifacts": 29,
+                "lightweight_tags_required": true,
+                "releases": 6,
+                "versions": [
+                  "v0.0.1",
+                  "v0.0.2",
+                  "v0.0.3",
+                  "v0.0.4",
+                  "v0.0.5",
+                  "v0.0.6"
+                ]
+              },
+              "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+            },
+            "mode": "all",
+            "preservation_negative_controls": [
+              "altered retained evidence rejected",
+              "unregistered note rejected"
+            ],
+            "preserved_strategic_snapshot_files": 172,
+            "strategic": {
+              "both_producers_disabled": true,
+              "integrated": {
+                "epsilon": "0",
+                "information_queries": 80,
+                "max_gain": "0",
+                "semantics": "one-common-power-sequence-all-models.v1",
+                "status": "shared-consistent-modelwise-sequential-equilibrium",
+                "subject_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+                "warrant_sha256": "791f4c666dd92cfe1364b89e70f64ce347b44c84f6a6f3150b14f522bd520e58"
+              },
+              "normal_optimized_equal": true,
+              "original_retained_replay": {
+                "max_gain": "0",
+                "normal_optimized_equal": true,
+                "preserved_base_files": 145,
+                "rejections": 24,
+                "snapshot_commit": "19e1904bfd96e8d0eb926ac630193b9f0b1d4265"
+              },
+              "rejections": 33,
+              "snapshot": "af7a8fc67cb204b67474eb7749c76c414189a5d5"
+            },
+            "workflow_only_exceptions": [
+              ".github/workflows/history-migration.yml",
+              ".github/workflows/sequential-consistency.yml",
+              ".github/workflows/two-stage-longitudinal-causal-policy.yml"
+            ]
+          },
+          "mode": "all",
+          "normal_optimized_equal": true,
+          "permitted_existing_changes": [
+            ".github/workflows/history-migration.yml",
+            ".github/workflows/sequential-consistency.yml",
+            ".github/workflows/two-stage-longitudinal-causal-policy.yml",
+            "README.md",
+            "docs/programme/ARCHITECTURE.md",
+            "docs/programme/ROADMAP.md"
+          ],
+          "preservation_negative_controls": [
+            "changed inherited warrant rejected",
+            "unregistered release rejected"
+          ],
+          "preserved_base_files": 173,
+          "reduction": {
+            "all_three_producers_disabled": true,
+            "correlation_counterexample": {
+              "both_max_gain": "0",
+              "marginal_product_matching_probability": "1/2",
+              "tagged_matching_probability": "1"
+            },
+            "integrated": {
+              "epsilon": "0",
+              "equilibrium_status": "shared-consistent-modelwise-sequential-equilibrium",
+              "max_gain": "0",
+              "root_values": {
+                "g=1,p=1": {
+                  "A": "7/10",
+                  "B": "1"
+                },
+                "g=1,p=1/2": {
+                  "A": "7/10",
+                  "B": "1"
+                },
+                "g=3,p=1": {
+                  "A": "7/10",
+                  "B": "1"
+                },
+                "g=3,p=1/2": {
+                  "A": "7/10",
+                  "B": "1"
+                }
+              },
+              "source_nodes": 127,
+              "source_queries": 160,
+              "source_sha256": "9b11c6fbe1dce6b9ba1cc28629086715e7c55e359a57410154ebba4f3eef841e",
+              "status": "checked-public-tag-erasure",
+              "target_nodes": 63,
+              "target_queries": 80,
+              "target_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+              "warrant_sha256": "392c31153cbbb55fa4c71d779753c2dbee18b5046c354421779ac7174da9ba3c"
+            },
+            "likelihood_counterexample": {
+              "incorrectly_restricted_witness_g": "1/4",
+              "source_and_target_max_gain": "0",
+              "source_and_target_root_A": "1",
+              "target_assessed_g": "1/2"
+            },
+            "positive_cases": [
+              "integrated public copy erasure",
+              "weak bond",
+              "participation fee",
+              "positive tolerance",
+              "unequal source coefficients with recomputed radius",
+              "alternate representative",
+              "model-dependent positive tag weights"
+            ],
+            "rejections": [
+              "unknown representative",
+              "unknown semantics",
+              "missing tag",
+              "missing node",
+              "nonbijective node map",
+              "missing information",
+              "stale source digest",
+              "stale target digest",
+              "extra warrant field",
+              "wrong transfer semantics",
+              "false inner radius",
+              "missing continuation query",
+              "false incentive gain",
+              "tolerance rebinding",
+              "individually valid but untransported witness",
+              "changed off-path assessment",
+              "changed terminal utility",
+              "zero probability representative",
+              "changed model identity",
+              "payoff irrelevant tag used for coordination",
+              "changed conditional chance despite equal marginal",
+              "likelihood-invalid witness restriction"
+            ]
+          }
+        },
+        "mode": "all",
+        "normal_optimized_equal": true,
+        "permitted_existing_changes": [
+          ".github/workflows/history-migration.yml",
+          ".github/workflows/sequential-consistency.yml",
+          ".github/workflows/two-stage-longitudinal-causal-policy.yml",
+          "README.md",
+          "docs/programme/ARCHITECTURE.md",
+          "docs/programme/ROADMAP.md"
+        ],
+        "preservation_negative_controls": [
+          "changed inherited warrant rejected",
+          "unregistered release rejected"
+        ],
+        "preserved_base_files": 185
+      }
+    },
+    "statistical_recomputation": "normal/optimized equal; retained values within 1e-11"
+  }
+}
