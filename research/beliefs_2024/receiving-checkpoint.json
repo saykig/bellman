@@ -1,0 +1,77 @@
+{
+  "schema": "bellman.afy2024.receiving-checkpoint.v1",
+  "first_evidence_commit": "f541369",
+  "normal_optimized_equal": true,
+  "source_hashes": {
+    "receiver.py": "641462442749e921635123d14543a88796f31332de2e5a57edf1164da31e70b1",
+    "checks.py": "c75cc947f0f9a896b7f683bc10ff78862f50cf1b0938abb9f77d479f96408eb6",
+    "first-run-manifest.json": "4acfdb28c6accb66f0c9553835b797147c8c18422b2143e08b22a79c71c05cc9"
+  },
+  "observations": {
+    "positive": {
+      "schema": "bellman.afy2024.receiving.v1",
+      "checks": {
+        "ten-linear": {
+          "states_checked": 3675,
+          "exact_max_residual": "24967888088113517/75000000000000000000000000000000",
+          "exact_value_error_bound": "24967888088113517/9375000000000000000000000000000",
+          "exact_response_error_bound": "18075939511359179431922311840383/7812500000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        },
+        "six-linear": {
+          "states_checked": 432,
+          "exact_max_residual": "15479180771811061/48000000000000000000000000000000",
+          "exact_value_error_bound": "15479180771811061/6000000000000000000000000000000",
+          "exact_response_error_bound": "67703878254469433366444199959419/30000000000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        },
+        "ten-reciprocal": {
+          "states_checked": 3675,
+          "exact_max_residual": "365030745893769089/880000000000000000000000000000000",
+          "exact_value_error_bound": "365030745893769089/110000000000000000000000000000000",
+          "exact_response_error_bound": "1648995622471720530989438742236521/1100000000000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        },
+        "ten-square": {
+          "states_checked": 3675,
+          "exact_max_residual": "6966226308648485227/21600000000000000000000000000000000",
+          "exact_value_error_bound": "6966226308648485227/2700000000000000000000000000000000",
+          "exact_response_error_bound": "39737039679960053402315706133058569/13500000000000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        }
+      },
+      "implementation": "standard library; no producer, R, NumPy, SciPy or fitting imports",
+      "scope": "exact rational residual assurance; numerical prediction and score reconstruction; no statistical or preference certification"
+    },
+    "rejections": [
+      "false Markov value",
+      "TFT orientation changed",
+      "noise rebound",
+      "unsupported utility authority",
+      "negative incentive response outside class",
+      "missing target query",
+      "duplicate target query",
+      "wrong decision time",
+      "changed prediction",
+      "unregistered current-report feature",
+      "false Brier score",
+      "false primary contrast",
+      "source byte mismatch"
+    ],
+    "producer_disabled": true,
+    "not_checked": "global mixture optimum, bootstrap coverage, human preferences, causal treatment assignment"
+  },
+  "scope": "receiving checkpoint; goal completion and aggregate acceptance outstanding"
+}
