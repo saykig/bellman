@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[2]
 PRIOR='aa2f9f24bb0e2ad777f1ca9df0332b76ce02ea73'
 HERE='verification/measurement_acceptance/'
 RECEIPT=HERE+'results.json'
-LIVING={'docs/programme/ROADMAP.md','docs/programme/ARCHITECTURE.md'}
+LIVING={'README.md','docs/programme/ROADMAP.md','docs/programme/ARCHITECTURE.md'}
 WORKFLOWS={'.github/workflows/'+n for n in ['combined-acceptance.yml','sequential-consistency.yml','history-migration.yml','two-stage-longitudinal-causal-policy.yml','longitudinal-causal-kernel-fibres.yml']}
 ENV=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
 for k in ('GIT_DIR','GIT_WORK_TREE','GIT_INDEX_FILE'):ENV.pop(k,None)

@@ -5,7 +5,7 @@ PYTHONDONTWRITEBYTECODE=1 python verification/measurement_acceptance/acceptance.
 ```
 
 Uses AFY's existing requirements and explicitly acquired hash-bound author file.
-Preserves aa2f9f2 byte-for-byte except two living guidance files and five CI routes.
+Preserves aa2f9f2 byte-for-byte except README, two living guidance files and five CI routes.
 Replays its full receipt and inherited mathematics at that pinned edition, then
 runs the public exact menu audit normally and under `-O`. This is additive; earlier
 acceptance files and receipts are unchanged. `--history`, `--strategic`, `--causal`
