@@ -17,7 +17,8 @@ WORKFLOWS={'.github/workflows/'+n for n in ('sequential-consistency.yml','histor
 LEDGERS={'docs/history/records/FINDINGS_LEDGER.md','docs/history/records/SUBSTRATE_LEDGER.md'}
 ADDITIONS={'verification/combined_acceptance/'+n for n in ('acceptance.py','README.md','results.json','release_manifest.py')} | {
     'docs/history/releases/2026-09-09-combined-strategic-causal-acceptance.md',
-    'docs/history/releases/v0.0.7-decisions-evidence-and-credible-promises.md'}
+    'docs/history/releases/v0.0.7-decisions-evidence-and-credible-promises.md',
+    '.github/workflows/combined-acceptance.yml'}
 RECORD='verification/combined_acceptance/results.json'
 ENV=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
 for key in ('GIT_DIR','GIT_WORK_TREE','GIT_INDEX_FILE'):ENV.pop(key,None)
