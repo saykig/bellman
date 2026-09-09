@@ -392,3 +392,22 @@ checks the preserved strategic and causal sources in the integrated tree and rep
 aggregate at its own commit. Main’s appended historical ledgers are preserved exactly and retain
 the earlier strategic snapshot as a byte prefix. Coexistence of these checked components does not
 identify strategic payoffs, evidence likelihoods, beliefs or monitoring from causal kernel fibres.
+
+
+## Empirical case boundary (9 September 2026)
+
+The [human trust case](../../research/empirical_trust_2016/README.md) introduces actual
+human observations, not a new native mathematical semantics. Its exact source projection and
+arithmetic checks do not turn floating-point fits into exact population claims. The
+[transfer assessment](../../research/empirical_trust_2016/TRANSFER.md) inspected current
+Decision Lab and Writ implementations and retained a portable case because their finite
+uncertainty/transport receivers do not establish the empirical sampling and identification
+premises. A successor claim about withholding human feedback is rejected as a changed query.
+
+The [design recommendation](../../research/empirical_design_checkpoint/RECOMMENDATION.md)
+proposes more discriminating experimental comparisons while preserving prior results. Sources,
+observations, stipulated behavioral models, fitted parameters, held-out comparisons, mathematical
+identification, applicability and authority remain separate. Experiment-level transport needs
+an explicit mapping and premises; shared field names or similar games do not permit pooling.
+[Current acceptance](../../verification/empirical_acceptance/README.md) preserves the mathematical
+release and empirical checkpoint without rewriting their source-bound evidence.

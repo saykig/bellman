@@ -40,4 +40,4 @@ jobs:
       - name: Run current kernel-fibre and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/combined_acceptance/acceptance.py --causal --verify-retained
+        run: python3 verification/empirical_acceptance/acceptance.py --causal --verify-retained

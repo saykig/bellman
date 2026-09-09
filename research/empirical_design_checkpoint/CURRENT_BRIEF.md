@@ -17,8 +17,10 @@ justified handoff or concrete transfer-gap report. Retain provenance and source-
 separate exploration from independent confirmation. No new branch/repo, PR merge, publication,
 author contact, recruitment, spending or intervention. Preserve v0.0.7 and all earlier evidence.
 
-Current gate: return the bounded design comparison and recommendation before substantial new
-modeling or integration. See RECOMMENDATION.md. The current study is preserved at 5747e36 with
+The bounded design comparison and recommendation have been returned; see RECOMMENDATION.md.
+Before substantial new modeling or integration, bind the recommended source edition, reuse terms
+and measurement timing, then declare the comparison and evaluation. No alternative fit has run. The current study is preserved at 5747e36 with
 independent receiving and exact reprojection; checkpoint validation confirms normal/-O and fresh
-statistical reproduction. Overall completion remains open: current combined acceptance needs an
-additive successor, and the strengthened proving-ground question is at its selection checkpoint.
+statistical reproduction. Overall completion remains open. The additive verification/empirical_acceptance entrypoint
+reconciles the retained mathematical and empirical checkpoints; its source-bound receipt records
+completed validation. The strengthened proving-ground question remains research ahead.

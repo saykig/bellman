@@ -1,8 +1,9 @@
-name: Combined strategic and causal acceptance
+name: Combined mathematical and empirical acceptance
 on:
   workflow_dispatch:
   pull_request:
     paths:
+      - 'research/**'
       - 'verification/**'
       - 'foundations/**'
       - 'reviews/**'
@@ -12,6 +13,7 @@ on:
   push:
     branches: ['codex/sequential-credibility', 'main']
     paths:
+      - 'research/**'
       - 'verification/**'
       - 'foundations/**'
       - 'reviews/**'
@@ -32,7 +34,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install -r verification/sequential_consistency/requirements.txt
-      - run: python verification/combined_acceptance/acceptance.py --verify-retained
+      - run: python -m pip install -r research/empirical_trust_2016/requirements.txt
+      - run: python verification/empirical_acceptance/acceptance.py --recompute --verify-retained
         env:
           PYTHONDONTWRITEBYTECODE: '1'

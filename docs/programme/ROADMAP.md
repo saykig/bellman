@@ -2,11 +2,12 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** PR #22 integrates merged PR #21 from main
-`4866ffce9b3e935b86188d3fe981d4b9240f0740`. The causal kernel-fibre component is merged;
-the sequential credibility and diagnostic erasure results retain their bounded, author-reviewed standing.
-Both sets of frozen evidence are preserved. [Combined acceptance](../../verification/combined_acceptance/README.md)
-checks their coexistence and historical identities; it does not establish a causal-to-strategic bridge.
+**Current snapshot:** merged PR #22 and causal PR #21 form the frozen v0.0.7 mathematical
+release at `2cd6fd7432efccaacc734fd235549a564ddbff48`. Their results retain their bounded,
+author-reviewed standing. The later human-trust case adds empirical observations and a
+limited prediction comparison. [Current acceptance](../../verification/empirical_acceptance/README.md)
+preserves and checks both checkpoints; it establishes neither a causal-to-strategic bridge nor
+empirical validation of equilibrium consistency.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -118,7 +119,7 @@ with identical supplied strategy and assessment, may be erased while preserving 
 gain and common consistency in both directions. The 127-node source reduces to 63 nodes. This is
 assessment-specific; public randomization can coordinate non-invariant strategies, and equal
 payoffs cannot justify transporting changed off-path likelihoods. Both shortcuts have exact
-counterexamples. [Current reproduction](../../verification/combined_acceptance/README.md)
+counterexamples. [Current reproduction](../../verification/empirical_acceptance/README.md)
 checks the new reduction and replays unchanged earlier components at their retained identities.
 
 The [diagnostic erasure obstruction](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)
@@ -129,7 +130,7 @@ sequence after discarding diagnostic information from both players. The necessar
 permits a restricted receiver-only reduction, with its full assessment induced by the witness.
 The [author review](../../reviews/DIAGNOSTIC_HISTORY_ERASURE_REVIEW_2026_09_08.md) distinguishes
 this consistency-existence obstruction from a rejected bounded witness and from equilibrium
-nonexistence. [Current acceptance](../../verification/combined_acceptance/README.md) checks it
+nonexistence. [Current acceptance](../../verification/empirical_acceptance/README.md) checks it
 and preserves/replays all earlier evidence.
 
 The next useful representation gate is a specified broader strategy class with explicit coverage
@@ -163,6 +164,30 @@ is a separately supplied robust criterion. Stronger cross-row restrictions are u
 than silently discarded, and first-stage/intermediate gaps remain outside this profile. The causal
 premises remain supplied, not empirically validated. No transport, estimation, unsafe-set
 composition, authority, or Writ/Decision Lab capability is claimed.
+
+## Empirical proving ground — current evidence-led gate
+
+The [FSD3661 case](../../research/empirical_trust_2016/README.md) reproduces eight published
+means and retains a prespecified retrospective history comparison with session holdout. Its
+primary uncertainty is inconclusive; it does not estimate utility or validate shared off-path
+consistency. A [review](../../research/empirical_trust_2016/REVIEW_20260909.md) and exact
+observational-extension argument explain why prediction does not identify an untested
+feedback intervention. Retention, refinement or redirection must follow evidence, not sunk effort.
+
+The [design checkpoint](../../research/empirical_design_checkpoint/RECOMMENDATION.md)
+recommends a stronger primary question: whether explanations of continuing cooperation and
+reported expectations survive a changed incentive schedule. The 2024 beliefs experiment is
+recommended; the 2019 monitoring study is a conditional complementary test, not a pooled sample.
+Raw author-data access and protocols were inspected. Redistribution declarations and archival
+edition mapping still precede ingestion. No new comparison is yet fitted. Preserve simple
+baselines, dependence, measurement timing, identification limits and inspected-versus-held-out
+status. A useful null result or measurement failure may redirect this recommendation.
+
+Decision Lab/Writ's exact contracts do not yet receive the empirical estimand. Retain the
+concrete portable case and transfer-gap report; native integration needs a justified statistical
+contract. [Current acceptance](../../verification/empirical_acceptance/README.md) replays
+frozen mathematical evidence and separately checks empirical computation. Statistical adequacy,
+causal applicability and human disposition remain distinct from arithmetic receiving.
 
 ## 5. Default mathematical frontier after the current chain
 
