@@ -1,0 +1,10 @@
+[
+  "docs/history/releases/2026-09-09-afy-belief-incentive-challenge.md",
+  "research/beliefs_2024/COMPLETION_AUDIT.md",
+  "research/beliefs_2024/IDENTIFICATION_AUDIT.md",
+  "research/beliefs_2024/inference_checks.py",
+  "verification/beliefs_acceptance/README.md",
+  "verification/beliefs_acceptance/acceptance.py",
+  "verification/beliefs_acceptance/inventory.json",
+  "verification/beliefs_acceptance/results.json"
+]

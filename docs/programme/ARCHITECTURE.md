@@ -409,5 +409,22 @@ proposes more discriminating experimental comparisons while preserving prior res
 observations, stipulated behavioral models, fitted parameters, held-out comparisons, mathematical
 identification, applicability and authority remain separate. Experiment-level transport needs
 an explicit mapping and premises; shared field names or similar games do not permit pooling.
-[Current acceptance](../../verification/empirical_acceptance/README.md) preserves the mathematical
+[Current acceptance](../../verification/beliefs_acceptance/README.md) preserves the mathematical
 release and empirical checkpoint without rewriting their source-bound evidence.
+
+
+### AFY 2024 changed-incentive challenge
+
+The [AFY audit](../../research/beliefs_2024/IDENTIFICATION_AUDIT.md) adds a retrospective statistical
+case, not new native strategic semantics. Source-only catalogue fitting, conditional finite
+reward values, lagged reports, target predictions and session scores have separate identities.
+Rational residual and prior-bound certificates check their declared mathematical operations;
+they do not verify priors, utility, measurement or sampling assumptions. History-specific prior
+extrema cannot be combined as attainable endpoints under one shared prior.
+
+The simpler baseline's advantage, utility sensitivity and opposite shared-prior comparison
+signs prevent promoting one predictive score to a human mechanism or institutional commitment
+recommendation. The [portable case](../../research/beliefs_2024/TRANSFER.md) explicitly rejects
+such changed use. Existing Decision Lab linear and identity-skeleton profiles do not cover this
+statistical result. A new adapter requires a concrete downstream review need and a bounded
+statistical contract; no language migration or framework follows from the present case.

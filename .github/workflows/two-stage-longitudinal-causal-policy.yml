@@ -3,6 +3,7 @@ name: two-stage-longitudinal-causal-policy
 on:
   pull_request:
     paths:
+      - 'verification/beliefs_acceptance/**'
       - 'verification/combined_acceptance/**'
       - "verification/longitudinal_causal_policy/**"
       - "verification/longitudinal_causal_kernel_fibres/**"
@@ -41,4 +42,4 @@ jobs:
       - name: Run current longitudinal causal and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/empirical_acceptance/acceptance.py --causal --verify-retained
+        run: python3 verification/beliefs_acceptance/acceptance.py --causal --verify-retained

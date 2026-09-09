@@ -3,6 +3,7 @@ name: longitudinal-causal-kernel-fibres
 on:
   pull_request:
     paths:
+      - 'verification/beliefs_acceptance/**'
       - 'verification/combined_acceptance/**'
       - "verification/longitudinal_causal_kernel_fibres/**"
       - "foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md"
@@ -40,4 +41,4 @@ jobs:
       - name: Run current kernel-fibre and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/empirical_acceptance/acceptance.py --causal --verify-retained
+        run: python3 verification/beliefs_acceptance/acceptance.py --causal --verify-retained

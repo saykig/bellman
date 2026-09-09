@@ -1,9 +1,9 @@
 # Beliefs in Repeated Games: retrospective incentive challenge
 
 The specification was committed and pushed at **4abea07 before fitting**. First replication,
-source-only fits, target predictions and results are retained at **f541369**. The prior-sensitivity and utility review is retained at f3d0397. This is ongoing
-research: final identification audit, programme guidance and combined acceptance remain
-outstanding. No completion or empirical mechanism identification is claimed.
+source-only fits, target predictions and results are retained at **f541369**. The prior-sensitivity and utility review is retained at f3d0397. The [identification audit](IDENTIFICATION_AUDIT.md) and [completion audit](COMPLETION_AUDIT.md)
+state the earned result and remaining scientific limits. The current acceptance receipt is
+required for a completion claim; empirical mechanism identification is not claimed.
 
 The first run reproduces the paper's indefinite first-three-round action/report gaps
 (10.89, 5.79, 1.97 percentage points). Under primary linear stage utility, the target
@@ -74,6 +74,6 @@ python research/beliefs_2024/check_transfer.py /external/Aoyagi_2024a_data.txt
 [TRANSFER.md](TRANSFER.md) records the current downstream contract gap and meaningful
 changed-use rejection. No Writ or Decision Lab adapter was added.
 
-Frozen first-run outputs must not be regenerated in place. The current aggregate inventory
-gate rejects this newly added research until an additive acceptance entrypoint registers and
-checks it; that known failure does not invalidate the preserved v0.0.7 or FSD receipts.
+Frozen first-run outputs must not be regenerated in place. The [current additive acceptance](../../verification/beliefs_acceptance/README.md) registers
+and checks this research while replaying the earlier v0.0.7 and FSD receipts at their original
+editions. Historical inventory rejections are preserved rather than weakening those gates.

@@ -35,6 +35,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r research/empirical_trust_2016/requirements.txt
-      - run: python verification/empirical_acceptance/acceptance.py --recompute --verify-retained
+      - name: Explicitly acquire the hash-bound AFY author edition
+        run: python research/beliefs_2024/reproduce.py acquire "$RUNNER_TEMP/Aoyagi_2024a_data.txt"
+      - run: python verification/beliefs_acceptance/acceptance.py --source "$RUNNER_TEMP/Aoyagi_2024a_data.txt" --recompute --verify-retained
         env:
           PYTHONDONTWRITEBYTECODE: '1'
