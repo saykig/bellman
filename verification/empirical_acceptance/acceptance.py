@@ -22,7 +22,10 @@ WORKFLOWS = {'.github/workflows/' + n for n in ('combined-acceptance.yml',
 NEW = {'verification/empirical_acceptance/' + n for n in ('acceptance.py', 'README.md', 'results.json')}
 NEW |= {'research/empirical_trust_2016/REVIEW_20260909.md',
         'docs/history/releases/2026-09-09-human-trust-research-checkpoint.md'}
-RECEIPT = 'verification/empirical_acceptance/results.json'
+PREVIOUS_RECEIPT = 'verification/empirical_acceptance/results.json'
+RECEIPT = 'verification/empirical_acceptance/completion-results.json'
+NEW |= {RECEIPT, 'research/empirical_trust_2016/COMPLETION_AUDIT_20260909.md'}
+PREVIOUS_CHECKPOINT = '468527810e6257e5ab1977ed6743bd5707386389'
 ENV = dict(os.environ, PYTHONDONTWRITEBYTECODE='1')
 for k in ('GIT_DIR', 'GIT_WORK_TREE', 'GIT_INDEX_FILE'):
     ENV.pop(k, None)
@@ -80,6 +83,10 @@ def run(mode='all', verify=False, recompute=False):
     for p, raw in baseline.items():
         if p not in LIVING | WORKFLOWS:
             need(expected[p] == raw, 'checkpoint rewrote v0.0.7: ' + p)
+    # The first aggregate receipt remains frozen at its published checkpoint.
+    for path in (PREVIOUS_RECEIPT, PREFIX + 'REVIEW_20260909.md',
+                 'docs/history/releases/2026-09-09-human-trust-research-checkpoint.md'):
+        expected[path] = git('show', PREVIOUS_CHECKPOINT + ':' + path)
     inventory = set(git('ls-files').decode().splitlines()) | set(git('ls-files', '--others', '--exclude-standard').decode().splitlines())
     allowed = set(case) | NEW
     preserve(ROOT, expected, inventory, allowed)
@@ -87,7 +94,7 @@ def run(mode='all', verify=False, recompute=False):
     controls = []
     with tempfile.TemporaryDirectory() as d:
         root = Path(d)
-        for p in ('verification/combined_acceptance/results.json', PREFIX + 'results.json'):
+        for p in ('verification/combined_acceptance/results.json', PREFIX + 'results.json', PREVIOUS_RECEIPT):
             target = root / p
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(expected[p] + b' ')

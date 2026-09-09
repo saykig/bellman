@@ -25,7 +25,7 @@ It checks:
 receiving without requiring the statistical stack. Full `--recompute` requires the empirical
 requirements (which also include SymPy). The history route needs only the standard library.
 
-[results.json](results.json) binds this wrapper and current guidance to a committed source edition.
+[completion-results.json](completion-results.json) binds this wrapper and current guidance to a committed source edition.
 The earlier empirical [checkpoint receipt](../../research/empirical_trust_2016/checkpoint-validation.json)
 continues to describe its own source commit, including its then-outstanding combined gate.
 That historical statement is not rewritten. Use this guide for current execution.
@@ -34,3 +34,7 @@ Passing these checks establishes scoped computational conformance and preservati
 population finding, randomization audit, external peer review or formal verification. The
 source-bound [research review](../../research/empirical_trust_2016/REVIEW_20260909.md) records the
 statistical limitations. The stronger experiment recommendation remains research ahead.
+
+The [first aggregate receipt](results.json) is preserved at 4685278. The completion receipt
+also binds the [requirement audit](../../research/empirical_trust_2016/COMPLETION_AUDIT_20260909.md).
+Its analytical design illustration is not a fitted empirical model or a new formal-verification claim.
