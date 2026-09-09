@@ -1,0 +1,77 @@
+{
+  "accessed_utc": "2026-09-09",
+  "baselines": {
+    "bellman": "2cd6fd7432efccaacc734fd235549a564ddbff48",
+    "decision_lab": "e5f77dfcf929708951f4673b3f394461ef09c752",
+    "writ": "4e9b7f49e240e4ca5d6a8df0c6b8ecb060d606e2"
+  },
+  "citation": "Herne, Kaisa; Set\u00e4l\u00e4, Maija; Lappalainen, Olli; Ylisalo, Juha. Effect of Punishment and Justification Treatments on Contributions in a Trust Game Experiment 2016. FSD, v1.0, 2023-08-28. doi:10.60686/t-fsd3661",
+  "data_license": "CC BY 4.0",
+  "dataset": "FSD3661",
+  "doi": "10.60686/t-fsd3661",
+  "downloaded_files": {
+    "FSD3661_eng.xml": {
+      "bytes": 168791,
+      "sha256": "4ea2dbf90599e79ffbd8ee7335a91e57c629dab8b444fe1895e2912639d7c059"
+    },
+    "README.txt": {
+      "bytes": 4002,
+      "sha256": "b0c48e4bc32ce55f92462460bdc6b3956e006bdce98dcfeee31346cc8a0018d7"
+    },
+    "bgF3661_eng.pdf": {
+      "bytes": 310302,
+      "sha256": "ad6f49510f7d193a7a8c3e05e685a6d029193c562656e1b1d2199f2d87dfe91d"
+    },
+    "daF3661_eng.csv": {
+      "bytes": 644317,
+      "sha256": "1675fde6d542868aab53cf0548a2b2fd0b95e233db0828dfe958eaa083fc496b"
+    },
+    "labF3661_eng.html": {
+      "bytes": 89269,
+      "sha256": "2eb244f5af48b01736251929d781079d98559bf37451ff7d9445e6f3e2684331"
+    }
+  },
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "paper_url": "https://link.springer.com/article/10.1007/s11238-021-09864-7",
+  "plan_commit": "d9c0075",
+  "plan_sha256": "66d570f8b63f75484a97af80ac6d7a758c474cc5184193b0df86f9667712f9a7",
+  "projection": {
+    "columns": [
+      "ID",
+      "Period",
+      "Group",
+      "Treatment",
+      "Session",
+      "Subject",
+      "Rank",
+      "give",
+      "receive1",
+      "receive2",
+      "return1",
+      "return2",
+      "returned",
+      "give_o",
+      "returned_other"
+    ],
+    "file": "observations.csv",
+    "omitted": "Demographics, surveys, time fields, justifications, punishments and redundant game variables; not all original raw data.",
+    "operation": "CSV UTF-8 BOM, semicolon source; select named columns in header, preserve row order and original strings; comma output, LF; no recoding or imputation",
+    "rows": 1296,
+    "sha256": "c86dbe2d5ad1f92eda1e03b3fc074e5920c2e8418a859b2727bcc3f89d37d2ff"
+  },
+  "protocol_url": "https://services.fsd.tuni.fi/catalogue/FSD3661/PIP/bgF3661_eng.pdf",
+  "reuse_notes": "Archive download explicitly CC BY 4.0. Generic README also contains purpose/disposal boilerplate; this case retains only a cited column projection for the stated research purpose. Archive requests notification of publications; this internal private-repository case is not a public publication. No messages sent; any publication must address that request.",
+  "roles": {
+    "1": "Recipient",
+    "2": "Sender",
+    "3": "Sender"
+  },
+  "source_url": "https://services.fsd.tuni.fi/catalogue/FSD3661?lang=en&study_language=en&tab=download",
+  "treatments": {
+    "1": "Baseline",
+    "2": "Punishment",
+    "3": "Justification",
+    "4": "Punishment + Justification"
+  },
+  "version": "1.0 (2023-08-28)"
+}
