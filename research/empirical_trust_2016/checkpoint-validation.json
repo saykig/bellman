@@ -1,0 +1,93 @@
+{
+  "checks": {
+    "nonidentification_plug_in_illustration": {
+      "effect_endpoints": [
+        "-1649/2880",
+        "1231/2880"
+      ],
+      "hidden_mean_endpoints": [
+        "0",
+        "1"
+      ],
+      "observed_sender_rounds": 720,
+      "status": "mathematical extensions of empirical law; not fitted psychological models or population confidence set",
+      "visible_mean_normalized": "1649/2880"
+    },
+    "producer_disabled": true,
+    "receiving": {
+      "exact_normalized_mse": {
+        "full": "157638629406394637404759881070348279/3600000000000000000000000000000000000",
+        "persistence": "91302083333333332929166666666668217/1800000000000000000000000000000000000",
+        "reduced": "83822388347740187046277784771000051/1800000000000000000000000000000000000",
+        "treatment_mean": "29780116705246919777777777777779/200000000000000000000000000000000"
+      },
+      "exact_reduced_minus_full": "3335382429695245562598562823883941/1200000000000000000000000000000000000",
+      "max_ridge_normal_equation_residual": 7.930590476190476e-14,
+      "not_checked": [
+        "physical randomization",
+        "sampling exchangeability",
+        "utility or beliefs",
+        "statistical adequacy",
+        "bootstrap interval",
+        "OLS uncertainty",
+        "equilibrium",
+        "causality"
+      ],
+      "observations": 1296,
+      "status": "checked_scoped_arithmetic",
+      "test_rows": 240,
+      "test_sessions": [
+        1,
+        4,
+        8,
+        10
+      ]
+    },
+    "rejected_controls": [
+      "stale data",
+      "missing premise binding",
+      "changed query",
+      "participant leakage",
+      "altered outcome",
+      "altered prediction",
+      "score forgery",
+      "false equivalence",
+      "erased feature relabelled",
+      "false fitted coefficient",
+      "training mean altered",
+      "original result mismatch",
+      "prediction-to-intervention revision",
+      "changed plan bytes"
+    ]
+  },
+  "inherited_combined_acceptance": "not rerun against the expanded tree; frozen v0.0.7 entrypoint has a closed inventory and needs an additive successor before the overall research goal can close",
+  "portable_revision": {
+    "native_writ_import": "not_supported",
+    "new_claim": "not_identified_without_additional_assumptions",
+    "new_use": "rejected",
+    "old_bytes_preserved": true,
+    "old_result": "checked_scoped_arithmetic",
+    "rejected_revision_controls": 3
+  },
+  "producer_recompute_normal_optimized_retained_equal": true,
+  "receiving_normal_optimized_equal": true,
+  "source_commit": "5747e3641315ab9217b19a74caf24bff0210ae7a",
+  "source_files": {
+    "research/empirical_trust_2016/IDENTIFICATION.md": "c89dde5b72ac5912fa5688e1edb135eefa4f1bda4bc6b39f46570f531a8b2ced",
+    "research/empirical_trust_2016/PLAN.md": "66d570f8b63f75484a97af80ac6d7a758c474cc5184193b0df86f9667712f9a7",
+    "research/empirical_trust_2016/RESEARCH_LOG.md": "d95eff2b78ecace21057db0ad8376ae2f81fd1e08c7a1622fa1ab6b5063308ab",
+    "research/empirical_trust_2016/TRANSFER.md": "9bfe29960b17620b7cfb0aac3bf2ed9c6363c2e73b960bb48b046d105b393c36",
+    "research/empirical_trust_2016/analyze.py": "8de7663e67d995c6b203cb1be3c5752e202f7f15711763c451f58a28d4f2bb56",
+    "research/empirical_trust_2016/check_handoff.py": "09737a691901314d1ff7e5da25af4439c245bbff1903fd9329033783f433d6d2",
+    "research/empirical_trust_2016/checks.py": "15df37236a1ec36013e2861c5f7d13cc84c72c53b6b4a3a9d9e5d1b96ccce9a7",
+    "research/empirical_trust_2016/observations.csv": "c86dbe2d5ad1f92eda1e03b3fc074e5920c2e8418a859b2727bcc3f89d37d2ff",
+    "research/empirical_trust_2016/portable_handoff.json": "c96fc49ffb45e97c40f2293edf41da389e0be8471f4e902f559ba73d700d96de",
+    "research/empirical_trust_2016/provenance.json": "15ed8c23f368b4d362e878ce473779e14105411bb3d7bd19dafcfc705d12b825",
+    "research/empirical_trust_2016/receiver.py": "1ec99ca6bb4c38cf74427ff3a3690f718f43bce80830e932df7bb03f811b3615",
+    "research/empirical_trust_2016/reproduce_projection.py": "b7efec88290658e7e03242c6d4726601433ff4571beb6b335fef7bea0f70c02d",
+    "research/empirical_trust_2016/requirements.txt": "9f4e00bf5c568c2b86f94fb089c4d584fe54ed4717b6ef45a474d43b3c6bae94",
+    "research/empirical_trust_2016/results.json": "a74baec13c93a4f7381f147b56d4e932b6e3080bcabf1964bb94fb1b3a33e985"
+  },
+  "v007_commit": "2cd6fd7432efccaacc734fd235549a564ddbff48",
+  "v007_existing_files_unchanged": true
+}

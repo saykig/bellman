@@ -1,0 +1,67 @@
+{
+  "accessed_utc": "2026-09-09",
+  "files": [
+    {
+      "bytes": 1092998,
+      "name": "Aoyagi_2019a.pdf",
+      "sha256": "1322067767d4a2ac679eb02fdf62fcf8f6b90abb5708a23f16663649237462b6",
+      "url": "https://gfrechette.com/print/Aoyagi_2019a.pdf"
+    },
+    {
+      "bytes": 141457,
+      "name": "Aoyagi_2017a_oa.pdf",
+      "sha256": "c982842af1586e9993fd3b97064db9a008d135d7660a692e5f058e81f341784b",
+      "url": "https://gfrechette.com/print/Aoyagi_2017a_oa.pdf"
+    },
+    {
+      "bytes": 637156,
+      "name": "Aoyagi_2016a_inst.pdf",
+      "sha256": "3fa25271248d3d1ee47bc0c0a32d08adde79631561bd2b2de4d03137b73a10ed",
+      "url": "https://gfrechette.com/print/Aoyagi_2016a_inst.pdf"
+    },
+    {
+      "bytes": 1582406,
+      "name": "Aoyagi_2019a_data.txt",
+      "sha256": "525ab4c94090b305ad2bc032751dfda78f6fb402399089c6ce15cf0a8426018d",
+      "url": "https://gfrechette.com/data/Aoyagi_2019a_data.txt"
+    },
+    {
+      "bytes": 677864,
+      "name": "Aoyagi_2024a.pdf",
+      "sha256": "d9a59ad0f76e6ee6fe48fdd3a8ce07a91d55931ea94a579938c3278ca4735946",
+      "url": "https://gfrechette.com/print/Aoyagi_2024a.pdf"
+    },
+    {
+      "bytes": 1897111,
+      "name": "Aoyagi_2024a_oa.pdf",
+      "sha256": "48351b0e90ede492c7ced56de72155cfa6d966f798e5345306a614e48693fd0d",
+      "url": "https://gfrechette.com/print/Aoyagi_2024a_oa.pdf"
+    },
+    {
+      "bytes": 2104931,
+      "name": "Aoyagi_2024a_data.txt",
+      "sha256": "fbb9136eaaa6b56e66201f57379bd3891f72d80a91cf34c43d76213287abf8a3",
+      "url": "https://gfrechette.com/data/Aoyagi_2024a_data.txt"
+    },
+    {
+      "bytes": 586115,
+      "name": "Frechette_2021b.pdf",
+      "sha256": "b8835132d6df7e361917d2e3aba58ef7dbe50ce22cdc19586d32be8a416bb2f0",
+      "url": "https://gfrechette.com/print/Frechette_2021b.pdf"
+    },
+    {
+      "bytes": 753101,
+      "name": "Frechette_2021b_oa.pdf",
+      "sha256": "1049a4c88f5fc83c7ec1cd682e0499889571b604eb3338ea46bbaa84e4c9f624",
+      "url": "https://gfrechette.com/print/Frechette_2021b_oa.pdf"
+    },
+    {
+      "bytes": 844232,
+      "name": "Frechette_2022a_data.txt",
+      "sha256": "324b967b4701982cce260b009c099a888c9284715341bae5e31e5b11ef104744",
+      "url": "https://gfrechette.com/data/Frechette_2022a_data.txt"
+    }
+  ],
+  "purpose": "design inspection only; no alternative outcome modeling",
+  "redistribution_license": "not yet independently bound; raw alternative data not retained in repo"
+}
