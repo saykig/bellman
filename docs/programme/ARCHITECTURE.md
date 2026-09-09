@@ -4,6 +4,14 @@
 
 The programme North Star is [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md). The current capability sequence and open mathematical frontier are tracked in [`ROADMAP.md`](ROADMAP.md).
 
+The [measurement menu reference](../../research/measurement_decision/README.md)
+adds a bounded composition over Decision Lab's existing exact one-observation
+solver and independent receiver. Common prior, state order, loss/action menu and
+units bind before forced measurement risks are compared. Full private-engine
+receiving and the public independent risk audit are reported separately. The two
+stipulated examples establish computational reuse, not independently authored M4
+transfer or domain validity. No Decision Lab or Writ code was changed.
+
 ## 1. System relationship
 
 Bellman, Decision Lab, and Writ have different responsibilities but are intended to converge on one interoperable mathematical substrate over time.

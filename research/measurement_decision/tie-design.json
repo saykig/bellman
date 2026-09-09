@@ -1,0 +1,62 @@
+{
+  "schema": "bellman.measurement-menu.v1",
+  "criterion": "bayesian-expected-loss",
+  "states": [
+    "possible",
+    "zero_prior"
+  ],
+  "prior": [
+    "1/1",
+    "0/1"
+  ],
+  "actions": [
+    "left",
+    "right"
+  ],
+  "losses": [
+    [
+      "0/1",
+      "1/1"
+    ],
+    [
+      "0/1",
+      "-1/1"
+    ]
+  ],
+  "loss_unit": "test_loss",
+  "measurements": [
+    {
+      "name": "no_measurement",
+      "outcomes": [
+        "none"
+      ],
+      "likelihood": [
+        [
+          "1/1"
+        ],
+        [
+          "1/1"
+        ]
+      ],
+      "cost": "0/1"
+    },
+    {
+      "name": "free_signal",
+      "outcomes": [
+        "seen",
+        "impossible"
+      ],
+      "likelihood": [
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "0/1",
+          "1/1"
+        ]
+      ],
+      "cost": "0/1"
+    }
+  ]
+}

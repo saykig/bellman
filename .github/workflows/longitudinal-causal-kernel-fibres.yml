@@ -41,4 +41,4 @@ jobs:
       - name: Run current kernel-fibre and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: python3 verification/beliefs_acceptance/acceptance.py --causal --verify-retained
+        run: python3 verification/measurement_acceptance/acceptance.py --causal --verify-retained

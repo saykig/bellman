@@ -15,6 +15,18 @@ The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_
 
 Bellman should become progressively better at saying what a decision problem means mathematically, what follows under its assumptions, what can be reused or combined, what must be rechecked after change, and where the guarantee stops.
 
+The next bounded capability is now a [measurement-to-decision menu](../../research/measurement_decision/README.md):
+finite supplied-prior Bayesian loss plus observation costs, with a no-measurement
+baseline and one persistent hidden state. Two stipulated cases use the existing
+exact observation engine. Informative signals can have zero decision value; a
+conditional-response report can help while utility information helps more. This
+does not identify human priors, calibrate report noise or resolve robust ambiguity.
+The stopping gate is exact menu selection and independently checked conditional
+claims; empirical adoption awaits a warranted channel, utility scale and costs.
+No additional empirical fitting or product transfer follows automatically.
+[Current additive acceptance](../../verification/measurement_acceptance/README.md)
+preserves the completed AFY edition and replays its inherited checks.
+
 ## 1. How to read this roadmap
 
 This is a **capability roadmap, not a checklist of fields to complete**. A line may be skipped, reordered, simplified, or closed if established mathematics already settles it, a counterexample kills the proposed route, or engineering/domain work reveals a better frontier.

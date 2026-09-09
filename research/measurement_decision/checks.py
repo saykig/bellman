@@ -50,7 +50,9 @@ def direct(data, retained):
         require(F(answer['acquisition_risks']['observe_once'])==best and F(answer['acquisition_risks']['act_now'])==r0,'cost risk')
         require(F(answer['evsi'])==r0-best+cost and F(answer['net_value'])==r0-best,'benefit')
         # Check returned branch action sets, including ties, against direct joint losses.
+        require(len(answer['branches'])==nx,'branch coverage')
         for x,branch in enumerate(answer['branches']):
+            require(branch['outcome']==m['outcomes'][x],'outcome identity')
             mass=sum(p[s]*k[s][x] for s in range(len(p)))
             require(F(branch['mass'])==mass,'branch mass')
             if mass==0:
@@ -93,6 +95,7 @@ def controls(data,retained):
         ('hidden_state_oracle',lambda a:a.__setitem__('observed_risk','-100/1')),
         ('cost_omitted',lambda a:a['acquisition_risks'].__setitem__('observe_once',a['observed_risk'])),
         ('wrong_action',lambda a:a['branches'][0].__setitem__('argmin',['commit_C'])),
+        ('relabelled_signal',lambda a:a['branches'][0].__setitem__('outcome','T')),
     ]:
         r=copy.deepcopy(retained);obj=menu.strict(r['results']['conditional']);mutate(obj['answer']);r['results']['conditional']=menu.wire(obj).decode();reject(label,result=r)
     c=menu.strict(data);c['measurements'][1]['cost']='3/1';reject('changed_cost_old_receipt',c)
@@ -102,7 +105,7 @@ def controls(data,retained):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--engine-repository',type=Path);args=ap.parse_args()
     observations={}
-    for name in ('afy','maintenance'):
+    for name in ('afy','maintenance','tie'):
         data=(BASE/(name+'-design.json')).read_bytes();result=menu.strict((BASE/(name+'-result.json')).read_bytes())
         observations[name]=direct(data,result)
         if name=='afy':
@@ -112,6 +115,8 @@ def main():
             require(rank['net_benefits']['conditional']=='2491/84000','conditional positive')
             require(rank['net_benefits']['utility']=='97/2800','utility value')
             require(rank['minimizers']==['utility'],'utility winner')
+        if name=='tie':
+            require(result['ranking']['minimizers']==['no_measurement','free_signal'],'preserve acquisition ties')
         if args.engine_repository:
             for opt in ([],['-O']):
                 subprocess.run([sys.executable,*opt,str(BASE/'menu.py'),'receive',str(BASE/(name+'-design.json')),str(BASE/(name+'-result.json')),'--engine-repository',str(args.engine_repository)],check=True,stdout=subprocess.PIPE)

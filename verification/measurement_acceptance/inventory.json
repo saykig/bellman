@@ -1,0 +1,21 @@
+[
+  "docs/history/releases/2026-09-09-measurement-decision-menu.md",
+  "research/measurement_decision/FINDINGS.md",
+  "research/measurement_decision/README.md",
+  "research/measurement_decision/REVIEW.md",
+  "research/measurement_decision/SOURCES.md",
+  "research/measurement_decision/SPEC.md",
+  "research/measurement_decision/afy-design.json",
+  "research/measurement_decision/afy-result.json",
+  "research/measurement_decision/checks.py",
+  "research/measurement_decision/local-receiving.json",
+  "research/measurement_decision/maintenance-design.json",
+  "research/measurement_decision/maintenance-result.json",
+  "research/measurement_decision/menu.py",
+  "research/measurement_decision/tie-design.json",
+  "research/measurement_decision/tie-result.json",
+  "verification/measurement_acceptance/README.md",
+  "verification/measurement_acceptance/acceptance.py",
+  "verification/measurement_acceptance/inventory.json",
+  "verification/measurement_acceptance/results.json"
+]
