@@ -1,0 +1,224 @@
+{
+  "schema": "bellman.measurement-menu.v1",
+  "criterion": "bayesian-expected-loss",
+  "states": [
+    "F_linear",
+    "T_linear",
+    "F_reciprocal",
+    "T_reciprocal"
+  ],
+  "prior": [
+    "1/4",
+    "1/4",
+    "1/4",
+    "1/4"
+  ],
+  "actions": [
+    "commit_C",
+    "commit_D"
+  ],
+  "losses": [
+    [
+      "-1/1",
+      "-1/1",
+      "-1/1",
+      "-1/1"
+    ],
+    [
+      "-2/1",
+      "-1/4",
+      "-34/21",
+      "-17/84"
+    ]
+  ],
+  "loss_unit": "normalized_utility_loss",
+  "measurements": [
+    {
+      "name": "no_measurement",
+      "outcomes": [
+        "none"
+      ],
+      "likelihood": [
+        [
+          "1/1"
+        ],
+        [
+          "1/1"
+        ],
+        [
+          "1/1"
+        ],
+        [
+          "1/1"
+        ]
+      ],
+      "cost": "0/1"
+    },
+    {
+      "name": "unconditional",
+      "outcomes": [
+        "C",
+        "D"
+      ],
+      "likelihood": [
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "1/1",
+          "0/1"
+        ]
+      ],
+      "cost": "1/1000"
+    },
+    {
+      "name": "weak_conditional",
+      "outcomes": [
+        "F",
+        "T"
+      ],
+      "likelihood": [
+        [
+          "51/100",
+          "49/100"
+        ],
+        [
+          "49/100",
+          "51/100"
+        ],
+        [
+          "51/100",
+          "49/100"
+        ],
+        [
+          "49/100",
+          "51/100"
+        ]
+      ],
+      "cost": "1/1000"
+    },
+    {
+      "name": "conditional",
+      "outcomes": [
+        "F",
+        "T"
+      ],
+      "likelihood": [
+        [
+          "11/20",
+          "9/20"
+        ],
+        [
+          "9/20",
+          "11/20"
+        ],
+        [
+          "11/20",
+          "9/20"
+        ],
+        [
+          "9/20",
+          "11/20"
+        ]
+      ],
+      "cost": "1/1000"
+    },
+    {
+      "name": "perfect_conditional",
+      "outcomes": [
+        "F",
+        "T"
+      ],
+      "likelihood": [
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "0/1",
+          "1/1"
+        ],
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "0/1",
+          "1/1"
+        ]
+      ],
+      "cost": "1/2"
+    },
+    {
+      "name": "utility",
+      "outcomes": [
+        "linear",
+        "reciprocal"
+      ],
+      "likelihood": [
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "1/1",
+          "0/1"
+        ],
+        [
+          "0/1",
+          "1/1"
+        ],
+        [
+          "0/1",
+          "1/1"
+        ]
+      ],
+      "cost": "1/100"
+    },
+    {
+      "name": "joint",
+      "outcomes": [
+        "F_linear",
+        "T_linear",
+        "F_reciprocal",
+        "T_reciprocal"
+      ],
+      "likelihood": [
+        [
+          "11/20",
+          "9/20",
+          "0/1",
+          "0/1"
+        ],
+        [
+          "9/20",
+          "11/20",
+          "0/1",
+          "0/1"
+        ],
+        [
+          "0/1",
+          "0/1",
+          "11/20",
+          "9/20"
+        ],
+        [
+          "0/1",
+          "0/1",
+          "9/20",
+          "11/20"
+        ]
+      ],
+      "cost": "1/50"
+    }
+  ]
+}
