@@ -1,0 +1,191 @@
+{
+  "schema": "bellman.afy2024.reproduction-checkpoint.v1",
+  "source_hashes": {
+    "reproduce.py": "bd9245c11af9325253d686cfe28dd49169df600128b6497d4597ae2b8b843c5d",
+    "check_transfer.py": "5ff8aeda40fb1f10a5c384171b348c8107313c4aab6f335cf24affb77980daa6",
+    "portable-case.json": "606b461664025c4d5e08211121129eef3e61a0f89efb059c0cc7cde4e2deb43b",
+    "TRANSFER.md": "3e15fff28cb13abb931157633519340a72ba5beff4cf65c21c62b09806196206"
+  },
+  "acquisition": {
+    "source_sha256": "fbb9136eaaa6b56e66201f57379bd3891f72d80a91cf34c43d76213287abf8a3",
+    "bytes": 2104931,
+    "raw_redistributed": false
+  },
+  "full_refit": {
+    "mixtures_refitted": true,
+    "optimized": false,
+    "max_prediction_difference_from_first": 0,
+    "fresh_receiving": {
+      "ten-linear": {
+        "states_checked": 3675,
+        "exact_max_residual": "24967888088113517/75000000000000000000000000000000",
+        "exact_value_error_bound": "24967888088113517/9375000000000000000000000000000",
+        "exact_response_error_bound": "18075939511359179431922311840383/7812500000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      },
+      "six-linear": {
+        "states_checked": 432,
+        "exact_max_residual": "15479180771811061/48000000000000000000000000000000",
+        "exact_value_error_bound": "15479180771811061/6000000000000000000000000000000",
+        "exact_response_error_bound": "67703878254469433366444199959419/30000000000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      },
+      "ten-reciprocal": {
+        "states_checked": 3675,
+        "exact_max_residual": "365030745893769089/880000000000000000000000000000000",
+        "exact_value_error_bound": "365030745893769089/110000000000000000000000000000000",
+        "exact_response_error_bound": "1648995622471720530989438742236521/1100000000000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      },
+      "ten-square": {
+        "states_checked": 3675,
+        "exact_max_residual": "6966226308648485227/21600000000000000000000000000000000",
+        "exact_value_error_bound": "6966226308648485227/2700000000000000000000000000000000",
+        "exact_response_error_bound": "39737039679960053402315706133058569/13500000000000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      }
+    },
+    "scope": "fresh source-only fitting/scoring and independent numerical receiving; not global optimizer or sampling validity proof"
+  },
+  "optimized_replay": {
+    "mixtures_refitted": false,
+    "optimized": true,
+    "max_prediction_difference_from_first": 0,
+    "fresh_receiving": {
+      "ten-linear": {
+        "states_checked": 3675,
+        "exact_max_residual": "24967888088113517/75000000000000000000000000000000",
+        "exact_value_error_bound": "24967888088113517/9375000000000000000000000000000",
+        "exact_response_error_bound": "18075939511359179431922311840383/7812500000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      },
+      "six-linear": {
+        "states_checked": 432,
+        "exact_max_residual": "15479180771811061/48000000000000000000000000000000",
+        "exact_value_error_bound": "15479180771811061/6000000000000000000000000000000",
+        "exact_response_error_bound": "67703878254469433366444199959419/30000000000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      },
+      "ten-reciprocal": {
+        "states_checked": 3675,
+        "exact_max_residual": "365030745893769089/880000000000000000000000000000000",
+        "exact_value_error_bound": "365030745893769089/110000000000000000000000000000000",
+        "exact_response_error_bound": "1648995622471720530989438742236521/1100000000000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      },
+      "ten-square": {
+        "states_checked": 3675,
+        "exact_max_residual": "6966226308648485227/21600000000000000000000000000000000",
+        "exact_value_error_bound": "6966226308648485227/2700000000000000000000000000000000",
+        "exact_response_error_bound": "39737039679960053402315706133058569/13500000000000000000000000000000000000000000000000",
+        "predictions_checked": 8414,
+        "session_scores_checked": 16,
+        "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+        "sampling_inference": "not certified by arithmetic receiving"
+      }
+    },
+    "scope": "fresh source-only fitting/scoring and independent numerical receiving; not global optimizer or sampling validity proof"
+  },
+  "fresh_normal_optimized_bytes_equal": true,
+  "transfer_normal_optimized_equal": true,
+  "portable_transfer": {
+    "fresh_receiving": {
+      "schema": "bellman.afy2024.receiving.v1",
+      "checks": {
+        "ten-linear": {
+          "states_checked": 3675,
+          "exact_max_residual": "24967888088113517/75000000000000000000000000000000",
+          "exact_value_error_bound": "24967888088113517/9375000000000000000000000000000",
+          "exact_response_error_bound": "18075939511359179431922311840383/7812500000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        },
+        "six-linear": {
+          "states_checked": 432,
+          "exact_max_residual": "15479180771811061/48000000000000000000000000000000",
+          "exact_value_error_bound": "15479180771811061/6000000000000000000000000000000",
+          "exact_response_error_bound": "67703878254469433366444199959419/30000000000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        },
+        "ten-reciprocal": {
+          "states_checked": 3675,
+          "exact_max_residual": "365030745893769089/880000000000000000000000000000000",
+          "exact_value_error_bound": "365030745893769089/110000000000000000000000000000000",
+          "exact_response_error_bound": "1648995622471720530989438742236521/1100000000000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        },
+        "ten-square": {
+          "states_checked": 3675,
+          "exact_max_residual": "6966226308648485227/21600000000000000000000000000000000",
+          "exact_value_error_bound": "6966226308648485227/2700000000000000000000000000000000",
+          "exact_response_error_bound": "39737039679960053402315706133058569/13500000000000000000000000000000000000000000000000",
+          "predictions_checked": 8414,
+          "session_scores_checked": 16,
+          "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+          "sampling_inference": "not certified by arithmetic receiving"
+        }
+      },
+      "implementation": "standard library; no producer, R, NumPy, SciPy or fitting imports",
+      "scope": "exact rational residual assurance; numerical prediction and score reconstruction; no statistical or preference certification"
+    },
+    "same_use": {
+      "old_evidence": "identity preserved; fresh receiving required",
+      "applicability": "same_declared_use",
+      "changed_dependencies": [],
+      "human_disposition": "unreviewed",
+      "authority_to_act": false,
+      "downstream_integration": "not implemented"
+    },
+    "changed_mechanism_use": {
+      "old_evidence": "identity preserved; fresh receiving required",
+      "applicability": "reassessment_required",
+      "changed_dependencies": [
+        "operation"
+      ],
+      "human_disposition": "unreviewed",
+      "authority_to_act": false,
+      "downstream_integration": "not implemented"
+    },
+    "changed_report_timing": {
+      "old_evidence": "identity preserved; fresh receiving required",
+      "applicability": "reassessment_required",
+      "changed_dependencies": [
+        "decision_time"
+      ],
+      "human_disposition": "unreviewed",
+      "authority_to_act": false,
+      "downstream_integration": "not implemented"
+    },
+    "changed_evidence_identity": "rejected"
+  },
+  "scope": "end-to-end reproduction and portable receiving; final aggregate acceptance outstanding"
+}

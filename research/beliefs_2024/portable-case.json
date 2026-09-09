@@ -1,0 +1,43 @@
+{
+  "schema": "bellman.afy2024.portable-case.v1",
+  "source_edition": "f541369",
+  "bindings": {
+    "PLAN.md": "1fd0347ec8a98ab8275a7a6c702e416f899690d6a8c28b23ea49457fa01fbe67",
+    "source-manifest.json": "820ba915f862d3d21fb8bf49bea583ba1f4e6a9969bfad7753929c66b5280533",
+    "first-results/parameters.json": "ac02d17de42cdc4804c42b2c36649023642829aed246b7c6fd6bb7a321731646",
+    "first-results/results.json": "fb701471fe4bf4d588cea1b2f2573e55dea4cf678ae2aaf36ce16c14d8a99db8",
+    "first-run-manifest.json": "4acfdb28c6accb66f0c9553835b797147c8c18422b2143e08b22a79c71c05cc9",
+    "receiving-checkpoint.json": "dc7c5d2363dc0411bb4b2f9647c167c59552f8791b1987c0321c98df266f8bba",
+    "prior-sensitivity-results.json": "f3c27e314855e916d8e6fbb1096e878c1e4283ce942d8fc54299acf5cbdc2e80",
+    "sensitivity-checkpoint.json": "dcf20b2a5d2619328340380a17ad58d3b16e7a0263ff3429f12aa170d0ef086c"
+  },
+  "intended_use": {
+    "operation": "retrospective prediction comparison",
+    "population": "AFY 2024 supplied High-T and Low-R sessions",
+    "decision_time": "rounds 2..8; prefix information; reports lagged one round",
+    "conclusion": "conditional comparison of fixed and revalued catalogue predictors",
+    "authority": "none; research inspection only"
+  },
+  "human_disposition": "unreviewed",
+  "downstream_contracts": [
+    {
+      "repository": "https://github.com/saykig/Writ.git",
+      "commit": "4e9b7f49e240e4ca5d6a8df0c6b8ecb060d606e2",
+      "path": "docs/current/decision-cases.md",
+      "sha256": "524919009956d2498295afc6256f61e8a85cba1e70dc896ec9c7914c72d1f2ca"
+    },
+    {
+      "repository": "https://github.com/saykig/writ-decision-lab.git",
+      "commit": "e5f77dfcf929708951f4673b3f394461ef09c752",
+      "path": "BUILD_2_SPEC.md",
+      "sha256": "872f49cb6926049039fa550374b60f9aaeb73a9b90546636eb0b0b57e366d884"
+    },
+    {
+      "repository": "https://github.com/saykig/writ-decision-lab.git",
+      "commit": "e5f77dfcf929708951f4673b3f394461ef09c752",
+      "path": "CERTIFICATE_TRANSPORT_SPEC.md",
+      "sha256": "b004bd2a58fa369cd385f47a5e46b9d27e7b027106cda2c09f55f0a931ca0f56"
+    }
+  ],
+  "downstream_integration": "unsupported; portable gap retained"
+}
