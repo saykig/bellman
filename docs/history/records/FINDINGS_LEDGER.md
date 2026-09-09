@@ -269,3 +269,34 @@ subject binding, forged claims, all policies, and producer-disabled consumption.
 supplied rather than empirically validated. No longitudinal partial identification, transport,
 safety/model-family composition, Writ/Decision Lab change, language migration, formal proof, or
 authority claim is made.
+
+## Longitudinal causal kernel fibres and persistent decisions — 8 September 2026
+
+The [additive companion](../../../foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md)
+closes the bounded missing-second-stage-row gap left deliberately open by the full-support bridge.
+With both root actions and every intermediate history supported, each absent binary second-stage
+outcome row is one ordered free coordinate in `[0,1]` under an explicit saturated
+no-cross-row-restriction completion profile. The resulting Cartesian set is the exact continuous
+kernel fibre for that interface, not a general SCM fibre and not a statistical confidence region.
+
+Deterministic policy outcome probabilities, additive loss, and same-completion pairwise policy
+differences are multi-affine. Their extrema, common minimizing set, minimax loss, and same-model
+regret are therefore checked exactly on at most 16 corners while the continuous fibre remains a
+separate retained object. The nonlinear `q(1-q)` control has zero corner values and midpoint value
+`1/4`, so the finite family is not promoted to a generic causal-query representation.
+
+The one-gap fixture retains supported policy value `1/4`, gives an unsupported-row policy interval
+`[0,1/2]`, and has disjoint completion-specific minimizing sets. Its robust minimax winner is not
+called causally identified; same-model worst regret `1/4` remains distinct from the invalid
+cross-completion shortcut `1/2`. After an explicit cost change, a partial policy remains while a
+nonempty common minimizing set is identified. The two-gap policy has corner values
+`0,1/2,1/2,1` and exact interior value `11/30` at `(1/3,2/5)`.
+
+The [bounded receiver](../../../verification/longitudinal_causal_kernel_fibres/README.md) checks all
+dimensions zero through four, all 32 complete policies, exact PR #20 collapse, independent paths,
+stale/forged controls, and producer-disabled receiving. It reuses the unchanged persistent-family
+receiver through four corners and records its limit for eight or sixteen. Earlier-stage gaps and
+stronger causal restrictions receive explicit non-incompatibility/unsupported statuses. Premises
+remain supplied rather than empirically validated. No transport, estimation, unsafe-set
+composition, authority, Writ/Decision Lab change, formal proof, solver, or language migration is
+claimed.

@@ -2,11 +2,11 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, shared-consistency reference with specified public-tag history reduction, based on merged PR #20
-(`cea4e1a47cb91c1f3917490350deab53d2976908`). The causal kernel-fibre work published
-separately as unmerged PR #21 is not assumed or modified here. Existing historical evidence is
-preserved. The strategic result has author adversarial review and independent executable checks;
-external peer acceptance and formal verification are not claimed.
+**Current snapshot:** PR #22 integrates merged PR #21 from main
+`4866ffce9b3e935b86188d3fe981d4b9240f0740`. The causal kernel-fibre component is merged;
+the sequential credibility and diagnostic erasure results retain their bounded, author-reviewed standing.
+Both sets of frozen evidence are preserved. [Combined acceptance](../../verification/combined_acceptance/README.md)
+checks their coexistence and historical identities; it does not establish a causal-to-strategic bridge.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -54,6 +54,9 @@ Earned so far:
     point/partial identification, and same-causal-fibre deterministic action certification.
 12. conditional identification of one two-stage adapted deterministic regime, with a separate
     stronger-support warrant for constructing and checking the complete 32-policy Bellman subject.
+13. an exact continuous saturated completion fibre for missing binary second-stage outcome rows,
+    with query-specific corner reduction and distinct common-optimal, model-dependent, and robust
+    deterministic decisions.
 
 ### Wider Bellman mathematical programme
 
@@ -80,7 +83,8 @@ optimization; plural objectives; strategic actors; and selected formal verificat
 | Statistical rectangles to sequential corner models | HARDENED | [`BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md`](../../foundations/BELLMAN_STATISTICAL_RECTANGLES_TO_CORNER_MODEL_GUARANTEES.md) | Under a pathwise multi-affine warrant, continuous rectangle uncertainty for deterministic whole-policy loss and regret is represented exactly by the finite persistent corner family. |
 | Unsafe-set reachability and constrained selection | HARDENED | [`BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md`](../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md) | Exact first-hit probability, unweighted persistent-family safety caps, and deterministic selection within one fixed robust-feasible class. |
 | Finite causal identification and one-stage decisions | HARDENED | [`BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md`](../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md) | Exact adjustment under supplied premises, exact response-type point/partial identification, and paired same-fibre one-stage action certification. |
-| Two-stage longitudinal causal policy and sequential bridge | ACTIVE RESULT | [`BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md`](../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md) | Policy-specific g-formula identification remains distinct from the stronger support required to identify every transition of the complete Bellman subject. |
+| Two-stage longitudinal causal policy and sequential bridge | HARDENED | [`BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md`](../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md) | Policy-specific g-formula identification remains distinct from the stronger support required to identify every transition of the complete Bellman subject. |
+| Longitudinal causal kernel fibres and persistent decisions | HARDENED | [`BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md`](../../foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md) | Missing second-stage binary outcome rows form an exact saturated continuous fibre; proved multi-affine deterministic queries reduce to corners without identifying the finite family with the fibre. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
@@ -114,7 +118,7 @@ with identical supplied strategy and assessment, may be erased while preserving 
 gain and common consistency in both directions. The 127-node source reduces to 63 nodes. This is
 assessment-specific; public randomization can coordinate non-invariant strategies, and equal
 payoffs cannot justify transporting changed off-path likelihoods. Both shortcuts have exact
-counterexamples. [Current reproduction](../../verification/diagnostic_erasure/ACCEPTANCE.md)
+counterexamples. [Current reproduction](../../verification/combined_acceptance/README.md)
 checks the new reduction and replays unchanged earlier components at their retained identities.
 
 The [diagnostic erasure obstruction](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)
@@ -125,7 +129,7 @@ sequence after discarding diagnostic information from both players. The necessar
 permits a restricted receiver-only reduction, with its full assessment induced by the witness.
 The [author review](../../reviews/DIAGNOSTIC_HISTORY_ERASURE_REVIEW_2026_09_08.md) distinguishes
 this consistency-existence obstruction from a rejected bounded witness and from equilibrium
-nonexistence. [Current acceptance](../../verification/diagnostic_erasure/ACCEPTANCE.md) checks it
+nonexistence. [Current acceptance](../../verification/combined_acceptance/README.md) checks it
 and preserves/replays all earlier evidence.
 
 The next useful representation gate is a specified broader strategy class with explicit coverage
@@ -137,33 +141,28 @@ removal. General quotient search, approximate off-path consistency and all-equil
 remain unearned. Generic continuous receiving also remains unimplemented; do not mechanically
 build both directions or infer causal-to-game identification.
 
-The following inherited causal frontier description is retained as context from the base edition;
-it is not a claim that this strategic component implements a causal bridge.
+### Merged result — Longitudinal causal kernel fibres and persistent decisions
 
+Merged PR #21 extends PR #20’s point-identified policy and full-support subject boundary.
+Its bounded result addresses the missing-support question:
 
-### ACTIVE RESULT — Two-stage longitudinal causal policy and sequential bridge
+> When first-stage/intermediate causal kernels are identified but binary second-stage outcome rows
+> lack positivity, which complete causal subjects, policy values, and deterministic decisions are
+> identified under an explicit saturated completion profile?
 
-Merged PR #19 establishes the bounded one-stage causal interface. The active result asks the next
-composition question:
+The [bounded construction](../../foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md)
+keeps each unsupported outcome row as one named coordinate in an exact continuous `[0,1]^k` fibre,
+for at most four rows. Policy outcome probabilities, additive losses, and pairwise policy
+differences are multi-affine, so their extrema and the derived common-optimal, minimax-loss, and
+same-model-regret queries are checked exactly on at most 16 corners. The corner family is not the
+continuous fibre and has no warrant for arbitrary nonlinear queries.
 
-> Under explicit longitudinal causal premises, when is one adapted deterministic regime identified,
-> and when is the evidence strong enough to identify every structural transition of Bellman's
-> complete two-stage sequential subject?
-
-The [bounded construction](../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md)
-derives the two-stage g-formula for binary `A1,L1,A2,Y`. A named policy needs support only for its
-root action and its selected second action at positive regime histories. The full 21-node Bellman
-subject requires both root actions, both intermediate values under each root, and both second
-actions at every resulting history. Under that stronger support, all 32 complete policy
-distributions and signed expected costs agree exactly between causal g-formula and existing
-sequential-certificate/path evaluation, including the complete minimizing set.
-
-The mandatory two-world control has identical static `do(A2=0)` and `do(A2=1)` outcome marginals
-but opposite optimal history-dependent policies. It proves that the one-stage PR #19 outputs do not
-identify the adaptive subject. The causal premises and observational law remain supplied, not
-empirically validated. The result under review is not longitudinal partial identification,
-transport, safety/persistent-family composition, causal discovery, authority, or Writ/Decision Lab
-capability.
+All 32 complete policies remain one-policy-across-hidden-completions objects. A common minimizer is
+causal decision identification across the fibre; minimax selection when no common optimum exists
+is a separately supplied robust criterion. Stronger cross-row restrictions are unsupported rather
+than silently discarded, and first-stage/intermediate gaps remain outside this profile. The causal
+premises remain supplied, not empirically validated. No transport, estimation, unsafe-set
+composition, authority, or Writ/Decision Lab capability is claimed.
 
 ## 5. Default mathematical frontier after the current chain
 
@@ -247,11 +246,18 @@ Earned in the active bounded reference:
 - explicit separation of policy support from support for every structural subject transition; and
 - full-support construction of the completed two-stage subject with exact equality across all 32
   causal and Bellman policy values and minimizing sets.
+- exact saturated completion of up to four unsupported binary second-stage outcome rows;
+- exact policy distribution/loss intervals and same-completion pairwise comparisons through
+  query-specific multi-affine corner reduction; and
+- separate common-optimal causal decisions, model-dependent decisions, and robust minimax-loss or
+  same-model-regret criteria across one fixed hidden completion.
 
 Still needed beyond the bounded causal-to-sequential bridge:
 
-- longitudinal partial identification or a justified persistent causal-model family when some
-  structural kernels are not point identified;
+- missing first-stage or intermediate causal kernels and stronger cross-row longitudinal
+  restrictions beyond the saturated second-stage profile;
+- causal-kernel-family composition with unsafe-set reachability;
+- statistical estimation and coverage for longitudinal causal rows;
 - transport or regime-stability premises between distinct observational and deployment populations;
 - more than two stages and wider time-varying intervention semantics;
 - wider supported causal restrictions, covariates, actions, and outcomes; and

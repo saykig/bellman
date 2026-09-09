@@ -97,7 +97,8 @@ This table is intentionally conservative.
 | Unsafe-set reachability / constrained deterministic selection | M1 | Reviewed and merged bounded reference; exact first-hit probability, persistent-family cap, and admissible statistical-corner composition, with no engineering adapter. |
 | Resource constraints / tail and dynamic risk | Foundation only | Not implemented. |
 | Finite causal identification / one-stage decision certification | M1 | Merged bounded exact adjustment and binary response-type reference; supplied causal premises are not empirically validated and no engineering adapter exists. |
-| Two-stage longitudinal causal policy / sequential bridge | M1 candidate | Bounded exact policy g-formula and full-support completed-subject composition under review; no engineering adapter. |
+| Two-stage longitudinal causal policy / sequential bridge | M1 | Reviewed and merged bounded exact policy g-formula and full-support completed-subject composition; no engineering adapter. |
+| Longitudinal causal kernel fibres / persistent decisions | M1 | Bounded exact saturated continuous fibre and query-specific deterministic corner reduction reviewed and merged; no engineering adapter. |
 | Shared-witness sequential credibility | M1 | Author-reviewed supplied-profile game-family reference with independent polynomial consistency and full-continuation checks; no engineering adapter or empirical claim. |
 | Wider plural objectives / strategy | Foundation only | Ambiguity-sensitive equilibrium, mechanism search and general strategic history reduction are not implemented. |
 
@@ -205,10 +206,43 @@ signed costs, and the complete minimizing set to the longitudinal g-formula.
 
 Two fully supported causal worlds can have the same static `do(A2)` outcome marginals for both
 actions while making opposite `L1`-adapted policies optimal. One-stage intervention results are
-therefore not accepted as longitudinal transition rows. This M1 candidate does not implement
-longitudinal partial-identification fibres, transport, statistical estimation, safety or
-persistent-family composition, causal discovery, empirical premise validation, or authority to
-act. Each would require its own typed composition warrant.
+therefore not accepted as longitudinal transition rows. This M1 result does not implement
+transport, statistical estimation, safety composition, causal discovery, empirical premise
+validation, or authority to act. Each would require its own typed composition warrant.
+
+### Longitudinal causal kernel-fibre boundary
+
+The bounded partial longitudinal interface begins only when both root actions and every
+intermediate history have positive observational support. It retains each supported second-stage
+outcome row exactly and maps every unsupported binary row to one explicitly ordered coordinate in
+`[0,1]`. The resulting continuous Cartesian fibre is exact only under the supplied saturated
+no-cross-row-restriction profile. A request carrying monotonicity, shared structural errors,
+cross-world coupling, parametric structure, or another stronger restriction is unsupported; the
+architecture does not silently drop it and promote a possible outer relaxation to an exact fibre.
+
+For fixed deterministic policies, terminal outcome probabilities, expected additive loss, and
+pairwise same-completion differences are multi-affine in the missing-row coordinates. A distinct
+finite corner family is therefore an exact extremal representation for those query classes and
+their complete-class common-optimal, minimax-loss, and same-model-regret consequences. It is not
+the continuous fibre and is not reusable for arbitrary nonlinear causal queries. The exact
+`q(1-q)` midpoint control makes that boundary executable.
+
+Every completion is a persistent whole-episode alternative and receives the same complete policy;
+hidden completion-indexed policy vectors and cross-completion regret subtraction reject. For one
+or two missing rows, the unchanged four-member persistent-family receiver independently reproduces
+the decision results. Three or four rows create eight or sixteen corners, so the new bounded
+receiver records the old checker's four-model limit and performs the exact local matrix check
+without rewriting historical machinery. This is an interface-size mismatch, not a solver
+bottleneck.
+
+The `k=0` case delegates to the merged longitudinal bridge and must reproduce its subject, all 32
+policy values/distributions, and minimizing set exactly. Earlier-stage positivity gaps remain
+`outside-second-stage-kernel-fibre-profile`; they are not fabricated, declared incompatible, or
+allowed to erase a narrower policy result. Observation, support pattern, population, coding,
+timing, premise, completion profile, row order, loss, policy catalogue, fibre, corner family, and
+query revisions all create new claims. This M1 candidate does not establish a general SCM fibre,
+transport, estimation, unsafe-set composition, randomized control, premise validity, or authority
+to act.
 
 ## 5. Stable interface principles
 
@@ -350,3 +384,11 @@ inconsistency. The checked repair retains sender information and induces a new f
 assessment from the common witness; it does not preserve arbitrary supplied beliefs or global
 strategy classes. Any future adapter must bind the information map, uncertainty family and
 requested belief/value queries separately. No Writ, Decision Lab or causal integration is earned.
+
+### Combined strategic and causal acceptance
+
+PR #22 now includes merged PR #21. The [combined entrypoint](../../verification/combined_acceptance/README.md)
+checks the preserved strategic and causal sources in the integrated tree and replays each retained
+aggregate at its own commit. Main’s appended historical ledgers are preserved exactly and retain
+the earlier strategic snapshot as a byte prefix. Coexistence of these checked components does not
+identify strategic payoffs, evidence likelihoods, beliefs or monitoring from causal kernel fibres.
