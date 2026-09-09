@@ -1,0 +1,35 @@
+{
+  "schema": "bellman.afy2024.sensitivity-checkpoint.v1",
+  "parameter_edition": "f541369",
+  "source_hashes": {
+    "sensitivity.py": "e71d750cc17f1b2344173fb0ad59276806b8eb34cd6dec0b07575311ecc2eb4a",
+    "sensitivity_receiver.py": "c17551a3f814fdc9c96dabe7fc33c018977bfdd3744a519030a95ea0f16dbc8f",
+    "sensitivity_checks.py": "b4543e0e30fa8e71992c0dbcd58554d8cc3cc6fde95cdb451a04341144fa4c6f",
+    "replication_review.py": "aba8837633909e80cb52e5020f015b157df246dd456560463023e03cbd65da2d",
+    "PRIOR_AND_UTILITY_REVIEW_20260909.md": "bb24e0cd4d1b8eefb3a5b97460284090d7151f9aa635a2d66dfb4510a3008535",
+    "prior-sensitivity-results.json": "f3c27e314855e916d8e6fbb1096e878c1e4283ce942d8fc54299acf5cbdc2e80",
+    "replication-review-results.json": "6fefc5a0a40b955cef29d512fbc5c6b12ea276f355bb8ffb1e255a369e0160d2"
+  },
+  "observations": {
+    "positive": {
+      "observed_state_pairs": 20,
+      "queries_checked": 8414,
+      "rational_lp_certificates": 600,
+      "largest_exact_extremum_enclosure_width": "1855782906242832768988876206140711/3333333333333333566666666666666670000000000000000",
+      "shared_pure_priors_checked": 10,
+      "scope": "sharp extrema enclosed for each retained finite value query; residual enlargement covers exact reward values; aggregate intervals are outer for a shared prior; pure-prior contrast arithmetic checked, sampling intervals not certified"
+    },
+    "producer_disabled": true,
+    "rejections": [
+      "false dual bound",
+      "negative posterior witness",
+      "omitted continuation alternative",
+      "uncovered history state",
+      "erased numerical residual allowance",
+      "false aggregate outer bound",
+      "false shared-prior contrast"
+    ]
+  },
+  "normal_optimized_equal": true,
+  "initial_execution_failure": "A pure-prior list of integer zeros/ones made the existing NumPy posterior array integer typed; division rejected before output retention. Changed this input list to float zeros/ones; same mathematical prior and frozen producer unchanged."
+}
