@@ -1,0 +1,221 @@
+{
+  "source_commit": "8bc1153175f34acfa20cf2e3a222ba3fc5c054c0",
+  "source_files": {
+    ".github/workflows/combined-acceptance.yml": "c9588fc9f7c6932054f15692ef67458e3ddc1e0d398d28198c8b4867ae882360",
+    ".github/workflows/history-migration.yml": "d675bcc6e311ebee5513d74d311171fa2af845d5243d104084e0c8bc25bc0588",
+    ".github/workflows/longitudinal-causal-kernel-fibres.yml": "03279ddf8de0c002df8032c6f2f4ffc19e97f38f3811b49d23189700d2d715ab",
+    ".github/workflows/sequential-consistency.yml": "313d95add7f4d3e5d538bf564802769424320d8f67e9e30564ef59a172c2aede",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "d79b67ebbb5d9a52d9ab8d69ac5dbf9aec2c4d74ed346e53825afb273abfe5f2",
+    "docs/history/releases/2026-09-09-afy-belief-incentive-challenge.md": "6cca6f403aa615a192bfaf2ce2ce19a463975fb5e112974a11792153d5f9e78f",
+    "docs/programme/ARCHITECTURE.md": "f7e0c3c87dbc079c678e2636d17beb35ca35353f4466f4708e9cabec3839f095",
+    "docs/programme/ROADMAP.md": "2b8771f63c65a95ef8de38fc34386d59c68833cf093816391dc8fc9423d1b440",
+    "research/beliefs_2024/COMPLETION_AUDIT.md": "c2438ace6df2e71371fb74379c0f8523892f3f1bd5dba9172e679c3cb18f331f",
+    "research/beliefs_2024/IDENTIFICATION_AUDIT.md": "c5f9e8f6caab2c4bccab9a43e8fd2a6db55a35244b3f57ba3bba753f4fc99c57",
+    "research/beliefs_2024/README.md": "e7279d2974d6db5515fd31d7b78d95a2ee6340156d1ffe610c4275309746ba15",
+    "research/beliefs_2024/inference_checks.py": "6ba19593c60b30fdb8e468f4a8c654956b8a525f5608da04f0a51e6fe4ee654d",
+    "research/empirical_design_checkpoint/CURRENT_BRIEF.md": "2d12e6c571bf9ce329ea0989cce74b37dfd593583acae6ceb4d355c6fdb923ca",
+    "verification/beliefs_acceptance/README.md": "04a8016a77ccbf093a5591639488c46fd5c8cf3bb75312e03c12a0e481f23ca1",
+    "verification/beliefs_acceptance/acceptance.py": "e749a32759da749916e214f897718831ce09c56b38c36a8d353490ae4bc194bd",
+    "verification/beliefs_acceptance/inventory.json": "4978f17bf6a1df903f950eea3836dd83f0cbcd92306a143357e42ef4a6d26e04"
+  },
+  "validation": {
+    "afy_checks": {
+      "inference": {
+        "control": "false bootstrap interval rejected",
+        "replication_rounds_checked": 32,
+        "scope": "implementation conformance only; no sampling, utility, identification or coverage validation",
+        "uncertainty_comparisons_checked": 14
+      },
+      "portable": {
+        "changed_evidence_identity": "rejected",
+        "changed_mechanism_use": {
+          "applicability": "reassessment_required",
+          "authority_to_act": false,
+          "changed_dependencies": [
+            "operation"
+          ],
+          "downstream_integration": "not implemented",
+          "human_disposition": "unreviewed",
+          "old_evidence": "identity preserved; fresh receiving required"
+        },
+        "changed_report_timing": {
+          "applicability": "reassessment_required",
+          "authority_to_act": false,
+          "changed_dependencies": [
+            "decision_time"
+          ],
+          "downstream_integration": "not implemented",
+          "human_disposition": "unreviewed",
+          "old_evidence": "identity preserved; fresh receiving required"
+        },
+        "fresh_receiving": {
+          "checks": {
+            "six-linear": {
+              "exact_max_residual": "15479180771811061/48000000000000000000000000000000",
+              "exact_response_error_bound": "67703878254469433366444199959419/30000000000000000000000000000000000000000000000",
+              "exact_value_error_bound": "15479180771811061/6000000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 432
+            },
+            "ten-linear": {
+              "exact_max_residual": "24967888088113517/75000000000000000000000000000000",
+              "exact_response_error_bound": "18075939511359179431922311840383/7812500000000000000000000000000000000000000000",
+              "exact_value_error_bound": "24967888088113517/9375000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 3675
+            },
+            "ten-reciprocal": {
+              "exact_max_residual": "365030745893769089/880000000000000000000000000000000",
+              "exact_response_error_bound": "1648995622471720530989438742236521/1100000000000000000000000000000000000000000000000",
+              "exact_value_error_bound": "365030745893769089/110000000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 3675
+            },
+            "ten-square": {
+              "exact_max_residual": "6966226308648485227/21600000000000000000000000000000000",
+              "exact_response_error_bound": "39737039679960053402315706133058569/13500000000000000000000000000000000000000000000000",
+              "exact_value_error_bound": "6966226308648485227/2700000000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 3675
+            }
+          },
+          "implementation": "standard library; no producer, R, NumPy, SciPy or fitting imports",
+          "schema": "bellman.afy2024.receiving.v1",
+          "scope": "exact rational residual assurance; numerical prediction and score reconstruction; no statistical or preference certification"
+        },
+        "same_use": {
+          "applicability": "same_declared_use",
+          "authority_to_act": false,
+          "changed_dependencies": [],
+          "downstream_integration": "not implemented",
+          "human_disposition": "unreviewed",
+          "old_evidence": "identity preserved; fresh receiving required"
+        }
+      },
+      "receiving": {
+        "not_checked": "global mixture optimum, bootstrap coverage, human preferences, causal treatment assignment",
+        "positive": {
+          "checks": {
+            "six-linear": {
+              "exact_max_residual": "15479180771811061/48000000000000000000000000000000",
+              "exact_response_error_bound": "67703878254469433366444199959419/30000000000000000000000000000000000000000000000",
+              "exact_value_error_bound": "15479180771811061/6000000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 432
+            },
+            "ten-linear": {
+              "exact_max_residual": "24967888088113517/75000000000000000000000000000000",
+              "exact_response_error_bound": "18075939511359179431922311840383/7812500000000000000000000000000000000000000000",
+              "exact_value_error_bound": "24967888088113517/9375000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 3675
+            },
+            "ten-reciprocal": {
+              "exact_max_residual": "365030745893769089/880000000000000000000000000000000",
+              "exact_response_error_bound": "1648995622471720530989438742236521/1100000000000000000000000000000000000000000000000",
+              "exact_value_error_bound": "365030745893769089/110000000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 3675
+            },
+            "ten-square": {
+              "exact_max_residual": "6966226308648485227/21600000000000000000000000000000000",
+              "exact_response_error_bound": "39737039679960053402315706133058569/13500000000000000000000000000000000000000000000000",
+              "exact_value_error_bound": "6966226308648485227/2700000000000000000000000000000000",
+              "max_prediction_reconstruction_difference": 4.440892098500626e-16,
+              "predictions_checked": 8414,
+              "sampling_inference": "not certified by arithmetic receiving",
+              "session_scores_checked": 16,
+              "states_checked": 3675
+            }
+          },
+          "implementation": "standard library; no producer, R, NumPy, SciPy or fitting imports",
+          "schema": "bellman.afy2024.receiving.v1",
+          "scope": "exact rational residual assurance; numerical prediction and score reconstruction; no statistical or preference certification"
+        },
+        "producer_disabled": true,
+        "rejections": [
+          "false Markov value",
+          "TFT orientation changed",
+          "noise rebound",
+          "unsupported utility authority",
+          "negative incentive response outside class",
+          "missing target query",
+          "duplicate target query",
+          "wrong decision time",
+          "changed prediction",
+          "unregistered current-report feature",
+          "false Brier score",
+          "false primary contrast",
+          "source byte mismatch"
+        ]
+      },
+      "sensitivity": {
+        "positive": {
+          "largest_exact_extremum_enclosure_width": "1855782906242832768988876206140711/3333333333333333566666666666666670000000000000000",
+          "observed_state_pairs": 20,
+          "queries_checked": 8414,
+          "rational_lp_certificates": 600,
+          "scope": "sharp extrema enclosed for each retained finite value query; residual enlargement covers exact reward values; aggregate intervals are outer for a shared prior; pure-prior contrast arithmetic checked, sampling intervals not certified",
+          "shared_pure_priors_checked": 10
+        },
+        "producer_disabled": true,
+        "rejections": [
+          "false dual bound",
+          "negative posterior witness",
+          "omitted continuation alternative",
+          "uncovered history state",
+          "erased numerical residual allowance",
+          "false aggregate outer bound",
+          "false shared-prior contrast"
+        ]
+      }
+    },
+    "fresh_prediction_reproduction": {
+      "mixtures": "retained source-only fits; separate full R refit receipt preserved",
+      "normal_and_optimized_received": true,
+      "within_declared_1e_7": true
+    },
+    "inherited": {
+      "mode": "all",
+      "prior_receipt_sha256": "d9f5c44f63486c689dd46864423c13f8f6fcbc4ee5cb3916da35b2f70d8ce7c1",
+      "receipt_verified": true,
+      "validation_digest": "5c8e251ac0ac9dcbb6939c2e4fc64259f7d6b5b1bc8109f26a859140f3348947"
+    },
+    "mode": "all",
+    "preservation": {
+      "frozen_checkpoint": "eec4f51ce5a94382a1654c399f98a7aec442225e",
+      "frozen_digest": "48ba484157099204bde55ea7687629da2a2661bc454d42ddc274f41eaea99224",
+      "frozen_files": 319,
+      "mutation_controls": [
+        "verification/combined_acceptance/results.json",
+        "verification/empirical_acceptance/completion-results.json",
+        "research/beliefs_2024/first-results/results.json",
+        "research/beliefs_2024/prior-sensitivity-results.json",
+        "unregistered addition"
+      ],
+      "prior_commit": "349cc42b11a0cd85ba95523ea530bf80fd93e596",
+      "registered_files": 336
+    }
+  }
+}
