@@ -1,0 +1,74 @@
+{
+  "normal_optimized_equal": true,
+  "observations": {
+    "afy": {
+      "minimizers": [
+        "utility"
+      ],
+      "policies_enumerated": {
+        "conditional": 4,
+        "joint": 16,
+        "no_measurement": 2,
+        "perfect_conditional": 4,
+        "unconditional": 4,
+        "utility": 4,
+        "weak_conditional": 4
+      }
+    },
+    "donor_receiving": "normal and optimized, producer imports blocked",
+    "maintenance": {
+      "minimizers": [
+        "inspection"
+      ],
+      "policies_enumerated": {
+        "inspection": 27,
+        "no_measurement": 3,
+        "perfect": 27,
+        "uninformative": 9
+      }
+    },
+    "rejection_controls": [
+      "invalid_channel",
+      "malformed_prior",
+      "negative_cost",
+      "missing_baseline",
+      "hidden_model_policy_field",
+      "state_changing_measurement",
+      "stale_subject",
+      "omitted_result",
+      "false_ranking",
+      "hidden_state_oracle",
+      "cost_omitted",
+      "wrong_action",
+      "relabelled_signal",
+      "changed_cost_old_receipt",
+      "changed_decision_old_receipt"
+    ],
+    "tie": {
+      "minimizers": [
+        "free_signal",
+        "no_measurement"
+      ],
+      "policies_enumerated": {
+        "free_signal": 4,
+        "no_measurement": 2
+      }
+    }
+  },
+  "source_commit": "e2bfcc6d14d2293f45abff63ab66b2eb418e231e",
+  "source_files": {
+    "research/measurement_decision/FINDINGS.md": "45ce64983c04da41fd46d029e361159b4c4df73d5554eeab90459456436565e3",
+    "research/measurement_decision/README.md": "da04543d8880078b769a27b55bcedce8e5726fe16b2c791afcfd37ee1998dd27",
+    "research/measurement_decision/REVIEW.md": "846292784d2d95c1d2815a7bb17741d3269d9f084b11849598bf09858b26c00b",
+    "research/measurement_decision/SOURCES.md": "3a22abb60adc646fa8b5b175cbd05e5984e4d0267f412865c33d71d07244f832",
+    "research/measurement_decision/SPEC.md": "0e13fb22bbf1c1b8be7dc1990087f711d077a8dd21519e231965e858ac9829be",
+    "research/measurement_decision/afy-design.json": "b2e698c33b1d3971ddbbcc2a332f2681e5e8eb813c691d1d5bc81904ef2536ee",
+    "research/measurement_decision/afy-result.json": "8b906bcdde0525215b95e4858eba603277cbb6b4f4a160c10b78f66250f9baaa",
+    "research/measurement_decision/checks.py": "fa0c1c07199ed7ff59faa4722dec664ab644f475ff5daf2be7746e864d36d1a3",
+    "research/measurement_decision/maintenance-design.json": "2a3a4ed5428fe8364f34bd4e4a2cc9cd4a4b3a72668f14c49f46c7bfe7cd11d1",
+    "research/measurement_decision/maintenance-result.json": "0d0134f5d4b8c45febfd781fecd5c0a27730150fdb1754e52bda3ca0518569f8",
+    "research/measurement_decision/menu.py": "db3073fcc247d7312ec0f5cb43da8dfeb3ef48bb18d24f89b50ed932aaad3048",
+    "research/measurement_decision/tie-design.json": "fbf1bcf1dc66d539cbb38f66733e2613282eda0e3dd8c8971d3ae52e35fc79df",
+    "research/measurement_decision/tie-result.json": "fb39c3475c5174ba0000cda08d7de9d7ccb27e20192c2d17f0cd0ea45811a72a"
+  }
+}

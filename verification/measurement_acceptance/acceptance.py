@@ -31,6 +31,11 @@ def integrity():
     need(actual<=set(names)|extras,'unregistered files: '+str(sorted(actual-set(names)-extras)))
     def check(path,data):need(data==expected[path],'frozen bytes changed: '+path)
     for p,b in expected.items():check(p,(ROOT/p).read_bytes())
+    local=json.loads((ROOT/'research/measurement_decision/local-receiving.json').read_text())
+    local_paths={p for p in extras if p.startswith('research/measurement_decision/') and p!='research/measurement_decision/local-receiving.json'}
+    need(set(local['source_files'])==local_paths,'local receipt source coverage')
+    for p,h in local['source_files'].items():
+        need(sha((ROOT/p).read_bytes())==h and sha(git('show',local['source_commit']+':'+p))==h,'local receiving source '+p)
     controls=[]
     for p in ['verification/beliefs_acceptance/results.json','research/beliefs_2024/first-results/results.json','verification/combined_acceptance/results.json']:
         try:check(p,expected[p]+b' ')
