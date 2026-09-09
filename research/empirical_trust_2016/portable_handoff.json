@@ -1,0 +1,17 @@
+{
+  "case": "FSD3661-return-history",
+  "original": {
+    "intended_use": "retrospective-mean-prediction.v1",
+    "plan_sha256": "66d570f8b63f75484a97af80ac6d7a758c474cc5184193b0df86f9667712f9a7",
+    "result_file": "results.json",
+    "result_sha256": "a74baec13c93a4f7381f147b56d4e932b6e3080bcabf1964bb94fb1b3a33e985"
+  },
+  "successor": {
+    "authority_to_intervene": "not_supplied",
+    "changed_premise": "Humans receive no monetary feedback before a next sender choice, unlike every original treatment.",
+    "disposition": "not_identified_without_additional_assumptions",
+    "intended_use": "causal-feedback-erasure.v1",
+    "parent_result_sha256": "a74baec13c93a4f7381f147b56d4e932b6e3080bcabf1964bb94fb1b3a33e985",
+    "replay_old_as_new": "reject"
+  }
+}

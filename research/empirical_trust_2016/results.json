@@ -1,0 +1,3414 @@
+{
+  "input_sha256": {
+    "PLAN.md": "66d570f8b63f75484a97af80ac6d7a758c474cc5184193b0df86f9667712f9a7",
+    "observations.csv": "c86dbe2d5ad1f92eda1e03b3fc074e5920c2e8418a859b2727bcc3f89d37d2ff",
+    "provenance.json": "15ed8c23f368b4d362e878ce473779e14105411bb3d7bd19dafcfc705d12b825"
+  },
+  "kind": "retrospective-mean-prediction.v1",
+  "models": {
+    "full": {
+      "coefficients": [
+        "-0.024075100083844864",
+        "0.014522005862565728",
+        "0.030228730318724004",
+        "-0.020675636097443672",
+        "0.06856334242840782",
+        "0.03633712541528696",
+        "-0.019684089527897526",
+        "-0.0558662434655298",
+        "-0.029350134850267738",
+        "0.5479434152903552",
+        "0.08518426670788946",
+        "0.02753602054214448",
+        "0.034176520945914134",
+        "-0.02863870620869481",
+        "0.5332389118942822",
+        "0.1363066637267382",
+        "0.029186044741944608",
+        "0.10532621791637946",
+        "-0.055743067250586864"
+      ],
+      "features": [
+        "treatment_1",
+        "treatment_2",
+        "treatment_3",
+        "treatment_4",
+        "round_2",
+        "round_3",
+        "round_4",
+        "round_5",
+        "round_6",
+        "sent_lag_1",
+        "sent_lag_2",
+        "sent_lag_3",
+        "sent_lag_4",
+        "sent_lag_5",
+        "return_lag_1",
+        "return_lag_2",
+        "return_lag_3",
+        "return_lag_4",
+        "return_lag_5"
+      ],
+      "intercept": "0.1683713431111079"
+    },
+    "reduced": {
+      "coefficients": [
+        "-0.03013205400548775",
+        "0.006015483818882259",
+        "0.034645894253418456",
+        "-0.010529324066811615",
+        "0.07140357536598249",
+        "0.03301496975029064",
+        "-0.023413954597790908",
+        "-0.05485886089704147",
+        "-0.026145729621441995",
+        "0.6614333765245339",
+        "0.11693205374429753",
+        "0.05441371478551998",
+        "0.03747309929615535",
+        "-0.059646067985121454"
+      ],
+      "features": [
+        "treatment_1",
+        "treatment_2",
+        "treatment_3",
+        "treatment_4",
+        "round_2",
+        "round_3",
+        "round_4",
+        "round_5",
+        "round_6",
+        "sent_lag_1",
+        "sent_lag_2",
+        "sent_lag_3",
+        "sent_lag_4",
+        "sent_lag_5"
+      ],
+      "intercept": "0.1666775618988406"
+    }
+  },
+  "predictions": [
+    {
+      "id": 1,
+      "predictions": {
+        "full": "0.31053157028851913",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.31818797934675763",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 1,
+      "predictions": {
+        "full": "0.31316967629111303",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.2992880493551154",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 1,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 1,
+      "predictions": {
+        "full": "0.20224714802408147",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.19680862942757602",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 2,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 1,
+      "predictions": {
+        "full": "0.20775249044694988",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.21698434990937104",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 1,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 1,
+      "predictions": {
+        "full": "0.18434515227155046",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.1858468833903039",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 1,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 3,
+      "predictions": {
+        "full": "0.4272478019747346",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.42842687543417995",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 4,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 3,
+      "predictions": {
+        "full": "0.45057407927277376",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4290156210665873",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 5,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 3,
+      "predictions": {
+        "full": "0.4750430956722717",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.44584404969072355",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 8,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 3,
+      "predictions": {
+        "full": "0.5366886245761766",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.6019928584333497",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 6,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 3,
+      "predictions": {
+        "full": "0.5520866875022226",
+        "persistence": "0.5",
+        "reduced": "0.5343525606280208",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 4,
+      "predictions": {
+        "full": "0.21285958545567085",
+        "persistence": "0.0",
+        "reduced": "0.2079490832593353",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 4,
+      "predictions": {
+        "full": "0.18063336844255",
+        "persistence": "0.0",
+        "reduced": "0.1695604776436435",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 4,
+      "predictions": {
+        "full": "0.12461215349936552",
+        "persistence": "0.0",
+        "reduced": "0.11313155329556193",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 4,
+      "predictions": {
+        "full": "0.08842999956173325",
+        "persistence": "0.0",
+        "reduced": "0.08168664699631137",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 4,
+      "predictions": {
+        "full": "0.1149461081769953",
+        "persistence": "0.0",
+        "reduced": "0.11039977827191085",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 5,
+      "predictions": {
+        "full": "0.3498454392782597",
+        "persistence": "0.25",
+        "reduced": "0.3733074273904688",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 5,
+      "predictions": {
+        "full": "0.2932533376679149",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.3090323871671402",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 5,
+      "predictions": {
+        "full": "0.14569353641954988",
+        "persistence": "0.0",
+        "reduced": "0.14622365761599151",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 5,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 5,
+      "predictions": {
+        "full": "0.3933540457707746",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.37572111450315937",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 5,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 5,
+      "predictions": {
+        "full": "0.41890503219655817",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.42605270710366955",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 6,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 6,
+      "predictions": {
+        "full": "0.3232277348574306",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.31818797934675763",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 7,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 6,
+      "predictions": {
+        "full": "0.5764652408397715",
+        "persistence": "0.5833333333333334",
+        "reduced": "0.5748852895736712",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 6,
+      "predictions": {
+        "full": "0.882140182191117",
+        "persistence": "1.0",
+        "reduced": "0.8518442469685228",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 6,
+      "predictions": {
+        "full": "0.931910430747969",
+        "persistence": "1.0",
+        "reduced": "0.8980389274393887",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 6,
+      "predictions": {
+        "full": "0.9910390443189316",
+        "persistence": "1.0",
+        "reduced": "0.955097219918166",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 9,
+      "predictions": {
+        "full": "0.39428201526944984",
+        "persistence": "0.25",
+        "reduced": "0.3733074273904688",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 5,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 9,
+      "predictions": {
+        "full": "0.5114269852634117",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.4743907312982737",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 6,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 9,
+      "predictions": {
+        "full": "0.5056797392827439",
+        "persistence": "0.5",
+        "reduced": "0.5061733593143329",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 9,
+      "predictions": {
+        "full": "0.7839711481334173",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7233878102902438",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 9,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 9,
+      "predictions": {
+        "full": "0.7317443270608444",
+        "persistence": "0.75",
+        "reduced": "0.7318273205554369",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 7,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 10,
+      "predictions": {
+        "full": "0.49830208238675383",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.4835463234778911",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 11,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 10,
+      "predictions": {
+        "full": "0.7330125623196229",
+        "persistence": "0.9166666666666666",
+        "reduced": "0.8245960951845901",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 6,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 10,
+      "predictions": {
+        "full": "0.5230102684972986",
+        "persistence": "0.5",
+        "reduced": "0.5737083386507349",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 2,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 10,
+      "predictions": {
+        "full": "0.2939222130655204",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.3158845998826738",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 10,
+      "predictions": {
+        "full": "0.8870070886002005",
+        "persistence": "1.0",
+        "reduced": "0.8280265005075962",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 11,
+      "predictions": {
+        "full": "0.5630082805143173",
+        "persistence": "0.5",
+        "reduced": "0.5386657715216023",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 11,
+      "predictions": {
+        "full": "0.8858625318860772",
+        "persistence": "1.0",
+        "reduced": "0.8894598810403263",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 9,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 11,
+      "predictions": {
+        "full": "0.6630319025747176",
+        "persistence": "0.75",
+        "reduced": "0.7533454968260198",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 11,
+      "predictions": {
+        "full": "0.7651442921615085",
+        "persistence": "1.0",
+        "reduced": "0.9039693282626662",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 11,
+      "predictions": {
+        "full": "0.9771742352660168",
+        "persistence": "1.0",
+        "reduced": "0.9372255599334769",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 12,
+      "predictions": {
+        "full": "0.6606802653471655",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.6489046676090247",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 12,
+      "predictions": {
+        "full": "0.7278336358021075",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7987096605769535",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 12,
+      "predictions": {
+        "full": "0.6783381868247937",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7980452217099347",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 12,
+      "predictions": {
+        "full": "0.7739840585094652",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.8006513340723744",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 12,
+      "predictions": {
+        "full": "0.8391143889793645",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.795845936573919",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 13,
+      "predictions": {
+        "full": "0.39428201526944984",
+        "persistence": "0.25",
+        "reduced": "0.3733074273904688",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 3,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 13,
+      "predictions": {
+        "full": "0.3883626712927405",
+        "persistence": "0.25",
+        "reduced": "0.36415183521085137",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 13,
+      "predictions": {
+        "full": "0.3273387689336434",
+        "persistence": "0.25",
+        "reduced": "0.3213263395591498",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 3,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 13,
+      "predictions": {
+        "full": "0.2985369981054058",
+        "persistence": "0.25",
+        "reduced": "0.2992497080839381",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 13,
+      "predictions": {
+        "full": "0.3553386380869628",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.36817077040696833",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 3,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 15,
+      "predictions": {
+        "full": "0.517346329240121",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.4835463234778911",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 15,
+      "predictions": {
+        "full": "0.566703641641841",
+        "persistence": "0.5",
+        "reduced": "0.5489988549660344",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 15,
+      "predictions": {
+        "full": "0.7937286721082877",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7454644417654557",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 15,
+      "predictions": {
+        "full": "0.8502716464769624",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7731451543198289",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 10,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 15,
+      "predictions": {
+        "full": "0.8665709341510986",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7982664204714809",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 16,
+      "predictions": {
+        "full": "0.4399439665436461",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.42842687543417995",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 2,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 16,
+      "predictions": {
+        "full": "0.22038701265574134",
+        "persistence": "0.0",
+        "reduced": "0.20853782889174266",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 16,
+      "predictions": {
+        "full": "0.29225309808453176",
+        "persistence": "0.25",
+        "reduced": "0.2966278023552021",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 4,
+      "sent": 1,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 16,
+      "predictions": {
+        "full": "0.19312163568991414",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.17853014157481537",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 5,
+      "sent": 9,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 16,
+      "predictions": {
+        "full": "0.5299826281616904",
+        "persistence": "0.75",
+        "reduced": "0.6099405545120089",
+        "treatment_mean": "0.4909722222222222"
+      },
+      "round": 6,
+      "sent": 0,
+      "session": 1,
+      "treatment": 1
+    },
+    {
+      "id": 55,
+      "predictions": {
+        "full": "0.40113870979358174",
+        "persistence": "0.25",
+        "reduced": "0.4094549652148388",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 55,
+      "predictions": {
+        "full": "0.4188462853506547",
+        "persistence": "0.25",
+        "reduced": "0.40029937303522134",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 55,
+      "predictions": {
+        "full": "0.39593902173435974",
+        "persistence": "0.25",
+        "reduced": "0.35747387738351977",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 55,
+      "predictions": {
+        "full": "0.35802242506056203",
+        "persistence": "0.25",
+        "reduced": "0.3353972459083081",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 55,
+      "predictions": {
+        "full": "0.3772414390309119",
+        "persistence": "0.25",
+        "reduced": "0.3491988601876272",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 57,
+      "predictions": {
+        "full": "0.4341044964988665",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.46457441325855",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 57,
+      "predictions": {
+        "full": "0.4302730350550421",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.46516315889095733",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 57,
+      "predictions": {
+        "full": "0.3834304936259058",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4268721394713824",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 57,
+      "predictions": {
+        "full": "0.40942517161255754",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4079182662708503",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 57,
+      "predictions": {
+        "full": "0.4457247141309712",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4167493748847426",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 58,
+      "predictions": {
+        "full": "0.3808690876572084",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.35433551717112766",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 58,
+      "predictions": {
+        "full": "0.34718410955710843",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.3354355871794854",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 58,
+      "predictions": {
+        "full": "0.3103904021950856",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.2880756152956572",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 58,
+      "predictions": {
+        "full": "0.34291595339888525",
+        "persistence": "0.25",
+        "reduced": "0.317995673589477",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 58,
+      "predictions": {
+        "full": "0.3729989660437167",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.40163157938995886",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 61,
+      "predictions": {
+        "full": "0.3554767585193854",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.35433551717112766",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 61,
+      "predictions": {
+        "full": "0.4891499591548056",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.44567448326690773",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 5,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 61,
+      "predictions": {
+        "full": "0.5065285189695165",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.47292263505084026",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 5,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 61,
+      "predictions": {
+        "full": "0.4853945401589948",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.4665365355772271",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 61,
+      "predictions": {
+        "full": "0.5028462488806649",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4409692002597477",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 6,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 62,
+      "predictions": {
+        "full": "0.3745210053727527",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.35433551717112766",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 62,
+      "predictions": {
+        "full": "0.3646056580327764",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.3354355871794854",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 62,
+      "predictions": {
+        "full": "0.3796172425421524",
+        "persistence": "0.25",
+        "reduced": "0.34319506333936833",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 62,
+      "predictions": {
+        "full": "0.3610192949029231",
+        "persistence": "0.25",
+        "reduced": "0.3277400114015018",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 62,
+      "predictions": {
+        "full": "0.43951669068414345",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4061660556220855",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 65,
+      "predictions": {
+        "full": "0.4265310389314047",
+        "persistence": "0.25",
+        "reduced": "0.4094549652148388",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 65,
+      "predictions": {
+        "full": "0.47099903013564803",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4554188210789325",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 6,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 65,
+      "predictions": {
+        "full": "0.5033248823969165",
+        "persistence": "0.5",
+        "reduced": "0.532576559326678",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 65,
+      "predictions": {
+        "full": "0.38446596160380697",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4242841836202203",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 65,
+      "predictions": {
+        "full": "0.34150834324259666",
+        "persistence": "0.25",
+        "reduced": "0.3756693849707116",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 0,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 66,
+      "predictions": {
+        "full": "0.525428399047259",
+        "persistence": "0.5",
+        "reduced": "0.5748133093459723",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 66,
+      "predictions": {
+        "full": "0.4039311685669438",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.3744129384275846",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 66,
+      "predictions": {
+        "full": "0.39827482890578114",
+        "persistence": "0.25",
+        "reduced": "0.361332968267875",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 66,
+      "predictions": {
+        "full": "0.3167970743782743",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.2851115964565091",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 66,
+      "predictions": {
+        "full": "0.30561189731131266",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.26630079906093124",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 67,
+      "predictions": {
+        "full": "0.2514566914020815",
+        "persistence": "0.0",
+        "reduced": "0.24409662108370533",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 67,
+      "predictions": {
+        "full": "0.3232505415062646",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.3159469115554358",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 1,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 67,
+      "predictions": {
+        "full": "0.22631398526001914",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.2238872147876927",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 67,
+      "predictions": {
+        "full": "0.3144843845140044",
+        "persistence": "0.25",
+        "reduced": "0.302005819228093",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 67,
+      "predictions": {
+        "full": "0.37014834089197524",
+        "persistence": "0.25",
+        "reduced": "0.3519186664449746",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 69,
+      "predictions": {
+        "full": "0.3288590540985564",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.2992160691274165",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 69,
+      "predictions": {
+        "full": "0.3448108045715408",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.32569124936746063",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 69,
+      "predictions": {
+        "full": "0.33598868370150736",
+        "persistence": "0.25",
+        "reduced": "0.3386605871072417",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 69,
+      "predictions": {
+        "full": "0.4060982712404866",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.3797367011705333",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 69,
+      "predictions": {
+        "full": "0.4413067683233204",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4208808990995371",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 10,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 70,
+      "predictions": {
+        "full": "0.42018295664694894",
+        "persistence": "0.25",
+        "reduced": "0.4094549652148388",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 70,
+      "predictions": {
+        "full": "0.59244064572862",
+        "persistence": "0.5",
+        "reduced": "0.5656577171663548",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 8,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 70,
+      "predictions": {
+        "full": "0.7054853536872395",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.6623041310381499",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 70,
+      "predictions": {
+        "full": "0.7702544472288091",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7835584999707901",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 10,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 70,
+      "predictions": {
+        "full": "0.8706282534079663",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.835286017162451",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 71,
+      "predictions": {
+        "full": "0.4341044964988665",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.46457441325855",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 1,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 71,
+      "predictions": {
+        "full": "0.29328718123245334",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.2998048147598238",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 0,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 71,
+      "predictions": {
+        "full": "0.1794866218521484",
+        "persistence": "0.0",
+        "reduced": "0.1771613338604634",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 0,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 71,
+      "predictions": {
+        "full": "0.14071394753529393",
+        "persistence": "0.0",
+        "reduced": "0.1348596941515265",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 71,
+      "predictions": {
+        "full": "0.38027748550509816",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.3502658438840979",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 72,
+      "predictions": {
+        "full": "0.4531487433522337",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.46457441325855",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 2,
+      "sent": 1,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 72,
+      "predictions": {
+        "full": "0.3108514409344626",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.2998048147598238",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 3,
+      "sent": 1,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 72,
+      "predictions": {
+        "full": "0.23578441090698266",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.23228078190417456",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 4,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 72,
+      "predictions": {
+        "full": "0.2452157938207697",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.2548429280509736",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 5,
+      "sent": 3,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 72,
+      "predictions": {
+        "full": "0.3392758120016143",
+        "persistence": "0.25",
+        "reduced": "0.319169547696563",
+        "treatment_mean": "0.6638888888888889"
+      },
+      "round": 6,
+      "sent": 2,
+      "session": 4,
+      "treatment": 2
+    },
+    {
+      "id": 127,
+      "predictions": {
+        "full": "0.520865501367044",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.5483242717367973",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 127,
+      "predictions": {
+        "full": "0.8248648521078917",
+        "persistence": "1.0",
+        "reduced": "0.9444934914872076",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 127,
+      "predictions": {
+        "full": "0.5509351118019399",
+        "persistence": "0.5",
+        "reduced": "0.6482306247216659",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 0,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 127,
+      "predictions": {
+        "full": "0.23211773510768313",
+        "persistence": "0.0",
+        "reduced": "0.2749581282862844",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 127,
+      "predictions": {
+        "full": "0.5400597742588252",
+        "persistence": "0.5",
+        "reduced": "0.5457218431548654",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 128,
+      "predictions": {
+        "full": "0.4295415988186515",
+        "persistence": "0.25",
+        "reduced": "0.43808537564937505",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 128,
+      "predictions": {
+        "full": "0.42510224199330005",
+        "persistence": "0.25",
+        "reduced": "0.4289297834697576",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 128,
+      "predictions": {
+        "full": "0.42936487739868195",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.44122373586176716",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 128,
+      "predictions": {
+        "full": "0.4218118574385017",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4288914421985802",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 128,
+      "predictions": {
+        "full": "0.4364305951131027",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.447227532710026",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 129,
+      "predictions": {
+        "full": "0.468855467808392",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.49320482369308616",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 129,
+      "predictions": {
+        "full": "0.47624018378212113",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4937935693254935",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 129,
+      "predictions": {
+        "full": "0.4384107817559236",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4555025499059186",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 129,
+      "predictions": {
+        "full": "0.3876121919758152",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.4365486767053865",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 129,
+      "predictions": {
+        "full": "0.3960790859295227",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.44537978531927885",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 130,
+      "predictions": {
+        "full": "0.4295415988186515",
+        "persistence": "0.25",
+        "reduced": "0.43808537564937505",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 130,
+      "predictions": {
+        "full": "0.41875415970884433",
+        "persistence": "0.25",
+        "reduced": "0.4289297834697576",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 130,
+      "predictions": {
+        "full": "0.369384063177875",
+        "persistence": "0.25",
+        "reduced": "0.38610428781805595",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 130,
+      "predictions": {
+        "full": "0.4186937764446463",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.4742665524302666",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 130,
+      "predictions": {
+        "full": "0.3521472732904315",
+        "persistence": "0.25",
+        "reduced": "0.39731794624621297",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 131,
+      "predictions": {
+        "full": "0.5450324552218608",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.49320482369308616",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 131,
+      "predictions": {
+        "full": "0.6187768782851836",
+        "persistence": "0.5",
+        "reduced": "0.6040324654129159",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 131,
+      "predictions": {
+        "full": "0.5169011199508551",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.5301106735736794",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 131,
+      "predictions": {
+        "full": "0.4557952768370528",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.45536196698166465",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 131,
+      "predictions": {
+        "full": "0.5545681675477878",
+        "persistence": "0.5",
+        "reduced": "0.566398674188187",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 132,
+      "predictions": {
+        "full": "0.4537085526734684",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.38296592760566384",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 132,
+      "predictions": {
+        "full": "0.5791871713627124",
+        "persistence": "0.5",
+        "reduced": "0.5845437897888662",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 132,
+      "predictions": {
+        "full": "0.40814900485018574",
+        "persistence": "0.25",
+        "reduced": "0.4108028250220037",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 132,
+      "predictions": {
+        "full": "0.7449495035479199",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7603444630705227",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 132,
+      "predictions": {
+        "full": "0.3226228703656371",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.35013951970838025",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 134,
+      "predictions": {
+        "full": "0.312825367132436",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.3278464795619527",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 134,
+      "predictions": {
+        "full": "0.3067420858650065",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.29920221175828565",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 134,
+      "predictions": {
+        "full": "0.25153555214897605",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.24730776364233076",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 134,
+      "predictions": {
+        "full": "0.2049249374176763",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.2189856156177598",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 134,
+      "predictions": {
+        "full": "0.2292232881530914",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.24272824122793252",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 136,
+      "predictions": {
+        "full": "0.5399097482204112",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.5483242717367973",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 8,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 136,
+      "predictions": {
+        "full": "0.7105659649887619",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.724015699312363",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 9,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 136,
+      "predictions": {
+        "full": "0.6767955525730087",
+        "persistence": "0.75",
+        "reduced": "0.7746116176047002",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 9,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 136,
+      "predictions": {
+        "full": "0.7513020214965705",
+        "persistence": "0.75",
+        "reduced": "0.7821282691872524",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 8,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 136,
+      "predictions": {
+        "full": "0.7430737441020474",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.7447721751481724",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 10,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 137,
+      "predictions": {
+        "full": "0.8912838185620638",
+        "persistence": "1.0",
+        "reduced": "0.9341604080427754",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 137,
+      "predictions": {
+        "full": "0.976410413358135",
+        "persistence": "1.0",
+        "reduced": "1.0",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 137,
+      "predictions": {
+        "full": "0.9045553923999825",
+        "persistence": "1.0",
+        "reduced": "1.0",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 137,
+      "predictions": {
+        "full": "0.9624424213334438",
+        "persistence": "1.0",
+        "reduced": "1.0",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 137,
+      "predictions": {
+        "full": "1.0",
+        "persistence": "1.0",
+        "reduced": "0.9857839028962023",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 138,
+      "predictions": {
+        "full": "0.4815516323773035",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.49320482369308616",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 138,
+      "predictions": {
+        "full": "0.5949764369407291",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.5489130173692047",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 138,
+      "predictions": {
+        "full": "0.5680741257474328",
+        "persistence": "0.5",
+        "reduced": "0.5754857838053657",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 138,
+      "predictions": {
+        "full": "0.5367436980078327",
+        "persistence": "0.5",
+        "reduced": "0.5708107246489851",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 138,
+      "predictions": {
+        "full": "0.5227381897059111",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.5321796197259725",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 140,
+      "predictions": {
+        "full": "0.815106831148595",
+        "persistence": "1.0",
+        "reduced": "0.9341604080427754",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 140,
+      "predictions": {
+        "full": "0.9061533745500979",
+        "persistence": "1.0",
+        "reduced": "1.0",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 4,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 140,
+      "predictions": {
+        "full": "0.5157606779372277",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.5697330622591303",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 3,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 140,
+      "predictions": {
+        "full": "0.40541751935213277",
+        "persistence": "0.25",
+        "reduced": "0.44268710471612555",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 6,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 140,
+      "predictions": {
+        "full": "0.5521183010715947",
+        "persistence": "0.5",
+        "reduced": "0.5310923644686989",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 8,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 144,
+      "predictions": {
+        "full": "0.32552153170134746",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.3278464795619527",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 2,
+      "sent": 5,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 144,
+      "predictions": {
+        "full": "0.47359104086382287",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.5196800039331303",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 3,
+      "sent": 0,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 144,
+      "predictions": {
+        "full": "0.2173990025692562",
+        "persistence": "0.0",
+        "reduced": "0.23116566684671877",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 4,
+      "sent": 2,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 144,
+      "predictions": {
+        "full": "0.2699311317640287",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.28249863077795284",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 5,
+      "sent": 1,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 144,
+      "predictions": {
+        "full": "0.2698961342324837",
+        "persistence": "0.08333333333333333",
+        "reduced": "0.2604291359065491",
+        "treatment_mean": "0.6916666666666668"
+      },
+      "round": 6,
+      "sent": 0,
+      "session": 8,
+      "treatment": 3
+    },
+    {
+      "id": 163,
+      "predictions": {
+        "full": "0.812536372442061",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.778746293635123",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 163,
+      "predictions": {
+        "full": "0.9338837352187676",
+        "persistence": "1.0",
+        "reduced": "0.9480399622271014",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 163,
+      "predictions": {
+        "full": "0.8009235078987779",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.8462055797369139",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 4,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 163,
+      "predictions": {
+        "full": "0.4791425536317515",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.5048518447623962",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 163,
+      "predictions": {
+        "full": "0.8062912890085738",
+        "persistence": "1.0",
+        "reduced": "0.8635260409463743",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 0,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 165,
+      "predictions": {
+        "full": "0.38498531468693953",
+        "persistence": "0.25",
+        "reduced": "0.3929101573291449",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 165,
+      "predictions": {
+        "full": "0.5318506746307876",
+        "persistence": "0.5",
+        "reduced": "0.549112909280661",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 4,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 165,
+      "predictions": {
+        "full": "0.4113202079906348",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.42528153097761145",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 5,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 165,
+      "predictions": {
+        "full": "0.4210243058127172",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.45243910061844134",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 165,
+      "predictions": {
+        "full": "0.746792457832235",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7518816152881265",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 167,
+      "predictions": {
+        "full": "0.7363593850285921",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.778746293635123",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 167,
+      "predictions": {
+        "full": "0.9144113546863764",
+        "persistence": "1.0",
+        "reduced": "0.9480399622271014",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 167,
+      "predictions": {
+        "full": "0.894426057768491",
+        "persistence": "1.0",
+        "reduced": "0.9564444758243362",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 167,
+      "predictions": {
+        "full": "0.9721732831173012",
+        "persistence": "1.0",
+        "reduced": "0.965296104736135",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 167,
+      "predictions": {
+        "full": "0.9846118401067518",
+        "persistence": "1.0",
+        "reduced": "0.9505496959068258",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 170,
+      "predictions": {
+        "full": "0.840379452145896",
+        "persistence": "1.0",
+        "reduced": "0.8889851897225454",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 170,
+      "predictions": {
+        "full": "0.887417553235233",
+        "persistence": "1.0",
+        "reduced": "0.967528637851151",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 170,
+      "predictions": {
+        "full": "0.9010475762777209",
+        "persistence": "1.0",
+        "reduced": "0.9655134282885895",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 170,
+      "predictions": {
+        "full": "0.8796210468438119",
+        "persistence": "1.0",
+        "reduced": "0.9715416212854942",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 170,
+      "predictions": {
+        "full": "0.9000294774848299",
+        "persistence": "1.0",
+        "reduced": "0.9406086845759722",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 171,
+      "predictions": {
+        "full": "0.42429918367668007",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.44802960537285613",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 171,
+      "predictions": {
+        "full": "0.5436747474298682",
+        "persistence": "0.5",
+        "reduced": "0.5588572470926858",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 7,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 171,
+      "predictions": {
+        "full": "0.5328317288024731",
+        "persistence": "0.5833333333333334",
+        "reduced": "0.5951743513408716",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 5,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 171,
+      "predictions": {
+        "full": "0.471134301558001",
+        "persistence": "0.4166666666666667",
+        "reduced": "0.4847948723291953",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 171,
+      "predictions": {
+        "full": "0.7920189401771208",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7605145383190797",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 173,
+      "predictions": {
+        "full": "0.3202791165593761",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.33779070928543375",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 173,
+      "predictions": {
+        "full": "0.5389281374587329",
+        "persistence": "0.5",
+        "reduced": "0.5393685714686363",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 173,
+      "predictions": {
+        "full": "0.8035392153358298",
+        "persistence": "1.0",
+        "reduced": "0.8617026390951741",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 9,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 173,
+      "predictions": {
+        "full": "0.705821656238836",
+        "persistence": "0.75",
+        "reduced": "0.7477488370148047",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 9,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 173,
+      "predictions": {
+        "full": "0.7116376022145764",
+        "persistence": "0.75",
+        "reduced": "0.7769858340149547",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 174,
+      "predictions": {
+        "full": "0.9292526041282764",
+        "persistence": "1.0",
+        "reduced": "0.8889851897225454",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 174,
+      "predictions": {
+        "full": "0.9545719065142128",
+        "persistence": "1.0",
+        "reduced": "0.967528637851151",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 174,
+      "predictions": {
+        "full": "0.9045746411430283",
+        "persistence": "1.0",
+        "reduced": "0.9655134282885895",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 174,
+      "predictions": {
+        "full": "0.8963621901363055",
+        "persistence": "1.0",
+        "reduced": "0.9715416212854942",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 174,
+      "predictions": {
+        "full": "0.9686501504045877",
+        "persistence": "1.0",
+        "reduced": "0.9406086845759722",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 175,
+      "predictions": {
+        "full": "0.8022909584391616",
+        "persistence": "1.0",
+        "reduced": "0.8889851897225454",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 175,
+      "predictions": {
+        "full": "0.8776813629690373",
+        "persistence": "1.0",
+        "reduced": "0.967528637851151",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 175,
+      "predictions": {
+        "full": "0.9497475170717994",
+        "persistence": "1.0",
+        "reduced": "0.9655134282885895",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 175,
+      "predictions": {
+        "full": "0.999344813705868",
+        "persistence": "1.0",
+        "reduced": "0.9715416212854942",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 175,
+      "predictions": {
+        "full": "0.9931320598130311",
+        "persistence": "1.0",
+        "reduced": "0.9406086845759722",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 176,
+      "predictions": {
+        "full": "0.6704278116180226",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.6685073975477007",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 176,
+      "predictions": {
+        "full": "0.8661655261397786",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.8183123905156295",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 176,
+      "predictions": {
+        "full": "0.9027069064717027",
+        "persistence": "1.0",
+        "reduced": "0.9278868477360331",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 176,
+      "predictions": {
+        "full": "0.8689083466693035",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.8397427396351003",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 11,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 176,
+      "predictions": {
+        "full": "0.9286556875959794",
+        "persistence": "0.9166666666666666",
+        "reduced": "0.8796370670205595",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 177,
+      "predictions": {
+        "full": "0.42429918367668007",
+        "persistence": "0.3333333333333333",
+        "reduced": "0.44802960537285613",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 6,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 177,
+      "predictions": {
+        "full": "0.5881113234210584",
+        "persistence": "0.5",
+        "reduced": "0.5588572470926858",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 7,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 177,
+      "predictions": {
+        "full": "0.6013233580064696",
+        "persistence": "0.5833333333333334",
+        "reduced": "0.5951743513408716",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 7,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 177,
+      "predictions": {
+        "full": "0.5794946599008489",
+        "persistence": "0.5833333333333334",
+        "reduced": "0.5950337684166176",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 8,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 177,
+      "predictions": {
+        "full": "0.7077524296087254",
+        "persistence": "0.6666666666666666",
+        "reduced": "0.6697643178557071",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 8,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 178,
+      "predictions": {
+        "full": "0.3202791165593761",
+        "persistence": "0.16666666666666666",
+        "reduced": "0.33779070928543375",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 3,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 178,
+      "predictions": {
+        "full": "0.40194228363614415",
+        "persistence": "0.25",
+        "reduced": "0.37401022733750267",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 178,
+      "predictions": {
+        "full": "0.8711163006412378",
+        "persistence": "1.0",
+        "reduced": "0.8324696256590998",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 178,
+      "predictions": {
+        "full": "0.7673173796652858",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.7892648563621358",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 10,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 178,
+      "predictions": {
+        "full": "0.7924588643572211",
+        "persistence": "0.8333333333333334",
+        "reduced": "0.8324813450466517",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 180,
+      "predictions": {
+        "full": "0.840379452145896",
+        "persistence": "1.0",
+        "reduced": "0.8889851897225454",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 2,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 180,
+      "predictions": {
+        "full": "0.9762907052176133",
+        "persistence": "1.0",
+        "reduced": "0.967528637851151",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 3,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 180,
+      "predictions": {
+        "full": "0.9745500118411565",
+        "persistence": "1.0",
+        "reduced": "0.9655134282885895",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 4,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 180,
+      "predictions": {
+        "full": "0.9355554683624646",
+        "persistence": "1.0",
+        "reduced": "0.9715416212854942",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 5,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    },
+    {
+      "id": 180,
+      "predictions": {
+        "full": "0.9745362367037022",
+        "persistence": "1.0",
+        "reduced": "0.9406086845759722",
+        "treatment_mean": "0.5402777777777777"
+      },
+      "round": 6,
+      "sent": 12,
+      "session": 10,
+      "treatment": 4
+    }
+  ],
+  "producer_sha256": "8de7663e67d995c6b203cb1be3c5752e202f7f15711763c451f58a28d4f2bb56",
+  "reproduction": [
+    {
+      "mean_returned": 8.00462962962963,
+      "mean_sent": 5.699074074074074,
+      "sender_rounds": 216,
+      "treatment": 1
+    },
+    {
+      "mean_returned": 9.055555555555555,
+      "mean_sent": 6.199074074074074,
+      "sender_rounds": 216,
+      "treatment": 2
+    },
+    {
+      "mean_returned": 9.824074074074074,
+      "mean_sent": 6.893518518518518,
+      "sender_rounds": 216,
+      "treatment": 3
+    },
+    {
+      "mean_returned": 11.731481481481481,
+      "mean_sent": 7.333333333333333,
+      "sender_rounds": 216,
+      "treatment": 4
+    }
+  ],
+  "runtime": {
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.15.3",
+      "statsmodels": "0.14.4"
+    },
+    "python": "3.12.13"
+  },
+  "scores": {
+    "bootstrap_warning": "Four heterogeneous clusters; sensitivity only, not primary inference.",
+    "descriptive_cluster_bootstrap_90ci": [
+      0.0005301299985820242,
+      0.005440329297749503
+    ],
+    "equivalence": "not_established",
+    "equivalence_margin": 0.01,
+    "hoeffding_90ci": [
+      -1.0,
+      1.0
+    ],
+    "hoeffding_half_width": 1.2238734153404083,
+    "normalized_mse": {
+      "full": 0.04378850816844296,
+      "persistence": 0.050723379629629625,
+      "reduced": 0.046567993526522335,
+      "treatment_mean": 0.1489005835262346
+    },
+    "reduced_minus_full": 0.0027794853580793777,
+    "rmse_points": {
+      "full": 2.5110844621907455,
+      "persistence": 2.702622183485266,
+      "reduced": 2.5895542218341783,
+      "treatment_mean": 4.630516604848511
+    }
+  },
+  "session_scores": [
+    {
+      "difference": 0.003185760572340962,
+      "mse": {
+        "full": 0.05430032545731183,
+        "persistence": 0.06666666666666667,
+        "reduced": 0.05748608602965279,
+        "treatment_mean": 0.13284963348765436
+      },
+      "rows": 60,
+      "session": 1
+    },
+    {
+      "difference": 0.0007352715332415195,
+      "mse": {
+        "full": 0.027028783466801,
+        "persistence": 0.019444444444444445,
+        "reduced": 0.02776405500004252,
+        "treatment_mean": 0.17031635802469136
+      },
+      "rows": 60,
+      "session": 4
+    },
+    {
+      "difference": 0.007282203932131491,
+      "mse": {
+        "full": 0.047807083171033535,
+        "persistence": 0.05694444444444445,
+        "reduced": 0.055089287103165026,
+        "treatment_mean": 0.14636574074074077
+      },
+      "rows": 60,
+      "session": 8
+    },
+    {
+      "difference": -8.529460539646178e-05,
+      "mse": {
+        "full": 0.04601784057862546,
+        "persistence": 0.05983796296296296,
+        "reduced": 0.045932545973228996,
+        "treatment_mean": 0.14607060185185183
+      },
+      "rows": 60,
+      "session": 10
+    }
+  ],
+  "split": {
+    "test_rows": 240,
+    "test_sessions": [
+      1,
+      4,
+      8,
+      10
+    ],
+    "train_rows": 480,
+    "train_sessions": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      11,
+      12
+    ]
+  },
+  "treatment_comparison": {
+    "interaction_95ci": [
+      -5.578058523111725,
+      5.45768815274136
+    ],
+    "interaction_p_two_sided_model_based": 0.980549556347392,
+    "interaction_points": -0.060185185185182455,
+    "interaction_standard_error": 2.3928288998657883,
+    "residual_df": 8,
+    "session_means": [
+      {
+        "Session": 1,
+        "Treatment": 1,
+        "give": 5.888888888888889
+      },
+      {
+        "Session": 2,
+        "Treatment": 1,
+        "give": 3.75
+      },
+      {
+        "Session": 3,
+        "Treatment": 1,
+        "give": 7.458333333333333
+      },
+      {
+        "Session": 4,
+        "Treatment": 2,
+        "give": 3.486111111111111
+      },
+      {
+        "Session": 5,
+        "Treatment": 2,
+        "give": 6.305555555555555
+      },
+      {
+        "Session": 6,
+        "Treatment": 2,
+        "give": 8.805555555555555
+      },
+      {
+        "Session": 7,
+        "Treatment": 3,
+        "give": 7.819444444444445
+      },
+      {
+        "Session": 8,
+        "Treatment": 3,
+        "give": 5.125
+      },
+      {
+        "Session": 9,
+        "Treatment": 3,
+        "give": 7.736111111111111
+      },
+      {
+        "Session": 10,
+        "Treatment": 4,
+        "give": 9.61111111111111
+      },
+      {
+        "Session": 11,
+        "Treatment": 4,
+        "give": 6.819444444444445
+      },
+      {
+        "Session": 12,
+        "Treatment": 4,
+        "give": 5.569444444444445
+      }
+    ]
+  }
+}
