@@ -1,0 +1,969 @@
+{
+  "epsilon": "0",
+  "max_gain": "0",
+  "rows": [
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.B.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.bad.B.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.N.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.bad.N.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.G.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.G.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.good.G.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.G.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.N.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.good.N.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.B",
+      "model": "g=1,p=1",
+      "plans": 8,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "bond.bad.B": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.N",
+      "model": "g=1,p=1",
+      "plans": 8,
+      "witness": {
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.N": "zero"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "bond.good.G",
+      "model": "g=1,p=1",
+      "plans": 8,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "bond.good.G": "bond"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.good.N",
+      "model": "g=1,p=1",
+      "plans": 8,
+      "witness": {
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.N": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "disclose.bad",
+      "model": "g=1,p=1",
+      "plans": 128,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.B": "bond",
+        "bond.bad.N": "zero",
+        "disclose.bad": "N"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "disclose.good",
+      "model": "g=1,p=1",
+      "plans": 128,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.G": "bond",
+        "bond.good.N": "bond",
+        "disclose.good": "G"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.B.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.B.zero": "reject"
+      }
+    },
+    {
+      "baseline": "2",
+      "best": "2",
+      "gain": "0",
+      "info": "receive.G.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.G.bond": "accept"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.G.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.G.zero": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.bond",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.N.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.zero",
+      "model": "g=1,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.N.zero": "reject"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.B.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.bad.B.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.N.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.bad.N.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.G.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.G.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.good.G.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.G.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.N.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "3",
+      "best": "3",
+      "gain": "0",
+      "info": "act.good.N.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.B",
+      "model": "g=1,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "bond.bad.B": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.N",
+      "model": "g=1,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.N": "zero"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "bond.good.G",
+      "model": "g=1,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "bond.good.G": "bond"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.good.N",
+      "model": "g=1,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.N": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "disclose.bad",
+      "model": "g=1,p=1/2",
+      "plans": 128,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.B": "bond",
+        "bond.bad.N": "zero",
+        "disclose.bad": "N"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "disclose.good",
+      "model": "g=1,p=1/2",
+      "plans": 128,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.G": "bond",
+        "bond.good.N": "bond",
+        "disclose.good": "G"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.B.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.B.zero": "reject"
+      }
+    },
+    {
+      "baseline": "2",
+      "best": "2",
+      "gain": "0",
+      "info": "receive.G.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.G.bond": "accept"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.G.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.G.zero": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.bond",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.N.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.zero",
+      "model": "g=1,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.N.zero": "reject"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.B.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.bad.B.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.N.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.bad.N.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.G.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.G.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.good.G.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.G.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.N.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.good.N.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "act.good.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.B",
+      "model": "g=3,p=1",
+      "plans": 8,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "bond.bad.B": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.N",
+      "model": "g=3,p=1",
+      "plans": 8,
+      "witness": {
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.N": "zero"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "bond.good.G",
+      "model": "g=3,p=1",
+      "plans": 8,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "bond.good.G": "bond"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.good.N",
+      "model": "g=3,p=1",
+      "plans": 8,
+      "witness": {
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.N": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "disclose.bad",
+      "model": "g=3,p=1",
+      "plans": 128,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.B": "bond",
+        "bond.bad.N": "zero",
+        "disclose.bad": "N"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "disclose.good",
+      "model": "g=3,p=1",
+      "plans": 128,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.G": "bond",
+        "bond.good.N": "bond",
+        "disclose.good": "G"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.B.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.B.zero": "reject"
+      }
+    },
+    {
+      "baseline": "2",
+      "best": "2",
+      "gain": "0",
+      "info": "receive.G.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.G.bond": "accept"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.G.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.G.zero": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.bond",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.N.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.zero",
+      "model": "g=3,p=1",
+      "plans": 2,
+      "witness": {
+        "receive.N.zero": "reject"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.B.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.bad.B.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.B.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.bad.N.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.bad.N.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.bad.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.G.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.G.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.good.G.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.G.zero": "defect"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "act.good.N.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.N.bond": "comply"
+      }
+    },
+    {
+      "baseline": "5",
+      "best": "5",
+      "gain": "0",
+      "info": "act.good.N.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "act.good.N.zero": "defect"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.B",
+      "model": "g=3,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "bond.bad.B": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.bad.N",
+      "model": "g=3,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.N": "zero"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "bond.good.G",
+      "model": "g=3,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "bond.good.G": "bond"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "bond.good.N",
+      "model": "g=3,p=1/2",
+      "plans": 8,
+      "witness": {
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.N": "zero"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "disclose.bad",
+      "model": "g=3,p=1/2",
+      "plans": 128,
+      "witness": {
+        "act.bad.B.bond": "comply",
+        "act.bad.B.zero": "comply",
+        "act.bad.N.bond": "comply",
+        "act.bad.N.zero": "comply",
+        "bond.bad.B": "bond",
+        "bond.bad.N": "zero",
+        "disclose.bad": "N"
+      }
+    },
+    {
+      "baseline": "7/5",
+      "best": "7/5",
+      "gain": "0",
+      "info": "disclose.good",
+      "model": "g=3,p=1/2",
+      "plans": 128,
+      "witness": {
+        "act.good.G.bond": "comply",
+        "act.good.G.zero": "comply",
+        "act.good.N.bond": "comply",
+        "act.good.N.zero": "comply",
+        "bond.good.G": "bond",
+        "bond.good.N": "bond",
+        "disclose.good": "G"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.B.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.B.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.B.zero": "reject"
+      }
+    },
+    {
+      "baseline": "2",
+      "best": "2",
+      "gain": "0",
+      "info": "receive.G.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.G.bond": "accept"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.G.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.G.zero": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.bond",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.N.bond": "reject"
+      }
+    },
+    {
+      "baseline": "0",
+      "best": "0",
+      "gain": "0",
+      "info": "receive.N.zero",
+      "model": "g=3,p=1/2",
+      "plans": 2,
+      "witness": {
+        "receive.N.zero": "reject"
+      }
+    }
+  ],
+  "schema": "bellman.assessed-credibility-certificate.v1",
+  "status": "assessment-relative-pass",
+  "subject_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984"
+}

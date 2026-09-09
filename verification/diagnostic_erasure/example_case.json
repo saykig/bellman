@@ -1,0 +1,1897 @@
+{
+  "identity": {
+    "sender_retains_signal": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75",
+    "source": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31",
+    "target": "ca249ca18da0353e74ad361a70b7be974ad4e7b23bc892603cbda2cda4e15b6a"
+  },
+  "individual_targets": {
+    "high": {
+      "subject": {
+        "models": {
+          "high": {
+            "beliefs": {
+              "A.b": {
+                "A.b": "1"
+              },
+              "A.g": {
+                "A.g": "1"
+              },
+              "B": {
+                "B.b": "1/2",
+                "B.g": "1/2"
+              }
+            },
+            "chance": {
+              "root": {
+                "b": "3/8",
+                "g": "5/8"
+              }
+            },
+            "payoffs": {
+              "accept.b": {
+                "A": "0",
+                "B": "-1"
+              },
+              "accept.g": {
+                "A": "0",
+                "B": "1"
+              },
+              "reject.b": {
+                "A": "0",
+                "B": "0"
+              },
+              "reject.g": {
+                "A": "0",
+                "B": "0"
+              },
+              "reveal.b": {
+                "A": "1",
+                "B": "0"
+              },
+              "reveal.g": {
+                "A": "1",
+                "B": "0"
+              }
+            }
+          }
+        },
+        "nodes": {
+          "A.b": {
+            "edges": {
+              "N": "B.b",
+              "reveal": "reveal.b"
+            },
+            "info": "A.b",
+            "kind": "player",
+            "player": "A"
+          },
+          "A.g": {
+            "edges": {
+              "N": "B.g",
+              "reveal": "reveal.g"
+            },
+            "info": "A.g",
+            "kind": "player",
+            "player": "A"
+          },
+          "B.b": {
+            "edges": {
+              "accept": "accept.b",
+              "reject": "reject.b"
+            },
+            "info": "B",
+            "kind": "player",
+            "player": "B"
+          },
+          "B.g": {
+            "edges": {
+              "accept": "accept.g",
+              "reject": "reject.g"
+            },
+            "info": "B",
+            "kind": "player",
+            "player": "B"
+          },
+          "accept.b": {
+            "kind": "terminal"
+          },
+          "accept.g": {
+            "kind": "terminal"
+          },
+          "reject.b": {
+            "kind": "terminal"
+          },
+          "reject.g": {
+            "kind": "terminal"
+          },
+          "reveal.b": {
+            "kind": "terminal"
+          },
+          "reveal.g": {
+            "kind": "terminal"
+          },
+          "root": {
+            "edges": {
+              "b": "A.b",
+              "g": "A.g"
+            },
+            "kind": "chance"
+          }
+        },
+        "profile": {
+          "A.b": {
+            "N": "0",
+            "reveal": "1"
+          },
+          "A.g": {
+            "N": "0",
+            "reveal": "1"
+          },
+          "B": {
+            "accept": "0",
+            "reject": "1"
+          }
+        },
+        "root": "root",
+        "schema": "bellman.assessed-credibility.v1"
+      },
+      "warrant": {
+        "belief_rows": [
+          {
+            "beliefs": {
+              "A.b": "1"
+            },
+            "info": "A.b",
+            "model": "high"
+          },
+          {
+            "beliefs": {
+              "A.g": "1"
+            },
+            "info": "A.g",
+            "model": "high"
+          },
+          {
+            "beliefs": {
+              "B.b": "1/2",
+              "B.g": "1/2"
+            },
+            "info": "B",
+            "model": "high"
+          }
+        ],
+        "incentives": {
+          "epsilon": "0",
+          "max_gain": "0",
+          "rows": [
+            {
+              "baseline": "1",
+              "best": "1",
+              "gain": "0",
+              "info": "A.b",
+              "model": "high",
+              "plans": 2,
+              "witness": {
+                "A.b": "reveal"
+              }
+            },
+            {
+              "baseline": "1",
+              "best": "1",
+              "gain": "0",
+              "info": "A.g",
+              "model": "high",
+              "plans": 2,
+              "witness": {
+                "A.g": "reveal"
+              }
+            },
+            {
+              "baseline": "0",
+              "best": "0",
+              "gain": "0",
+              "info": "B",
+              "model": "high",
+              "plans": 2,
+              "witness": {
+                "B": "accept"
+              }
+            }
+          ],
+          "schema": "bellman.assessed-credibility-certificate.v1",
+          "status": "assessment-relative-pass",
+          "subject_sha256": "ffd47e1953a983adca0ea0b2ee867517918d5d4ce31a38cd751aaa740fef7597"
+        },
+        "schema": "bellman.shared-consistency-warrant.v1",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "subject_sha256": "ffd47e1953a983adca0ea0b2ee867517918d5d4ce31a38cd751aaa740fef7597",
+        "t_max": "1/2",
+        "witness": {
+          "A.b": {
+            "N": {
+              "coefficient": "1",
+              "order": 1
+            }
+          },
+          "A.g": {
+            "N": {
+              "coefficient": "3/5",
+              "order": 1
+            }
+          },
+          "B": {
+            "accept": {
+              "coefficient": "1",
+              "order": 1
+            }
+          }
+        }
+      }
+    },
+    "low": {
+      "subject": {
+        "models": {
+          "low": {
+            "beliefs": {
+              "A.b": {
+                "A.b": "1"
+              },
+              "A.g": {
+                "A.g": "1"
+              },
+              "B": {
+                "B.b": "1/2",
+                "B.g": "1/2"
+              }
+            },
+            "chance": {
+              "root": {
+                "b": "5/8",
+                "g": "3/8"
+              }
+            },
+            "payoffs": {
+              "accept.b": {
+                "A": "0",
+                "B": "-1"
+              },
+              "accept.g": {
+                "A": "0",
+                "B": "1"
+              },
+              "reject.b": {
+                "A": "0",
+                "B": "0"
+              },
+              "reject.g": {
+                "A": "0",
+                "B": "0"
+              },
+              "reveal.b": {
+                "A": "1",
+                "B": "0"
+              },
+              "reveal.g": {
+                "A": "1",
+                "B": "0"
+              }
+            }
+          }
+        },
+        "nodes": {
+          "A.b": {
+            "edges": {
+              "N": "B.b",
+              "reveal": "reveal.b"
+            },
+            "info": "A.b",
+            "kind": "player",
+            "player": "A"
+          },
+          "A.g": {
+            "edges": {
+              "N": "B.g",
+              "reveal": "reveal.g"
+            },
+            "info": "A.g",
+            "kind": "player",
+            "player": "A"
+          },
+          "B.b": {
+            "edges": {
+              "accept": "accept.b",
+              "reject": "reject.b"
+            },
+            "info": "B",
+            "kind": "player",
+            "player": "B"
+          },
+          "B.g": {
+            "edges": {
+              "accept": "accept.g",
+              "reject": "reject.g"
+            },
+            "info": "B",
+            "kind": "player",
+            "player": "B"
+          },
+          "accept.b": {
+            "kind": "terminal"
+          },
+          "accept.g": {
+            "kind": "terminal"
+          },
+          "reject.b": {
+            "kind": "terminal"
+          },
+          "reject.g": {
+            "kind": "terminal"
+          },
+          "reveal.b": {
+            "kind": "terminal"
+          },
+          "reveal.g": {
+            "kind": "terminal"
+          },
+          "root": {
+            "edges": {
+              "b": "A.b",
+              "g": "A.g"
+            },
+            "kind": "chance"
+          }
+        },
+        "profile": {
+          "A.b": {
+            "N": "0",
+            "reveal": "1"
+          },
+          "A.g": {
+            "N": "0",
+            "reveal": "1"
+          },
+          "B": {
+            "accept": "0",
+            "reject": "1"
+          }
+        },
+        "root": "root",
+        "schema": "bellman.assessed-credibility.v1"
+      },
+      "warrant": {
+        "belief_rows": [
+          {
+            "beliefs": {
+              "A.b": "1"
+            },
+            "info": "A.b",
+            "model": "low"
+          },
+          {
+            "beliefs": {
+              "A.g": "1"
+            },
+            "info": "A.g",
+            "model": "low"
+          },
+          {
+            "beliefs": {
+              "B.b": "1/2",
+              "B.g": "1/2"
+            },
+            "info": "B",
+            "model": "low"
+          }
+        ],
+        "incentives": {
+          "epsilon": "0",
+          "max_gain": "0",
+          "rows": [
+            {
+              "baseline": "1",
+              "best": "1",
+              "gain": "0",
+              "info": "A.b",
+              "model": "low",
+              "plans": 2,
+              "witness": {
+                "A.b": "reveal"
+              }
+            },
+            {
+              "baseline": "1",
+              "best": "1",
+              "gain": "0",
+              "info": "A.g",
+              "model": "low",
+              "plans": 2,
+              "witness": {
+                "A.g": "reveal"
+              }
+            },
+            {
+              "baseline": "0",
+              "best": "0",
+              "gain": "0",
+              "info": "B",
+              "model": "low",
+              "plans": 2,
+              "witness": {
+                "B": "accept"
+              }
+            }
+          ],
+          "schema": "bellman.assessed-credibility-certificate.v1",
+          "status": "assessment-relative-pass",
+          "subject_sha256": "82156bb74158ffbd30f99149a7027965201e183018baf7181ac29aeed1fa0735"
+        },
+        "schema": "bellman.shared-consistency-warrant.v1",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "subject_sha256": "82156bb74158ffbd30f99149a7027965201e183018baf7181ac29aeed1fa0735",
+        "t_max": "3/8",
+        "witness": {
+          "A.b": {
+            "N": {
+              "coefficient": "1",
+              "order": 1
+            }
+          },
+          "A.g": {
+            "N": {
+              "coefficient": "5/3",
+              "order": 1
+            }
+          },
+          "B": {
+            "accept": {
+              "coefficient": "1",
+              "order": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "obstruction": {
+    "models": [
+      "high",
+      "low"
+    ],
+    "required_ratios": [
+      "3/5",
+      "5/3"
+    ]
+  },
+  "private_warrant": {
+    "belief_rows": [
+      {
+        "beliefs": {
+          "A.b.H": "1"
+        },
+        "info": "A.b.H",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.b.L": "1"
+        },
+        "info": "A.b.L",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.g.H": "1"
+        },
+        "info": "A.g.H",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.g.L": "1"
+        },
+        "info": "A.g.L",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "B.b.H": "3/8",
+          "B.b.L": "1/8",
+          "B.g.H": "3/8",
+          "B.g.L": "1/8"
+        },
+        "info": "B",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.b.H": "1"
+        },
+        "info": "A.b.H",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "A.b.L": "1"
+        },
+        "info": "A.b.L",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "A.g.H": "1"
+        },
+        "info": "A.g.H",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "A.g.L": "1"
+        },
+        "info": "A.g.L",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "B.b.H": "1/8",
+          "B.b.L": "3/8",
+          "B.g.H": "1/8",
+          "B.g.L": "3/8"
+        },
+        "info": "B",
+        "model": "low"
+      }
+    ],
+    "incentives": {
+      "epsilon": "0",
+      "max_gain": "0",
+      "rows": [
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.H",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.b.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.L",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.b.L": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.H",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.g.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.L",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.g.L": "reveal"
+          }
+        },
+        {
+          "baseline": "0",
+          "best": "0",
+          "gain": "0",
+          "info": "B",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "B": "accept"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.H",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.b.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.L",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.b.L": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.H",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.g.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.L",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.g.L": "reveal"
+          }
+        },
+        {
+          "baseline": "0",
+          "best": "0",
+          "gain": "0",
+          "info": "B",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "B": "accept"
+          }
+        }
+      ],
+      "schema": "bellman.assessed-credibility-certificate.v1",
+      "status": "assessment-relative-pass",
+      "subject_sha256": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75"
+    },
+    "schema": "bellman.shared-consistency-warrant.v1",
+    "semantics": "one-common-power-sequence-all-models.v1",
+    "subject_sha256": "02da5889bbe71093f62b5d853f30b04c27765549d9f48c171de9f25520f07f75",
+    "t_max": "1/4",
+    "witness": {
+      "A.b.H": {
+        "N": {
+          "coefficient": "3",
+          "order": 1
+        }
+      },
+      "A.b.L": {
+        "N": {
+          "coefficient": "1",
+          "order": 1
+        }
+      },
+      "A.g.H": {
+        "N": {
+          "coefficient": "1",
+          "order": 1
+        }
+      },
+      "A.g.L": {
+        "N": {
+          "coefficient": "3",
+          "order": 1
+        }
+      },
+      "B": {
+        "accept": {
+          "coefficient": "1",
+          "order": 1
+        }
+      }
+    }
+  },
+  "query": "all-local-values-and-one-common-consistency-sequence.v1",
+  "schema": "bellman.diagnostic-erasure-case.v1",
+  "sender_retains_signal": {
+    "models": {
+      "high": {
+        "beliefs": {
+          "A.b.H": {
+            "A.b.H": "1"
+          },
+          "A.b.L": {
+            "A.b.L": "1"
+          },
+          "A.g.H": {
+            "A.g.H": "1"
+          },
+          "A.g.L": {
+            "A.g.L": "1"
+          },
+          "B": {
+            "B.b.H": "3/8",
+            "B.b.L": "1/8",
+            "B.g.H": "3/8",
+            "B.g.L": "1/8"
+          }
+        },
+        "chance": {
+          "root": {
+            "b": "3/8",
+            "g": "5/8"
+          },
+          "signal.b": {
+            "H": "1/2",
+            "L": "1/2"
+          },
+          "signal.g": {
+            "H": "9/10",
+            "L": "1/10"
+          }
+        },
+        "payoffs": {
+          "accept.b.H": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.b.L": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.g.H": {
+            "A": "0",
+            "B": "1"
+          },
+          "accept.g.L": {
+            "A": "0",
+            "B": "1"
+          },
+          "reject.b.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.b.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reveal.b.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.b.L": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.L": {
+            "A": "1",
+            "B": "0"
+          }
+        }
+      },
+      "low": {
+        "beliefs": {
+          "A.b.H": {
+            "A.b.H": "1"
+          },
+          "A.b.L": {
+            "A.b.L": "1"
+          },
+          "A.g.H": {
+            "A.g.H": "1"
+          },
+          "A.g.L": {
+            "A.g.L": "1"
+          },
+          "B": {
+            "B.b.H": "1/8",
+            "B.b.L": "3/8",
+            "B.g.H": "1/8",
+            "B.g.L": "3/8"
+          }
+        },
+        "chance": {
+          "root": {
+            "b": "5/8",
+            "g": "3/8"
+          },
+          "signal.b": {
+            "H": "1/10",
+            "L": "9/10"
+          },
+          "signal.g": {
+            "H": "1/2",
+            "L": "1/2"
+          }
+        },
+        "payoffs": {
+          "accept.b.H": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.b.L": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.g.H": {
+            "A": "0",
+            "B": "1"
+          },
+          "accept.g.L": {
+            "A": "0",
+            "B": "1"
+          },
+          "reject.b.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.b.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reveal.b.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.b.L": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.L": {
+            "A": "1",
+            "B": "0"
+          }
+        }
+      }
+    },
+    "nodes": {
+      "A.b.H": {
+        "edges": {
+          "N": "B.b.H",
+          "reveal": "reveal.b.H"
+        },
+        "info": "A.b.H",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.b.L": {
+        "edges": {
+          "N": "B.b.L",
+          "reveal": "reveal.b.L"
+        },
+        "info": "A.b.L",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.g.H": {
+        "edges": {
+          "N": "B.g.H",
+          "reveal": "reveal.g.H"
+        },
+        "info": "A.g.H",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.g.L": {
+        "edges": {
+          "N": "B.g.L",
+          "reveal": "reveal.g.L"
+        },
+        "info": "A.g.L",
+        "kind": "player",
+        "player": "A"
+      },
+      "B.b.H": {
+        "edges": {
+          "accept": "accept.b.H",
+          "reject": "reject.b.H"
+        },
+        "info": "B",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.b.L": {
+        "edges": {
+          "accept": "accept.b.L",
+          "reject": "reject.b.L"
+        },
+        "info": "B",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.g.H": {
+        "edges": {
+          "accept": "accept.g.H",
+          "reject": "reject.g.H"
+        },
+        "info": "B",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.g.L": {
+        "edges": {
+          "accept": "accept.g.L",
+          "reject": "reject.g.L"
+        },
+        "info": "B",
+        "kind": "player",
+        "player": "B"
+      },
+      "accept.b.H": {
+        "kind": "terminal"
+      },
+      "accept.b.L": {
+        "kind": "terminal"
+      },
+      "accept.g.H": {
+        "kind": "terminal"
+      },
+      "accept.g.L": {
+        "kind": "terminal"
+      },
+      "reject.b.H": {
+        "kind": "terminal"
+      },
+      "reject.b.L": {
+        "kind": "terminal"
+      },
+      "reject.g.H": {
+        "kind": "terminal"
+      },
+      "reject.g.L": {
+        "kind": "terminal"
+      },
+      "reveal.b.H": {
+        "kind": "terminal"
+      },
+      "reveal.b.L": {
+        "kind": "terminal"
+      },
+      "reveal.g.H": {
+        "kind": "terminal"
+      },
+      "reveal.g.L": {
+        "kind": "terminal"
+      },
+      "root": {
+        "edges": {
+          "b": "signal.b",
+          "g": "signal.g"
+        },
+        "kind": "chance"
+      },
+      "signal.b": {
+        "edges": {
+          "H": "A.b.H",
+          "L": "A.b.L"
+        },
+        "kind": "chance"
+      },
+      "signal.g": {
+        "edges": {
+          "H": "A.g.H",
+          "L": "A.g.L"
+        },
+        "kind": "chance"
+      }
+    },
+    "profile": {
+      "A.b.H": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.b.L": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.g.H": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.g.L": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "B": {
+        "accept": "0",
+        "reject": "1"
+      }
+    },
+    "root": "root",
+    "schema": "bellman.assessed-credibility.v1"
+  },
+  "source": {
+    "models": {
+      "high": {
+        "beliefs": {
+          "A.b.H": {
+            "A.b.H": "1"
+          },
+          "A.b.L": {
+            "A.b.L": "1"
+          },
+          "A.g.H": {
+            "A.g.H": "1"
+          },
+          "A.g.L": {
+            "A.g.L": "1"
+          },
+          "B.H": {
+            "B.b.H": "1/2",
+            "B.g.H": "1/2"
+          },
+          "B.L": {
+            "B.b.L": "1/2",
+            "B.g.L": "1/2"
+          }
+        },
+        "chance": {
+          "root": {
+            "b": "3/8",
+            "g": "5/8"
+          },
+          "signal.b": {
+            "H": "1/2",
+            "L": "1/2"
+          },
+          "signal.g": {
+            "H": "9/10",
+            "L": "1/10"
+          }
+        },
+        "payoffs": {
+          "accept.b.H": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.b.L": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.g.H": {
+            "A": "0",
+            "B": "1"
+          },
+          "accept.g.L": {
+            "A": "0",
+            "B": "1"
+          },
+          "reject.b.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.b.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reveal.b.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.b.L": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.L": {
+            "A": "1",
+            "B": "0"
+          }
+        }
+      },
+      "low": {
+        "beliefs": {
+          "A.b.H": {
+            "A.b.H": "1"
+          },
+          "A.b.L": {
+            "A.b.L": "1"
+          },
+          "A.g.H": {
+            "A.g.H": "1"
+          },
+          "A.g.L": {
+            "A.g.L": "1"
+          },
+          "B.H": {
+            "B.b.H": "1/2",
+            "B.g.H": "1/2"
+          },
+          "B.L": {
+            "B.b.L": "1/2",
+            "B.g.L": "1/2"
+          }
+        },
+        "chance": {
+          "root": {
+            "b": "5/8",
+            "g": "3/8"
+          },
+          "signal.b": {
+            "H": "1/10",
+            "L": "9/10"
+          },
+          "signal.g": {
+            "H": "1/2",
+            "L": "1/2"
+          }
+        },
+        "payoffs": {
+          "accept.b.H": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.b.L": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.g.H": {
+            "A": "0",
+            "B": "1"
+          },
+          "accept.g.L": {
+            "A": "0",
+            "B": "1"
+          },
+          "reject.b.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.b.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.H": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g.L": {
+            "A": "0",
+            "B": "0"
+          },
+          "reveal.b.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.b.L": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.H": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g.L": {
+            "A": "1",
+            "B": "0"
+          }
+        }
+      }
+    },
+    "nodes": {
+      "A.b.H": {
+        "edges": {
+          "N": "B.b.H",
+          "reveal": "reveal.b.H"
+        },
+        "info": "A.b.H",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.b.L": {
+        "edges": {
+          "N": "B.b.L",
+          "reveal": "reveal.b.L"
+        },
+        "info": "A.b.L",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.g.H": {
+        "edges": {
+          "N": "B.g.H",
+          "reveal": "reveal.g.H"
+        },
+        "info": "A.g.H",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.g.L": {
+        "edges": {
+          "N": "B.g.L",
+          "reveal": "reveal.g.L"
+        },
+        "info": "A.g.L",
+        "kind": "player",
+        "player": "A"
+      },
+      "B.b.H": {
+        "edges": {
+          "accept": "accept.b.H",
+          "reject": "reject.b.H"
+        },
+        "info": "B.H",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.b.L": {
+        "edges": {
+          "accept": "accept.b.L",
+          "reject": "reject.b.L"
+        },
+        "info": "B.L",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.g.H": {
+        "edges": {
+          "accept": "accept.g.H",
+          "reject": "reject.g.H"
+        },
+        "info": "B.H",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.g.L": {
+        "edges": {
+          "accept": "accept.g.L",
+          "reject": "reject.g.L"
+        },
+        "info": "B.L",
+        "kind": "player",
+        "player": "B"
+      },
+      "accept.b.H": {
+        "kind": "terminal"
+      },
+      "accept.b.L": {
+        "kind": "terminal"
+      },
+      "accept.g.H": {
+        "kind": "terminal"
+      },
+      "accept.g.L": {
+        "kind": "terminal"
+      },
+      "reject.b.H": {
+        "kind": "terminal"
+      },
+      "reject.b.L": {
+        "kind": "terminal"
+      },
+      "reject.g.H": {
+        "kind": "terminal"
+      },
+      "reject.g.L": {
+        "kind": "terminal"
+      },
+      "reveal.b.H": {
+        "kind": "terminal"
+      },
+      "reveal.b.L": {
+        "kind": "terminal"
+      },
+      "reveal.g.H": {
+        "kind": "terminal"
+      },
+      "reveal.g.L": {
+        "kind": "terminal"
+      },
+      "root": {
+        "edges": {
+          "b": "signal.b",
+          "g": "signal.g"
+        },
+        "kind": "chance"
+      },
+      "signal.b": {
+        "edges": {
+          "H": "A.b.H",
+          "L": "A.b.L"
+        },
+        "kind": "chance"
+      },
+      "signal.g": {
+        "edges": {
+          "H": "A.g.H",
+          "L": "A.g.L"
+        },
+        "kind": "chance"
+      }
+    },
+    "profile": {
+      "A.b.H": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.b.L": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.g.H": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.g.L": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "B.H": {
+        "accept": "0",
+        "reject": "1"
+      },
+      "B.L": {
+        "accept": "0",
+        "reject": "1"
+      }
+    },
+    "root": "root",
+    "schema": "bellman.assessed-credibility.v1"
+  },
+  "source_warrant": {
+    "belief_rows": [
+      {
+        "beliefs": {
+          "A.b.H": "1"
+        },
+        "info": "A.b.H",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.b.L": "1"
+        },
+        "info": "A.b.L",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.g.H": "1"
+        },
+        "info": "A.g.H",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.g.L": "1"
+        },
+        "info": "A.g.L",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "B.b.H": "1/2",
+          "B.g.H": "1/2"
+        },
+        "info": "B.H",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "B.b.L": "1/2",
+          "B.g.L": "1/2"
+        },
+        "info": "B.L",
+        "model": "high"
+      },
+      {
+        "beliefs": {
+          "A.b.H": "1"
+        },
+        "info": "A.b.H",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "A.b.L": "1"
+        },
+        "info": "A.b.L",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "A.g.H": "1"
+        },
+        "info": "A.g.H",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "A.g.L": "1"
+        },
+        "info": "A.g.L",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "B.b.H": "1/2",
+          "B.g.H": "1/2"
+        },
+        "info": "B.H",
+        "model": "low"
+      },
+      {
+        "beliefs": {
+          "B.b.L": "1/2",
+          "B.g.L": "1/2"
+        },
+        "info": "B.L",
+        "model": "low"
+      }
+    ],
+    "incentives": {
+      "epsilon": "0",
+      "max_gain": "0",
+      "rows": [
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.H",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.b.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.L",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.b.L": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.H",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.g.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.L",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "A.g.L": "reveal"
+          }
+        },
+        {
+          "baseline": "0",
+          "best": "0",
+          "gain": "0",
+          "info": "B.H",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "B.H": "accept"
+          }
+        },
+        {
+          "baseline": "0",
+          "best": "0",
+          "gain": "0",
+          "info": "B.L",
+          "model": "high",
+          "plans": 2,
+          "witness": {
+            "B.L": "accept"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.H",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.b.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.b.L",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.b.L": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.H",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.g.H": "reveal"
+          }
+        },
+        {
+          "baseline": "1",
+          "best": "1",
+          "gain": "0",
+          "info": "A.g.L",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "A.g.L": "reveal"
+          }
+        },
+        {
+          "baseline": "0",
+          "best": "0",
+          "gain": "0",
+          "info": "B.H",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "B.H": "accept"
+          }
+        },
+        {
+          "baseline": "0",
+          "best": "0",
+          "gain": "0",
+          "info": "B.L",
+          "model": "low",
+          "plans": 2,
+          "witness": {
+            "B.L": "accept"
+          }
+        }
+      ],
+      "schema": "bellman.assessed-credibility-certificate.v1",
+      "status": "assessment-relative-pass",
+      "subject_sha256": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31"
+    },
+    "schema": "bellman.shared-consistency-warrant.v1",
+    "semantics": "one-common-power-sequence-all-models.v1",
+    "subject_sha256": "b0a9deb25136ac49916985278b210d2b1c877239120b9b55415d35fa665e4d31",
+    "t_max": "1/4",
+    "witness": {
+      "A.b.H": {
+        "N": {
+          "coefficient": "3",
+          "order": 1
+        }
+      },
+      "A.b.L": {
+        "N": {
+          "coefficient": "1",
+          "order": 1
+        }
+      },
+      "A.g.H": {
+        "N": {
+          "coefficient": "1",
+          "order": 1
+        }
+      },
+      "A.g.L": {
+        "N": {
+          "coefficient": "3",
+          "order": 1
+        }
+      },
+      "B.H": {
+        "accept": {
+          "coefficient": "1",
+          "order": 1
+        }
+      },
+      "B.L": {
+        "accept": {
+          "coefficient": "1",
+          "order": 1
+        }
+      }
+    }
+  },
+  "target": {
+    "models": {
+      "high": {
+        "beliefs": {
+          "A.b": {
+            "A.b": "1"
+          },
+          "A.g": {
+            "A.g": "1"
+          },
+          "B": {
+            "B.b": "1/2",
+            "B.g": "1/2"
+          }
+        },
+        "chance": {
+          "root": {
+            "b": "3/8",
+            "g": "5/8"
+          }
+        },
+        "payoffs": {
+          "accept.b": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.g": {
+            "A": "0",
+            "B": "1"
+          },
+          "reject.b": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g": {
+            "A": "0",
+            "B": "0"
+          },
+          "reveal.b": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g": {
+            "A": "1",
+            "B": "0"
+          }
+        }
+      },
+      "low": {
+        "beliefs": {
+          "A.b": {
+            "A.b": "1"
+          },
+          "A.g": {
+            "A.g": "1"
+          },
+          "B": {
+            "B.b": "1/2",
+            "B.g": "1/2"
+          }
+        },
+        "chance": {
+          "root": {
+            "b": "5/8",
+            "g": "3/8"
+          }
+        },
+        "payoffs": {
+          "accept.b": {
+            "A": "0",
+            "B": "-1"
+          },
+          "accept.g": {
+            "A": "0",
+            "B": "1"
+          },
+          "reject.b": {
+            "A": "0",
+            "B": "0"
+          },
+          "reject.g": {
+            "A": "0",
+            "B": "0"
+          },
+          "reveal.b": {
+            "A": "1",
+            "B": "0"
+          },
+          "reveal.g": {
+            "A": "1",
+            "B": "0"
+          }
+        }
+      }
+    },
+    "nodes": {
+      "A.b": {
+        "edges": {
+          "N": "B.b",
+          "reveal": "reveal.b"
+        },
+        "info": "A.b",
+        "kind": "player",
+        "player": "A"
+      },
+      "A.g": {
+        "edges": {
+          "N": "B.g",
+          "reveal": "reveal.g"
+        },
+        "info": "A.g",
+        "kind": "player",
+        "player": "A"
+      },
+      "B.b": {
+        "edges": {
+          "accept": "accept.b",
+          "reject": "reject.b"
+        },
+        "info": "B",
+        "kind": "player",
+        "player": "B"
+      },
+      "B.g": {
+        "edges": {
+          "accept": "accept.g",
+          "reject": "reject.g"
+        },
+        "info": "B",
+        "kind": "player",
+        "player": "B"
+      },
+      "accept.b": {
+        "kind": "terminal"
+      },
+      "accept.g": {
+        "kind": "terminal"
+      },
+      "reject.b": {
+        "kind": "terminal"
+      },
+      "reject.g": {
+        "kind": "terminal"
+      },
+      "reveal.b": {
+        "kind": "terminal"
+      },
+      "reveal.g": {
+        "kind": "terminal"
+      },
+      "root": {
+        "edges": {
+          "b": "A.b",
+          "g": "A.g"
+        },
+        "kind": "chance"
+      }
+    },
+    "profile": {
+      "A.b": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "A.g": {
+        "N": "0",
+        "reveal": "1"
+      },
+      "B": {
+        "accept": "0",
+        "reject": "1"
+      }
+    },
+    "root": "root",
+    "schema": "bellman.assessed-credibility.v1"
+  },
+  "target_incentives": {
+    "epsilon": "0",
+    "max_gain": "0",
+    "rows": [
+      {
+        "baseline": "1",
+        "best": "1",
+        "gain": "0",
+        "info": "A.b",
+        "model": "high",
+        "plans": 2,
+        "witness": {
+          "A.b": "reveal"
+        }
+      },
+      {
+        "baseline": "1",
+        "best": "1",
+        "gain": "0",
+        "info": "A.g",
+        "model": "high",
+        "plans": 2,
+        "witness": {
+          "A.g": "reveal"
+        }
+      },
+      {
+        "baseline": "0",
+        "best": "0",
+        "gain": "0",
+        "info": "B",
+        "model": "high",
+        "plans": 2,
+        "witness": {
+          "B": "accept"
+        }
+      },
+      {
+        "baseline": "1",
+        "best": "1",
+        "gain": "0",
+        "info": "A.b",
+        "model": "low",
+        "plans": 2,
+        "witness": {
+          "A.b": "reveal"
+        }
+      },
+      {
+        "baseline": "1",
+        "best": "1",
+        "gain": "0",
+        "info": "A.g",
+        "model": "low",
+        "plans": 2,
+        "witness": {
+          "A.g": "reveal"
+        }
+      },
+      {
+        "baseline": "0",
+        "best": "0",
+        "gain": "0",
+        "info": "B",
+        "model": "low",
+        "plans": 2,
+        "witness": {
+          "B": "accept"
+        }
+      }
+    ],
+    "schema": "bellman.assessed-credibility-certificate.v1",
+    "status": "assessment-relative-pass",
+    "subject_sha256": "ca249ca18da0353e74ad361a70b7be974ad4e7b23bc892603cbda2cda4e15b6a"
+  }
+}

@@ -3,6 +3,7 @@ name: two-stage-longitudinal-causal-policy
 on:
   pull_request:
     paths:
+      - 'verification/combined_acceptance/**'
       - "verification/longitudinal_causal_policy/**"
       - "verification/longitudinal_causal_kernel_fibres/**"
       - "foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md"
@@ -40,9 +41,4 @@ jobs:
       - name: Run current longitudinal causal and pinned historical acceptance
         env:
           PYTHONDONTWRITEBYTECODE: "1"
-        run: |
-          if [ -f verification/longitudinal_causal_kernel_fibres/run_checks.py ]; then
-            echo "Delegated to the downstream longitudinal kernel-fibre aggregate workflow."
-            exit 0
-          fi
-          python3 verification/longitudinal_causal_policy/run_checks.py
+        run: python3 verification/combined_acceptance/acceptance.py --causal --verify-retained

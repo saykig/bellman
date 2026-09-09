@@ -98,8 +98,9 @@ This table is intentionally conservative.
 | Resource constraints / tail and dynamic risk | Foundation only | Not implemented. |
 | Finite causal identification / one-stage decision certification | M1 | Merged bounded exact adjustment and binary response-type reference; supplied causal premises are not empirically validated and no engineering adapter exists. |
 | Two-stage longitudinal causal policy / sequential bridge | M1 | Reviewed and merged bounded exact policy g-formula and full-support completed-subject composition; no engineering adapter. |
-| Longitudinal causal kernel fibres / persistent decisions | M1 candidate | Bounded exact saturated continuous fibre and query-specific deterministic corner reduction under review; no engineering adapter. |
-| Plural objectives / strategy | Foundation only | Not implemented. |
+| Longitudinal causal kernel fibres / persistent decisions | M1 | Bounded exact saturated continuous fibre and query-specific deterministic corner reduction reviewed and merged; no engineering adapter. |
+| Shared-witness sequential credibility | M1 | Author-reviewed supplied-profile game-family reference with independent polynomial consistency and full-continuation checks; no engineering adapter or empirical claim. |
+| Wider plural objectives / strategy | Foundation only | Ambiguity-sensitive equilibrium, mechanism search and general strategic history reduction are not implemented. |
 
 Do not infer that later mathematical modules should be rushed into Writ. The purpose of this table is to prevent engineering from claiming semantics that have not stabilized.
 
@@ -334,3 +335,60 @@ Examples:
 - If a domain case reveals that the current subject omits information, causality, constraints, strategic behavior, or authority needed for the decision, revise the mathematical problem rather than hiding those omissions in metadata.
 
 Repository boundaries are implementation conveniences, not doctrine. The long-run target is an interoperable substrate in which stable Bellman mathematics can be executed, checked, revised, and accumulated through Writ.
+
+## 9. Strategic credibility and shared consistency boundary (8 September 2026)
+
+The [preliminary component](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md)
+and [consistency addendum](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_CONSISTENCY_ADDENDUM.md)
+form an M1 research reference. Its subject contains an explicit information partition, one
+model-independent strategy profile and modelwise assessments. The additive warrant supplies
+positive rational coefficients and bounded integer orders for every zero-profile action. One
+normalized perturbation sequence must generate all assessed beliefs in every model. Its
+consistency is checked by exact prefix polynomials independently of the leading-order producer;
+the original receiver separately checks full-continuation deviation gains on the same subject.
+
+At zero tolerance a pass gives modelwise sequential equilibrium with shared consistency. At
+positive tolerance it gives a consistent assessment with a gain bound. Neither is an equilibrium
+theory of ambiguity-sensitive actors or evidence of empirical credibility or authority. A failed
+witness remains distinct from proof that no sequence exists. Structural chance zeros stay fixed;
+an entirely chance-impossible information set is outside the new witness profile.
+
+A source/provenance record affects this game only through an explicit modelling change to available
+evidence, information, actions, transitions, payoffs or assessments. A hash change is a revalidation
+trigger, not a strategic theorem. The 2-delta transfer lemma requires coverage of original deviations;
+renaming checks do not establish general history compression. A strategic history reduction must
+also preserve the relevant consistency restrictions, not just root payoff values. Payoff-only
+mechanism changes can preserve consistency while invalidating incentive bounds. Causal-kernel
+outputs cannot be used as strategic response laws without an additional warranted mapping.
+
+
+The [public-tag history reduction](../../foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md)
+adds one M1 transport rule on PR #22. Explicit per-copy tree and information-set bijections,
+identical conditional chance laws/payoffs, strictly positive public tag probabilities, and
+invariant supplied profiles/assessments establish exact continuation-gain preservation and
+bidirectional common consistency. A source power witness restricts to one representative tag
+chosen across all models; the target receiver recomputes its positivity radius and independently
+checks its beliefs and incentives. The target subject has its own identity and retained warrant.
+This proves a many-to-one reduction for that specified assessment class, not preservation of all
+source equilibria or arbitrary strategic provenance. The public-correlation counterexample blocks
+using payoff irrelevance alone as an erasure rule. The likelihood counterexample blocks transporting
+a witness merely because root utilities and incentive maxima agree.
+
+### Diagnostic erasure obstruction and restricted repair
+
+The [diagnostic erasure result](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)
+is an M1 bounded reference. Exact local value equality does not certify shared consistency after
+information reduction. The target may admit each model separately yet require incompatible
+common tremble ratios. This is an assessment-specific analytical obstruction, not global game
+inconsistency. The checked repair retains sender information and induces a new full receiver
+assessment from the common witness; it does not preserve arbitrary supplied beliefs or global
+strategy classes. Any future adapter must bind the information map, uncertainty family and
+requested belief/value queries separately. No Writ, Decision Lab or causal integration is earned.
+
+### Combined strategic and causal acceptance
+
+PR #22 now includes merged PR #21. The [combined entrypoint](../../verification/combined_acceptance/README.md)
+checks the preserved strategic and causal sources in the integrated tree and replays each retained
+aggregate at its own commit. Main’s appended historical ledgers are preserved exactly and retain
+the earlier strategic snapshot as a byte prefix. Coexistence of these checked components does not
+identify strategic payoffs, evidence likelihoods, beliefs or monitoring from causal kernel fibres.

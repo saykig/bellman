@@ -1,0 +1,173 @@
+{
+  "assurance": {
+    "arithmetic": "independent leading-order and SymPy QQ polynomial implementations; independent inherited continuation receiving",
+    "causal_pr21_inspected_head": "deb58f612ab7b9ab22e08f2ce493527e63cf9cfb",
+    "external_solver": "GTE, Gambit and OpenSpiel source inspected; no solver execution claimed",
+    "no_causal_dependency": true,
+    "premises": "game, utilities, evidence menus, information, enforcement and uncertainty family supplied",
+    "proof": "analytical sufficient theorem and two impossibility arguments; not proof-assistant verified",
+    "review": "author adversarial review; no external peer acceptance"
+  },
+  "source_commit": "d5ac36f8af2fd9e921de5a3a5ab45e762d3092cb",
+  "source_files": {
+    ".github/workflows/sequential-consistency.yml": "4bcef7bf182494c3c00488f96ea33fb26a1d33f9054a150844527e677d1ed760",
+    "README.md": "73ee28e5d9574da799b52e437d4e8b8d9512350506b5c4ed987fdc07e364468a",
+    "docs/history/releases/2026-09-08-shared-sequential-consistency.md": "6928b3ec98c1ffbaef80b58110ad6c2e9b2f3819b3386ff7da2143dd4ca536eb",
+    "docs/programme/ARCHITECTURE.md": "02fd878eb048cf0f75885c475cfc7353ed1de024aaf3cf1b2a300c44331b9cc8",
+    "docs/programme/ROADMAP.md": "7c5d112ab416d680fb15867d5da65577034fb4c0c81a55b74bd18eded39aebc7",
+    "foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_CONSISTENCY_ADDENDUM.md": "1d9d440c6a1c5892409379a77da27fca359ffd6bfb015bbbaf898246251b4933",
+    "reviews/SEQUENTIAL_CREDIBILITY_RESEARCH_REVIEW_2026_09_08.md": "d8c2de33cf30725a9feb5f08da89b0dc78d4dd96d4f5b423cc59285ec88486ff",
+    "verification/sequential_consistency/README.md": "79860c179430941a5f117c552487100b64d77c824b6bed5dc6589a7f896c3796",
+    "verification/sequential_consistency/cases.py": "39094338240c37d6a3a737436d49de0403499f665b4211bb701c8563e7df90bc",
+    "verification/sequential_consistency/checks.py": "fc560bcda1a6f46f6f311e60e3dc1ecb5b70677f562de6150cbd7149aec8fd07",
+    "verification/sequential_consistency/consistency_receiver.py": "fdbdedeb2b9e86184d3a5205168e105f5bd5461045fc46fb92db8157a84c6462",
+    "verification/sequential_consistency/requirements.txt": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94",
+    "verification/sequential_consistency/run_checks.py": "9454df53365a713ff63479645cb7da5729009e7bbf61376f5b949fbddce911ba",
+    "verification/sequential_consistency/valuation_producer.py": "21da31db593eb856f183f98512b76677831d3c2c69715cfa7ebf158ed2872a9a",
+    "verification/sequential_consistency/witness.py": "7644e073108ca787ec4797b8d242a7f7267aff989e6b204e0f26058fa97982f4",
+    "verification/sequential_credibility/README.md": "162164990c1e4c08e1987bc81254454fd7f5c7f321da296cbc9de87743dca5be",
+    "verification/sequential_credibility/checks.py": "c9b3d3fddd7372449112f28685d3e2e598aa02b282078508bda783a5b8c26b09",
+    "verification/sequential_credibility/example_certificate.json": "60efb52797d7f5bbc7f6672d6dcaa0f82c63628a062c4270937107d1068c2e70",
+    "verification/sequential_credibility/example_subject.json": "85c8d6c6ba96b5a970064508b702317b724d528c9576264c33001bf5504832bf",
+    "verification/sequential_credibility/fixtures.py": "493f3723280584e2522cb25eb8a3a7a4f444a9d3df588956e4c984de10f840d5",
+    "verification/sequential_credibility/producer.py": "692f0882b09fc3d3d67eeda56d763d4136f09cb87e91f859015b9cadea441838",
+    "verification/sequential_credibility/receiver.py": "794b20624a3778b75ca5e46b22b8535161448da55035448feaac2c255b3f0f6f",
+    "verification/sequential_credibility/results.json": "07a784c606fa246df1f69b9788330a0a0ab8ced44213cb028993bb4e04f04514",
+    "verification/sequential_credibility/run_checks.py": "abd01f2bccb845c148ab4a3f22985e1bf49aad989dea577101493fe9650ac685",
+    "verification/sequential_credibility/subject.py": "fa71dfadb3e8d0b247e0afa0e3be8dbe33daddeb1f036755e98ff037f3df018f"
+  },
+  "validation": {
+    "checks": {
+      "both_producers_disabled": true,
+      "costly_participation": {
+        "max_gain": "1/10",
+        "status": "shared-consistent-profitable-deviation"
+      },
+      "finite_t_path_checks": [
+        {
+          "good_given_withheld": "1/5",
+          "t": "1/4"
+        },
+        {
+          "good_given_withheld": "1/9",
+          "t": "1/8"
+        },
+        {
+          "good_given_withheld": "1/17",
+          "t": "1/16"
+        }
+      ],
+      "fully_mixed": {
+        "epsilon": "0",
+        "information_queries": 3,
+        "max_gain": "1/2",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-profitable-deviation",
+        "subject_sha256": "3cdc6f0066eb5bffb5f4cd39fa2022fa31677088391a24e62302540d9eeb4bd9",
+        "warrant_sha256": "b5396911c24471264709fe641adccc1102c28aaba8f82f74466fb3a7548d74cd"
+      },
+      "history_transport": "bijective renaming of complete subject and witness only",
+      "incompatible_routes": {
+        "conclusion": "assessment-inconsistent-by-identity",
+        "draft_max_gain": "0",
+        "identity": "mu_J(L)=mu_K(L)",
+        "target": [
+          "1",
+          "0"
+        ]
+      },
+      "integrated": {
+        "epsilon": "0",
+        "information_queries": 80,
+        "max_gain": "0",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-modelwise-sequential-equilibrium",
+        "subject_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+        "warrant_sha256": "791f4c666dd92cfe1364b89e70f64ce347b44c84f6a6f3150b14f522bd520e58"
+      },
+      "modelwise_not_shared": {
+        "conclusion": "no-shared-sequence-by-odds",
+        "individual_witnesses": [
+          {
+            "good_coefficient": "1",
+            "model": "half"
+          },
+          {
+            "good_coefficient": "3",
+            "model": "quarter"
+          }
+        ],
+        "required_second": "1/2",
+        "shared_limit_for_second_if_first_half": "1/4"
+      },
+      "partial_structural_zeros": {
+        "epsilon": "0",
+        "information_queries": 3,
+        "max_gain": "0",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-modelwise-sequential-equilibrium",
+        "subject_sha256": "038a7b7650cde3da80fd6b20ec269b6d8e970af0f6782beaf02250748d1f4828",
+        "warrant_sha256": "349445fdfc554f23561344ae9137a97df42545b62e4428a09dec0cb9ef2e01c6"
+      },
+      "rejections": [
+        "equal-rate noise gives wrong posterior",
+        "stale weak_bond",
+        "stale inner incentives after weak_bond",
+        "stale costly_participation",
+        "stale inner incentives after costly_participation",
+        "tolerance controlled by recipient",
+        "incompatible route posteriors",
+        "wrong positive coefficient ratio",
+        "separate witness fails shared query half",
+        "separate witness fails shared query quarter",
+        "chance-impossible information set",
+        "old witness after renaming",
+        "forgetting private type and own actions",
+        "model-indexed witness",
+        "missing zero action",
+        "trembling supported action",
+        "order 0",
+        "order -1",
+        "order True",
+        "order 1.5",
+        "order 33",
+        "coefficient 0",
+        "coefficient -1",
+        "coefficient 1.0",
+        "coefficient 0.1",
+        "false radius",
+        "missing limiting row",
+        "duplicate limiting row",
+        "forged limiting distribution",
+        "weaker quantifier substituted",
+        "forged incentive bound",
+        "producer success label supplied",
+        "stale subject digest"
+      ],
+      "sympy_version": "1.14.0",
+      "weak_bond": {
+        "max_gain": "1/2",
+        "status": "shared-consistent-profitable-deviation"
+      },
+      "weighted_coefficients": {
+        "epsilon": "0",
+        "information_queries": 3,
+        "max_gain": "0",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-modelwise-sequential-equilibrium",
+        "subject_sha256": "54c364ec9e8bafe42cdd043a667ae2711cecfe3c41615a99a316ef629aa5e29e",
+        "warrant_sha256": "149a5201db13cf1fb6cf2df2f927b768c06f9de08a12e276b4b6c58601580c9e"
+      }
+    },
+    "draft_commit": "19e1904bfd96e8d0eb926ac630193b9f0b1d4265",
+    "normal_optimized_equal": true,
+    "original_retained_replay": {
+      "max_gain": "0",
+      "normal_optimized_equal": true,
+      "preserved_base_files": 145,
+      "rejections": 24,
+      "snapshot_commit": "19e1904bfd96e8d0eb926ac630193b9f0b1d4265"
+    },
+    "preserved_draft_and_inherited_files": 158
+  }
+}

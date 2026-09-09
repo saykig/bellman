@@ -3,6 +3,7 @@ name: Research history migration checks
 on:
   pull_request:
     paths:
+      - 'verification/combined_acceptance/**'
       - 'docs/history/**'
       - 'README.md'
       - 'AGENTS.md'
@@ -26,6 +27,4 @@ jobs:
       - name: Check moved records and historical release identities
         env:
           PYTHONDONTWRITEBYTECODE: '1'
-        run: |
-          python3 verification/history_migration/checks.py
-          python3 -O verification/history_migration/checks.py
+        run: python3 verification/combined_acceptance/acceptance.py --history --verify-retained

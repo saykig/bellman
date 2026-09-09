@@ -1,0 +1,132 @@
+{
+  "note": "Additive acceptance evidence. Original mathematical evidence, causal results and version manifests remain unchanged.",
+  "source_commit": "18e996d9202a5648d756c1f7183711d7edc78e63",
+  "source_files": {
+    ".github/workflows/history-migration.yml": "4364c6776b51e345cadd4edfd3a0e61bcf25b78132c838754f93adf1c21c45be",
+    ".github/workflows/sequential-consistency.yml": "cd3a7f5f103111173cee49fff345a9733e461f9167847e1f7c53ed960987793b",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "0321954581d88e0f5f9d7f72c9b719b4a5414704abe685817eaa92e2cd52dec8",
+    "reviews/SEQUENTIAL_CREDIBILITY_CI_REPLAY_ADDENDUM.md": "d3960d898bb702429bed3cb69f8f99354c20190954185c93dc9b9cc384b37464",
+    "verification/sequential_consistency/ACCEPTANCE.md": "099a0317ce24dd4207a4db9397534e31def51dcb6264cd3ee79ffb62353d7159",
+    "verification/sequential_consistency/acceptance.py": "f78a1a0d616e626671392dc334f206f51350ca2720b88b54ac22d52270d01ebc"
+  },
+  "validation": {
+    "causal": {
+      "current_checks_at_snapshot": {
+        "affected_relative_markdown_links_checked": 125,
+        "corner_passed_per_mode": 10,
+        "finite_causal_passed_per_mode": 11,
+        "history": {
+          "affected_relative_markdown_links_checked": 124,
+          "failed": 0,
+          "migration_baseline": "92922ab6604840152ad7f7800969673335748272",
+          "moved_records": {
+            "docs/history/records/FINDINGS_LEDGER.md": "37d15b9592fc6d08216904675a6ece462cdaf750222183f0a2bc0b95fc9c7a33",
+            "docs/history/records/LEGACY_ARCHIVE_STATUS.md": "a0e6358fe1a844835565dcfb1b121008dc434d58203ef4b66c96f69aa09f5417",
+            "docs/history/records/MATH_ARCHIVE_LEDGER.md": "63e87c67892c033edff1d68452d718dd95f0825d8fa4f203d1dda4459aad1df2",
+            "docs/history/records/SUBSTRATE_LEDGER.md": "7553c4f17100b4ab3049ced61a64575dc6f94b64e1e90883b98a5cc88b343ea4"
+          },
+          "negative_controls": {
+            "duplicate_json_key": "rejected",
+            "forged_release_or_artifact_identity": "rejected-by-sha256-and-git-object-check",
+            "unexpected_record_mutation": "rejected-by-exact-transformation-check"
+          },
+          "release_manifest": {
+            "key_artifacts": 29,
+            "lightweight_tags_required": true,
+            "releases": 6,
+            "versions": [
+              "v0.0.1",
+              "v0.0.2",
+              "v0.0.3",
+              "v0.0.4",
+              "v0.0.5",
+              "v0.0.6"
+            ]
+          }
+        },
+        "joint_law_passed_per_mode": 19,
+        "multistream_status": "passed",
+        "persistent_passed_per_mode": 11,
+        "replanning_passed_per_mode": 9,
+        "sequential_passed_per_mode": 17,
+        "unsafe_passed_per_mode": 18
+      },
+      "normal_optimized_equal": true,
+      "passed_per_mode": 10,
+      "preservation": {
+        "base_files_checked": 141,
+        "historical_files_preserved": true,
+        "historical_pr12_runner": "passed-at-exact-repaired-head",
+        "historical_pr14_runner": "passed-at-exact-merge",
+        "historical_pr16_runner": "passed-at-exact-merge",
+        "historical_pr17_runner": "passed-at-exact-merge",
+        "historical_pr19_runner": "passed-at-exact-merge",
+        "inherited_pr10_runner": "passed-at-pinned-pr10-merge",
+        "pr19_merge_tree_matches_reviewed_head": true,
+        "pr19_merged_before_start": true,
+        "release_identities_unchanged": true,
+        "release_versions": [
+          "v0.0.1",
+          "v0.0.2",
+          "v0.0.3",
+          "v0.0.4",
+          "v0.0.5",
+          "v0.0.6"
+        ]
+      },
+      "rejections_per_mode": 32,
+      "retained_result_present_and_source_bound": true,
+      "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+    },
+    "history": {
+      "normal_optimized_equal": true,
+      "release_manifest": {
+        "key_artifacts": 29,
+        "lightweight_tags_required": true,
+        "releases": 6,
+        "versions": [
+          "v0.0.1",
+          "v0.0.2",
+          "v0.0.3",
+          "v0.0.4",
+          "v0.0.5",
+          "v0.0.6"
+        ]
+      },
+      "snapshot": "cea4e1a47cb91c1f3917490350deab53d2976908"
+    },
+    "mode": "all",
+    "preservation_negative_controls": [
+      "altered retained evidence rejected",
+      "unregistered note rejected"
+    ],
+    "preserved_strategic_snapshot_files": 172,
+    "strategic": {
+      "both_producers_disabled": true,
+      "integrated": {
+        "epsilon": "0",
+        "information_queries": 80,
+        "max_gain": "0",
+        "semantics": "one-common-power-sequence-all-models.v1",
+        "status": "shared-consistent-modelwise-sequential-equilibrium",
+        "subject_sha256": "2c0449407df821162c2f028bd6d27b193c71fec2c6d4e7cc4439bc5ad3283984",
+        "warrant_sha256": "791f4c666dd92cfe1364b89e70f64ce347b44c84f6a6f3150b14f522bd520e58"
+      },
+      "normal_optimized_equal": true,
+      "original_retained_replay": {
+        "max_gain": "0",
+        "normal_optimized_equal": true,
+        "preserved_base_files": 145,
+        "rejections": 24,
+        "snapshot_commit": "19e1904bfd96e8d0eb926ac630193b9f0b1d4265"
+      },
+      "rejections": 33,
+      "snapshot": "af7a8fc67cb204b67474eb7749c76c414189a5d5"
+    },
+    "workflow_only_exceptions": [
+      ".github/workflows/history-migration.yml",
+      ".github/workflows/sequential-consistency.yml",
+      ".github/workflows/two-stage-longitudinal-causal-policy.yml"
+    ]
+  }
+}

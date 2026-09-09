@@ -1,0 +1,1383 @@
+{
+  "models": {
+    "g=1,p=1": {
+      "beliefs": {
+        "act.bad.B.bond": {
+          "act.bad.B.bond": "1"
+        },
+        "act.bad.B.zero": {
+          "act.bad.B.zero": "1"
+        },
+        "act.bad.N.bond": {
+          "act.bad.N.bond": "1"
+        },
+        "act.bad.N.zero": {
+          "act.bad.N.zero": "1"
+        },
+        "act.good.G.bond": {
+          "act.good.G.bond": "1"
+        },
+        "act.good.G.zero": {
+          "act.good.G.zero": "1"
+        },
+        "act.good.N.bond": {
+          "act.good.N.bond": "1"
+        },
+        "act.good.N.zero": {
+          "act.good.N.zero": "1"
+        },
+        "bond.bad.B": {
+          "bond.bad.B": "1"
+        },
+        "bond.bad.N": {
+          "bond.bad.N": "1"
+        },
+        "bond.good.G": {
+          "bond.good.G": "1"
+        },
+        "bond.good.N": {
+          "bond.good.N": "1"
+        },
+        "disclose.bad": {
+          "disclose.bad": "1"
+        },
+        "disclose.good": {
+          "disclose.good": "1"
+        },
+        "receive.B.bond": {
+          "receive.bad.B.bond": "1"
+        },
+        "receive.B.zero": {
+          "receive.bad.B.zero": "1"
+        },
+        "receive.G.bond": {
+          "receive.good.G.bond": "1"
+        },
+        "receive.G.zero": {
+          "receive.good.G.zero": "1"
+        },
+        "receive.N.bond": {
+          "receive.bad.N.bond": "1",
+          "receive.good.N.bond": "0"
+        },
+        "receive.N.zero": {
+          "receive.bad.N.zero": "1",
+          "receive.good.N.zero": "0"
+        }
+      },
+      "chance": {
+        "monitor.bad.B.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.bad.B.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.bad.N.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.bad.N.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.G.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.G.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.N.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.N.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "root": {
+          "bad": "1/2",
+          "good": "1/2"
+        }
+      },
+      "payoffs": {
+        "caught.bad.B.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.bad.B.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "caught.bad.N.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.bad.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "caught.good.G.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.good.G.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "caught.good.N.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.good.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "comply.bad.B.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.B.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.bad.N.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.N.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.good.G.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.G.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "comply.good.N.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.N.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "missed.bad.B.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.bad.B.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "missed.bad.N.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.bad.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "missed.good.G.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.good.G.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "missed.good.N.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.good.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "reject.bad.B.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.B.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.bad.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.N.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.G.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.G.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.N.zero": {
+          "A": "0",
+          "B": "0"
+        }
+      }
+    },
+    "g=1,p=1/2": {
+      "beliefs": {
+        "act.bad.B.bond": {
+          "act.bad.B.bond": "1"
+        },
+        "act.bad.B.zero": {
+          "act.bad.B.zero": "1"
+        },
+        "act.bad.N.bond": {
+          "act.bad.N.bond": "1"
+        },
+        "act.bad.N.zero": {
+          "act.bad.N.zero": "1"
+        },
+        "act.good.G.bond": {
+          "act.good.G.bond": "1"
+        },
+        "act.good.G.zero": {
+          "act.good.G.zero": "1"
+        },
+        "act.good.N.bond": {
+          "act.good.N.bond": "1"
+        },
+        "act.good.N.zero": {
+          "act.good.N.zero": "1"
+        },
+        "bond.bad.B": {
+          "bond.bad.B": "1"
+        },
+        "bond.bad.N": {
+          "bond.bad.N": "1"
+        },
+        "bond.good.G": {
+          "bond.good.G": "1"
+        },
+        "bond.good.N": {
+          "bond.good.N": "1"
+        },
+        "disclose.bad": {
+          "disclose.bad": "1"
+        },
+        "disclose.good": {
+          "disclose.good": "1"
+        },
+        "receive.B.bond": {
+          "receive.bad.B.bond": "1"
+        },
+        "receive.B.zero": {
+          "receive.bad.B.zero": "1"
+        },
+        "receive.G.bond": {
+          "receive.good.G.bond": "1"
+        },
+        "receive.G.zero": {
+          "receive.good.G.zero": "1"
+        },
+        "receive.N.bond": {
+          "receive.bad.N.bond": "1",
+          "receive.good.N.bond": "0"
+        },
+        "receive.N.zero": {
+          "receive.bad.N.zero": "1",
+          "receive.good.N.zero": "0"
+        }
+      },
+      "chance": {
+        "monitor.bad.B.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.bad.B.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.bad.N.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.bad.N.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.G.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.G.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.N.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.N.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "root": {
+          "bad": "1/2",
+          "good": "1/2"
+        }
+      },
+      "payoffs": {
+        "caught.bad.B.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.bad.B.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "caught.bad.N.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.bad.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "caught.good.G.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.good.G.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "caught.good.N.bond": {
+          "A": "-18/5",
+          "B": "-2"
+        },
+        "caught.good.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "comply.bad.B.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.B.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.bad.N.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.N.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.good.G.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.G.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "comply.good.N.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.N.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "missed.bad.B.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.bad.B.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "missed.bad.N.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.bad.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "missed.good.G.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.good.G.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "missed.good.N.bond": {
+          "A": "12/5",
+          "B": "-2"
+        },
+        "missed.good.N.zero": {
+          "A": "3",
+          "B": "-2"
+        },
+        "reject.bad.B.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.B.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.bad.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.N.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.G.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.G.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.N.zero": {
+          "A": "0",
+          "B": "0"
+        }
+      }
+    },
+    "g=3,p=1": {
+      "beliefs": {
+        "act.bad.B.bond": {
+          "act.bad.B.bond": "1"
+        },
+        "act.bad.B.zero": {
+          "act.bad.B.zero": "1"
+        },
+        "act.bad.N.bond": {
+          "act.bad.N.bond": "1"
+        },
+        "act.bad.N.zero": {
+          "act.bad.N.zero": "1"
+        },
+        "act.good.G.bond": {
+          "act.good.G.bond": "1"
+        },
+        "act.good.G.zero": {
+          "act.good.G.zero": "1"
+        },
+        "act.good.N.bond": {
+          "act.good.N.bond": "1"
+        },
+        "act.good.N.zero": {
+          "act.good.N.zero": "1"
+        },
+        "bond.bad.B": {
+          "bond.bad.B": "1"
+        },
+        "bond.bad.N": {
+          "bond.bad.N": "1"
+        },
+        "bond.good.G": {
+          "bond.good.G": "1"
+        },
+        "bond.good.N": {
+          "bond.good.N": "1"
+        },
+        "disclose.bad": {
+          "disclose.bad": "1"
+        },
+        "disclose.good": {
+          "disclose.good": "1"
+        },
+        "receive.B.bond": {
+          "receive.bad.B.bond": "1"
+        },
+        "receive.B.zero": {
+          "receive.bad.B.zero": "1"
+        },
+        "receive.G.bond": {
+          "receive.good.G.bond": "1"
+        },
+        "receive.G.zero": {
+          "receive.good.G.zero": "1"
+        },
+        "receive.N.bond": {
+          "receive.bad.N.bond": "1",
+          "receive.good.N.bond": "0"
+        },
+        "receive.N.zero": {
+          "receive.bad.N.zero": "1",
+          "receive.good.N.zero": "0"
+        }
+      },
+      "chance": {
+        "monitor.bad.B.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.bad.B.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.bad.N.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.bad.N.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.G.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.G.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.N.bond": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "monitor.good.N.zero": {
+          "caught": "1",
+          "missed": "0"
+        },
+        "root": {
+          "bad": "1/2",
+          "good": "1/2"
+        }
+      },
+      "payoffs": {
+        "caught.bad.B.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.bad.B.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "caught.bad.N.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.bad.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "caught.good.G.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.good.G.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "caught.good.N.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.good.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "comply.bad.B.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.B.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.bad.N.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.N.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.good.G.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.G.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "comply.good.N.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.N.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "missed.bad.B.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.bad.B.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "missed.bad.N.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.bad.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "missed.good.G.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.good.G.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "missed.good.N.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.good.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "reject.bad.B.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.B.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.bad.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.N.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.G.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.G.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.N.zero": {
+          "A": "0",
+          "B": "0"
+        }
+      }
+    },
+    "g=3,p=1/2": {
+      "beliefs": {
+        "act.bad.B.bond": {
+          "act.bad.B.bond": "1"
+        },
+        "act.bad.B.zero": {
+          "act.bad.B.zero": "1"
+        },
+        "act.bad.N.bond": {
+          "act.bad.N.bond": "1"
+        },
+        "act.bad.N.zero": {
+          "act.bad.N.zero": "1"
+        },
+        "act.good.G.bond": {
+          "act.good.G.bond": "1"
+        },
+        "act.good.G.zero": {
+          "act.good.G.zero": "1"
+        },
+        "act.good.N.bond": {
+          "act.good.N.bond": "1"
+        },
+        "act.good.N.zero": {
+          "act.good.N.zero": "1"
+        },
+        "bond.bad.B": {
+          "bond.bad.B": "1"
+        },
+        "bond.bad.N": {
+          "bond.bad.N": "1"
+        },
+        "bond.good.G": {
+          "bond.good.G": "1"
+        },
+        "bond.good.N": {
+          "bond.good.N": "1"
+        },
+        "disclose.bad": {
+          "disclose.bad": "1"
+        },
+        "disclose.good": {
+          "disclose.good": "1"
+        },
+        "receive.B.bond": {
+          "receive.bad.B.bond": "1"
+        },
+        "receive.B.zero": {
+          "receive.bad.B.zero": "1"
+        },
+        "receive.G.bond": {
+          "receive.good.G.bond": "1"
+        },
+        "receive.G.zero": {
+          "receive.good.G.zero": "1"
+        },
+        "receive.N.bond": {
+          "receive.bad.N.bond": "1",
+          "receive.good.N.bond": "0"
+        },
+        "receive.N.zero": {
+          "receive.bad.N.zero": "1",
+          "receive.good.N.zero": "0"
+        }
+      },
+      "chance": {
+        "monitor.bad.B.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.bad.B.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.bad.N.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.bad.N.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.G.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.G.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.N.bond": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "monitor.good.N.zero": {
+          "caught": "1/2",
+          "missed": "1/2"
+        },
+        "root": {
+          "bad": "1/2",
+          "good": "1/2"
+        }
+      },
+      "payoffs": {
+        "caught.bad.B.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.bad.B.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "caught.bad.N.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.bad.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "caught.good.G.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.good.G.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "caught.good.N.bond": {
+          "A": "-8/5",
+          "B": "-2"
+        },
+        "caught.good.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "comply.bad.B.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.B.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.bad.N.bond": {
+          "A": "7/5",
+          "B": "-1"
+        },
+        "comply.bad.N.zero": {
+          "A": "2",
+          "B": "-1"
+        },
+        "comply.good.G.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.G.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "comply.good.N.bond": {
+          "A": "7/5",
+          "B": "2"
+        },
+        "comply.good.N.zero": {
+          "A": "2",
+          "B": "2"
+        },
+        "missed.bad.B.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.bad.B.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "missed.bad.N.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.bad.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "missed.good.G.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.good.G.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "missed.good.N.bond": {
+          "A": "22/5",
+          "B": "-2"
+        },
+        "missed.good.N.zero": {
+          "A": "5",
+          "B": "-2"
+        },
+        "reject.bad.B.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.B.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.bad.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.bad.N.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.G.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.G.zero": {
+          "A": "0",
+          "B": "0"
+        },
+        "reject.good.N.bond": {
+          "A": "-3/5",
+          "B": "0"
+        },
+        "reject.good.N.zero": {
+          "A": "0",
+          "B": "0"
+        }
+      }
+    }
+  },
+  "nodes": {
+    "act.bad.B.bond": {
+      "edges": {
+        "comply": "comply.bad.B.bond",
+        "defect": "monitor.bad.B.bond"
+      },
+      "info": "act.bad.B.bond",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.bad.B.zero": {
+      "edges": {
+        "comply": "comply.bad.B.zero",
+        "defect": "monitor.bad.B.zero"
+      },
+      "info": "act.bad.B.zero",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.bad.N.bond": {
+      "edges": {
+        "comply": "comply.bad.N.bond",
+        "defect": "monitor.bad.N.bond"
+      },
+      "info": "act.bad.N.bond",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.bad.N.zero": {
+      "edges": {
+        "comply": "comply.bad.N.zero",
+        "defect": "monitor.bad.N.zero"
+      },
+      "info": "act.bad.N.zero",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.good.G.bond": {
+      "edges": {
+        "comply": "comply.good.G.bond",
+        "defect": "monitor.good.G.bond"
+      },
+      "info": "act.good.G.bond",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.good.G.zero": {
+      "edges": {
+        "comply": "comply.good.G.zero",
+        "defect": "monitor.good.G.zero"
+      },
+      "info": "act.good.G.zero",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.good.N.bond": {
+      "edges": {
+        "comply": "comply.good.N.bond",
+        "defect": "monitor.good.N.bond"
+      },
+      "info": "act.good.N.bond",
+      "kind": "player",
+      "player": "A"
+    },
+    "act.good.N.zero": {
+      "edges": {
+        "comply": "comply.good.N.zero",
+        "defect": "monitor.good.N.zero"
+      },
+      "info": "act.good.N.zero",
+      "kind": "player",
+      "player": "A"
+    },
+    "bond.bad.B": {
+      "edges": {
+        "bond": "receive.bad.B.bond",
+        "zero": "receive.bad.B.zero"
+      },
+      "info": "bond.bad.B",
+      "kind": "player",
+      "player": "A"
+    },
+    "bond.bad.N": {
+      "edges": {
+        "bond": "receive.bad.N.bond",
+        "zero": "receive.bad.N.zero"
+      },
+      "info": "bond.bad.N",
+      "kind": "player",
+      "player": "A"
+    },
+    "bond.good.G": {
+      "edges": {
+        "bond": "receive.good.G.bond",
+        "zero": "receive.good.G.zero"
+      },
+      "info": "bond.good.G",
+      "kind": "player",
+      "player": "A"
+    },
+    "bond.good.N": {
+      "edges": {
+        "bond": "receive.good.N.bond",
+        "zero": "receive.good.N.zero"
+      },
+      "info": "bond.good.N",
+      "kind": "player",
+      "player": "A"
+    },
+    "caught.bad.B.bond": {
+      "kind": "terminal"
+    },
+    "caught.bad.B.zero": {
+      "kind": "terminal"
+    },
+    "caught.bad.N.bond": {
+      "kind": "terminal"
+    },
+    "caught.bad.N.zero": {
+      "kind": "terminal"
+    },
+    "caught.good.G.bond": {
+      "kind": "terminal"
+    },
+    "caught.good.G.zero": {
+      "kind": "terminal"
+    },
+    "caught.good.N.bond": {
+      "kind": "terminal"
+    },
+    "caught.good.N.zero": {
+      "kind": "terminal"
+    },
+    "comply.bad.B.bond": {
+      "kind": "terminal"
+    },
+    "comply.bad.B.zero": {
+      "kind": "terminal"
+    },
+    "comply.bad.N.bond": {
+      "kind": "terminal"
+    },
+    "comply.bad.N.zero": {
+      "kind": "terminal"
+    },
+    "comply.good.G.bond": {
+      "kind": "terminal"
+    },
+    "comply.good.G.zero": {
+      "kind": "terminal"
+    },
+    "comply.good.N.bond": {
+      "kind": "terminal"
+    },
+    "comply.good.N.zero": {
+      "kind": "terminal"
+    },
+    "disclose.bad": {
+      "edges": {
+        "B": "bond.bad.B",
+        "N": "bond.bad.N"
+      },
+      "info": "disclose.bad",
+      "kind": "player",
+      "player": "A"
+    },
+    "disclose.good": {
+      "edges": {
+        "G": "bond.good.G",
+        "N": "bond.good.N"
+      },
+      "info": "disclose.good",
+      "kind": "player",
+      "player": "A"
+    },
+    "missed.bad.B.bond": {
+      "kind": "terminal"
+    },
+    "missed.bad.B.zero": {
+      "kind": "terminal"
+    },
+    "missed.bad.N.bond": {
+      "kind": "terminal"
+    },
+    "missed.bad.N.zero": {
+      "kind": "terminal"
+    },
+    "missed.good.G.bond": {
+      "kind": "terminal"
+    },
+    "missed.good.G.zero": {
+      "kind": "terminal"
+    },
+    "missed.good.N.bond": {
+      "kind": "terminal"
+    },
+    "missed.good.N.zero": {
+      "kind": "terminal"
+    },
+    "monitor.bad.B.bond": {
+      "edges": {
+        "caught": "caught.bad.B.bond",
+        "missed": "missed.bad.B.bond"
+      },
+      "kind": "chance"
+    },
+    "monitor.bad.B.zero": {
+      "edges": {
+        "caught": "caught.bad.B.zero",
+        "missed": "missed.bad.B.zero"
+      },
+      "kind": "chance"
+    },
+    "monitor.bad.N.bond": {
+      "edges": {
+        "caught": "caught.bad.N.bond",
+        "missed": "missed.bad.N.bond"
+      },
+      "kind": "chance"
+    },
+    "monitor.bad.N.zero": {
+      "edges": {
+        "caught": "caught.bad.N.zero",
+        "missed": "missed.bad.N.zero"
+      },
+      "kind": "chance"
+    },
+    "monitor.good.G.bond": {
+      "edges": {
+        "caught": "caught.good.G.bond",
+        "missed": "missed.good.G.bond"
+      },
+      "kind": "chance"
+    },
+    "monitor.good.G.zero": {
+      "edges": {
+        "caught": "caught.good.G.zero",
+        "missed": "missed.good.G.zero"
+      },
+      "kind": "chance"
+    },
+    "monitor.good.N.bond": {
+      "edges": {
+        "caught": "caught.good.N.bond",
+        "missed": "missed.good.N.bond"
+      },
+      "kind": "chance"
+    },
+    "monitor.good.N.zero": {
+      "edges": {
+        "caught": "caught.good.N.zero",
+        "missed": "missed.good.N.zero"
+      },
+      "kind": "chance"
+    },
+    "receive.bad.B.bond": {
+      "edges": {
+        "accept": "act.bad.B.bond",
+        "reject": "reject.bad.B.bond"
+      },
+      "info": "receive.B.bond",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.bad.B.zero": {
+      "edges": {
+        "accept": "act.bad.B.zero",
+        "reject": "reject.bad.B.zero"
+      },
+      "info": "receive.B.zero",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.bad.N.bond": {
+      "edges": {
+        "accept": "act.bad.N.bond",
+        "reject": "reject.bad.N.bond"
+      },
+      "info": "receive.N.bond",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.bad.N.zero": {
+      "edges": {
+        "accept": "act.bad.N.zero",
+        "reject": "reject.bad.N.zero"
+      },
+      "info": "receive.N.zero",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.good.G.bond": {
+      "edges": {
+        "accept": "act.good.G.bond",
+        "reject": "reject.good.G.bond"
+      },
+      "info": "receive.G.bond",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.good.G.zero": {
+      "edges": {
+        "accept": "act.good.G.zero",
+        "reject": "reject.good.G.zero"
+      },
+      "info": "receive.G.zero",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.good.N.bond": {
+      "edges": {
+        "accept": "act.good.N.bond",
+        "reject": "reject.good.N.bond"
+      },
+      "info": "receive.N.bond",
+      "kind": "player",
+      "player": "B"
+    },
+    "receive.good.N.zero": {
+      "edges": {
+        "accept": "act.good.N.zero",
+        "reject": "reject.good.N.zero"
+      },
+      "info": "receive.N.zero",
+      "kind": "player",
+      "player": "B"
+    },
+    "reject.bad.B.bond": {
+      "kind": "terminal"
+    },
+    "reject.bad.B.zero": {
+      "kind": "terminal"
+    },
+    "reject.bad.N.bond": {
+      "kind": "terminal"
+    },
+    "reject.bad.N.zero": {
+      "kind": "terminal"
+    },
+    "reject.good.G.bond": {
+      "kind": "terminal"
+    },
+    "reject.good.G.zero": {
+      "kind": "terminal"
+    },
+    "reject.good.N.bond": {
+      "kind": "terminal"
+    },
+    "reject.good.N.zero": {
+      "kind": "terminal"
+    },
+    "root": {
+      "edges": {
+        "bad": "disclose.bad",
+        "good": "disclose.good"
+      },
+      "kind": "chance"
+    }
+  },
+  "profile": {
+    "act.bad.B.bond": {
+      "comply": "1",
+      "defect": "0"
+    },
+    "act.bad.B.zero": {
+      "comply": "0",
+      "defect": "1"
+    },
+    "act.bad.N.bond": {
+      "comply": "1",
+      "defect": "0"
+    },
+    "act.bad.N.zero": {
+      "comply": "0",
+      "defect": "1"
+    },
+    "act.good.G.bond": {
+      "comply": "1",
+      "defect": "0"
+    },
+    "act.good.G.zero": {
+      "comply": "0",
+      "defect": "1"
+    },
+    "act.good.N.bond": {
+      "comply": "1",
+      "defect": "0"
+    },
+    "act.good.N.zero": {
+      "comply": "0",
+      "defect": "1"
+    },
+    "bond.bad.B": {
+      "bond": "0",
+      "zero": "1"
+    },
+    "bond.bad.N": {
+      "bond": "0",
+      "zero": "1"
+    },
+    "bond.good.G": {
+      "bond": "1",
+      "zero": "0"
+    },
+    "bond.good.N": {
+      "bond": "0",
+      "zero": "1"
+    },
+    "disclose.bad": {
+      "B": "1",
+      "N": "0"
+    },
+    "disclose.good": {
+      "G": "1",
+      "N": "0"
+    },
+    "receive.B.bond": {
+      "accept": "0",
+      "reject": "1"
+    },
+    "receive.B.zero": {
+      "accept": "0",
+      "reject": "1"
+    },
+    "receive.G.bond": {
+      "accept": "1",
+      "reject": "0"
+    },
+    "receive.G.zero": {
+      "accept": "0",
+      "reject": "1"
+    },
+    "receive.N.bond": {
+      "accept": "0",
+      "reject": "1"
+    },
+    "receive.N.zero": {
+      "accept": "0",
+      "reject": "1"
+    }
+  },
+  "root": "root",
+  "schema": "bellman.assessed-credibility.v1"
+}

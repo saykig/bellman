@@ -2,11 +2,11 @@
 
 **Status:** living programme-steering document. This is not a frozen theorem, experiment result, or mathematical authority. Update it when evidence changes the best route.
 
-**Current snapshot:** 8 September 2026, based on latest `main` after reviewed and merged PR #20
-(`cea4e1a47cb91c1f3917490350deab53d2976908`). The exact saturated longitudinal causal
-kernel-fibre construction and deterministic decisions across its continuous completion family are
-the active bounded result under review. PR #20's full-support longitudinal bridge, the prior
-causal/sequential/statistical chain, and all historical/versioned evidence remain intact.
+**Current snapshot:** PR #22 integrates merged PR #21 from main
+`4866ffce9b3e935b86188d3fe981d4b9240f0740`. The causal kernel-fibre component is merged;
+the sequential credibility and diagnostic erasure results retain their bounded, author-reviewed standing.
+Both sets of frozen evidence are preserved. [Combined acceptance](../../verification/combined_acceptance/README.md)
+checks their coexistence and historical identities; it does not establish a causal-to-strategic bridge.
 
 The governing North Star remains [Bellman North Star](../../foundations/BELLMAN_NORTH_STAR.md):
 
@@ -84,16 +84,67 @@ optimization; plural objectives; strategic actors; and selected formal verificat
 | Unsafe-set reachability and constrained selection | HARDENED | [`BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md`](../../foundations/BELLMAN_UNSAFE_SET_REACHABILITY_AND_CONSTRAINED_SELECTION.md) | Exact first-hit probability, unweighted persistent-family safety caps, and deterministic selection within one fixed robust-feasible class. |
 | Finite causal identification and one-stage decisions | HARDENED | [`BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md`](../../foundations/BELLMAN_FINITE_CAUSAL_IDENTIFICATION_AND_DECISION_CERTIFICATION.md) | Exact adjustment under supplied premises, exact response-type point/partial identification, and paired same-fibre one-stage action certification. |
 | Two-stage longitudinal causal policy and sequential bridge | HARDENED | [`BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md`](../../foundations/BELLMAN_TWO_STAGE_LONGITUDINAL_CAUSAL_POLICY_AND_SEQUENTIAL_BRIDGE.md) | Policy-specific g-formula identification remains distinct from the stronger support required to identify every transition of the complete Bellman subject. |
-| Longitudinal causal kernel fibres and persistent decisions | ACTIVE RESULT | [`BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md`](../../foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md) | Missing second-stage binary outcome rows form an exact saturated continuous fibre; proved multi-affine deterministic queries reduce to corners without identifying the finite family with the fibre. |
+| Longitudinal causal kernel fibres and persistent decisions | HARDENED | [`BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md`](../../foundations/BELLMAN_LONGITUDINAL_CAUSAL_KERNEL_FIBRES_AND_PERSISTENT_DECISIONS.md) | Missing second-stage binary outcome rows form an exact saturated continuous fibre; proved multi-affine deterministic queries reduce to corners without identifying the finite family with the fibre. |
 
 `HARDENED` here means: the bounded construction has survived targeted adversarial review and exact reference checks within its stated profile. It does **not** mean universal correctness, empirical validity, formal verification, scalability, or final engineering acceptance.
 
 ## 4. Current frontier
 
-### ACTIVE RESULT — Longitudinal causal kernel fibres and persistent decisions
+### Integrated component — sequential credibility with a shared consistency witness
 
-Merged PR #20 establishes the point-identified policy and full-support subject boundary. The active
-result asks the nearest missing-support question:
+The [sequential credibility companion](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_UNDER_UNCERTAINTY.md)
+connects all four strategic directions through one query: continuation deviation gains under
+uncertainty, with selective evidence, explicit remembered information, and bond/monitoring rules.
+The preliminary exact reference checks one supplied profile across a finite persistent game family
+and all information sets. Its assessment-relative result remains frozen. The additive
+[consistency theorem](../../foundations/BELLMAN_SEQUENTIAL_CREDIBILITY_CONSISTENCY_ADDENDUM.md)
+now supplies the missing constructive bridge: a common rational power-perturbation witness must
+generate every model's assessed beliefs simultaneously. At epsilon=0, independent exact
+polynomial and full-continuation checks establish modelwise sequential equilibrium with a shared
+consistency witness. Positive epsilon yields only a consistent continuation-gain bound.
+
+The original four-model/20-information-set fixture now has a checked common witness. Two exact
+counterexamples distinguish local assessed rationality from consistency, and individual model
+consistency from a shared sequence. The [research audit](../../reviews/SEQUENTIAL_CREDIBILITY_RESEARCH_REVIEW_2026_09_08.md)
+inspects Dilmé's power-sequence theorem, robust/evidence/abstraction results, GTE-sequential,
+Gambit and OpenSpiel; SymPy is used for independent exact polynomial receiving. This is a
+supplied-witness procedure, not a complete existence decision or equilibrium search. Failure of a
+bounded witness is not a global impossibility. Ambiguity preferences and participation remain
+separate from modelwise incentives; stipulated monitoring is not empirical evidence.
+
+The [public-tag reduction](../../foundations/BELLMAN_PUBLIC_TAG_HISTORY_REDUCTION.md) now earns
+one specified many-to-one history reduction: positive public copies of the same continuation game,
+with identical supplied strategy and assessment, may be erased while preserving every continuation
+gain and common consistency in both directions. The 127-node source reduces to 63 nodes. This is
+assessment-specific; public randomization can coordinate non-invariant strategies, and equal
+payoffs cannot justify transporting changed off-path likelihoods. Both shortcuts have exact
+counterexamples. [Current reproduction](../../verification/combined_acceptance/README.md)
+checks the new reduction and replays unchanged earlier components at their retained identities.
+
+The [diagnostic erasure obstruction](../../foundations/BELLMAN_DIAGNOSTIC_HISTORY_ERASURE_OBSTRUCTION.md)
+resolves the next question negatively for a concrete class beyond identical copies. Exact equality
+of every local continuation value and individual model consistency do not preserve ONE common
+sequence after discarding diagnostic information from both players. The necessary target ratios
+3/5 and 5/3 contradict each other for arbitrary sequences. Retaining the sender's information
+permits a restricted receiver-only reduction, with its full assessment induced by the witness.
+The [author review](../../reviews/DIAGNOSTIC_HISTORY_ERASURE_REVIEW_2026_09_08.md) distinguishes
+this consistency-existence obstruction from a rejected bounded witness and from equilibrium
+nonexistence. [Current acceptance](../../verification/combined_acceptance/README.md) checks it
+and preserves/replays all earlier evidence.
+
+The next useful representation gate is a specified broader strategy class with explicit coverage
+of deviations spanning the erased observation AND likelihood sufficiency across all models.
+Inspect the established MSI/USI conditions first; their single-game equilibrium-payoff results
+must not become arbitrary specified-belief/shared-sequence transport claims. Preserve sender
+likelihood distinctions and signal-conditioned mechanism rules unless a new proof licenses their
+removal. General quotient search, approximate off-path consistency and all-equilibria transport
+remain unearned. Generic continuous receiving also remains unimplemented; do not mechanically
+build both directions or infer causal-to-game identification.
+
+### Merged result — Longitudinal causal kernel fibres and persistent decisions
+
+Merged PR #21 extends PR #20’s point-identified policy and full-support subject boundary.
+Its bounded result addresses the missing-support question:
 
 > When first-stage/intermediate causal kernels are identified but binary second-stage outcome rows
 > lack positivity, which complete causal subjects, policy values, and deterministic decisions are
@@ -238,7 +289,12 @@ Do not silently replace persistent whole-episode uncertainty with rowwise rectan
 
 These become necessary when Bellman stops modelling one decision-maker facing exogenous uncertainty.
 
-Possible targets:
+Earned strategic slice: supplied-profile full-continuation checks across a finite game family,
+with an independently checked common off-path consistency witness. The four directions of
+uncertainty, disclosure, remembered history and commitment/monitoring share this exact subject.
+No ambiguity-sensitive equilibrium, complete equilibrium search or mechanism optimum follows.
+
+Possible later targets:
 
 - Pareto/nondominance and explicit preference-family interfaces;
 - declared aggregation or bargaining rules rather than invented scalar weights;
