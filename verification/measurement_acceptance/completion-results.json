@@ -1,0 +1,107 @@
+{
+  "source_commit": "57bb7f839264d70b51539782e866174e274f029b",
+  "source_files": {
+    ".github/workflows/combined-acceptance.yml": "330556d16dcd9a8e70eee67611bd2e30bc466b0ac5d54b193c55b26b123817e4",
+    ".github/workflows/history-migration.yml": "49b3041d815f17e4be59bbc9d8ff726cb503f1e4e70ea136bb82a0cd4af97b33",
+    ".github/workflows/longitudinal-causal-kernel-fibres.yml": "8a563ec84ad7d63f39216f85fc41b6835f2761729cb2fea12b6b80af853d96e8",
+    ".github/workflows/sequential-consistency.yml": "435dba95b736f6518ace2cb1112746c55125050429a650233a4cb357bd5629e5",
+    ".github/workflows/two-stage-longitudinal-causal-policy.yml": "51e0c44f882804151a190b902a5b62ad62dab7e9b8bfdf70dd03442173b5d28b",
+    "README.md": "8452fbc4ba29ee9a809ae455356cbc849327f49977841bd233ac202557a1da36",
+    "docs/history/releases/2026-09-09-measurement-decision-menu.md": "a758fbc1550e50882452ff58dfafa4636f8fbdb3c7f4d5e7ab757e7a9f2bfb17",
+    "docs/programme/ARCHITECTURE.md": "5db007fa65218b64b7a0acdceff5e6388b315825a7abdb2ed4e5a2a8fcede753",
+    "docs/programme/ROADMAP.md": "05bedb58b38ca4cfd74c2a86906d3e71c4a2c6d7434fdb67e75a44a12f4a0c12",
+    "research/measurement_decision/FINDINGS.md": "45ce64983c04da41fd46d029e361159b4c4df73d5554eeab90459456436565e3",
+    "research/measurement_decision/MAINTENANCE_ACTION_CORRECTION.md": "0b369ce5dc515e89a10eae32973e31fa5f772b0d684abd850933662e45dfd5ff",
+    "research/measurement_decision/README.md": "da04543d8880078b769a27b55bcedce8e5726fe16b2c791afcfd37ee1998dd27",
+    "research/measurement_decision/REVIEW.md": "846292784d2d95c1d2815a7bb17741d3269d9f084b11849598bf09858b26c00b",
+    "research/measurement_decision/SOURCES.md": "3a22abb60adc646fa8b5b175cbd05e5984e4d0267f412865c33d71d07244f832",
+    "research/measurement_decision/SPEC.md": "0e13fb22bbf1c1b8be7dc1990087f711d077a8dd21519e231965e858ac9829be",
+    "research/measurement_decision/afy-design.json": "b2e698c33b1d3971ddbbcc2a332f2681e5e8eb813c691d1d5bc81904ef2536ee",
+    "research/measurement_decision/afy-result.json": "8b906bcdde0525215b95e4858eba603277cbb6b4f4a160c10b78f66250f9baaa",
+    "research/measurement_decision/checks.py": "fa0c1c07199ed7ff59faa4722dec664ab644f475ff5daf2be7746e864d36d1a3",
+    "research/measurement_decision/local-receiving.json": "5e9186fe621e6a125a86f34f316f7a575f7a118c657b3f33e0cb1b876a4e7cf3",
+    "research/measurement_decision/maintenance-design.json": "2a3a4ed5428fe8364f34bd4e4a2cc9cd4a4b3a72668f14c49f46c7bfe7cd11d1",
+    "research/measurement_decision/maintenance-result.json": "0d0134f5d4b8c45febfd781fecd5c0a27730150fdb1754e52bda3ca0518569f8",
+    "research/measurement_decision/menu.py": "db3073fcc247d7312ec0f5cb43da8dfeb3ef48bb18d24f89b50ed932aaad3048",
+    "research/measurement_decision/tie-design.json": "fbf1bcf1dc66d539cbb38f66733e2613282eda0e3dd8c8971d3ae52e35fc79df",
+    "research/measurement_decision/tie-result.json": "fb39c3475c5174ba0000cda08d7de9d7ccb27e20192c2d17f0cd0ea45811a72a",
+    "verification/measurement_acceptance/README.md": "57fec3b7a3f49070a2dd267dfefa98e589d571fb1cfb54a9df2c4b33db875656",
+    "verification/measurement_acceptance/acceptance.py": "4cf93bff6efac3277102f95cdce96b9bfa4a79bce6537dfe5e98ed3db124069e",
+    "verification/measurement_acceptance/inventory.json": "1ed59223a9f5b7e141c09cc007f36a30314363de9b431480180eff8cb3911c85",
+    "verification/measurement_acceptance/results.json": "5e3d643c9e06a71215be7584915456eab5c4e9fe3863eeee10db138c64a11c51"
+  },
+  "validation": {
+    "inherited": {
+      "receipt_sha256": "4c8095e7fe886e308638a0e7d7d4ed9eb9347b4195d74939594574e18ba70bd2",
+      "receipt_verified": true,
+      "recomputed": true,
+      "validation_digest": "ddc982257831a69db1ed4fb7c3f5193c514a41854ffe965b9c9513ecb49a3349"
+    },
+    "measurement_public_audit": {
+      "afy": {
+        "minimizers": [
+          "utility"
+        ],
+        "policies_enumerated": {
+          "conditional": 4,
+          "joint": 16,
+          "no_measurement": 2,
+          "perfect_conditional": 4,
+          "unconditional": 4,
+          "utility": 4,
+          "weak_conditional": 4
+        }
+      },
+      "donor_receiving": "not executed; independent direct enumeration only",
+      "maintenance": {
+        "minimizers": [
+          "inspection"
+        ],
+        "policies_enumerated": {
+          "inspection": 27,
+          "no_measurement": 3,
+          "perfect": 27,
+          "uninformative": 9
+        }
+      },
+      "rejection_controls": [
+        "invalid_channel",
+        "malformed_prior",
+        "negative_cost",
+        "missing_baseline",
+        "hidden_model_policy_field",
+        "state_changing_measurement",
+        "stale_subject",
+        "omitted_result",
+        "false_ranking",
+        "hidden_state_oracle",
+        "cost_omitted",
+        "wrong_action",
+        "relabelled_signal",
+        "changed_cost_old_receipt",
+        "changed_decision_old_receipt"
+      ],
+      "tie": {
+        "minimizers": [
+          "free_signal",
+          "no_measurement"
+        ],
+        "policies_enumerated": {
+          "free_signal": 4,
+          "no_measurement": 2
+        }
+      }
+    },
+    "mode": "all",
+    "preservation": {
+      "frozen_digest": "79aba048773644c18436f0c1755d84de73cad4309bb16b3bb8d738f576526772",
+      "frozen_files": 328,
+      "mutation_controls": [
+        "verification/beliefs_acceptance/results.json",
+        "research/beliefs_2024/first-results/results.json",
+        "verification/combined_acceptance/results.json"
+      ],
+      "prior": "aa2f9f24bb0e2ad777f1ca9df0332b76ce02ea73"
+    }
+  }
+}
