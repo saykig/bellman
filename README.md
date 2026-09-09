@@ -49,6 +49,7 @@ still needs to be earned.
 - [Purpose and ambition](foundations/BELLMAN_NORTH_STAR.md)
 - [Current progress and open questions](docs/programme/ROADMAP.md)
 - [Human trust experiment and findings](research/empirical_trust_2016/README.md)
+- [Measurement design, results and correction](research/measurement_decision/MAINTENANCE_ACTION_CORRECTION.md)
 - [Run the current checks](verification/measurement_acceptance/README.md)
 - [v0.0.7: Decisions, evidence, and credible promises](https://github.com/saykig/bellman/releases/tag/v0.0.7)
 - [Research history](docs/history/README.md), including earlier results, corrections and stopped experiments

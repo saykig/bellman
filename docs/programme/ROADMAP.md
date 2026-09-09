@@ -24,6 +24,8 @@ does not identify human priors, calibrate report noise or resolve robust ambigui
 The stopping gate is exact menu selection and independently checked conditional
 claims; empirical adoption awaits a warranted channel, utility scale and costs.
 No additional empirical fitting or product transfer follows automatically.
+The [maintenance prose correction](../../research/measurement_decision/MAINTENANCE_ACTION_CORRECTION.md)
+records the correct noisy-signal policy; all numeric results remain unchanged.
 [Current additive acceptance](../../verification/measurement_acceptance/README.md)
 preserves the completed AFY edition and replays its inherited checks.
 

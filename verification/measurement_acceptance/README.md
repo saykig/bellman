@@ -19,3 +19,9 @@ repository is private: use research/measurement_decision/checks.py with
 `--engine-repository` as documented there. Hosted checks do not claim donor code
 execution. Frozen local-receiving.json records that additional run with source
 bindings. No data acquisition occurs inside deterministic checks.
+
+The original results.json remains the first successful numeric acceptance receipt.
+completion-results.json additionally binds the additive maintenance prose correction.
+The local receiving source manifest is checked at its recorded source edition;
+later prose additions do not retroactively belong to that run. Existing bound
+source files must still match both that edition and the current checkout.

@@ -10,7 +10,7 @@ import tempfile
 ROOT=Path(__file__).resolve().parents[2]
 PRIOR='aa2f9f24bb0e2ad777f1ca9df0332b76ce02ea73'
 HERE='verification/measurement_acceptance/'
-RECEIPT=HERE+'results.json'
+RECEIPT=HERE+'completion-results.json'
 LIVING={'README.md','docs/programme/ROADMAP.md','docs/programme/ARCHITECTURE.md'}
 WORKFLOWS={'.github/workflows/'+n for n in ['combined-acceptance.yml','sequential-consistency.yml','history-migration.yml','two-stage-longitudinal-causal-policy.yml','longitudinal-causal-kernel-fibres.yml']}
 ENV=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
@@ -32,7 +32,8 @@ def integrity():
     def check(path,data):need(data==expected[path],'frozen bytes changed: '+path)
     for p,b in expected.items():check(p,(ROOT/p).read_bytes())
     local=json.loads((ROOT/'research/measurement_decision/local-receiving.json').read_text())
-    local_paths={p for p in extras if p.startswith('research/measurement_decision/') and p!='research/measurement_decision/local-receiving.json'}
+    local_paths=set(git('ls-tree','-r','--name-only',local['source_commit'],'research/measurement_decision').decode().splitlines())
+    local_paths.discard('research/measurement_decision/local-receiving.json')
     need(set(local['source_files'])==local_paths,'local receipt source coverage')
     for p,h in local['source_files'].items():
         need(sha((ROOT/p).read_bytes())==h and sha(git('show',local['source_commit']+':'+p))==h,'local receiving source '+p)
