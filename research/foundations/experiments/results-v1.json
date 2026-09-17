@@ -1,0 +1,114 @@
+{
+  "evidence": {
+    "coupled_choices": {
+      "exact_do_X0_Z1": [
+        0
+      ],
+      "rectangular_do_X0_Z1": [
+        0,
+        1
+      ],
+      "relations_searched": 16,
+      "strict_query_widenings": 2
+    },
+    "cycles": {
+      "unnormalized_masses_equality_opposite": [
+        2,
+        0
+      ]
+    },
+    "hidden_noise": {
+      "P_equal_independent_shared": [
+        "1/2",
+        "1"
+      ]
+    },
+    "kernel_grid": {
+      "all_exact": true,
+      "associativity_triples": 729,
+      "kernels": 9,
+      "surgery_cases": 2187
+    },
+    "observational_equivalence": {
+      "P_Y1_do_X1_forward_reverse": [
+        "1",
+        "1/2"
+      ]
+    },
+    "off_support": {
+      "do_X1_Y_identity_constant": [
+        1,
+        0
+      ],
+      "observed_XY": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "relational_search": {
+      "counts": {
+        "exact_extension": 166,
+        "locally_agreeing": 406,
+        "locally_agreeing_empty_join": 4,
+        "locally_agreeing_nonempty_lossy_join": 236,
+        "total": 4096
+      },
+      "first_empty_witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "global_relations_oracle_size": 256,
+      "two_bag_overlap_matches": 100
+    },
+    "separator_double_counting": {
+      "normalized_product": [
+        "9/10",
+        "1/10"
+      ],
+      "supplied": [
+        "3/4",
+        "1/4"
+      ]
+    },
+    "successful_example": {
+      "P_X1_do_Y1": "1/4",
+      "P_X1_given_Y1": "4/7",
+      "P_Y1": "7/20",
+      "P_Z1": "19/50",
+      "P_Z1_do_X1": "37/50",
+      "P_Z1_do_Y1": "9/10"
+    }
+  },
+  "schema": "bellman-foundations-exact-v1",
+  "source_sha256": "11a4945a1f2ee5c55fd59ebc5e8ad5b9bd9236859e029278dd9aaebe873f7711"
+}

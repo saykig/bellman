@@ -1,0 +1,17 @@
+{
+  "schema": "bellman-foundations-lean-v1",
+  "date": "2026-09-17",
+  "command": "lean Compatibility.lean",
+  "exit_code": 0,
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": "ec0e68a23aa457469c6fb697427bdf2b3e338a06ab863cfe3f4f73ac5fac2c92",
+  "toolchain_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+  "declarations": [
+    "'Bellman.extension_iff_join_exact' does not depend on any axioms",
+    "'Bellman.overlap_implies_exact' does not depend on any axioms",
+    "'Bellman.equality_cycle_impossible' does not depend on any axioms",
+    "'Bellman.relation_in_rectangle' does not depend on any axioms",
+    "'Bellman.replacement_commutes_with_ownership' depends on axioms: [Quot.sound]"
+  ],
+  "stderr": ""
+}

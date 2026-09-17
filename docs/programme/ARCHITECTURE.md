@@ -436,3 +436,19 @@ recommendation. The [portable case](../../research/beliefs_2024/TRANSFER.md) exp
 such changed use. Existing Decision Lab linear and identity-skeleton profiles do not cover this
 statistical result. A new adapter requires a concrete downstream review need and a bounded
 statistical contract; no language migration or framework follows from the present case.
+
+
+## Partial mechanism knowledge — 17 September 2026 research boundary
+
+The [foundations reassessment](../../research/foundations/manuscript/RESEARCH_NOTE.md)
+adds a research representation, not an engineering adapter. Keep constraint
+conjunction (relations over mechanism choices), numerical evaluation (probability
+factors), causal wiring/replacement (owned mechanisms), and global extension
+questions distinct. Preserve common choice coordinates and intervention targets.
+Projection followed by independent recombination can enlarge the model family;
+it needs an explicit outer label or a query-preservation proof.
+
+Existing saturated kernel fibres remain valid under their declared profile. The
+new finite catalogue setting does not replace response-type models or account for
+undeclared shared random noise. No universal schema, Writ/Decision Lab migration,
+causal-to-strategic mapping or general formal-verification claim is earned.

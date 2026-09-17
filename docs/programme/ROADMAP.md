@@ -29,6 +29,24 @@ records the correct noisy-signal policy; all numeric results remain unchanged.
 [Current additive acceptance](../../verification/measurement_acceptance/README.md)
 preserves the completed AFY edition and replays its inherited checks.
 
+## Foundation reassessment — 17 September 2026
+
+The [bounded research note](../../research/foundations/manuscript/RESEARCH_NOTE.md)
+reassesses partial knowledge independently of the existing component organization.
+It recommends established causal mechanism semantics, relational constraints over
+mechanism choices, and local-to-global extension checks as complementary tools.
+The valuation/contextuality bridge already exists. Finite exact experiments and a
+small Lean proof distinguish exact extension, mere nonempty compatibility, and
+outer approximations that lose shared mechanism choices.
+
+The immediate representation needs no new universal theory. A next bounded paper
+question is when joins of projected mechanism catalogues preserve the full set of
+attainable intervention-law signatures. Existing join dependencies and causal
+abstraction are the baselines; novelty is unclaimed. The proposed next experiment
+tests preservation after adding a continuation and an internal intervention target.
+This new research does not reopen closed KL experiments or supersede the frozen
+causal/strategic editions. Finite catalogues are a first setting, not the ceiling.
+
 ## 1. How to read this roadmap
 
 This is a **capability roadmap, not a checklist of fields to complete**. A line may be skipped, reordered, simplified, or closed if established mathematics already settles it, a counterexample kills the proposed route, or engineering/domain work reveals a better frontier.

@@ -27,3 +27,7 @@ A future paper review should add database acyclicity/join dependencies and creda
 network literature, particularly separately specified versus coupled mechanism
 sets. This first note proves its finite claims without relying on uninspected
 results in those literatures.
+
+Later access and scope update: see [PRIOR_WORK_ADDENDUM](PRIOR_WORK_ADDENDUM.md)
+for inspected LT full-text sections, database join dependencies, credal-network
+separability, and the resulting narrower paper question.

@@ -1,6 +1,6 @@
 # Bellman foundations research brief
 
-Opened: 2026-09-17. Status: active research, not a claim of novelty.
+Opened: 2026-09-17. Status: first bounded investigation complete; follow-up question open. No novelty claim.
 
 Question: how should Bellman represent partial knowledge of systems, combine it,
 and reason about changes to mechanisms? Compare information/valuation algebras,
@@ -35,3 +35,7 @@ Completion does not require publication, a broad world model, or strategic demos
 Repository clarification received: use `https://github.com/saykig/bellman.git`.
 Fetched existing main at `58987d2`; all tracked historical files restored and the
 new research files retained. This research is additive to that history.
+
+Completion record: comparison, proofs, intervention example, counterexamples,
+exact experiments, selective Lean evaluation and manuscript retained. See
+CURRENT_STATE.md for the recommendation and precisely scoped remaining work.

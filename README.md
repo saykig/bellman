@@ -46,6 +46,8 @@ still needs to be earned.
 
 ## Explore the work
 
+- [Partial knowledge and causal composition: foundation reassessment](research/foundations/manuscript/RESEARCH_NOTE.md)
+
 - [Purpose and ambition](foundations/BELLMAN_NORTH_STAR.md)
 - [Current progress and open questions](docs/programme/ROADMAP.md)
 - [Human trust experiment and findings](research/empirical_trust_2016/README.md)
