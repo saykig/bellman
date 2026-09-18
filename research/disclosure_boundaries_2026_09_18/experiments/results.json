@@ -1,0 +1,530 @@
+{
+  "status": "passed",
+  "seed": 20260919,
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "source_sha256": "9e4eaddae17d21b5b232579421c4d6a6cb3dc1ca081710f0329715e40667991e",
+  "support_cases": [
+    {
+      "budget": 0.3,
+      "k12": 0.4,
+      "k23": 0.4,
+      "gate_sequence": [
+        {
+          "gamma": 0.99,
+          "value": 1.0803300268698268,
+          "controlled": 1.0803300268698268,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 0.9999,
+          "value": 1.1118986000967355,
+          "controlled": 1.1118986000967355,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 0.999999,
+          "value": 1.1122190083190981,
+          "controlled": 1.1122190083190981,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 1.0,
+          "value": 1.8,
+          "controlled": 1.1122222452540018,
+          "support_trigger": true,
+          "discontinuous": true
+        }
+      ]
+    },
+    {
+      "budget": 0.4,
+      "k12": 0.9,
+      "k23": 0.4,
+      "gate_sequence": [
+        {
+          "gamma": 0.99,
+          "value": 1.4635404653434927,
+          "controlled": 1.4635404653434927,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 0.9999,
+          "value": 1.5139989883010978,
+          "controlled": 1.5139989883010978,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 0.999999,
+          "value": 1.5145182959357628,
+          "controlled": 1.5145182959357628,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 1.0,
+          "value": 1.8,
+          "controlled": 1.5145235430217714,
+          "support_trigger": true,
+          "discontinuous": true
+        }
+      ]
+    },
+    {
+      "budget": 0.55,
+      "k12": 0.9,
+      "k23": 0.4,
+      "gate_sequence": [
+        {
+          "gamma": 0.99,
+          "value": 1.7514958235619347,
+          "controlled": 1.7514958235619347,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 0.9999,
+          "value": 1.799509954838509,
+          "controlled": 1.799509954838509,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 0.999999,
+          "value": 1.7999950990426055,
+          "controlled": 1.7999950990426055,
+          "support_trigger": false,
+          "discontinuous": false
+        },
+        {
+          "gamma": 1.0,
+          "value": 1.8,
+          "controlled": 1.8,
+          "support_trigger": true,
+          "discontinuous": false
+        }
+      ]
+    }
+  ],
+  "direct_12_cell_checks": [
+    {
+      "p": [
+        0.4305120220690248,
+        0.5302709383292054,
+        0.039217039601770046
+      ],
+      "budget": 0.06161760754778459,
+      "gamma": 0.9541549010778333,
+      "formula": 1.175758433893731,
+      "direct": 1.1757584338945453,
+      "gap": 8.142375662600898e-13,
+      "constraint_residual": 1.1041098590958143e-12,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.20760783324233895,
+        0.6376381577204734,
+        0.15475400903718747
+      ],
+      "budget": 0.04834337944857658,
+      "gamma": 0.8270096231455588,
+      "formula": 1.1513933900486737,
+      "direct": 1.1513933900526363,
+      "gap": 3.962608019492109e-12,
+      "constraint_residual": 9.99186844374833e-13,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.2879247867192106,
+        0.2434894414056849,
+        0.4685857718751044
+      ],
+      "budget": 0.21708676073739705,
+      "gamma": 0.9525524205274737,
+      "formula": 0.6734455658889603,
+      "direct": 0.6734455658917691,
+      "gap": 2.8087532299991835e-12,
+      "constraint_residual": 1.281696970778512e-12,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.7107230897999341,
+        0.14355385731699002,
+        0.14572305288307574
+      ],
+      "budget": 0.3667968730447542,
+      "gamma": 0.8826070465820459,
+      "formula": 1.7116563114701822,
+      "direct": 1.7116563114693717,
+      "gap": 8.104628079763643e-13,
+      "constraint_residual": 6.661338147750939e-16,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.35118441467409967,
+        0.19369319184276929,
+        0.45512239348313094
+      ],
+      "budget": 0.23232453238465767,
+      "gamma": 0.9548899725549744,
+      "formula": 0.9371955746700332,
+      "direct": 0.9371955746701881,
+      "gap": 1.5487611193520934e-13,
+      "constraint_residual": 4.318767565791859e-14,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.25296407849691793,
+        0.5556775173636677,
+        0.19135840413941435
+      ],
+      "budget": 0.4129303723793448,
+      "gamma": 0.7337627975676753,
+      "formula": 1.4308430734684339,
+      "direct": 1.4308430732641202,
+      "gap": 2.0431367708795278e-10,
+      "constraint_residual": 5.551115123125783e-17,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.32679545946496785,
+        0.4445107628863802,
+        0.2286937776486519
+      ],
+      "budget": 0.16485625471617263,
+      "gamma": 0.8957416828956488,
+      "formula": 1.0875813673539403,
+      "direct": 1.0875813673542027,
+      "gap": 2.62456723021387e-13,
+      "constraint_residual": 9.786615962070755e-14,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.26752495163974366,
+        0.3952080033293218,
+        0.3372670450309346
+      ],
+      "budget": 0.10282224315345385,
+      "gamma": 0.9866075045507045,
+      "formula": 0.733162751171311,
+      "direct": 0.7331627511713199,
+      "gap": 8.881784197001252e-15,
+      "constraint_residual": 4.4247938646435614e-13,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.3811548722002327,
+        0.17306833677362535,
+        0.445776791026142
+      ],
+      "budget": 0.4728025339512651,
+      "gamma": 0.7132911375541826,
+      "formula": 0.9451144859586076,
+      "direct": 0.9451144859594443,
+      "gap": 8.36664071357518e-13,
+      "constraint_residual": 1.2013168237956506e-12,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.16572560334183203,
+        0.6722104896626115,
+        0.16206390699555637
+      ],
+      "budget": 0.46577463411135245,
+      "gamma": 0.7151991459493046,
+      "formula": 1.5561701461438937,
+      "direct": 1.5561701460560085,
+      "gap": 8.788525462932739e-11,
+      "constraint_residual": 1.0716982856706636e-10,
+      "solver_statuses": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.33138701257448094,
+        0.4840425895379073,
+        0.18457039788761176
+      ],
+      "budget": 0.19206783446910855,
+      "gamma": 0.8517168787244049,
+      "formula": 1.222249730012343,
+      "direct": 1.2222497300164126,
+      "gap": 4.069633519065974e-12,
+      "constraint_residual": 1.95396476776466e-12,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.697737765504607,
+        0.1505445614255471,
+        0.15171767306984582
+      ],
+      "budget": 0.11651120154583125,
+      "gamma": 0.9354784435794175,
+      "formula": 1.5566953190562536,
+      "direct": 1.5566953190563289,
+      "gap": 7.527312106958561e-14,
+      "constraint_residual": 7.249756350802272e-14,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.09571525054795507,
+        0.3541662889491062,
+        0.5501184605029388
+      ],
+      "budget": 0.15472372493039868,
+      "gamma": 0.9238351860387616,
+      "formula": 0.4681188337113104,
+      "direct": 0.46811883371193724,
+      "gap": 6.268319197033634e-13,
+      "constraint_residual": 1.126349014057837e-12,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "p": [
+        0.41548073733253343,
+        0.2860744976880695,
+        0.2984447649793971
+      ],
+      "budget": 0.44371915406322393,
+      "gamma": 0.7024567929734655,
+      "formula": 1.0924682928096356,
+      "direct": 1.0924682928092897,
+      "gap": 3.459454944731988e-13,
+      "constraint_residual": 2.2771784458086586e-12,
+      "solver_statuses": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "saturation_checks": [
+    {
+      "p": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "budget": 0.47520302639196166,
+      "value": 1.7774318003720069,
+      "threshold": 0.48520302639196167
+    },
+    {
+      "p": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "budget": 0.4952030263919617,
+      "value": 1.8,
+      "threshold": 0.48520302639196167
+    },
+    {
+      "p": [
+        0.1,
+        0.65,
+        0.25
+      ],
+      "budget": 0.23260151319598082,
+      "value": 1.7876845262965242,
+      "threshold": 0.24260151319598083
+    },
+    {
+      "p": [
+        0.1,
+        0.65,
+        0.25
+      ],
+      "budget": 0.25260151319598084,
+      "value": 1.8,
+      "threshold": 0.24260151319598083
+    },
+    {
+      "p": [
+        0.45,
+        0.4,
+        0.15
+      ],
+      "budget": 0.3712309493079699,
+      "value": 1.7866867806656277,
+      "threshold": 0.3812309493079699
+    },
+    {
+      "p": [
+        0.45,
+        0.4,
+        0.15
+      ],
+      "budget": 0.3912309493079699,
+      "value": 1.8,
+      "threshold": 0.3812309493079699
+    }
+  ],
+  "common_sender_trembles": [
+    {
+      "epsilon": 0.01,
+      "posterior12": [
+        0.49950248756218907,
+        0.5004975124378109,
+        0.0
+      ],
+      "posterior23": [
+        0.0,
+        0.002976190476190476,
+        0.9970238095238094
+      ]
+    },
+    {
+      "epsilon": 0.0001,
+      "posterior12": [
+        0.4999950002499875,
+        0.5000049997500126,
+        0.0
+      ],
+      "posterior23": [
+        0.0,
+        2.9997600191984638e-05,
+        0.9999700023998079
+      ]
+    },
+    {
+      "epsilon": 1e-06,
+      "posterior12": [
+        0.499999950000025,
+        0.500000049999975,
+        0.0
+      ],
+      "posterior23": [
+        0.0,
+        2.9999976000019203e-07,
+        0.99999970000024
+      ]
+    }
+  ],
+  "exact": {
+    "catalogue_jump": "99/155",
+    "catalogue_posteriors": [
+      [
+        "41/157",
+        "27/314",
+        "205/314"
+      ],
+      [
+        "3/31",
+        "41/62",
+        "15/62"
+      ]
+    ],
+    "cost_threshold_feasible_029_030_031": [
+      false,
+      true,
+      true
+    ],
+    "equilibrium_example": [
+      {
+        "delta": "-1/100",
+        "minimum_fine": "0",
+        "credible_actions_at_min": [
+          1
+        ]
+      },
+      {
+        "delta": "0",
+        "minimum_fine": "0",
+        "credible_actions_at_min": [
+          0,
+          1
+        ]
+      },
+      {
+        "delta": "1/100",
+        "minimum_fine": "101/100",
+        "credible_actions_at_min": [
+          0,
+          2
+        ]
+      }
+    ]
+  }
+}
