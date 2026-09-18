@@ -47,6 +47,22 @@ tests preservation after adding a continuation and an internal intervention targ
 This new research does not reopen closed KL experiments or supersede the frozen
 causal/strategic editions. Finite catalogues are a first setting, not the ceiling.
 
+## Disclosure boundary result — 18 September 2026
+
+The [boundary investigation](../../research/disclosure_boundaries_2026_09_18/README.md)
+now gives an exact information-only discontinuity locus for the three-state public
+certificate game, followed by a full-parameter phase criterion. A broader claim
+based only on posterior support and equilibrium existence is false: budgeted
+admission of a discrete source law supplies another mechanism. Existing parametric
+optimization provides the general continuity foundation. Optimizing a noisy gate
+removes the supplied-perfect-gate jumps in the declared family.
+
+The next bounded question is whether this removal survives a nontrivial full-support
+continuation switch. Keep one sender and three states. Lean checks the separate
+fixed-information disclosure threshold from game payoffs, with explicit support
+premises; it does not certify the global continuity theorem. No product transfer
+or expansion to networks is earned by this result.
+
 ## 1. How to read this roadmap
 
 This is a **capability roadmap, not a checklist of fields to complete**. A line may be skipped, reordered, simplified, or closed if established mathematics already settles it, a counterexample kills the proposed route, or engineering/domain work reveals a better frontier.

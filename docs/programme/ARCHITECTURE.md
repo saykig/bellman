@@ -12,6 +12,13 @@ receiving and the public independent risk audit are reported separately. The two
 stipulated examples establish computational reuse, not independently authored M4
 transfer or domain validity. No Decision Lab or Writ code was changed.
 
+The [disclosure boundary note](../../research/disclosure_boundaries_2026_09_18/manuscript/RESEARCH_NOTE.md)
+adds a mathematical reuse obligation: preserve admissible-law correspondences,
+shared continuation witnesses, support restrictions and the identity of varying
+parameters before transporting enforcement claims. A supplied-gate value and a
+joint gate/fine optimum are different queries. This bounded result adds no Decision
+Lab or Writ adapter; empirical premises and downstream need remain unverified.
+
 ## 1. System relationship
 
 Bellman, Decision Lab, and Writ have different responsibilities but are intended to converge on one interoperable mathematical substrate over time.

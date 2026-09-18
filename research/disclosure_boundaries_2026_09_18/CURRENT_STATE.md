@@ -1,20 +1,23 @@
-# Current state — boundary investigation
+# Current state — disclosure boundaries
 
-Active. The information-only theorem and exact discontinuity locus are derived
-in math/INFORMATION_THEOREM.md. Both overlapping certificates matter in distinct
-support regimes; continuation-equilibrium structure cannot independently change
-on a fixed support region in this declared game. Optimizing the gate eliminates
-the fixed-gate discontinuity on the positive-prior, κ<ln2 domain.
+Completed bounded investigation, 18 September 2026. Read the
+[research note](manuscript/RESEARCH_NOTE.md) and [audit](AUDIT.md).
 
-The second layer has a finite-phase necessary/sufficient continuity criterion,
-a general regular-region theorem, and small information-feasibility, equilibrium-
-persistence and incentive-boundary counterexamples. Numerical checks are retained.
-Novelty comparison, manuscript and full completion audit are pending.
+The information-only theorem has an exact necessary/sufficient discontinuity
+locus. Both overlapping certificates can matter. Support loss is necessary but
+not sufficient in the declared full-KL game; no independent continuation change
+occurs on its fixed-support information regions. Joint gate/fine optimization is
+continuous on the stated domain.
 
-Lean has checked the policy game through the pooling threshold, including pure
-utilities, expected payoffs, mixed deviations, credible equilibria and a Bayes
-posterior construction. Extending it to the operational coordinate and completing
-its scope audit remain in progress. No claim of formalizing the continuity theorem.
+The full-parameter layer supplies an exact phase criterion for the payoff family,
+a regular-region theorem from established optimization, and separate information-
+set, equilibrium-persistence and incentive-threshold counterexamples. The broad
+“only support or equilibrium loss” claim fails without admissible-law regularity.
 
-Only this new investigation is being committed. Earlier uncommitted research and
-coordinator-owned edits remain untouched. No branches are created.
+Numerical evidence and the Lean game-to-threshold check are complete and scoped.
+Lean covers fixed-information E12 with operations and explicit full support, not
+the global boundary classification. Novelty and empirical validity are unclaimed.
+
+Next: test whether a nontrivial full-support E23 continuation switch can survive
+joint gate optimization, keeping one sender and three states. No engineering
+transfer, networks, multiple senders or stronger refinements are authorized here.

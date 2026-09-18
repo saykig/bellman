@@ -35,6 +35,11 @@ These are specific, limited results. A calculation can be correct for a model wh
 is wrong for the situation. Testing and improving that connection is part of the research.
 We build on established mathematics and keep failures and revisions alongside successes.
 
+The latest [disclosure boundary study](research/disclosure_boundaries_2026_09_18/manuscript/RESEARCH_NOTE.md)
+identifies exactly when information changes the fine needed to sustain silence in
+a small public evidence game, and why a broader continuity claim fails. Its
+analytical proofs, numerical checks and bounded Lean proof have distinct scopes.
+
 ## Bellman, Decision Lab and Writ
 
 Bellman develops the mathematics and its limits.

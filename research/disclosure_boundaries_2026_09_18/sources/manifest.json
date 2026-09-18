@@ -1,0 +1,38 @@
+[
+  {
+    "id": "parametric-optima",
+    "url": "https://arxiv.org/pdf/2109.06299",
+    "version": "2021-09-10, arXiv v1",
+    "access_date": "2026-09-18",
+    "sha256": "f1748f441b484d7796a4716c8495413521f2599a30b487099a1a25d5344ea229",
+    "bytes": 555143,
+    "retention": "External source bytes hashed; PDF not vendored."
+  },
+  {
+    "id": "weak-institutions",
+    "url": "https://elliotlipnowski.com/wp-content/uploads/PWI.pdf",
+    "version": "author-hosted published article and appendix",
+    "access_date": "2026-09-18",
+    "sha256": "80cd8dcf57d02d1d0c7db1decbeb41e3e882abfc111b6eea240bf07f6b9f8e5a",
+    "bytes": 2591735,
+    "retention": "External source bytes hashed; PDF not vendored."
+  },
+  {
+    "id": "signaling",
+    "url": "https://drive.google.com/file/d/1tOPbqJrWtDDtZNMC5fBfp4k2UjL8kwIe/view",
+    "version": "2026-01-15",
+    "access_date": "2026-09-18",
+    "sha256": "bb60118fc0c3bfaeedf92ed7f3617d3034a127f079677dfbc3ecbf5b19437b1d",
+    "bytes": 350033,
+    "retention": "External source bytes hashed; PDF not vendored."
+  },
+  {
+    "id": "informed-ce",
+    "url": "https://drive.google.com/file/d/1LDie6EXqrksQYja4fM5eLVg2T7OGNcpn/view",
+    "version": "2026-06-02",
+    "access_date": "2026-09-18",
+    "sha256": "f36500f583538eaa65a09454cf61c934f912811cab0858faffd0b153cca3ac5d",
+    "bytes": 274535,
+    "retention": "External source bytes hashed; PDF not vendored."
+  }
+]
