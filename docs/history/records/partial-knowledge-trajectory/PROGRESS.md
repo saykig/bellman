@@ -153,3 +153,14 @@ phases and consolidate the research trajectory ledgers**.
 No mathematical claim was newly proved or revalidated in this pass. No unexecuted
 experiment was run. External source files remain outside the repository where
 previous manifests say so; hashes alone do not recover those bytes.
+
+## R07a — 18 September: activate endogenous-gate recovery research
+
+Explicit active goal, starting from `5661f9e`, following R05's open question.
+The [new bounded investigation](../../../../research/optimized_gate_recovery_2026_09_18/README.md)
+first rejects a fixed-fine continuation switch in the inherited full-information,
+fixed-support public model. A candidate fixed-payoff information-only obstruction
+uses a sender observing certificate eligibility rather than the exact state;
+the user explicitly authorized analysing both and labelling that change.
+Analytical development begun; computation and final theorem audit pending at this
+milestone. No claim of refuting strong persistence, minimality or novelty.

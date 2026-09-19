@@ -34,3 +34,10 @@ route failed; identify which premise or calculation they actually use.
 No new defect is alleged by this consolidation. The rows above summarize already
 recorded decisions and failure boundaries. External review and empirical warrant
 remain separate from these author-derived findings.
+
+## D18 — 18 September, R07a: retain the sender information partition
+
+Full support does not identify the off-path belief set. A fully informed sender
+can tilt the eligible states separately; a sender who knows only eligibility
+cannot. The new investigation separates these models and will not promote loss
+of the low-fine deterrent into a refutation of its assumed persistence.
