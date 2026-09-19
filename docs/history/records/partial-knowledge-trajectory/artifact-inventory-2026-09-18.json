@@ -1,0 +1,643 @@
+{
+  "date": "2026-09-18",
+  "baseline_commit": "ad1696142f7ecc0f1c9783678662ca9f2193aa3a",
+  "scope": "Five research phases; excludes local instructions, caches and external source bytes.",
+  "artifacts": [
+    {
+      "path": "research/clarification_2026_09_17/BRIEF.md",
+      "sha256": "05327a459bba8dc18f2841a0db2d1375da58ce63589738853c775e1dcf35c8a2",
+      "bytes": 2304,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/CANDIDATES.md",
+      "sha256": "c36548adda40d5af32bbc87a12aeba8bce242ec98f8c6eb5bd269af4e13866c5",
+      "bytes": 2653,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/CURRENT_STATE.md",
+      "sha256": "d83c1967a9f1fcf9d05414cd7d7919bc192711ca6f5584204dd5d7d91bafd3a7",
+      "bytes": 2711,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/EXPERIMENT_SPEC.md",
+      "sha256": "f357d37dbcea5d26c75f88ea87204d011748e85311ff3c2d263df86c59e80d2d",
+      "bytes": 7011,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/RECOMMENDATION.md",
+      "sha256": "708db6e0c0f5fb056c7fbee33a92b64e4325a4e262d3c9d97912264ff056ff95",
+      "bytes": 8354,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/SOURCES.md",
+      "sha256": "9af5aa6db20bbe1f0873f76f3bf9c1b490770666e7edd0f1590dbad96ce78a02",
+      "bytes": 3646,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/TRANSLATION.md",
+      "sha256": "fb53084f2f3b7e8ec158ac7bf50cc6619f26af3fad5157871e53dcbdeb586c24",
+      "bytes": 7112,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/next_experiment.py",
+      "sha256": "503552878e5d8d470f71c90a1aa53b192a8b2abe7fb9388186a61fa6c3057555",
+      "bytes": 2814,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/probe-results.json",
+      "sha256": "e03cc532c1d9e4e084737a7f4f021b95b99ee551c3a50eb01c4f08123f9c4537",
+      "bytes": 2331,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/clarification_2026_09_17/probes.py",
+      "sha256": "0888211ae08758ca6d201aa5fc2470c5ee6a01b7e7207537e05dca6dfa406e6d",
+      "bytes": 4433,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/AUDIT.md",
+      "sha256": "4e22e61fc8757e1cfcdbf2c550c2f025e2623ae4e648e7d501064f730d3accc0",
+      "bytes": 3990,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/BRIEF.md",
+      "sha256": "91fc74ce796070ebaf1f97ce7d92229e6c7ec3fc7de75b5ffb3f52a845051df6",
+      "bytes": 1638,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/CURRENT_STATE.md",
+      "sha256": "e2757fd8ca2529b8ff0da2ac69fba38b3c49f2329effc30bb222767104b9899d",
+      "bytes": 1340,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/README.md",
+      "sha256": "989765dcea8b9e5a32632c55fcc9e382ade12b7a68b24c291c4e88e8042829a3",
+      "bytes": 1371,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/REJECTED_APPROACHES.md",
+      "sha256": "c5b77b721a1e83b2a9955c2a3bf1d854e73a53212f9287ba7f6073b70d69f35c",
+      "bytes": 2068,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/RESEARCH_LOG.md",
+      "sha256": "ed11941d25b08b132263fe3ef32a22f669fa2c704a4f706ff25bb62d9e1ba105",
+      "bytes": 2004,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/experiments/README.md",
+      "sha256": "5109520a4c1d7d50727e36d57fd341a503a9d04edcc8a08ae442c39c78d87008",
+      "bytes": 1338,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/experiments/check.py",
+      "sha256": "9e4eaddae17d21b5b232579421c4d6a6cb3dc1ca081710f0329715e40667991e",
+      "bytes": 6336,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/experiments/requirements.txt",
+      "sha256": "b1a0c4b6e571a19ffd3f71d95fbb5e48203c8d9f3b9cdde86f7c3b6f9643aa95",
+      "bytes": 27,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/experiments/results.json",
+      "sha256": "e16d194565f853b75e79e00a1ec283e71888928a5e54ead0875993ffca8ebb3e",
+      "bytes": 11662,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/lean/DisclosureGame.lean",
+      "sha256": "c82df071e500fce4be20dc3a2c5df3ef24961f993ac867653a8f756340fa880a",
+      "bytes": 15611,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/lean/README.md",
+      "sha256": "39e6fc48e7a26bbbfd3e526417d56e2508cfa6c8a736b311c19f945f78c3d9ab",
+      "bytes": 4309,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/lean/result.json",
+      "sha256": "82813728233e7f5ed2b95a30173f18790122aaa632a4f178d78282d9cf278155",
+      "bytes": 1687,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/lean/verify.py",
+      "sha256": "482478b244e047feaf59e815b7a892aad1626fa1f34e699c37f74255af9e8e71",
+      "bytes": 1257,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/manuscript/RESEARCH_NOTE.md",
+      "sha256": "1473259b8833cf45af8fe9513aec2ba5ace827c5599db9e769eefa122f3e2a32",
+      "bytes": 9722,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/math/COUNTEREXAMPLES_FIRST.md",
+      "sha256": "ddb294bd65e9e645ee93b837d3a944abcc89b24cbc387de916d68d6c7359991e",
+      "bytes": 4263,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/math/FULL_BOUNDARIES.md",
+      "sha256": "c73c3f0098242a38c17b41645aa0613074dbe4a2677180d4d8a63a446573492a",
+      "bytes": 8630,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/math/INFORMATION_THEOREM.md",
+      "sha256": "5dc80c1344cb86264a44c2ed608a81c20dc4253e41dded52a98cf1f75ab31acf",
+      "bytes": 9812,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/math/MODEL_DETAILS.md",
+      "sha256": "e5549e538163526ba838d873dc121891da10511334b43da3029421b77199ddc0",
+      "bytes": 3278,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/sources/NOTES.md",
+      "sha256": "350a3a02eebd77e8cd39e4770b039672740a0ce2ca5967bdbbdf34e0248c5ab9",
+      "bytes": 3630,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/disclosure_boundaries_2026_09_18/sources/manifest.json",
+      "sha256": "2e785599004f4c57b284c5e623e84649de6ea27954ef243c1c2ab20e18de1125",
+      "bytes": 1408,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/BRIEF.md",
+      "sha256": "7c257e2e0a9d5bd6465ffcc3ccacb7a52b1aa4b3bbadc14548b11611711b249c",
+      "bytes": 2385,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/COMPARISON.md",
+      "sha256": "cc9771b1bfa1fd04408c70fc8927b24a19f1697bc3130aba60297bda7998319e",
+      "bytes": 4237,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/CURRENT_STATE.md",
+      "sha256": "b95384c5ed15359504484822226ff1e5d822e862cd936582fcd5312873c35828",
+      "bytes": 2590,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/NORTH_STAR.md",
+      "sha256": "049c9c85416ccf404836ff5b36a0b0851fc64d515cd3cb4bac07b435b59e70da",
+      "bytes": 5350,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/foundations/README.md",
+      "sha256": "6e45f2c7e0496a4c06ce0925d4233d5196f5179c4f4343449fdce6c3fcdaa32d",
+      "bytes": 991,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/REJECTED.md",
+      "sha256": "a05fe0b8a781d5b30d623e99ab50e8c8902259e0f3e03af581239c4c9c2a91ac",
+      "bytes": 2157,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/experiments/README.md",
+      "sha256": "733ad616685398dfdb173dc196d48771a5ae3561cbe95008e517ffc3674d348c",
+      "bytes": 2085,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/experiments/checks.py",
+      "sha256": "11a4945a1f2ee5c55fd59ebc5e8ad5b9bd9236859e029278dd9aaebe873f7711",
+      "bytes": 10174,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/experiments/results-v1.json",
+      "sha256": "8b952674fea274260a11a63e0260225489228e4ac6cc4a3912d85e7e75c1e333",
+      "bytes": 2093,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/experiments/signature-results-v1.json",
+      "sha256": "be70836fbcc4a8f42a99a3c4eac459b313b8a3b9032bdc82ef7e50cc8ba8abd5",
+      "bytes": 3054,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/experiments/signature_probe.py",
+      "sha256": "663d3ac0400d668d11b93c9d572777c976956b0ad308279c2c58b891b210a0c0",
+      "bytes": 3415,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/history/2026-09-17-initial-audit.md",
+      "sha256": "9a912d250a1f3dfbbbb5b6bf1f39291208a47e6244facf7e3aefc8fbe92504f2",
+      "bytes": 1099,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/history/2026-09-17-repository-inspection.md",
+      "sha256": "a90c71740db377b0842edc958bcf169a8db5d9ebe61e0b4384a79ba386dd166c",
+      "bytes": 2096,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/history/RESEARCH_LOG.md",
+      "sha256": "f7e1cb0d1d484c1dc0bd59dd97873a564587ba9774e71d4ffb223312a4edfbdb",
+      "bytes": 1810,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/history/SELF_REVIEW.md",
+      "sha256": "fb1708ab4739ba1d8d4056d93d040780ed8f82cc3ca623934a464bf046e6f86e",
+      "bytes": 1794,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/lean/Compatibility.lean",
+      "sha256": "ec0e68a23aa457469c6fb697427bdf2b3e338a06ab863cfe3f4f73ac5fac2c92",
+      "bytes": 3369,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/lean/README.md",
+      "sha256": "005bcaebd7a487364de7b79955cd49f03f10ec2e1ca411743de3214a741968a2",
+      "bytes": 1795,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/lean/evaluation-v1.json",
+      "sha256": "881d650ca29f62d1c92a46447c7de6f840801976e543b3ece4ec20897d573c04",
+      "bytes": 840,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/lean/lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/manuscript/RESEARCH_NOTE.md",
+      "sha256": "b37594aa1ba1941d1a03eaa29a8c6e9276d100e4bd272f92bdca4d75e0884d2a",
+      "bytes": 11217,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/math/DEVELOPMENT.md",
+      "sha256": "e7cac6802d2b95f2834196fc463ea506a4ffa4b42bac156316cd5420969a00a7",
+      "bytes": 14320,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/math/SIGNATURE_ADDENDUM.md",
+      "sha256": "036fd5ebe61f556e41aa1ab9c0842bbc007b083779bb9e201b46d651a81a43bc",
+      "bytes": 3705,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/sources/NOTES.md",
+      "sha256": "dbde9af4414b04aa2dc7ae9589a29e97bbb36a82311fbefb4f7d8d30a5069abc",
+      "bytes": 5029,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/sources/PRIOR_WORK_ADDENDUM.md",
+      "sha256": "c14b5afade7e7db99023b0774ed4a33d0f9daca93f24636392949f229c63aa84",
+      "bytes": 3484,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/foundations/sources/initial-map.md",
+      "sha256": "682a756beafe00e937383b1533b49a75897425b43e789fd24e0afe0fd13999f4",
+      "bytes": 1504,
+      "standing": "tracked at ad16961; inventory uses committed bytes"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/BRIEF.md",
+      "sha256": "1a69cbf2a7a62a822623d64036f8eec9e7a733465b954a45756dfb88e25cb23d",
+      "bytes": 2462,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/COMPLETION_AUDIT.md",
+      "sha256": "6bacdd7f8aa032e1f7567af510a00889ab57de1291db37c72df4b4e243d9597a",
+      "bytes": 4290,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/CURRENT_STATE.md",
+      "sha256": "eb938c9d661eac5260050275ace167dc5beba16e52e092e1d7056c9583c11659",
+      "bytes": 2467,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/README.md",
+      "sha256": "3ad3ef667caee24094d38736441f63b3512a07313a94efb6c018ffb5fc446eca",
+      "bytes": 1024,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/REJECTED.md",
+      "sha256": "387c3d192293e1ca4b626857ae25748ce5d92bb78d6e036c8a2e43517683e932",
+      "bytes": 3078,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/RESEARCH_LOG.md",
+      "sha256": "f0d725a9a38d85acc30b7f7cd6327c0e24c9dccff423d01821b3e2ee0426ac9a",
+      "bytes": 2677,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/README.md",
+      "sha256": "42627f325daf38cfa297919b09c1972ed6fc844dc729a8dd1e79add1b45f9917",
+      "bytes": 3768,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/check.py",
+      "sha256": "79ae0390a49879ca9669d7c5dbaf866f53fae621230cf00d691d6d374a2064fd",
+      "bytes": 6682,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/disclosure_exact.py",
+      "sha256": "f91be0740ecd4ff6954c78f119984d5ef49479b1746893a11edf96b0218925d1",
+      "bytes": 1555,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/disclosure_results.json",
+      "sha256": "fb284d59b669cc1d2771c6f2dfac464dc27aac9c419de9ce78f7a28fc77bb547",
+      "bytes": 342,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/frontier.py",
+      "sha256": "9eafd5ba0930131f45e4e64d2f636457adc14fd492479d7199547b57e58f2ca1",
+      "bytes": 2301,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/hidden_results.json",
+      "sha256": "bcb9f3d52a8e1cd8457fe9c013563245d914c9c4feba61160943bcdb2c027d8b",
+      "bytes": 4728,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/hidden_separator.py",
+      "sha256": "1144fe2286edd2fa236601034862544b5a4215642f7a6ebc9d63abdfd4d1c80e",
+      "bytes": 4738,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/requirements.txt",
+      "sha256": "b1a0c4b6e571a19ffd3f71d95fbb5e48203c8d9f3b9cdde86f7c3b6f9643aa95",
+      "bytes": 27,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/results.json",
+      "sha256": "9b63267a4090a4de356f0ceb2e20fbdb4ff9c3a9459be32080c33b8b498caf9d",
+      "bytes": 10797,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/tree_identity.py",
+      "sha256": "f42371cd6586d1dabf6fff5b2c40af8c176b19c0f758010b04e56f0c22b712f9",
+      "bytes": 2243,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/experiments/tree_results.json",
+      "sha256": "dad9902b7e5fe301e00fa081a082b307c6498bd01b27deefc53bafd26387eb6e",
+      "bytes": 475,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/lean/CompositionCore.lean",
+      "sha256": "48142ee8c4a65277057f2516b87a488866ec32603ebd98f974b03cbd1bc3318e",
+      "bytes": 2218,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/lean/README.md",
+      "sha256": "f73ef5a24bb74727d2b4cedc5ee6d9b53d92bb842764b189f7e6c908e0d947ad",
+      "bytes": 2175,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/lean/lakefile.toml",
+      "sha256": "10903a2ed5ae63f88497cfe2c992ff5be939e385e5e7be24bbf4cc43b5f53239",
+      "bytes": 198,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/lean/lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/lean/receipt.json",
+      "sha256": "af2a32ef268c55abd1e3620cac0b80aa44360f04a6f7a38f1d34fe22d82a44e6",
+      "bytes": 748,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/lean/verify.py",
+      "sha256": "c940a471985126673307a7e9ce085178c0e64b7d0c7fe550ba7494b72c33b71d",
+      "bytes": 1230,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/manuscript/RESEARCH_NOTE.md",
+      "sha256": "c05f8426083f977a97841c691857b38b8227bce6ede1969211f926e4eb4cdc31",
+      "bytes": 16499,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/math/BINARY_FRONTIER.md",
+      "sha256": "fed1554b3178827ce451e94e80005037f8a3f29790be44d7fa3ef87d3c9c8b85",
+      "bytes": 7648,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/math/COMPOSITION.md",
+      "sha256": "5361e7323fbc1542ffb1542be492c8d622bf7d3d13334f1095884b1c038d4baa",
+      "bytes": 12085,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/math/DISCLOSURE.md",
+      "sha256": "886343b8e62a05a6245e9666bd104fbdac993284dbe4e6ddf977db0cb1035397",
+      "bytes": 12651,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/sources/INPUT_MANIFEST.json",
+      "sha256": "532d5077c6930df4f27778a0437317dd083990d15dfe613d199984c80971b1bd",
+      "bytes": 1332,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/information_incentives_2026_09_18/sources/NOTES.md",
+      "sha256": "143d880ee81e46def11476974e85422a4f9b7df12d57a7286a5e561c17af8fb2",
+      "bytes": 7643,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/BRIEF.md",
+      "sha256": "289c3ad08392c2975999c68649235e9edf81a23582e265c3ddaf07c020a27ba1",
+      "bytes": 1735,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/COMPLETION_AUDIT.md",
+      "sha256": "eb6de574cf424938d43269999b65630f41eea8b9e7223a918ba1e9e8ae882db5",
+      "bytes": 2126,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/CURRENT_STATE.md",
+      "sha256": "8bf42d56dbfa4252190ae0db272bf9de4b6e16f3c5e23ac5ce76f17ff959fa04",
+      "bytes": 2754,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/README.md",
+      "sha256": "5158eaea4ae058b7d62e6f5c57559c6cde9f3240d6de3e2301135ec089290a84",
+      "bytes": 1283,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/REJECTED.md",
+      "sha256": "97d2eb0a5f60ccb08c94dadd8ec2c4d5a10e4dae80e23e8fc56ea388f1c99f7b",
+      "bytes": 2250,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/RESEARCH_LOG.md",
+      "sha256": "f20dc0aba0f042addc6e22bab55c2f1219c5e3b6c749b8980ebcbfa4ed9b7909",
+      "bytes": 2386,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/SELF_REVIEW.md",
+      "sha256": "45627b37d9a688b31e71c31fb5e0d7f68b5f919d949678f8903af3e923e63999",
+      "bytes": 2311,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/experiments/README.md",
+      "sha256": "2ca9f55f6c403357caffa296c25479868e08c9934c99d153c5f2e588512707ab",
+      "bytes": 2306,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/experiments/check.py",
+      "sha256": "8756388b47b3f38ef63939f0ece2f30aadd78fc4a9c4900cd19163031f619620",
+      "bytes": 10136,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/experiments/requirements.txt",
+      "sha256": "b1a0c4b6e571a19ffd3f71d95fbb5e48203c8d9f3b9cdde86f7c3b6f9643aa95",
+      "bytes": 27,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/experiments/results.json",
+      "sha256": "cbd705ed4139330a2148ff11ac535f197544d5af39527514fe1ae8f5acaec396",
+      "bytes": 17300,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/lean/JointFeasibility.lean",
+      "sha256": "6714cafc2a21d7248ce552b09cb84792d82a7d2353a9f6a7f7cc50ec83b69fa2",
+      "bytes": 3021,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/lean/README.md",
+      "sha256": "ac762c65c46261ba8ce79e66dabfa03f233bbb413afbe2efd467ac91b2d30ac1",
+      "bytes": 1470,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/lean/receipt.json",
+      "sha256": "126ea0196d1b1c1c33d5f6dbae6a1364f1642e12a49a8ecdbf40178c4a4a6ca1",
+      "bytes": 900,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/lean/verify.py",
+      "sha256": "5c2b300c42b48cc00add918fc37c0afa9381e3b249c1085b5e52d97030d8c78b",
+      "bytes": 1261,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/manuscript/RESEARCH_NOTE.md",
+      "sha256": "0994b59a2a63f40f9657af2b1d6772d79917b35c09ed93faf82d6073cff21022",
+      "bytes": 12045,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/math/COMPOSITION.md",
+      "sha256": "173ce31dbe890756d6072b146566aa8c69793366c83be186f71cb7782de52500",
+      "bytes": 8256,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/math/FRONTIER.md",
+      "sha256": "8aa89fce5095cb52d2222e872ca714dd38f69e2d470003491a93283ce37688c8",
+      "bytes": 11182,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/math/PROFILES.md",
+      "sha256": "5ddc369f631316480493aaaf07ba89c1a363ebafe973a54466d4c924a1bfb34f",
+      "bytes": 5580,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/sources/AUDIT.md",
+      "sha256": "9076a94186a78af0fd0d0fba05e464f9e6f0f88c0b91bb2bc38d1cda676299f7",
+      "bytes": 6906,
+      "standing": "first preserved in R06; previously untracked"
+    },
+    {
+      "path": "research/partial_certificate_frontier_2026_09_18/sources/MANIFEST.json",
+      "sha256": "506b232dc3216808c348ba8f460f01565bbfefa29d493328f838be5cb8bd9e68",
+      "bytes": 2779,
+      "standing": "first preserved in R06; previously untracked"
+    }
+  ]
+}

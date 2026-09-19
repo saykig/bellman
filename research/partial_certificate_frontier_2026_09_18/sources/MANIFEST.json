@@ -1,0 +1,67 @@
+{
+  "retrieved": "2026-09-18",
+  "primary_pdfs": [
+    {
+      "id": "ice",
+      "url": "https://drive.google.com/file/d/1LDie6EXqrksQYja4fM5eLVg2T7OGNcpn/view",
+      "edition": "Koessler\u2013Skreta, 2 June 2026",
+      "bytes": 274535,
+      "sha256": "f36500f583538eaa65a09454cf61c934f912811cab0858faffd0b153cca3ac5d",
+      "full_pdf_retained_in_repository": false
+    },
+    {
+      "id": "signaling",
+      "url": "https://drive.google.com/file/d/1tOPbqJrWtDDtZNMC5fBfp4k2UjL8kwIe/view",
+      "edition": "Koessler\u2013Laclau\u2013Tomala, 15 January 2026",
+      "bytes": 350033,
+      "sha256": "bb60118fc0c3bfaeedf92ed7f3617d3034a127f079677dfbc3ecbf5b19437b1d",
+      "full_pdf_retained_in_repository": false
+    },
+    {
+      "id": "setopt",
+      "url": "https://arxiv.org/pdf/1404.5928",
+      "edition": "Hamel et al., arXiv v2 / 5 May 2014 header",
+      "bytes": 721152,
+      "sha256": "8498c043f35ac9b4484b87b7e4b5bac5d78d74e9db2fea7741bf8efb704495de",
+      "full_pdf_retained_in_repository": false
+    },
+    {
+      "id": "boydslides",
+      "url": "https://stanford.edu/~boyd/cvxbook/bv_cvxslides.pdf",
+      "edition": "Boyd\u2013Vandenberghe slides, retrieved 18 September 2026",
+      "bytes": 2594443,
+      "sha256": "a9962e442f0adcad41db5d5467c6f1a61d343e0e6883d3cbf33b8254d565b3aa",
+      "full_pdf_retained_in_repository": false
+    }
+  ],
+  "web_only_primary": {
+    "url": "https://cora.ucc.ie/bitstreams/f41f5bb0-d690-4690-89a4-a9164f4cc832/download",
+    "description": "Kohlas\u2013Wilson accepted manuscript; read web PDF extraction, local retrieval returned HTML; no byte hash claimed"
+  },
+  "inherited_inputs": [
+    {
+      "repository_path": "research/information_incentives_2026_09_18/BRIEF.md",
+      "sha256": "1a69cbf2a7a62a822623d64036f8eec9e7a733465b954a45756dfb88e25cb23d"
+    },
+    {
+      "repository_path": "research/information_incentives_2026_09_18/math/COMPOSITION.md",
+      "sha256": "5361e7323fbc1542ffb1542be492c8d622bf7d3d13334f1095884b1c038d4baa"
+    },
+    {
+      "repository_path": "research/information_incentives_2026_09_18/math/BINARY_FRONTIER.md",
+      "sha256": "fed1554b3178827ce451e94e80005037f8a3f29790be44d7fa3ef87d3c9c8b85"
+    },
+    {
+      "repository_path": "research/information_incentives_2026_09_18/math/DISCLOSURE.md",
+      "sha256": "886343b8e62a05a6245e9666bd104fbdac993284dbe4e6ddf977db0cb1035397"
+    },
+    {
+      "repository_path": "research/information_incentives_2026_09_18/sources/INPUT_MANIFEST.json",
+      "sha256": "532d5077c6930df4f27778a0437317dd083990d15dfe613d199984c80971b1bd"
+    },
+    {
+      "repository_path": "research/information_incentives_2026_09_18/lean/receipt.json",
+      "sha256": "af2a32ef268c55abd1e3620cac0b80aa44360f04a6f7a38f1d34fe22d82a44e6"
+    }
+  ]
+}

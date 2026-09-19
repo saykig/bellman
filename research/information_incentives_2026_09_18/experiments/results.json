@@ -1,0 +1,548 @@
+{
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+  },
+  "three_representations": [
+    {
+      "kappa": 0.2,
+      "gamma": 0.8,
+      "full_penalty": 0.08042888248951655,
+      "profile_penalty": 0.08042888248951655,
+      "box_penalty": 0.32485021343788234,
+      "box_extreme_cost": 0.4,
+      "witness": {
+        "u": 0.239663865789712,
+        "v": 0.5457981702118242,
+        "cells": [
+          0.08673321194723599,
+          0.163266788052764,
+          0.163266788052764,
+          0.08673321194723599,
+          0.22318275450019204,
+          0.026817245499807976,
+          0.026817245499807976,
+          0.22318275450019204
+        ],
+        "cost": 0.2000000000000095
+      },
+      "support_primal": 0.6752680515559721,
+      "support_upper": 0.6752680515559586,
+      "direct": {
+        "value": 0.6752680515559585,
+        "kl": 0.19999999999999998,
+        "marginal_error": 2.7755575615628914e-17,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    {
+      "kappa": 0.2,
+      "gamma": 1.0,
+      "full_penalty": 0.45532470588221374,
+      "profile_penalty": 0.45532470588221374,
+      "box_penalty": 0.6560627667973529,
+      "box_extreme_cost": 0.4,
+      "witness": {
+        "u": 0.31829191797919554,
+        "v": 0.4960533069822275,
+        "cells": [
+          0.10277982637462102,
+          0.14722017362537898,
+          0.14722017362537898,
+          0.10277982637462102,
+          0.2267931531201779,
+          0.02320684687982212,
+          0.02320684687982212,
+          0.2267931531201779
+        ],
+        "cost": 0.19999999999999718
+      },
+      "support_primal": 0.7276623529411067,
+      "support_upper": 0.727662352941111,
+      "direct": {
+        "value": 0.7276623529411226,
+        "kl": 0.20000000000000775,
+        "marginal_error": 0.0,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    {
+      "kappa": 0.3,
+      "gamma": 0.6828706166572557,
+      "full_penalty": 0.09017922558301165,
+      "profile_penalty": 0.09017922558301165,
+      "box_penalty": 0.31451659025454903,
+      "box_extreme_cost": 0.5999999999999999,
+      "witness": {
+        "u": 0.24428692060483612,
+        "v": 0.6650743736382283,
+        "cells": [
+          0.07240156837082598,
+          0.17759843162917402,
+          0.17759843162917402,
+          0.07240156837082598,
+          0.23867016178038306,
+          0.011329838219616944,
+          0.011329838219616944,
+          0.23867016178038306
+        ],
+        "cost": 0.30000000000000226
+      },
+      "support_primal": 0.7982326366007477,
+      "support_upper": 0.7982326366007455,
+      "direct": {
+        "value": 0.7982326366007457,
+        "kl": 0.30000000000000016,
+        "marginal_error": 0.0,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    }
+  ],
+  "active_design": {
+    "full_gamma": 0.6828706166572557,
+    "full_penalty": 0.09017922558301165,
+    "box_gamma": 0.9543485511506372,
+    "box_penalty": 0.8371078982924858,
+    "quality_floor": 0.6,
+    "voluntary_costless_penalty": 1.0
+  },
+  "payoff_enumeration": {
+    "player_cases": 600,
+    "maximum_error": 1.1796119636642288e-16,
+    "seed": 20260918
+  },
+  "expected_joint_counterexample": {
+    "kappa": 0.36806420716849714,
+    "gamma": 0.7,
+    "penalty": 0.0,
+    "exact_joint": 0.05999999999999994,
+    "separate_sum": 0.08799999999999997,
+    "branches": [
+      {
+        "branch": [
+          0,
+          0
+        ],
+        "value": 0.0,
+        "u": 0.0,
+        "v": 0.0,
+        "upper": 0.0,
+        "beta": 0.0,
+        "coeff": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "branch": [
+          0,
+          1
+        ],
+        "value": 0.028000000000000025,
+        "u": 0.7999999999999999,
+        "v": 0.0,
+        "upper": 0.02800000000000008,
+        "beta": 2.0534809133983356,
+        "coeff": [
+          -0.39999999999999997,
+          0.535,
+          0.0
+        ]
+      },
+      {
+        "branch": [
+          1,
+          0
+        ],
+        "value": 0.047488101469395416,
+        "u": 0.20202940605649283,
+        "v": 0.7489513011700262,
+        "upper": 0.04748810146939553,
+        "beta": 3.5084509535476296,
+        "coeff": [
+          -0.25,
+          0.175,
+          0.35
+        ]
+      },
+      {
+        "branch": [
+          1,
+          1
+        ],
+        "value": -0.04752686479331292,
+        "u": 0.7504242708847064,
+        "v": 0.1990625796529869,
+        "upper": -0.04752686479331181,
+        "beta": 1.7231546111213527,
+        "coeff": [
+          -0.6499999999999999,
+          0.71,
+          0.35
+        ]
+      },
+      {
+        "branch": [
+          2,
+          0
+        ],
+        "value": 0.05999999999999994,
+        "u": 0.0,
+        "v": 0.8,
+        "upper": 0.06000000000000005,
+        "beta": 1.5694461266687283,
+        "coeff": [
+          -0.5,
+          0.0,
+          0.7
+        ]
+      },
+      {
+        "branch": [
+          2,
+          1
+        ],
+        "value": -0.2571247010963683,
+        "u": 0.316356002711065,
+        "v": 0.6766069106474455,
+        "upper": -0.2571247010963684,
+        "beta": 2.2859042333620434,
+        "coeff": [
+          -0.8999999999999999,
+          0.535,
+          0.7
+        ]
+      }
+    ]
+  },
+  "six_branch_direct_optimizations": [
+    {
+      "branch": [
+        0,
+        0
+      ],
+      "difference": 0.0,
+      "value": 0.0,
+      "kl": 0.0,
+      "marginal_error": 0.0,
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "branch": [
+        0,
+        1
+      ],
+      "difference": -5.4012350148013866e-14,
+      "value": 0.428000000000054,
+      "kl": 0.3680642071686089,
+      "marginal_error": 0.0,
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "branch": [
+        1,
+        0
+      ],
+      "difference": -5.551115123125783e-17,
+      "value": 0.29748810146939547,
+      "kl": 0.36806420716849714,
+      "marginal_error": 0.0,
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "branch": [
+        1,
+        1
+      ],
+      "difference": -1.1102230246251565e-15,
+      "value": 0.6024731352066881,
+      "kl": 0.3680642071684973,
+      "marginal_error": 0.0,
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "branch": [
+        2,
+        0
+      ],
+      "difference": -3.3306690738754696e-16,
+      "value": 0.5600000000000003,
+      "kl": 0.3680642071684975,
+      "marginal_error": 2.7755575615628914e-17,
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "branch": [
+        2,
+        1
+      ],
+      "difference": -1.887379141862766e-15,
+      "value": 0.6428752989036335,
+      "kl": 0.36806420716850174,
+      "marginal_error": 2.7755575615628914e-17,
+      "success": true,
+      "message": "Optimization terminated successfully"
+    }
+  ],
+  "exact_local_bound_counterexample": {
+    "kappa": 0.06540601797056848,
+    "full_penalty": 0.09509995107760143,
+    "box_penalty": 0.30000000000000004,
+    "analytic_lower": "1/30",
+    "analytic_box": "3/10",
+    "feasible_witness_cost": 0.056633012265132454,
+    "box_extreme_cost": 0.13081203594113697
+  },
+  "disclosure_continuations": [
+    {
+      "e": 0.0,
+      "theta": -1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 0.0,
+      "theta": -1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 0.0,
+      "theta": 1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 0.0,
+      "theta": 1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 0.090179225583,
+      "theta": -1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 0.090179225583,
+      "theta": -1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 0.090179225583,
+      "theta": 1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 0.090179225583,
+      "theta": 1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 0.5,
+      "theta": -1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 0.5,
+      "theta": -1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 0.5,
+      "theta": 1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 0.5,
+      "theta": 1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 1.0,
+      "theta": -1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 1.0,
+      "theta": -1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 1.0,
+      "theta": 1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 1.0,
+      "theta": 1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 1.1,
+      "theta": -1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 1.1,
+      "theta": -1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "e": 1.1,
+      "theta": 1,
+      "R": -1,
+      "policy_equilibria": [
+        [
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "e": 1.1,
+      "theta": 1,
+      "R": 1,
+      "policy_equilibria": [
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "check.py": "79ae0390a49879ca9669d7c5dbaf866f53fae621230cf00d691d6d374a2064fd",
+    "frontier.py": "9eafd5ba0930131f45e4e64d2f636457adc14fd492479d7199547b57e58f2ca1"
+  }
+}

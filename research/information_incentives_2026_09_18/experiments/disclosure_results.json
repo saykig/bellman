@@ -1,0 +1,12 @@
+{
+  "threshold": "3/10",
+  "mixture_A": "1/2",
+  "pooling_payoff": "1/5",
+  "individual_minimum_payoffs": [
+    "0",
+    "0"
+  ],
+  "joint_payoff_vectors": "(q,1-q), 0 <= q <= 1",
+  "infeasibility_certificate": "sum both IC inequalities: 1 - 2k <= 2/5",
+  "source_sha256": "f91be0740ecd4ff6954c78f119984d5ef49479b1746893a11edf96b0218925d1"
+}

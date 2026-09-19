@@ -1,5 +1,7 @@
 # Bellman research history
 
+For the trajectory begun September 17, use the [central partial-knowledge research ledgers](records/partial-knowledge-trajectory/README.md): progress, decisions, recovery links and exact artifact inventory.
+
 [GitHub Releases](https://github.com/saykig/bellman/releases) are the preferred human-readable
 timeline of Bellman's meaningful research-state transitions. The `v0.0.1`–`v0.0.6` releases are
 pre-0.1 research checkpoints and are marked prerelease; they are not software compatibility

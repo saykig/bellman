@@ -1,0 +1,19 @@
+{
+  "cases": 50,
+  "seed": 9182026,
+  "alphabet": [
+    2,
+    3,
+    3
+  ],
+  "max_identity_error": 1.5959455978986625e-16,
+  "first_witness": {
+    "full_KL": 0.0805384026030451,
+    "projected_KL": 0.05994803220516436,
+    "discarded_KL": 0.020590370397880777,
+    "identity_error": 4.85722573273506e-17
+  },
+  "original_clique_KL": 0,
+  "all_cases_have_positive_discarded_KL": true,
+  "source_sha256": "f42371cd6586d1dabf6fff5b2c40af8c176b19c0f758010b04e56f0c22b712f9"
+}

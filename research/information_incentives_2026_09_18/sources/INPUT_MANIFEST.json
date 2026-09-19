@@ -1,0 +1,40 @@
+{
+  "status": "Read-only supplied artifacts; hashes identify original bytes. No original was edited.",
+  "files": {
+    "binary_note": {
+      "filename": "technical_note.md",
+      "bytes": 19745,
+      "sha256": "3c94873974cc32998e5113bd7e53ff65823718ba90733b63eea1961664d5e8e9"
+    },
+    "binary_frontier_program": {
+      "filename": "frontier.py",
+      "bytes": 9539,
+      "sha256": "d20ab482fba70bd3163dbaeaa7156036c19dbed941b1e0c7a0b8cbd9b361710a"
+    },
+    "active_program": {
+      "filename": "active_components.py",
+      "bytes": 2716,
+      "sha256": "d0b14af1684c49a36bba96e22f7fb980c13fc9f0674d478ebe9e95259c19a1b4"
+    },
+    "access_note": {
+      "filename": "pasted-text.txt",
+      "bytes": 28485,
+      "sha256": "c743729f806512def60cdc7b90f3ca5293d3a7f1f40b6549b661a73c9196ed4b"
+    },
+    "audit_note": {
+      "filename": "RESEARCH_AUDIT.md",
+      "bytes": 22589,
+      "sha256": "062d2279f59ed4fa11174fafd5650c38ff5293d8e1f9b6b1fcc84a3642c84df5"
+    },
+    "audit_results": {
+      "filename": "audit_results.json",
+      "bytes": 4534,
+      "sha256": "c30d8b5e3b8897d0e1206360accb19a0d97ec3503e5cb81ef9281b35973a6a62"
+    },
+    "audit_lean": {
+      "filename": "VerifiedCore.lean",
+      "bytes": 8808,
+      "sha256": "9b99d5ae7f57f2783f97fb98d47c527673d3f73f501003dd5078d8f11d4402ad"
+    }
+  }
+}

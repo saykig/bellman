@@ -19,6 +19,9 @@ the decisions that come next?** Two histories can suggest the same action today 
 different implications for tomorrow. We want to know when simplifying them is safe—and when
 it changes the conclusion.
 
+The [research trajectory ledgers](docs/history/records/partial-knowledge-trajectory/README.md)
+collect progress, rejected approaches and recovery links for the work begun September 17.
+
 ## What we're working on
 
 The repository brings together mathematical proofs, reproducible checks and early empirical

@@ -1,0 +1,158 @@
+{
+  "results": {
+    "interface_access": {
+      "distinguished_by_internal_do": 20,
+      "distinguished_by_output_only_postprocessing": 0,
+      "same_external_pairs": 32,
+      "witness_do_Y1": [
+        0,
+        1
+      ]
+    },
+    "joint_new_consequence": {
+      "neither_alone_entails_do_Y1_Z1": true,
+      "together_entail": true
+    },
+    "repeated_event": {
+      "constraint_repetition_idempotent": true,
+      "incorrect_independent_copy": "9/10",
+      "posterior_once": "3/4"
+    },
+    "revision": {
+      "before": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "empty_family_not_certified": true,
+      "minimal_supports_do_Y1_Z1": [
+        [
+          "a0",
+          "coupled"
+        ],
+        [
+          "coupled",
+          "other_a0"
+        ]
+      ],
+      "replace_L_flip1": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "withdraw_a0": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "withdrawal_collision": {
+      "first_after": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "same_before": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "second_after": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "source_sha256": "0888211ae08758ca6d201aa5fc2470c5ee6a01b7e7207537e05dca6dfa406e6d"
+}
