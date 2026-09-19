@@ -57,11 +57,22 @@ admission of a discrete source law supplies another mechanism. Existing parametr
 optimization provides the general continuity foundation. Optimizing a noisy gate
 removes the supplied-perfect-gate jumps in the declared family.
 
-The next bounded question is whether this removal survives a nontrivial full-support
-continuation switch. Keep one sender and three states. Lean checks the separate
-fixed-information disclosure threshold from game payoffs, with explicit support
-premises; it does not certify the global continuity theorem. No product transfer
-or expansion to networks is earned by this result.
+The subsequent [gate-recovery study](../../research/optimized_gate_recovery_2026_09_18/README.md)
+closes that bounded question with an exact fixed-payoff, fixed-prior counterexample
+and a sharp recovery boundary. With a sender who observes eligibility rather than
+the exact state, sequentially consistent beliefs give V(0)=0 and V(t)=1+t/2 for
+t>0 despite full relative support and optimized noisy gates. The low-fine deterrent
+is lost; strong near-optimal persistence is not refuted. Full state knowledge
+restores the relevant belief freedom, and a one-receiver uniform-fine theorem
+proves smoothing under continuous compact information/design sets. General
+continuity is established uniform recovery mathematics, not a new frontier theorem.
+
+The redirect is to preserve and test the sender information partition, equilibrium
+consistency rule and common-design recovery whenever applying these results. More
+numerical frontiers, networks and additional senders are not justified by this
+question. The preceding Lean proof still covers only its fixed-information
+threshold; neither these new analytical results nor the global boundary are Lean
+verified. No product transfer is earned.
 
 ## 1. How to read this roadmap
 

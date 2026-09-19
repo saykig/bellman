@@ -43,6 +43,11 @@ identifies exactly when information changes the fine needed to sustain silence i
 a small public evidence game, and why a broader continuity claim fails. Its
 analytical proofs, numerical checks and bounded Lean proof have distinct scopes.
 
+The subsequent [gate-recovery result](research/optimized_gate_recovery_2026_09_18/manuscript/RESEARCH_NOTE.md)
+shows why choosing a noisy gate alone cannot ensure continuity. A small exact
+counterexample and recovery theorems separate full state knowledge from knowledge
+of certificate eligibility, and equilibrium existence from near-optimal recovery.
+
 ## Bellman, Decision Lab and Writ
 
 Bellman develops the mathematics and its limits.

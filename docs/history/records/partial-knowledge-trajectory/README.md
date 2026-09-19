@@ -35,3 +35,10 @@ These ledgers summarize evidence; original mathematical records remain authorita
 No new research is authorized merely by listing a next question here. Historical
 “uncommitted” or temporary “do not commit” statements describe their original runs;
 the later user instruction authorizes this preservation and regular commits.
+
+## Latest bounded result — 18 September 2026
+
+R07 adds [endogenous gate recovery](../../../../research/optimized_gate_recovery_2026_09_18/README.md):
+a fixed-payoff optimized jump for an eligibility-informed sender, a full-information
+smoothing theorem, and the exact uniform recovery boundary. Its mathematical
+edition is `e2daee7`; see R07a–R07c for assumptions, checks and completion.

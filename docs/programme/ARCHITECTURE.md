@@ -19,6 +19,14 @@ parameters before transporting enforcement claims. A supplied-gate value and a
 joint gate/fine optimum are different queries. This bounded result adds no Decision
 Lab or Writ adapter; empirical premises and downstream need remain unverified.
 
+The [optimized-gate recovery boundary](../../research/optimized_gate_recovery_2026_09_18/README.md)
+adds the sender's state-to-information-type map and the equilibrium consistency
+rule to that retained interface. Identical posterior support does not imply
+identical attainable certificate beliefs. Uniform recovery concerns one common
+gate/fine design across all nearby laws; surviving high-fine equilibria are not a
+continuity certificate. The result is an analytical bounded reference with exact
+arithmetic checks, no formal-verification claim and no new engineering adapter.
+
 ## 1. System relationship
 
 Bellman, Decision Lab, and Writ have different responsibilities but are intended to converge on one interoperable mathematical substrate over time.

@@ -1,18 +1,24 @@
-# Current state — proved and checked; final audit pending
+# Current standing — completed bounded result
 
-18 September 2026. Baseline main 5661f9e; activation milestone a3bb951.
+18 September 2026. Activation a3bb951; mathematical/evidence edition e2daee7.
 
-* C3: analytical optimized-discontinuity witness, fixed utilities, costs AND prior,
-  continuous interval source family, compact informative noisy gate menu. V(0)=0;
-  V(t)=1+t/2 for 0<t<=1/4. Coarse sender information and sequential consistency
-  are explicit; this is not a refutation of strong near-optimal persistence.
-* F1: full-information fixed-fine continuation invariance. F2: primitive smoothing
-  theorem for one receiver with uniform non-target fines and continuous compact
-  information/design sets.
-* R1–R3: closedness, exact uniform value-recovery criterion, and strict-branch
-  sufficient conditions. Established optimization, not claimed novel.
-* Exact original-cell receiver: 2,025 rational law/gate checks; two model controls;
-  wrong-value and stale-identity packets rejected. Normal/optimized runs agree.
+**Delivered:** sharp boundary theorem with exact small counterexample. C3 proves
+V(0)=0 and V(t)=1+t/2 for t>0 with fixed utilities, costs and prior. F1/F2 separate
+fully informed sender invariance and primitive one-receiver smoothing. R1–R3
+establish the compact recovery boundary and uniform strict-branch sufficiency.
 
-No formal proof assistant, empirical validation, independent human review, global
-minimality or production transfer. Final author audit and programme handoff remain.
+**Checked:** 2,025 rational original-cell law/gate cases, mixture feasibility,
+support bounds, erasure/full-information controls, stale/wrong-value rejection;
+normal/optimized Python agrees. These are finite checks, not formal verification.
+
+**Assumed:** exact stipulated game, known source law, eligibility-only sender in
+C3, sequential consistency, declared compact gate menu and favorable tie selection.
+
+**Not refuted:** a claim actually assuming uniform near-optimal recovery. Some
+high-fine deterrent surviving does not satisfy that premise. With weak PBE or a
+fully informed sender, this particular counterexample disappears.
+
+**Unproved/unclaimed:** global minimality, novelty, empirical adequacy, independent
+human review, production transfer. No unfinished work within the bounded goal.
+Future applications require a specified information partition and equilibrium rule.
+Source retrieval gaps remain documented. Prior September 17 experiment remains unrun.

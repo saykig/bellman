@@ -45,3 +45,13 @@ wrong-value and stale-identity negative controls reject. No numeric solver or
 formalization required. Source reading used a directly available July 2025 signaling
 draft; January 2026 Drive text was not accessible. PWI text was inspected through
 the web tool, but direct byte retrieval returned HTTP 406; no hash is fabricated.
+
+## 18 September 2026 — G04: close the bounded goal
+
+Mathematical and evidence milestone `e2daee7` committed/pushed after activation
+`a3bb951`. Author audit checks off-path consistency, mixed-response exclusion,
+attainment, common-design quantifiers, uniform support and the logical persistence
+tension. No mathematical correction to that edition was required. Programme
+steering now closes the noisy-gate question at the explicit recovery boundary.
+Preserve current foundations local changes and all prior frozen records. Retain
+release note in the repository only; no GitHub Release, Writ or Decision Lab changes.

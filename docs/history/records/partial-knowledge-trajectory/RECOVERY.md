@@ -58,3 +58,18 @@ or independently verified by this pass.
 
 This ledger is a repository-backed record of the available research, not a claim
 that all original conversations or external files have been archived.
+
+## R07 recovery — 18 September 2026
+
+Start with [the gate-recovery audit](../../../../research/optimized_gate_recovery_2026_09_18/AUDIT.md)
+and mathematical/evidence edition `e2daee7`. Activation was `a3bb951`; predecessor
+and preservation identities remain `26d3415`, `ad16961`, `5661f9e`. Run the new
+receiver directly using [its reproduction instructions](../../../../research/optimized_gate_recovery_2026_09_18/experiments/README.md);
+it does not execute the candidate producer. Save any new results separately.
+
+The key recovery inputs are the sender information partition, sequential-consistency
+restriction and positive gate-contrast constraint. Removing any of them can change
+the answer. Source notes use the directly read July 2025 signaling draft rather
+than claiming access to the January 2026 Drive draft. The PWI PDF was text-readable
+through the web tool, but direct byte retrieval returned HTTP 406; no new hash was
+recorded for it. Other downloaded-source hashes identify bytes, not archival copies.

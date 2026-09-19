@@ -183,3 +183,15 @@ give the established compact recovery boundary and finite-cover sufficient
 conditions. Exact arithmetic checks 2,025 original-cell cases, both model controls
 and stale/wrong-value rejection; no formal proof or global minimality is claimed.
 Final author audit/programme handoff pending at this milestone.
+
+## R07c — 18 September: completed boundary and programme handoff
+
+Mathematical/evidence edition `e2daee7` follows activation `a3bb951` and baseline
+`5661f9e`. [Author completion audit](../../../../research/optimized_gate_recovery_2026_09_18/AUDIT.md)
+closes deliverable 3: exact small optimized-discontinuity witness plus primitive
+smoothing and necessary/sufficient recovery under compact closedness. No new
+universal theorem, strong-persistence refutation, global minimality or formal
+verification is claimed. README/programme steering now retain the sender's
+information partition and consistency rule. A repository release note records
+this transition; no GitHub Release or product changes. Prior frozen records and
+unrelated foundations local files are preserved. The R02 experiment remains unrun.
