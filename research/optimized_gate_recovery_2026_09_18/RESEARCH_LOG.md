@@ -25,3 +25,23 @@ zero. Gate optimization over a compact two-dimensional noisy binary-channel menu
 cannot eliminate this perturbation. Candidate value: 0 at zero, 1+t/2 otherwise.
 This defeats weak existence, not a hypothesis requiring near-optimal recovery.
 Analytical construction precedes executable search. Exact checks still pending.
+
+## 18 September 2026 — G03: exact result and interpretation audit
+
+Derived C1–C3 over the full two-dimensional gate menu, including exclusion of
+all mixed responses below the threshold. Source family and all posterior support
+bounds are uniform. Confirmed V=0 when the sender is fully informed, when a zero
+contrast gate is admitted, or when weak PBE allows arbitrary off-path beliefs.
+The last control exposed the need to state sequential consistency explicitly;
+no failed claim of a weak-PBE counterexample is retained as a result.
+
+Derived F1/F2 and R1–R3. General continuity is established recovery mathematics;
+one-receiver upward closure gives primitive sufficient conditions. A finite-cover
+argument preserves one institution design while varying law-specific witnesses.
+
+Exact search and independent original-cell arithmetic: 2,025 law/gate checks,
+45 gates, five radii, nine laws each. Normal/optimized receiver outputs coincide;
+wrong-value and stale-identity negative controls reject. No numeric solver or
+formalization required. Source reading used a directly available July 2025 signaling
+draft; January 2026 Drive text was not accessible. PWI text was inspected through
+the web tool, but direct byte retrieval returned HTTP 406; no hash is fabricated.

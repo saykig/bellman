@@ -41,3 +41,12 @@ Full support does not identify the off-path belief set. A fully informed sender
 can tilt the eligible states separately; a sender who knows only eligibility
 cannot. The new investigation separates these models and will not promote loss
 of the low-fine deterrent into a refutation of its assumed persistence.
+
+## D19 — 18 September, R07b: consistency and the logical persistence tension
+
+The coarse-sender witness requires sequentially consistent certificate beliefs.
+Weak PBE with unrestricted off-path beliefs gives zero fine instead. A disappearing
+low-fine continuation violates strong persistence, so the example refutes only
+weak existence language. Uniform near-optimal COMMON DESIGN recovery is the exact
+criterion under compact closedness; individual optimizer persistence is stronger
+than necessary. See R07b proofs and rejected approaches.

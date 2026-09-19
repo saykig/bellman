@@ -164,3 +164,22 @@ uses a sender observing certificate eligibility rather than the exact state;
 the user explicitly authorized analysing both and labelling that change.
 Analytical development begun; computation and final theorem audit pending at this
 milestone. No claim of refuting strong persistence, minimality or novelty.
+
+## R07b — 18 September: exact optimized jump and recovery boundary
+
+Following activation commit `a3bb951`, derived the
+[fixed-payoff counterexample](../../../../research/optimized_gate_recovery_2026_09_18/math/COUNTEREXAMPLE.md):
+V(0)=0 and V(t)=1+t/2 for t>0, over a compact two-dimensional noisy gate menu.
+Prior and costs are fixed; a continuous interval of source laws varies. Public
+posteriors have global full support; certificate posteriors have uniform support
+on the eligible states. The sender observes eligibility, not the exact state;
+sequential consistency, rather than arbitrary off-path PBE beliefs, pins beliefs.
+The low-fine deterrent disappears, so strong persistence is not refuted.
+
+[F1/F2](../../../../research/optimized_gate_recovery_2026_09_18/math/FULL_INFORMATION.md)
+prove fixed-fine invariance in the full-information model and a primitive smoothing
+theorem for one receiver. [R1–R3](../../../../research/optimized_gate_recovery_2026_09_18/math/RECOVERY_THEOREM.md)
+give the established compact recovery boundary and finite-cover sufficient
+conditions. Exact arithmetic checks 2,025 original-cell cases, both model controls
+and stale/wrong-value rejection; no formal proof or global minimality is claimed.
+Final author audit/programme handoff pending at this milestone.

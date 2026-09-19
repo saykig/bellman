@@ -1,0 +1,15 @@
+{
+  "original_cell_law_gate_checks": 2025,
+  "gates_per_radius": 45,
+  "radii": 5,
+  "minimum_public_probability_observed": "1/6",
+  "minimum_certificate_probability_observed": "3/8",
+  "erasure_and_full_information_controls": "pass",
+  "negative_controls_rejected": [
+    "wrong_value",
+    "stale_identity"
+  ],
+  "status": "exact finite checks passed; continuum claims require written proofs",
+  "checker_sha256": "6a35e461cc64f85885c9b753f5680c3cd99fd4b24065416fbd0b9078c05abb2e",
+  "candidate_sha256": "997bebeb46813453d6846f99788b776296959bf47c170652587e0b130161d349"
+}

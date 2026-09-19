@@ -1,15 +1,18 @@
-# Current state — developing, 18 September 2026
+# Current state — proved and checked; final audit pending
 
-Active goal. Baseline main: 5661f9e. Prior result: 26d3415 and ad16961.
-Read the programme, North Star, preceding boundary mathematics/audit, and trajectory.
+18 September 2026. Baseline main 5661f9e; activation milestone a3bb951.
 
-Derived candidate: one receiver, three actions, sender observes {1,2} versus {3}.
-Only a binary source law varies; prior, utilities, message cost and gate menu stay
-fixed. Robust family indexed by t is the interval of laws delta in [-t,t].
-Candidate optimized fine is 0 at t=0 and 1+t/2 for 0<t<=1/4.
-All public posteriors are positive on three states; certificate posteriors positive
-on {1,2}. The low-fine B branch disappears, so this does NOT refute strong persistence.
+* C3: analytical optimized-discontinuity witness, fixed utilities, costs AND prior,
+  continuous interval source family, compact informative noisy gate menu. V(0)=0;
+  V(t)=1+t/2 for 0<t<=1/4. Coarse sender information and sequential consistency
+  are explicit; this is not a refutation of strong near-optimal persistence.
+* F1: full-information fixed-fine continuation invariance. F2: primitive smoothing
+  theorem for one receiver with uniform non-target fines and continuous compact
+  information/design sets.
+* R1–R3: closedness, exact uniform value-recovery criterion, and strict-branch
+  sufficient conditions. Established optimization, not claimed novel.
+* Exact original-cell receiver: 2,025 rational law/gate checks; two model controls;
+  wrong-value and stale-identity packets rejected. Normal/optimized runs agree.
 
-Next: exact derivation, original-cell checks including all mixed best responses,
-full-information comparison, uniform recovery theorem and source comparison.
-No computational or formal-verification claim yet.
+No formal proof assistant, empirical validation, independent human review, global
+minimality or production transfer. Final author audit and programme handoff remain.

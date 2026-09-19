@@ -1,0 +1,31 @@
+[
+  {
+    "id": "optimization",
+    "url": "https://arxiv.org/pdf/2109.06299v1",
+    "version": "arXiv:2109.06299v1; 2021",
+    "retrieval_date": "2026-09-18",
+    "bytes_retained_in_repository": false,
+    "sha256": "f1748f441b484d7796a4716c8495413521f2599a30b487099a1a25d5344ea229",
+    "byte_count": 555143,
+    "status": "downloaded for identity; text inspected through web tool"
+  },
+  {
+    "id": "communication",
+    "url": "https://elliotlipnowski.com/wp-content/uploads/PWI.pdf",
+    "version": "JPE 130(10), 2022; author-hosted PDF",
+    "retrieval_date": "2026-09-18",
+    "bytes_retained_in_repository": false,
+    "status": "retrieval gap",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "id": "signaling",
+    "url": "https://www.cerge-ei.cz/pdf/events/papers/3.%20bbs.pdf",
+    "version": "July 8, 2025; 32-page draft",
+    "retrieval_date": "2026-09-18",
+    "bytes_retained_in_repository": false,
+    "sha256": "57895ca7780584ba65007119fc6fb6ca39fad3192a8f8a8763b6f97b66da68f0",
+    "byte_count": 282858,
+    "status": "downloaded for identity; text inspected through web tool"
+  }
+]
